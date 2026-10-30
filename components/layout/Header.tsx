@@ -55,19 +55,6 @@ export function Header({ nav }: { nav: Navigation }) {
 
   return (
     <header className={cn("sticky top-0 z-50 transition-[box-shadow,background-color] duration-300", scrolled ? "bg-white/90 shadow-soft backdrop-blur-md supports-[backdrop-filter]:bg-white/80" : "bg-warm")} data-scrolled={scrolled || undefined}>
-      {/* Top bar: offer + phone */}
-      <div className={cn("dark-section overflow-hidden text-[0.8125rem] transition-[max-height,opacity] duration-300", scrolled ? "max-h-0 opacity-0" : "max-h-12 opacity-100")} aria-hidden={scrolled}>
-        <div className="container-x flex min-h-10 items-center justify-between gap-4 py-1.5">
-          <p className="truncate">
-            <span className="font-semibold text-bronze-300">{site.offer.headline}:</span> {site.offer.detail} for new patients.{" "}
-            <a href={site.bookingUrl} className="hidden font-semibold underline decoration-white/40 underline-offset-4 hover:decoration-white sm:inline" target="_blank" rel="noopener noreferrer" tabIndex={scrolled ? -1 : 0}>Book now</a>
-          </p>
-          <a href={`tel:${site.phone.tel}`} className="hidden shrink-0 items-center gap-1.5 font-semibold hover:text-bronze-300 sm:inline-flex" tabIndex={scrolled ? -1 : 0}>
-            <Icon.phone className="h-4 w-4" /> {site.phone.display}
-          </a>
-        </div>
-      </div>
-
       {/* Main bar */}
       <div className="container-x">
         <div className={cn("flex items-center justify-between gap-6 transition-[height] duration-300", scrolled ? "h-16" : "h-[76px]")}>
@@ -160,7 +147,7 @@ export function Header({ nav }: { nav: Navigation }) {
       </div>
 
       {/* Mobile full-screen menu */}
-      <div id="mobile-menu" className={cn("fixed inset-0 top-[var(--mobile-top,0px)] z-40 overflow-y-auto bg-warm transition-[opacity,visibility] duration-200 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 116 }}>
+      <div id="mobile-menu" className={cn("fixed inset-0 top-[var(--mobile-top,0px)] z-40 overflow-y-auto bg-warm transition-[opacity,visibility] duration-200 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 76 }}>
         <nav aria-label="Mobile" className="container-x pb-28 pt-4">
           <ul className="divide-y hairline">
             {nav.header.map((item) => (
