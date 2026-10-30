@@ -34,7 +34,7 @@ export function BlogIndex({ posts, page = 1, categories }: { posts: PostSummary[
         <ul className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 md:mx-0 md:flex-wrap md:px-0" aria-label="Categories">
           {["All", ...categories].map((c) => (
             <li key={c}>
-              <button type="button" onClick={() => setCat(c)} aria-pressed={cat === c} className={cn("inline-flex min-h-11 shrink-0 items-center rounded-full border px-4 text-sm font-medium transition-colors", cat === c ? "border-navy-900 bg-navy-900 text-white" : "hairline bg-white text-navy-900 hover:border-steel-600")}>
+              <button type="button" onClick={() => setCat(c)} aria-pressed={cat === c} className={cn("inline-flex min-h-11 shrink-0 items-center rounded-full border px-4 text-sm font-medium transition-colors", cat === c ? "border-ink-900 bg-ink-900 text-white" : "hairline bg-white text-ink-900 hover:border-olive-600")}>
                 {c}
               </button>
             </li>
@@ -43,7 +43,7 @@ export function BlogIndex({ posts, page = 1, categories }: { posts: PostSummary[
         <label className="relative block md:w-72">
           <span className="sr-only">Search articles</span>
           <Icon.search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-grey-400" />
-          <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search articles" className="block min-h-12 w-full rounded-full border border-grey-300 bg-white pl-11 pr-4 text-navy-900 placeholder:text-grey-400 focus:border-steel-600 focus:ring-2 focus:ring-steel-600/25" />
+          <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search articles" className="block min-h-12 w-full rounded-full border border-grey-300 bg-white pl-11 pr-4 text-ink-900 placeholder:text-grey-400 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" />
         </label>
       </div>
       <p className="mt-6 text-sm text-grey-600" aria-live="polite">
@@ -52,12 +52,12 @@ export function BlogIndex({ posts, page = 1, categories }: { posts: PostSummary[
       {shown.length ? (
         <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{shown.map((p, i) => <PostCard key={p.slug} post={p} priority={i < 3 && page === 1} />)}</ul>
       ) : (
-        <p className="mt-10 rounded-3xl bg-sky-50 p-8 text-center text-grey-700">Nothing matches yet. Try another word, or <Link href="/contact/" className="font-semibold text-steel-600 underline-offset-4 hover:underline">ask us directly</Link>.</p>
+        <p className="mt-10 rounded-3xl bg-greige-50 p-8 text-center text-grey-700">Nothing matches yet. Try another word, or <Link href="/contact/" className="font-semibold text-olive-600 underline-offset-4 hover:underline">ask us directly</Link>.</p>
       )}
       {!filtering && total > 1 && (
         <nav aria-label="Pagination" className="mt-12 flex items-center justify-center gap-2">
           {Array.from({ length: total }, (_, i) => i + 1).map((n) => (
-            <Link key={n} href={n === 1 ? "/category/blogs/" : `/category/blogs/page/${n}/`} aria-current={n === page ? "page" : undefined} className={cn("inline-flex h-11 w-11 items-center justify-center rounded-full border text-sm font-semibold", n === page ? "border-navy-900 bg-navy-900 text-white" : "hairline bg-white text-navy-900 hover:border-steel-600")}>
+            <Link key={n} href={n === 1 ? "/category/blogs/" : `/category/blogs/page/${n}/`} aria-current={n === page ? "page" : undefined} className={cn("inline-flex h-11 w-11 items-center justify-center rounded-full border text-sm font-semibold", n === page ? "border-ink-900 bg-ink-900 text-white" : "hairline bg-white text-ink-900 hover:border-olive-600")}>
               {n}
             </Link>
           ))}

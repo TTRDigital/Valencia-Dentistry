@@ -22,9 +22,9 @@ export function ServiceCard({ s, index = 0 }: { s: Service; index?: number }) {
           <Picture image={{ src: s.hero.image, alt: s.hero.imageAlt }} fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
         <div className="flex flex-1 flex-col p-6">
-          <h3 className="text-xl group-hover:text-steel-600">{s.name}</h3>
+          <h3 className="text-xl group-hover:text-olive-600">{s.name}</h3>
           <p className="mt-2 flex-1 text-[0.95rem] text-grey-600">{s.shortDescription}</p>
-          <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-steel-600">Learn more <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
+          <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-olive-600">Learn more <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
         </div>
       </Link>
     </Reveal>

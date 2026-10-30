@@ -94,7 +94,7 @@ export async function deliverLead(lead: Lead): Promise<{ delivered: boolean; con
         method: "POST",
         headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
         body: JSON.stringify({
-          from: clean(process.env.LEAD_EMAIL_FROM) || "Valencia Smile Expert Website <onboarding@resend.dev>",
+          from: clean(process.env.LEAD_EMAIL_FROM) || "Valencia Dentistry Website <onboarding@resend.dev>",
           to: to.split(/[,;]\s*/),
           reply_to: payload.email || undefined,
           subject: `New ${lead.form} submission${payload.name ? ` from ${payload.name}` : ""}`,

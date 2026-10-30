@@ -8,7 +8,7 @@ export async function BeforeAfter({ s }: { s: GallerySection }) {
   const cases: BeforeAfterCase[] = s.caseIds?.length ? s.caseIds.map((id) => all.find((c) => c.id === id)).filter((c): c is BeforeAfterCase => !!c) : all;
   if (!cases.length) return null;
   return (
-    <Section className="bg-champagne-50/70" id="transformations">
+    <Section className="bg-sand-50/70" id="transformations">
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
         <div className="mt-12">

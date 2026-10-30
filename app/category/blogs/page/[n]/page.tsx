@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { n } = await params;
-  return buildMetadata({ title: `Dental Blog, page ${n} | Valencia Smile Expert`, description: "More guides on implants, crowns, bridges, extractions and oral health from Valencia Smile Expert in Santa Clarita, CA.", path: `/category/blogs/page/${n}/`, image: "/images/team/dr-moezzi-treating.jpg" });
+  return buildMetadata({ title: `Dental Blog, page ${n} | Valencia Dentistry`, description: "More guides on implants, crowns, bridges, extractions and oral health from Valencia Dentistry in Santa Clarita, CA.", path: `/category/blogs/page/${n}/`, image: "/images/team/dr-moezzi-treating.jpg" });
 }
 
 export default async function BlogPaged({ params }: Props) {

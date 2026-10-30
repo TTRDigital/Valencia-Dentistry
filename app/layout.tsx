@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export const viewport: Viewport = { themeColor: "#112740", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#2e2e2e", width: "device-width", initialScale: 1 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const nav = await getNavigation();
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`} data-display={displayFace === "calsans" ? "calsans" : undefined}>
       <body className="flex min-h-screen flex-col">
-        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-navy-900 focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink-900 focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
         <Header nav={nav} />
         <main id="main" tabIndex={-1} className="flex-1 outline-none">{children}</main>
         <Footer nav={nav} />

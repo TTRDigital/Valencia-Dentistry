@@ -4,8 +4,8 @@
   "title": "Our Practice",
   "breadcrumb": "Our Practice",
   "seo": {
-    "title": "About Dr. Neda Moezzi | Valencia Smile Expert",
-    "description": "Meet Dr. Neda Moezzi and the Valencia Smile Expert team in Santa Clarita: holistic, one-on-one dentistry with 3D imaging, PRF therapy and same-day crowns."
+    "title": "About Dr. Neda Moezzi | Valencia Dentistry",
+    "description": "Meet Dr. Neda Moezzi and the Valencia Dentistry team in Santa Clarita: holistic, one-on-one dentistry with 3D imaging, PRF therapy and same-day crowns."
   },
   "sections": [
     {
@@ -13,7 +13,7 @@
       "variant": "page",
       "eyebrow": "Our practice",
       "heading": "Dentistry with heart, in Valencia since 2007.",
-      "lead": "Valencia Smile Expert blends clinical precision and modern technology with a warm, one-on-one approach. Dr. Neda Moezzi leads every visit herself, so you are never handed off and never rushed.",
+      "lead": "Valencia Dentistry blends clinical precision and modern technology with a warm, one-on-one approach. Dr. Neda Moezzi leads every visit herself, so you are never handed off and never rushed.",
       "primary": {
         "label": "Book a visit",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -146,7 +146,7 @@
       "images": [
         {
           "src": "/images/team/treatment-room.jpg",
-          "alt": "A patient in a bright treatment room at Valencia Smile Expert"
+          "alt": "A patient in a bright treatment room at Valencia Dentistry"
         },
         {
           "src": "/images/team/dr-moezzi-treating.jpg",

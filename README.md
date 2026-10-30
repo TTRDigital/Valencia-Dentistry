@@ -1,12 +1,13 @@
-# Valencia Smile Expert website
+# Valencia Dentistry website
 
-A new, premium website for Valencia Smile Expert (Dr. Neda Moezzi, DDS; Valencia / Santa Clarita, CA), built by TTR Digital Marketing. It keeps the structure, URLs, brand colours and verified facts of the current site (valenciasmileexpert.com) and raises the design, copy and performance. Stack: Next.js 16 (App Router, React Server Components), TypeScript, Tailwind CSS 4, next/image, next/font, Sanity CMS embedded at `/cms`, Vercel.
+A new, premium website for Valencia Dentistry (27420 Tourney Rd, Suite 240, Santa Clarita / Valencia, CA), built by TTR Digital Marketing. It keeps the structure, URLs and verified facts of the current site (valenciasmileexpert.com, "Valencia Smile Expert") and applies the new Valencia Dentistry identity: the V + tooth logo, and the charcoal / olive / warm grey / greige / ivory palette with the logo bronze for highlights. Stack: Next.js 16 (App Router, React Server Components), TypeScript, Tailwind CSS 4, next/image, next/font, Sanity CMS embedded at `/cms`, Vercel.
 
 ## What is here
 
 - **All 56 URLs of the current site**, unchanged (home, 16 service pages incl. `/tmj-treatments/`, about, contact, appointment, testimonials, thank-you, privacy, terms, sitemap, blog index `/category/blogs/` and 30 articles at the site root). `npm run audit` checks that every old URL still answers 200.
 - **Two new landing pages** (to confirm): `/new-patient-offer/` and `/emergency-dental/`. Spanish pages are not built (out of scope until confirmed).
-- **Design system** at `/styleguide/` (noindex): refined palette, two display-face options (Fraunces = option A, default; Cal Sans = option B), fluid type, 8px spacing, 24px cards, motion rules, WCAG AA contrast table. Switch the display face in `lib/design.ts`.
+- **Brand**: logo vectorized from the supplied artwork (`public/brand/logo-mark.svg`, `logo-stacked.svg`, `logo-horizontal.svg`; paths in `components/layout/logo-paths.ts`), favicons and the Open Graph image generated from it (`npm run favicons`). Replace the paths with the designer's master SVG when available.
+- **Design system** at `/styleguide/` (noindex): brand palette with AA contrast table, two display-face options (Fraunces = option A, default; Cal Sans = option B), fluid type, 8px spacing, 24px cards, motion rules, WCAG AA contrast table. Switch the display face in `lib/design.ts`.
 - **Content** lives in `content/` as JSON (services, posts, pages, legal, people, testimonials, before/after cases, navigation). It is the built-in copy the site renders from today and the source for `npm run seed` once the Sanity project exists. The site reads from Sanity automatically when the project ID is pinned (`sanity/env.ts`) and falls back to the built-in copy per collection.
 - **Native forms** (appointment, contact, landing pages): accessible, inline validation, honeypot + time trap, optional Cloudflare Turnstile, no-JS fallback. Leads POST to the GoHighLevel webhook (`GHL_WEBHOOK_URL`), payload documented below.
 - **SEO**: unique titles/descriptions, one H1 per page, canonicals, generated 1200×630 Open Graph images (`/og/`), `sitemap.xml`, `robots.txt`, favicon set + web manifest, JSON-LD (Dentist/LocalBusiness, Person, WebSite, WebPage, BreadcrumbList, MedicalProcedure + Service on service pages, BlogPosting on posts, FAQPage wherever FAQs are shown). `aggregateRating` is printed only on the home page, where the rating and reviews are visible.
@@ -46,7 +47,7 @@ npm run build        # production build (type-checks)
 npm run lint         # ESLint
 npm run typecheck    # TypeScript
 npm run images       # image manifest (sizes + blur placeholders) and static hero variants (public/images/_opt)
-npm run favicons     # favicon set from public/logo.svg (falls back to the placeholder mark)
+npm run favicons     # favicon set from public/logo.svg (the brand mark) on an ivory tile
 npm run seed         # publish content/ to Sanity (needs SANITY_WRITE_TOKEN; --force, --dry-run)
 npm run audit -- https://<site>   # launch checks: lang/charset, one H1, titles, descriptions, canonical, OG image, JSON-LD, alt text, links, old URLs
 npm run screenshots -- http://localhost:3000   # full-page screenshots at 390/768/1024/1440/1920 + overflow check (needs Playwright)

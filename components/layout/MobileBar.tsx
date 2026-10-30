@@ -16,9 +16,9 @@ export function MobileBar() {
             <a
               href={href}
               {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className={primary ? "btn btn-primary w-full min-h-12" : "flex min-h-12 flex-col items-center justify-center gap-0.5 text-[0.75rem] font-semibold text-navy-900"}
+              className={primary ? "btn btn-primary w-full min-h-12" : "flex min-h-12 flex-col items-center justify-center gap-0.5 text-[0.75rem] font-semibold text-ink-900"}
             >
-              <I className={primary ? "h-4 w-4" : "h-5 w-5 text-steel-600"} />
+              <I className={primary ? "h-4 w-4" : "h-5 w-5 text-olive-600"} />
               {label}
             </a>
           </li>

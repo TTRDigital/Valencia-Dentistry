@@ -2,7 +2,7 @@ import type { StructureResolver } from "sanity/structure";
 
 export const structure: StructureResolver = (S) =>
   S.list()
-    .title("Valencia Smile Expert")
+    .title("Valencia Dentistry")
     .items([
       S.listItem().title("Pages").schemaType("page").child(S.documentTypeList("page").title("Pages").defaultOrdering([{ field: "path", direction: "asc" }])),
       S.listItem().title("Services").schemaType("service").child(S.documentTypeList("service").title("Services").defaultOrdering([{ field: "path", direction: "asc" }])),

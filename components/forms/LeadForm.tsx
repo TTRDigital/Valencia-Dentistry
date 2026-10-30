@@ -100,7 +100,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
     const fid = `${id}-${name}`;
     return (
       <div className={cn(props.className)}>
-        <label htmlFor={fid} className="mb-1.5 block text-sm font-semibold text-navy-900">{label}{props.required && <span className="text-danger" aria-hidden="true"> *</span>}</label>
+        <label htmlFor={fid} className="mb-1.5 block text-sm font-semibold text-ink-900">{label}{props.required && <span className="text-danger" aria-hidden="true"> *</span>}</label>
         <input
           id={fid}
           name={name}
@@ -108,7 +108,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
           aria-describedby={err ? `${fid}-err` : hint ? `${fid}-hint` : undefined}
           onChange={() => err && setErrors((x) => ({ ...x, [name]: undefined }))}
           {...props}
-          className={cn("block min-h-12 w-full rounded-xl border bg-white px-4 py-3 text-navy-900 placeholder:text-grey-400 focus:border-steel-600 focus:ring-2 focus:ring-steel-600/25", err ? "border-danger" : "border-grey-300")}
+          className={cn("block min-h-12 w-full rounded-xl border bg-white px-4 py-3 text-ink-900 placeholder:text-grey-400 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25", err ? "border-danger" : "border-grey-300")}
         />
         {hint && !err && <p id={`${fid}-hint`} className="mt-1 text-xs text-grey-600">{hint}</p>}
         {err && <p id={`${fid}-err`} className="mt-1 text-sm text-danger" role="alert">{err}</p>}
@@ -139,16 +139,16 @@ export function LeadForm({ formName = "Appointment request", compact, services =
       <div className={cn("grid gap-4", services && "sm:grid-cols-2")}>
         {services && (
           <div>
-            <label htmlFor={`${id}-service`} className="mb-1.5 block text-sm font-semibold text-navy-900">Service of interest</label>
-            <select id={`${id}-service`} name="service" className="block min-h-12 w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-navy-900 focus:border-steel-600 focus:ring-2 focus:ring-steel-600/25" defaultValue="">
+            <label htmlFor={`${id}-service`} className="mb-1.5 block text-sm font-semibold text-ink-900">Service of interest</label>
+            <select id={`${id}-service`} name="service" className="block min-h-12 w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-ink-900 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" defaultValue="">
               <option value="">Select a service</option>
               {SERVICES.map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
           </div>
         )}
         <div>
-          <label htmlFor={`${id}-time`} className="mb-1.5 block text-sm font-semibold text-navy-900">Preferred time</label>
-          <select id={`${id}-time`} name="preferred_time" className="block min-h-12 w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-navy-900 focus:border-steel-600 focus:ring-2 focus:ring-steel-600/25" defaultValue="">
+          <label htmlFor={`${id}-time`} className="mb-1.5 block text-sm font-semibold text-ink-900">Preferred time</label>
+          <select id={`${id}-time`} name="preferred_time" className="block min-h-12 w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-ink-900 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" defaultValue="">
             <option value="">No preference</option>
             {TIMES.map((t) => <option key={t} value={t}>{t}</option>)}
           </select>
@@ -156,13 +156,13 @@ export function LeadForm({ formName = "Appointment request", compact, services =
       </div>
       {!compact && (
         <div>
-          <label htmlFor={`${id}-message`} className="mb-1.5 block text-sm font-semibold text-navy-900">Message</label>
-          <textarea id={`${id}-message`} name="message" rows={4} placeholder="Tell us what's going on, or any questions you have." className="block w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-navy-900 placeholder:text-grey-400 focus:border-steel-600 focus:ring-2 focus:ring-steel-600/25" />
+          <label htmlFor={`${id}-message`} className="mb-1.5 block text-sm font-semibold text-ink-900">Message</label>
+          <textarea id={`${id}-message`} name="message" rows={4} placeholder="Tell us what's going on, or any questions you have." className="block w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-ink-900 placeholder:text-grey-400 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" />
         </div>
       )}
       <div>
         <label className="flex items-start gap-3 text-sm text-grey-700">
-          <input type="checkbox" name="consent" value="yes" aria-invalid={errors.consent ? "true" : undefined} aria-describedby={errors.consent ? `${id}-consent-err` : undefined} onChange={() => errors.consent && setErrors((x) => ({ ...x, consent: undefined }))} className="mt-0.5 h-5 w-5 shrink-0 rounded border-grey-300 text-steel-600 focus:ring-steel-600" />
+          <input type="checkbox" name="consent" value="yes" aria-invalid={errors.consent ? "true" : undefined} aria-describedby={errors.consent ? `${id}-consent-err` : undefined} onChange={() => errors.consent && setErrors((x) => ({ ...x, consent: undefined }))} className="mt-0.5 h-5 w-5 shrink-0 rounded border-grey-300 text-olive-600 focus:ring-olive-600" />
           <span>I agree to be contacted by {site.name} by phone, text or email about my request. <span className="text-grey-600">Message and data rates may apply. This form is not for emergencies; if you are in pain, please call {site.phone.display}.</span></span>
         </label>
         {errors.consent && <p id={`${id}-consent-err`} className="mt-1 text-sm text-danger" role="alert">{errors.consent}</p>}
@@ -177,7 +177,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
         <button type="submit" className="btn btn-primary btn-lg" disabled={status === "sending"} aria-busy={status === "sending"}>
           {status === "sending" ? "Sending…" : "Request appointment"}
         </button>
-        <p className="text-sm text-grey-600">Prefer to book instantly? <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-steel-600 underline-offset-4 hover:underline">Use online booking</a></p>
+        <p className="text-sm text-grey-600">Prefer to book instantly? <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-olive-600 underline-offset-4 hover:underline">Use online booking</a></p>
       </div>
     </form>
   );

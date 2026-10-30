@@ -28,7 +28,7 @@ export function Breadcrumbs({ items, light }: { items: { name: string; path: str
         {items.map((it, i) => (
           <li key={it.path} className="flex items-center gap-2">
             {i > 0 && <span aria-hidden="true" className="opacity-50">/</span>}
-            {i === items.length - 1 ? <span aria-current="page" className={light ? "text-white" : "text-navy-900"}>{it.name}</span> : <Link href={it.path} className="hover:underline">{it.name}</Link>}
+            {i === items.length - 1 ? <span aria-current="page" className={light ? "text-white" : "text-ink-900"}>{it.name}</span> : <Link href={it.path} className="hover:underline">{it.name}</Link>}
           </li>
         ))}
       </ol>
@@ -63,7 +63,7 @@ export async function ServiceView({ s }: { s: Service }) {
           </div>
           <div className="order-first lg:order-none lg:col-span-5">
             <div className="relative">
-              <div className="absolute -inset-3 rounded-[2.5rem] border border-champagne-300/25" aria-hidden="true" />
+              <div className="absolute -inset-3 rounded-[2.5rem] border border-bronze-300/25" aria-hidden="true" />
               <div className="overflow-hidden rounded-4xl shadow-lift">
                 <Picture image={{ src: s.hero.image, alt: s.hero.imageAlt }} priority quality={85} sizes="(min-width: 1024px) 480px, calc(100vw - 32px)" className="aspect-[4/3] w-full object-cover" />
               </div>
@@ -85,7 +85,7 @@ export async function ServiceView({ s }: { s: Service }) {
                 <h2 className="text-2xl">{s.whoItsFor.heading}</h2>
                 <p className="mt-2 text-grey-600">{s.whoItsFor.intro}</p>
                 <ul className="mt-5 space-y-3">
-                  {s.whoItsFor.items.map((it) => <li key={it} className="flex items-start gap-3 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-steel-600" />{it}</li>)}
+                  {s.whoItsFor.items.map((it) => <li key={it} className="flex items-start gap-3 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{it}</li>)}
                 </ul>
                 <Button href="/appointment/" className="mt-7 w-full" arrow>Ask if it&rsquo;s right for you</Button>
               </div>
@@ -115,13 +115,13 @@ export async function ServiceView({ s }: { s: Service }) {
       )}
 
       {/* Benefits */}
-      <Section className="bg-sky-50/60">
+      <Section className="bg-greige-50/60">
         <Container>
           <SectionHeading eyebrow="Benefits" heading={s.benefits.heading} lead={s.benefits.intro} align="center" />
           <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {s.benefits.items.map((b, i) => (
               <Reveal as="li" key={b.title} delay={(i % 3) * 70} className="card card-hover p-7">
-                <span className="font-display text-3xl text-champagne-500">{String(i + 1).padStart(2, "0")}</span>
+                <span className="font-display text-3xl text-bronze-600">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="mt-3 text-xl">{b.title}</h3>
                 <p className="mt-2 text-[0.95rem] text-grey-600">{b.text}</p>
               </Reveal>
@@ -137,7 +137,7 @@ export async function ServiceView({ s }: { s: Service }) {
           <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((st, i) => (
               <Reveal as="li" key={st.title} delay={i * 90} className="relative rounded-3xl bg-white/[0.06] p-6 ring-1 ring-white/10">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-champagne-300 font-display text-lg text-navy-900">{i + 1}</span>
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-bronze-300 font-display text-lg text-ink-900">{i + 1}</span>
                 <h3 className="mt-4 text-xl text-white">{st.title}</h3>
                 <p className="mt-2 text-[0.95rem] text-white/70">{st.text}</p>
               </Reveal>
@@ -165,13 +165,13 @@ export async function ServiceView({ s }: { s: Service }) {
               <div className="lg:col-span-6">
                 <SectionHeading eyebrow="Care guide" heading={s.aftercare.heading} />
                 <div className="mt-8 grid gap-5 sm:grid-cols-2">
-                  <div className="rounded-3xl bg-warm p-6 ring-1 ring-navy-900/5">
+                  <div className="rounded-3xl bg-warm p-6 ring-1 ring-ink-900/5">
                     <h3 className="text-lg font-sans font-semibold">Before your visit</h3>
-                    <ul className="mt-3 space-y-2.5">{s.aftercare.before.map((b) => <li key={b} className="flex items-start gap-2.5 text-[0.95rem] text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-steel-600" />{b}</li>)}</ul>
+                    <ul className="mt-3 space-y-2.5">{s.aftercare.before.map((b) => <li key={b} className="flex items-start gap-2.5 text-[0.95rem] text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{b}</li>)}</ul>
                   </div>
-                  <div className="rounded-3xl bg-warm p-6 ring-1 ring-navy-900/5">
+                  <div className="rounded-3xl bg-warm p-6 ring-1 ring-ink-900/5">
                     <h3 className="text-lg font-sans font-semibold">After your visit</h3>
-                    <ul className="mt-3 space-y-2.5">{s.aftercare.after.map((b) => <li key={b} className="flex items-start gap-2.5 text-[0.95rem] text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-steel-600" />{b}</li>)}</ul>
+                    <ul className="mt-3 space-y-2.5">{s.aftercare.after.map((b) => <li key={b} className="flex items-start gap-2.5 text-[0.95rem] text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{b}</li>)}</ul>
                   </div>
                 </div>
               </div>
@@ -181,18 +181,18 @@ export async function ServiceView({ s }: { s: Service }) {
       </Section>
 
       {/* Cost */}
-      <Section tight className="bg-champagne-50/70">
+      <Section tight className="bg-sand-50/70">
         <Container>
-          <div className="grid gap-8 rounded-4xl bg-white p-8 shadow-soft ring-1 ring-navy-900/[0.06] sm:p-10 lg:grid-cols-12">
+          <div className="grid gap-8 rounded-4xl bg-white p-8 shadow-soft ring-1 ring-ink-900/[0.06] sm:p-10 lg:grid-cols-12">
             <div className="lg:col-span-8">
               <p className="eyebrow mb-4">Cost &amp; financing</p>
               <h2 className="text-3xl">{s.cost.heading}</h2>
               <p className="prose-measure mt-4 text-lg text-grey-700">{s.cost.text}</p>
             </div>
             <div className="flex flex-col justify-center gap-3 lg:col-span-4">
-              <div className="rounded-3xl bg-sky-50 p-5"><p className="font-display text-3xl text-navy-900">$59</p><p className="text-sm text-grey-700">New patient exam &amp; X-rays</p></div>
+              <div className="rounded-3xl bg-greige-50 p-5"><p className="font-display text-3xl text-ink-900">$59</p><p className="text-sm text-grey-700">New patient exam &amp; X-rays</p></div>
               <p className="text-sm text-grey-600">Most PPO plans accepted · flexible financing · written estimate before treatment</p>
-              <Link href="/contact/#insurance" className="text-sm font-semibold text-steel-600 underline-offset-4 hover:underline">See accepted insurance →</Link>
+              <Link href="/contact/#insurance" className="text-sm font-semibold text-olive-600 underline-offset-4 hover:underline">See accepted insurance →</Link>
             </div>
           </div>
         </Container>

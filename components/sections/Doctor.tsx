@@ -12,7 +12,7 @@ export function Doctor({ s }: { s: DoctorSection }) {
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <div className="relative mx-auto max-w-md">
-              <div className="absolute -inset-3 rounded-[2.5rem] border border-champagne-300/30" aria-hidden="true" />
+              <div className="absolute -inset-3 rounded-[2.5rem] border border-bronze-300/30" aria-hidden="true" />
               <div className="overflow-hidden rounded-4xl shadow-lift">
                 <Picture image={s.image} sizes="(min-width: 1024px) 460px, 90vw" className="aspect-[4/5] w-full object-cover object-top" />
               </div>
@@ -21,8 +21,8 @@ export function Doctor({ s }: { s: DoctorSection }) {
           <Reveal className="lg:col-span-7" delay={100}>
             <SectionHeading eyebrow={s.eyebrow} heading={s.heading} />
             {s.quote && (
-              <blockquote className="mt-7 border-l-2 border-champagne-300 pl-5 font-display text-2xl leading-snug text-white/90">
-                <Icon.quote className="mb-2 h-6 w-6 text-champagne-300/70" />
+              <blockquote className="mt-7 border-l-2 border-bronze-300 pl-5 font-display text-2xl leading-snug text-white/90">
+                <Icon.quote className="mb-2 h-6 w-6 text-bronze-300/70" />
                 {s.quote}
               </blockquote>
             )}
@@ -33,7 +33,7 @@ export function Doctor({ s }: { s: DoctorSection }) {
               <dl className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
                 {s.stats.map((st) => (
                   <div key={st.label} className="rounded-2xl bg-white/[0.06] p-4 ring-1 ring-white/10">
-                    <dd className="font-display text-2xl text-champagne-300">{st.value}</dd>
+                    <dd className="font-display text-2xl text-bronze-300">{st.value}</dd>
                     <dt className="mt-1 text-sm text-white/70">{st.label}</dt>
                   </div>
                 ))}

@@ -16,21 +16,21 @@ export function Visit({ s }: { s: VisitSection }) {
             <ul className="mt-8 space-y-5">
               <li className="flex gap-4">
                 <span className="sr-only">Address: </span>
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-sky-50 text-steel-600"><Icon.pin className="h-5 w-5" /></span>
-                <div className="text-grey-700"><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center font-semibold text-navy-900 hover:underline">{site.address.street}</a><br />{site.address.city} ({site.address.neighborhood}), {site.address.state} {site.address.zip}</div>
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-greige-50 text-olive-600"><Icon.pin className="h-5 w-5" /></span>
+                <div className="text-grey-700"><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center font-semibold text-ink-900 hover:underline">{site.address.street}</a><br />{site.address.city} ({site.address.neighborhood}), {site.address.state} {site.address.zip}</div>
               </li>
               <li className="flex gap-4">
                 <span className="sr-only">Phone: </span>
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-sky-50 text-steel-600"><Icon.phone className="h-5 w-5" /></span>
-                <div className="text-grey-700"><a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center font-semibold text-navy-900 hover:underline">{site.phone.display}</a><br /><a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center hover:underline">{site.email}</a></div>
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-greige-50 text-olive-600"><Icon.phone className="h-5 w-5" /></span>
+                <div className="text-grey-700"><a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center font-semibold text-ink-900 hover:underline">{site.phone.display}</a><br /><a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center hover:underline">{site.email}</a></div>
               </li>
               <li className="flex gap-4">
                 <span className="sr-only">Hours: </span>
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-sky-50 text-steel-600"><Icon.clock className="h-5 w-5" /></span>
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-greige-50 text-olive-600"><Icon.clock className="h-5 w-5" /></span>
                 <div className="text-grey-700">
-                  <OpenBadge showNext className="text-navy-900" />
+                  <OpenBadge showNext className="text-ink-900" />
                   <ul className="mt-2 space-y-0.5">
-                    {site.hours.map((h) => <li key={h.days} className="flex justify-between gap-6"><span>{h.days}</span><span className="font-medium text-navy-900">{h.label}</span></li>)}
+                    {site.hours.map((h) => <li key={h.days} className="flex justify-between gap-6"><span>{h.days}</span><span className="font-medium text-ink-900">{h.label}</span></li>)}
                   </ul>
                 </div>
               </li>

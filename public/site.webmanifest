@@ -1,6 +1,6 @@
 {
-  "name": "Valencia Smile Expert",
-  "short_name": "Valencia Smile",
+  "name": "Valencia Dentistry",
+  "short_name": "Valencia Dentistry",
   "icons": [
     {
       "src": "/icon-192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#112740",
-  "background_color": "#fdfbf7",
+  "theme_color": "#2e2e2e",
+  "background_color": "#f7f5ef",
   "display": "browser",
   "start_url": "/"
 }

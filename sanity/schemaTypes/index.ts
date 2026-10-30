@@ -58,7 +58,7 @@ export const siteSettings = defineType({
   type: "document",
   groups: [{ name: "practice", title: "Practice", default: true }, { name: "offer", title: "Offer & booking" }, { name: "schema", title: "Business schema" }],
   fields: [
-    defineField({ name: "name", type: "string", group: "practice", initialValue: "Valencia Smile Expert" }),
+    defineField({ name: "name", type: "string", group: "practice", initialValue: "Valencia Dentistry" }),
     defineField({ name: "phone", type: "string", group: "practice", title: "Phone (display)" }),
     defineField({ name: "email", type: "string", group: "practice" }),
     defineField({ name: "address", type: "object", group: "practice", fields: [defineField({ name: "street", type: "string" }), defineField({ name: "city", type: "string" }), defineField({ name: "state", type: "string" }), defineField({ name: "zip", type: "string" })] }),

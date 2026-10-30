@@ -14,7 +14,7 @@ export function TrustRow({ className, light }: { className?: string; light?: boo
   return (
     <ul className={cn("flex flex-wrap gap-x-6 gap-y-2 text-sm", light ? "text-white/80" : "text-grey-700", className)}>
       {items.map(({ I, text }, i) => (
-        <li key={i} className="inline-flex items-center gap-2"><I className={cn("h-4 w-4", light ? "text-champagne-300" : "text-steel-600")} /><span>{text}</span></li>
+        <li key={i} className="inline-flex items-center gap-2"><I className={cn("h-4 w-4", light ? "text-bronze-300" : "text-olive-600")} /><span>{text}</span></li>
       ))}
     </ul>
   );
@@ -36,8 +36,8 @@ export function Hero({ s }: { s: HeroSection }) {
             {s.trust && <TrustRow light className="mt-10 animate-fade-in" />}
           </div>
           <div className="relative lg:col-span-5">
-            <div className="pointer-events-none absolute inset-x-6 bottom-0 top-10 rounded-t-[12rem] bg-gradient-to-b from-steel-600/40 to-transparent" aria-hidden="true" />
-            <div className="pointer-events-none absolute -right-6 top-6 h-56 w-56 rounded-full border border-champagne-300/30 sm:h-72 sm:w-72" aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-x-6 bottom-0 top-10 rounded-t-[12rem] bg-gradient-to-b from-olive-600/40 to-transparent" aria-hidden="true" />
+            <div className="pointer-events-none absolute -right-6 top-6 h-56 w-56 rounded-full border border-bronze-300/30 sm:h-72 sm:w-72" aria-hidden="true" />
             {s.image && (
               <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 480px, (min-width: 640px) 60vw, 90vw" className="relative mx-auto block w-[min(85%,420px)] animate-fade-in object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)] lg:w-full lg:max-w-[480px]" />
             )}
@@ -89,7 +89,7 @@ export function Hero({ s }: { s: HeroSection }) {
         </div>
         {s.image && (
           <div className="order-first lg:order-none lg:col-span-6">
-            <div className="overflow-hidden rounded-4xl shadow-lift ring-1 ring-navy-900/5">
+            <div className="overflow-hidden rounded-4xl shadow-lift ring-1 ring-ink-900/5">
               <Picture image={s.image} priority sizes="(min-width: 1024px) 600px, calc(100vw - 32px)" className="aspect-[5/4] w-full object-cover" />
             </div>
           </div>

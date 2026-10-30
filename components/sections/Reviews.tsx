@@ -21,10 +21,10 @@ export async function Reviews({ s }: { s: ReviewsSection }) {
       <Container>
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-          <div className="flex items-center gap-4 rounded-2xl bg-sky-50 px-5 py-4 ring-1 ring-navy-900/5">
+          <div className="flex items-center gap-4 rounded-2xl bg-greige-50 px-5 py-4 ring-1 ring-ink-900/5">
             <Icon.google className="h-9 w-9" />
             <div>
-              <p className="flex items-center gap-2 font-display text-2xl text-navy-900">{site.rating.value} <Stars /></p>
+              <p className="flex items-center gap-2 font-display text-2xl text-ink-900">{site.rating.value} <Stars /></p>
               <p className="text-sm text-grey-600">{site.rating.count} Google reviews</p>
             </div>
             <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm ml-2 hidden sm:inline-flex">Write a review</a>

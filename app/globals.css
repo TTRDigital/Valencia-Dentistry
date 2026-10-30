@@ -15,34 +15,35 @@
 /* Design tokens                                                        */
 /* ------------------------------------------------------------------ */
 @theme {
-  /* Brand palette (refined from the current site) */
-  --color-navy-950: #0b1a2c;
-  --color-navy-900: #112740; /* primary dark surface, headings */
-  --color-navy-800: #17324f;
-  --color-navy-700: #1f4066;
-  --color-steel-700: #2b557e;
-  --color-steel-600: #366797; /* accents, links, buttons */
-  --color-steel-500: #4a7cad;
-  --color-steel-100: #e3edf6;
-  --color-sky-50: #eef5fb;    /* pale sky highlight */
-  --color-sky-100: #dcebf7;
-  --color-champagne-50: #faf6ef;
-  --color-champagne-100: #f3ebdc;
-  --color-champagne-300: #dcc8a4; /* champagne accent (lines, eyebrows on dark) */
-  --color-champagne-500: #876a3a; /* champagne as text (AA on light tints) */
-  --color-champagne-400: #b89968;
-  --color-grey-900: #1f2933;
-  --color-grey-700: #4a5564;
-  --color-grey-600: #5a6675; /* secondary text (brand #667280 darkened for AA on tinted backgrounds) */
-  --color-grey-400: #9aa3ae;
-  --color-grey-300: #c9d0d8;
-  --color-grey-200: #e4e8ec;
-  --color-grey-100: #f1f3f5;
+  /* Brand palette: Valencia Dentistry brand board (charcoal, olive, warm grey, greige, ivory) + the logo's bronze */
+  --color-ink-950: #1c1c1c;
+  --color-ink-900: #2e2e2e; /* charcoal: headings, dark surfaces */
+  --color-ink-800: #3a3a3a;
+  --color-ink-700: #474747;
+  --color-olive-700: #4a574a;
+  --color-olive-600: #5b6b5a; /* olive: accents, links, buttons */
+  --color-olive-500: #6f806e;
+  --color-olive-100: #e4e7e0;
+  --color-greige-50: #f0eee8;  /* tints */
+  --color-greige-100: #e6e3db;
+  --color-sand-50: #f1ece2;    /* warm section tint */
+  --color-sand-100: #e9e2d3;
+  --color-bronze-300: #c9ba9c; /* bronze on dark: eyebrows, lines */
+  --color-bronze-400: #a89a7f;
+  --color-bronze-500: #9a8b72; /* logo bronze, decorative */
+  --color-bronze-600: #6f6049; /* bronze as text on light tints (AA) */
+  --color-grey-900: #1f1f1f;
+  --color-grey-700: #4b4b47;
+  --color-grey-600: #5e5e57; /* secondary text (brand warm grey darkened for AA) */
+  --color-grey-400: #a7a7a0; /* brand warm grey: icons, placeholders */
+  --color-grey-300: #c8c6be;
+  --color-grey-200: #d6d3cc; /* greige: borders, dividers */
+  --color-grey-100: #eceae4;
   --color-white: #ffffff;
-  --color-offwhite: #fafafa;
-  --color-warm: #fdfbf7;      /* warm white background */
-  --color-success: #1f7a4d;
-  --color-danger: #b42318;
+  --color-offwhite: #faf9f6;
+  --color-warm: #f7f5ef;      /* ivory page background */
+  --color-success: #3f6b45;
+  --color-danger: #a8321f;
 
   /* Type */
   --font-sans: var(--font-inter), system-ui, sans-serif;
@@ -76,9 +77,9 @@
   --radius-4xl: 2rem;
 
   /* Soft layered shadows */
-  --shadow-soft: 0 1px 2px rgb(17 39 64 / 0.04), 0 8px 24px -12px rgb(17 39 64 / 0.12);
-  --shadow-lift: 0 2px 4px rgb(17 39 64 / 0.05), 0 20px 40px -16px rgb(17 39 64 / 0.22);
-  --shadow-ring: 0 0 0 1px rgb(17 39 64 / 0.06);
+  --shadow-soft: 0 1px 2px rgb(46 46 46 / 0.04), 0 8px 24px -12px rgb(46 46 46 / 0.14);
+  --shadow-lift: 0 2px 4px rgb(46 46 46 / 0.05), 0 20px 40px -16px rgb(46 46 46 / 0.24);
+  --shadow-ring: 0 0 0 1px rgb(46 46 46 / 0.06);
 
   /* Motion */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
@@ -131,17 +132,17 @@
     font-weight: var(--display-weight);
     letter-spacing: var(--display-tracking);
     text-wrap: balance;
-    color: var(--color-navy-900);
+    color: var(--color-ink-900);
   }
   h1 { font-size: var(--text-5xl); line-height: var(--text-5xl--line-height); }
   h2 { font-size: var(--text-4xl); line-height: var(--text-4xl--line-height); }
   h3 { font-size: var(--text-2xl); line-height: var(--text-2xl--line-height); }
-  h4 { @apply font-sans font-semibold text-navy-900; font-size: var(--text-lg); }
+  h4 { @apply font-sans font-semibold text-ink-900; font-size: var(--text-lg); }
   p { text-wrap: pretty; }
   a { @apply underline-offset-4; }
-  ::selection { background: var(--color-steel-100); color: var(--color-navy-900); }
-  :focus-visible { outline: 3px solid var(--color-steel-600); outline-offset: 3px; border-radius: 4px; }
-  .dark-section :focus-visible { outline-color: var(--color-champagne-300); }
+  ::selection { background: var(--color-olive-100); color: var(--color-ink-900); }
+  :focus-visible { outline: 3px solid var(--color-olive-600); outline-offset: 3px; border-radius: 4px; }
+  .dark-section :focus-visible { outline-color: var(--color-bronze-300); }
   img, video { height: auto; max-width: 100%; }
   button, input, select, textarea { font: inherit; }
   details > summary { list-style: none; }
@@ -163,9 +164,9 @@
   .section-tight { @apply py-12 sm:py-16 lg:py-20; }
   .prose-measure { max-width: 70ch; }
 
-  .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-steel-600; }
+  .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-olive-600; }
   .eyebrow::before { content: ""; @apply h-px w-6 bg-current opacity-70; }
-  .dark-section .eyebrow { @apply text-champagne-300; }
+  .dark-section .eyebrow { @apply text-bronze-300; }
   .lead { @apply text-grey-600 text-lg; }
   .dark-section .lead { @apply text-white/75; }
   .dark-section h1, .dark-section h2, .dark-section h3 { color: var(--color-white); }
@@ -173,29 +174,29 @@
   /* Buttons: ≥44px tap targets */
   .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 py-2.5 text-[0.9375rem] font-semibold no-underline transition-[transform,box-shadow,background-color,color,border-color] duration-200 ease-out select-none; }
   .btn:active { transform: translateY(1px); }
-  .btn-primary { @apply bg-steel-600 text-white shadow-soft; }
-  .btn-primary:hover { @apply bg-steel-700 shadow-lift; }
-  .btn-dark { @apply bg-navy-900 text-white; }
-  .btn-dark:hover { @apply bg-navy-800; }
-  .btn-light { @apply bg-white text-navy-900 shadow-soft; }
-  .btn-light:hover { @apply bg-sky-50; }
-  .btn-outline { @apply border border-navy-900/20 text-navy-900 bg-transparent; }
-  .btn-outline:hover { @apply border-navy-900 bg-navy-900/5; }
+  .btn-primary { @apply bg-olive-600 text-white shadow-soft; }
+  .btn-primary:hover { @apply bg-olive-700 shadow-lift; }
+  .btn-dark { @apply bg-ink-900 text-white; }
+  .btn-dark:hover { @apply bg-ink-800; }
+  .btn-light { @apply bg-white text-ink-900 shadow-soft; }
+  .btn-light:hover { @apply bg-greige-50; }
+  .btn-outline { @apply border border-ink-900/20 text-ink-900 bg-transparent; }
+  .btn-outline:hover { @apply border-ink-900 bg-ink-900/5; }
   .dark-section .btn-outline { @apply border-white/35 text-white; }
   .dark-section .btn-outline:hover { @apply border-white bg-white/10; }
   .btn-lg { @apply min-h-13 px-8 text-base; }
   .btn-sm { @apply min-h-11 px-4 text-sm; } /* 44px: every button is a full tap target */
 
-  .card { @apply rounded-3xl bg-white shadow-soft ring-1 ring-navy-900/[0.06]; }
+  .card { @apply rounded-3xl bg-white shadow-soft ring-1 ring-ink-900/[0.06]; }
   .card-hover { @apply transition-[transform,box-shadow] duration-300 ease-out; }
   .card-hover:hover { @apply -translate-y-1 shadow-lift; }
   @media (prefers-reduced-motion: reduce) { .card-hover:hover { transform: none; } }
 
-  .hairline { @apply border-navy-900/10; }
+  .hairline { @apply border-ink-900/10; }
 
   /* Dark surfaces with a subtle grain + gradient */
-  .dark-section { @apply relative bg-navy-900 text-white; }
-  .dark-section::before { content: ""; @apply pointer-events-none absolute inset-0; background: radial-gradient(1200px 500px at 15% -10%, rgb(54 103 151 / 0.45), transparent 60%), radial-gradient(900px 400px at 100% 110%, rgb(220 200 164 / 0.14), transparent 55%); }
+  .dark-section { @apply relative bg-ink-900 text-white; }
+  .dark-section::before { content: ""; @apply pointer-events-none absolute inset-0; background: radial-gradient(1200px 500px at 15% -10%, rgb(91 107 90 / 0.42), transparent 60%), radial-gradient(900px 400px at 100% 110%, rgb(201 186 156 / 0.16), transparent 55%); }
   /* Grain: a 1.2kB 64px noise tile inlined as a data URI, so it paints with the section's first paint (a background image fetched over the network would become the LCP candidate on dark-hero pages). */
   .dark-section::after { content: ""; @apply pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAgMAAADXB5lNAAAADFBMVEX///+qqqpVVVUAAAABM1s0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAES0lEQVQ4ywFABL/7AJ0mK9HlOReYWpuFj/E/OIYAl9x4WdHJRVDeq65u44YBTgDjnmRb9o1CW4115UppZV2NAIKArIGxPsOrxzZgIoHe8qgABgNub1/s+0770RSw120KAwBPdNYLRAzGsT8s3xF7nZesACpY01ZTVa0SyDTU4uf8u1cAAYbc9jSYk78DEEz8bZik/QD3+w7L5yM2ZPAAqRGEJu3cANUa0C+QFraL7+aGScr47doAMy43jYS6KroWcM5qizMN/wCrTk4X7J+EeqZh+mR0hyMCAIr77FGU9cRoZL+ewFxWquQAFOZcf5ZXciS2q9BjyPirgwBb3y4j+/rOlXUAbSaxEsyvALzOWPxY/XZB8pSe9cJCZn4AMwnvxPNxbgfD4+gh5dahogA+ojnf7fd87lAYCJ07gGu4AG7GNtiKrmJd4JJHoTQIppMAWlNXJhNto9eGWtq6fGrh2gBZxbPrYzs8W+Uee4ySl3mtAOA2D3edGPkynHt1YkTkhAMAMf0nmiTAHVspRMY5xMvfCwDAQAvh0lhQe9MGz/mKW4nzAM6bHlsqZvBLpyb6sni8cgEAFf5rbK5pOrsIeCzt5vGUYACxD/JSXNgko8OUSEr7UPq5AIIi/h3rjmpxyml8vQKz5W8ACqA6rBiXioHstm1e4Xwi1gAFygasrR5uym23NGgq5RqHAIr5003AtYeKHAK3rZ+yr/UANSYqf8+ClR11n7tRrslxgwBgd02C7Zzz5Rv58c3KGpD1AGWck5GWMv7CpHrGfLKo2JoAtDUPR3PeJwAzyqrQ/rRtYgDS+4SlsvrJ+/HixjMKmiCIAOZS0wsa+2sh9quYfJj6KEIAjgeYsPoSa2eV8b+DhOCNIwCN7TIp26VDzNxcuwt+I1LgAFRWKWqfJLzWTUC9r8hOQTAAqlYiwP5F9YYbfKeV0wqStgDjyZMx0yzAnBU+pQNIq1z3AANzwZ4psf5oy/jyb4c3yxMA63VBdIiaGrGp1NpAQY38BADFcY7bb7IGR3lK49W51VLdADn9WDe4R4KaPlSLQhRBakIA3ochNIViU+VUDQ18t2DL3gBveYd/T4oySay5NtB4Jr/7AJJ0N3zRgK8vHPHAdPXKLXkA7GhbbC8xBEq7H2omFPKfNwCREatv3QvkR0yN9H3XIb09ABuMvY3sIcXojipV8yC08MYAe+hhVStFvdZ6tk9zbxTPvQBcmO5pWM7oKeKgrAH1xImBAAFutdn2gQ4+Sqdx3cjkDncARvenmSzyQLY13AaE311C7wA1IEZDy9mhzfBzowe/WGjZAAdSgo0SI1YgMdouto+m9F4AtaLCcSdpCDzfTfkysnQHgAD/mdcQqdEGZRUs3CePHMauAHCgDebuEg5UuB2A0XKjvGIADiFBhEdijIevlgrsRFzU8QCqIZFZvsX3ng36M817ofTjAD1TuQNolb3ect+CypiDSZQ/lxOGC44JUQAAAABJRU5ErkJggg=="); background-size: 64px 64px; }
   .dark-section > * { position: relative; }
@@ -224,18 +225,18 @@
   .rich h2 { @apply mt-12 mb-4 text-3xl; }
   .rich h3 { @apply mt-9 mb-3 text-2xl; }
   .rich h4 { @apply mt-7 mb-2; }
-  .rich a { @apply text-steel-600 underline decoration-steel-600/40 hover:decoration-steel-600; }
-  .rich strong { @apply font-semibold text-navy-900; }
+  .rich a { @apply text-olive-600 underline decoration-olive-600/40 hover:decoration-olive-600; }
+  .rich strong { @apply font-semibold text-ink-900; }
   .rich ul { @apply list-disc pl-6 space-y-2; }
   .rich ol { @apply list-decimal pl-6 space-y-2; }
-  .rich li::marker { @apply text-steel-600; }
-  .rich blockquote { @apply border-l-2 border-champagne-300 pl-5 italic text-grey-700; }
+  .rich li::marker { @apply text-olive-600; }
+  .rich blockquote { @apply border-l-2 border-bronze-300 pl-5 italic text-grey-700; }
   .rich table { @apply w-full border-collapse text-[0.95rem]; }
-  .rich .table-wrap { @apply my-6 overflow-x-auto rounded-2xl ring-1 ring-navy-900/10; }
-  .rich th { @apply bg-sky-50 px-4 py-3 text-left font-semibold text-navy-900; }
-  .rich td { @apply border-t border-navy-900/10 px-4 py-3 align-top; }
+  .rich .table-wrap { @apply my-6 overflow-x-auto rounded-2xl ring-1 ring-ink-900/10; }
+  .rich th { @apply bg-greige-50 px-4 py-3 text-left font-semibold text-ink-900; }
+  .rich td { @apply border-t border-ink-900/10 px-4 py-3 align-top; }
   .rich img { @apply rounded-2xl; }
-  .rich hr { @apply my-10 border-navy-900/10; }
+  .rich hr { @apply my-10 border-ink-900/10; }
 }
 
 @layer utilities {

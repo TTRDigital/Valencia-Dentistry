@@ -39,11 +39,11 @@ export async function Team({ s }: { s: TeamSection }) {
               </Reveal>
               <Reveal className="lg:col-span-7" delay={80}>
                 <h3 className="text-3xl">{p.name}{p.credentials ? `, ${p.credentials}` : ""}</h3>
-                <p className="mt-1 text-steel-600 font-medium">{p.role}</p>
+                <p className="mt-1 text-olive-600 font-medium">{p.role}</p>
                 <div className="prose-measure mt-5 space-y-4 text-lg text-grey-700">{p.bio.map((b, i) => <p key={i}>{b}</p>)}</div>
                 {p.highlights && (
                   <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                    {p.highlights.map((h) => <li key={h} className="flex items-start gap-2.5 text-[0.95rem] text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-steel-600" />{h}</li>)}
+                    {p.highlights.map((h) => <li key={h} className="flex items-start gap-2.5 text-[0.95rem] text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{h}</li>)}
                   </ul>
                 )}
               </Reveal>
@@ -57,7 +57,7 @@ export async function Team({ s }: { s: TeamSection }) {
 
 export function PhotoGrid({ s }: { s: PhotoGridSection }) {
   return (
-    <Section className="bg-champagne-50/70" id="office">
+    <Section className="bg-sand-50/70" id="office">
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
         <ul className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-6">
@@ -96,7 +96,7 @@ export function Insurance({ s }: { s: InsuranceSection }) {
 
 export function Offer({ s }: { s: OfferSection }) {
   return (
-    <Section className="bg-sky-50/60" id="offer">
+    <Section className="bg-greige-50/60" id="offer">
       <Container>
         <div className="card grid gap-8 overflow-hidden p-8 sm:p-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
@@ -105,20 +105,20 @@ export function Offer({ s }: { s: OfferSection }) {
             <p className="lead mt-4">{s.text}</p>
             {s.bullets && (
               <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                {s.bullets.map((b) => <li key={b} className="flex items-start gap-2.5 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-steel-600" />{b}</li>)}
+                {s.bullets.map((b) => <li key={b} className="flex items-start gap-2.5 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{b}</li>)}
               </ul>
             )}
             {s.fine && <p className="mt-5 text-sm text-grey-600">{s.fine}</p>}
           </div>
-          <div className="flex flex-col justify-center gap-3 rounded-3xl bg-navy-900 p-7 text-white lg:col-span-5">
-            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-champagne-300">{site.offer.headline}</p>
+          <div className="flex flex-col justify-center gap-3 rounded-3xl bg-ink-900 p-7 text-white lg:col-span-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">{site.offer.headline}</p>
             <p className="font-display text-6xl text-white">$59</p>
             <p className="text-white/80">Comprehensive exam and digital X-rays for new patients.</p>
             <Button href={s.cta?.href ?? site.bookingUrl} variant="light" size="lg" className="mt-3" arrow>{s.cta?.label ?? "Claim the offer"}</Button>
             <p className="text-sm text-white/70">Or call <a href={`tel:${site.phone.tel}`} className="font-semibold text-white underline-offset-4 hover:underline">{site.phone.display}</a></p>
           </div>
         </div>
-        <p className="mt-4 text-center text-sm text-grey-600"><Link href="/services/" className="underline hover:text-navy-900">See everything we offer</Link></p>
+        <p className="mt-4 text-center text-sm text-grey-600"><Link href="/services/" className="underline hover:text-ink-900">See everything we offer</Link></p>
       </Container>
     </Section>
   );

@@ -6,8 +6,8 @@
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.valenciasmileexpert.com").replace(/\/$/, "");
 
 export const site = {
-  name: "Valencia Smile Expert",
-  legalName: "Valencia Smile Expert",
+  name: "Valencia Dentistry",
+  legalName: "Valencia Dentistry",
   tagline: "Comfortable, holistic dentistry in Valencia, Santa Clarita",
   doctor: { name: "Dr. Neda Moezzi, DDS", shortName: "Dr. Moezzi", firstName: "Neda", lastName: "Moezzi", credentials: "DDS", jobTitle: "Dentist", school: "University of Detroit Mercy Dental School", gradYear: 2010 },
   phone: { display: "(661) 254-5200", tel: "+16612545200" },

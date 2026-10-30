@@ -9,8 +9,8 @@ import { schemaTypes, singletonTypes } from "./sanity/schemaTypes";
 import { structure } from "./sanity/structure";
 
 export default defineConfig({
-  name: "valencia-smile-expert",
-  title: "Valencia Smile Expert",
+  name: "valencia-dentistry",
+  title: "Valencia Dentistry",
   basePath: studioBasePath,
   projectId,
   dataset,

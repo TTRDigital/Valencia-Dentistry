@@ -34,7 +34,7 @@ export async function PostView({ post }: { post: Post }) {
             <h1 className="text-5xl">{post.title}</h1>
             <p className="lead mt-5">{post.excerpt}</p>
             <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-grey-600">
-              <span className="inline-flex items-center gap-2"><span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-100 text-xs font-semibold text-steel-700" aria-hidden="true">NM</span>By <span className="font-semibold text-navy-900">{post.author}</span></span>
+              <span className="inline-flex items-center gap-2"><span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-greige-100 text-xs font-semibold text-olive-700" aria-hidden="true">NM</span>By <span className="font-semibold text-ink-900">{post.author}</span></span>
               <time dateTime={post.datePublished}>{formatDate(post.datePublished)}</time>
               {post.dateModified && post.dateModified > post.datePublished && <span>Updated {formatDate(post.dateModified)}</span>}
               <span>{minutes} min read</span>
@@ -55,14 +55,14 @@ export async function PostView({ post }: { post: Post }) {
             <div className="sticky top-28 space-y-6">
               {toc.length > 2 && (
                 <nav aria-label="Table of contents" className="card p-6">
-                  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-steel-600">In this article</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">In this article</p>
                   <ol className="mt-3 space-y-2 text-[0.95rem]">
-                    {toc.map((h) => <li key={h.id}><a href={`#${h.id}`} className="text-grey-700 hover:text-navy-900 hover:underline">{h.text}</a></li>)}
+                    {toc.map((h) => <li key={h.id}><a href={`#${h.id}`} className="text-grey-700 hover:text-ink-900 hover:underline">{h.text}</a></li>)}
                   </ol>
                 </nav>
               )}
               <div className="dark-section rounded-3xl p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-champagne-300">Talk to Dr. Moezzi</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">Talk to Dr. Moezzi</p>
                 <p className="mt-2 text-white/80">Questions about your own situation? A $59 new patient exam includes X-rays and an unhurried consultation.</p>
                 <Button href={site.bookingUrl} variant="light" className="mt-4 w-full" arrow>Book online</Button>
                 <a href={`tel:${site.phone.tel}`} className="mt-3 block text-center text-sm text-white/80 hover:text-white">or call {site.phone.display}</a>
@@ -72,10 +72,10 @@ export async function PostView({ post }: { post: Post }) {
 
           <div className="lg:col-span-8">
             {post.keyTakeaways.length > 0 && (
-              <section aria-labelledby="takeaways" className="mb-10 rounded-3xl border border-champagne-300/70 bg-champagne-50 p-6 sm:p-7">
-                <h2 id="takeaways" className="font-sans text-base font-semibold uppercase tracking-[0.14em] text-champagne-500">Key takeaways</h2>
+              <section aria-labelledby="takeaways" className="mb-10 rounded-3xl border border-bronze-300/70 bg-sand-50 p-6 sm:p-7">
+                <h2 id="takeaways" className="font-sans text-base font-semibold uppercase tracking-[0.14em] text-bronze-600">Key takeaways</h2>
                 <ul className="mt-4 space-y-2.5">
-                  {post.keyTakeaways.map((k) => <li key={k} className="flex items-start gap-3 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-steel-600" />{k}</li>)}
+                  {post.keyTakeaways.map((k) => <li key={k} className="flex items-start gap-3 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{k}</li>)}
                 </ul>
               </section>
             )}
@@ -90,22 +90,22 @@ export async function PostView({ post }: { post: Post }) {
 
             {relatedServices.length > 0 && (
               <section aria-labelledby="related-services" className="mt-14">
-                <h2 id="related-services" className="font-sans text-base font-semibold uppercase tracking-[0.14em] text-steel-600">Related services</h2>
+                <h2 id="related-services" className="font-sans text-base font-semibold uppercase tracking-[0.14em] text-olive-600">Related services</h2>
                 <ul className="mt-4 flex flex-wrap gap-2">
-                  {relatedServices.map((s) => <li key={s.slug}><Link href={s.path} className="inline-flex min-h-11 items-center rounded-full border hairline bg-white px-4 text-sm font-medium text-navy-900 hover:border-steel-600 hover:text-steel-600">{s.name}</Link></li>)}
+                  {relatedServices.map((s) => <li key={s.slug}><Link href={s.path} className="inline-flex min-h-11 items-center rounded-full border hairline bg-white px-4 text-sm font-medium text-ink-900 hover:border-olive-600 hover:text-olive-600">{s.name}</Link></li>)}
                 </ul>
               </section>
             )}
 
-            <section aria-labelledby="author" className="mt-14 flex flex-col gap-5 rounded-3xl bg-sky-50/70 p-6 sm:flex-row sm:p-7">
+            <section aria-labelledby="author" className="mt-14 flex flex-col gap-5 rounded-3xl bg-greige-50/70 p-6 sm:flex-row sm:p-7">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
                 <Picture image={{ src: "/images/team/dr-moezzi-portrait.jpg", alt: "Dr. Neda Moezzi, DDS" }} sizes="96px" className="h-full w-full object-cover object-top" />
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-steel-600">About the author</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>
                 <h2 id="author" className="mt-1 text-xl">{site.doctor.name}</h2>
-                <p className="mt-2 text-[0.95rem] text-grey-700">Founder of Valencia Smile Expert in Santa Clarita. A {site.doctor.school} graduate ({site.doctor.gradYear}), Dr. Moezzi practices holistic, one-on-one dentistry with a focus on implants, cosmetic care and prevention.</p>
-                <Link href="/about/" className="mt-2 inline-block text-sm font-semibold text-steel-600 underline-offset-4 hover:underline">Meet Dr. Moezzi →</Link>
+                <p className="mt-2 text-[0.95rem] text-grey-700">Founder of Valencia Dentistry in Santa Clarita. A {site.doctor.school} graduate ({site.doctor.gradYear}), Dr. Moezzi practices holistic, one-on-one dentistry with a focus on implants, cosmetic care and prevention.</p>
+                <Link href="/about/" className="mt-2 inline-block text-sm font-semibold text-olive-600 underline-offset-4 hover:underline">Meet Dr. Moezzi →</Link>
               </div>
             </section>
             <p className="mt-8 text-xs text-grey-600">This article is for general information and does not replace an examination. Treatment recommendations, timelines and costs depend on your individual situation.</p>
@@ -118,7 +118,7 @@ export async function PostView({ post }: { post: Post }) {
           <Container>
             <div className="flex items-end justify-between gap-6">
               <h2 id="related-posts" className="text-3xl">Keep reading</h2>
-              <Link href="/category/blogs/" className="text-sm font-semibold text-steel-600 underline-offset-4 hover:underline">All articles →</Link>
+              <Link href="/category/blogs/" className="text-sm font-semibold text-olive-600 underline-offset-4 hover:underline">All articles →</Link>
             </div>
             <ul className="mt-8 grid gap-5 md:grid-cols-3">{[...related, ...fallback].map((p) => <PostCard key={p.slug} post={p} />)}</ul>
           </Container>

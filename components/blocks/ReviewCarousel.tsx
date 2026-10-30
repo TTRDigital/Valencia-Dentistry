@@ -32,9 +32,9 @@ export function ReviewCarousel({ items }: { items: Testimonial[] }) {
             </div>
             <blockquote className="mt-4 flex-1 text-[0.98rem] leading-relaxed text-grey-700">“{t.text}”</blockquote>
             <footer className="mt-5 flex items-center gap-3">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 font-semibold text-steel-700" aria-hidden="true">{t.author.charAt(0)}</span>
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-greige-100 font-semibold text-olive-700" aria-hidden="true">{t.author.charAt(0)}</span>
               <div>
-                <p className="font-semibold text-navy-900">{t.author}</p>
+                <p className="font-semibold text-ink-900">{t.author}</p>
                 <p className="text-xs text-grey-600">Google review{t.when ? ` · ${t.when}` : ""}</p>
               </div>
             </footer>
@@ -42,8 +42,8 @@ export function ReviewCarousel({ items }: { items: Testimonial[] }) {
         ))}
       </ul>
       <div className="mt-6 flex gap-2">
-        <button type="button" onClick={() => scroll(-1)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border hairline text-navy-900 hover:bg-navy-900/5" aria-label="Previous reviews"><Icon.arrow className="h-5 w-5 rotate-180" /></button>
-        <button type="button" onClick={() => scroll(1)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border hairline text-navy-900 hover:bg-navy-900/5" aria-label="Next reviews"><Icon.arrow className="h-5 w-5" /></button>
+        <button type="button" onClick={() => scroll(-1)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border hairline text-ink-900 hover:bg-ink-900/5" aria-label="Previous reviews"><Icon.arrow className="h-5 w-5 rotate-180" /></button>
+        <button type="button" onClick={() => scroll(1)} className="inline-flex h-11 w-11 items-center justify-center rounded-full border hairline text-ink-900 hover:bg-ink-900/5" aria-label="Next reviews"><Icon.arrow className="h-5 w-5" /></button>
       </div>
     </div>
   );

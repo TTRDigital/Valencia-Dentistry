@@ -2,11 +2,12 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { NextRequest } from "next/server";
+import { MARK, WORD } from "@/components/layout/logo-paths";
 
 /**
  * Generated 1200x630 Open Graph image: /og/?title=…&subtitle=…
- * Navy background with the brand mark, the page title in Fraunces and the
- * practice name. Cached immutably by the CDN.
+ * Charcoal background with the brand mark and wordmark, the page title in
+ * Fraunces. Cached immutably by the CDN.
  */
 export const runtime = "nodejs";
 
@@ -15,8 +16,8 @@ const font = () => (fontCache ??= readFile(join(process.cwd(), "app/fonts/Fraunc
 
 export async function GET(req: NextRequest) {
   const sp = req.nextUrl.searchParams;
-  const title = (sp.get("title") || "Valencia Smile Expert").slice(0, 110);
-  const subtitle = (sp.get("subtitle") || "Holistic dentistry in Valencia, Santa Clarita · (661) 254-5200").slice(0, 120);
+  const title = (sp.get("title") || "Valencia Dentistry").slice(0, 110);
+  const subtitle = (sp.get("subtitle") || "Valencia Dentistry · Santa Clarita, CA · (661) 254-5200").slice(0, 120);
   const big = title.length < 40;
   let fonts: { name: string; data: ArrayBuffer; weight: 500; style: "normal" }[] = [];
   try {
@@ -26,15 +27,10 @@ export async function GET(req: NextRequest) {
   }
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 72, background: "linear-gradient(135deg, #112740 0%, #17324f 60%, #2b557e 100%)", color: "white", fontFamily: fonts.length ? "Fraunces" : "serif" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-          <div style={{ width: 56, height: 56, borderRadius: 28, background: "rgba(255,255,255,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <svg width="34" height="34" viewBox="0 0 40 40"><path d="M13 11.5c-2.6 0-4.3 2-4.3 4.6 0 2 1 3.3 1.4 5.2.5 2.6.8 8.2 2.6 8.2 1.5 0 1.6-3.9 2.5-5.4.5-.8 1-1 2-1s1.5.2 2 1c.9 1.5 1 5.4 2.5 5.4 1.8 0 2.1-5.6 2.6-8.2.4-1.9 1.4-3.2 1.4-5.2 0-2.6-1.7-4.6-4.3-4.6-2 0-3 1-4.5 1s-2.5-1-4.5-1z" fill="#dcc8a4" /></svg>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ fontSize: 30, letterSpacing: 1 }}>Valencia</div>
-            <div style={{ fontSize: 14, letterSpacing: 6, color: "#dcc8a4", textTransform: "uppercase" }}>Smile Expert</div>
-          </div>
+      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 72, background: "linear-gradient(135deg, #1f1f1f 0%, #2e2e2e 55%, #3d4a3c 100%)", color: "white", fontFamily: fonts.length ? "Fraunces" : "serif" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
+          <svg width="72" height="60" viewBox={`0 0 ${MARK.width} ${MARK.height}`}><path fill="#FFFFFF" d={MARK.v} /><path fill="#C9BA9C" d={MARK.tooth} /></svg>
+          <svg width="200" height="40" viewBox={`0 0 ${WORD.width} ${WORD.height}`}><path fill="#FFFFFF" d={WORD.valencia} /><path fill="#C9BA9C" d={WORD.dentistry} /></svg>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
           <div style={{ fontSize: big ? 76 : 58, lineHeight: 1.06, letterSpacing: -1, maxWidth: 1000 }}>{title}</div>

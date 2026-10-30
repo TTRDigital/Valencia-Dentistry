@@ -26,12 +26,12 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
               <Picture image={c.before} fill sizes="(min-width: 1024px) 800px, 100vw" className="object-cover" />
             </div>
             <div className="pointer-events-none absolute inset-y-0 w-0.5 bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.15)]" style={{ left: `${pos}%` }} aria-hidden="true">
-              <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-navy-900 shadow-lift">
+              <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink-900 shadow-lift">
                 <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m9 7-4 5 4 5M15 7l4 5-4 5" /></svg>
               </span>
             </div>
-            <span className="absolute left-3 top-3 rounded-full bg-navy-900/80 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Before</span>
-            <span className="absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-900">After</span>
+            <span className="absolute left-3 top-3 rounded-full bg-ink-900/80 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Before</span>
+            <span className="absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink-900">After</span>
             <input
               id={id}
               type="range"
@@ -45,13 +45,13 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
             />
           </div>
           <div className="flex flex-wrap items-center justify-between gap-2 px-2 pb-1 pt-3 text-sm">
-            <p className="font-semibold text-navy-900">{c.title}</p>
+            <p className="font-semibold text-ink-900">{c.title}</p>
             <p className="text-grey-600">{c.treatment}</p>
           </div>
         </div>
       </div>
       <div className="lg:col-span-4">
-        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-steel-600">Cases</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">Cases</p>
         <ul className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-4 lg:grid-cols-2">
           {cases.map((k, i) => (
             <li key={k.id}>
@@ -60,7 +60,7 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
                 onClick={() => { setActive(i); setPos(50); }}
                 aria-pressed={i === active}
                 aria-label={`Show case: ${k.title}`}
-                className={cn("block w-full overflow-hidden rounded-xl ring-2 transition-[transform,box-shadow] hover:-translate-y-0.5", i === active ? "ring-steel-600 shadow-lift" : "ring-transparent")}
+                className={cn("block w-full overflow-hidden rounded-xl ring-2 transition-[transform,box-shadow] hover:-translate-y-0.5", i === active ? "ring-olive-600 shadow-lift" : "ring-transparent")}
               >
                 <Picture image={k.after} sizes="160px" className="aspect-[4/3] w-full object-cover" quality={60} />
               </button>

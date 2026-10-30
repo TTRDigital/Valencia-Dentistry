@@ -24,7 +24,7 @@ export async function BlogIndexPage({ page }: { page: number }) {
           <BlogIndex posts={posts.map((p) => ({ slug: p.slug, path: p.path, title: p.title, excerpt: p.excerpt, category: p.category, tags: p.tags, datePublished: p.datePublished, image: p.image, imageAlt: p.imageAlt }))} page={page} categories={categories} />
         </Container>
       </Section>
-      <JsonLd data={graph([webPageNode(path, "Blog | Valencia Smile Expert", "Dental advice from Dr. Neda Moezzi"), breadcrumbNode([{ name: "Home", path: "/" }, { name: "Blog", path: "/category/blogs/" }])])} />
+      <JsonLd data={graph([webPageNode(path, "Blog | Valencia Dentistry", "Dental advice from Dr. Neda Moezzi"), breadcrumbNode([{ name: "Home", path: "/" }, { name: "Blog", path: "/category/blogs/" }])])} />
     </>
   );
 }

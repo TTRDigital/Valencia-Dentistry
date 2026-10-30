@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export function FeatureIcon({ name, dark }: { name?: string; dark?: boolean }) {
   const I = (name && (Icon as Record<string, (p: React.SVGProps<SVGSVGElement>) => React.JSX.Element>)[name]) || Icon.sparkle;
   return (
-    <span className={cn("inline-flex h-12 w-12 items-center justify-center rounded-2xl", dark ? "bg-white/10 text-champagne-300" : "bg-sky-50 text-steel-600")}>
+    <span className={cn("inline-flex h-12 w-12 items-center justify-center rounded-2xl", dark ? "bg-white/10 text-bronze-300" : "bg-greige-50 text-olive-600")}>
       <I className="h-6 w-6" />
     </span>
   );
@@ -35,12 +35,12 @@ export function FeatureGrid({ s }: { s: FeatureGridSection }) {
 
 export function Values({ s }: { s: ValuesSection }) {
   return (
-    <Section className="bg-sky-50/60">
+    <Section className="bg-greige-50/60">
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
         <ul className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
           {s.items.map((f, i) => (
-            <Reveal as="li" key={f.title} delay={(i % 4) * 60} className="border-t-2 border-champagne-300 pt-5">
+            <Reveal as="li" key={f.title} delay={(i % 4) * 60} className="border-t-2 border-bronze-300 pt-5">
               <h3 className="text-lg font-semibold font-sans">{f.title}</h3>
               <p className="mt-2 text-[0.95rem] text-grey-600">{f.text}</p>
             </Reveal>
