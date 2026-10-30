@@ -19,7 +19,8 @@ A new, premium website for Valencia Dentistry (27420 Tourney Rd, Suite 240, Sant
 2. Copy `.env.example` to `.env.local`. Nothing secret is in the repo: the webhook URL, tokens and keys are environment variables only.
 3. **Sanity** (not connected yet, see “Open items”): create the project at sanity.io/manage, set `projectId` in `sanity/env.ts` (pinned on purpose; the global `NEXT_PUBLIC_SANITY_PROJECT_ID` of this build environment belongs to another site and is never read), add CORS origins (`http://localhost:3000`, the Vercel preview URL, `https://valenciasmileexpert.com`, `https://www.valenciasmileexpert.com`, with credentials), then `SANITY_WRITE_TOKEN=<editor token> npm run seed` (writes through `api.sanity.io/v2024-01-01/projects/<id>/datasets/production/mutate`). `npm run seed -- --force` overwrites, `-- --dry-run` validates. Photos stay in `/public/images` and are referenced by path; editors can upload replacements in `/cms`, which take precedence.
 4. **Publish webhook**: Sanity > API > Webhooks → `https://<site>/api/revalidate/`, secret = `SANITY_REVALIDATE_SECRET`. Pages also revalidate every 5 minutes.
-5. **Vercel**: import the repo, framework Next.js, add the variables from `.env.example` (`NEXT_PUBLIC_SITE_URL`, `GHL_WEBHOOK_URL`, `SANITY_REVALIDATE_SECRET`, optional Turnstile/Resend). Production deploys come from the default branch.
+5. **Domain**: the site is built for `valenciadentistryca.com` (business card). Add the old domain `valenciasmileexpert.com` to the same Vercel project and set it to redirect (301) to the new one so every old URL keeps working; or set `NEXT_PUBLIC_SITE_URL` to the old domain if it stays.
+6. **Vercel**: import the repo, framework Next.js, add the variables from `.env.example` (`NEXT_PUBLIC_SITE_URL`, `GHL_WEBHOOK_URL`, `SANITY_REVALIDATE_SECRET`, optional Turnstile/Resend). Production deploys come from the default branch.
 
 ## Editing in /cms
 

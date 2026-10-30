@@ -3,7 +3,8 @@
  * the built-in defaults; the Sanity "Site settings" document overrides them
  * when the CMS is connected (see lib/content/settings.ts).
  */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.valenciasmileexpert.com").replace(/\/$/, "");
+// Default domain from the Valencia Dentistry stationery; set NEXT_PUBLIC_SITE_URL in Vercel to override (e.g. while the old domain is still live).
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://valenciadentistryca.com").replace(/\/$/, "");
 
 export const site = {
   name: "Valencia Dentistry",
@@ -11,7 +12,7 @@ export const site = {
   tagline: "Comfortable, holistic dentistry in Valencia, Santa Clarita",
   doctor: { name: "Dr. Nuriel Lavi, DDS", shortName: "Dr. Lavi", firstName: "Nuriel", lastName: "Lavi", credentials: "DDS", jobTitle: "Dentist", school: "", gradYear: 0 },
   phone: { display: "(661) 254-5200", tel: "+16612545200" },
-  email: "info@valenciasmileexpert.com",
+  email: "ValenciaDentistryCA@gmail.com", // from the business card; replace with a domain mailbox when one exists
   address: { street: "27420 Tourney Rd, Suite 240", city: "Santa Clarita", neighborhood: "Valencia", state: "CA", zip: "91355", country: "US" },
   geo: { lat: 34.421619, lng: -118.5780025 },
   mapsUrl: "https://maps.app.goo.gl/zf8fsL8TG72B2QZh9",
