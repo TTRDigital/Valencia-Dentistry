@@ -1,0 +1,74 @@
+{
+  "slug": "contact",
+  "path": "/contact/",
+  "title": "Contact",
+  "breadcrumb": "Contact",
+  "seo": {
+    "title": "Contact Valencia Smile Expert | Dentist in Santa Clarita",
+    "description": "Call (661) 254-5200, book online or send a message. Valencia Smile Expert, 27420 Tourney Rd Suite 240, Santa Clarita, CA 91355. Open Mon to Fri 8am to 5pm."
+  },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "page",
+      "eyebrow": "Contact",
+      "heading": "We'd love to hear from you.",
+      "lead": "Questions, appointments or insurance checks: reach our friendly team by phone, online booking or the form below. We answer within one business day, usually much sooner.",
+      "primary": {
+        "label": "Call (661) 254-5200",
+        "href": "tel:+16612545200"
+      },
+      "secondary": {
+        "label": "Book online",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      },
+      "image": {
+        "src": "/images/team/team-four.jpg",
+        "alt": "Dr. Neda Moezzi with three members of her team"
+      }
+    },
+    {
+      "_type": "visit",
+      "eyebrow": "Visit us",
+      "heading": "Find us on Tourney Road",
+      "lead": "Suite 240 is on the second floor. Free parking on site and an elevator in the lobby."
+    },
+    {
+      "_type": "form",
+      "eyebrow": "Send a message",
+      "heading": "Tell us how we can help",
+      "lead": "Share a few details and we'll call or email you back. For emergencies, please phone the office directly.",
+      "formName": "Contact form"
+    },
+    {
+      "_type": "insurance"
+    },
+    {
+      "_type": "faq",
+      "eyebrow": "Before you visit",
+      "heading": "Common questions",
+      "items": [
+        {
+          "q": "Do you take new patients?",
+          "a": "Yes. New patients are welcome and receive a comprehensive exam and digital X-rays for $59. Book online or call to reserve a time."
+        },
+        {
+          "q": "Which insurance plans do you accept?",
+          "a": "We accept most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna, United Concordia, Blue Cross Blue Shield, Principal and Humana. Call us to verify your specific plan."
+        },
+        {
+          "q": "Do you offer financing?",
+          "a": "Yes. Flexible financing options are available, and you will always receive a written estimate before treatment begins."
+        },
+        {
+          "q": "What should I bring to my first appointment?",
+          "a": "A photo ID, your insurance card if you have one, a list of current medications and any recent X-rays from a previous dentist."
+        },
+        {
+          "q": "Can I be seen the same day for a dental emergency?",
+          "a": "Often, yes. Call (661) 254-5200 as early as possible and we will do our best to see you the same day."
+        }
+      ]
+    }
+  ]
+}

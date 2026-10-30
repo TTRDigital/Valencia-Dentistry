@@ -1,0 +1,58 @@
+import Image, { type ImageProps } from "next/image";
+import manifest from "@/lib/generated/images.json";
+import type { SiteImage } from "@/lib/types";
+import { cn } from "@/lib/utils";
+
+type Manifest = Record<string, { width: number; height: number; blurDataURL: string; opt?: number[] }>;
+const known = manifest as Manifest;
+
+type Props = Omit<ImageProps, "src" | "alt" | "width" | "height" | "placeholder" | "blurDataURL" | "loader"> & {
+  image: SiteImage | string;
+  alt?: string;
+  /** When true, width/height come from the parent (object-cover). */
+  fill?: boolean;
+};
+
+/**
+ * next/image with dimensions and blur placeholders filled in from the
+ * generated manifest (public/images) or from Sanity's image metadata.
+ * Practice photos with pre-built WebP variants (scripts/images.ts) are
+ * printed as a plain <img srcset> of static files, so the LCP hero never
+ * waits for on-request optimization.
+ */
+export function Picture({ image, alt, fill, sizes, className, priority, quality, ...rest }: Props) {
+  const img: SiteImage = typeof image === "string" ? { src: image, alt: alt ?? "" } : image;
+  const meta = known[img.src];
+  const width = img.width ?? meta?.width;
+  const height = img.height ?? meta?.height;
+  const blur = img.blurDataURL ?? meta?.blurDataURL;
+  const altText = alt ?? img.alt ?? "";
+
+  if (meta?.opt?.length) {
+    const name = img.src.replace(/^.*\//, "").replace(/\.[a-z0-9]+$/i, "");
+    const srcSet = meta.opt.map((w) => `/images/_opt/${name}-${w}.webp ${w}w`).join(", ");
+    const largest = meta.opt[meta.opt.length - 1];
+    const { style, ...imgRest } = rest as React.ImgHTMLAttributes<HTMLImageElement>;
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={`/images/_opt/${name}-${largest}.webp`}
+        srcSet={srcSet}
+        sizes={sizes ?? (fill ? "100vw" : `${Math.min(largest, 1280)}px`)}
+        alt={altText}
+        width={fill ? undefined : width}
+        height={fill ? undefined : height}
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : undefined}
+        decoding={priority ? "sync" : "async"}
+        className={cn(fill && "absolute inset-0 h-full w-full", className)}
+        style={{ ...(blur && !/\.png$/i.test(img.src) ? { backgroundImage: `url(${blur})`, backgroundSize: "cover" } : {}), ...style }}
+        {...imgRest}
+      />
+    );
+  }
+
+  const common = { sizes: sizes ?? (fill ? "100vw" : undefined), className, priority, quality: quality ?? 75, ...(blur ? { placeholder: "blur" as const, blurDataURL: blur } : {}), ...rest };
+  if (fill || !width || !height) return <Image src={img.src} alt={altText} fill {...common} />;
+  return <Image src={img.src} alt={altText} width={width} height={height} {...common} />;
+}

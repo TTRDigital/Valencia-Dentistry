@@ -1,0 +1,61 @@
+{
+  "header": [
+    { "label": "Our Practice", "href": "/about/" },
+    { "label": "Services", "href": "/services/", "mega": true },
+    { "label": "Blog", "href": "/category/blogs/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+  "serviceGroups": [
+    { "title": "Cosmetic Dentistry", "href": "/services/cosmetic-dentistry/", "description": "Natural-looking smile refinements", "items": [
+      { "label": "Veneers", "href": "/services/cosmetic-dentistry/veneers/", "description": "Thin porcelain shells for shape and color" },
+      { "label": "Invisalign", "href": "/services/cosmetic-dentistry/invisalign/", "description": "Clear aligners planned with iTero scans" },
+      { "label": "Teeth Whitening", "href": "/services/cosmetic-dentistry/teeth-whitening/", "description": "Professional brightening, in office or at home" },
+      { "label": "Composite Fillings", "href": "/services/cosmetic-dentistry/composite-filling/", "description": "Tooth-colored, mercury-free fillings" }
+    ]},
+    { "title": "Restorative Dentistry", "href": "/services/restorative-dentistry/", "description": "Repair, strengthen and replace teeth", "items": [
+      { "label": "Dental Implants", "href": "/services/dental-implants/", "description": "Guided implants for one tooth or a full arch" },
+      { "label": "Dental Crowns", "href": "/services/dental-crowns/", "description": "Custom crowns, often in a single visit" },
+      { "label": "Dental Bridges", "href": "/services/restorative-dentistry/dental-bridges/", "description": "Fixed replacements for missing teeth" }
+    ]},
+    { "title": "Oral Surgery", "href": "/services/oral-surgery/", "description": "Precise surgical care with comfort options", "items": [
+      { "label": "All-on-4 Implants", "href": "/services/oral-surgery/all-on-4-implants/", "description": "Full-arch teeth on four implants" },
+      { "label": "Bone Grafting", "href": "/services/oral-surgery/bone-grafting/", "description": "Rebuild support before implants" },
+      { "label": "Tooth Extractions", "href": "/services/oral-surgery/tooth-extractions/", "description": "Gentle removal when a tooth can't be saved" },
+      { "label": "Wisdom Teeth Removal", "href": "/services/oral-surgery/wisdom-teeth-removal/", "description": "Planned with 3D imaging" }
+    ]},
+    { "title": "Whole-Body & Comfort", "description": "Care that looks beyond the tooth", "items": [
+      { "label": "Holistic Dentistry", "href": "/services/holistic-dentistry/", "description": "Biocompatible materials, prevention first" },
+      { "label": "TMJ Treatments", "href": "/tmj-treatments/", "description": "Relief for jaw pain, clicking and headaches" },
+      { "label": "All Services", "href": "/services/", "description": "Preventive, family, cosmetic, restorative and surgical" }
+    ]}
+  ],
+  "footer": [
+    { "title": "Practice", "items": [
+      { "label": "Our Practice", "href": "/about/" },
+      { "label": "Services", "href": "/services/" },
+      { "label": "Testimonials", "href": "/testimonials/" },
+      { "label": "Blog", "href": "/category/blogs/" },
+      { "label": "Contact", "href": "/contact/" },
+      { "label": "Request an Appointment", "href": "/appointment/" }
+    ]},
+    { "title": "Popular Services", "items": [
+      { "label": "Dental Implants", "href": "/services/dental-implants/" },
+      { "label": "Veneers", "href": "/services/cosmetic-dentistry/veneers/" },
+      { "label": "Invisalign", "href": "/services/cosmetic-dentistry/invisalign/" },
+      { "label": "Dental Crowns", "href": "/services/dental-crowns/" },
+      { "label": "Holistic Dentistry", "href": "/services/holistic-dentistry/" },
+      { "label": "TMJ Treatments", "href": "/tmj-treatments/" }
+    ]},
+    { "title": "Patient Resources", "items": [
+      { "label": "New Patient Offer", "href": "/new-patient-offer/" },
+      { "label": "Emergency Dental", "href": "/emergency-dental/" },
+      { "label": "Insurance & Financing", "href": "/contact/#insurance" },
+      { "label": "Book Online", "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE" }
+    ]}
+  ],
+  "legal": [
+    { "label": "Privacy Policy", "href": "/privacy-policy/" },
+    { "label": "Terms and Services", "href": "/terms-and-services/" },
+    { "label": "Sitemap", "href": "/sitemap/" }
+  ]
+}

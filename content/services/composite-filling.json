@@ -1,0 +1,122 @@
+{
+  "slug": "composite-filling",
+  "path": "/services/cosmetic-dentistry/composite-filling/",
+  "parentPath": "/services/cosmetic-dentistry/",
+  "category": "cosmetic",
+  "name": "Composite Filling",
+  "shortDescription": "Tooth-colored, metal-free fillings that repair decay and small chips invisibly.",
+  "seo": {
+    "title": "Composite Fillings in Santa Clarita | Dr. Neda Moezzi",
+    "description": "Tooth-colored, metal-free composite fillings in Santa Clarita, matched to your enamel and placed in one visit by Dr. Neda Moezzi. $59 new patient exam."
+  },
+  "hero": {
+    "eyebrow": "Cosmetic dentistry",
+    "h1": "Composite Fillings in Santa Clarita",
+    "lead": "Repair cavities and small cracks with a tooth-colored filling that blends into your smile. No metal, no mercury, usually one visit.",
+    "image": "/images/team/dr-moezzi-treating.jpg",
+    "imageAlt": "Dr. Moezzi treating a patient in the office"
+  },
+  "intro": {
+    "heading": "What a composite filling is",
+    "paragraphs": [
+      "A composite filling repairs a cavity or a small area of damage with a tooth-colored resin. Dr. Moezzi shades the material to match your enamel, bonds it directly to the tooth and shapes it to the natural contours, so the repair is hard to spot. Because the resin bonds to the tooth, less healthy structure needs to be removed than with a metal filling.",
+      "Composite fillings fit the holistic approach at Valencia Smile Expert. They contain no mercury or silver amalgam, they seal the tooth tightly against bacteria and they hold up to everyday chewing. Many patients in Santa Clarita also choose them to replace older metal fillings. The appointment is simple, and you see Dr. Moezzi from the exam through the final polish."
+    ]
+  },
+  "whoItsFor": {
+    "heading": "Who it's for",
+    "intro": "Composite fillings are a good fit for a range of patients.",
+    "items": [
+      "Cavities or minor tooth decay",
+      "Chipped, cracked or worn teeth",
+      "Old metal (amalgam) fillings you would like replaced",
+      "Teeth that grind and need reinforcement",
+      "Adults and teens who want a natural-looking repair"
+    ]
+  },
+  "benefits": {
+    "heading": "Benefits of composite fillings",
+    "intro": "A composite filling repairs the tooth and protects it, without changing how your smile looks.",
+    "items": [
+      { "title": "Matched to your tooth", "text": "Custom-shaded to blend with the surrounding enamel, so the filling is hard to spot." },
+      { "title": "Minimally invasive", "text": "Bonding preserves more of your natural tooth than a metal filling does." },
+      { "title": "Durable", "text": "With proper care, composite fillings can last many years under daily chewing." },
+      { "title": "Metal-free", "text": "No mercury and no risk of metal sensitivity, in keeping with our biocompatible materials." },
+      { "title": "Protects the tooth", "text": "A tight bond seals out bacteria and helps prevent further decay." }
+    ]
+  },
+  "process": {
+    "heading": "What to expect",
+    "intro": "Three steps, usually in one visit.",
+    "steps": [
+      { "title": "Evaluation and preparation", "text": "A full exam and digital imaging pinpoint the affected area. Dr. Moezzi numbs the tooth, removes the decay and preserves as much healthy structure as possible." },
+      { "title": "Placing the filling", "text": "Tooth-colored composite resin is layered into the tooth and shaped to match its natural contours." },
+      { "title": "Curing, polishing and bite check", "text": "A curing light hardens the resin. The filling is polished smooth and adjusted until your bite feels natural." }
+    ]
+  },
+  "technology": {
+    "heading": "Tools we use",
+    "intro": "Precise imaging helps us find decay early and keep the repair small.",
+    "items": [
+      { "title": "Digital X-rays", "text": "Low-dose images that locate decay between teeth and under old fillings." },
+      { "title": "Intraoral cameras", "text": "Close-up photos so you can see the cavity before and the finished filling after." }
+    ]
+  },
+  "aftercare": {
+    "heading": "Caring for your filling",
+    "before": [
+      "Tell us about any sensitivity, grinding or past reactions to dental materials",
+      "Eat a normal meal beforehand; you may want to wait until numbness fades to eat afterward"
+    ],
+    "after": [
+      "Brush twice a day with a soft-bristled toothbrush and fluoride toothpaste",
+      "Floss daily to clear plaque between teeth and along the gumline",
+      "Avoid biting hard objects such as ice, pens or fingernails",
+      "Limit stain-causing foods and drinks, especially right after treatment",
+      "Keep regular checkups and cleanings so we can monitor the filling",
+      "Tell us if you notice sensitivity or a rough edge"
+    ]
+  },
+  "cost": {
+    "heading": "Cost and financing",
+    "text": "Composite fillings are a routine restorative treatment, and most major PPO plans cover them in part, including Delta Dental, MetLife, Cigna, Aetna and others. Our front desk checks your benefits before your visit so you know what to expect. You receive a written estimate before treatment begins, and flexible financing is available if you are replacing several older fillings at once. If you are new to the practice, the $59 new patient special covers your exam and X-rays, which is where any filling begins."
+  },
+  "faqs": [
+    {
+      "q": "How long do composite fillings last?",
+      "a": "With proper care and regular dental visits, composite fillings often last 5 to 10 years, and sometimes longer. How long yours lasts depends on where it sits in the mouth, how well you clean around it and whether you grind your teeth. We check each filling at your routine visits."
+    },
+    {
+      "q": "Are composite fillings safe?",
+      "a": "Composite fillings are metal-free and mercury-free, made from a durable resin that is widely used in dentistry and considered biocompatible. They are a natural fit for patients who prefer a health-conscious option, and they are the material Dr. Moezzi uses for fillings at Valencia Smile Expert."
+    },
+    {
+      "q": "Do composite fillings look natural?",
+      "a": "Yes. The resin is shaded to match the color and texture of your own teeth, then shaped to the tooth's contours and polished. Most people cannot tell a composite filling from the surrounding enamel, which is why it is also the material of choice for front teeth."
+    },
+    {
+      "q": "Will my tooth be sensitive after the procedure?",
+      "a": "Some patients notice mild sensitivity to temperature or pressure for a few days after a filling. It usually fades on its own. If it lasts longer than a week or becomes uncomfortable, call us at (661) 254-5200 and we will take a look and adjust the filling if needed."
+    },
+    {
+      "q": "Can I eat right after getting a composite filling?",
+      "a": "Usually, yes. The curing light hardens the resin fully before you leave, so there is no waiting period for the filling itself. We do suggest waiting until the numbness wears off so you do not bite your cheek or tongue by accident."
+    },
+    {
+      "q": "How do composite fillings compare to other types?",
+      "a": "Composite fillings bond directly to the tooth, so they need less drilling than silver amalgam and preserve more natural structure. They also match tooth color, where amalgam is visibly metallic. Amalgam remains durable, but for appearance, conservation and a metal-free mouth, composite is the option we recommend."
+    }
+  ],
+  "related": ["dental-crowns", "cosmetic-dentistry", "holistic-dentistry", "restorative-dentistry"],
+  "cta": {
+    "heading": "Have a cavity or a chipped tooth?",
+    "text": "Book an appointment in Valencia. Dr. Moezzi will examine the tooth, explain your options and often place the filling the same visit.",
+    "buttonLabel": "Book a consultation"
+  },
+  "flags": [
+    "Source calls composite 'safe, biocompatible' in absolute terms; rewritten as 'considered biocompatible' and 'widely used in dentistry'.",
+    "Source's 'prevents further decay' softened to 'helps prevent further decay'.",
+    "Source has only post-treatment care; the two before-treatment items are generic appointment guidance, not clinical claims.",
+    "Healthline link reference and testimonials omitted."
+  ]
+}

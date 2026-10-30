@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+@custom-variant hocus (&:hover, &:focus-visible);
+
+/* Option B display face: downloaded only when used (data-display="calsans"). */
+@font-face {
+  font-family: "Cal Sans";
+  src: url("/fonts/CalSans-Regular.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                        */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* Brand palette (refined from the current site) */
+  --color-navy-950: #0b1a2c;
+  --color-navy-900: #112740; /* primary dark surface, headings */
+  --color-navy-800: #17324f;
+  --color-navy-700: #1f4066;
+  --color-steel-700: #2b557e;
+  --color-steel-600: #366797; /* accents, links, buttons */
+  --color-steel-500: #4a7cad;
+  --color-steel-100: #e3edf6;
+  --color-sky-50: #eef5fb;    /* pale sky highlight */
+  --color-sky-100: #dcebf7;
+  --color-champagne-50: #faf6ef;
+  --color-champagne-100: #f3ebdc;
+  --color-champagne-300: #dcc8a4; /* champagne accent (lines, eyebrows on dark) */
+  --color-champagne-500: #876a3a; /* champagne as text (AA on light tints) */
+  --color-champagne-400: #b89968;
+  --color-grey-900: #1f2933;
+  --color-grey-700: #4a5564;
+  --color-grey-600: #5a6675; /* secondary text (brand #667280 darkened for AA on tinted backgrounds) */
+  --color-grey-400: #9aa3ae;
+  --color-grey-300: #c9d0d8;
+  --color-grey-200: #e4e8ec;
+  --color-grey-100: #f1f3f5;
+  --color-white: #ffffff;
+  --color-offwhite: #fafafa;
+  --color-warm: #fdfbf7;      /* warm white background */
+  --color-success: #1f7a4d;
+  --color-danger: #b42318;
+
+  /* Type */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-display-active), var(--font-fraunces), Georgia, serif;
+
+  /* Fluid type scale (clamp between 390px and 1440px) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.65;
+  --text-md: 1.0625rem;
+  --text-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --text-lg--line-height: 1.6;
+  --text-xl: clamp(1.1875rem, 1.1rem + 0.45vw, 1.375rem);
+  --text-xl--line-height: 1.45;
+  --text-2xl: clamp(1.375rem, 1.25rem + 0.6vw, 1.625rem);
+  --text-2xl--line-height: 1.3;
+  --text-3xl: clamp(1.625rem, 1.4rem + 1vw, 2.125rem);
+  --text-3xl--line-height: 1.2;
+  --text-4xl: clamp(2rem, 1.6rem + 1.6vw, 2.875rem);
+  --text-4xl--line-height: 1.12;
+  --text-5xl: clamp(2.375rem, 1.8rem + 2.4vw, 3.75rem);
+  --text-5xl--line-height: 1.06;
+  --text-6xl: clamp(2.75rem, 2rem + 3.4vw, 4.75rem);
+  --text-6xl--line-height: 1.02;
+
+  /* Radii (large rounded cards) */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+
+  /* Soft layered shadows */
+  --shadow-soft: 0 1px 2px rgb(17 39 64 / 0.04), 0 8px 24px -12px rgb(17 39 64 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(17 39 64 / 0.05), 0 20px 40px -16px rgb(17 39 64 / 0.22);
+  --shadow-ring: 0 0 0 1px rgb(17 39 64 / 0.06);
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Hero entrance: transform only. Starting at opacity 0 would delay the LCP candidate until the animation ends. */
+  --animate-fade-up: rise 0.7s var(--ease-out-soft) both;
+  --animate-fade-in: rise 0.6s var(--ease-out-soft) both;
+
+  @keyframes rise {
+    from { transform: translateY(12px); }
+    to { transform: translateY(0); }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                 */
+/* ------------------------------------------------------------------ */
+@layer base {
+  :root {
+    --font-display-active: var(--font-fraunces);
+    /* Fraunces: optical size and softness for a quiet, editorial feel */
+    --display-settings: normal;
+    --display-weight: 500;
+    --display-tracking: -0.015em;
+    --header-h: 76px;
+    color-scheme: light;
+  }
+  :root[data-display="calsans"] {
+    --font-display-active: "Cal Sans", var(--font-inter), system-ui, sans-serif;
+    --display-settings: normal;
+    --display-weight: 600;
+    --display-tracking: -0.01em;
+  }
+
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + 16px);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-warm text-grey-900 font-sans antialiased;
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    overflow-x: clip;
+  }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    font-variation-settings: var(--display-settings);
+    font-weight: var(--display-weight);
+    letter-spacing: var(--display-tracking);
+    text-wrap: balance;
+    color: var(--color-navy-900);
+  }
+  h1 { font-size: var(--text-5xl); line-height: var(--text-5xl--line-height); }
+  h2 { font-size: var(--text-4xl); line-height: var(--text-4xl--line-height); }
+  h3 { font-size: var(--text-2xl); line-height: var(--text-2xl--line-height); }
+  h4 { @apply font-sans font-semibold text-navy-900; font-size: var(--text-lg); }
+  p { text-wrap: pretty; }
+  a { @apply underline-offset-4; }
+  ::selection { background: var(--color-steel-100); color: var(--color-navy-900); }
+  :focus-visible { outline: 3px solid var(--color-steel-600); outline-offset: 3px; border-radius: 4px; }
+  .dark-section :focus-visible { outline-color: var(--color-champagne-300); }
+  img, video { height: auto; max-width: 100%; }
+  button, input, select, textarea { font: inherit; }
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  [hidden] { display: none !important; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Components                                                           */
+/* ------------------------------------------------------------------ */
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-16 sm:py-20 lg:py-28; }
+  .section-tight { @apply py-12 sm:py-16 lg:py-20; }
+  .prose-measure { max-width: 70ch; }
+
+  .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-steel-600; }
+  .eyebrow::before { content: ""; @apply h-px w-6 bg-current opacity-70; }
+  .dark-section .eyebrow { @apply text-champagne-300; }
+  .lead { @apply text-grey-600 text-lg; }
+  .dark-section .lead { @apply text-white/75; }
+  .dark-section h1, .dark-section h2, .dark-section h3 { color: var(--color-white); }
+
+  /* Buttons: ≥44px tap targets */
+  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 py-2.5 text-[0.9375rem] font-semibold no-underline transition-[transform,box-shadow,background-color,color,border-color] duration-200 ease-out select-none; }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { @apply bg-steel-600 text-white shadow-soft; }
+  .btn-primary:hover { @apply bg-steel-700 shadow-lift; }
+  .btn-dark { @apply bg-navy-900 text-white; }
+  .btn-dark:hover { @apply bg-navy-800; }
+  .btn-light { @apply bg-white text-navy-900 shadow-soft; }
+  .btn-light:hover { @apply bg-sky-50; }
+  .btn-outline { @apply border border-navy-900/20 text-navy-900 bg-transparent; }
+  .btn-outline:hover { @apply border-navy-900 bg-navy-900/5; }
+  .dark-section .btn-outline { @apply border-white/35 text-white; }
+  .dark-section .btn-outline:hover { @apply border-white bg-white/10; }
+  .btn-lg { @apply min-h-13 px-8 text-base; }
+  .btn-sm { @apply min-h-11 px-4 text-sm; } /* 44px: every button is a full tap target */
+
+  .card { @apply rounded-3xl bg-white shadow-soft ring-1 ring-navy-900/[0.06]; }
+  .card-hover { @apply transition-[transform,box-shadow] duration-300 ease-out; }
+  .card-hover:hover { @apply -translate-y-1 shadow-lift; }
+  @media (prefers-reduced-motion: reduce) { .card-hover:hover { transform: none; } }
+
+  .hairline { @apply border-navy-900/10; }
+
+  /* Dark surfaces with a subtle grain + gradient */
+  .dark-section { @apply relative bg-navy-900 text-white; }
+  .dark-section::before { content: ""; @apply pointer-events-none absolute inset-0; background: radial-gradient(1200px 500px at 15% -10%, rgb(54 103 151 / 0.45), transparent 60%), radial-gradient(900px 400px at 100% 110%, rgb(220 200 164 / 0.14), transparent 55%); }
+  /* Grain: a 1.2kB 64px noise tile inlined as a data URI, so it paints with the section's first paint (a background image fetched over the network would become the LCP candidate on dark-hero pages). */
+  .dark-section::after { content: ""; @apply pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAgMAAADXB5lNAAAADFBMVEX///+qqqpVVVUAAAABM1s0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAES0lEQVQ4ywFABL/7AJ0mK9HlOReYWpuFj/E/OIYAl9x4WdHJRVDeq65u44YBTgDjnmRb9o1CW4115UppZV2NAIKArIGxPsOrxzZgIoHe8qgABgNub1/s+0770RSw120KAwBPdNYLRAzGsT8s3xF7nZesACpY01ZTVa0SyDTU4uf8u1cAAYbc9jSYk78DEEz8bZik/QD3+w7L5yM2ZPAAqRGEJu3cANUa0C+QFraL7+aGScr47doAMy43jYS6KroWcM5qizMN/wCrTk4X7J+EeqZh+mR0hyMCAIr77FGU9cRoZL+ewFxWquQAFOZcf5ZXciS2q9BjyPirgwBb3y4j+/rOlXUAbSaxEsyvALzOWPxY/XZB8pSe9cJCZn4AMwnvxPNxbgfD4+gh5dahogA+ojnf7fd87lAYCJ07gGu4AG7GNtiKrmJd4JJHoTQIppMAWlNXJhNto9eGWtq6fGrh2gBZxbPrYzs8W+Uee4ySl3mtAOA2D3edGPkynHt1YkTkhAMAMf0nmiTAHVspRMY5xMvfCwDAQAvh0lhQe9MGz/mKW4nzAM6bHlsqZvBLpyb6sni8cgEAFf5rbK5pOrsIeCzt5vGUYACxD/JSXNgko8OUSEr7UPq5AIIi/h3rjmpxyml8vQKz5W8ACqA6rBiXioHstm1e4Xwi1gAFygasrR5uym23NGgq5RqHAIr5003AtYeKHAK3rZ+yr/UANSYqf8+ClR11n7tRrslxgwBgd02C7Zzz5Rv58c3KGpD1AGWck5GWMv7CpHrGfLKo2JoAtDUPR3PeJwAzyqrQ/rRtYgDS+4SlsvrJ+/HixjMKmiCIAOZS0wsa+2sh9quYfJj6KEIAjgeYsPoSa2eV8b+DhOCNIwCN7TIp26VDzNxcuwt+I1LgAFRWKWqfJLzWTUC9r8hOQTAAqlYiwP5F9YYbfKeV0wqStgDjyZMx0yzAnBU+pQNIq1z3AANzwZ4psf5oy/jyb4c3yxMA63VBdIiaGrGp1NpAQY38BADFcY7bb7IGR3lK49W51VLdADn9WDe4R4KaPlSLQhRBakIA3ochNIViU+VUDQ18t2DL3gBveYd/T4oySay5NtB4Jr/7AJJ0N3zRgK8vHPHAdPXKLXkA7GhbbC8xBEq7H2omFPKfNwCREatv3QvkR0yN9H3XIb09ABuMvY3sIcXojipV8yC08MYAe+hhVStFvdZ6tk9zbxTPvQBcmO5pWM7oKeKgrAH1xImBAAFutdn2gQ4+Sqdx3cjkDncARvenmSzyQLY13AaE311C7wA1IEZDy9mhzfBzowe/WGjZAAdSgo0SI1YgMdouto+m9F4AtaLCcSdpCDzfTfkysnQHgAD/mdcQqdEGZRUs3CePHMauAHCgDebuEg5UuB2A0XKjvGIADiFBhEdijIevlgrsRFzU8QCqIZFZvsX3ng36M817ofTjAD1TuQNolb3ect+CypiDSZQ/lxOGC44JUQAAAABJRU5ErkJggg=="); background-size: 64px 64px; }
+  .dark-section > * { position: relative; }
+
+  /* Scroll reveal: CSS scroll-driven animation, no JavaScript (components/ui/Reveal.tsx).
+     Plays once as the element enters the viewport; unsupported browsers show content as is. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        animation: reveal-in 1ms linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 35%;
+        animation-delay: var(--reveal-delay, 0ms);
+      }
+    }
+  }
+  /* Transform only: a partial-opacity start would fail automated contrast checks for content below the fold. */
+  @keyframes reveal-in {
+    from { transform: translateY(18px); }
+    to { transform: translateY(0); }
+  }
+
+  /* Rich text (blog bodies, legal pages) */
+  .rich { @apply text-[1.0625rem] leading-[1.75] text-grey-700; }
+  .rich > * + * { @apply mt-5; }
+  .rich h2 { @apply mt-12 mb-4 text-3xl; }
+  .rich h3 { @apply mt-9 mb-3 text-2xl; }
+  .rich h4 { @apply mt-7 mb-2; }
+  .rich a { @apply text-steel-600 underline decoration-steel-600/40 hover:decoration-steel-600; }
+  .rich strong { @apply font-semibold text-navy-900; }
+  .rich ul { @apply list-disc pl-6 space-y-2; }
+  .rich ol { @apply list-decimal pl-6 space-y-2; }
+  .rich li::marker { @apply text-steel-600; }
+  .rich blockquote { @apply border-l-2 border-champagne-300 pl-5 italic text-grey-700; }
+  .rich table { @apply w-full border-collapse text-[0.95rem]; }
+  .rich .table-wrap { @apply my-6 overflow-x-auto rounded-2xl ring-1 ring-navy-900/10; }
+  .rich th { @apply bg-sky-50 px-4 py-3 text-left font-semibold text-navy-900; }
+  .rich td { @apply border-t border-navy-900/10 px-4 py-3 align-top; }
+  .rich img { @apply rounded-2xl; }
+  .rich hr { @apply my-10 border-navy-900/10; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+  .min-h-13 { min-height: 3.25rem; }
+}

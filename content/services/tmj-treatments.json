@@ -1,0 +1,101 @@
+{
+  "slug": "tmj-treatments",
+  "path": "/tmj-treatments/",
+  "parentPath": "/services/",
+  "category": "preventive",
+  "name": "TMJ Treatments",
+  "shortDescription": "Relief for jaw pain, clicking and headaches with night guards, Botox and bite care.",
+  "seo": {
+    "title": "TMJ Treatment in Santa Clarita | Dr. Neda Moezzi",
+    "description": "TMJ treatment in Santa Clarita for jaw pain, clicking and headaches: custom night guards, Botox, bite adjustments and oral appliances from Dr. Neda Moezzi."
+  },
+  "hero": {
+    "eyebrow": "Jaw pain and headaches",
+    "h1": "TMJ Treatment in Valencia for Jaw Pain and Headaches",
+    "lead": "Jaw pain, clicking and tension headaches often trace back to the jaw joint. Dr. Moezzi looks for the cause and treats it with custom appliances, bite correction and whole-body guidance.",
+    "image": "/images/team/dr-moezzi-portrait.jpg",
+    "imageAlt": "Dr. Neda Moezzi, DDS, in her Valencia office"
+  },
+  "intro": {
+    "heading": "Treating the cause, not just the ache",
+    "paragraphs": [
+      "The temporomandibular joint, or TMJ, is the hinge that connects your lower jaw to your skull. It works every time you chew, speak or yawn. When the joint or the muscles around it are strained, injured or out of alignment, the result is a TMJ disorder, often shortened to TMD. Common causes include grinding or clenching, a misaligned bite, stress, arthritis in the joint and injury to the jaw or face.",
+      "Dr. Moezzi takes an integrative view of TMJ care. Rather than only masking symptoms, she looks for what is driving them, whether that is nighttime clenching, worn teeth or muscle tension, and builds a plan around it. Treatment may include a custom night guard, Botox to relax overactive jaw muscles, bite adjustments or practical guidance on posture and stress. Patients from Valencia and across Santa Clarita come to us for this calm, thorough approach."
+    ]
+  },
+  "whoItsFor": {
+    "heading": "Who it's for",
+    "intro": "Occasional jaw tension is common, but frequent or worsening symptoms deserve a closer look.",
+    "items": [
+      "Frequent jaw pain or stiffness, often in the morning or after chewing",
+      "Clicking, popping or locking when you open or close your mouth",
+      "Recurring headaches or earaches that seem to start in the jaw or temples",
+      "Pain or limited movement when biting or chewing firmer foods",
+      "Nighttime grinding or clenching, often noticed first by a partner",
+      "Neck or shoulder pain from muscle tension that spreads beyond the jaw"
+    ]
+  },
+  "benefits": {
+    "heading": "What treatment can do for you",
+    "intro": "Addressing a TMJ disorder tends to improve more than just your jaw.",
+    "items": [
+      { "title": "Less pain", "text": "Targeted treatment can reduce jaw tension, headaches and muscle soreness linked to TMJ disorders." },
+      { "title": "Smoother jaw movement", "text": "Many patients find speaking, chewing and yawning more comfortable once the joint is under less strain." },
+      { "title": "Better sleep", "text": "Night guards and other appliances help limit grinding and clenching, so you and your teeth rest easier." },
+      { "title": "Protection for teeth and gums", "text": "Reducing grinding and uneven bite pressure helps prevent long-term wear and damage." },
+      { "title": "Everyday ease", "text": "With less pain and tension, daily activities feel simpler again." }
+    ]
+  },
+  "options": {
+    "heading": "TMJ treatment options",
+    "intro": "Dr. Moezzi combines these as needed to relieve pain, protect your teeth and restore balance.",
+    "items": [
+      { "title": "Custom night guards", "text": "A precisely fitted guard worn during sleep that cushions grinding and clenching, easing pressure on the joint and protecting your teeth from wear." },
+      { "title": "Botox for TMJ relief", "text": "Targeted injections relax overactive jaw muscles, which can reduce pain, tension and strain on the joint." },
+      { "title": "Sleep apnea and oral devices", "text": "Custom appliances that support nighttime breathing and can also lessen the clenching and grinding that aggravate TMJ symptoms." },
+      { "title": "Bite adjustments and restorative care", "text": "Correcting how your teeth meet or rebuilding worn teeth restores balanced function and takes stress off the jaw joint." },
+      { "title": "Lifestyle and stress guidance", "text": "Practical strategies for posture, relaxation and daily habits that reduce TMJ triggers and support long-term comfort." }
+    ]
+  },
+  "process": {
+    "heading": "What to expect",
+    "intro": "Relief starts with understanding your symptoms and building a plan that fits your life.",
+    "steps": [
+      { "title": "Comprehensive evaluation", "text": "Dr. Moezzi examines your jaw, bite and muscles, reviews your medical history and may take digital X-rays or 3D CBCT images of the joint to pinpoint the source of your discomfort." },
+      { "title": "A personalized plan", "text": "Based on what she finds, Dr. Moezzi designs a plan that may combine an oral appliance, Botox therapy, bite adjustment and holistic recommendations. You will understand each step and why it is included." },
+      { "title": "Ongoing care and support", "text": "Follow-up visits track your progress so treatment can be fine-tuned. You get at-home guidance along the way, and the aim is steady, durable improvement in comfort and function." }
+    ]
+  },
+  "technology": {
+    "heading": "Diagnostics that find the source",
+    "intro": "Accurate imaging and digital records lead to appliances that fit and plans that work.",
+    "items": [
+      { "title": "3D CBCT imaging", "text": "Three-dimensional scans show the jaw joint and surrounding bone in detail when a closer look is needed." },
+      { "title": "iTero digital scanner", "text": "Digital impressions capture your bite accurately for a night guard or oral appliance that fits well." },
+      { "title": "Digital X-rays", "text": "Low-radiation images help assess your teeth, bite and joint at your first visit." }
+    ]
+  },
+  "cost": {
+    "heading": "Cost and financing",
+    "text": "TMJ treatment costs depend on what your plan includes, whether that is a custom night guard, Botox therapy, bite adjustments or a combination. After your evaluation, Dr. Moezzi explains the recommended approach and you receive a written estimate before treatment begins. Coverage for TMJ care varies by insurance provider; some plans cover appliances and others do not. We accept most major PPO plans, including Delta Dental, MetLife, Cigna and Aetna, and our team reviews your benefits so you know what to expect. Flexible financing is available, and new patients can begin with the $59 exam and X-ray special."
+  },
+  "faqs": [
+    { "q": "What are the most common symptoms of TMJ disorders?", "a": "The most common signs are jaw pain or stiffness, clicking or popping sounds when you open and close, headaches and earaches, and difficulty chewing or opening wide. Some patients also notice discomfort spreading to the neck and shoulders, because the jaw muscles connect to those areas." },
+    { "q": "How do I know if I need TMJ treatment?", "a": "Occasional jaw tension is normal, but ongoing discomfort, trouble chewing, frequent headaches or a jaw that clicks or locks are worth evaluating. Getting assessed early can help prevent worn teeth and longer-term joint problems. Dr. Moezzi can tell you whether treatment makes sense or whether watchful waiting is enough." },
+    { "q": "Are TMJ treatments painful?", "a": "Most TMJ treatments are non-invasive and intended to ease discomfort, not add to it. Night guards and oral appliances are custom fitted, bite adjustments are minor and can be done with local anesthesia if needed, and Botox injections involve brief, small needle sticks that most patients tolerate well." },
+    { "q": "How long does it take to see results from TMJ treatment?", "a": "It varies. Some patients notice improvement within a few weeks of wearing a night guard or receiving Botox, while others take longer, depending on the severity of the condition and the elements of the plan. Dr. Moezzi monitors your progress at follow-up visits and adjusts treatment as needed." },
+    { "q": "Does insurance cover TMJ treatments?", "a": "Coverage for TMJ treatment varies widely by provider and plan. Some cover oral appliances, some cover a portion of other therapies and some exclude TMJ care altogether. Our team will review your benefits, explain what is included and help you explore financing options if needed." }
+  ],
+  "related": ["holistic-dentistry", "dental-crowns", "restorative-dentistry", "invisalign"],
+  "cta": {
+    "heading": "Find out what is behind your jaw pain",
+    "text": "Schedule a TMJ evaluation with Dr. Moezzi at our Valencia office. Call (661) 254-5200 or book online.",
+    "buttonLabel": "Book a consultation"
+  },
+  "flags": [
+    "Source calls the practice the '#1 TMJ dentist in Valencia' and a 'TMJ specialist'; omitted, as neither is verifiable and 'specialist' implies a recognized dental specialty.",
+    "Source promises 'lasting pain relief' and to 'ensure lasting relief'; softened to 'can reduce' and 'the aim is steady, durable improvement'.",
+    "Botox and sleep apnea oral devices kept as listed options because the source names them; no efficacy or sleep apnea treatment claims were added.",
+    "Source mentions sedation options in the TMJ 'why choose us' list; omitted as not clearly relevant to non-invasive TMJ care."
+  ]
+}

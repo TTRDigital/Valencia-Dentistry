@@ -1,0 +1,67 @@
+{
+  "slug": "appointment",
+  "path": "/appointment/",
+  "title": "Appointment",
+  "breadcrumb": "Request an Appointment",
+  "seo": {
+    "title": "Request an Appointment | Valencia Smile Expert",
+    "description": "Request a dental appointment in Valencia, Santa Clarita. Book online in seconds or send your details and we'll confirm a time. $59 new patient exam."
+  },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "page",
+      "eyebrow": "Appointments",
+      "heading": "Book your visit with Dr. Moezzi.",
+      "lead": "Choose a time instantly with online booking, or send a request and we'll confirm the earliest slot that suits you. Same-day appointments are often available.",
+      "primary": {
+        "label": "Book online now",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      },
+      "secondary": {
+        "label": "Call (661) 254-5200",
+        "href": "tel:+16612545200"
+      },
+      "trust": true
+    },
+    {
+      "_type": "form",
+      "eyebrow": "Request a time",
+      "heading": "Prefer we call you?",
+      "lead": "Fill in the form and a member of our team will reach out to confirm your appointment.",
+      "formName": "Appointment request"
+    },
+    {
+      "_type": "featureGrid",
+      "eyebrow": "What to expect",
+      "heading": "Your first visit, step by step",
+      "columns": 3,
+      "items": [
+        {
+          "icon": "calendar",
+          "title": "1. A warm welcome",
+          "text": "Arrive a few minutes early for a short health history. Bring your ID, insurance card and current medications."
+        },
+        {
+          "icon": "tech",
+          "title": "2. A thorough exam",
+          "text": "Digital X-rays, an oral cancer screening and an unhurried exam with Dr. Moezzi."
+        },
+        {
+          "icon": "heart",
+          "title": "3. A plan you understand",
+          "text": "Clear options, honest priorities and a written estimate before anything begins."
+        }
+      ]
+    },
+    {
+      "_type": "insurance"
+    },
+    {
+      "_type": "visit",
+      "eyebrow": "Visit us",
+      "heading": "Where to find us",
+      "lead": "27420 Tourney Rd, Suite 240, Santa Clarita, CA 91355. Free parking on site."
+    }
+  ]
+}

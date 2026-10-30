@@ -1,0 +1,73 @@
+{
+  "slug": "services",
+  "path": "/services/",
+  "title": "Services",
+  "breadcrumb": "Services",
+  "seo": {
+    "title": "Dental Services in Santa Clarita | Valencia Smile Expert",
+    "description": "Preventive, cosmetic, restorative, holistic and surgical dentistry in Valencia, Santa Clarita. One dentist at every visit, Dr. Neda Moezzi."
+  },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "page",
+      "eyebrow": "Our services",
+      "heading": "Complete dentistry, one calm place.",
+      "lead": "Cleanings, crowns, implants, veneers, Invisalign and oral surgery, all planned on 3D imaging and delivered by Dr. Moezzi herself. Browse by category, or tell us what is bothering you and we will point you to the right care.",
+      "primary": {
+        "label": "Book now",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      },
+      "secondary": {
+        "label": "Ask a question",
+        "href": "/contact/"
+      },
+      "image": {
+        "src": "/images/team/team-four.jpg",
+        "alt": "Dr. Neda Moezzi with three members of her team"
+      },
+      "trust": true
+    },
+    {
+      "_type": "servicesHub"
+    },
+    {
+      "_type": "featureGrid",
+      "eyebrow": "Also at the practice",
+      "heading": "Preventive and family care for every age",
+      "lead": "Not every service needs its own page. These are part of everyday care here, and the first thing we talk about with new patients.",
+      "columns": 4,
+      "items": [
+        {
+          "icon": "sparkle",
+          "title": "Cleanings & exams",
+          "text": "Gentle hygiene visits, digital X-rays, oral cancer screenings and fluoride."
+        },
+        {
+          "icon": "heart",
+          "title": "Children & teens",
+          "text": "Infant exams, sealants, space maintainers and hygiene coaching for growing smiles."
+        },
+        {
+          "icon": "shield",
+          "title": "Night guards & sleep",
+          "text": "Custom guards for grinding and TMJ, and oral appliances for sleep apnea."
+        },
+        {
+          "icon": "bolt",
+          "title": "Emergency care",
+          "text": "Same-day appointments for pain, broken teeth and swelling. Call us first."
+        }
+      ]
+    },
+    {
+      "_type": "insurance"
+    },
+    {
+      "_type": "cta",
+      "eyebrow": "Not sure where to start?",
+      "heading": "Begin with a $59 new patient exam.",
+      "text": "A thorough exam, digital X-rays and an unhurried conversation with Dr. Moezzi about what you need and what you can wait on."
+    }
+  ]
+}

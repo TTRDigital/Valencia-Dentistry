@@ -1,0 +1,33 @@
+import { defineArrayMember, defineField, defineType } from "sanity";
+
+/** Section types for the flexible Page builder (components/sections). */
+const common = [
+  defineField({ name: "eyebrow", type: "string" }),
+  defineField({ name: "heading", type: "string", validation: (r) => r.required() }),
+  defineField({ name: "lead", type: "text", rows: 2 }),
+];
+const link = (name: string, title: string) => defineField({ name, title, type: "link" });
+const preview = (title: string) => ({ select: { heading: "heading" }, prepare: ({ heading }: { heading?: string }) => ({ title: heading || title, subtitle: title }) });
+
+export const sectionTypes = [
+  defineType({ name: "hero", title: "Hero", type: "object", fields: [defineField({ name: "variant", type: "string", options: { list: ["home", "page", "landing"] }, initialValue: "page" }), ...common, link("primary", "Primary button"), link("secondary", "Secondary button"), defineField({ name: "image", type: "siteImage" }), defineField({ name: "trust", type: "boolean", title: "Show trust row (rating, PPO, $59)" })], preview: preview("Hero") }),
+  defineType({ name: "introSplit", title: "Intro with photo", type: "object", fields: [...common.slice(0, 2), defineField({ name: "body", type: "array", of: [{ type: "text" }] }), defineField({ name: "image", type: "siteImage" }), defineField({ name: "imageSide", type: "string", options: { list: ["left", "right"] } }), link("cta", "Button")], preview: preview("Intro with photo") }),
+  defineType({ name: "featureGrid", title: "Feature grid", type: "object", fields: [...common, defineField({ name: "columns", type: "number", options: { list: [2, 3, 4] } }), defineField({ name: "dark", type: "boolean" }), defineField({ name: "items", type: "array", of: [{ type: "feature" }] })], preview: preview("Feature grid") }),
+  defineType({ name: "values", title: "Values list", type: "object", fields: [...common, defineField({ name: "items", type: "array", of: [{ type: "feature" }] })], preview: preview("Values") }),
+  defineType({ name: "serviceCategories", title: "Service categories", type: "object", fields: [...common, defineField({ name: "categories", type: "array", of: [defineArrayMember({ type: "object", fields: [defineField({ name: "title", type: "string" }), defineField({ name: "text", type: "text", rows: 2 }), defineField({ name: "href", type: "string" }), defineField({ name: "items", type: "array", of: [{ type: "link" }] })] })] })], preview: preview("Service categories") }),
+  defineType({ name: "beforeAfter", title: "Before / after gallery", type: "object", fields: [...common, defineField({ name: "caseIds", type: "array", of: [{ type: "string" }], description: "Leave empty to show all cases" })], preview: preview("Before / after") }),
+  defineType({ name: "doctor", title: "Meet the doctor", type: "object", fields: [...common.slice(0, 2), defineField({ name: "quote", type: "text", rows: 2 }), defineField({ name: "body", type: "array", of: [{ type: "text" }] }), defineField({ name: "image", type: "siteImage" }), defineField({ name: "stats", type: "array", of: [defineArrayMember({ type: "object", fields: [defineField({ name: "value", type: "string" }), defineField({ name: "label", type: "string" })] })] }), link("cta", "Button")], preview: preview("Meet the doctor") }),
+  defineType({ name: "reviews", title: "Reviews", type: "object", fields: [...common, defineField({ name: "ids", type: "array", of: [{ type: "string" }], description: "Leave empty to show all" })], preview: preview("Reviews") }),
+  defineType({ name: "faq", title: "FAQ accordion", type: "object", fields: [...common, defineField({ name: "items", type: "array", of: [{ type: "faqItem" }] }), defineField({ name: "schema", type: "boolean", title: "Print FAQ structured data", initialValue: true })], preview: preview("FAQ") }),
+  defineType({ name: "visit", title: "Visit us (map + hours)", type: "object", fields: [...common, defineField({ name: "showMap", type: "boolean", initialValue: true })], preview: preview("Visit us") }),
+  defineType({ name: "cta", title: "Call to action", type: "object", fields: [...common.slice(0, 2), defineField({ name: "text", type: "text", rows: 2 }), link("primary", "Primary button"), link("secondary", "Secondary button"), defineField({ name: "image", type: "siteImage" })], preview: preview("Call to action") }),
+  defineType({ name: "richText", title: "Text", type: "object", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "body", type: "text", rows: 12, description: "Markdown" }), defineField({ name: "narrow", type: "boolean", initialValue: true })], preview: preview("Text") }),
+  defineType({ name: "team", title: "Team", type: "object", fields: [...common, defineField({ name: "slugs", type: "array", of: [{ type: "string" }] })], preview: preview("Team") }),
+  defineType({ name: "photoGrid", title: "Photo grid", type: "object", fields: [...common, defineField({ name: "images", type: "array", of: [{ type: "siteImage" }] })], preview: preview("Photo grid") }),
+  defineType({ name: "form", title: "Appointment form", type: "object", fields: [...common, defineField({ name: "formName", type: "string", initialValue: "Appointment request" }), defineField({ name: "services", type: "boolean", title: "Show service picker", initialValue: true })], preview: preview("Form") }),
+  defineType({ name: "servicesHub", title: "All services (auto)", type: "object", fields: [defineField({ name: "note", type: "string", readOnly: true, initialValue: "Lists every service automatically" })], preview: { prepare: () => ({ title: "All services (auto)" }) } }),
+  defineType({ name: "insurance", title: "Insurance logos", type: "object", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "text", type: "text", rows: 2 })], preview: preview("Insurance") }),
+  defineType({ name: "offer", title: "New patient offer", type: "object", fields: [...common.slice(0, 2), defineField({ name: "text", type: "text", rows: 2 }), defineField({ name: "bullets", type: "array", of: [{ type: "string" }] }), defineField({ name: "fine", type: "text", rows: 2, title: "Fine print" }), link("cta", "Button")], preview: preview("Offer") }),
+];
+
+export const sections = sectionTypes.map((t) => t.name);

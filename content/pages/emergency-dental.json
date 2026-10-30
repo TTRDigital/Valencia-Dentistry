@@ -1,0 +1,61 @@
+{
+  "slug": "emergency-dental",
+  "path": "/emergency-dental/",
+  "title": "Emergency Dental",
+  "breadcrumb": "Emergency Dental",
+  "seo": {
+    "title": "Emergency Dentist in Valencia, Santa Clarita | Same-Day",
+    "description": "Tooth pain, a broken tooth or swelling? Valencia Smile Expert offers same-day emergency dental care in Santa Clarita. Call (661) 254-5200 now."
+  },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "landing",
+      "eyebrow": "Emergency dental care",
+      "heading": "In pain? Call us first.",
+      "lead": "Same-day emergency appointments in Valencia for toothaches, broken or knocked-out teeth, lost crowns and swelling. Dr. Moezzi will relieve the pain, then fix the cause.",
+      "primary": { "label": "Call (661) 254-5200", "href": "tel:+16612545200" },
+      "secondary": { "label": "Request a callback", "href": "/appointment/" },
+      "image": { "src": "/images/team/dr-moezzi-treating.jpg", "alt": "Dr. Neda Moezzi treating a patient in the office" },
+      "trust": true
+    },
+    {
+      "_type": "featureGrid",
+      "eyebrow": "We treat",
+      "heading": "Common dental emergencies",
+      "lead": "If you are unsure whether it is an emergency, call. We would rather see you early than late.",
+      "columns": 3,
+      "items": [
+        { "icon": "bolt", "title": "Severe toothache", "text": "Persistent or throbbing pain often means infection or a deep cavity. Same-day evaluation and relief." },
+        { "icon": "tooth", "title": "Chipped or broken tooth", "text": "Bonding, a same-day crown or a veneer, depending on the damage." },
+        { "icon": "shield", "title": "Knocked-out tooth", "text": "Keep the tooth moist in milk or saliva and call immediately. Time matters." },
+        { "icon": "sparkle", "title": "Lost filling or crown", "text": "Protect the tooth and come in. In-house crowns mean a fast, lasting fix." },
+        { "icon": "heart", "title": "Swelling or abscess", "text": "Facial swelling can become serious. Call us right away; if you have trouble breathing, go to the ER." },
+        { "icon": "tech", "title": "Wisdom tooth pain", "text": "3D imaging to see what is happening, and treatment or extraction when needed." }
+      ]
+    },
+    {
+      "_type": "richText",
+      "heading": "What to do right now",
+      "body": "**Toothache:** rinse with warm salt water, floss gently to remove trapped food and take over-the-counter pain relief as directed. Do not place aspirin on the gum.\n\n**Knocked-out tooth:** hold it by the crown, not the root. Rinse briefly if dirty, try to place it back in the socket, or keep it in milk. Call us within the hour if you can.\n\n**Broken tooth:** save any pieces, rinse your mouth, and use a cold compress for swelling.\n\n**Lost crown:** keep the crown, avoid chewing on that side, and bring it with you.\n\n**Swelling with fever, or difficulty breathing or swallowing:** go to the nearest emergency room first, then call us."
+    },
+    {
+      "_type": "featureGrid",
+      "eyebrow": "Why here",
+      "heading": "Calm, fast, thorough",
+      "columns": 3,
+      "items": [
+        { "icon": "calendar", "title": "Same-day appointments", "text": "Call early and we will make room. Our hours are Monday to Friday, 8am to 5pm." },
+        { "icon": "user", "title": "Dr. Moezzi herself", "text": "The dentist who sees you is the dentist who treats you. No handoffs." },
+        { "icon": "tag", "title": "No surprise bills", "text": "Most PPO plans accepted, a written estimate before treatment, flexible financing." }
+      ]
+    },
+    { "_type": "faq", "eyebrow": "Emergency FAQ", "heading": "Questions in a hurry", "items": [
+      { "q": "Do you see emergency patients who are new to the practice?", "a": "Yes. Call (661) 254-5200 and tell us what is happening. We do our best to see new and existing patients the same day." },
+      { "q": "What if it is after hours?", "a": "Call the office and follow the instructions on the message. For swelling that affects breathing or swallowing, severe bleeding or facial trauma, go to the nearest emergency room first." },
+      { "q": "Will you treat the problem on the same visit?", "a": "Often, yes. Our first priority is relieving pain and stabilizing the tooth. Some treatments, such as a root canal or an implant, may need a follow-up appointment." },
+      { "q": "Is emergency care covered by insurance?", "a": "Most PPO plans cover emergency exams and X-rays. We verify benefits for you and explain any costs before treatment." }
+    ] },
+    { "_type": "visit", "eyebrow": "Get here", "heading": "27420 Tourney Rd, Suite 240", "lead": "Just off the I-5 in Valencia. Free parking and an elevator to the second floor." }
+  ]
+}

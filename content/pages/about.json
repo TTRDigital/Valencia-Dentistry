@@ -1,0 +1,287 @@
+{
+  "slug": "about",
+  "path": "/about/",
+  "title": "Our Practice",
+  "breadcrumb": "Our Practice",
+  "seo": {
+    "title": "About Dr. Neda Moezzi | Valencia Smile Expert",
+    "description": "Meet Dr. Neda Moezzi and the Valencia Smile Expert team in Santa Clarita: holistic, one-on-one dentistry with 3D imaging, PRF therapy and same-day crowns."
+  },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "page",
+      "eyebrow": "Our practice",
+      "heading": "Dentistry with heart, in Valencia since 2007.",
+      "lead": "Valencia Smile Expert blends clinical precision and modern technology with a warm, one-on-one approach. Dr. Neda Moezzi leads every visit herself, so you are never handed off and never rushed.",
+      "primary": {
+        "label": "Book a visit",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      },
+      "secondary": {
+        "label": "See our services",
+        "href": "/services/"
+      },
+      "image": {
+        "src": "/images/team/team-seated.jpg",
+        "alt": "Dr. Neda Moezzi seated with three members of her team"
+      },
+      "trust": true
+    },
+    {
+      "_type": "introSplit",
+      "eyebrow": "Our story",
+      "heading": "Santa Clarita's trusted dental home",
+      "body": [
+        "The practice has served Santa Clarita families since 2007. Under Dr. Moezzi it has grown into a place where advanced care and genuine kindness sit side by side: a calm office, a small team that knows your name, and a dentist who treats every patient the way she would treat her own family.",
+        "Her mission from the start has been simple. High-quality dentistry should be accessible, compassionate and truly patient-centered, whether you are here for a routine cleaning or a full smile reconstruction."
+      ],
+      "image": {
+        "src": "/images/team/team-office-wide.jpg",
+        "alt": "Dr. Neda Moezzi with her dental team in the office"
+      },
+      "imageSide": "right"
+    },
+    {
+      "_type": "values",
+      "eyebrow": "Philosophy",
+      "heading": "The values behind every appointment",
+      "lead": "We practice holistic, integrative dentistry: we look beyond the symptom to the cause, choose biocompatible materials, and plan for your long-term health rather than a quick fix.",
+      "items": [
+        {
+          "title": "Individualized attention",
+          "text": "Every patient, every visit, gets our full focus. You see Dr. Moezzi herself, every time."
+        },
+        {
+          "title": "Holistic approach",
+          "text": "We consider your whole-body wellness and use biocompatible, mercury-free materials."
+        },
+        {
+          "title": "Long-term outlook",
+          "text": "Prevention, education and lasting solutions over short-term patches."
+        },
+        {
+          "title": "Comfort and clarity",
+          "text": "Sedation options, plain-language explanations and a friendly, unhurried atmosphere."
+        },
+        {
+          "title": "Excellence in care",
+          "text": "Advanced technology and proven techniques, with no shortcuts."
+        },
+        {
+          "title": "Honesty and transparency",
+          "text": "Options and costs explained up front. No surprises."
+        },
+        {
+          "title": "Community commitment",
+          "text": "Serving Santa Clarita, Valencia, Stevenson Ranch, Newhall, Saugus and Canyon Country with pride."
+        },
+        {
+          "title": "Flexible scheduling",
+          "text": "Convenient appointment times and same-day care when you need it."
+        }
+      ]
+    },
+    {
+      "_type": "team",
+      "eyebrow": "Meet your dentist",
+      "heading": "Led by Dr. Neda Moezzi, DDS",
+      "lead": "Founder and lead provider, known for compassionate care, technical precision and the long-term relationships she builds with patients."
+    },
+    {
+      "_type": "featureGrid",
+      "eyebrow": "Technology",
+      "heading": "Comfort meets innovation",
+      "lead": "Our office is equipped for safe, efficient and minimally invasive care, combined with a calming environment and sedation options.",
+      "columns": 4,
+      "dark": true,
+      "items": [
+        {
+          "icon": "tech",
+          "title": "3D CBCT imaging",
+          "text": "Detailed three-dimensional scans for precise diagnosis and guided implant planning."
+        },
+        {
+          "icon": "sparkle",
+          "title": "iTero digital scanning",
+          "text": "Comfortable digital impressions for Invisalign, crowns and smile previews. No goopy trays."
+        },
+        {
+          "icon": "leaf",
+          "title": "PRF therapy",
+          "text": "Platelet-rich fibrin from your own blood to support healing after surgery and grafting."
+        },
+        {
+          "icon": "shield",
+          "title": "Guided implant surgery",
+          "text": "Implants placed with a surgical guide planned on your CBCT scan for accuracy and comfort."
+        },
+        {
+          "icon": "bolt",
+          "title": "In-house crowns",
+          "text": "Custom crowns designed and made on site, so many patients leave with the final crown the same day."
+        },
+        {
+          "icon": "smile",
+          "title": "Intraoral cameras",
+          "text": "See what we see. Clear images make it easier to understand your options."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Laser dentistry",
+          "text": "Precise, gentle treatment of soft tissue with less bleeding and faster recovery."
+        },
+        {
+          "icon": "heart",
+          "title": "Sedation options",
+          "text": "Comfort choices for anxious patients and longer procedures, discussed at your consultation."
+        }
+      ]
+    },
+    {
+      "_type": "photoGrid",
+      "eyebrow": "Office tour",
+      "heading": "A calm space on Tourney Road",
+      "lead": "Bright treatment rooms, modern equipment and a team that greets you by name.",
+      "images": [
+        {
+          "src": "/images/team/treatment-room.jpg",
+          "alt": "A patient in a bright treatment room at Valencia Smile Expert"
+        },
+        {
+          "src": "/images/team/dr-moezzi-treating.jpg",
+          "alt": "Dr. Neda Moezzi treating a patient in the office"
+        },
+        {
+          "src": "/images/team/team-four.jpg",
+          "alt": "Dr. Neda Moezzi with three members of her team"
+        },
+        {
+          "src": "/images/team/dr-moezzi-consult.jpg",
+          "alt": "Dr. Neda Moezzi talking with a patient in the treatment chair"
+        },
+        {
+          "src": "/images/team/dr-moezzi-treating-2.jpg",
+          "alt": "Dr. Neda Moezzi treating a patient"
+        },
+        {
+          "src": "/images/team/team-seated-2.jpg",
+          "alt": "Dr. Neda Moezzi seated with her team"
+        },
+        {
+          "src": "/images/team/dr-moezzi-smile-sign.jpg",
+          "alt": "Dr. Neda Moezzi holding a Smile sign"
+        }
+      ]
+    },
+    {
+      "_type": "serviceCategories",
+      "eyebrow": "Comprehensive services",
+      "heading": "Everything under one roof",
+      "lead": "Dr. Moezzi's expertise spans the full spectrum of dental care, from your child's first checkup to smile restoration.",
+      "categories": [
+        {
+          "title": "Preventive care",
+          "text": "Routine cleanings, exams, oral cancer screenings and education to keep your smile healthy year round.",
+          "items": [
+            {
+              "label": "Cleanings & exams"
+            },
+            {
+              "label": "Digital X-rays & CBCT"
+            },
+            {
+              "label": "Night guards",
+              "href": "/tmj-treatments/"
+            },
+            {
+              "label": "Sealants & fluoride"
+            }
+          ]
+        },
+        {
+          "title": "Family dentistry",
+          "text": "Care for all ages, including infant exams, pediatric treatments and ongoing care for adults and seniors.",
+          "items": [
+            {
+              "label": "Infant & children's exams"
+            },
+            {
+              "label": "Teen dentistry"
+            },
+            {
+              "label": "Space maintainers"
+            },
+            {
+              "label": "Hygiene education"
+            }
+          ]
+        },
+        {
+          "title": "Cosmetic dentistry",
+          "text": "Whitening, veneers, Invisalign and smile makeovers customized to your goals.",
+          "href": "/services/cosmetic-dentistry/",
+          "items": [
+            {
+              "label": "Veneers",
+              "href": "/services/cosmetic-dentistry/veneers/"
+            },
+            {
+              "label": "Invisalign",
+              "href": "/services/cosmetic-dentistry/invisalign/"
+            },
+            {
+              "label": "Teeth whitening",
+              "href": "/services/cosmetic-dentistry/teeth-whitening/"
+            },
+            {
+              "label": "Composite fillings",
+              "href": "/services/cosmetic-dentistry/composite-filling/"
+            }
+          ]
+        },
+        {
+          "title": "Restorative & surgical",
+          "text": "Crowns, bridges, implants, bone grafting and PRF-supported surgery for advanced needs.",
+          "href": "/services/restorative-dentistry/",
+          "items": [
+            {
+              "label": "Dental implants",
+              "href": "/services/dental-implants/"
+            },
+            {
+              "label": "Crowns",
+              "href": "/services/dental-crowns/"
+            },
+            {
+              "label": "Bridges",
+              "href": "/services/restorative-dentistry/dental-bridges/"
+            },
+            {
+              "label": "Oral surgery",
+              "href": "/services/oral-surgery/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "reviews",
+      "eyebrow": "Patient reviews",
+      "heading": "Trusted by Santa Clarita families",
+      "lead": "Unedited words from patients who found their dental home here."
+    },
+    {
+      "_type": "visit",
+      "eyebrow": "Visit us",
+      "heading": "Come see the office",
+      "lead": "27420 Tourney Rd, Suite 240, in Valencia. Free parking and an elevator to the second floor."
+    },
+    {
+      "_type": "cta",
+      "eyebrow": "New patients",
+      "heading": "Become part of the family.",
+      "text": "Schedule your consultation with Dr. Moezzi today. New patients receive a comprehensive exam and X-rays for $59."
+    }
+  ]
+}

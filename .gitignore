@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.env*
+!.env.example
+next-env.d.ts
+*.tsbuildinfo
+.vercel
+/scratch
+/qa/screenshots
+/qa/lighthouse
+.DS_Store

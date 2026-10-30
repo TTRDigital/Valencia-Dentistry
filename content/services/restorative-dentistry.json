@@ -1,0 +1,103 @@
+{
+  "slug": "restorative-dentistry",
+  "path": "/services/restorative-dentistry/",
+  "parentPath": "/services/",
+  "category": "restorative",
+  "name": "Restorative Dentistry",
+  "shortDescription": "Fillings, crowns, bridges, inlays and onlays to repair and replace teeth.",
+  "seo": {
+    "title": "Restorative Dentistry in Santa Clarita | Dr. Moezzi",
+    "description": "Fillings, crowns, bridges, inlays and onlays from Dr. Neda Moezzi in Santa Clarita. Same-day crowns, biocompatible materials and sedation options."
+  },
+  "hero": {
+    "eyebrow": "Restorative dentistry",
+    "h1": "Restorative Dentistry in Santa Clarita",
+    "lead": "Repair damaged teeth and replace missing ones with restorations that look and feel natural. Dr. Moezzi plans each one personally in our Valencia office.",
+    "image": "/images/team/team-seated.jpg",
+    "imageAlt": "Dr. Neda Moezzi seated with her team"
+  },
+  "intro": {
+    "heading": "What restorative dentistry means here",
+    "paragraphs": [
+      "Restorative dentistry repairs teeth that are decayed, cracked or worn and replaces teeth that are missing. It covers tooth-colored fillings, custom crowns, bridges, inlays and onlays and dental implants. The goal is simple: give you back comfortable chewing, a stable bite and a smile that looks like your own. Dr. Moezzi chooses the most conservative option that will do the job well.",
+      "Because she practices holistically, Dr. Moezzi favors biocompatible materials such as composite resin, porcelain and zirconia, and she keeps as much healthy tooth structure as possible. Crowns can be made in-house, often in a single visit, and the iTero digital scanner replaces messy impressions. You see Dr. Moezzi at every appointment, and same-day care is available when a tooth breaks or starts to hurt."
+    ]
+  },
+  "whoItsFor": {
+    "heading": "Who it's for",
+    "intro": "Restorative care may be right for you if any of these sound familiar.",
+    "items": [
+      "Cavities, cracks or worn-down teeth",
+      "One or more missing teeth",
+      "Older dental work that is failing or needs replacement",
+      "Pain or sensitivity when you chew",
+      "A bite that feels uneven or teeth that are shifting",
+      "A preference for durable solutions that look and feel natural"
+    ]
+  },
+  "benefits": {
+    "heading": "What good restorations give back",
+    "intro": "Well-made restorations do more than fix a single tooth.",
+    "items": [
+      { "title": "Comfortable chewing", "text": "Repairing or replacing damaged teeth restores function so you can eat without hesitation." },
+      { "title": "Stronger teeth", "text": "Crowns, onlays and fillings reinforce weakened structure and help prevent further breakage." },
+      { "title": "Natural appearance", "text": "Materials matched to your tooth color blend in, so the work goes unnoticed." },
+      { "title": "Clearer speech and a balanced bite", "text": "Filling gaps and rebuilding worn surfaces helps your teeth meet evenly and your speech stay clear." },
+      { "title": "Protection for the future", "text": "Treating problems early can head off larger issues such as infection or tooth loss." },
+      { "title": "Facial support", "text": "Replacing missing teeth helps maintain the natural shape and balance of your face." }
+    ]
+  },
+  "options": {
+    "heading": "Our restorative services",
+    "intro": "Each service repairs a different degree of damage, and Dr. Moezzi matches the treatment to the tooth.",
+    "items": [
+      { "title": "Tooth-colored composite fillings", "text": "Resin fillings matched to your tooth shade and bonded in place, for decay or minor damage." },
+      { "title": "Custom dental crowns", "text": "Porcelain or zirconia caps that restore strength and shape to a compromised tooth; often made in-house the same day." },
+      { "title": "Dental bridges", "text": "A fixed restoration that fills a gap using the neighboring teeth or implants for support." },
+      { "title": "Inlays and onlays", "text": "Lab-made restorations for damage too large for a filling but not needing a full crown, preserving more natural tooth." }
+    ]
+  },
+  "process": {
+    "heading": "How treatment works",
+    "intro": "Every plan starts with a careful look at the whole picture.",
+    "steps": [
+      { "title": "Comprehensive exam", "text": "Dr. Moezzi examines your teeth and gums, takes digital X-rays and uses an intraoral camera so you can see what she sees. 3D imaging is added when planning implants or more complex cases." },
+      { "title": "A plan you understand", "text": "She explains each option, from the most conservative to the most durable, and you receive a written estimate. You decide together, without pressure." },
+      { "title": "Treatment, comfortably", "text": "Local anesthesia and sedation options when appropriate keep you at ease. Crowns can often be scanned, designed and placed in a single visit." },
+      { "title": "Ongoing maintenance", "text": "Regular checkups let Dr. Moezzi monitor your restorations and catch wear early so they continue to serve you well." }
+    ]
+  },
+  "technology": {
+    "heading": "Tools that make restorations precise",
+    "intro": "Digital planning and in-house fabrication mean fewer visits and a closer fit.",
+    "items": [
+      { "title": "iTero digital scanner", "text": "A quick digital scan replaces goopy impressions and captures your teeth in fine detail." },
+      { "title": "In-house custom crowns", "text": "Crowns designed and milled on site, so many patients leave with a permanent crown the same day." },
+      { "title": "3D CBCT imaging", "text": "Three-dimensional views of teeth, bone and nerves for planning implants and complex restorations." },
+      { "title": "Intraoral cameras and digital X-rays", "text": "Clear images that help you see the problem and understand the fix." }
+    ]
+  },
+  "cost": {
+    "heading": "Cost and financing",
+    "text": "Restorative treatment ranges from a single filling to a full set of restorations, so costs vary widely. What stays constant is how we handle it: after your exam, Dr. Moezzi walks you through each option and you receive a written estimate before any treatment begins. Most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna and Humana, cover restorative care that is medically necessary, and our team reviews your benefits so you understand your share. Flexible financing is available, and new patients can begin with the $59 exam and X-ray special."
+  },
+  "faqs": [
+    { "q": "What procedures are considered restorative dentistry?", "a": "Restorative dentistry includes any treatment that rebuilds the structure and function of a damaged or missing tooth. At Valencia Smile Expert that means tooth-colored fillings, custom crowns, bridges, inlays and onlays and dental implants. Dr. Moezzi recommends the most conservative option that will hold up well over time." },
+    { "q": "How long do dental restorations last?", "a": "It depends on the restoration, the material and how well it is cared for. With good hygiene and regular checkups, crowns and bridges often last 10 to 15 years or longer. Composite fillings may need replacement sooner, depending on wear and where they sit in the mouth." },
+    { "q": "Is restorative dentistry painful?", "a": "Restorative procedures are done under local anesthesia, so the area is fully numb while Dr. Moezzi works. If you feel anxious, sedation options are available. Most patients describe mild sensitivity for a day or two afterward rather than pain, and it usually settles on its own." },
+    { "q": "Will insurance cover my treatment?", "a": "Most dental insurance plans cover restorative procedures that are medically necessary, though the percentage varies by plan and by procedure. We accept most major PPO plans, and our team will review your benefits, explain what is covered and give you a clear estimate of out-of-pocket costs before treatment." },
+    { "q": "What if I haven't seen a dentist in years?", "a": "You are welcome here, and you are not alone. Many of our patients are returning to dental care after a long gap. Dr. Moezzi starts with a thorough, judgment-free exam, explains what she finds in plain language and helps you prioritize treatment at a pace and budget that work for you." }
+  ],
+  "related": ["dental-crowns", "dental-bridges", "dental-implants", "composite-filling"],
+  "cta": {
+    "heading": "Let's restore your smile",
+    "text": "Book a consultation at our Valencia office and Dr. Moezzi will show you what is possible, one tooth at a time.",
+    "buttonLabel": "Book a consultation"
+  },
+  "flags": [
+    "Source FAQ says restorative dentistry is 'not at all' painful and 'pain-free'; rewritten to describe anesthesia and typical mild sensitivity instead.",
+    "Source 'Results That Last' claim and its technology superlative rephrased without guarantees or banned terms.",
+    "Source lists inlays and onlays as a service with no dedicated page; included in options without a child slug.",
+    "Source 'What Is Restorative Dentistry?' heading had no body text in the crawl; intro written from the service list and verified brand facts."
+  ]
+}

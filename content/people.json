@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "dr-neda-moezzi",
+    "name": "Dr. Neda Moezzi",
+    "credentials": "DDS",
+    "role": "Founder and lead dentist",
+    "image": { "src": "/images/team/dr-moezzi-portrait.jpg", "alt": "Dr. Neda Moezzi, DDS, in her Valencia office", "width": 623, "height": 510 },
+    "bio": [
+      "Dr. Neda Moezzi is the founder and lead provider at Valencia Smile Expert. She graduated from the University of Detroit Mercy Dental School in 2010 and has continued her training across general, cosmetic and surgical dentistry ever since.",
+      "Her approach is simple: she sees every patient herself, at every visit, and takes the time to listen before she recommends anything. Treatment plans are built around your long-term health, your comfort and your goals, with biocompatible materials and a preference for prevention over quick fixes.",
+      "Patients describe her as attentive, precise and genuinely kind. She treats every person the way she would treat her own family."
+    ],
+    "highlights": ["University of Detroit Mercy Dental School, DDS 2010", "Advanced training in guided implant surgery and PRF therapy", "Holistic, integrative approach to oral health", "One-on-one care at every visit"],
+    "sameAs": ["https://www.linkedin.com/in/iHeartDDS1", "https://www.facebook.com/iHeartDDS1/", "https://www.instagram.com/Valenciasmileexpert/", "https://x.com/iHeartDDS1"]
+  }
+]

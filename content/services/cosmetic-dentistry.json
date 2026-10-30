@@ -1,0 +1,118 @@
+{
+  "slug": "cosmetic-dentistry",
+  "path": "/services/cosmetic-dentistry/",
+  "parentPath": "/services/",
+  "category": "cosmetic",
+  "name": "Cosmetic Dentistry",
+  "shortDescription": "Whitening, Invisalign, veneers, bonding and full smile makeovers, planned by Dr. Moezzi.",
+  "seo": {
+    "title": "Cosmetic Dentistry in Santa Clarita | Dr. Neda Moezzi",
+    "description": "Cosmetic dentistry in Santa Clarita: whitening, Invisalign, veneers and smile makeovers, planned one-on-one with Dr. Neda Moezzi. $59 new patient exam."
+  },
+  "hero": {
+    "eyebrow": "Cosmetic dentistry",
+    "h1": "Cosmetic Dentistry in Santa Clarita",
+    "lead": "Whitening, clear aligners, veneers and bonding, planned by Dr. Neda Moezzi for a smile that looks natural and feels like yours. One dentist, every visit.",
+    "image": "/images/team/team-four.jpg",
+    "imageAlt": "Dr. Neda Moezzi with three members of her team"
+  },
+  "intro": {
+    "heading": "Cosmetic dentistry, done quietly well",
+    "paragraphs": [
+      "Cosmetic dentistry improves how your smile looks: stained or discolored teeth, gaps, chipped or cracked enamel, uneven gum lines, crooked or misaligned teeth. At Valencia Smile Expert it also goes a step further. Dr. Moezzi plans every treatment around your face, your bite and your goals, so the result reads as a healthy, natural smile rather than dental work. Comfortable, minimally invasive techniques are the default.",
+      "Whether you want a subtle refinement or a full smile makeover in Santa Clarita, you see the same dentist at every visit. Dr. Moezzi listens first, explains your options in plain language and gives you clear pricing before anything begins. Patients come to us from Valencia, Stevenson Ranch, Newhall, Saugus and Canyon Country for the same reason: no handoffs, no rush."
+    ]
+  },
+  "whoItsFor": {
+    "heading": "Who it's for",
+    "intro": "Cosmetic dentistry can help if you are living with any of these concerns.",
+    "items": [
+      "Stained or discolored teeth",
+      "Gaps between teeth",
+      "Chipped or cracked enamel",
+      "Uneven gum lines or a gummy smile",
+      "Crooked or misaligned teeth"
+    ]
+  },
+  "benefits": {
+    "heading": "What cosmetic dentistry can do for you",
+    "intro": "Beyond appearance, well-planned cosmetic work can support confidence, comfort and oral health.",
+    "items": [
+      { "title": "Confidence", "text": "A bright, even smile can help you feel more at ease in social and professional settings." },
+      { "title": "Natural-looking results", "text": "Dr. Moezzi designs for a smile that looks real and in proportion, never overdone." },
+      { "title": "Better function", "text": "Treatments like Invisalign straighten teeth and can also improve your bite and overall dental health." },
+      { "title": "Results that last", "text": "With proper care, veneers, whitening and bonding can hold their results for years." },
+      { "title": "Fewer visits, little downtime", "text": "Many cosmetic treatments are completed in one or two visits, often with little to no downtime." }
+    ]
+  },
+  "options": {
+    "heading": "Cosmetic treatments we offer",
+    "intro": "Each treatment is available on its own or combined into a single plan.",
+    "items": [
+      { "title": "Teeth Whitening", "text": "Dentist-supervised, enamel-safe whitening in the office or at home. Stronger and more predictable than store-bought kits." },
+      { "title": "Invisalign", "text": "Removable clear aligners that straighten teeth discreetly, planned with the iTero digital scanner." },
+      { "title": "Veneers", "text": "Thin porcelain or composite shells, custom-shaped to cover chips, gaps and deep stains." },
+      { "title": "Composite Filling", "text": "Tooth-colored, metal-free fillings that repair decay and small chips while blending into the tooth." },
+      { "title": "Cosmetic Dental Bonding", "text": "A quick, economical way to repair chips, close small gaps or reshape a tooth with tooth-colored resin." },
+      { "title": "Gum Contouring and Smile Design", "text": "Soft-tissue reshaping that balances teeth and gums, helpful for uneven gum lines or a gummy smile." },
+      { "title": "Full Smile Makeovers", "text": "Two or more treatments, such as Invisalign, veneers and whitening, combined into one plan by Dr. Moezzi." }
+    ]
+  },
+  "process": {
+    "heading": "How to get started",
+    "intro": "Three steps, with Dr. Moezzi at each one.",
+    "steps": [
+      { "title": "Consultation", "text": "Book a same-day or next-day appointment online or by phone. Dr. Moezzi meets with you, listens to what you would like to change and recommends the treatments that fit." },
+      { "title": "Personalized plan", "text": "We build a custom plan using digital diagnostics and digital smile design to map the result. You receive clear pricing and flexible payment options up front, with no surprises." },
+      { "title": "Treatment", "text": "Whether it is whitening, Invisalign, veneers or a full makeover, treatment proceeds at a comfortable pace, with sedation options when appropriate." }
+    ]
+  },
+  "technology": {
+    "heading": "Technology that supports the plan",
+    "intro": "We use digital tools to plan carefully and show you the result before we start.",
+    "items": [
+      { "title": "iTero digital scanner", "text": "Mess-free digital impressions for Invisalign and veneer planning, with a preview of the result." },
+      { "title": "Intraoral cameras", "text": "Close-up images of your teeth so you can see what Dr. Moezzi sees and follow the plan." },
+      { "title": "Digital X-rays", "text": "Low-dose imaging that confirms your teeth and gums are healthy before cosmetic work begins." },
+      { "title": "Laser dentistry", "text": "Available for soft-tissue procedures such as gum contouring, with precise control." }
+    ]
+  },
+  "cost": {
+    "heading": "Cost and financing",
+    "text": "Cosmetic treatment is rarely covered by dental insurance, so we keep pricing simple and transparent. After your consultation you receive a written estimate before any treatment begins, with each option and its cost spelled out. Flexible financing is available to spread the investment over time. If your plan includes restorative work, such as a crown or filling, we accept most major PPO plans and will check your benefits for you. New to the practice? The $59 new patient special covers your exam and X-rays, a sensible first step before planning cosmetic work."
+  },
+  "faqs": [
+    {
+      "q": "How do I know which cosmetic treatment is right for me?",
+      "a": "At your consultation Dr. Moezzi examines your teeth and gums, listens to what you would like to change and walks you through the options that fit, whether that is whitening, Invisalign, veneers or a combination. You leave with a clear recommendation and pricing, and time to decide."
+    },
+    {
+      "q": "Is cosmetic dentistry painful?",
+      "a": "Most cosmetic procedures are minimally invasive and most patients find them comfortable. Local anesthetic is used where needed, and sedation options are available when appropriate for anxious patients. Our Santa Clarita office is designed to be calm, and Dr. Moezzi works at a pace that suits you."
+    },
+    {
+      "q": "How long do veneers or whitening results last?",
+      "a": "Porcelain veneers often last 10 to 15 years or longer with proper care. Professional whitening results can last a year or more, depending on diet and habits, and are easy to maintain with periodic touch-ups. Good home care and regular checkups help both last longer."
+    },
+    {
+      "q": "Does insurance cover cosmetic dentistry?",
+      "a": "Cosmetic procedures are usually not covered by dental insurance. We offer transparent pricing and flexible financing so you can plan treatment with confidence. When a treatment also has a restorative purpose, such as a crown or a filling, your PPO plan may contribute and we will check for you."
+    },
+    {
+      "q": "How soon can I schedule an appointment?",
+      "a": "We offer same-day and next-day appointments whenever possible. Call (661) 254-5200 or book online and we will find you the earliest opening. Office hours are Monday to Friday, 8am to 5pm, and we will confirm your visit the same day you reach out."
+    }
+  ],
+  "related": ["teeth-whitening", "invisalign", "veneers", "composite-filling"],
+  "cta": {
+    "heading": "Start with a conversation",
+    "text": "Book a cosmetic consultation with Dr. Moezzi in Valencia. You will leave knowing your options and what they cost.",
+    "buttonLabel": "Book a consultation"
+  },
+  "flags": [
+    "Source describes results as 'life-changing smile transformations' and 'long-lasting'; softened to 'can hold their results for years with proper care'.",
+    "Source says most procedures are 'virtually painless'; rewritten as 'most patients find them comfortable'.",
+    "Source mentions 'digital smile previews'; attributed to the iTero scanner preview, the verified tool on site.",
+    "Testimonials, 'top' and 'best' superlatives and the Cleveland Clinic link omitted."
+  ]
+}

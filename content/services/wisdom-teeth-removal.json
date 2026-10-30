@@ -1,0 +1,114 @@
+{
+  "slug": "wisdom-teeth-removal",
+  "path": "/services/oral-surgery/wisdom-teeth-removal/",
+  "parentPath": "/services/oral-surgery/",
+  "category": "surgical",
+  "name": "Wisdom Teeth Removal",
+  "shortDescription": "Removal of impacted or crowded third molars, planned with 3D imaging.",
+  "seo": {
+    "title": "Wisdom Teeth Removal in Santa Clarita | Dr. Moezzi",
+    "description": "Wisdom teeth removal in Santa Clarita with 3D imaging, local anesthesia and sedation options. Dr. Neda Moezzi performs each one herself in Valencia."
+  },
+  "hero": {
+    "eyebrow": "Oral surgery",
+    "h1": "Wisdom Teeth Removal in Santa Clarita",
+    "lead": "Impacted or crowded wisdom teeth can cause pain, swelling and damage to the teeth beside them. Dr. Moezzi removes them in our Valencia office with 3D planning, local anesthesia and sedation options.",
+    "image": "/images/team/dr-moezzi-consult.jpg",
+    "imageAlt": "Dr. Neda Moezzi talking with a patient in the treatment chair"
+  },
+  "intro": {
+    "heading": "Precise, comfortable care for your third molars",
+    "paragraphs": [
+      "Wisdom teeth, the third molars at the very back of your mouth, do not always come in the way they should. When they are trapped under the gum or bone, only partly erupted or pushing against neighboring teeth, they can cause pain, swelling, infection and crowding. Dr. Moezzi evaluates each tooth with 3D imaging and recommends removal only when it protects your long-term oral health.",
+      "Every wisdom tooth extraction here is performed by Dr. Moezzi herself, so the dentist who plans your treatment is the one who carries it out. Local anesthesia is used in every case, and sedation options are available when you want to feel more relaxed. Most extractions are completed in under an hour, and you leave with step-by-step recovery instructions and a follow-up visit already on the calendar."
+    ]
+  },
+  "whoItsFor": {
+    "heading": "Who it's for",
+    "intro": "Not everyone needs their wisdom teeth removed, but these signs suggest it is time for an evaluation.",
+    "items": [
+      "Pain, swelling or pressure in the back of your mouth",
+      "Wisdom teeth that are impacted or only partly through the gum",
+      "Shifting or crowding of nearby teeth",
+      "Back molars that are hard to keep clean or prone to infection",
+      "Cysts or bone changes visible on your dental X-rays",
+      "Late teens or early twenties, when roots are not fully formed and removal is often simpler"
+    ]
+  },
+  "benefits": {
+    "heading": "Why timing matters",
+    "intro": "Removing wisdom teeth before they fully develop or cause trouble often makes the process smoother and protects your other teeth.",
+    "items": [
+      { "title": "Easier recovery", "text": "Younger patients tend to heal faster and have fewer issues after surgery." },
+      { "title": "Fewer complications", "text": "Early removal helps prevent infection, cysts and damage to the neighboring molars." },
+      { "title": "Less crowding", "text": "Avoids shifting that can undo years of orthodontic work." },
+      { "title": "Simpler hygiene", "text": "With the third molars gone, brushing and flossing your back teeth becomes easier." },
+      { "title": "Peace of mind", "text": "You avoid the risk of painful flare-ups later on." }
+    ]
+  },
+  "options": {
+    "heading": "Types of wisdom teeth removal",
+    "intro": "Each extraction is tailored to how the tooth sits and how it is affecting your mouth.",
+    "items": [
+      { "title": "Simple extraction", "text": "For a wisdom tooth that has fully come through the gum. Usually quick and straightforward, completed under local anesthesia." },
+      { "title": "Surgical extraction", "text": "For a tooth that is impacted or partly erupted. Dr. Moezzi may make a small gum incision or section the tooth. Sedation options are available." }
+    ]
+  },
+  "process": {
+    "heading": "The wisdom teeth removal process",
+    "intro": "A clear, step-by-step approach from your first visit to your last check-in.",
+    "steps": [
+      { "title": "Consultation and 3D imaging", "text": "Dr. Moezzi examines your mouth and takes 3D CBCT images to see the position of each wisdom tooth and its roots. She reviews the scans, discusses your symptoms and recommends the approach that fits your situation." },
+      { "title": "In-office removal", "text": "Your wisdom teeth are removed in our Valencia office using gentle technique. Local anesthesia is used in every case, with sedation options available to keep you relaxed. Most procedures are finished in under an hour." },
+      { "title": "Recovery and follow-up", "text": "You go home with step-by-step care instructions, and we schedule a follow-up to check healing. Most patients are back to their normal routine within a few days." }
+    ]
+  },
+  "technology": {
+    "heading": "Planning with a clear view",
+    "intro": "Knowing exactly where each root and nerve sits makes the procedure safer and shorter.",
+    "items": [
+      { "title": "3D CBCT imaging", "text": "Three-dimensional scans show the roots, the jaw nerve and surrounding bone so Dr. Moezzi can plan the safest approach." },
+      { "title": "Digital X-rays", "text": "Fast, low-radiation images that reveal impacted teeth, cysts and bone changes at your consultation." },
+      { "title": "Intraoral cameras", "text": "Close-up pictures of partly erupted teeth and inflamed gums help you understand what is happening and why." }
+    ]
+  },
+  "aftercare": {
+    "heading": "Before and after your appointment",
+    "before": [
+      "If you are having sedation, do not eat or drink for 6 to 8 hours beforehand",
+      "Arrange a ride home; you cannot drive after sedation",
+      "Pause or adjust medications only if Dr. Moezzi directs you to",
+      "Avoid smoking and alcohol for at least 24 hours before surgery",
+      "Brush gently to keep your mouth clean without irritating the area"
+    ],
+    "after": [
+      "Rest on the first day, limit activity and keep your head raised",
+      "Eat soft foods such as yogurt, mashed potatoes, smoothies and soup",
+      "Skip straws, smoking and spitting to protect the clot and prevent dry socket",
+      "Apply cold compresses in 20-minute intervals to reduce swelling",
+      "Rinse with warm salt water and brush gently around the area to keep it clean"
+    ]
+  },
+  "cost": {
+    "heading": "Cost and financing",
+    "text": "What you pay depends on how many wisdom teeth are removed, whether each is a simple or surgical extraction and the sedation you choose. After your consultation and 3D imaging, you receive a written estimate before anything is scheduled, so you know the full picture in advance. We accept most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna and United Concordia, and our team verifies your coverage for you. Flexible financing is available to spread out any remaining cost. New patients can start with the $59 exam and X-ray special."
+  },
+  "faqs": [
+    { "q": "When is the best time to remove wisdom teeth?", "a": "Dr. Moezzi recommends evaluating wisdom teeth between ages 17 and 25, before the roots fully develop. Removal at this stage is often simpler and healing tends to be faster. Taking them out early can also help prevent crowding, pain and complications later, though adults of any age can be treated." },
+    { "q": "Will I be awake during the procedure?", "a": "That depends on your preference and the complexity of your case. Local anesthesia is used for every extraction, and nitrous oxide or oral sedation can be added to help you relax. Dr. Moezzi will talk through the options at your consultation and help you choose what feels right for you." },
+    { "q": "How long does recovery take?", "a": "Most patients feel noticeably better within three to four days. Full healing usually takes one to two weeks, depending on how many teeth were removed and whether the extractions were simple or surgical. Following your aftercare instructions closely makes a real difference to how smoothly you heal." },
+    { "q": "What can I eat after wisdom teeth removal?", "a": "Stick to soft foods for the first several days, such as smoothies, yogurt, mashed potatoes and soup. Avoid anything spicy, crunchy or very hot, and do not use a straw, since suction can dislodge the clot that protects the healing socket and lead to dry socket." },
+    { "q": "Why are wisdom teeth removed in the first place?", "a": "Wisdom teeth are the third molars, usually arriving between the late teens and mid-twenties. Many jaws do not have room for them, so they come in at an angle, stay trapped under the gum or crowd other teeth. Removal is recommended when they cause pain, infection, cysts or damage to neighboring molars, or are likely to." }
+  ],
+  "related": ["tooth-extractions", "oral-surgery", "bone-grafting", "invisalign"],
+  "cta": {
+    "heading": "Plan your wisdom teeth removal",
+    "text": "Whether you are in pain now or planning ahead, Dr. Moezzi will review your X-rays and explain exactly what to expect. Call (661) 254-5200 or book online.",
+    "buttonLabel": "Book a consultation"
+  },
+  "flags": [
+    "Source claims technology 'reduces recovery time' and ensures 'safe, consistent, and expert results'; omitted as unsupported outcome claims.",
+    "Source FAQ 'Where can I learn more about wisdom teeth?' only linked to a WebMD guide; replaced with an original explanation of why wisdom teeth are removed.",
+    "Nitrous oxide and oral sedation are named in one FAQ because the source page names them; no other sedation drugs are mentioned."
+  ]
+}

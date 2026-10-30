@@ -1,0 +1,40 @@
+import type { Metadata, Viewport } from "next";
+import { Analytics } from "@/components/layout/Analytics";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
+import { MobileBar } from "@/components/layout/MobileBar";
+import { getNavigation } from "@/lib/content";
+import { displayFace } from "@/lib/design";
+import { fraunces, inter } from "@/lib/fonts";
+import { SITE_URL, site } from "@/lib/site";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: { default: `${site.name} | Dentist in Valencia, Santa Clarita`, template: `%s | ${site.name}` },
+  description: site.tagline,
+  applicationName: site.name,
+  formatDetection: { telephone: false },
+  manifest: "/site.webmanifest",
+  icons: { icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/icon-32.png", sizes: "32x32", type: "image/png" }, { url: "/icon-192.png", sizes: "192x192", type: "image/png" }], apple: "/apple-touch-icon.png" },
+  openGraph: { siteName: site.name, locale: "en_US", type: "website" },
+  twitter: { card: "summary_large_image" },
+};
+
+export const viewport: Viewport = { themeColor: "#112740", width: "device-width", initialScale: 1 };
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const nav = await getNavigation();
+  return (
+    <html lang="en" className={`${inter.variable} ${fraunces.variable}`} data-display={displayFace === "calsans" ? "calsans" : undefined}>
+      <body className="flex min-h-screen flex-col">
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-navy-900 focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
+        <Header nav={nav} />
+        <main id="main" tabIndex={-1} className="flex-1 outline-none">{children}</main>
+        <Footer nav={nav} />
+        <MobileBar />
+        <Analytics />
+      </body>
+    </html>
+  );
+}

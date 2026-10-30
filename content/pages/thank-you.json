@@ -1,0 +1,29 @@
+{
+  "slug": "thank-you",
+  "path": "/thank-you/",
+  "title": "Thank You",
+  "seo": { "title": "Thank You | Valencia Smile Expert", "description": "We've received your request and will be in touch shortly.", "noindex": true },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "page",
+      "eyebrow": "Request received",
+      "heading": "Thank you. We'll be in touch shortly.",
+      "lead": "A member of our team will call or email you to confirm your appointment, usually within one business day. For immediate help, call (661) 254-5200.",
+      "primary": { "label": "Back to home", "href": "/" },
+      "secondary": { "label": "Browse our services", "href": "/services/" },
+      "image": { "src": "/images/team/dr-moezzi-smile-sign.jpg", "alt": "Dr. Neda Moezzi holding a Smile sign" }
+    },
+    {
+      "_type": "featureGrid",
+      "eyebrow": "While you wait",
+      "heading": "A few things worth knowing",
+      "columns": 3,
+      "items": [
+        { "icon": "tag", "title": "$59 new patient special", "text": "Your first exam and X-rays for $59. Mention it when we call." },
+        { "icon": "shield", "title": "Insurance check", "text": "Send us your plan details and we'll verify your benefits before your visit." },
+        { "icon": "pin", "title": "Finding us", "text": "27420 Tourney Rd, Suite 240 in Valencia. Free parking, elevator to the second floor." }
+      ]
+    }
+  ]
+}

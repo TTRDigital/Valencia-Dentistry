@@ -1,0 +1,137 @@
+{
+  "slug": "all-on-4-implants",
+  "path": "/services/oral-surgery/all-on-4-implants/",
+  "parentPath": "/services/oral-surgery/",
+  "category": "surgical",
+  "name": "All-on-4 Implants",
+  "shortDescription": "A full arch of fixed teeth on four implants, often with same-day temporary teeth.",
+  "seo": {
+    "title": "All-on-4 Dental Implants in Santa Clarita | Dr. Moezzi",
+    "description": "All-on-4 full-arch dental implants in Santa Clarita. Four implants per jaw, same-day temporary teeth and care from Dr. Neda Moezzi at every visit."
+  },
+  "hero": {
+    "eyebrow": "Oral surgery",
+    "h1": "All-on-4 Dental Implants in Santa Clarita",
+    "lead": "Replace a full arch of missing or failing teeth with four implants and a fixed bridge. Dr. Neda Moezzi plans and places every case herself, usually with temporary teeth the same day.",
+    "image": "/images/team/dr-moezzi-treating-2.jpg",
+    "imageAlt": "Dr. Neda Moezzi treating a patient in her Santa Clarita office"
+  },
+  "intro": {
+    "heading": "A fixed full-arch smile on four implants",
+    "paragraphs": [
+      "If you are missing most or all of the teeth in your upper or lower jaw, or your remaining teeth are failing, a loose denture is not your only option. All-on-4, sometimes called All-on-X, is a full-arch restoration that attaches a fixed set of teeth to just four implants per jaw. At Valencia Smile Expert in Santa Clarita, Dr. Moezzi plans and places every case herself.",
+      "The technique works by placing the two front implants upright and the two back implants at an angle, which makes the most of the bone you already have. For many patients that means bone grafting can be avoided. A temporary bridge is usually attached the same day the implants go in, so you leave with teeth, and a final custom bridge follows once the implants have healed."
+    ]
+  },
+  "whoItsFor": {
+    "heading": "Who it's for",
+    "intro": "Many people who were told they lacked the bone for traditional implants are good candidates for All-on-4, including those who have worn dentures for years.",
+    "items": [
+      "You are missing most or all of your upper or lower teeth",
+      "Your dentures are loose, uncomfortable or hard to eat with",
+      "Your teeth are failing from decay, trauma or gum disease",
+      "You were told you would need bone grafting for traditional implants",
+      "You are in good general health and able to have minor oral surgery",
+      "You want a fixed, natural-feeling alternative to removable dentures"
+    ]
+  },
+  "benefits": {
+    "heading": "Benefits of All-on-4",
+    "intro": "Fewer implants, one surgery and a fixed result add up to a simpler path than tooth-by-tooth replacement.",
+    "items": [
+      { "title": "Teeth the same day", "text": "A temporary bridge is usually fixed in place on the day of surgery, so you do not go home without teeth." },
+      { "title": "Fewer implants, less surgery", "text": "Four implants per arch instead of one per tooth means a shorter, less invasive procedure." },
+      { "title": "Often no bone grafting", "text": "Angled placement uses the denser bone at the front of the jaw, so grafting is frequently unnecessary." },
+      { "title": "Fixed, not removable", "text": "The bridge is secured to the implants. It does not slip, and there is no adhesive." },
+      { "title": "Natural look and bite", "text": "Custom teeth designed for your face, with the look and bite function of natural teeth." },
+      { "title": "Simple to maintain", "text": "Brush, clean under the bridge as shown, and keep regular checkups. That is the routine." }
+    ]
+  },
+  "process": {
+    "heading": "The All-on-4 process",
+    "intro": "From the first scan to your final bridge, there are three main stages.",
+    "steps": [
+      { "title": "Consultation and 3D imaging", "text": "A thorough exam, a 3D CBCT scan and a frank conversation about your goals. Dr. Moezzi measures your bone and designs a guided surgical plan for exact implant positions." },
+      { "title": "Implant placement and temporary bridge", "text": "On surgery day, four implants are placed per arch, two upright in front and two angled at the back. A custom temporary bridge is secured the same day so you leave with a working smile." },
+      { "title": "Healing and final bridge", "text": "Over the next few months the implants fuse with the bone. Once healed, the temporary is replaced with a permanent, custom-designed bridge built to look and function like natural teeth." }
+    ]
+  },
+  "technology": {
+    "heading": "Technology for All-on-4",
+    "intro": "Precise planning is what makes four implants enough to carry a full arch.",
+    "items": [
+      { "title": "3D CBCT imaging", "text": "Maps bone volume, nerve paths and sinuses so each implant is placed where the bone is strongest." },
+      { "title": "Guided implant surgery", "text": "A surgical guide made from your digital plan directs each implant to its planned position and angle." },
+      { "title": "iTero digital scanner", "text": "Digital impressions of your mouth are used to design both the temporary and the final bridge." },
+      { "title": "PRF therapy", "text": "Platelet-rich fibrin from your own blood is placed at the surgical sites to support soft tissue and bone healing." }
+    ]
+  },
+  "aftercare": {
+    "heading": "Before and after your procedure",
+    "before": [
+      "Stop smoking at least a week before surgery; it interferes with healing",
+      "Follow fasting instructions if sedation is planned",
+      "Tell us about every medication and medical condition at your consultation",
+      "Arrange a ride home if sedation will be used",
+      "Keep your mouth as clean as possible in the days before surgery"
+    ],
+    "after": [
+      "Rest for 24 to 48 hours and avoid strenuous activity",
+      "Eat soft foods such as smoothies, mashed vegetables and scrambled eggs",
+      "Take prescribed medication as directed for swelling and discomfort",
+      "Do not smoke, use a straw or spit forcefully during early healing",
+      "Clean gently around the surgical sites with saltwater rinses and a soft brush",
+      "Keep every follow-up appointment so healing can be monitored"
+    ]
+  },
+  "cost": {
+    "heading": "Cost and financing",
+    "text": "All-on-4 pricing depends on whether you are treating the upper arch, the lower arch or both, the complexity of your case, the materials chosen for the final bridge and any extractions needed first. Because of that, we do not post a single price. After your consultation and 3D scan, you receive a written estimate that lays out every stage before anything is scheduled. We accept most major PPO plans and will help you make the most of your benefits, though full-arch implant coverage varies widely between plans. Flexible financing is available to spread the investment over time."
+  },
+  "faqs": [
+    {
+      "q": "What makes All-on-4 different from traditional dental implants?",
+      "a": "Traditional full-mouth implant work may use six to eight implants per arch and often needs bone grafting first. All-on-4 supports the whole arch on four implants, with the back two angled to use existing bone. The result is a shorter procedure, often no grafting, and temporary teeth fixed in place the same day."
+    },
+    {
+      "q": "How long do All-on-4 implants last?",
+      "a": "With good hygiene and routine dental visits, All-on-4 implants can last 20 years or more. The bridge itself may need maintenance or replacement over time as it wears, which is normal. Cleaning under the bridge as shown and keeping your checkups are the biggest factors in long-term success."
+    },
+    {
+      "q": "Does the procedure hurt?",
+      "a": "Surgery is done under local anesthesia with sedation options available, so you should not feel pain during the procedure. Afterward, most patients describe swelling and soreness for a few days that is managed with over-the-counter or prescribed medication. Many are surprised by how manageable it is."
+    },
+    {
+      "q": "Can I eat normally with All-on-4 implants?",
+      "a": "Yes, once you have healed and your final bridge is in place. During the first few months with the temporary bridge you will stay with softer foods to protect the implants while they fuse with the bone. After that, most patients return to nearly all of their favorite foods with improved bite strength and stability."
+    },
+    {
+      "q": "Am I too old for All-on-4 implants?",
+      "a": "Age by itself is rarely the deciding factor. What matters is being healthy enough for minor oral surgery and not having uncontrolled medical conditions, such as poorly managed diabetes or osteoporosis, that affect healing. Dr. Moezzi reviews your health history carefully and may coordinate with your physician."
+    },
+    {
+      "q": "How much do All-on-4 implants cost?",
+      "a": "The cost depends on how many arches are treated, the complexity of the case and the materials used for your final bridge. We give you a transparent written estimate after your consultation and 3D scan, before any treatment is booked. Most major PPO plans are accepted and flexible financing is available."
+    },
+    {
+      "q": "Do I need bone grafting for All-on-4?",
+      "a": "In many cases, no. All-on-4 was developed specifically to make the most of the bone you already have, by angling the back implants into denser areas of the jaw. Even patients with noticeable bone loss are often candidates without grafting. Your 3D scan will show whether that applies to you."
+    },
+    {
+      "q": "Where can I learn more about dental implants?",
+      "a": "The American Academy of Implant Dentistry publishes patient-friendly information about implant procedures and what to expect. The most useful next step, though, is a consultation. Dr. Moezzi can look at your scan with you and answer questions about your own mouth rather than the average one. Call (661) 254-5200 to arrange a visit."
+    }
+  ],
+  "related": ["dental-implants", "bone-grafting", "tooth-extractions", "oral-surgery"],
+  "cta": {
+    "heading": "Find out if All-on-4 is right for you",
+    "text": "A consultation includes a 3D scan, an honest assessment of your bone and options, and a written estimate. Patients visit us from Valencia, Stevenson Ranch, Newhall, Saugus and Canyon Country.",
+    "buttonLabel": "Book a consultation"
+  },
+  "flags": [
+    "Source calls the procedure 'revolutionary' and 'life-changing'; omitted as hype.",
+    "Source promises 'same-day results' for all patients; softened to 'usually' since immediate temporary teeth depend on bone quality and implant stability on the day.",
+    "Source lists osteoporosis alongside diabetes as a condition that may rule patients out; kept as 'uncontrolled' conditions per the source, but Dr. Moezzi should confirm the wording.",
+    "Source FAQ links to the American Academy of Implant Dentistry; external link omitted because the content is plain text."
+  ]
+}

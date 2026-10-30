@@ -1,0 +1,48 @@
+{
+  "slug": "new-patient-offer",
+  "path": "/new-patient-offer/",
+  "title": "New Patient Offer",
+  "breadcrumb": "New Patient Offer",
+  "seo": {
+    "title": "$59 New Patient Special | Exam & X-Rays in Valencia",
+    "description": "New to Valencia Smile Expert? Your first comprehensive exam and digital X-rays are $59. One-on-one care with Dr. Neda Moezzi in Santa Clarita. Book today."
+  },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "landing",
+      "eyebrow": "New patient special",
+      "heading": "Your first exam and X-rays for $59.",
+      "lead": "A thorough, unhurried first visit with Dr. Neda Moezzi: comprehensive exam, digital X-rays, oral cancer screening and a clear plan, with no pressure to proceed.",
+      "primary": { "label": "Claim the $59 offer", "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE" },
+      "secondary": { "label": "Call (661) 254-5200", "href": "tel:+16612545200" },
+      "image": { "src": "/images/team/dr-moezzi-consult.jpg", "alt": "Dr. Neda Moezzi talking with a patient in the treatment chair" },
+      "trust": true
+    },
+    {
+      "_type": "offer",
+      "eyebrow": "What's included",
+      "heading": "Everything a great first visit should have",
+      "text": "This is a real first appointment, not a quick look. You will leave knowing exactly where your oral health stands and what, if anything, needs attention.",
+      "bullets": ["Comprehensive exam with Dr. Moezzi", "Full set of digital X-rays", "Oral cancer screening", "Gum health assessment", "Written treatment plan and estimate", "Time for all of your questions"],
+      "fine": "Offer for new patients without insurance, or in place of insurance benefits. Cleaning is scheduled separately once gum health is assessed. Cannot be combined with other offers."
+    },
+    {
+      "_type": "featureGrid",
+      "eyebrow": "Why patients choose us",
+      "heading": "Care you can feel the difference in",
+      "columns": 3,
+      "items": [
+        { "icon": "user", "title": "One dentist, every visit", "text": "You see Dr. Moezzi herself at every appointment. No handoffs, no rush." },
+        { "icon": "leaf", "title": "Holistic and biocompatible", "text": "Mercury-free materials and a whole-body view of your health." },
+        { "icon": "tech", "title": "Modern technology", "text": "3D CBCT imaging, iTero scanning and in-house same-day crowns." },
+        { "icon": "bolt", "title": "Same-day care", "text": "Flexible scheduling, including emergency appointments." },
+        { "icon": "shield", "title": "Most PPO plans accepted", "text": "We verify your benefits before your visit." },
+        { "icon": "tag", "title": "Clear pricing", "text": "A written estimate before treatment and flexible financing." }
+      ]
+    },
+    { "_type": "reviews", "eyebrow": "Patient reviews", "heading": "Trusted by Santa Clarita families" },
+    { "_type": "form", "eyebrow": "Reserve your visit", "heading": "Request your $59 new patient visit", "lead": "Tell us when works best and we'll confirm your appointment.", "formName": "New patient offer" },
+    { "_type": "visit", "eyebrow": "Visit us", "heading": "Minutes from anywhere in Santa Clarita", "lead": "27420 Tourney Rd, Suite 240, Valencia. Free parking on site." }
+  ]
+}
