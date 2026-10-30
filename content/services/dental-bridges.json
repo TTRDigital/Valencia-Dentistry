@@ -6,21 +6,21 @@
   "name": "Dental Bridges",
   "shortDescription": "Fixed replacements for one or more missing teeth, matched to your smile.",
   "seo": {
-    "title": "Dental Bridges in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Custom dental bridges in Santa Clarita to replace missing teeth. Traditional, cantilever, Maryland and implant-supported options from Dr. Neda Moezzi."
+    "title": "Dental Bridges in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Custom dental bridges in Santa Clarita to replace missing teeth. Traditional, cantilever, Maryland and implant-supported options from Dr. Nuriel Lavi."
   },
   "hero": {
     "eyebrow": "Restorative dentistry",
     "h1": "Dental Bridges in Valencia",
-    "lead": "A fixed bridge fills the gap left by missing teeth, restores comfortable chewing and keeps your other teeth from drifting. Dr. Moezzi designs each one to match your smile.",
-    "image": "/images/team/dr-moezzi-treating-2.jpg",
-    "imageAlt": "Dr. Neda Moezzi treating a patient"
+    "lead": "A fixed bridge fills the gap left by missing teeth, restores comfortable chewing and keeps your other teeth from drifting. Dr. Lavi designs each one to match your smile.",
+    "image": "/images/brand/panel-restorative.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "A fixed way to replace missing teeth",
     "paragraphs": [
       "A dental bridge replaces one or more missing teeth with an artificial tooth, called a pontic, that is anchored to the natural teeth or implants on either side of the gap. Because it is cemented in place, it stays put when you eat and speak. Each bridge is custom made to match the shape, size and shade of your surrounding teeth, so it blends in rather than standing out.",
-      "At Valencia Dentistry, Dr. Moezzi uses the iTero digital scanner instead of traditional impressions, and each bridge is planned with digital imaging for a precise fit. She reviews your oral health, lifestyle and goals and tells you plainly whether a bridge, an implant or another option will serve you best over time. Patients from Santa Clarita, Stevenson Ranch, Newhall and Saugus come to us for this kind of straightforward advice."
+      "At Valencia Dentistry, Dr. Lavi uses the iTero digital scanner instead of traditional impressions, and each bridge is planned with digital imaging for a precise fit. He reviews your oral health, lifestyle and goals and tells you plainly whether a bridge, an implant or another option will serve you best over time. Patients from Santa Clarita, Stevenson Ranch, Newhall and Saugus come to us for this kind of straightforward advice."
     ]
   },
   "whoItsFor": {
@@ -38,72 +38,143 @@
     "heading": "Benefits of a dental bridge",
     "intro": "Filling the gap does more for your mouth than you might expect.",
     "items": [
-      { "title": "Restored chewing and speech", "text": "Missing teeth make some foods and words harder. A bridge brings everyday function back." },
-      { "title": "Facial shape maintained", "text": "Gaps let teeth shift and can change how your face looks over time. A bridge helps preserve your natural profile." },
-      { "title": "Teeth kept in place", "text": "Filling the space holds neighboring teeth in position and lowers the risk of future bite problems." },
-      { "title": "A natural look", "text": "Each bridge is matched to the color and shape of your own teeth so it blends in." },
-      { "title": "Renewed confidence", "text": "Many patients feel more comfortable smiling, speaking and eating with others once the gap is filled." }
+      {
+        "title": "Restored chewing and speech",
+        "text": "Missing teeth make some foods and words harder. A bridge brings everyday function back."
+      },
+      {
+        "title": "Facial shape maintained",
+        "text": "Gaps let teeth shift and can change how your face looks over time. A bridge helps preserve your natural profile."
+      },
+      {
+        "title": "Teeth kept in place",
+        "text": "Filling the space holds neighboring teeth in position and lowers the risk of future bite problems."
+      },
+      {
+        "title": "A natural look",
+        "text": "Each bridge is matched to the color and shape of your own teeth so it blends in."
+      },
+      {
+        "title": "Renewed confidence",
+        "text": "Many patients feel more comfortable smiling, speaking and eating with others once the gap is filled."
+      }
     ]
   },
   "options": {
     "heading": "Types of dental bridges",
-    "intro": "Different designs suit different needs, budgets and mouths; Dr. Moezzi helps you choose.",
+    "intro": "Different designs suit different needs, budgets and mouths; Dr. Lavi helps you choose.",
     "items": [
-      { "title": "Traditional bridge", "text": "Crowns on the teeth on both sides of the gap hold the replacement tooth. Strong and durable; the usual choice between healthy natural teeth." },
-      { "title": "Cantilever bridge", "text": "Supported by a crown on just one neighboring tooth. Used when only one tooth borders the gap; requires less tooth preparation." },
-      { "title": "Maryland bridge", "text": "A metal or porcelain framework bonded to the back of adjacent teeth. A conservative option for front teeth with minimal preparation." },
-      { "title": "Implant-supported bridge", "text": "Anchored to dental implants placed in the jawbone. The most stable option for patients missing several teeth or wanting extra security." }
+      {
+        "title": "Traditional bridge",
+        "text": "Crowns on the teeth on both sides of the gap hold the replacement tooth. Strong and durable; the usual choice between healthy natural teeth."
+      },
+      {
+        "title": "Cantilever bridge",
+        "text": "Supported by a crown on just one neighboring tooth. Used when only one tooth borders the gap; requires less tooth preparation."
+      },
+      {
+        "title": "Maryland bridge",
+        "text": "A metal or porcelain framework bonded to the back of adjacent teeth. A conservative option for front teeth with minimal preparation."
+      },
+      {
+        "title": "Implant-supported bridge",
+        "text": "Anchored to dental implants placed in the jawbone. The most stable option for patients missing several teeth or wanting extra security."
+      }
     ]
   },
   "process": {
     "heading": "The dental bridge process",
-    "intro": "Getting a bridge is straightforward, and Dr. Moezzi guides you through each step.",
+    "intro": "Getting a bridge is straightforward, and Dr. Lavi guides you through each step.",
     "steps": [
-      { "title": "Personalized consultation", "text": "Dr. Moezzi examines your teeth and gums, takes digital images and talks through your goals to decide which type of bridge fits your mouth and your budget." },
-      { "title": "Preparation and temporary bridge", "text": "The supporting teeth are shaped and a digital scan is taken to design your custom bridge. A temporary bridge protects the area and keeps you comfortable while the final one is made." },
-      { "title": "Final placement", "text": "Your finished bridge is checked for fit, bite and color, then bonded securely in place. It should feel natural and blend with the teeth around it." }
+      {
+        "title": "Personalized consultation",
+        "text": "Dr. Lavi examines your teeth and gums, takes digital images and talks through your goals to decide which type of bridge fits your mouth and your budget."
+      },
+      {
+        "title": "Preparation and temporary bridge",
+        "text": "The supporting teeth are shaped and a digital scan is taken to design your custom bridge. A temporary bridge protects the area and keeps you comfortable while the final one is made."
+      },
+      {
+        "title": "Final placement",
+        "text": "Your finished bridge is checked for fit, bite and color, then bonded securely in place. It should feel natural and blend with the teeth around it."
+      }
     ]
   },
   "technology": {
     "heading": "Designed digitally, fitted precisely",
     "intro": "Accurate records make the difference between a bridge that fits and one that feels right.",
     "items": [
-      { "title": "iTero digital scanner", "text": "A fast, mess-free scan captures your teeth in fine detail for a bridge that seats accurately." },
-      { "title": "Intraoral cameras and digital X-rays", "text": "Clear images of the gap and the supporting teeth, so you can see what Dr. Moezzi is planning." },
-      { "title": "3D CBCT imaging", "text": "Three-dimensional scans of the jawbone when an implant-supported bridge is being considered." }
+      {
+        "title": "iTero digital scanner",
+        "text": "A fast, mess-free scan captures your teeth in fine detail for a bridge that seats accurately."
+      },
+      {
+        "title": "Intraoral cameras and digital X-rays",
+        "text": "Clear images of the gap and the supporting teeth, so you can see what Dr. Lavi is planning."
+      },
+      {
+        "title": "3D CBCT imaging",
+        "text": "Three-dimensional scans of the jawbone when an implant-supported bridge is being considered."
+      }
     ]
   },
   "aftercare": {
     "heading": "Caring for your bridge",
     "before": [
       "Keep your gums healthy with daily brushing and flossing; healthy gums give a bridge a stable foundation",
-      "Bring your questions about bridges, implants and partial dentures so Dr. Moezzi can compare the options with you",
+      "Bring your questions about bridges, implants and partial dentures so Dr. Lavi can compare the options with you",
       "Let us know if dental visits make you anxious; sedation options are available"
     ],
     "after": [
       "Brush twice a day with a soft-bristled toothbrush and fluoride toothpaste, cleaning around the bridge and your natural teeth",
       "Floss daily, using a floss threader or interdental brush to clean underneath the bridge",
-      "Keep regular checkups so Dr. Moezzi can check the fit of your bridge and your overall oral health",
+      "Keep regular checkups so Dr. Lavi can check the fit of your bridge and your overall oral health",
       "Limit sticky or hard foods to reduce stress on the bridge and prevent damage"
     ]
   },
   "cost": {
     "heading": "Cost and financing",
-    "text": "The cost of a bridge depends on its type, the number of teeth being replaced, the materials used and whether implants are involved. After your consultation, Dr. Moezzi gives you a written estimate before any treatment begins, along with a clear comparison to implants or a partial denture so you can weigh the trade-offs. Many PPO plans cover part of the cost of a bridge when it restores function; we accept most major plans, including Delta Dental, MetLife, Cigna and Aetna, and our team checks your benefits for you. Flexible financing is available for the balance."
+    "text": "The cost of a bridge depends on its type, the number of teeth being replaced, the materials used and whether implants are involved. After your consultation, Dr. Lavi gives you a written estimate before any treatment begins, along with a clear comparison to implants or a partial denture so you can weigh the trade-offs. Many PPO plans cover part of the cost of a bridge when it restores function; we accept most major plans, including Delta Dental, MetLife, Cigna and Aetna, and our team checks your benefits for you. Flexible financing is available for the balance."
   },
   "faqs": [
-    { "q": "How long do dental bridges last?", "a": "With good care, most bridges last 5 to 15 years, and some longer. Daily brushing and flossing under the bridge, limiting very hard or sticky foods and keeping up with regular checkups all extend its life. Dr. Moezzi checks the fit and the supporting teeth at each visit." },
-    { "q": "Do dental bridges look natural?", "a": "Yes. Your bridge is custom designed to match the color, size and shape of the surrounding teeth, so it blends into your smile. Dr. Moezzi checks shade and contour at the fitting appointment and adjusts anything that does not look right before bonding it in place." },
-    { "q": "Is getting a dental bridge painful?", "a": "The procedure is usually comfortable. Dr. Moezzi numbs the supporting teeth with local anesthesia before shaping them, and sedation options are available if you feel anxious. Some sensitivity for a few days after preparation or placement is common and generally settles on its own." },
-    { "q": "What's the difference between a dental bridge and an implant?", "a": "A bridge rests on the neighboring teeth or on implants for support, while an implant is a standalone replacement anchored directly in the jawbone that does not involve the adjacent teeth. Bridges are typically faster and need no surgery; implants help preserve bone. Dr. Moezzi will explain both so you can choose with confidence." },
-    { "q": "How do I care for my dental bridge?", "a": "Brush twice a day with a soft brush and fluoride toothpaste, and floss daily using a floss threader or interdental brush to clean under the pontic. Limit very sticky or hard foods, and keep regular checkups so Dr. Moezzi can monitor the fit and the health of the supporting teeth." },
-    { "q": "What are my other options if I have missing teeth?", "a": "Dental implants replace a tooth with a post anchored in the jawbone and a crown on top; they are long lasting and stand alone. Partial dentures are removable appliances that cost less but can shift. The right choice depends on your oral health, budget and goals, and Dr. Moezzi reviews every option with you." },
-    { "q": "Does dental insurance cover dental bridges?", "a": "Many dental plans cover part of the cost of a bridge, especially when it is needed to restore function, though the amount depends on your policy and provider. Our team reviews your benefits, explains what is covered and gives you a clear picture of any out-of-pocket costs before treatment begins." }
+    {
+      "q": "How long do dental bridges last?",
+      "a": "With good care, most bridges last 5 to 15 years, and some longer. Daily brushing and flossing under the bridge, limiting very hard or sticky foods and keeping up with regular checkups all extend its life. Dr. Lavi checks the fit and the supporting teeth at each visit."
+    },
+    {
+      "q": "Do dental bridges look natural?",
+      "a": "Yes. Your bridge is custom designed to match the color, size and shape of the surrounding teeth, so it blends into your smile. Dr. Lavi checks shade and contour at the fitting appointment and adjusts anything that does not look right before bonding it in place."
+    },
+    {
+      "q": "Is getting a dental bridge painful?",
+      "a": "The procedure is usually comfortable. Dr. Lavi numbs the supporting teeth with local anesthesia before shaping them, and sedation options are available if you feel anxious. Some sensitivity for a few days after preparation or placement is common and generally settles on its own."
+    },
+    {
+      "q": "What's the difference between a dental bridge and an implant?",
+      "a": "A bridge rests on the neighboring teeth or on implants for support, while an implant is a standalone replacement anchored directly in the jawbone that does not involve the adjacent teeth. Bridges are typically faster and need no surgery; implants help preserve bone. Dr. Lavi will explain both so you can choose with confidence."
+    },
+    {
+      "q": "How do I care for my dental bridge?",
+      "a": "Brush twice a day with a soft brush and fluoride toothpaste, and floss daily using a floss threader or interdental brush to clean under the pontic. Limit very sticky or hard foods, and keep regular checkups so Dr. Lavi can monitor the fit and the health of the supporting teeth."
+    },
+    {
+      "q": "What are my other options if I have missing teeth?",
+      "a": "Dental implants replace a tooth with a post anchored in the jawbone and a crown on top; they are long lasting and stand alone. Partial dentures are removable appliances that cost less but can shift. The right choice depends on your oral health, budget and goals, and Dr. Lavi reviews every option with you."
+    },
+    {
+      "q": "Does dental insurance cover dental bridges?",
+      "a": "Many dental plans cover part of the cost of a bridge, especially when it is needed to restore function, though the amount depends on your policy and provider. Our team reviews your benefits, explains what is covered and gives you a clear picture of any out-of-pocket costs before treatment begins."
+    }
   ],
-  "related": ["dental-implants", "dental-crowns", "restorative-dentistry", "all-on-4-implants"],
+  "related": [
+    "dental-implants",
+    "dental-crowns",
+    "restorative-dentistry",
+    "all-on-4-implants"
+  ],
   "cta": {
     "heading": "Ready to replace a missing tooth?",
-    "text": "Book a consultation at our Valencia office. Dr. Moezzi will compare a bridge with your other options and give you a written estimate before anything begins.",
+    "text": "Book a consultation at our Valencia office. Dr. Lavi will compare a bridge with your other options and give you a written estimate before anything begins.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

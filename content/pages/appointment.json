@@ -12,7 +12,7 @@
       "_type": "hero",
       "variant": "page",
       "eyebrow": "Appointments",
-      "heading": "Book your visit with Dr. Moezzi.",
+      "heading": "Book your visit with Dr. Lavi.",
       "lead": "Choose a time instantly with online booking, or send a request and we'll confirm the earliest slot that suits you. Same-day appointments are often available.",
       "primary": {
         "label": "Book online now",
@@ -45,7 +45,7 @@
         {
           "icon": "tech",
           "title": "2. A thorough exam",
-          "text": "Digital X-rays, an oral cancer screening and an unhurried exam with Dr. Moezzi."
+          "text": "Digital X-rays, an oral cancer screening and an unhurried exam with Dr. Lavi."
         },
         {
           "icon": "heart",

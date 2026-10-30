@@ -6,21 +6,21 @@
   "name": "Veneers",
   "shortDescription": "Thin porcelain or composite shells that cover chips, gaps and deep stains.",
   "seo": {
-    "title": "Porcelain Veneers in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Custom porcelain and composite veneers in Santa Clarita, designed by Dr. Neda Moezzi with digital smile design. Cover chips, gaps and deep stains."
+    "title": "Porcelain Veneers in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Custom porcelain and composite veneers in Santa Clarita, designed by Dr. Nuriel Lavi with digital smile design. Cover chips, gaps and deep stains."
   },
   "hero": {
     "eyebrow": "Cosmetic dentistry",
     "h1": "Veneers in Santa Clarita",
-    "lead": "Thin, custom-made shells that reshape chipped, worn, gapped or stained front teeth. Designed by Dr. Neda Moezzi to suit your face, not a template.",
-    "image": "/images/team/dr-moezzi-smile-sign.jpg",
-    "imageAlt": "Dr. Neda Moezzi holding a Smile sign"
+    "lead": "Thin, custom-made shells that reshape chipped, worn, gapped or stained front teeth. Designed by Dr. Nuriel Lavi to suit your face, not a template.",
+    "image": "/images/brand/panel-cosmetic.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "What veneers are and what they fix",
     "paragraphs": [
       "A veneer is an ultra-thin shell of porcelain or composite resin bonded to the front of a tooth. It changes the shape, length, color and surface of that tooth without major dental work. Veneers address chipped or cracked teeth, uneven or worn edges, small gaps, minor misalignment and deep discoloration that whitening cannot reach. One veneer can correct a single tooth; a set can reshape a whole smile.",
-      "At Valencia Dentistry, veneers begin with design. Dr. Moezzi studies your facial features, tooth shape and ideal shade, then previews the result digitally before any enamel is touched. Porcelain veneers take two to three visits; composite veneers are often finished in one. Patients across Santa Clarita and Valencia choose us because the same dentist designs, prepares and places every veneer."
+      "At Valencia Dentistry, veneers begin with design. Dr. Lavi studies your facial features, tooth shape and ideal shade, then previews the result digitally before any enamel is touched. Porcelain veneers take two to three visits; composite veneers are often finished in one. Patients across Santa Clarita and Valencia choose us because the same dentist designs, prepares and places every veneer."
     ]
   },
   "whoItsFor": {
@@ -38,45 +38,87 @@
     "heading": "The benefits of veneers",
     "intro": "Veneers can change how a smile looks and how you feel about using it.",
     "items": [
-      { "title": "Natural-looking results", "text": "Porcelain mimics the translucency and texture of real enamel for a lifelike finish." },
-      { "title": "Whiter, brighter teeth", "text": "Veneers conceal deep stains that whitening cannot lift." },
-      { "title": "Improved symmetry", "text": "Uneven edges and mismatched tooth sizes are balanced for a more harmonious smile." },
-      { "title": "Lasting confidence", "text": "Smile, speak and laugh without thinking about your teeth." },
-      { "title": "Stain-resistant and strong", "text": "Porcelain veneers resist staining and are built to withstand daily function." },
-      { "title": "Low maintenance", "text": "Care for veneers like natural teeth: brush, floss and keep routine checkups." }
+      {
+        "title": "Natural-looking results",
+        "text": "Porcelain mimics the translucency and texture of real enamel for a lifelike finish."
+      },
+      {
+        "title": "Whiter, brighter teeth",
+        "text": "Veneers conceal deep stains that whitening cannot lift."
+      },
+      {
+        "title": "Improved symmetry",
+        "text": "Uneven edges and mismatched tooth sizes are balanced for a more harmonious smile."
+      },
+      {
+        "title": "Lasting confidence",
+        "text": "Smile, speak and laugh without thinking about your teeth."
+      },
+      {
+        "title": "Stain-resistant and strong",
+        "text": "Porcelain veneers resist staining and are built to withstand daily function."
+      },
+      {
+        "title": "Low maintenance",
+        "text": "Care for veneers like natural teeth: brush, floss and keep routine checkups."
+      }
     ]
   },
   "options": {
     "heading": "Porcelain vs. composite resin veneers",
     "intro": "Both are custom-made; they differ in material, lifespan, finish and cost.",
     "items": [
-      { "title": "Porcelain veneers", "text": "High-quality ceramic. Often last 10 to 15 years or more. More natural and stain-resistant. Two to three visits. Higher cost. Not reversible." },
-      { "title": "Composite resin veneers", "text": "Tooth-colored resin. Often last 5 to 7 years. Good appearance but more prone to staining. Often done in one visit. More budget-friendly. Sometimes reversible." }
+      {
+        "title": "Porcelain veneers",
+        "text": "High-quality ceramic. Often last 10 to 15 years or more. More natural and stain-resistant. Two to three visits. Higher cost. Not reversible."
+      },
+      {
+        "title": "Composite resin veneers",
+        "text": "Tooth-colored resin. Often last 5 to 7 years. Good appearance but more prone to staining. Often done in one visit. More budget-friendly. Sometimes reversible."
+      }
     ]
   },
   "process": {
     "heading": "Your veneers, step by step",
-    "intro": "Three visits for porcelain, with Dr. Moezzi at each one.",
+    "intro": "Three visits for porcelain, with Dr. Lavi at each one.",
     "steps": [
-      { "title": "Consultation and smile design", "text": "Dr. Moezzi assesses your oral health, discusses your goals and designs a custom plan. Digital tools preview your new smile and help select the veneer type and shade." },
-      { "title": "Preparation and impressions", "text": "A minimal amount of enamel is removed where needed, and precise impressions are taken so the lab can craft your veneers. You leave with temporary veneers protecting your teeth." },
-      { "title": "Final placement", "text": "Your finished veneers are bonded in place, checked for fit and bite, and polished. You see the result the same day." }
+      {
+        "title": "Consultation and smile design",
+        "text": "Dr. Lavi assesses your oral health, discusses your goals and designs a custom plan. Digital tools preview your new smile and help select the veneer type and shade."
+      },
+      {
+        "title": "Preparation and impressions",
+        "text": "A minimal amount of enamel is removed where needed, and precise impressions are taken so the lab can craft your veneers. You leave with temporary veneers protecting your teeth."
+      },
+      {
+        "title": "Final placement",
+        "text": "Your finished veneers are bonded in place, checked for fit and bite, and polished. You see the result the same day."
+      }
     ]
   },
   "technology": {
     "heading": "Designing before we touch a tooth",
     "intro": "Digital imaging and shade matching make the result predictable.",
     "items": [
-      { "title": "iTero digital scanner", "text": "A digital impression of your teeth for smile design and lab-crafted veneers, without impression trays." },
-      { "title": "Intraoral cameras", "text": "Close-up images that guide shade matching and let you see each stage." },
-      { "title": "Digital X-rays", "text": "Confirm your teeth and roots are healthy before cosmetic work begins." }
+      {
+        "title": "iTero digital scanner",
+        "text": "A digital impression of your teeth for smile design and lab-crafted veneers, without impression trays."
+      },
+      {
+        "title": "Intraoral cameras",
+        "text": "Close-up images that guide shade matching and let you see each stage."
+      },
+      {
+        "title": "Digital X-rays",
+        "text": "Confirm your teeth and roots are healthy before cosmetic work begins."
+      }
     ]
   },
   "aftercare": {
     "heading": "Caring for your veneers",
     "before": [
       "Treat any decay or gum disease first; veneers need healthy teeth and gums underneath",
-      "Tell Dr. Moezzi if you grind or clench; a night guard may be part of the plan"
+      "Tell Dr. Lavi if you grind or clench; a night guard may be part of the plan"
     ],
     "after": [
       "Brush twice daily with a soft-bristled toothbrush and a non-abrasive toothpaste",
@@ -113,10 +155,15 @@
       "a": "Cost varies with the material, porcelain or composite, and the number of teeth treated. At your consultation we give you a transparent, itemized quote and go over financing options before you decide, so there are no surprises at any stage of treatment."
     }
   ],
-  "related": ["cosmetic-dentistry", "teeth-whitening", "invisalign", "dental-crowns"],
+  "related": [
+    "cosmetic-dentistry",
+    "teeth-whitening",
+    "invisalign",
+    "dental-crowns"
+  ],
   "cta": {
     "heading": "Preview your new smile",
-    "text": "Book a veneers consultation in Valencia. Dr. Moezzi will design the result digitally so you can see it before you commit.",
+    "text": "Book a veneers consultation in Valencia. Dr. Lavi will design the result digitally so you can see it before you commit.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

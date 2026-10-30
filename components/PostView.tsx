@@ -34,7 +34,7 @@ export async function PostView({ post }: { post: Post }) {
             <h1 className="text-5xl">{post.title}</h1>
             <p className="lead mt-5">{post.excerpt}</p>
             <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-grey-600">
-              <span className="inline-flex items-center gap-2"><span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-greige-100 text-xs font-semibold text-olive-700" aria-hidden="true">NM</span>By <span className="font-semibold text-ink-900">{post.author}</span></span>
+              <span className="inline-flex items-center gap-2"><span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-greige-100 text-xs font-semibold text-olive-700" aria-hidden="true">NL</span>By <span className="font-semibold text-ink-900">{post.author}</span></span>
               <time dateTime={post.datePublished}>{formatDate(post.datePublished)}</time>
               {post.dateModified && post.dateModified > post.datePublished && <span>Updated {formatDate(post.dateModified)}</span>}
               <span>{minutes} min read</span>
@@ -62,7 +62,7 @@ export async function PostView({ post }: { post: Post }) {
                 </nav>
               )}
               <div className="dark-section rounded-3xl p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">Talk to Dr. Moezzi</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">Talk to Dr. Lavi</p>
                 <p className="mt-2 text-white/80">Questions about your own situation? A $59 new patient exam includes X-rays and an unhurried consultation.</p>
                 <Button href={site.bookingUrl} variant="light" className="mt-4 w-full" arrow>Book online</Button>
                 <a href={`tel:${site.phone.tel}`} className="mt-3 block text-center text-sm text-white/80 hover:text-white">or call {site.phone.display}</a>
@@ -99,13 +99,13 @@ export async function PostView({ post }: { post: Post }) {
 
             <section aria-labelledby="author" className="mt-14 flex flex-col gap-5 rounded-3xl bg-greige-50/70 p-6 sm:flex-row sm:p-7">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
-                <Picture image={{ src: "/images/team/dr-moezzi-portrait.jpg", alt: "Dr. Neda Moezzi, DDS" }} sizes="96px" className="h-full w-full object-cover object-top" />
+                <Picture image={{ src: "/images/team/dr-lavi.jpg", alt: "Dr. Nuriel Lavi, DDS" }} sizes="96px" className="h-full w-full object-cover object-top" />
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>
                 <h2 id="author" className="mt-1 text-xl">{site.doctor.name}</h2>
-                <p className="mt-2 text-[0.95rem] text-grey-700">Founder of Valencia Dentistry in Santa Clarita. A {site.doctor.school} graduate ({site.doctor.gradYear}), Dr. Moezzi practices holistic, one-on-one dentistry with a focus on implants, cosmetic care and prevention.</p>
-                <Link href="/about/" className="mt-2 inline-block text-sm font-semibold text-olive-600 underline-offset-4 hover:underline">Meet Dr. Moezzi →</Link>
+                <p className="mt-2 text-[0.95rem] text-grey-700">Dentist and owner of Valencia Dentistry in Santa Clarita. Dr. Lavi practices holistic, one-on-one dentistry with a focus on implants, cosmetic care and prevention.</p>
+                <Link href="/about/" className="mt-2 inline-block text-sm font-semibold text-olive-600 underline-offset-4 hover:underline">Meet Dr. Lavi →</Link>
               </div>
             </section>
             <p className="mt-8 text-xs text-grey-600">This article is for general information and does not replace an examination. Treatment recommendations, timelines and costs depend on your individual situation.</p>

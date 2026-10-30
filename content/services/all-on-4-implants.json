@@ -6,20 +6,20 @@
   "name": "All-on-4 Implants",
   "shortDescription": "A full arch of fixed teeth on four implants, often with same-day temporary teeth.",
   "seo": {
-    "title": "All-on-4 Dental Implants in Santa Clarita | Dr. Moezzi",
-    "description": "All-on-4 full-arch dental implants in Santa Clarita. Four implants per jaw, same-day temporary teeth and care from Dr. Neda Moezzi at every visit."
+    "title": "All-on-4 Dental Implants in Santa Clarita | Dr. Lavi",
+    "description": "All-on-4 full-arch dental implants in Santa Clarita. Four implants per jaw, same-day temporary teeth and care from Dr. Nuriel Lavi at every visit."
   },
   "hero": {
     "eyebrow": "Oral surgery",
     "h1": "All-on-4 Dental Implants in Santa Clarita",
-    "lead": "Replace a full arch of missing or failing teeth with four implants and a fixed bridge. Dr. Neda Moezzi plans and places every case herself, usually with temporary teeth the same day.",
-    "image": "/images/team/dr-moezzi-treating-2.jpg",
-    "imageAlt": "Dr. Neda Moezzi treating a patient in her Santa Clarita office"
+    "lead": "Replace a full arch of missing or failing teeth with four implants and a fixed bridge. Dr. Nuriel Lavi plans and places every case himself, usually with temporary teeth the same day.",
+    "image": "/images/brand/panel-surgical.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "A fixed full-arch smile on four implants",
     "paragraphs": [
-      "If you are missing most or all of the teeth in your upper or lower jaw, or your remaining teeth are failing, a loose denture is not your only option. All-on-4, sometimes called All-on-X, is a full-arch restoration that attaches a fixed set of teeth to just four implants per jaw. At Valencia Dentistry in Santa Clarita, Dr. Moezzi plans and places every case herself.",
+      "If you are missing most or all of the teeth in your upper or lower jaw, or your remaining teeth are failing, a loose denture is not your only option. All-on-4, sometimes called All-on-X, is a full-arch restoration that attaches a fixed set of teeth to just four implants per jaw. At Valencia Dentistry in Santa Clarita, Dr. Lavi plans and places every case himself.",
       "The technique works by placing the two front implants upright and the two back implants at an angle, which makes the most of the bone you already have. For many patients that means bone grafting can be avoided. A temporary bridge is usually attached the same day the implants go in, so you leave with teeth, and a final custom bridge follows once the implants have healed."
     ]
   },
@@ -39,31 +39,70 @@
     "heading": "Benefits of All-on-4",
     "intro": "Fewer implants, one surgery and a fixed result add up to a simpler path than tooth-by-tooth replacement.",
     "items": [
-      { "title": "Teeth the same day", "text": "A temporary bridge is usually fixed in place on the day of surgery, so you do not go home without teeth." },
-      { "title": "Fewer implants, less surgery", "text": "Four implants per arch instead of one per tooth means a shorter, less invasive procedure." },
-      { "title": "Often no bone grafting", "text": "Angled placement uses the denser bone at the front of the jaw, so grafting is frequently unnecessary." },
-      { "title": "Fixed, not removable", "text": "The bridge is secured to the implants. It does not slip, and there is no adhesive." },
-      { "title": "Natural look and bite", "text": "Custom teeth designed for your face, with the look and bite function of natural teeth." },
-      { "title": "Simple to maintain", "text": "Brush, clean under the bridge as shown, and keep regular checkups. That is the routine." }
+      {
+        "title": "Teeth the same day",
+        "text": "A temporary bridge is usually fixed in place on the day of surgery, so you do not go home without teeth."
+      },
+      {
+        "title": "Fewer implants, less surgery",
+        "text": "Four implants per arch instead of one per tooth means a shorter, less invasive procedure."
+      },
+      {
+        "title": "Often no bone grafting",
+        "text": "Angled placement uses the denser bone at the front of the jaw, so grafting is frequently unnecessary."
+      },
+      {
+        "title": "Fixed, not removable",
+        "text": "The bridge is secured to the implants. It does not slip, and there is no adhesive."
+      },
+      {
+        "title": "Natural look and bite",
+        "text": "Custom teeth designed for your face, with the look and bite function of natural teeth."
+      },
+      {
+        "title": "Simple to maintain",
+        "text": "Brush, clean under the bridge as shown, and keep regular checkups. That is the routine."
+      }
     ]
   },
   "process": {
     "heading": "The All-on-4 process",
     "intro": "From the first scan to your final bridge, there are three main stages.",
     "steps": [
-      { "title": "Consultation and 3D imaging", "text": "A thorough exam, a 3D CBCT scan and a frank conversation about your goals. Dr. Moezzi measures your bone and designs a guided surgical plan for exact implant positions." },
-      { "title": "Implant placement and temporary bridge", "text": "On surgery day, four implants are placed per arch, two upright in front and two angled at the back. A custom temporary bridge is secured the same day so you leave with a working smile." },
-      { "title": "Healing and final bridge", "text": "Over the next few months the implants fuse with the bone. Once healed, the temporary is replaced with a permanent, custom-designed bridge built to look and function like natural teeth." }
+      {
+        "title": "Consultation and 3D imaging",
+        "text": "A thorough exam, a 3D CBCT scan and a frank conversation about your goals. Dr. Lavi measures your bone and designs a guided surgical plan for exact implant positions."
+      },
+      {
+        "title": "Implant placement and temporary bridge",
+        "text": "On surgery day, four implants are placed per arch, two upright in front and two angled at the back. A custom temporary bridge is secured the same day so you leave with a working smile."
+      },
+      {
+        "title": "Healing and final bridge",
+        "text": "Over the next few months the implants fuse with the bone. Once healed, the temporary is replaced with a permanent, custom-designed bridge built to look and function like natural teeth."
+      }
     ]
   },
   "technology": {
     "heading": "Technology for All-on-4",
     "intro": "Precise planning is what makes four implants enough to carry a full arch.",
     "items": [
-      { "title": "3D CBCT imaging", "text": "Maps bone volume, nerve paths and sinuses so each implant is placed where the bone is strongest." },
-      { "title": "Guided implant surgery", "text": "A surgical guide made from your digital plan directs each implant to its planned position and angle." },
-      { "title": "iTero digital scanner", "text": "Digital impressions of your mouth are used to design both the temporary and the final bridge." },
-      { "title": "PRF therapy", "text": "Platelet-rich fibrin from your own blood is placed at the surgical sites to support soft tissue and bone healing." }
+      {
+        "title": "3D CBCT imaging",
+        "text": "Maps bone volume, nerve paths and sinuses so each implant is placed where the bone is strongest."
+      },
+      {
+        "title": "Guided implant surgery",
+        "text": "A surgical guide made from your digital plan directs each implant to its planned position and angle."
+      },
+      {
+        "title": "iTero digital scanner",
+        "text": "Digital impressions of your mouth are used to design both the temporary and the final bridge."
+      },
+      {
+        "title": "PRF therapy",
+        "text": "Platelet-rich fibrin from your own blood is placed at the surgical sites to support soft tissue and bone healing."
+      }
     ]
   },
   "aftercare": {
@@ -107,7 +146,7 @@
     },
     {
       "q": "Am I too old for All-on-4 implants?",
-      "a": "Age by itself is rarely the deciding factor. What matters is being healthy enough for minor oral surgery and not having uncontrolled medical conditions, such as poorly managed diabetes or osteoporosis, that affect healing. Dr. Moezzi reviews your health history carefully and may coordinate with your physician."
+      "a": "Age by itself is rarely the deciding factor. What matters is being healthy enough for minor oral surgery and not having uncontrolled medical conditions, such as poorly managed diabetes or osteoporosis, that affect healing. Dr. Lavi reviews your health history carefully and may coordinate with your physician."
     },
     {
       "q": "How much do All-on-4 implants cost?",
@@ -119,10 +158,15 @@
     },
     {
       "q": "Where can I learn more about dental implants?",
-      "a": "The American Academy of Implant Dentistry publishes patient-friendly information about implant procedures and what to expect. The most useful next step, though, is a consultation. Dr. Moezzi can look at your scan with you and answer questions about your own mouth rather than the average one. Call (661) 254-5200 to arrange a visit."
+      "a": "The American Academy of Implant Dentistry publishes patient-friendly information about implant procedures and what to expect. The most useful next step, though, is a consultation. Dr. Lavi can look at your scan with you and answer questions about your own mouth rather than the average one. Call (661) 254-5200 to arrange a visit."
     }
   ],
-  "related": ["dental-implants", "bone-grafting", "tooth-extractions", "oral-surgery"],
+  "related": [
+    "dental-implants",
+    "bone-grafting",
+    "tooth-extractions",
+    "oral-surgery"
+  ],
   "cta": {
     "heading": "Find out if All-on-4 is right for you",
     "text": "A consultation includes a 3D scan, an honest assessment of your bone and options, and a written estimate. Patients visit us from Valencia, Stevenson Ranch, Newhall, Saugus and Canyon Country.",
@@ -131,7 +175,7 @@
   "flags": [
     "Source calls the procedure 'revolutionary' and 'life-changing'; omitted as hype.",
     "Source promises 'same-day results' for all patients; softened to 'usually' since immediate temporary teeth depend on bone quality and implant stability on the day.",
-    "Source lists osteoporosis alongside diabetes as a condition that may rule patients out; kept as 'uncontrolled' conditions per the source, but Dr. Moezzi should confirm the wording.",
+    "Source lists osteoporosis alongside diabetes as a condition that may rule patients out; kept as 'uncontrolled' conditions per the source, but Dr. Lavi should confirm the wording.",
     "Source FAQ links to the American Academy of Implant Dentistry; external link omitted because the content is plain text."
   ]
 }

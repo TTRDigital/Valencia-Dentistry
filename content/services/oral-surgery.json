@@ -6,20 +6,20 @@
   "name": "Oral Surgery",
   "shortDescription": "Extractions, wisdom teeth, bone grafting and implant surgery, all in one office.",
   "seo": {
-    "title": "Oral Surgery in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Oral surgery in Santa Clarita with Dr. Neda Moezzi: tooth extractions, wisdom teeth removal, bone grafting and implant placement, with sedation options."
+    "title": "Oral Surgery in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Oral surgery in Santa Clarita with Dr. Nuriel Lavi: tooth extractions, wisdom teeth removal, bone grafting and implant placement, with sedation options."
   },
   "hero": {
     "eyebrow": "Oral surgery",
     "h1": "Oral Surgery in Santa Clarita",
-    "lead": "Wisdom teeth, extractions, bone grafting and implant surgery, performed in our Valencia office by Dr. Neda Moezzi with 3D imaging, PRF therapy and sedation options when appropriate.",
-    "image": "/images/team/treatment-room.jpg",
-    "imageAlt": "A patient in a bright treatment room at Valencia Dentistry"
+    "lead": "Wisdom teeth, extractions, bone grafting and implant surgery, performed in our Valencia office by Dr. Nuriel Lavi with 3D imaging, PRF therapy and sedation options when appropriate.",
+    "image": "/images/brand/panel-surgical.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "Surgical care with one dentist, start to finish",
     "paragraphs": [
-      "Oral surgery covers the procedures that go beyond a filling or a crown: removing a damaged or impacted tooth, rebuilding jawbone, clearing a stubborn infection or placing an implant. At Valencia Dentistry in Santa Clarita, these are done in the same office, by the same dentist you see for everything else. Dr. Moezzi plans each case with 3D imaging and walks you through what will happen before anything begins.",
+      "Oral surgery covers the procedures that go beyond a filling or a crown: removing a damaged or impacted tooth, rebuilding jawbone, clearing a stubborn infection or placing an implant. At Valencia Dentistry in Santa Clarita, these are done in the same office, by the same dentist you see for everything else. Dr. Lavi plans each case with 3D imaging and walks you through what will happen before anything begins.",
       "Comfort is built into the plan. Local anesthesia is standard, sedation options are offered when appropriate, and the office is quiet and unhurried. Many patients are back to their normal routine within a few days, depending on the procedure. Whether you need a single extraction or you are preparing for full-arch implants, you get a clear timeline, honest pricing and a direct line to the person who treated you."
     ]
   },
@@ -38,48 +38,99 @@
     "heading": "What oral surgery can do for you",
     "intro": "Treating the problem at its source brings relief now and protects your options later.",
     "items": [
-      { "title": "Relief from pain and infection", "text": "Removing the cause of chronic discomfort rather than managing it indefinitely." },
-      { "title": "Better everyday function", "text": "Chew, speak and smile without working around a sore or missing tooth." },
-      { "title": "A foundation for implants", "text": "Grafting and careful extraction create the stable bone an implant needs to last." },
-      { "title": "Bone and facial structure preserved", "text": "Timely treatment limits bone loss and helps maintain the natural contours of your face." },
-      { "title": "Confidence in your smile", "text": "A healthier, more complete smile that feels like your own." }
+      {
+        "title": "Relief from pain and infection",
+        "text": "Removing the cause of chronic discomfort rather than managing it indefinitely."
+      },
+      {
+        "title": "Better everyday function",
+        "text": "Chew, speak and smile without working around a sore or missing tooth."
+      },
+      {
+        "title": "A foundation for implants",
+        "text": "Grafting and careful extraction create the stable bone an implant needs to last."
+      },
+      {
+        "title": "Bone and facial structure preserved",
+        "text": "Timely treatment limits bone loss and helps maintain the natural contours of your face."
+      },
+      {
+        "title": "Confidence in your smile",
+        "text": "A healthier, more complete smile that feels like your own."
+      }
     ]
   },
   "options": {
     "heading": "Our oral surgery services",
-    "intro": "Each of these is planned and performed by Dr. Moezzi in our Santa Clarita office.",
+    "intro": "Each of these is planned and performed by Dr. Lavi in our Santa Clarita office.",
     "items": [
-      { "title": "Dental Implants", "text": "Permanent tooth replacements anchored in the jawbone that look and work like natural teeth." },
-      { "title": "All-on-4 Implants", "text": "A full-arch restoration supported by four strategically placed implants per jaw." },
-      { "title": "Tooth Extractions", "text": "Gentle removal of damaged, infected or crowded teeth, with socket preservation when implants are planned." },
-      { "title": "Bone Grafting", "text": "Rebuilds jawbone lost to extraction, infection or time, preparing the site for implants." },
-      { "title": "Wisdom Teeth Removal", "text": "Surgical removal of third molars that are impacted, misaligned or causing pain." }
+      {
+        "title": "Dental Implants",
+        "text": "Permanent tooth replacements anchored in the jawbone that look and work like natural teeth."
+      },
+      {
+        "title": "All-on-4 Implants",
+        "text": "A full-arch restoration supported by four strategically placed implants per jaw."
+      },
+      {
+        "title": "Tooth Extractions",
+        "text": "Gentle removal of damaged, infected or crowded teeth, with socket preservation when implants are planned."
+      },
+      {
+        "title": "Bone Grafting",
+        "text": "Rebuilds jawbone lost to extraction, infection or time, preparing the site for implants."
+      },
+      {
+        "title": "Wisdom Teeth Removal",
+        "text": "Surgical removal of third molars that are impacted, misaligned or causing pain."
+      }
     ]
   },
   "process": {
     "heading": "What to expect",
     "intro": "A three-stage path, clearly explained, from first scan to final check.",
     "steps": [
-      { "title": "Consultation and digital imaging", "text": "A comprehensive exam, a 3D CBCT scan and a careful discussion of your symptoms and goals. Dr. Moezzi reviews your options and designs a surgical plan around your anatomy and health history." },
-      { "title": "Surgery day", "text": "Your procedure takes place in our office under local anesthesia, with sedation if planned. Guided techniques and precise instruments keep the work efficient and the discomfort low." },
-      { "title": "Recovery and follow-up", "text": "You leave with written instructions and a follow-up visit on the calendar. Most patients return to normal activity within a few days, depending on the procedure, and Dr. Moezzi checks healing personally." }
+      {
+        "title": "Consultation and digital imaging",
+        "text": "A comprehensive exam, a 3D CBCT scan and a careful discussion of your symptoms and goals. Dr. Lavi reviews your options and designs a surgical plan around your anatomy and health history."
+      },
+      {
+        "title": "Surgery day",
+        "text": "Your procedure takes place in our office under local anesthesia, with sedation if planned. Guided techniques and precise instruments keep the work efficient and the discomfort low."
+      },
+      {
+        "title": "Recovery and follow-up",
+        "text": "You leave with written instructions and a follow-up visit on the calendar. Most patients return to normal activity within a few days, depending on the procedure, and Dr. Lavi checks healing personally."
+      }
     ]
   },
   "technology": {
     "heading": "Technology in our surgical care",
     "intro": "The tools on site make surgery more precise and recovery smoother.",
     "items": [
-      { "title": "3D CBCT imaging", "text": "A full three-dimensional view of bone, roots, nerves and sinuses before any incision is made." },
-      { "title": "Guided surgery", "text": "Digital planning from your scan guides implant placement to the intended position and angle." },
-      { "title": "PRF therapy", "text": "Platelet-rich fibrin from your own blood is placed at the surgical site to support healing." },
-      { "title": "Laser dentistry", "text": "Used for soft-tissue work where it allows a gentler procedure with less bleeding." }
+      {
+        "title": "3D CBCT imaging",
+        "text": "A full three-dimensional view of bone, roots, nerves and sinuses before any incision is made."
+      },
+      {
+        "title": "Guided surgery",
+        "text": "Digital planning from your scan guides implant placement to the intended position and angle."
+      },
+      {
+        "title": "PRF therapy",
+        "text": "Platelet-rich fibrin from your own blood is placed at the surgical site to support healing."
+      },
+      {
+        "title": "Laser dentistry",
+        "text": "Used for soft-tissue work where it allows a gentler procedure with less bleeding."
+      }
     ]
   },
   "aftercare": {
     "heading": "Before and after surgery",
     "before": [
       "Follow fasting instructions if sedation is planned",
-      "Pause medications only if Dr. Moezzi advises it",
+      "Pause medications only if Dr. Lavi advises it",
       "Arrange a ride home if you will be sedated",
       "Avoid smoking and alcohol for at least 24 hours before your appointment",
       "Keep up careful brushing and flossing to lower the risk of infection"
@@ -99,7 +150,7 @@
   "faqs": [
     {
       "q": "Is oral surgery painful?",
-      "a": "Most procedures are done under local anesthesia, so you should not feel pain while the work is being done, and sedation options are available for added comfort. Afterward, some soreness and swelling is normal for a few days. Most patients tell us it was less than they had braced for, and it is managed with ice and the medication Dr. Moezzi recommends."
+      "a": "Most procedures are done under local anesthesia, so you should not feel pain while the work is being done, and sedation options are available for added comfort. Afterward, some soreness and swelling is normal for a few days. Most patients tell us it was less than they had braced for, and it is managed with ice and the medication Dr. Lavi recommends."
     },
     {
       "q": "How long is recovery after oral surgery?",
@@ -115,7 +166,7 @@
     },
     {
       "q": "Do you offer sedation for anxious patients?",
-      "a": "Yes. Beyond local anesthesia, we offer nitrous oxide and oral sedation to help you stay relaxed during your procedure. Dr. Moezzi will discuss which option fits your health history and the length of the procedure, and explain what to arrange beforehand, such as a ride home."
+      "a": "Yes. Beyond local anesthesia, we offer nitrous oxide and oral sedation to help you stay relaxed during your procedure. Dr. Lavi will discuss which option fits your health history and the length of the procedure, and explain what to arrange beforehand, such as a ride home."
     },
     {
       "q": "When should wisdom teeth be removed?",
@@ -123,14 +174,19 @@
     },
     {
       "q": "How do I know if I need oral surgery?",
-      "a": "Persistent tooth pain, swelling, jaw discomfort, a tooth that cannot be saved, or plans for dental implants are the usual reasons. The only way to know for sure is an exam and imaging. Dr. Moezzi will explain what she sees and whether surgery, a less invasive option or simply monitoring is the right call."
+      "a": "Persistent tooth pain, swelling, jaw discomfort, a tooth that cannot be saved, or plans for dental implants are the usual reasons. The only way to know for sure is an exam and imaging. Dr. Lavi will explain what he sees and whether surgery, a less invasive option or simply monitoring is the right call."
     },
     {
       "q": "Can I get oral surgery if I have a medical condition?",
-      "a": "Many patients with medical conditions can have oral surgery safely. Dr. Moezzi reviews your full health history and medication list first, and may coordinate with your physician when a condition such as diabetes or a blood thinner needs to be managed around the procedure. Precautions are built into your plan."
+      "a": "Many patients with medical conditions can have oral surgery safely. Dr. Lavi reviews your full health history and medication list first, and may coordinate with your physician when a condition such as diabetes or a blood thinner needs to be managed around the procedure. Precautions are built into your plan."
     }
   ],
-  "related": ["tooth-extractions", "wisdom-teeth-removal", "bone-grafting", "all-on-4-implants"],
+  "related": [
+    "tooth-extractions",
+    "wisdom-teeth-removal",
+    "bone-grafting",
+    "all-on-4-implants"
+  ],
   "cta": {
     "heading": "Ready to talk about oral surgery?",
     "text": "A consultation includes an exam, 3D imaging and a clear plan with a written estimate. Patients come to us from across Santa Clarita, including Valencia, Stevenson Ranch, Newhall, Saugus and Canyon Country.",

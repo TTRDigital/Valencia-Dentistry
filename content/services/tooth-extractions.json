@@ -6,26 +6,26 @@
   "name": "Tooth Extractions",
   "shortDescription": "Gentle simple and surgical removal of teeth that cannot be saved.",
   "seo": {
-    "title": "Tooth Extractions in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Gentle simple and surgical tooth extractions in Santa Clarita with 3D imaging, sedation options and same-day appointments. Dr. Neda Moezzi, Valencia."
+    "title": "Tooth Extractions in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Gentle simple and surgical tooth extractions in Santa Clarita with 3D imaging, sedation options and same-day appointments. Dr. Nuriel Lavi, Valencia."
   },
   "hero": {
     "eyebrow": "Oral surgery",
     "h1": "Tooth Extractions in Valencia",
-    "lead": "When a tooth cannot be saved, removing it can end the pain and protect the teeth around it. Dr. Moezzi performs simple and surgical extractions in a calm office, with sedation options when appropriate.",
-    "image": "/images/team/treatment-room.jpg",
-    "imageAlt": "A patient in a bright treatment room at Valencia Dentistry"
+    "lead": "When a tooth cannot be saved, removing it can end the pain and protect the teeth around it. Dr. Lavi performs simple and surgical extractions in a calm office, with sedation options when appropriate.",
+    "image": "/images/brand/panel-surgical.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "Gentle tooth removal, with a plan for what comes next",
     "paragraphs": [
-      "An extraction is usually the last option, not the first. Dr. Moezzi recommends it only when a tooth is decayed, infected, cracked or crowded beyond what a filling, crown or root canal can fix. When removal is the right call, it can relieve ongoing pain, stop an infection from spreading and protect your neighboring teeth and gums. Same-day appointments are available for urgent cases.",
-      "You see Dr. Moezzi at every visit, from the first exam to the follow-up. She uses 3D CBCT imaging to see the tooth and the bone around it before she begins, numbs the area fully with local anesthesia and offers sedation options for patients who feel anxious. Before you leave, you get clear aftercare instructions and, if you want to replace the tooth, an honest conversation about implants, bridges or dentures."
+      "An extraction is usually the last option, not the first. Dr. Lavi recommends it only when a tooth is decayed, infected, cracked or crowded beyond what a filling, crown or root canal can fix. When removal is the right call, it can relieve ongoing pain, stop an infection from spreading and protect your neighboring teeth and gums. Same-day appointments are available for urgent cases.",
+      "You see Dr. Lavi at every visit, from the first exam to the follow-up. He uses 3D CBCT imaging to see the tooth and the bone around it before he begins, numbs the area fully with local anesthesia and offers sedation options for patients who feel anxious. Before you leave, you get clear aftercare instructions and, if you want to replace the tooth, an honest conversation about implants, bridges or dentures."
     ]
   },
   "whoItsFor": {
     "heading": "Who it's for",
-    "intro": "Dr. Moezzi may recommend an extraction when a tooth puts your oral health or daily comfort at risk.",
+    "intro": "Dr. Lavi may recommend an extraction when a tooth puts your oral health or daily comfort at risk.",
     "items": [
       "Decay too deep to repair with a filling, crown or root canal",
       "An infection or abscess that has reached the pulp or surrounding bone",
@@ -39,37 +39,76 @@
     "heading": "Why removing a damaged tooth can help",
     "intro": "Losing a tooth can feel like a step backward, but removing one that cannot be saved often protects your health and comfort.",
     "items": [
-      { "title": "Relief from persistent pain", "text": "Ends the aching, throbbing or sharp pain that comes from infection, decay or pressure from an impacted tooth." },
-      { "title": "Infection stopped at the source", "text": "Removing a badly decayed or infected tooth helps keep bacteria from spreading to other areas of your mouth or body." },
-      { "title": "Protection for neighboring teeth", "text": "Taking out a compromised tooth helps prevent damage to the teeth and gum tissue beside it." },
-      { "title": "Better bite and function", "text": "In a crowded mouth, extraction can improve alignment and make room for braces or implants." },
-      { "title": "A clean start for restorations", "text": "A timely extraction prepares the site for an implant, bridge or denture when you are ready." }
+      {
+        "title": "Relief from persistent pain",
+        "text": "Ends the aching, throbbing or sharp pain that comes from infection, decay or pressure from an impacted tooth."
+      },
+      {
+        "title": "Infection stopped at the source",
+        "text": "Removing a badly decayed or infected tooth helps keep bacteria from spreading to other areas of your mouth or body."
+      },
+      {
+        "title": "Protection for neighboring teeth",
+        "text": "Taking out a compromised tooth helps prevent damage to the teeth and gum tissue beside it."
+      },
+      {
+        "title": "Better bite and function",
+        "text": "In a crowded mouth, extraction can improve alignment and make room for braces or implants."
+      },
+      {
+        "title": "A clean start for restorations",
+        "text": "A timely extraction prepares the site for an implant, bridge or denture when you are ready."
+      }
     ]
   },
   "options": {
     "heading": "Two types of extraction",
     "intro": "The approach depends on the condition and position of the tooth.",
     "items": [
-      { "title": "Simple extraction", "text": "For a tooth that is fully visible and can be removed without surgery, often one that is loose or damaged beyond repair." },
-      { "title": "Surgical extraction", "text": "For teeth that are impacted, broken at the gumline or not fully erupted, like many wisdom teeth. A small gum incision is made and the tooth may be sectioned." }
+      {
+        "title": "Simple extraction",
+        "text": "For a tooth that is fully visible and can be removed without surgery, often one that is loose or damaged beyond repair."
+      },
+      {
+        "title": "Surgical extraction",
+        "text": "For teeth that are impacted, broken at the gumline or not fully erupted, like many wisdom teeth. A small gum incision is made and the tooth may be sectioned."
+      }
     ]
   },
   "process": {
     "heading": "What to expect",
-    "intro": "Whether your extraction is simple or surgical, Dr. Moezzi walks you through every step.",
+    "intro": "Whether your extraction is simple or surgical, Dr. Lavi walks you through every step.",
     "steps": [
-      { "title": "Consultation and 3D imaging", "text": "Dr. Moezzi examines the tooth and takes 3D CBCT images to see the roots and surrounding bone. She listens to your symptoms, explains your options and confirms whether extraction is the right step." },
-      { "title": "Comfortable removal", "text": "The tooth is removed here in our Valencia office under local anesthesia, with sedation options when appropriate. Whether simple or surgical, Dr. Moezzi works carefully to minimize discomfort." },
-      { "title": "Recovery and follow-up", "text": "You leave with clear aftercare instructions and a follow-up visit to check healing. Many patients feel significant relief within a few days. If you plan to replace the tooth, we map out the next steps together." }
+      {
+        "title": "Consultation and 3D imaging",
+        "text": "Dr. Lavi examines the tooth and takes 3D CBCT images to see the roots and surrounding bone. He listens to your symptoms, explains your options and confirms whether extraction is the right step."
+      },
+      {
+        "title": "Comfortable removal",
+        "text": "The tooth is removed here in our Valencia office under local anesthesia, with sedation options when appropriate. Whether simple or surgical, Dr. Lavi works carefully to minimize discomfort."
+      },
+      {
+        "title": "Recovery and follow-up",
+        "text": "You leave with clear aftercare instructions and a follow-up visit to check healing. Many patients feel significant relief within a few days. If you plan to replace the tooth, we map out the next steps together."
+      }
     ]
   },
   "technology": {
     "heading": "Technology that supports a precise extraction",
     "intro": "Seeing the whole picture before treatment makes the procedure safer and more predictable.",
     "items": [
-      { "title": "3D CBCT imaging", "text": "Three-dimensional scans show root shape, nerve position and bone density so Dr. Moezzi can plan the safest approach." },
-      { "title": "Digital X-rays", "text": "Low-radiation images that appear instantly, so your exam and diagnosis move quickly." },
-      { "title": "Intraoral cameras", "text": "Close-up images let you see the damaged tooth for yourself and understand why removal is recommended." }
+      {
+        "title": "3D CBCT imaging",
+        "text": "Three-dimensional scans show root shape, nerve position and bone density so Dr. Lavi can plan the safest approach."
+      },
+      {
+        "title": "Digital X-rays",
+        "text": "Low-radiation images that appear instantly, so your exam and diagnosis move quickly."
+      },
+      {
+        "title": "Intraoral cameras",
+        "text": "Close-up images let you see the damaged tooth for yourself and understand why removal is recommended."
+      }
     ]
   },
   "aftercare": {
@@ -91,19 +130,39 @@
   },
   "cost": {
     "heading": "Cost and financing",
-    "text": "The cost of an extraction depends on whether it is simple or surgical, the tooth's position and whether you choose sedation. Before any treatment begins, Dr. Moezzi reviews your imaging with you and you receive a written estimate, so there are no surprises. We accept most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna and Blue Cross Blue Shield, and our team checks your benefits for you. Flexible financing is available for any remaining balance. If you are new to the practice, the $59 new patient special covers your exam and X-rays."
+    "text": "The cost of an extraction depends on whether it is simple or surgical, the tooth's position and whether you choose sedation. Before any treatment begins, Dr. Lavi reviews your imaging with you and you receive a written estimate, so there are no surprises. We accept most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna and Blue Cross Blue Shield, and our team checks your benefits for you. Flexible financing is available for any remaining balance. If you are new to the practice, the $59 new patient special covers your exam and X-rays."
   },
   "faqs": [
-    { "q": "Is getting a tooth pulled painful?", "a": "Most patients find the procedure quicker and more comfortable than they expected. Dr. Moezzi numbs the area completely with local anesthesia, and sedation options are available if you feel anxious. You may notice pressure while the tooth is loosened, but the goal is that you do not feel pain during the extraction itself." },
-    { "q": "How long does it take to recover after a tooth extraction?", "a": "Initial healing often takes one to three days after a simple extraction and about a week after a surgical one. Most patients return to normal activities within a few days when they follow their aftercare instructions. Dr. Moezzi schedules a follow-up visit to confirm the site is healing well." },
-    { "q": "What can I eat after a tooth extraction?", "a": "For the first couple of days, choose soft, cool foods such as yogurt, smoothies, applesauce and scrambled eggs. Avoid straws, crunchy snacks and anything very hot until the area has started to heal, since suction and sharp edges can disturb the clot that protects the socket." },
-    { "q": "Do I need to replace a tooth after it's extracted?", "a": "In most cases, yes, unless the extracted tooth was a wisdom tooth. A gap lets neighboring teeth drift and can change your bite over time. At your follow-up, Dr. Moezzi can walk you through replacement options such as a dental implant, a bridge or a partial denture." },
-    { "q": "How is a tooth extraction performed?", "a": "A simple extraction removes a fully visible tooth by gently loosening it under local anesthesia. A surgical extraction is used when a tooth is impacted, broken at the gumline or not fully erupted. Dr. Moezzi makes a small incision in the gum and may divide the tooth into sections so it can be removed with less force." }
+    {
+      "q": "Is getting a tooth pulled painful?",
+      "a": "Most patients find the procedure quicker and more comfortable than they expected. Dr. Lavi numbs the area completely with local anesthesia, and sedation options are available if you feel anxious. You may notice pressure while the tooth is loosened, but the goal is that you do not feel pain during the extraction itself."
+    },
+    {
+      "q": "How long does it take to recover after a tooth extraction?",
+      "a": "Initial healing often takes one to three days after a simple extraction and about a week after a surgical one. Most patients return to normal activities within a few days when they follow their aftercare instructions. Dr. Lavi schedules a follow-up visit to confirm the site is healing well."
+    },
+    {
+      "q": "What can I eat after a tooth extraction?",
+      "a": "For the first couple of days, choose soft, cool foods such as yogurt, smoothies, applesauce and scrambled eggs. Avoid straws, crunchy snacks and anything very hot until the area has started to heal, since suction and sharp edges can disturb the clot that protects the socket."
+    },
+    {
+      "q": "Do I need to replace a tooth after it's extracted?",
+      "a": "In most cases, yes, unless the extracted tooth was a wisdom tooth. A gap lets neighboring teeth drift and can change your bite over time. At your follow-up, Dr. Lavi can walk you through replacement options such as a dental implant, a bridge or a partial denture."
+    },
+    {
+      "q": "How is a tooth extraction performed?",
+      "a": "A simple extraction removes a fully visible tooth by gently loosening it under local anesthesia. A surgical extraction is used when a tooth is impacted, broken at the gumline or not fully erupted. Dr. Lavi makes a small incision in the gum and may divide the tooth into sections so it can be removed with less force."
+    }
   ],
-  "related": ["wisdom-teeth-removal", "dental-implants", "bone-grafting", "dental-bridges"],
+  "related": [
+    "wisdom-teeth-removal",
+    "dental-implants",
+    "bone-grafting",
+    "dental-bridges"
+  ],
   "cta": {
     "heading": "Ready for relief from tooth pain?",
-    "text": "Same-day and emergency appointments are available at our Valencia office. Call (661) 254-5200 or book online and Dr. Moezzi will help you find the gentlest way forward.",
+    "text": "Same-day and emergency appointments are available at our Valencia office. Call (661) 254-5200 or book online and Dr. Lavi will help you find the gentlest way forward.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

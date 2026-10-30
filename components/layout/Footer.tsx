@@ -19,7 +19,7 @@ export function Footer({ nav }: { nav: Navigation }) {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-3">
             <Link href="/" prefetch={false} className="inline-block rounded-md"><Logo inverted /></Link>
-            <p className="mt-5 max-w-sm text-white/75">Comfortable, holistic dentistry for Valencia and Santa Clarita families, delivered one on one by Dr. Neda Moezzi.</p>
+            <p className="mt-5 max-w-sm text-white/75">Comfortable, holistic dentistry for Valencia and Santa Clarita families, delivered one on one by Dr. Nuriel Lavi.</p>
             <div className="mt-6 flex items-center gap-2">
               {socials.map(({ name, href, I }) => (
                 <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${site.name} on ${name}`} className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20">

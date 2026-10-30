@@ -16,7 +16,7 @@ export async function BlogIndexPage({ page }: { page: number }) {
     <>
       <Section className="border-b hairline bg-warm" tight>
         <Container>
-          <SectionHeading as="h1" eyebrow="Blog" heading={page > 1 ? `Dental advice from Valencia, page ${page}` : "Dental advice from Dr. Moezzi"} lead="Plain-English guides on implants, crowns, bridges, extractions and everyday oral health, written for Santa Clarita patients." />
+          <SectionHeading as="h1" eyebrow="Blog" heading={page > 1 ? `Dental advice from Valencia, page ${page}` : "Dental advice from Dr. Lavi"} lead="Plain-English guides on implants, crowns, bridges, extractions and everyday oral health, written for Santa Clarita patients." />
         </Container>
       </Section>
       <Section className="bg-white">
@@ -24,7 +24,7 @@ export async function BlogIndexPage({ page }: { page: number }) {
           <BlogIndex posts={posts.map((p) => ({ slug: p.slug, path: p.path, title: p.title, excerpt: p.excerpt, category: p.category, tags: p.tags, datePublished: p.datePublished, image: p.image, imageAlt: p.imageAlt }))} page={page} categories={categories} />
         </Container>
       </Section>
-      <JsonLd data={graph([webPageNode(path, "Blog | Valencia Dentistry", "Dental advice from Dr. Neda Moezzi"), breadcrumbNode([{ name: "Home", path: "/" }, { name: "Blog", path: "/category/blogs/" }])])} />
+      <JsonLd data={graph([webPageNode(path, "Blog | Valencia Dentistry", "Dental advice from Dr. Nuriel Lavi"), breadcrumbNode([{ name: "Home", path: "/" }, { name: "Blog", path: "/category/blogs/" }])])} />
     </>
   );
 }

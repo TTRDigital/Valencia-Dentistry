@@ -1,7 +1,18 @@
 [
-  { "id": "jose-c", "author": "Jose C", "rating": 5, "source": "Google", "when": "2025", "text": "My first visit and it was amazing. From the time Alexis made my appointment to Leah the hygienist cleaning my teeth to Dr Neda explaining to me my treatment plan everything was perfect. I highly recommend them to everyone that is looking for a great dental experience. I found my dental office thank you ladies" },
-  { "id": "doug-chong", "author": "Doug Chong", "rating": 5, "source": "Google", "when": "2025", "text": "Best Dentist & Best Dental Hygienist in the Santa Clarita. Beautiful office and friendly staff. They truly take care of you!" },
-  { "id": "tamarea-jaster", "author": "Tamarea Jaster", "rating": 5, "source": "Google", "when": "2025", "text": "I chipped my 2 front teeth back in October pretty bad and I came here to get crowns and they look SO natural you can barely tell it’s a crown! I love it so much and the process was pretty simple, definitely recommend coming here if you need any dental work done!" },
-  { "id": "kyle-figatner", "author": "Kyle Figatner", "rating": 5, "source": "Google", "when": "2025", "text": "Great experience. I went in with pain in one of my teeth. Dr. Moezzi took the time to discuss all treatment options and address any concerns. Treatment was painless and I had no more pain after treatment. It’s been great since." },
-  { "id": "victoria-kersanty", "author": "Victoria Kersanty", "rating": 5, "source": "Google", "when": "2025", "text": "I’m 55 and have never had a better experience then with Dr Neda and her team. I absolutely love them and will never go anywhere else. I’ve also brought my family to her ❤️" }
+  {
+    "id": "doug-chong",
+    "author": "Doug Chong",
+    "rating": 5,
+    "source": "Google",
+    "when": "2025",
+    "text": "Best Dentist & Best Dental Hygienist in the Santa Clarita. Beautiful office and friendly staff. They truly take care of you!"
+  },
+  {
+    "id": "tamarea-jaster",
+    "author": "Tamarea Jaster",
+    "rating": 5,
+    "source": "Google",
+    "when": "2025",
+    "text": "I chipped my 2 front teeth back in October pretty bad and I came here to get crowns and they look SO natural you can barely tell it’s a crown! I love it so much and the process was pretty simple, definitely recommend coming here if you need any dental work done!"
+  }
 ]

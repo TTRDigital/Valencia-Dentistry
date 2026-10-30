@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getPage("services");
   if (!page) return {};
-  return buildMetadata({ title: page.seo.title ?? page.title, description: page.seo.description ?? "", path: "/services/", image: "/images/team/team-four.jpg" });
+  return buildMetadata({ title: page.seo.title ?? page.title, description: page.seo.description ?? "", path: "/services/", image: "/images/team/dr-lavi.jpg" });
 }
 
 export default async function ServicesPage() {

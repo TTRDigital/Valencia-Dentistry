@@ -21,9 +21,11 @@ Measured locally on the production build. Local measurements run over HTTP/1.1 b
 
 | Page | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Home `/` | 92 [90–92] | 100 | 100 | 100 | 2.7 s | 0 | 230 ms |
-| Service `/services/dental-implants/` | 93 [93] | 100 | 100 | 100 | 2.6 s | 0 | 220 ms |
-| Post `/dental-implants-cost/` | 97 [95–97] | 100 | 100 | 100 | 1.8 s | 0 | 180 ms |
+| Home `/` | 88 [85–88] | 100 | 100 | 100 | 2.6 s | 0 | 370 ms |
+| Service `/services/dental-implants/` | 94 [92–94] | 100 | 100 | 100 | 2.6 s | 0 | 210 ms |
+| Post `/dental-implants-cost/` | 99 [99] | 100 | 100 | 100 | 1.8 s | 0 | 70 ms |
+
+(Re-measured after the Valencia Dentistry rebrand and the Ideal-style home page.)
 
 Performance on the home and service pages is 90–93 rather than the ≥95 target. What was done and what remains:
 
@@ -44,9 +46,16 @@ The brand greys were refined for AA on tinted backgrounds: secondary text uses #
 
 The Valencia Dentistry identity was applied: logo vectorized from the supplied mock-ups (V in charcoal #2E2E2E, tooth in bronze #9A8B72, wordmark), palette switched to the brand board (charcoal, olive #5B6B5A for links/buttons, warm grey #A7A7A0, greige #D6D3CC, ivory #F7F5EF) with the logo bronze for eyebrows and highlights. Secondary text uses #5E5E57 and bronze-as-text #6F6049 to keep WCAG AA on the tinted backgrounds (table on `/styleguide/`). Brand name changed to "Valencia Dentistry" everywhere except the domain, email and the doctor's identity, which are pending confirmation (see below).
 
+## Dentist and home-page update (2026-10-30, later)
+
+- Dr. Neda Moezzi was removed from every page on the client's instruction and replaced by **Dr. Nuriel Lavi, DDS** (name, pronouns, author box, Person schema, hero and about page). His bio is written without credentials, school or history because none were supplied.
+- All photos showing the previous dentist or her team were deleted. The only photo of Dr. Lavi supplied so far is 314×340px; it is used in the hero, the technology section and the about page and will look soft until a high-resolution portrait arrives. Service heroes and other image slots use brand graphic panels (`public/images/brand/panel-*.jpg`) until treatment and office photos are supplied.
+- Three of the five Google reviews named the previous dentist or her staff and were removed; two remain. The before/after cases are from the same office under the previous dentist; they are kept and labelled "Real results from our Valencia office" pending the client's decision.
+- The home page below the hero now follows the Ideal Dental Solutions layout: three photo cards, a full-width mission banner, a technology accordion with a large photo, a before/after carousel, a centred consultation CTA and three numbered image panels, then the visit block.
+
 ## Open items (need from the client)
 
-0. **Identity questions raised by the stationery**: it names **Dr. Nuriel Lavi DDS**, the email ValenciaDentistryCA@gmail.com and the domain ValenciaDentistryCA.com, while the current site, reviews, before/after cases and bios are Dr. Neda Moezzi's. Confirm who the dentist is (and supply their bio, credentials, photo), the final domain (`NEXT_PUBLIC_SITE_URL`, canonicals, sitemap) and the public email. If the practice has changed hands, the reviews that name "Dr Neda", the "since 2007" story and the before/after cases must be replaced or removed.
+0. **Dr. Lavi's details**: credentials, education, years in practice, a short bio, and a high-resolution portrait plus office/team/treatment photos. **Also the domain and email questions**: it names **Dr. Nuriel Lavi DDS**, the email ValenciaDentistryCA@gmail.com and the domain ValenciaDentistryCA.com, while the current site, reviews, before/after cases and bios are Dr. Neda Moezzi's. Confirm who the dentist is (and supply their bio, credentials, photo), the final domain (`NEXT_PUBLIC_SITE_URL`, canonicals, sitemap) and the public email. If the practice has changed hands, the reviews that name "Dr Neda", the "since 2007" story and the before/after cases must be replaced or removed.
 1. The **new photo set**: a doctor portrait with a clean background for the hero, office and team photos at ≥2000px, treatment photos for the service heroes (today 13 practice photos from the current site are reused across 16 service pages), before/after cases with consent. The 28 blog hero images are stock/AI images migrated from the live posts; two contain garbled generated text and should be replaced. A master SVG of the logo would replace the traced vectors.
 2. **Sanity project ID** for this site + an Editor token for the seed; CORS origins (localhost:3000, the Vercel URL, the domain with and without www).
 3. **GoHighLevel webhook URL** (`GHL_WEBHOOK_URL` in Vercel), and whether the embedded GHL form should stay anywhere (it was replaced by the native form).

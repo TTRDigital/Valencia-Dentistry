@@ -6,21 +6,21 @@
   "name": "Teeth Whitening",
   "shortDescription": "Dentist-supervised whitening in the office or at home, with enamel-safe gels.",
   "seo": {
-    "title": "Teeth Whitening in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Professional teeth whitening in Santa Clarita. In-office in about an hour or custom take-home trays, supervised by Dr. Neda Moezzi. $59 new patient exam."
+    "title": "Teeth Whitening in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Professional teeth whitening in Santa Clarita. In-office in about an hour or custom take-home trays, supervised by Dr. Nuriel Lavi. $59 new patient exam."
   },
   "hero": {
     "eyebrow": "Cosmetic dentistry",
     "h1": "Teeth Whitening in Santa Clarita",
     "lead": "Lift coffee, wine and everyday stains with whitening that is matched to your teeth and your sensitivity. In the office in about an hour, or at home at your pace.",
-    "image": "/images/team/dr-moezzi-portrait.jpg",
-    "imageAlt": "Dr. Neda Moezzi, DDS, in her Valencia office"
+    "image": "/images/brand/panel-cosmetic.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "Whitening that is planned, not guessed",
     "paragraphs": [
       "Coffee, tea, red wine, tobacco and simple age all dull enamel over time. Professional whitening lifts those stains with dentist-grade gels that are stronger and more predictable than store-bought strips. At Valencia Dentistry every whitening plan starts with an exam, because whitening works best on healthy teeth, and a shade match so we can set realistic expectations and measure the result.",
-      "There is no single formula here. Dr. Moezzi tailors the strength, timing and method to your shade goal and your sensitivity, so you get a noticeably brighter smile with little to no sensitivity. Choose in-office whitening for a fast result, custom take-home trays for gradual brightening, or a combination plan for both. Patients across Santa Clarita and Valencia come to us for exactly this kind of measured approach."
+      "There is no single formula here. Dr. Lavi tailors the strength, timing and method to your shade goal and your sensitivity, so you get a noticeably brighter smile with little to no sensitivity. Choose in-office whitening for a fast result, custom take-home trays for gradual brightening, or a combination plan for both. Patients across Santa Clarita and Valencia come to us for exactly this kind of measured approach."
     ]
   },
   "whoItsFor": {
@@ -38,38 +38,80 @@
     "heading": "Why patients whiten with us",
     "intro": "The difference is supervision: a dentist chooses the gel, checks your teeth and watches your sensitivity.",
     "items": [
-      { "title": "Customized care", "text": "Strength and timing matched to your shade goal and your sensitivity level." },
-      { "title": "Dental-grade materials", "text": "Professional whitening agents that are enamel-safe and used under supervision." },
-      { "title": "Minimal sensitivity", "text": "Modern formulas and careful technique keep discomfort low for most patients." },
-      { "title": "Real results", "text": "Professional gels lift deeper stains than store-bought kits can reach." },
-      { "title": "Guidance throughout", "text": "From consultation to follow-up, you deal with Dr. Moezzi and her team, not a box." }
+      {
+        "title": "Customized care",
+        "text": "Strength and timing matched to your shade goal and your sensitivity level."
+      },
+      {
+        "title": "Dental-grade materials",
+        "text": "Professional whitening agents that are enamel-safe and used under supervision."
+      },
+      {
+        "title": "Minimal sensitivity",
+        "text": "Modern formulas and careful technique keep discomfort low for most patients."
+      },
+      {
+        "title": "Real results",
+        "text": "Professional gels lift deeper stains than store-bought kits can reach."
+      },
+      {
+        "title": "Guidance throughout",
+        "text": "From consultation to follow-up, you deal with Dr. Lavi and his team, not a box."
+      }
     ]
   },
   "options": {
     "heading": "Whitening options",
     "intro": "Three ways to whiten, depending on how fast you want results and how you like to work.",
     "items": [
-      { "title": "In-office whitening", "text": "Best for quick, dramatic results. About one hour in the chair with a professional high-concentration gel. Results are immediate." },
-      { "title": "Custom take-home trays", "text": "Best for flexible, gradual whitening. Wear your custom trays with professional gel for 30 to 60 minutes a day; results build over 7 to 14 days." },
-      { "title": "Combination plan", "text": "Best for long-term brightness. An in-office boost for immediate results, plus a take-home kit for maintenance." }
+      {
+        "title": "In-office whitening",
+        "text": "Best for quick, dramatic results. About one hour in the chair with a professional high-concentration gel. Results are immediate."
+      },
+      {
+        "title": "Custom take-home trays",
+        "text": "Best for flexible, gradual whitening. Wear your custom trays with professional gel for 30 to 60 minutes a day; results build over 7 to 14 days."
+      },
+      {
+        "title": "Combination plan",
+        "text": "Best for long-term brightness. An in-office boost for immediate results, plus a take-home kit for maintenance."
+      }
     ]
   },
   "process": {
     "heading": "How whitening works here",
     "intro": "Three steps, whether you whiten in the office or at home.",
     "steps": [
-      { "title": "Consultation and shade match", "text": "Dr. Moezzi examines your teeth, talks through your goals and records your current shade. This sets realistic expectations and shapes your plan." },
-      { "title": "Whitening treatment", "text": "In the office, professional-grade gel is applied in a single visit. For take-home whitening, you are fitted for custom trays. All products are enamel-safe and chosen with sensitivity in mind." },
-      { "title": "Aftercare and follow-up", "text": "You leave with tips to protect your results and avoid common staining habits, plus the option of touch-ups or extra gel for home use." }
+      {
+        "title": "Consultation and shade match",
+        "text": "Dr. Lavi examines your teeth, talks through your goals and records your current shade. This sets realistic expectations and shapes your plan."
+      },
+      {
+        "title": "Whitening treatment",
+        "text": "In the office, professional-grade gel is applied in a single visit. For take-home whitening, you are fitted for custom trays. All products are enamel-safe and chosen with sensitivity in mind."
+      },
+      {
+        "title": "Aftercare and follow-up",
+        "text": "You leave with tips to protect your results and avoid common staining habits, plus the option of touch-ups or extra gel for home use."
+      }
     ]
   },
   "technology": {
     "heading": "What supports the result",
     "intro": "Whitening is low-tech by design, but the exam around it is not.",
     "items": [
-      { "title": "Digital X-rays", "text": "Confirm there is no untreated decay before whitening, so the gel does not reach a vulnerable tooth." },
-      { "title": "Intraoral cameras", "text": "Document your starting shade and show the change at your follow-up." },
-      { "title": "iTero digital scanner", "text": "Digital impressions for custom take-home trays that fit closely and keep gel where it belongs." }
+      {
+        "title": "Digital X-rays",
+        "text": "Confirm there is no untreated decay before whitening, so the gel does not reach a vulnerable tooth."
+      },
+      {
+        "title": "Intraoral cameras",
+        "text": "Document your starting shade and show the change at your follow-up."
+      },
+      {
+        "title": "iTero digital scanner",
+        "text": "Digital impressions for custom take-home trays that fit closely and keep gel where it belongs."
+      }
     ]
   },
   "cost": {
@@ -98,7 +140,12 @@
       "a": "Results vary with the type and depth of staining, but many patients see an improvement of 2 to 8 shades. At your shade match we give you a realistic expectation based on your current color and the cause of the discoloration, before you commit."
     }
   ],
-  "related": ["cosmetic-dentistry", "veneers", "invisalign", "composite-filling"],
+  "related": [
+    "cosmetic-dentistry",
+    "veneers",
+    "invisalign",
+    "composite-filling"
+  ],
   "cta": {
     "heading": "Brighter in about an hour",
     "text": "Book a whitening consultation in Valencia. We will match your shade, check your teeth and recommend the option that fits.",

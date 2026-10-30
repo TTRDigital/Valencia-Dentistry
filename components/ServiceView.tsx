@@ -203,7 +203,7 @@ export async function ServiceView({ s }: { s: Service }) {
         <Container>
           <div className="grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-4">
-              <SectionHeading eyebrow="FAQ" heading={`${s.name} questions`} lead="Straight answers from Dr. Moezzi. Have another one? Ask at your consultation or call the office." />
+              <SectionHeading eyebrow="FAQ" heading={`${s.name} questions`} lead="Straight answers from Dr. Lavi. Have another one? Ask at your consultation or call the office." />
             </div>
             <div className="lg:col-span-8"><FaqList items={s.faqs} /></div>
           </div>

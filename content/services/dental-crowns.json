@@ -6,21 +6,21 @@
   "name": "Dental Crowns",
   "shortDescription": "Custom porcelain and ceramic caps that protect cracked, worn or root-canal-treated teeth.",
   "seo": {
-    "title": "Dental Crowns in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Porcelain and ceramic dental crowns in Santa Clarita, matched to your teeth by Dr. Neda Moezzi. Same-day crowns possible. $59 new patient exam."
+    "title": "Dental Crowns in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Porcelain and ceramic dental crowns in Santa Clarita, matched to your teeth by Dr. Nuriel Lavi. Same-day crowns possible. $59 new patient exam."
   },
   "hero": {
     "eyebrow": "Restorative dentistry",
     "h1": "Dental Crowns in Santa Clarita",
-    "lead": "Protect a cracked, worn or weakened tooth with a crown made to match your smile. Porcelain and ceramic, designed in-house by Dr. Neda Moezzi.",
-    "image": "/images/team/dr-moezzi-treating-2.jpg",
-    "imageAlt": "Dr. Moezzi treating a patient"
+    "lead": "Protect a cracked, worn or weakened tooth with a crown made to match your smile. Porcelain and ceramic, designed in-house by Dr. Nuriel Lavi.",
+    "image": "/images/brand/panel-restorative.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "What a dental crown does",
     "paragraphs": [
       "A dental crown is a custom cap that covers a tooth weakened by decay, a crack, a large filling or a root canal. Where a filling patches part of a tooth, a crown restores its full shape, strength and appearance so it can chew and function normally again. At Valencia Dentistry we craft crowns from durable porcelain and ceramic, matched to the color of your natural teeth.",
-      "Crowns are often the right choice when a tooth is too damaged for a filling but healthy enough to save. They strengthen teeth with large fillings or fractures, restore chewing and speech, improve the look of discolored or misshapen teeth and protect a tooth after root canal treatment. Dr. Moezzi makes custom crowns in-house, so same-day crowns are possible in some cases, and patients in Santa Clarita with an urgent problem can often be seen the same day."
+      "Crowns are often the right choice when a tooth is too damaged for a filling but healthy enough to save. They strengthen teeth with large fillings or fractures, restore chewing and speech, improve the look of discolored or misshapen teeth and protect a tooth after root canal treatment. Dr. Lavi makes custom crowns in-house, so same-day crowns are possible in some cases, and patients in Santa Clarita with an urgent problem can often be seen the same day."
     ]
   },
   "whoItsFor": {
@@ -38,31 +38,70 @@
     "heading": "Benefits of a crown",
     "intro": "A crown protects the tooth underneath and keeps your smile looking even.",
     "items": [
-      { "title": "Strength and protection", "text": "A durable cover shields a weak or fractured tooth from breaking further." },
-      { "title": "Natural appearance", "text": "Porcelain and ceramic are color-matched to blend with the surrounding teeth." },
-      { "title": "Comfortable function", "text": "Restoring the full shape of the tooth lets you chew and speak normally, with less sensitivity." },
-      { "title": "Long-lasting", "text": "With good hygiene and routine visits, crowns can last 10 to 15 years or longer." },
-      { "title": "Keeps your own tooth", "text": "A crown preserves the natural tooth underneath rather than replacing it." },
-      { "title": "Avoids bigger treatment", "text": "Protecting a damaged tooth early can help you avoid extraction or more invasive work later." }
+      {
+        "title": "Strength and protection",
+        "text": "A durable cover shields a weak or fractured tooth from breaking further."
+      },
+      {
+        "title": "Natural appearance",
+        "text": "Porcelain and ceramic are color-matched to blend with the surrounding teeth."
+      },
+      {
+        "title": "Comfortable function",
+        "text": "Restoring the full shape of the tooth lets you chew and speak normally, with less sensitivity."
+      },
+      {
+        "title": "Long-lasting",
+        "text": "With good hygiene and routine visits, crowns can last 10 to 15 years or longer."
+      },
+      {
+        "title": "Keeps your own tooth",
+        "text": "A crown preserves the natural tooth underneath rather than replacing it."
+      },
+      {
+        "title": "Avoids bigger treatment",
+        "text": "Protecting a damaged tooth early can help you avoid extraction or more invasive work later."
+      }
     ]
   },
   "process": {
     "heading": "The crown procedure",
     "intro": "Three steps, with a temporary crown protecting the tooth in between unless a same-day crown is planned.",
     "steps": [
-      { "title": "Exam and preparation", "text": "A full exam, then Dr. Moezzi reshapes the damaged tooth so it can hold a crown securely. A digital impression is taken for accuracy and comfort, with no trays." },
-      { "title": "Temporary protection", "text": "A temporary crown protects the tooth and keeps your smile working while your custom crown is made. In some cases the final crown can be made in-house the same day." },
-      { "title": "Final placement", "text": "Your permanent crown is bonded in place, adjusted so your bite feels natural and polished to blend with the surrounding teeth." }
+      {
+        "title": "Exam and preparation",
+        "text": "A full exam, then Dr. Lavi reshapes the damaged tooth so it can hold a crown securely. A digital impression is taken for accuracy and comfort, with no trays."
+      },
+      {
+        "title": "Temporary protection",
+        "text": "A temporary crown protects the tooth and keeps your smile working while your custom crown is made. In some cases the final crown can be made in-house the same day."
+      },
+      {
+        "title": "Final placement",
+        "text": "Your permanent crown is bonded in place, adjusted so your bite feels natural and polished to blend with the surrounding teeth."
+      }
     ]
   },
   "technology": {
     "heading": "Technology behind a better-fitting crown",
     "intro": "Digital impressions and in-house fabrication mean fewer visits and a closer fit.",
     "items": [
-      { "title": "iTero digital scanner", "text": "Captures a precise digital impression of the prepared tooth without trays or putty." },
-      { "title": "In-house custom crowns", "text": "Crowns are designed and made on site, so same-day crowns are possible for some cases." },
-      { "title": "Digital X-rays", "text": "Show the extent of decay or a fracture and check the root before a crown is planned." },
-      { "title": "Intraoral cameras", "text": "Document the damaged tooth and guide precise shade matching." }
+      {
+        "title": "iTero digital scanner",
+        "text": "Captures a precise digital impression of the prepared tooth without trays or putty."
+      },
+      {
+        "title": "In-house custom crowns",
+        "text": "Crowns are designed and made on site, so same-day crowns are possible for some cases."
+      },
+      {
+        "title": "Digital X-rays",
+        "text": "Show the extent of decay or a fracture and check the root before a crown is planned."
+      },
+      {
+        "title": "Intraoral cameras",
+        "text": "Document the damaged tooth and guide precise shade matching."
+      }
     ]
   },
   "aftercare": {
@@ -90,7 +129,7 @@
     },
     {
       "q": "Will getting a crown hurt?",
-      "a": "Most patients find the procedure comfortable. Dr. Moezzi numbs the tooth with local anesthetic before any reshaping, and sedation options are available when appropriate for patients with dental anxiety. Some mild sensitivity in the days after is common and usually settles."
+      "a": "Most patients find the procedure comfortable. Dr. Lavi numbs the tooth with local anesthetic before any reshaping, and sedation options are available when appropriate for patients with dental anxiety. Some mild sensitivity in the days after is common and usually settles."
     },
     {
       "q": "What are dental crowns made of?",
@@ -105,7 +144,12 @@
       "a": "In some cases, yes. We make custom crowns in-house, so a same-day crown is possible when the tooth and the situation allow. If you have a dental emergency, we will do everything possible to see you the same day and provide temporary or permanent protection."
     }
   ],
-  "related": ["composite-filling", "dental-implants", "dental-bridges", "restorative-dentistry"],
+  "related": [
+    "composite-filling",
+    "dental-implants",
+    "dental-bridges",
+    "restorative-dentistry"
+  ],
   "cta": {
     "heading": "Protect the tooth before it breaks further",
     "text": "Book a crown appointment in Valencia. Same-day and emergency visits are available, and you will know the cost before we begin.",

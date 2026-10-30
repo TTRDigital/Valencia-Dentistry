@@ -6,21 +6,21 @@
   "name": "Composite Filling",
   "shortDescription": "Tooth-colored, metal-free fillings that repair decay and small chips invisibly.",
   "seo": {
-    "title": "Composite Fillings in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Tooth-colored, metal-free composite fillings in Santa Clarita, matched to your enamel and placed in one visit by Dr. Neda Moezzi. $59 new patient exam."
+    "title": "Composite Fillings in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Tooth-colored, metal-free composite fillings in Santa Clarita, matched to your enamel and placed in one visit by Dr. Nuriel Lavi. $59 new patient exam."
   },
   "hero": {
     "eyebrow": "Cosmetic dentistry",
     "h1": "Composite Fillings in Santa Clarita",
     "lead": "Repair cavities and small cracks with a tooth-colored filling that blends into your smile. No metal, no mercury, usually one visit.",
-    "image": "/images/team/dr-moezzi-treating.jpg",
-    "imageAlt": "Dr. Moezzi treating a patient in the office"
+    "image": "/images/brand/panel-cosmetic.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "What a composite filling is",
     "paragraphs": [
-      "A composite filling repairs a cavity or a small area of damage with a tooth-colored resin. Dr. Moezzi shades the material to match your enamel, bonds it directly to the tooth and shapes it to the natural contours, so the repair is hard to spot. Because the resin bonds to the tooth, less healthy structure needs to be removed than with a metal filling.",
-      "Composite fillings fit the holistic approach at Valencia Dentistry. They contain no mercury or silver amalgam, they seal the tooth tightly against bacteria and they hold up to everyday chewing. Many patients in Santa Clarita also choose them to replace older metal fillings. The appointment is simple, and you see Dr. Moezzi from the exam through the final polish."
+      "A composite filling repairs a cavity or a small area of damage with a tooth-colored resin. Dr. Lavi shades the material to match your enamel, bonds it directly to the tooth and shapes it to the natural contours, so the repair is hard to spot. Because the resin bonds to the tooth, less healthy structure needs to be removed than with a metal filling.",
+      "Composite fillings fit the holistic approach at Valencia Dentistry. They contain no mercury or silver amalgam, they seal the tooth tightly against bacteria and they hold up to everyday chewing. Many patients in Santa Clarita also choose them to replace older metal fillings. The appointment is simple, and you see Dr. Lavi from the exam through the final polish."
     ]
   },
   "whoItsFor": {
@@ -38,28 +38,58 @@
     "heading": "Benefits of composite fillings",
     "intro": "A composite filling repairs the tooth and protects it, without changing how your smile looks.",
     "items": [
-      { "title": "Matched to your tooth", "text": "Custom-shaded to blend with the surrounding enamel, so the filling is hard to spot." },
-      { "title": "Minimally invasive", "text": "Bonding preserves more of your natural tooth than a metal filling does." },
-      { "title": "Durable", "text": "With proper care, composite fillings can last many years under daily chewing." },
-      { "title": "Metal-free", "text": "No mercury and no risk of metal sensitivity, in keeping with our biocompatible materials." },
-      { "title": "Protects the tooth", "text": "A tight bond seals out bacteria and helps prevent further decay." }
+      {
+        "title": "Matched to your tooth",
+        "text": "Custom-shaded to blend with the surrounding enamel, so the filling is hard to spot."
+      },
+      {
+        "title": "Minimally invasive",
+        "text": "Bonding preserves more of your natural tooth than a metal filling does."
+      },
+      {
+        "title": "Durable",
+        "text": "With proper care, composite fillings can last many years under daily chewing."
+      },
+      {
+        "title": "Metal-free",
+        "text": "No mercury and no risk of metal sensitivity, in keeping with our biocompatible materials."
+      },
+      {
+        "title": "Protects the tooth",
+        "text": "A tight bond seals out bacteria and helps prevent further decay."
+      }
     ]
   },
   "process": {
     "heading": "What to expect",
     "intro": "Three steps, usually in one visit.",
     "steps": [
-      { "title": "Evaluation and preparation", "text": "A full exam and digital imaging pinpoint the affected area. Dr. Moezzi numbs the tooth, removes the decay and preserves as much healthy structure as possible." },
-      { "title": "Placing the filling", "text": "Tooth-colored composite resin is layered into the tooth and shaped to match its natural contours." },
-      { "title": "Curing, polishing and bite check", "text": "A curing light hardens the resin. The filling is polished smooth and adjusted until your bite feels natural." }
+      {
+        "title": "Evaluation and preparation",
+        "text": "A full exam and digital imaging pinpoint the affected area. Dr. Lavi numbs the tooth, removes the decay and preserves as much healthy structure as possible."
+      },
+      {
+        "title": "Placing the filling",
+        "text": "Tooth-colored composite resin is layered into the tooth and shaped to match its natural contours."
+      },
+      {
+        "title": "Curing, polishing and bite check",
+        "text": "A curing light hardens the resin. The filling is polished smooth and adjusted until your bite feels natural."
+      }
     ]
   },
   "technology": {
     "heading": "Tools we use",
     "intro": "Precise imaging helps us find decay early and keep the repair small.",
     "items": [
-      { "title": "Digital X-rays", "text": "Low-dose images that locate decay between teeth and under old fillings." },
-      { "title": "Intraoral cameras", "text": "Close-up photos so you can see the cavity before and the finished filling after." }
+      {
+        "title": "Digital X-rays",
+        "text": "Low-dose images that locate decay between teeth and under old fillings."
+      },
+      {
+        "title": "Intraoral cameras",
+        "text": "Close-up photos so you can see the cavity before and the finished filling after."
+      }
     ]
   },
   "aftercare": {
@@ -88,7 +118,7 @@
     },
     {
       "q": "Are composite fillings safe?",
-      "a": "Composite fillings are metal-free and mercury-free, made from a durable resin that is widely used in dentistry and considered biocompatible. They are a natural fit for patients who prefer a health-conscious option, and they are the material Dr. Moezzi uses for fillings at Valencia Dentistry."
+      "a": "Composite fillings are metal-free and mercury-free, made from a durable resin that is widely used in dentistry and considered biocompatible. They are a natural fit for patients who prefer a health-conscious option, and they are the material Dr. Lavi uses for fillings at Valencia Dentistry."
     },
     {
       "q": "Do composite fillings look natural?",
@@ -107,10 +137,15 @@
       "a": "Composite fillings bond directly to the tooth, so they need less drilling than silver amalgam and preserve more natural structure. They also match tooth color, where amalgam is visibly metallic. Amalgam remains durable, but for appearance, conservation and a metal-free mouth, composite is the option we recommend."
     }
   ],
-  "related": ["dental-crowns", "cosmetic-dentistry", "holistic-dentistry", "restorative-dentistry"],
+  "related": [
+    "dental-crowns",
+    "cosmetic-dentistry",
+    "holistic-dentistry",
+    "restorative-dentistry"
+  ],
   "cta": {
     "heading": "Have a cavity or a chipped tooth?",
-    "text": "Book an appointment in Valencia. Dr. Moezzi will examine the tooth, explain your options and often place the filling the same visit.",
+    "text": "Book an appointment in Valencia. Dr. Lavi will examine the tooth, explain your options and often place the filling the same visit.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

@@ -7,7 +7,7 @@ import { buildMetadata, dentistNode, personNode, websiteNode } from "@/lib/seo";
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getPage("home");
   if (!page) return {};
-  return buildMetadata({ title: page.seo.title ?? page.title, description: page.seo.description ?? "", path: "/", image: "/images/team/team-sign.jpg" });
+  return buildMetadata({ title: page.seo.title ?? page.title, description: page.seo.description ?? "", path: "/", image: "/images/team/dr-lavi.jpg" });
 }
 
 export default async function HomePage() {

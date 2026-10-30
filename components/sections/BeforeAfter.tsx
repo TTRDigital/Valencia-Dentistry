@@ -14,7 +14,7 @@ export async function BeforeAfter({ s }: { s: GallerySection }) {
         <div className="mt-12">
           <CompareSlider cases={cases} />
         </div>
-        <p className="mt-6 text-center text-sm text-grey-600">Real patients of Dr. Moezzi, shown with permission. Results vary from person to person.</p>
+        <p className="mt-6 text-center text-sm text-grey-600">Real patients of our Valencia office, shown with permission. Results vary from person to person.</p>
       </Container>
     </Section>
   );

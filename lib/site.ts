@@ -1,5 +1,5 @@
 /**
- * Practice facts (verified against the live site on 2026-10-29). These are
+ * Practice facts (address, phone, hours, offer and rating verified against the live site on 2026-10-29; the dentist changed to Dr. Nuriel Lavi on the client's instruction, bio details pending). These are
  * the built-in defaults; the Sanity "Site settings" document overrides them
  * when the CMS is connected (see lib/content/settings.ts).
  */
@@ -9,7 +9,7 @@ export const site = {
   name: "Valencia Dentistry",
   legalName: "Valencia Dentistry",
   tagline: "Comfortable, holistic dentistry in Valencia, Santa Clarita",
-  doctor: { name: "Dr. Neda Moezzi, DDS", shortName: "Dr. Moezzi", firstName: "Neda", lastName: "Moezzi", credentials: "DDS", jobTitle: "Dentist", school: "University of Detroit Mercy Dental School", gradYear: 2010 },
+  doctor: { name: "Dr. Nuriel Lavi, DDS", shortName: "Dr. Lavi", firstName: "Nuriel", lastName: "Lavi", credentials: "DDS", jobTitle: "Dentist", school: "", gradYear: 0 },
   phone: { display: "(661) 254-5200", tel: "+16612545200" },
   email: "info@valenciasmileexpert.com",
   address: { street: "27420 Tourney Rd, Suite 240", city: "Santa Clarita", neighborhood: "Valencia", state: "CA", zip: "91355", country: "US" },

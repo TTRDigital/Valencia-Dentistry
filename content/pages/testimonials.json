@@ -5,7 +5,7 @@
   "breadcrumb": "Testimonials",
   "seo": {
     "title": "Patient Reviews | Valencia Dentistry, Santa Clarita",
-    "description": "Read Google reviews from patients of Dr. Neda Moezzi at Valencia Dentistry in Santa Clarita. Rated 4.9 stars across 180 reviews."
+    "description": "Read Google reviews from patients of Dr. Nuriel Lavi at Valencia Dentistry in Santa Clarita. Rated 4.9 stars across 180 reviews."
   },
   "sections": [
     {
@@ -13,14 +13,38 @@
       "variant": "page",
       "eyebrow": "Testimonials",
       "heading": "What our patients say.",
-      "lead": "Real Google reviews from Santa Clarita families, shown exactly as written. Rated 4.9 across 180 reviews.",
-      "primary": { "label": "Read all reviews on Google", "href": "https://maps.app.goo.gl/zf8fsL8TG72B2QZh9" },
-      "secondary": { "label": "Book a visit", "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE" },
-      "image": { "src": "/images/team/dr-moezzi-consult.jpg", "alt": "Dr. Neda Moezzi talking with a patient in the treatment chair" },
+      "lead": "Google reviews from Santa Clarita patients, shown exactly as written. Rated 4.9 across 180 reviews.",
+      "primary": {
+        "label": "Read all reviews on Google",
+        "href": "https://maps.app.goo.gl/zf8fsL8TG72B2QZh9"
+      },
+      "secondary": {
+        "label": "Book a visit",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      },
+      "image": {
+        "src": "/images/team/dr-lavi.jpg",
+        "alt": "Dr. Nuriel Lavi talking with a patient in the treatment chair"
+      },
       "trust": true
     },
-    { "_type": "reviews", "eyebrow": "Google reviews", "heading": "Recent reviews", "lead": "Every review here was written by a patient on Google." },
-    { "_type": "beforeAfter", "eyebrow": "Transformations", "heading": "Results you can see", "lead": "Drag to compare real before and after cases from our Valencia office." },
-    { "_type": "cta", "eyebrow": "Join them", "heading": "Experience the difference yourself.", "text": "New patients receive a comprehensive exam and X-rays for $59. Book online or call to get started." }
+    {
+      "_type": "reviews",
+      "eyebrow": "Google reviews",
+      "heading": "Recent reviews",
+      "lead": "Every review here was written by a patient on Google."
+    },
+    {
+      "_type": "caseCarousel",
+      "eyebrow": "Before and after",
+      "heading": "Results you can see",
+      "lead": "A few of the smiles restored in our Valencia office. Results vary from person to person."
+    },
+    {
+      "_type": "cta",
+      "eyebrow": "Join them",
+      "heading": "Experience the difference yourself.",
+      "text": "New patients receive a comprehensive exam and X-rays for $59. Book online or call to get started."
+    }
   ]
 }

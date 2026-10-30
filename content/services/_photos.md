@@ -1,14 +1,4 @@
-# Practice photos available (public/images). Use ONLY these paths.
-- /images/team/dr-moezzi-portrait.jpg — Dr. Neda Moezzi, DDS, portrait in the office (623x510)
-- /images/team/dr-moezzi-consult.jpg — Dr. Moezzi talking with a patient in the treatment chair (630x517)
-- /images/team/dr-moezzi-treating.jpg — Dr. Moezzi treating a patient in the office (604x318)
-- /images/team/dr-moezzi-treating-2.jpg — Dr. Moezzi treating a patient, second angle (618x449)
-- /images/team/dr-moezzi-smile-sign.jpg — Dr. Moezzi holding a "Smile" sign (647x575)
-- /images/team/treatment-room.jpg — a patient in a bright treatment room (603x475)
-- /images/team/team-four.jpg — Dr. Moezzi with three members of her team (703x397)
-- /images/team/team-seated.jpg — Dr. Moezzi seated with her team (650x559)
-- /images/team/team-seated-2.jpg — Dr. Moezzi seated with her team, second photo (630x563)
-- /images/team/team-office-wide.jpg — the team in the office, wide (1296x563)
-- /images/team/team-sign.jpg — the team in front of the "Neda Moezzi DDS" sign (1260x1126)
-- /images/cases/case-1..6-before.jpg / -after.jpg — real before/after cases (home page gallery)
-- /images/cases/implant-before.jpg / implant-after.jpg — real implant case
+# Photos available (public/images). Use ONLY these paths.
+- /images/team/dr-lavi.jpg — Dr. Nuriel Lavi, DDS, in the treatment room (314x340, low resolution; replace with the new portrait)
+- /images/brand/panel-{cosmetic,restorative,surgical,holistic,preventive,general}.jpg — brand graphic panels used as service hero visuals until treatment photos are supplied
+- /images/cases/case-1..6-before.jpg / -after.jpg, implant-before/after.jpg — before/after cases from the office (previous dentist's patients; confirm before launch)

@@ -6,26 +6,26 @@
   "name": "Dental Implants",
   "shortDescription": "Permanent replacements for one tooth, several teeth or a full arch.",
   "seo": {
-    "title": "Dental Implants in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Dental implants in Santa Clarita, planned by Dr. Neda Moezzi with 3D imaging and guided surgery. Single tooth, several teeth or full arch. Book a consult."
+    "title": "Dental Implants in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Dental implants in Santa Clarita, planned by Dr. Nuriel Lavi with 3D imaging and guided surgery. Single tooth, several teeth or full arch. Book a consult."
   },
   "hero": {
     "eyebrow": "Restorative dentistry",
     "h1": "Dental Implants in Santa Clarita",
-    "lead": "Replace one tooth, several teeth or a full arch with implants planned by Dr. Neda Moezzi using 3D imaging and guided surgery. One dentist, every visit, from first scan to final crown.",
-    "image": "/images/team/dr-moezzi-consult.jpg",
-    "imageAlt": "Dr. Neda Moezzi talking with a patient in the treatment chair"
+    "lead": "Replace one tooth, several teeth or a full arch with implants planned by Dr. Nuriel Lavi using 3D imaging and guided surgery. One dentist, every visit, from first scan to final crown.",
+    "image": "/images/brand/panel-restorative.jpg",
+    "imageAlt": ""
   },
   "intro": {
-    "heading": "Implant care led by Dr. Moezzi, start to finish",
+    "heading": "Implant care led by Dr. Lavi, start to finish",
     "paragraphs": [
-      "A missing tooth changes how you chew, how you speak and how freely you smile. At Valencia Dentistry in Santa Clarita, Dr. Neda Moezzi treats patients who are missing one tooth, several teeth or a whole arch. Every plan starts with your oral health, your bone support, your bite and what you want your smile to look like, along with how comfortable you need to feel along the way.",
-      "An implant is a small titanium post set into the jawbone. Once it has healed, it holds a custom crown, bridge or denture. Because the post is anchored in bone, implants often chew more securely and sit more steadily than removable options. You see Dr. Moezzi at every step, from the first scan to the final restoration, with clear explanations and no handoffs."
+      "A missing tooth changes how you chew, how you speak and how freely you smile. At Valencia Dentistry in Santa Clarita, Dr. Nuriel Lavi treats patients who are missing one tooth, several teeth or a whole arch. Every plan starts with your oral health, your bone support, your bite and what you want your smile to look like, along with how comfortable you need to feel along the way.",
+      "An implant is a small titanium post set into the jawbone. Once it has healed, it holds a custom crown, bridge or denture. Because the post is anchored in bone, implants often chew more securely and sit more steadily than removable options. You see Dr. Lavi at every step, from the first scan to the final restoration, with clear explanations and no handoffs."
     ]
   },
   "whoItsFor": {
     "heading": "Who it's for",
-    "intro": "Many adults with missing teeth are candidates, and Dr. Moezzi confirms this with a careful exam, imaging and a review of your health history.",
+    "intro": "Many adults with missing teeth are candidates, and Dr. Lavi confirms this with a careful exam, imaging and a review of your health history.",
     "items": [
       "You are missing one or more teeth",
       "You want a fixed replacement rather than a removable denture",
@@ -39,48 +39,102 @@
     "heading": "Benefits of dental implants",
     "intro": "Implants do more than fill a gap. Because they are anchored in bone, they can restore chewing strength and help keep the jaw and neighboring teeth stable.",
     "items": [
-      { "title": "Natural look and feel", "text": "Implants are built to look, work and feel much like your own teeth." },
-      { "title": "Steady confidence", "text": "No slipping dentures and no visible gaps when you talk, laugh or eat." },
-      { "title": "Healthier mouth", "text": "Implants help preserve jawbone and stop neighboring teeth from drifting into the space." },
-      { "title": "Better function", "text": "Eat, speak and chew comfortably, with far fewer limits on what is on your plate." },
-      { "title": "Long-lasting results", "text": "With proper care and regular checkups, implants can last for decades." },
-      { "title": "Healthy teeth left alone", "text": "Unlike a bridge, an implant does not require reshaping the teeth next to the gap." }
+      {
+        "title": "Natural look and feel",
+        "text": "Implants are built to look, work and feel much like your own teeth."
+      },
+      {
+        "title": "Steady confidence",
+        "text": "No slipping dentures and no visible gaps when you talk, laugh or eat."
+      },
+      {
+        "title": "Healthier mouth",
+        "text": "Implants help preserve jawbone and stop neighboring teeth from drifting into the space."
+      },
+      {
+        "title": "Better function",
+        "text": "Eat, speak and chew comfortably, with far fewer limits on what is on your plate."
+      },
+      {
+        "title": "Long-lasting results",
+        "text": "With proper care and regular checkups, implants can last for decades."
+      },
+      {
+        "title": "Healthy teeth left alone",
+        "text": "Unlike a bridge, an implant does not require reshaping the teeth next to the gap."
+      }
     ]
   },
   "options": {
     "heading": "Implant options",
-    "intro": "Dr. Moezzi matches the implant approach to how many teeth are missing and how much bone is available.",
+    "intro": "Dr. Lavi matches the implant approach to how many teeth are missing and how much bone is available.",
     "items": [
-      { "title": "Single tooth implant", "text": "Replaces one missing tooth with its own post and crown, with no reshaping of the healthy teeth on either side." },
-      { "title": "Multiple tooth implants", "text": "An implant-supported bridge replaces several missing teeth in a row with a stable, natural-looking result." },
-      { "title": "Full-arch implants", "text": "For patients missing most or all of their teeth, a full-arch restoration can rebuild an entire upper or lower smile." },
-      { "title": "Implant-supported dentures", "text": "A denture that locks onto implants for a far more secure fit than a traditional removable denture." },
-      { "title": "Zygomatic implants", "text": "A specialized option anchored in the cheekbone, usually considered for severe bone loss in the upper jaw." }
+      {
+        "title": "Single tooth implant",
+        "text": "Replaces one missing tooth with its own post and crown, with no reshaping of the healthy teeth on either side."
+      },
+      {
+        "title": "Multiple tooth implants",
+        "text": "An implant-supported bridge replaces several missing teeth in a row with a stable, natural-looking result."
+      },
+      {
+        "title": "Full-arch implants",
+        "text": "For patients missing most or all of their teeth, a full-arch restoration can rebuild an entire upper or lower smile."
+      },
+      {
+        "title": "Implant-supported dentures",
+        "text": "A denture that locks onto implants for a far more secure fit than a traditional removable denture."
+      },
+      {
+        "title": "Zygomatic implants",
+        "text": "A specialized option anchored in the cheekbone, usually considered for severe bone loss in the upper jaw."
+      }
     ]
   },
   "process": {
     "heading": "How implant treatment works",
     "intro": "Timelines vary with your health, bone support and whether extractions or grafting come first, but the path has three main stages.",
     "steps": [
-      { "title": "Consultation and planning", "text": "An exam, 3D imaging and a conversation about your health, bite and goals. If needed, Dr. Moezzi may recommend extractions, gum treatment or bone grafting before the implant." },
-      { "title": "Implant placement", "text": "The post is placed in the jawbone using a guided, pre-planned approach under local anesthesia, with sedation options when appropriate. Over the following months the implant bonds with the bone." },
-      { "title": "Restoration", "text": "Once healed, a custom crown, bridge or denture is attached. Dr. Moezzi checks your bite, comfort and healing so the new tooth looks natural and works properly." }
+      {
+        "title": "Consultation and planning",
+        "text": "An exam, 3D imaging and a conversation about your health, bite and goals. If needed, Dr. Lavi may recommend extractions, gum treatment or bone grafting before the implant."
+      },
+      {
+        "title": "Implant placement",
+        "text": "The post is placed in the jawbone using a guided, pre-planned approach under local anesthesia, with sedation options when appropriate. Over the following months the implant bonds with the bone."
+      },
+      {
+        "title": "Restoration",
+        "text": "Once healed, a custom crown, bridge or denture is attached. Dr. Lavi checks your bite, comfort and healing so the new tooth looks natural and works properly."
+      }
     ]
   },
   "technology": {
     "heading": "Technology behind your implant",
-    "intro": "Planning tools on site let Dr. Moezzi see your bone before surgery and place implants with precision.",
+    "intro": "Planning tools on site let Dr. Lavi see your bone before surgery and place implants with precision.",
     "items": [
-      { "title": "3D CBCT imaging", "text": "A three-dimensional scan of your jaw shows bone height, width and nerve position before anything is placed." },
-      { "title": "Guided implant surgery", "text": "A digital plan built from your scan guides the implant to the planned position, depth and angle." },
-      { "title": "iTero digital scanner", "text": "A digital impression of your teeth and gums, no putty trays, used to design a crown that fits your bite." },
-      { "title": "PRF therapy", "text": "Platelet-rich fibrin made from your own blood can be placed at the surgical site to support healing." }
+      {
+        "title": "3D CBCT imaging",
+        "text": "A three-dimensional scan of your jaw shows bone height, width and nerve position before anything is placed."
+      },
+      {
+        "title": "Guided implant surgery",
+        "text": "A digital plan built from your scan guides the implant to the planned position, depth and angle."
+      },
+      {
+        "title": "iTero digital scanner",
+        "text": "A digital impression of your teeth and gums, no putty trays, used to design a crown that fits your bite."
+      },
+      {
+        "title": "PRF therapy",
+        "text": "Platelet-rich fibrin made from your own blood can be placed at the surgical site to support healing."
+      }
     ]
   },
   "aftercare": {
     "heading": "Before and after your procedure",
     "before": [
-      "Follow Dr. Moezzi's pre-op instructions, which may include pausing certain medications or arranging a ride home if sedation is planned",
+      "Follow Dr. Lavi's pre-op instructions, which may include pausing certain medications or arranging a ride home if sedation is planned",
       "Keep up thorough brushing and flossing to reduce bacteria and inflammation",
       "Eat a balanced diet in the days leading up to surgery"
     ],
@@ -93,7 +147,7 @@
   },
   "cost": {
     "heading": "Cost and financing",
-    "text": "The cost of dental implants depends on how many teeth are being replaced, the type of restoration and whether extractions or bone grafting come first. We do not quote a single price online because every plan is different. After your exam and imaging, Dr. Moezzi gives you a written estimate before treatment begins, with each stage itemized. We accept most major PPO plans, including Delta Dental, MetLife, Cigna and Aetna, and will help you understand what your plan covers. Flexible financing is available to spread the cost over time. New patients can start with our $59 exam and X-rays."
+    "text": "The cost of dental implants depends on how many teeth are being replaced, the type of restoration and whether extractions or bone grafting come first. We do not quote a single price online because every plan is different. After your exam and imaging, Dr. Lavi gives you a written estimate before treatment begins, with each stage itemized. We accept most major PPO plans, including Delta Dental, MetLife, Cigna and Aetna, and will help you understand what your plan covers. Flexible financing is available to spread the cost over time. New patients can start with our $59 exam and X-rays."
   },
   "faqs": [
     {
@@ -102,7 +156,7 @@
     },
     {
       "q": "Does getting a dental implant hurt?",
-      "a": "The implant is placed under local anesthesia, and sedation options are available when appropriate, so you should not feel pain during the procedure. Afterward, most patients describe mild soreness for a few days, often less than they expected from a tooth extraction, and it is usually managed with the medication Dr. Moezzi recommends."
+      "a": "The implant is placed under local anesthesia, and sedation options are available when appropriate, so you should not feel pain during the procedure. Afterward, most patients describe mild soreness for a few days, often less than they expected from a tooth extraction, and it is usually managed with the medication Dr. Lavi recommends."
     },
     {
       "q": "What is the cost of dental implants in Santa Clarita?",
@@ -114,22 +168,27 @@
     },
     {
       "q": "Are dental implants safe for seniors?",
-      "a": "Yes. Age alone is not a barrier. Implants are a well-established option for older adults in good general health who have enough bone to support them, or who are willing to have bone grafting first. Dr. Moezzi reviews your medical history and medications to make sure the plan is appropriate for you."
+      "a": "Yes. Age alone is not a barrier. Implants are a well-established option for older adults in good general health who have enough bone to support them, or who are willing to have bone grafting first. Dr. Lavi reviews your medical history and medications to make sure the plan is appropriate for you."
     },
     {
       "q": "What is the difference between dental implants and dentures?",
       "a": "Dentures rest on the gums and are removed for cleaning. Implants are fixed in the jawbone and become part of it, so they do not slip, need no adhesive and help preserve the bone that tends to shrink under a denture. Many patients find implants closer to the feel of natural teeth."
     }
   ],
-  "related": ["bone-grafting", "all-on-4-implants", "dental-crowns", "tooth-extractions"],
+  "related": [
+    "bone-grafting",
+    "all-on-4-implants",
+    "dental-crowns",
+    "tooth-extractions"
+  ],
   "cta": {
-    "heading": "Talk with Dr. Moezzi about implants",
+    "heading": "Talk with Dr. Lavi about implants",
     "text": "A consultation in our Valencia office includes an exam, imaging and a clear plan with a written estimate. Patients come to us from Stevenson Ranch, Newhall, Saugus and Canyon Country as well as Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [
     "Source claims implants can last 'a lifetime' and allow 'no dietary restrictions'; softened to 'can last for decades' and 'far fewer limits' to avoid promising outcomes.",
-    "Source lists zygomatic implants as an option; kept because it is on the page, but confirm Dr. Moezzi places these in-house rather than by referral.",
+    "Source lists zygomatic implants as an option; kept because it is on the page, but confirm Dr. Lavi places these in-house rather than by referral.",
     "Source says 'same-day implants may be possible in select cases'; kept with that wording. Confirm the practice offers immediate temporary teeth."
   ]
 }

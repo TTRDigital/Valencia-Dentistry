@@ -12,6 +12,7 @@ import { Reviews } from "./Reviews";
 import { ServiceCategories } from "./ServiceCategories";
 import { ServicesHub } from "./ServicesHub";
 import { Visit } from "./Visit";
+import { Banner, CaseCarouselSectionView, CenteredCta, PhotoCards, StepPanels, TechAccordion } from "./IdealHome";
 
 export function Sections({ sections }: { sections: PageSection[] }) {
   return (
@@ -37,6 +38,12 @@ export function Sections({ sections }: { sections: PageSection[] }) {
           case "servicesHub": return <ServicesHub key={key} />;
           case "insurance": return <Insurance key={key} s={s} />;
           case "offer": return <Offer key={key} s={s} />;
+          case "photoCards": return <PhotoCards key={key} s={s} />;
+          case "banner": return <Banner key={key} s={s} />;
+          case "techAccordion": return <TechAccordion key={key} s={s} />;
+          case "caseCarousel": return <CaseCarouselSectionView key={key} s={s} />;
+          case "centeredCta": return <CenteredCta key={key} s={s} />;
+          case "stepPanels": return <StepPanels key={key} s={s} />;
           default: return null;
         }
       })}

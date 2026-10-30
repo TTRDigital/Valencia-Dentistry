@@ -137,10 +137,18 @@ export type ServicesHubSection = { _type: "servicesHub" };
 export type InsuranceSection = { _type: "insurance"; heading?: string; text?: string };
 export type OfferSection = { _type: "offer"; eyebrow?: string; heading: string; text: string; bullets?: string[]; fine?: string; cta?: Link };
 
+export type PhotoCardsSection = { _type: "photoCards"; eyebrow?: string; heading: string; lead?: string; cards: { title: string; text: string; image: SiteImage; link?: Link }[] };
+export type BannerSection = { _type: "banner"; eyebrow?: string; heading: string; text: string; image?: SiteImage; cta?: Link };
+export type TechAccordionSection = { _type: "techAccordion"; eyebrow?: string; heading: string; lead?: string; image: SiteImage; items: { title: string; text: string }[] };
+export type CaseCarouselSection = { _type: "caseCarousel"; eyebrow?: string; heading: string; lead?: string; note?: string };
+export type CenteredCtaSection = { _type: "centeredCta"; eyebrow?: string; heading: string; text: string; cta?: Link; secondary?: Link };
+export type StepPanelsSection = { _type: "stepPanels"; heading?: string; steps: { title: string; text: string; image?: SiteImage }[] };
+
 export type PageSection =
   | HeroSection | IntroSplitSection | FeatureGridSection | ServiceCategoriesSection | GallerySection | DoctorSection
   | ReviewsSection | FaqSection | VisitSection | CtaSection | RichTextSection | TeamSection | PhotoGridSection
-  | ValuesSection | FormSection | ServicesHubSection | InsuranceSection | OfferSection;
+  | ValuesSection | FormSection | ServicesHubSection | InsuranceSection | OfferSection
+  | PhotoCardsSection | BannerSection | TechAccordionSection | CaseCarouselSection | CenteredCtaSection | StepPanelsSection;
 
 export type Page = {
   slug: string;

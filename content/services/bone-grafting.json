@@ -6,21 +6,21 @@
   "name": "Bone Grafting",
   "shortDescription": "Rebuilds lost jawbone so implants have a stable foundation.",
   "seo": {
-    "title": "Bone Grafting in Santa Clarita | Dr. Neda Moezzi",
-    "description": "Bone grafting in Santa Clarita with Dr. Neda Moezzi: socket preservation, ridge augmentation, sinus lifts and PRF-based holistic options before implants."
+    "title": "Bone Grafting in Santa Clarita | Dr. Nuriel Lavi",
+    "description": "Bone grafting in Santa Clarita with Dr. Nuriel Lavi: socket preservation, ridge augmentation, sinus lifts and PRF-based holistic options before implants."
   },
   "hero": {
     "eyebrow": "Oral surgery",
     "h1": "Bone Grafting in Santa Clarita",
-    "lead": "When the jaw has lost bone after an extraction, infection or years of missing teeth, a graft rebuilds it. Dr. Neda Moezzi plans each graft with 3D imaging and offers PRF-based holistic options.",
-    "image": "/images/team/dr-moezzi-treating.jpg",
-    "imageAlt": "Dr. Neda Moezzi treating a patient in the office"
+    "lead": "When the jaw has lost bone after an extraction, infection or years of missing teeth, a graft rebuilds it. Dr. Nuriel Lavi plans each graft with 3D imaging and offers PRF-based holistic options.",
+    "image": "/images/brand/panel-surgical.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "Rebuilding the foundation for your smile",
     "paragraphs": [
-      "Bone grafting sounds more dramatic than it is. In practice it is a planned, well-tolerated procedure that adds bone where the jaw has thinned, usually after a tooth is lost, an infection has done damage or a denture has been worn for years. At Valencia Dentistry in Santa Clarita, Dr. Moezzi most often uses grafting to prepare a site for a dental implant or to preserve bone right after an extraction.",
-      "Without enough healthy bone, an implant has nothing solid to hold onto and the face can begin to lose its natural contour. A graft gives your body a scaffold to rebuild on. Over several weeks to a few months, your own bone grows into and replaces the graft material. Dr. Moezzi uses 3D imaging to plan each graft and offers PRF and other natural options for patients who prefer them."
+      "Bone grafting sounds more dramatic than it is. In practice it is a planned, well-tolerated procedure that adds bone where the jaw has thinned, usually after a tooth is lost, an infection has done damage or a denture has been worn for years. At Valencia Dentistry in Santa Clarita, Dr. Lavi most often uses grafting to prepare a site for a dental implant or to preserve bone right after an extraction.",
+      "Without enough healthy bone, an implant has nothing solid to hold onto and the face can begin to lose its natural contour. A graft gives your body a scaffold to rebuild on. Over several weeks to a few months, your own bone grows into and replaces the graft material. Dr. Lavi uses 3D imaging to plan each graft and offers PRF and other natural options for patients who prefer them."
     ]
   },
   "whoItsFor": {
@@ -38,42 +38,96 @@
     "heading": "Why bone grafting matters",
     "intro": "A graft is an investment in everything that comes after it.",
     "items": [
-      { "title": "Makes implants possible", "text": "Rebuilt bone gives an implant the volume and density it needs to integrate and stay stable." },
-      { "title": "Preserves the jaw after extraction", "text": "A socket graft placed at the time of removal keeps the ridge from collapsing inward." },
-      { "title": "Supports facial contours", "text": "Maintaining jawbone helps prevent the sunken look that follows long-term tooth loss." },
-      { "title": "A more stable bite", "text": "A solid ridge supports restorations that distribute chewing forces evenly." },
-      { "title": "Natural options available", "text": "PRF and your own bone can be used for patients who prefer to avoid donor or synthetic material." }
+      {
+        "title": "Makes implants possible",
+        "text": "Rebuilt bone gives an implant the volume and density it needs to integrate and stay stable."
+      },
+      {
+        "title": "Preserves the jaw after extraction",
+        "text": "A socket graft placed at the time of removal keeps the ridge from collapsing inward."
+      },
+      {
+        "title": "Supports facial contours",
+        "text": "Maintaining jawbone helps prevent the sunken look that follows long-term tooth loss."
+      },
+      {
+        "title": "A more stable bite",
+        "text": "A solid ridge supports restorations that distribute chewing forces evenly."
+      },
+      {
+        "title": "Natural options available",
+        "text": "PRF and your own bone can be used for patients who prefer to avoid donor or synthetic material."
+      }
     ]
   },
   "options": {
     "heading": "Types of grafts and materials",
-    "intro": "Dr. Moezzi matches the graft type and material to your anatomy, your timeline and your preferences.",
+    "intro": "Dr. Lavi matches the graft type and material to your anatomy, your timeline and your preferences.",
     "items": [
-      { "title": "Socket preservation", "text": "Placed right after a tooth is removed to hold the height and width of the ridge for a future implant." },
-      { "title": "Ridge augmentation", "text": "Restores the natural contour of the jawbone after trauma or prolonged tooth loss, creating a stable base for implants." },
-      { "title": "Sinus lift", "text": "Adds bone to the upper jaw beneath the sinus, commonly needed before placing implants in the back upper teeth." },
-      { "title": "Allograft", "text": "Processed donated human bone with no living cells, leaving a mineral matrix with natural growth factors that signal your body to rebuild bone." },
-      { "title": "Xenograft", "text": "Bone from an animal source, usually bovine, fully processed to leave a strong, sterile scaffold." },
-      { "title": "Synthetic graft", "text": "Lab-made material that mimics natural bone structure, for patients who prefer a non-biological source." },
-      { "title": "Holistic options: PRF and your own bone", "text": "PRF made from your blood supports healing, and autologous grafts use bone from elsewhere in your mouth, with no synthetic additives." }
+      {
+        "title": "Socket preservation",
+        "text": "Placed right after a tooth is removed to hold the height and width of the ridge for a future implant."
+      },
+      {
+        "title": "Ridge augmentation",
+        "text": "Restores the natural contour of the jawbone after trauma or prolonged tooth loss, creating a stable base for implants."
+      },
+      {
+        "title": "Sinus lift",
+        "text": "Adds bone to the upper jaw beneath the sinus, commonly needed before placing implants in the back upper teeth."
+      },
+      {
+        "title": "Allograft",
+        "text": "Processed donated human bone with no living cells, leaving a mineral matrix with natural growth factors that signal your body to rebuild bone."
+      },
+      {
+        "title": "Xenograft",
+        "text": "Bone from an animal source, usually bovine, fully processed to leave a strong, sterile scaffold."
+      },
+      {
+        "title": "Synthetic graft",
+        "text": "Lab-made material that mimics natural bone structure, for patients who prefer a non-biological source."
+      },
+      {
+        "title": "Holistic options: PRF and your own bone",
+        "text": "PRF made from your blood supports healing, and autologous grafts use bone from elsewhere in your mouth, with no synthetic additives."
+      }
     ]
   },
   "process": {
     "heading": "The bone grafting process",
     "intro": "Three stages, each explained before it happens.",
     "steps": [
-      { "title": "Consultation and imaging", "text": "A detailed exam and a 3D CBCT scan measure your bone volume and show where it is needed. Dr. Moezzi walks you through the graft options and answers your questions before anything is decided." },
-      { "title": "In-office graft procedure", "text": "The graft is placed in our Valencia office under local anesthesia, with sedation if planned. The material is positioned at the site, then covered and stabilized so healing can begin." },
-      { "title": "Healing and follow-up", "text": "Healing takes several weeks to a few months depending on the graft. Follow-up visits track your progress, and Dr. Moezzi tells you when the site is ready for the next step, such as implant placement." }
+      {
+        "title": "Consultation and imaging",
+        "text": "A detailed exam and a 3D CBCT scan measure your bone volume and show where it is needed. Dr. Lavi walks you through the graft options and answers your questions before anything is decided."
+      },
+      {
+        "title": "In-office graft procedure",
+        "text": "The graft is placed in our Valencia office under local anesthesia, with sedation if planned. The material is positioned at the site, then covered and stabilized so healing can begin."
+      },
+      {
+        "title": "Healing and follow-up",
+        "text": "Healing takes several weeks to a few months depending on the graft. Follow-up visits track your progress, and Dr. Lavi tells you when the site is ready for the next step, such as implant placement."
+      }
     ]
   },
   "technology": {
     "heading": "Imaging and biologics",
     "intro": "Good grafting starts with seeing the bone clearly and giving it what it needs to regrow.",
     "items": [
-      { "title": "3D CBCT imaging", "text": "Measures bone height, width and density in three dimensions so the graft is planned precisely." },
-      { "title": "PRF therapy", "text": "Platelet-rich fibrin spun from a small sample of your blood is mixed with or layered over the graft to support healing." },
-      { "title": "Guided implant surgery", "text": "Once the graft matures, the same digital plan guides the implant into the rebuilt bone." }
+      {
+        "title": "3D CBCT imaging",
+        "text": "Measures bone height, width and density in three dimensions so the graft is planned precisely."
+      },
+      {
+        "title": "PRF therapy",
+        "text": "Platelet-rich fibrin spun from a small sample of your blood is mixed with or layered over the graft to support healing."
+      },
+      {
+        "title": "Guided implant surgery",
+        "text": "Once the graft matures, the same digital plan guides the implant into the rebuilt bone."
+      }
     ]
   },
   "aftercare": {
@@ -81,7 +135,7 @@
     "before": [
       "Follow fasting instructions if sedation is planned",
       "Avoid smoking and alcohol for at least 24 hours before your appointment",
-      "Pause medications only if Dr. Moezzi advises it",
+      "Pause medications only if Dr. Lavi advises it",
       "Arrange transportation home if you will be sedated",
       "Keep up good oral hygiene to lower the risk of infection"
     ],
@@ -96,12 +150,12 @@
   },
   "cost": {
     "heading": "Cost and financing",
-    "text": "The cost of a bone graft depends on its type and size, the material used and whether it is combined with an extraction or implant placement. A small socket graft and a sinus lift are very different procedures, so we do not post one price. After your exam and 3D scan, Dr. Moezzi gives you a written estimate that itemizes each step before treatment is scheduled. We accept most major PPO plans and will help you understand what yours covers. Flexible financing is available, and new patients can begin with our $59 exam and X-rays special."
+    "text": "The cost of a bone graft depends on its type and size, the material used and whether it is combined with an extraction or implant placement. A small socket graft and a sinus lift are very different procedures, so we do not post one price. After your exam and 3D scan, Dr. Lavi gives you a written estimate that itemizes each step before treatment is scheduled. We accept most major PPO plans and will help you understand what yours covers. Flexible financing is available, and new patients can begin with our $59 exam and X-rays special."
   },
   "faqs": [
     {
       "q": "Is bone grafting painful?",
-      "a": "Most patients report only mild discomfort. The graft is placed under local anesthesia, with sedation options if you prefer, so the procedure itself should not hurt. Some soreness and swelling in the days afterward is normal and usually eases with cold compresses and the medication Dr. Moezzi recommends."
+      "a": "Most patients report only mild discomfort. The graft is placed under local anesthesia, with sedation options if you prefer, so the procedure itself should not hurt. Some soreness and swelling in the days afterward is normal and usually eases with cold compresses and the medication Dr. Lavi recommends."
     },
     {
       "q": "How long does it take to heal after a bone graft?",
@@ -109,7 +163,7 @@
     },
     {
       "q": "Can I get a dental implant immediately after bone grafting?",
-      "a": "Sometimes. If the graft is small and the surrounding bone is sound, an implant can occasionally be placed at the same visit. More often the graft needs to heal and mature for a few months first so the implant has solid bone to hold onto. Dr. Moezzi sets a timeline based on your scan."
+      "a": "Sometimes. If the graft is small and the surrounding bone is sound, an implant can occasionally be placed at the same visit. More often the graft needs to heal and mature for a few months first so the implant has solid bone to hold onto. Dr. Lavi sets a timeline based on your scan."
     },
     {
       "q": "What kind of bone is used for grafting?",
@@ -117,10 +171,15 @@
     },
     {
       "q": "Where can I learn more about dental bone grafting?",
-      "a": "The Cleveland Clinic publishes a clear patient overview of dental bone grafts that covers the basics well. For questions about your own jaw, a consultation is more useful. Dr. Moezzi can show you your 3D scan and explain exactly where bone is needed and which graft approach fits. Call (661) 254-5200 to arrange one."
+      "a": "The Cleveland Clinic publishes a clear patient overview of dental bone grafts that covers the basics well. For questions about your own jaw, a consultation is more useful. Dr. Lavi can show you your 3D scan and explain exactly where bone is needed and which graft approach fits. Call (661) 254-5200 to arrange one."
     }
   ],
-  "related": ["dental-implants", "tooth-extractions", "all-on-4-implants", "holistic-dentistry"],
+  "related": [
+    "dental-implants",
+    "tooth-extractions",
+    "all-on-4-implants",
+    "holistic-dentistry"
+  ],
   "cta": {
     "heading": "Rebuild the foundation, then the smile",
     "text": "Start with an exam and a 3D scan in our Valencia office. You will leave knowing whether grafting is needed, what it involves and what it costs. Patients visit us from across Santa Clarita, Stevenson Ranch, Newhall, Saugus and Canyon Country.",

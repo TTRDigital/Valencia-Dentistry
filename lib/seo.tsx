@@ -58,7 +58,7 @@ export function dentistNode(withRating = false) {
     name: site.name,
     url: `${SITE_URL}/`,
     logo: `${SITE_URL}/icon-512.png`,
-    image: `${SITE_URL}/images/team/team-sign.jpg`,
+    image: `${SITE_URL}/images/team/dr-lavi.jpg`,
     telephone: site.phone.tel,
     email: site.email,
     priceRange: site.priceRange,
@@ -87,11 +87,10 @@ export function personNode() {
     familyName: site.doctor.lastName,
     honorificSuffix: site.doctor.credentials,
     jobTitle: "Dentist",
-    image: `${SITE_URL}/images/team/dr-moezzi-portrait.jpg`,
+    image: `${SITE_URL}/images/team/dr-lavi.jpg`,
     worksFor: { "@id": IDS.dentist },
-    alumniOf: { "@type": "CollegeOrUniversity", name: site.doctor.school },
+    ...(site.doctor.school ? { alumniOf: { "@type": "CollegeOrUniversity", name: site.doctor.school } } : {}),
     url: `${SITE_URL}/about/`,
-    sameAs: [site.social.linkedin, site.social.facebook, site.social.instagram, site.social.x],
   };
 }
 

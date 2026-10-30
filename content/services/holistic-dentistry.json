@@ -6,20 +6,20 @@
   "name": "Holistic Dentistry",
   "shortDescription": "Biocompatible, mercury-free care that considers your whole body.",
   "seo": {
-    "title": "Holistic Dentist in Valencia, CA | Dr. Neda Moezzi",
-    "description": "Holistic dentistry in Valencia, CA: mercury-free fillings, SMART amalgam removal, fluoride-free cleanings and ozone therapy with Dr. Neda Moezzi."
+    "title": "Holistic Dentist in Valencia, CA | Dr. Nuriel Lavi",
+    "description": "Holistic dentistry in Valencia, CA: mercury-free fillings, SMART amalgam removal, fluoride-free cleanings and ozone therapy with Dr. Nuriel Lavi."
   },
   "hero": {
     "eyebrow": "Holistic dentistry",
     "h1": "A Holistic Dentist in Valencia",
-    "lead": "Dr. Neda Moezzi practices biological dentistry in Santa Clarita: biocompatible materials, minimally invasive treatment and care that respects the link between your mouth and the rest of your body.",
-    "image": "/images/team/dr-moezzi-portrait.jpg",
-    "imageAlt": "Dr. Neda Moezzi, DDS, in her Valencia office"
+    "lead": "Dr. Nuriel Lavi practices biological dentistry in Santa Clarita: biocompatible materials, minimally invasive treatment and care that respects the link between your mouth and the rest of your body.",
+    "image": "/images/brand/panel-holistic.jpg",
+    "imageAlt": ""
   },
   "intro": {
     "heading": "Dental care that considers the whole body",
     "paragraphs": [
-      "Your mouth is not separate from the rest of you. Gum inflammation, infection and the materials placed in your teeth can all have effects beyond your smile. Holistic dentistry at Valencia Dentistry starts from that idea. Dr. Moezzi chooses biocompatible, mercury-free materials, favors prevention over intervention and avoids procedures you do not need. The aim is a healthy mouth that supports a healthy body.",
+      "Your mouth is not separate from the rest of you. Gum inflammation, infection and the materials placed in your teeth can all have effects beyond your smile. Holistic dentistry at Valencia Dentistry starts from that idea. Dr. Lavi chooses biocompatible, mercury-free materials, favors prevention over intervention and avoids procedures you do not need. The aim is a healthy mouth that supports a healthy body.",
       "This approach suits people managing a chronic condition, people who want to limit their exposure to metals and additives, and anyone who simply prefers a more thoughtful, less aggressive style of dental care. From tooth-colored fillings made without mercury or BPA to fluoride-free cleanings and gentle gum therapy, every treatment is chosen with your body, your history and your preferences in mind."
     ]
   },
@@ -38,44 +38,104 @@
     "heading": "Benefits of holistic dental care",
     "intro": "Holistic dentistry offers more than a healthy smile; it reduces what your body has to deal with and keeps the focus on long-term wellness.",
     "items": [
-      { "title": "Less exposure to mercury and fluoride", "text": "Materials and preventive products are chosen to avoid substances many patients prefer to keep out of their bodies." },
-      { "title": "Prevention first", "text": "Regular, gentle care aimed at keeping teeth and gums healthy so that fewer repairs are ever needed." },
-      { "title": "Works with your body", "text": "Treatments are chosen to support your natural healing rather than work against it." },
-      { "title": "Thoughtful care for chronic and autoimmune conditions", "text": "A careful choice of materials and techniques for patients whose health already asks a lot of them." },
-      { "title": "Fewer material reactions", "text": "Metal-free, BPA-free restorations lower the chance of allergic or sensitivity reactions." },
-      { "title": "Whole-body support", "text": "Minimally invasive care and natural therapies that consider the whole person, not just the tooth." }
+      {
+        "title": "Less exposure to mercury and fluoride",
+        "text": "Materials and preventive products are chosen to avoid substances many patients prefer to keep out of their bodies."
+      },
+      {
+        "title": "Prevention first",
+        "text": "Regular, gentle care aimed at keeping teeth and gums healthy so that fewer repairs are ever needed."
+      },
+      {
+        "title": "Works with your body",
+        "text": "Treatments are chosen to support your natural healing rather than work against it."
+      },
+      {
+        "title": "Thoughtful care for chronic and autoimmune conditions",
+        "text": "A careful choice of materials and techniques for patients whose health already asks a lot of them."
+      },
+      {
+        "title": "Fewer material reactions",
+        "text": "Metal-free, BPA-free restorations lower the chance of allergic or sensitivity reactions."
+      },
+      {
+        "title": "Whole-body support",
+        "text": "Minimally invasive care and natural therapies that consider the whole person, not just the tooth."
+      }
     ]
   },
   "options": {
     "heading": "Our holistic treatments",
     "intro": "Each treatment uses safe materials and gentle technique, chosen to fit your body and your health goals.",
     "items": [
-      { "title": "Biocompatible fillings", "text": "Tooth-colored restorations made without mercury or BPA." },
-      { "title": "Safe amalgam removal", "text": "SMART-protocol removal of old silver fillings, with safeguards to limit mercury exposure during the procedure." },
-      { "title": "Ozone therapy", "text": "A natural antibacterial treatment used to support healing and reduce infection." },
-      { "title": "Fluoride-free cleanings", "text": "Gentle preventive care using alternative remineralizing agents." },
-      { "title": "Non-metal restorations", "text": "Durable, natural-looking crowns and bridges made without metal." },
-      { "title": "Holistic periodontal therapy", "text": "Gum care focused on reducing inflammation, which matters for the rest of the body too." },
-      { "title": "Holistic bone and gum grafting", "text": "Regenerative options such as PRF from your own blood and your own bone, with no synthetic additives." }
+      {
+        "title": "Biocompatible fillings",
+        "text": "Tooth-colored restorations made without mercury or BPA."
+      },
+      {
+        "title": "Safe amalgam removal",
+        "text": "SMART-protocol removal of old silver fillings, with safeguards to limit mercury exposure during the procedure."
+      },
+      {
+        "title": "Ozone therapy",
+        "text": "A natural antibacterial treatment used to support healing and reduce infection."
+      },
+      {
+        "title": "Fluoride-free cleanings",
+        "text": "Gentle preventive care using alternative remineralizing agents."
+      },
+      {
+        "title": "Non-metal restorations",
+        "text": "Durable, natural-looking crowns and bridges made without metal."
+      },
+      {
+        "title": "Holistic periodontal therapy",
+        "text": "Gum care focused on reducing inflammation, which matters for the rest of the body too."
+      },
+      {
+        "title": "Holistic bone and gum grafting",
+        "text": "Regenerative options such as PRF from your own blood and your own bone, with no synthetic additives."
+      }
     ]
   },
   "process": {
     "heading": "What to expect",
     "intro": "Your care follows three steps, each designed to keep your overall health in view.",
     "steps": [
-      { "title": "Comprehensive evaluation", "text": "A full oral exam and a review of your medical history. When it is helpful, biocompatibility testing identifies which materials are the safest fit for your body." },
-      { "title": "Personalized treatment plan", "text": "Dr. Moezzi designs a plan around your wellness goals, prioritizing non-toxic materials, gentle technique and natural therapies, and explains each recommendation." },
-      { "title": "Long-term care and prevention", "text": "Ongoing preventive visits, education and natural maintenance strategies that fit your lifestyle, so good health is maintained rather than repaired." }
+      {
+        "title": "Comprehensive evaluation",
+        "text": "A full oral exam and a review of your medical history. When it is helpful, biocompatibility testing identifies which materials are the safest fit for your body."
+      },
+      {
+        "title": "Personalized treatment plan",
+        "text": "Dr. Lavi designs a plan around your wellness goals, prioritizing non-toxic materials, gentle technique and natural therapies, and explains each recommendation."
+      },
+      {
+        "title": "Long-term care and prevention",
+        "text": "Ongoing preventive visits, education and natural maintenance strategies that fit your lifestyle, so good health is maintained rather than repaired."
+      }
     ]
   },
   "technology": {
     "heading": "Technology that supports gentle care",
     "intro": "Precise tools let us treat conservatively and see problems early.",
     "items": [
-      { "title": "Digital X-rays and 3D CBCT imaging", "text": "Detailed images with less radiation than film, so small problems are found before they need bigger fixes." },
-      { "title": "Laser dentistry", "text": "Laser treatment for gum tissue can mean less bleeding and a gentler experience than traditional methods." },
-      { "title": "PRF therapy", "text": "Platelet-rich fibrin from your own blood supports healing after grafting and surgery with nothing synthetic added." },
-      { "title": "Intraoral cameras", "text": "You see what Dr. Moezzi sees, which makes conservative decisions easier to understand and agree on." }
+      {
+        "title": "Digital X-rays and 3D CBCT imaging",
+        "text": "Detailed images with less radiation than film, so small problems are found before they need bigger fixes."
+      },
+      {
+        "title": "Laser dentistry",
+        "text": "Laser treatment for gum tissue can mean less bleeding and a gentler experience than traditional methods."
+      },
+      {
+        "title": "PRF therapy",
+        "text": "Platelet-rich fibrin from your own blood supports healing after grafting and surgery with nothing synthetic added."
+      },
+      {
+        "title": "Intraoral cameras",
+        "text": "You see what Dr. Lavi sees, which makes conservative decisions easier to understand and agree on."
+      }
     ]
   },
   "cost": {
@@ -89,7 +149,7 @@
     },
     {
       "q": "Is holistic dentistry safe for kids and families?",
-      "a": "Yes. Holistic care suits children and families who want gentle treatment without exposure to materials they would rather avoid. We offer fluoride-free preventive options and tooth-colored fillings made without mercury or BPA. Dr. Moezzi takes time with younger patients so visits feel calm rather than rushed."
+      "a": "Yes. Holistic care suits children and families who want gentle treatment without exposure to materials they would rather avoid. We offer fluoride-free preventive options and tooth-colored fillings made without mercury or BPA. Dr. Lavi takes time with younger patients so visits feel calm rather than rushed."
     },
     {
       "q": "What is SMART-certified amalgam removal?",
@@ -97,7 +157,7 @@
     },
     {
       "q": "Do holistic dentists use fluoride?",
-      "a": "Most holistic dentists, including Dr. Moezzi, offer fluoride-free alternatives. These use other remineralizing agents to help strengthen enamel without synthetic additives. If you have questions about fluoride for yourself or your children, raise them at your visit. The choice stays with you."
+      "a": "Most holistic dentists, including Dr. Lavi, offer fluoride-free alternatives. These use other remineralizing agents to help strengthen enamel without synthetic additives. If you have questions about fluoride for yourself or your children, raise them at your visit. The choice stays with you."
     },
     {
       "q": "Can holistic dental care help with chronic health issues?",
@@ -108,15 +168,20 @@
       "a": "Yes. We avoid metals, BPA and other substances that can provoke reactions, and every material is chosen for its compatibility with your body. Where it helps, biocompatibility testing can show which options are the best fit for you. You will always know what is going into your mouth and why."
     }
   ],
-  "related": ["composite-filling", "dental-crowns", "bone-grafting", "dental-implants"],
+  "related": [
+    "composite-filling",
+    "dental-crowns",
+    "bone-grafting",
+    "dental-implants"
+  ],
   "cta": {
     "heading": "Meet a holistic dentist in Valencia",
-    "text": "Bring your questions, your history and your preferences. Dr. Moezzi listens first and plans second. Patients visit us from Santa Clarita, Stevenson Ranch, Newhall, Saugus and Canyon Country.",
+    "text": "Bring your questions, your history and your preferences. Dr. Lavi listens first and plans second. Patients visit us from Santa Clarita, Stevenson Ranch, Newhall, Saugus and Canyon Country.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [
     "Source frames holistic care as 'safer' and reducing 'toxic burden'; kept the philosophy but avoided stating health outcomes.",
-    "Source says ozone therapy 'supports healing and reduces infection'; kept as the practice describes it, but evidence is limited. Confirm Dr. Moezzi offers ozone therapy in-house.",
+    "Source says ozone therapy 'supports healing and reduces infection'; kept as the practice describes it, but evidence is limited. Confirm Dr. Lavi offers ozone therapy in-house.",
     "Source mentions biocompatibility testing; kept with 'when it is helpful'. Confirm the practice offers this testing.",
     "'Holistic Bone & Gum Grafting' appears on the source as a title with no description; described using PRF and autologous bone details from the bone grafting page."
   ]

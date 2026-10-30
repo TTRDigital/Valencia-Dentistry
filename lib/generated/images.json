@@ -139,6 +139,36 @@
   "height": 512,
   "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoMAAQAA4BaJZwAAtrQdOwAAP5m1q4w3a2595M3lTFJAXAAAAA="
  },
+ "/images/brand/panel-cosmetic.jpg": {
+  "width": 1600,
+  "height": 1200,
+  "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoMAAkAA4BaJZQCdAEO+Y01AAD+9N5PngSdHWgA"
+ },
+ "/images/brand/panel-general.jpg": {
+  "width": 1600,
+  "height": 1200,
+  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoMAAkAA4BaJZQC7AEO+Y5cvAD+9hKYw9JvAk3wAAA="
+ },
+ "/images/brand/panel-holistic.jpg": {
+  "width": 1600,
+  "height": 1200,
+  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoMAAkAA4BaJZQCdADdLPyi0AD+cSKzwj+YfR8AAAA="
+ },
+ "/images/brand/panel-preventive.jpg": {
+  "width": 1600,
+  "height": 1200,
+  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoMAAkAA4BaJYwCdAEO+Y01AAD+9N5PngSgO8k0AAA="
+ },
+ "/images/brand/panel-restorative.jpg": {
+  "width": 1600,
+  "height": 1200,
+  "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoMAAkAA4BaJZQABDOAAP7wT0+ei0KBfpZgAA=="
+ },
+ "/images/brand/panel-surgical.jpg": {
+  "width": 1600,
+  "height": 1200,
+  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABwAQCdASoMAAkAA4BaJZwAAls/GAD+7L8J0Zqb8FAdaXWBAAA="
+ },
  "/images/cases/case-1-after.jpg": {
   "width": 425,
   "height": 404,
@@ -209,11 +239,6 @@
   "height": 351,
   "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoMAAcAA4BaJagCdAFAAAD+4rPuMrNx9N0x6MWHhtfxd2I4ySAAAA=="
  },
- "/images/grain.png": {
-  "width": 64,
-  "height": 64,
-  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABwAQCdASoMAAwAA4BaJaQAAiugAADwfM7Ilbd/93gkwqPEAAA="
- },
  "/images/insurance/aetna.png": {
   "width": 312,
   "height": 60,
@@ -254,142 +279,12 @@
   "height": 82,
   "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACwAAAgAAQUxQSCUAAAAA/f39/f39/f38/fXn7+/v7+/v7+/u7ufa1tbW1tbW1tbV1tDDAFZQOCAmAAAAkAEAnQEqDAADAAOAWiUAAFufXJdwAP73JvVYDCHeXo9e46QAAAA="
  },
- "/images/team/dr-moezzi-consult.jpg": {
-  "width": 630,
-  "height": 517,
-  "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAwAgCdASoMAAoAA4BaJZQCdAEQErC7b7dAAAD8jBsThlRrqeFDu480SB9sVz6hQJGaha4Zh8jz1jMoTsWveVoAAAA=",
+ "/images/team/dr-lavi.jpg": {
+  "width": 314,
+  "height": 340,
+  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoLAAwAA4BaJYwC7ADciL01XWAAANy1AeXUbW3OoYxc3ampMSAeZveLMxb4PhLnXhmNjjEOAAA=",
   "opt": [
-   390,
-   480,
-   630
-  ]
- },
- "/images/team/dr-moezzi-hero.png": {
-  "width": 473,
-  "height": 691,
-  "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4WAoAAAAQAAAABwAACwAAQUxQSGEAAAAAAQQ6nNemSAsBDFK378dqGgIUZsv94YopAh111P3rnDcPQpzl/fS7bzKC0fb+++G7Y7jy+fz+7dGU1Pf2+/7dp8Tm+fj7+cJw1e38/P3upEOdy/P9/emXMkmY4vz87p84AFZQOCA8AAAA8AEAnQEqCAAMAAOAWiWwAnQBH+aN8GAAAP7mmUNgMtRQk63HZzLD/R0Y01n268fBEZIPvZ9WP/pN5gAA",
-  "opt": [
-   390,
-   473
-  ]
- },
- "/images/team/dr-moezzi-portrait.jpg": {
-  "width": 623,
-  "height": 510,
-  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoMAAoAA4BaJbACdAEWY093LCAA3E2sZojWF/l5XErNh2GRpcZnbEvSt8E6st/C4AAAAA==",
-  "opt": [
-   390,
-   480,
-   623
-  ]
- },
- "/images/team/dr-moezzi-smile-sign.jpg": {
-  "width": 647,
-  "height": 575,
-  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAsAA4BaJQBOgBuAAdXTAAD+V0Pc97vFQP8A8UeLHzmFU6OJzZzhmjGEFkAA",
-  "opt": [
-   390,
-   480,
-   640,
-   647
-  ]
- },
- "/images/team/dr-moezzi-standing.png": {
-  "width": 422,
-  "height": 821,
-  "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4WAoAAAAQAAAABQAACwAAQUxQSEkAAAAAASmHvYEoAjCS1qZLAi+R5Mt8DESi6uKyL3/S9/Dacb71/fDZuOP9/d6rtNz5+cNxa7Xw9rJPNZjp97thMpfm98qCNpnj8suKAFZQOCA0AAAA0AEAnQEqBgAMAAOAWiUAToAeiONi6QAA/e9JHs+Z/34j+I2fMtdJ6tBN0F1/B5V60RUAAA==",
-  "opt": [
-   390,
-   422
-  ]
- },
- "/images/team/dr-moezzi-treating-2.jpg": {
-  "width": 618,
-  "height": 449,
-  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoMAAkAA4BaJZQC7ADyfZkeAP7wjc75s2mSIDR/42gtQZknZONIoJhqvyHRAz9lvKlgAA==",
-  "opt": [
-   390,
-   480,
-   618
-  ]
- },
- "/images/team/dr-moezzi-treating.jpg": {
-  "width": 604,
-  "height": 318,
-  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoMAAYAA4BaJYwAAxOghqpE/sAA/mwdpbIzHX2T8nWe/H14FeWVQ/GvyoUXwAAA",
-  "opt": [
-   390,
-   480,
-   604
-  ]
- },
- "/images/team/team-four.jpg": {
-  "width": 703,
-  "height": 397,
-  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoMAAcAA4BaJZgAAlxFIfEAAOA3wHCHrNygCL7jB6Uv/V95L7AWaP90MQu07eWFGpz8AAAA",
-  "opt": [
-   390,
-   480,
-   640,
-   703
-  ]
- },
- "/images/team/team-office-wide.jpg": {
-  "width": 1296,
-  "height": 563,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAUAA4BaJZQAAtz9EawAAP6bp5+Q33zXyctmJsifJn7D0uwNkAAA",
-  "opt": [
-   390,
-   480,
-   640,
-   768,
-   1080,
-   1280,
-   1296
-  ]
- },
- "/images/team/team-seated-2.jpg": {
-  "width": 630,
-  "height": 563,
-  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoMAAsAA4BaJYwC7ADz0iKxWgAA+XYvYbPc0Ta5IYlMKUSJ6urClxbxUXT07ON3o+FZYLV4b7BMAA==",
-  "opt": [
-   390,
-   480,
-   630
-  ]
- },
- "/images/team/team-seated.jpg": {
-  "width": 650,
-  "height": 559,
-  "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoMAAoAA4BaJZQC7AD1bQ0Z8ezwAP0AzMQ6sR6Tf+z5XnMfJ94N/n/xCcADPG8TrC6H+qqBmcKNIAAA",
-  "opt": [
-   390,
-   480,
-   640,
-   650
-  ]
- },
- "/images/team/team-sign.jpg": {
-  "width": 1260,
-  "height": 1126,
-  "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoMAAsAA4BaJQAAXPGCaRhmgAD+6slVw8XHSPojjhS5r9b3IMoNp1rZLFLcsYBkqzbAVoMGv6n+ue5pefAAAAAA",
-  "opt": [
-   390,
-   480,
-   640,
-   768,
-   1080,
-   1260
-  ]
- },
- "/images/team/treatment-room.jpg": {
-  "width": 603,
-  "height": 475,
-  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoMAAkAA4BaJZQC7ADp/ESQba0AAP7ojfnVU7Eh3++96TK23PhjB5XMLs3BqcziOd3KY9lKAAA=",
-  "opt": [
-   390,
-   480,
-   603
+   314
   ]
  }
 }

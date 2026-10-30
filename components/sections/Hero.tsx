@@ -38,9 +38,13 @@ export function Hero({ s }: { s: HeroSection }) {
           <div className="relative lg:col-span-5">
             <div className="pointer-events-none absolute inset-x-6 bottom-0 top-10 rounded-t-[12rem] bg-gradient-to-b from-olive-600/40 to-transparent" aria-hidden="true" />
             <div className="pointer-events-none absolute -right-6 top-6 h-56 w-56 rounded-full border border-bronze-300/30 sm:h-72 sm:w-72" aria-hidden="true" />
-            {s.image && (
+            {s.image && /\.png$/i.test(s.image.src) ? (
               <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 480px, (min-width: 640px) 60vw, 90vw" className="relative mx-auto block w-[min(85%,420px)] animate-fade-in object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)] lg:w-full lg:max-w-[480px]" />
-            )}
+            ) : s.image ? (
+              <div className="relative mx-auto mb-10 w-[min(88%,440px)] animate-fade-in overflow-hidden rounded-t-[12rem] rounded-b-4xl shadow-lift ring-1 ring-white/10 lg:mb-0 lg:w-full lg:max-w-[460px]">
+                <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 460px, (min-width: 640px) 60vw, 88vw" className="aspect-[4/5] w-full object-cover object-top" />
+              </div>
+            ) : null}
           </div>
         </div>
       </section>
