@@ -13,12 +13,12 @@ export function Logo({ className, inverted, markOnly }: { className?: string; in
   const bronzeText = inverted ? "#C9BA9C" : "#7A6B52";
   return (
     <span className={cn("inline-flex items-center gap-3", className)}>
-      <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} className="h-10 w-auto shrink-0" aria-hidden="true" focusable="false">
+      <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} className="h-8 w-auto shrink-0 sm:h-10" aria-hidden="true" focusable="false">
         <path fill={ink} d={MARK.v} />
         <path fill={bronze} d={MARK.tooth} />
       </svg>
       {!markOnly && (
-        <svg viewBox={`0 0 ${WORD.width} ${WORD.height}`} className="h-[1.55rem] w-auto" role="img" aria-label="Valencia Dentistry">
+        <svg viewBox={`0 0 ${WORD.width} ${WORD.height}`} className="h-[1.25rem] w-auto sm:h-[1.55rem]" role="img" aria-label="Valencia Dentistry">
           <path fill={ink} d={WORD.valencia} />
           <path fill={bronzeText} d={WORD.dentistry} />
         </svg>

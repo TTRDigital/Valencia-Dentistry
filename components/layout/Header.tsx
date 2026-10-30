@@ -95,7 +95,7 @@ export function Header({ nav }: { nav: Navigation }) {
               <span className="hidden xl:inline">{site.phone.display}</span>
               <span className="xl:hidden">Call</span>
             </a>
-            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm whitespace-nowrap px-3.5 sm:px-4">
               Book Now
             </a>
             <button type="button" className="inline-flex h-11 w-11 items-center justify-center rounded-full text-ink-900 hover:bg-ink-900/5 lg:hidden" aria-expanded={mobileOpen} aria-controls="mobile-menu" aria-label={mobileOpen ? "Close menu" : "Open menu"} onClick={() => setMobileOpen((v) => !v)}>
