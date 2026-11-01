@@ -56,8 +56,8 @@ export async function PostView({ post }: { post: Post }) {
               {toc.length > 2 && (
                 <nav aria-label="Table of contents" className="card p-6">
                   <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">In this article</p>
-                  <ol className="mt-3 space-y-2 text-[0.95rem]">
-                    {toc.map((h) => <li key={h.id}><a href={`#${h.id}`} className="text-grey-700 hover:text-ink-900 hover:underline">{h.text}</a></li>)}
+                  <ol className="mt-3 space-y-0.5 text-[0.95rem]">
+                    {toc.map((h) => <li key={h.id}><a href={`#${h.id}`} className="inline-block py-1 text-grey-700 hover:text-ink-900 hover:underline">{h.text}</a></li>)}
                   </ol>
                 </nav>
               )}
@@ -99,7 +99,7 @@ export async function PostView({ post }: { post: Post }) {
 
             <section aria-labelledby="author" className="mt-14 flex flex-col gap-5 rounded-3xl bg-greige-50/70 p-6 sm:flex-row sm:p-7">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
-                <Picture image={{ src: "/images/team/dr-lavi.jpg", alt: "Dr. Nuriel Lavi, DDS" }} sizes="96px" className="h-full w-full object-cover object-top" />
+                <Picture image={{ src: "/images/team/dr-lavi-portrait.jpg", alt: "Dr. Nuriel Lavi, DDS" }} sizes="96px" className="h-full w-full object-cover object-top" />
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>

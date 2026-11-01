@@ -103,6 +103,8 @@ export const page = defineType({
 const serviceSection = (name: string, title: string, extra: ReturnType<typeof defineField>[] = []) =>
   defineField({ name, title, type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "intro", type: "text", rows: 2 }), ...extra] });
 
+const cardList = (name: string, title: string) => defineField({ name, title, type: "array", group: "content", of: [defineArrayMember({ type: "object", fields: [defineField({ name: "title", type: "string" }), defineField({ name: "text", type: "text", rows: 3 }), defineField({ name: "image", type: "siteImage" })] })] });
+
 export const service = defineType({
   name: "service",
   title: "Service",
@@ -115,15 +117,15 @@ export const service = defineType({
     defineField({ name: "parentPath", type: "string", group: "content", initialValue: "/services/" }),
     defineField({ name: "category", type: "string", group: "content", options: { list: ["cosmetic", "restorative", "surgical", "holistic", "preventive"] } }),
     defineField({ name: "shortDescription", type: "string", group: "content", validation: (r) => r.max(90) }),
-    defineField({ name: "hero", type: "object", group: "content", fields: [defineField({ name: "eyebrow", type: "string" }), defineField({ name: "h1", type: "string" }), defineField({ name: "lead", type: "text", rows: 3 }), defineField({ name: "photo", type: "siteImage", title: "Hero photo" }), defineField({ name: "image", type: "string", title: "Built-in photo path (used when no hero photo is uploaded)" }), defineField({ name: "imageAlt", type: "string" })] }),
+    defineField({ name: "hero", type: "object", group: "content", fields: [defineField({ name: "h1", type: "string" }), defineField({ name: "subtitle", type: "string" }), defineField({ name: "text", type: "text", rows: 3 }), defineField({ name: "image", type: "siteImage" })] }),
     defineField({ name: "intro", type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "paragraphs", type: "array", of: [{ type: "text" }] })] }),
-    serviceSection("whoItsFor", "Who it's for", [defineField({ name: "items", type: "array", of: [{ type: "string" }] })]),
-    serviceSection("benefits", "Benefits", [defineField({ name: "items", type: "array", of: [{ type: "feature" }] })]),
-    serviceSection("options", "Options / treatment types", [defineField({ name: "items", type: "array", of: [{ type: "feature" }] })]),
-    serviceSection("process", "Process", [defineField({ name: "steps", type: "array", of: [{ type: "step" }] })]),
-    serviceSection("technology", "Technology", [defineField({ name: "items", type: "array", of: [{ type: "feature" }] })]),
-    defineField({ name: "aftercare", type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "before", type: "array", of: [{ type: "string" }] }), defineField({ name: "after", type: "array", of: [{ type: "string" }] })] }),
-    defineField({ name: "cost", type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "text", type: "text", rows: 4 })] }),
+    defineField({ name: "understanding", type: "object", group: "content", title: "Understanding (dark section with accordion)", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "intro", type: "text", rows: 3 }), defineField({ name: "image", type: "siteImage" }), defineField({ name: "bullets", type: "array", of: [{ type: "string" }] }), defineField({ name: "items", type: "array", of: [defineArrayMember({ type: "object", fields: [defineField({ name: "title", type: "string" }), defineField({ name: "text", type: "text", rows: 3 })] })] })] }),
+    defineField({ name: "why", type: "object", group: "content", title: "Why choose us", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "intro", type: "text", rows: 2 }), defineField({ name: "cards", type: "array", of: [defineArrayMember({ type: "object", fields: [defineField({ name: "title", type: "string" }), defineField({ name: "text", type: "text", rows: 3 }), defineField({ name: "image", type: "siteImage" })] })] })] }),
+    defineField({ name: "process", type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "intro", type: "text", rows: 2 }), defineField({ name: "steps", type: "array", of: [{ type: "step" }] })] }),
+    defineField({ name: "candidate", type: "object", group: "content", title: "Good candidate banner", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "text", type: "text", rows: 3 }), defineField({ name: "bullets", type: "array", of: [{ type: "string" }] }), defineField({ name: "image", type: "siteImage" })] }),
+    defineField({ name: "care", type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "intro", type: "text", rows: 2 }), defineField({ name: "before", type: "array", of: [{ type: "string" }] }), defineField({ name: "after", type: "array", of: [{ type: "string" }] })] }),
+    cardList("extraCards", "Additional cards"),
+    defineField({ name: "extra", type: "array", group: "content", title: "Additional sections", of: [defineArrayMember({ type: "object", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "paragraphs", type: "array", of: [{ type: "text" }] }), defineField({ name: "bullets", type: "array", of: [{ type: "string" }] })] })] }),
     defineField({ name: "faqs", type: "array", group: "content", of: [{ type: "faqItem" }] }),
     defineField({ name: "related", type: "array", group: "content", of: [{ type: "string" }], description: "Slugs of related services" }),
     defineField({ name: "cta", type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "text", type: "text", rows: 2 }), defineField({ name: "buttonLabel", type: "string" })] }),

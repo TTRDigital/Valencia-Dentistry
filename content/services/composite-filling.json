@@ -3,149 +3,171 @@
   "path": "/services/cosmetic-dentistry/composite-filling/",
   "parentPath": "/services/cosmetic-dentistry/",
   "category": "cosmetic",
-  "name": "Composite Filling",
-  "shortDescription": "Tooth-colored, metal-free fillings that repair decay and small chips invisibly.",
+  "name": "Composite Fillings",
+  "shortDescription": "Tooth-colored, mercury-free fillings that blend in.",
   "seo": {
     "title": "Composite Fillings in Santa Clarita | Dr. Nuriel Lavi",
     "description": "Tooth-colored, metal-free composite fillings in Santa Clarita, matched to your enamel and placed in one visit by Dr. Nuriel Lavi. $59 new patient exam."
   },
   "hero": {
-    "eyebrow": "Cosmetic dentistry",
-    "h1": "Composite Fillings in Santa Clarita",
-    "lead": "Repair cavities and small cracks with a tooth-colored filling that blends into your smile. No metal, no mercury, usually one visit.",
-    "image": "/images/brand/panel-cosmetic.jpg",
-    "imageAlt": ""
+    "h1": "Restore Dental Health With Composite Fillings in Santa Clarita",
+    "subtitle": "Protect Your Oral Health with Advanced Composite Fillings",
+    "text": "Fix cavities and cracks with discreet, durable fillings designed to match your smile",
+    "image": {
+      "src": "/images/stock/exam-mirror.jpg",
+      "alt": "Composite Fillings at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "What a composite filling is",
-    "paragraphs": [
-      "A composite filling repairs a cavity or a small area of damage with a tooth-colored resin. Dr. Lavi shades the material to match your enamel, bonds it directly to the tooth and shapes it to the natural contours, so the repair is hard to spot. Because the resin bonds to the tooth, less healthy structure needs to be removed than with a metal filling.",
-      "Composite fillings fit the holistic approach at Valencia Dentistry. They contain no mercury or silver amalgam, they seal the tooth tightly against bacteria and they hold up to everyday chewing. Many patients in Santa Clarita also choose them to replace older metal fillings. The appointment is simple, and you see Dr. Lavi from the exam through the final polish."
-    ]
+    "heading": "Protect Your Oral Health with Advanced Composite Fillings",
+    "paragraphs": []
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Composite fillings are a good fit for a range of patients.",
-    "items": [
-      "Cavities or minor tooth decay",
-      "Chipped, cracked or worn teeth",
-      "Old metal (amalgam) fillings you would like replaced",
-      "Teeth that grind and need reinforcement",
-      "Adults and teens who want a natural-looking repair"
-    ]
-  },
-  "benefits": {
-    "heading": "Benefits of composite fillings",
-    "intro": "A composite filling repairs the tooth and protects it, without changing how your smile looks.",
+  "understanding": {
+    "heading": "What Are Composite Fillings??",
+    "intro": "Composite fillings are a modern solution for treating cavities and repairing minor tooth damage. Made from a strong, tooth-colored resin, they’re custom-matched to your natural enamel and bonded directly to the tooth for a seamless, long-lasting result.",
+    "image": {
+      "src": "/images/blog/1781299654294.jpg",
+      "alt": "Composite Fillings: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Matched to your tooth",
-        "text": "Custom-shaded to blend with the surrounding enamel, so the filling is hard to spot."
+        "title": "Tooth-Colored Appearance",
+        "text": "Blends naturally with surrounding teeth"
       },
       {
-        "title": "Minimally invasive",
-        "text": "Bonding preserves more of your natural tooth than a metal filling does."
+        "title": "Metal-Free",
+        "text": "No mercury or silver amalgam"
       },
       {
-        "title": "Durable",
-        "text": "With proper care, composite fillings can last many years under daily chewing."
+        "title": "Strong & Durable",
+        "text": "Designed to withstand daily chewing and pressure"
       },
       {
-        "title": "Metal-free",
-        "text": "No mercury and no risk of metal sensitivity, in keeping with our biocompatible materials."
+        "title": "Minimally Invasive",
+        "text": "Requires less removal of healthy tooth structure"
       },
       {
-        "title": "Protects the tooth",
-        "text": "A tight bond seals out bacteria and helps prevent further decay."
+        "title": "Prevents Further Decay",
+        "text": "Creates a tight seal to block out bacteria"
+      }
+    ],
+    "bullets": []
+  },
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for Dental Fillings?",
+    "intro": "When it comes to restoring your teeth, you deserve a dental team that combines advanced training with genuine care. At Valencia Dentistry, we don’t just fix cavities—we make sure you feel informed, supported, and comfortable every step of the way. Transparent pricing No surprises—just clear communication and flexible payment options",
+    "cards": [
+      {
+        "title": "Doctor-led attention to detail",
+        "text": "Dr. Lavi takes time to ensure each filling looks and feels just right",
+        "image": {
+          "src": "/images/blog/1781299654294.jpg",
+          "alt": "Doctor-led attention to detail"
+        }
+      },
+      {
+        "title": "Advanced technology",
+        "text": "We use digital imaging and precise materials for efficient, accurate results",
+        "image": {
+          "src": "/images/blog/1781282303677.jpg",
+          "alt": "Advanced technology"
+        }
       }
     ]
   },
   "process": {
-    "heading": "What to expect",
-    "intro": "Three steps, usually in one visit.",
+    "heading": "What to Expect: Our Composite Filling Process",
+    "intro": "At Valencia Dentistry, we keep the process simple and focused on what matters—your comfort and your health. Our composite fillings are placed using modern tools and techniques that help us work efficiently while making sure you feel at ease from start to finish.",
     "steps": [
       {
-        "title": "Evaluation and preparation",
-        "text": "A full exam and digital imaging pinpoint the affected area. Dr. Lavi numbs the tooth, removes the decay and preserves as much healthy structure as possible."
+        "title": "Evaluation and Tooth Prep",
+        "text": "We begin with a full dental exam and digital imaging to pinpoint the affected area. Once confirmed, we gently numb the tooth and remove any decay while preserving healthy structure."
       },
       {
-        "title": "Placing the filling",
-        "text": "Tooth-colored composite resin is layered into the tooth and shaped to match its natural contours."
+        "title": "Filling Placement",
+        "text": "A tooth-colored composite resin is layered and shaped to match the natural contours of your tooth for a seamless fit and feel."
       },
       {
-        "title": "Curing, polishing and bite check",
-        "text": "A curing light hardens the resin. The filling is polished smooth and adjusted until your bite feels natural."
+        "title": "Curing, Polishing, and Bite Check",
+        "text": "The filling is hardened with a special curing light, polished for a smooth finish, and adjusted to ensure your bite feels completely natural."
       }
     ]
   },
-  "technology": {
-    "heading": "Tools we use",
-    "intro": "Precise imaging helps us find decay early and keep the repair small.",
-    "items": [
-      {
-        "title": "Digital X-rays",
-        "text": "Low-dose images that locate decay between teeth and under old fillings."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "Close-up photos so you can see the cavity before and the finished filling after."
-      }
-    ]
-  },
-  "aftercare": {
-    "heading": "Caring for your filling",
-    "before": [
-      "Tell us about any sensitivity, grinding or past reactions to dental materials",
-      "Eat a normal meal beforehand; you may want to wait until numbness fades to eat afterward"
+  "candidate": {
+    "heading": "Who’s a Good Candidate for Composite Fillings?",
+    "text": "",
+    "bullets": [
+      "Patients with cavities or minor tooth decay",
+      "Individuals with chipped, cracked, or worn teeth",
+      "Anyone seeking to replace old metal (amalgam) fillings",
+      "People who grind their teeth and need reinforcement",
+      "Adults and teens looking for natural-looking dental repairs",
+      "Aesthetically Pleasing",
+      "Custom-shaded to match your natural tooth color",
+      "Durable and Long-Lasting",
+      "With proper care, composite fillings can last many years",
+      "Safe and Metal-Free",
+      "No mercury or risk of metal sensitivity",
+      "Protects Tooth Structure",
+      "Bonds tightly to prevent future decay and damage"
     ],
-    "after": [
-      "Brush twice a day with a soft-bristled toothbrush and fluoride toothpaste",
-      "Floss daily to clear plaque between teeth and along the gumline",
-      "Avoid biting hard objects such as ice, pens or fingernails",
-      "Limit stain-causing foods and drinks, especially right after treatment",
-      "Keep regular checkups and cleanings so we can monitor the filling",
-      "Tell us if you notice sensitivity or a rough edge"
-    ]
+    "image": {
+      "src": "/images/blog/1781282303677.jpg",
+      "alt": ""
+    }
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "Composite fillings are a routine restorative treatment, and most major PPO plans cover them in part, including Delta Dental, MetLife, Cigna, Aetna and others. Our front desk checks your benefits before your visit so you know what to expect. You receive a written estimate before treatment begins, and flexible financing is available if you are replacing several older fillings at once. If you are new to the practice, the $59 new patient special covers your exam and X-rays, which is where any filling begins."
-  },
+  "tables": [],
+  "extra": [
+    {
+      "heading": "How to Care for Your Composite Fillings",
+      "paragraphs": [
+        "Composite fillings are strong and built to last, but a little care goes a long way in keeping them in great shape. Just like your natural teeth, they need regular maintenance to stay clean, comfortable, and cavity-free."
+      ],
+      "bullets": [
+        "Brush twice a day with a soft-bristled toothbrush and fluoride toothpaste",
+        "Floss daily to remove plaque between teeth and along the gumline",
+        "Avoid biting hard objects like ice, pens, or fingernails",
+        "Limit stain-causing foods and drinks, especially right after treatment",
+        "Schedule regular checkups and cleanings so we can monitor the filling over time",
+        "Let us know if you notice any changes like sensitivity or rough edges"
+      ],
+      "cards": []
+    }
+  ],
   "faqs": [
     {
       "q": "How long do composite fillings last?",
-      "a": "With proper care and regular dental visits, composite fillings often last 5 to 10 years, and sometimes longer. How long yours lasts depends on where it sits in the mouth, how well you clean around it and whether you grind your teeth. We check each filling at your routine visits."
+      "a": "With proper care and regular dental visits, composite fillings can last anywhere from 5 to 10 years—or even longer. Their longevity depends on factors like the location of the filling, your oral hygiene habits, and whether you grind your teeth."
     },
     {
       "q": "Are composite fillings safe?",
-      "a": "Composite fillings are metal-free and mercury-free, made from a durable resin that is widely used in dentistry and considered biocompatible. They are a natural fit for patients who prefer a health-conscious option, and they are the material Dr. Lavi uses for fillings at Valencia Dentistry."
+      "a": "Yes. Composite fillings are metal-free and made from a durable resin material that’s safe, biocompatible, and mercury-free. They’re a great choice for patients looking for a more natural and health-conscious option."
     },
     {
       "q": "Do composite fillings look natural?",
-      "a": "Yes. The resin is shaded to match the color and texture of your own teeth, then shaped to the tooth's contours and polished. Most people cannot tell a composite filling from the surrounding enamel, which is why it is also the material of choice for front teeth."
+      "a": "Absolutely. One of the biggest advantages of composite fillings is their ability to match the color and texture of your natural teeth. Most people won’t even be able to tell you’ve had dental work done."
     },
     {
       "q": "Will my tooth be sensitive after the procedure?",
-      "a": "Some patients notice mild sensitivity to temperature or pressure for a few days after a filling. It usually fades on its own. If it lasts longer than a week or becomes uncomfortable, call us at (661) 254-5200 and we will take a look and adjust the filling if needed."
+      "a": "Some patients experience mild sensitivity for a few days after receiving a filling. This usually fades quickly. If it lasts longer or becomes uncomfortable, let us know—we’re here to help."
     },
     {
       "q": "Can I eat right after getting a composite filling?",
-      "a": "Usually, yes. The curing light hardens the resin fully before you leave, so there is no waiting period for the filling itself. We do suggest waiting until the numbness wears off so you do not bite your cheek or tongue by accident."
+      "a": "Since composite resin hardens immediately with a curing light, you can typically eat right after your appointment. We do recommend waiting until the numbness wears off to avoid accidentally biting your cheek or tongue."
     },
     {
       "q": "How do composite fillings compare to other types?",
-      "a": "Composite fillings bond directly to the tooth, so they need less drilling than silver amalgam and preserve more natural structure. They also match tooth color, where amalgam is visibly metallic. Amalgam remains durable, but for appearance, conservation and a metal-free mouth, composite is the option we recommend."
+      "a": "Composite fillings are preferred for their aesthetic and functional benefits. Unlike silver amalgam, they bond directly to the tooth and require less drilling. You can read more about how they work and what to expect in this overview from Healthline."
     }
   ],
   "related": [
     "dental-crowns",
     "cosmetic-dentistry",
-    "holistic-dentistry",
-    "restorative-dentistry"
+    "holistic-dentistry"
   ],
   "cta": {
-    "heading": "Have a cavity or a chipped tooth?",
-    "text": "Book an appointment in Valencia. Dr. Lavi will examine the tooth, explain your options and often place the filling the same visit.",
+    "heading": "Schedule your composite fillings consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

@@ -4,165 +4,208 @@
   "parentPath": "/services/oral-surgery/",
   "category": "surgical",
   "name": "Wisdom Teeth Removal",
-  "shortDescription": "Removal of impacted or crowded third molars, planned with 3D imaging.",
+  "shortDescription": "Planned with 3D imaging, with sedation options.",
   "seo": {
     "title": "Wisdom Teeth Removal in Santa Clarita | Dr. Lavi",
     "description": "Wisdom teeth removal in Santa Clarita with 3D imaging, local anesthesia and sedation options. Dr. Nuriel Lavi performs each one himself in Valencia."
   },
   "hero": {
-    "eyebrow": "Oral surgery",
-    "h1": "Wisdom Teeth Removal in Santa Clarita",
-    "lead": "Impacted or crowded wisdom teeth can cause pain, swelling and damage to the teeth beside them. Dr. Lavi removes them in our Valencia office with 3D planning, local anesthesia and sedation options.",
-    "image": "/images/brand/panel-surgical.jpg",
-    "imageAlt": ""
+    "h1": "Expert Wisdom Teeth Removal in Santa Clarita",
+    "subtitle": "Experience Relief with Wisdom Teeth Removal in Santa Clarita",
+    "text": "Say Goodbye to Wisdom Tooth Pain with Personalized, Stress-Free Care",
+    "image": {
+      "src": "/images/blog/1781282838501.jpg",
+      "alt": "Wisdom Teeth Removal at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Precise, comfortable care for your third molars",
+    "heading": "Experience Relief with Wisdom Teeth Removal in Santa Clarita",
     "paragraphs": [
-      "Wisdom teeth, the third molars at the very back of your mouth, do not always come in the way they should. When they are trapped under the gum or bone, only partly erupted or pushing against neighboring teeth, they can cause pain, swelling, infection and crowding. Dr. Lavi evaluates each tooth with 3D imaging and recommends removal only when it protects your long-term oral health.",
-      "Every wisdom tooth extraction here is performed by Dr. Lavi himself, so the dentist who plans your treatment is the one who carries it out. Local anesthesia is used in every case, and sedation options are available when you want to feel more relaxed. Most extractions are completed in under an hour, and you leave with step-by-step recovery instructions and a follow-up visit already on the calendar."
+      "Wisdom teeth don’t always grow in the way they should—and when they don’t, they can cause pain, swelling, infection, and damage to surrounding teeth. At Valencia Dentistry, we offer precise, comfortable wisdom teeth removal in Santa Clarita tailored to your needs. Whether your wisdom teeth are impacted, crowding other teeth, or causing ongoing discomfort, Dr. Lavi and our team are here to help with advanced technology, sedation options, and a warm, supportive approach. From your first consultation to your last follow-up, we’ll guide you every step of the way toward relief and recovery."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Not everyone needs their wisdom teeth removed, but these signs suggest it is time for an evaluation.",
-    "items": [
-      "Pain, swelling or pressure in the back of your mouth",
-      "Wisdom teeth that are impacted or only partly through the gum",
-      "Shifting or crowding of nearby teeth",
-      "Back molars that are hard to keep clean or prone to infection",
-      "Cysts or bone changes visible on your dental X-rays",
-      "Late teens or early twenties, when roots are not fully formed and removal is often simpler"
-    ]
-  },
-  "benefits": {
-    "heading": "Why timing matters",
-    "intro": "Removing wisdom teeth before they fully develop or cause trouble often makes the process smoother and protects your other teeth.",
+  "understanding": {
+    "heading": "Different Types of Wisdom Teeth Removal",
+    "intro": "Not all wisdom teeth are the same—and neither are the procedures used to remove them. At Valencia Dentistry, we tailor each extraction based on how the tooth is positioned and how it’s affecting your oral health. Here are the two most common types of wisdom teeth removal: Timing matters when it comes to wisdom teeth. Removing them before they fully develop—or before complications arise—can make the process smoother and protect your long-term oral health. Easier Recovery Younger patients tend to heal faster with fewer post-op issues. Fewer Complications Prevents infections, cysts, and damage to neighboring teeth. Less Crowding Avoids misalignment that can undo years of orthodontic work. Improved Oral Hygiene Makes it easier to brush and floss back molars. Peace of Mind Eliminates the risk of painful flare-ups down the road.",
+    "image": {
+      "src": "/images/stock/cbct-scan.jpg",
+      "alt": "Wisdom Teeth Removal: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Easier recovery",
-        "text": "Younger patients tend to heal faster and have fewer issues after surgery."
+        "title": "Simple Extraction",
+        "text": "Used when the wisdom tooth has fully erupted through the gum line. This type of removal is typically quick and straightforward, often completed under local anesthesia."
       },
       {
-        "title": "Fewer complications",
-        "text": "Early removal helps prevent infection, cysts and damage to the neighboring molars."
-      },
-      {
-        "title": "Less crowding",
-        "text": "Avoids shifting that can undo years of orthodontic work."
-      },
-      {
-        "title": "Simpler hygiene",
-        "text": "With the third molars gone, brushing and flossing your back teeth becomes easier."
-      },
-      {
-        "title": "Peace of mind",
-        "text": "You avoid the risk of painful flare-ups later on."
+        "title": "Surgical Extraction",
+        "text": "Necessary when the tooth is impacted (trapped beneath the gum or bone) or partially erupted. This procedure may involve making a small incision in the gum or breaking the tooth into smaller pieces for easier removal. Sedation options are available to ensure a stress-free experience."
       }
-    ]
+    ],
+    "bullets": []
   },
-  "options": {
-    "heading": "Types of wisdom teeth removal",
-    "intro": "Each extraction is tailored to how the tooth sits and how it is affecting your mouth.",
-    "items": [
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for Wisdom Teeth Removal?",
+    "intro": "At Valencia Dentistry, we know that oral surgery can feel overwhelming—especially when it involves your wisdom teeth. That’s why we deliver compassionate, doctor-led care in a supportive, stress-free setting. Patients across Santa Clarita and Valencia trust us for our advanced approach and warm, personalized treatment.",
+    "cards": [
       {
-        "title": "Simple extraction",
-        "text": "For a wisdom tooth that has fully come through the gum. Usually quick and straightforward, completed under local anesthesia."
+        "title": "Doctor-Led Precision",
+        "text": "Dr. Lavi personally performs all wisdom teeth extractions, ensuring safe, consistent, and expert results.",
+        "image": {
+          "src": "/images/stock/cbct-scan.jpg",
+          "alt": "Doctor-Led Precision"
+        }
       },
       {
-        "title": "Surgical extraction",
-        "text": "For a tooth that is impacted or partly erupted. Dr. Lavi may make a small gum incision or section the tooth. Sedation options are available."
+        "title": "Advanced Technology",
+        "text": "From 3D digital imaging to modern surgical tools, we use cutting-edge techniques to enhance precision and reduce recovery time.",
+        "image": {
+          "src": "/images/blog/1781298215450.jpg",
+          "alt": "Advanced Technology"
+        }
+      },
+      {
+        "title": "Multiple Sedation Options",
+        "text": "Whether you need mild relaxation or deeper sedation, we’ll help you stay comfortable throughout your procedure.",
+        "image": {
+          "src": "/images/blog/1781282838501.jpg",
+          "alt": "Multiple Sedation Options"
+        }
+      },
+      {
+        "title": "Transparent, Accessible Pricing",
+        "text": "We offer honest, upfront pricing, flexible financing, and a $59 new patient special to help you get started with confidence."
+      },
+      {
+        "title": "Compassionate, One-on-One Care",
+        "text": "You’ll never feel rushed. Dr. Lavi takes the time to explain everything and makes sure you feel supported every step of the way."
       }
     ]
   },
   "process": {
-    "heading": "The wisdom teeth removal process",
-    "intro": "A clear, step-by-step approach from your first visit to your last check-in.",
+    "heading": "The Wisdom Teeth Removal Process",
+    "intro": "At Valencia Dentistry, we take the stress out of oral surgery with a step-by-step approach that’s clear, comfortable, and fully personalized. From your initial consultation to post-op recovery, our team is here to guide you through every phase with compassion and transparency.",
     "steps": [
       {
-        "title": "Consultation and 3D imaging",
-        "text": "Dr. Lavi examines your mouth and takes 3D CBCT images to see the position of each wisdom tooth and its roots. He reviews the scans, discusses your symptoms and recommends the approach that fits your situation."
+        "title": "Consultation & Digital Imaging",
+        "text": "We start with a detailed exam and 3D imaging to evaluate your wisdom teeth. Dr. Lavi will review your X-rays, discuss your symptoms, and walk you through the best treatment approach for your unique situation."
       },
       {
-        "title": "In-office removal",
-        "text": "Your wisdom teeth are removed in our Valencia office using gentle technique. Local anesthesia is used in every case, with sedation options available to keep you relaxed. Most procedures are finished in under an hour."
+        "title": "Comfortable In-Office Procedure",
+        "text": "Your wisdom teeth will be removed using gentle techniques and advanced tools. Local anesthesia is used in all cases, with sedation options available to keep you completely relaxed during the procedure. Most extractions are completed in under an hour."
       },
       {
-        "title": "Recovery and follow-up",
-        "text": "You go home with step-by-step care instructions, and we schedule a follow-up to check healing. Most patients are back to their normal routine within a few days."
+        "title": "Smooth Recovery & Follow-Up",
+        "text": "After your procedure, we’ll provide step-by-step instructions for home care and schedule a follow-up visit to ensure proper healing. Most patients return to their normal routines within a few days."
       }
     ]
   },
-  "technology": {
-    "heading": "Planning with a clear view",
-    "intro": "Knowing exactly where each root and nerve sits makes the procedure safer and shorter.",
-    "items": [
-      {
-        "title": "3D CBCT imaging",
-        "text": "Three-dimensional scans show the roots, the jaw nerve and surrounding bone so Dr. Lavi can plan the safest approach."
-      },
-      {
-        "title": "Digital X-rays",
-        "text": "Fast, low-radiation images that reveal impacted teeth, cysts and bone changes at your consultation."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "Close-up pictures of partly erupted teeth and inflamed gums help you understand what is happening and why."
-      }
-    ]
+  "candidate": {
+    "heading": "Who Needs Wisdom Teeth Removal?",
+    "text": "Not everyone needs their wisdom teeth removed—but for many, it’s a preventive step that protects long-term oral health. Dr. Lavi recommends evaluating wisdom teeth in your late teens or early twenties, when removal is typically easier and healing is faster. You may be a good candidate for wisdom teeth removal in Santa Clarita if you:",
+    "bullets": [
+      "Experience pain, swelling, or pressure in the back of your mouth",
+      "Have impacted or partially erupted wisdom teeth",
+      "Notice shifting or crowding in nearby teeth",
+      "Struggle to keep back molars clean and free from infection",
+      "Show signs of cysts or bone damage on dental X-rays"
+    ],
+    "image": {
+      "src": "/images/blog/1781298215450.jpg",
+      "alt": ""
+    }
   },
-  "aftercare": {
-    "heading": "Before and after your appointment",
+  "care": {
+    "heading": "Pre- and Post-Op Care Instructions for Wisdom Teeth Removal",
+    "intro": "A smooth recovery starts with the right preparation. At Valencia Dentistry, we give you everything you need to feel confident before and after your procedure. Here’s what to expect:",
     "before": [
-      "If you are having sedation, do not eat or drink for 6 to 8 hours beforehand",
-      "Arrange a ride home; you cannot drive after sedation",
-      "Pause or adjust medications only if Dr. Lavi directs you to",
-      "Avoid smoking and alcohol for at least 24 hours before surgery",
-      "Brush gently to keep your mouth clean without irritating the area"
+      "Follow Fasting Guidelines – If you’re receiving sedation, don’t eat or drink for 6–8 hours beforehand.",
+      "Arrange a Ride - You’ll need someone to drive you home if sedation is used.",
+      "Pause Medications if Directed– Dr. Lavi will advise you on any adjustments.",
+      "Avoid Smoking & Alcohol– Refrain for at least 24 hours before surgery.",
+      "Brush Gently– Maintain good hygiene without irritating the area."
     ],
     "after": [
-      "Rest on the first day, limit activity and keep your head raised",
-      "Eat soft foods such as yogurt, mashed potatoes, smoothies and soup",
-      "Skip straws, smoking and spitting to protect the clot and prevent dry socket",
-      "Apply cold compresses in 20-minute intervals to reduce swelling",
-      "Rinse with warm salt water and brush gently around the area to keep it clean"
+      "Rest the First Day– Limit activity and keep your head elevated.",
+      "Eat Soft Foods– Think yogurt, mashed potatoes, smoothies, and soup.",
+      "Skip the Straw– Avoid straws, smoking, or spitting to prevent dry socket.",
+      "Use Cold Compresses– Reduce swelling with ice packs in 20-minute intervals.",
+      "Keep It Clean– Rinse with warm salt water and gently brush around the area."
+    ],
+    "cards": [
+      {
+        "title": "Follow Fasting Guidelines",
+        "text": "If you’re receiving sedation, don’t eat or drink for 6–8 hours beforehand."
+      },
+      {
+        "title": "Arrange a Ride",
+        "text": "You’ll need someone to drive you home if sedation is used."
+      },
+      {
+        "title": "Pause Medications if Directed",
+        "text": "Dr. Lavi will advise you on any adjustments."
+      },
+      {
+        "title": "Avoid Smoking & Alcohol",
+        "text": "Refrain for at least 24 hours before surgery."
+      },
+      {
+        "title": "Brush Gently",
+        "text": "Maintain good hygiene without irritating the area."
+      },
+      {
+        "title": "Rest the First Day",
+        "text": "Limit activity and keep your head elevated."
+      },
+      {
+        "title": "Eat Soft Foods",
+        "text": "Think yogurt, mashed potatoes, smoothies, and soup."
+      },
+      {
+        "title": "Skip the Straw",
+        "text": "Avoid straws, smoking, or spitting to prevent dry socket."
+      },
+      {
+        "title": "Use Cold Compresses",
+        "text": "Reduce swelling with ice packs in 20-minute intervals."
+      },
+      {
+        "title": "Keep It Clean",
+        "text": "Rinse with warm salt water and gently brush around the area."
+      }
     ]
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "What you pay depends on how many wisdom teeth are removed, whether each is a simple or surgical extraction and the sedation you choose. After your consultation and 3D imaging, you receive a written estimate before anything is scheduled, so you know the full picture in advance. We accept most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna and United Concordia, and our team verifies your coverage for you. Flexible financing is available to spread out any remaining cost. New patients can start with the $59 exam and X-ray special."
-  },
+  "tables": [],
+  "extra": [],
   "faqs": [
     {
       "q": "When is the best time to remove wisdom teeth?",
-      "a": "Dr. Lavi recommends evaluating wisdom teeth between ages 17 and 25, before the roots fully develop. Removal at this stage is often simpler and healing tends to be faster. Taking them out early can also help prevent crowding, pain and complications later, though adults of any age can be treated."
+      "a": "The ideal time for removal is between ages 17–25, before the roots fully develop. Early removal helps prevent crowding, pain, and future complications."
     },
     {
       "q": "Will I be awake during the procedure?",
-      "a": "That depends on your preference and the complexity of your case. Local anesthesia is used for every extraction, and nitrous oxide or oral sedation can be added to help you relax. Dr. Lavi will talk through the options at your consultation and help you choose what feels right for you."
+      "a": "That depends on your preference. We offer local anesthesia, nitrous oxide, and oral sedation to ensure your comfort. Dr. Lavi will help you choose what’s best for you."
     },
     {
       "q": "How long does recovery take?",
-      "a": "Most patients feel noticeably better within three to four days. Full healing usually takes one to two weeks, depending on how many teeth were removed and whether the extractions were simple or surgical. Following your aftercare instructions closely makes a real difference to how smoothly you heal."
+      "a": "Most patients feel significantly better within 3–4 days. Full healing takes about 1–2 weeks, depending on the number of teeth removed and the complexity of the procedure."
     },
     {
       "q": "What can I eat after wisdom teeth removal?",
-      "a": "Stick to soft foods for the first several days, such as smoothies, yogurt, mashed potatoes and soup. Avoid anything spicy, crunchy or very hot, and do not use a straw, since suction can dislodge the clot that protects the healing socket and lead to dry socket."
+      "a": "Stick to soft foods like smoothies, yogurt, mashed potatoes, and soup. Avoid anything spicy, crunchy, or too hot for several days."
     },
     {
-      "q": "Why are wisdom teeth removed in the first place?",
-      "a": "Wisdom teeth are the third molars, usually arriving between the late teens and mid-twenties. Many jaws do not have room for them, so they come in at an angle, stay trapped under the gum or crowd other teeth. Removal is recommended when they cause pain, infection, cysts or damage to neighboring molars, or are likely to."
+      "q": "Where can I learn more about wisdom teeth and why they’re removed?",
+      "a": "Check out this WebMD guide on wisdom teeth for additional insights on causes, symptoms, and the removal process."
     }
   ],
   "related": [
     "tooth-extractions",
     "oral-surgery",
-    "bone-grafting",
-    "invisalign"
+    "bone-grafting"
   ],
   "cta": {
-    "heading": "Plan your wisdom teeth removal",
-    "text": "Whether you are in pain now or planning ahead, Dr. Lavi will review your X-rays and explain exactly what to expect. Call (661) 254-5200 or book online.",
+    "heading": "Schedule your wisdom teeth removal consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

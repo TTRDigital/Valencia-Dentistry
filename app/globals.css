@@ -166,9 +166,9 @@
 
   .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-olive-600; }
   .eyebrow::before { content: ""; @apply h-px w-6 bg-current opacity-70; }
-  .dark-section .eyebrow { @apply text-bronze-300; }
+  .dark-section .eyebrow, .on-dark .eyebrow { @apply text-bronze-300; }
   .lead { @apply text-grey-600 text-lg; }
-  .dark-section .lead { @apply text-white/75; }
+  .dark-section .lead, .on-dark .lead { @apply text-white/75; }
   .dark-section h1, .dark-section h2, .dark-section h3 { color: var(--color-white); }
 
   /* Buttons: ≥44px tap targets */
@@ -182,8 +182,8 @@
   .btn-light:hover { @apply bg-greige-50; }
   .btn-outline { @apply border border-ink-900/20 text-ink-900 bg-transparent; }
   .btn-outline:hover { @apply border-ink-900 bg-ink-900/5; }
-  .dark-section .btn-outline { @apply border-white/35 text-white; }
-  .dark-section .btn-outline:hover { @apply border-white bg-white/10; }
+  .dark-section .btn-outline, .on-dark .btn-outline { @apply border-white/40 text-white; }
+  .dark-section .btn-outline:hover, .on-dark .btn-outline:hover { @apply border-white bg-white/10; }
   .btn-lg { @apply min-h-13 px-8 text-base; }
   .btn-sm { @apply min-h-11 px-4 text-sm; } /* 44px: every button is a full tap target */
 

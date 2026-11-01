@@ -23,8 +23,8 @@
         "href": "/services/"
       },
       "image": {
-        "src": "/images/team/dr-lavi.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS, in the Valencia Dentistry treatment room"
+        "src": "/images/team/dr-lavi-outdoor.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS"
       },
       "trust": true
     },
@@ -37,8 +37,8 @@
         "The mission is simple. High-quality dentistry should be accessible, compassionate and truly patient-centered, whether you are here for a routine cleaning or a full smile reconstruction."
       ],
       "image": {
-        "src": "/images/brand/panel-restorative.jpg",
-        "alt": ""
+        "src": "/images/team/dr-lavi-casual.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS"
       },
       "imageSide": "right"
     },

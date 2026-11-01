@@ -4,165 +4,191 @@
   "parentPath": "/services/oral-surgery/",
   "category": "surgical",
   "name": "Tooth Extractions",
-  "shortDescription": "Gentle simple and surgical removal of teeth that cannot be saved.",
+  "shortDescription": "Gentle removal when a tooth cannot be saved.",
   "seo": {
     "title": "Tooth Extractions in Santa Clarita | Dr. Nuriel Lavi",
     "description": "Gentle simple and surgical tooth extractions in Santa Clarita with 3D imaging, sedation options and same-day appointments. Dr. Nuriel Lavi, Valencia."
   },
   "hero": {
-    "eyebrow": "Oral surgery",
-    "h1": "Tooth Extractions in Valencia",
-    "lead": "When a tooth cannot be saved, removing it can end the pain and protect the teeth around it. Dr. Lavi performs simple and surgical extractions in a calm office, with sedation options when appropriate.",
-    "image": "/images/brand/panel-surgical.jpg",
-    "imageAlt": ""
+    "h1": "Expert Tooth Extraction in Valencia",
+    "subtitle": "Regain Comfort with Gentle Tooth Extraction in Valencia",
+    "text": "Gentle, Modern Dental Care for Safe and Comfortable Tooth Removal",
+    "image": {
+      "src": "/images/blog/1781283171205.jpg",
+      "alt": "Tooth Extractions at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Gentle tooth removal, with a plan for what comes next",
+    "heading": "Regain Comfort with Gentle Tooth Extraction in Valencia",
     "paragraphs": [
-      "An extraction is usually the last option, not the first. Dr. Lavi recommends it only when a tooth is decayed, infected, cracked or crowded beyond what a filling, crown or root canal can fix. When removal is the right call, it can relieve ongoing pain, stop an infection from spreading and protect your neighboring teeth and gums. Same-day appointments are available for urgent cases.",
-      "You see Dr. Lavi at every visit, from the first exam to the follow-up. He uses 3D CBCT imaging to see the tooth and the bone around it before he begins, numbs the area fully with local anesthesia and offers sedation options for patients who feel anxious. Before you leave, you get clear aftercare instructions and, if you want to replace the tooth, an honest conversation about implants, bridges or dentures."
+      "Tooth pain doesn’t have to disrupt your life. At Valencia Dentistry, we offer expert tooth extraction in Valencia designed to relieve discomfort, stop infections, and support long-term oral health—all in a calm, welcoming environment. Whether you’re dealing with a severely decayed tooth, impacted wisdom teeth, or overcrowding, Dr. Lavi and our caring team use advanced techniques and sedation options to make the process as smooth and stress-free as possible. From same-day appointments to clear recovery instructions, we’re here to support you every step of the way."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Dr. Lavi may recommend an extraction when a tooth puts your oral health or daily comfort at risk.",
-    "items": [
-      "Decay too deep to repair with a filling, crown or root canal",
-      "An infection or abscess that has reached the pulp or surrounding bone",
-      "Impacted wisdom teeth causing pain, swelling or shifting of other teeth",
-      "Advanced gum disease that has loosened the tooth's foundation",
-      "Crowding that interferes with orthodontic treatment or your bite",
-      "A tooth cracked or fractured beyond repair by trauma or grinding"
-    ]
-  },
-  "benefits": {
-    "heading": "Why removing a damaged tooth can help",
-    "intro": "Losing a tooth can feel like a step backward, but removing one that cannot be saved often protects your health and comfort.",
+  "understanding": {
+    "heading": "Types of Tooth Extractions Offered at Valencia Dentistry",
+    "intro": "Not all tooth extractions are the same. At Valencia Dentistry, we perform two main types of extractions depending on the condition and location of the tooth:",
+    "image": {
+      "src": "/images/blog/1781282838501.jpg",
+      "alt": "Tooth Extractions: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Relief from persistent pain",
-        "text": "Ends the aching, throbbing or sharp pain that comes from infection, decay or pressure from an impacted tooth."
+        "title": "Simple Extractions",
+        "text": "Used when a tooth is fully visible in the mouth and can be removed without surgical intervention. These are typically performed on teeth that are loose or damaged beyond repair."
       },
       {
-        "title": "Infection stopped at the source",
-        "text": "Removing a badly decayed or infected tooth helps keep bacteria from spreading to other areas of your mouth or body."
+        "title": "Surgical Extractions",
+        "text": "Required for teeth that are impacted, broken at the gumline, or not fully erupted—like many wisdom teeth. Surgical extractions involve making a small incision in the gum and may require sectioning the tooth for easier removal."
       },
       {
-        "title": "Protection for neighboring teeth",
-        "text": "Taking out a compromised tooth helps prevent damage to the teeth and gum tissue beside it."
+        "title": "Relief from Persistent Pain",
+        "text": "Say goodbye to the aching, throbbing, or sharp pain caused by infection, decay, or pressure from impacted teeth."
       },
       {
-        "title": "Better bite and function",
-        "text": "In a crowded mouth, extraction can improve alignment and make room for braces or implants."
+        "title": "Elimination of Infection",
+        "text": "Removing a severely decayed or infected tooth helps stop the spread of harmful bacteria to other areas of your mouth or body."
       },
       {
-        "title": "A clean start for restorations",
-        "text": "A timely extraction prepares the site for an implant, bridge or denture when you are ready."
+        "title": "Protection for Surrounding Teeth",
+        "text": "By removing a compromised tooth, you help prevent damage to neighboring teeth and gum tissue."
+      },
+      {
+        "title": "Improved Oral Function",
+        "text": "In cases of overcrowding, extraction can improve bite alignment and make room for future treatments like braces or implants."
+      },
+      {
+        "title": "Support for Future Restorations",
+        "text": "A timely extraction sets the stage for long-term solutions like dental implants, bridges, or dentures."
       }
-    ]
+    ],
+    "bullets": []
   },
-  "options": {
-    "heading": "Two types of extraction",
-    "intro": "The approach depends on the condition and position of the tooth.",
-    "items": [
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for Tooth Extractions in Valencia?",
+    "intro": "Tooth extractions may be common, but the quality of your care makes all the difference. At Valencia Dentistry, we go beyond the basics to create a safe, supportive, and results-focused experience. From your first visit to your final follow-up, we’re here to ensure every detail is handled with expertise and heart.",
+    "cards": [
       {
-        "title": "Simple extraction",
-        "text": "For a tooth that is fully visible and can be removed without surgery, often one that is loose or damaged beyond repair."
+        "title": "Doctor-Led Care with a Personal Touch",
+        "text": "Dr. Lavi personally oversees every procedure, taking time to answer your questions and explain your options without pressure.",
+        "image": {
+          "src": "/images/blog/1781282838501.jpg",
+          "alt": "Doctor-Led Care with a Personal Touch"
+        }
       },
       {
-        "title": "Surgical extraction",
-        "text": "For teeth that are impacted, broken at the gumline or not fully erupted, like many wisdom teeth. A small gum incision is made and the tooth may be sectioned."
+        "title": "Same-Day Appointments & Emergency Availability",
+        "text": "Tooth pain doesn’t wait—and neither should you. We offer flexible scheduling and priority care for urgent dental needs.",
+        "image": {
+          "src": "/images/blog/1781284187540.jpg",
+          "alt": "Same-Day Appointments & Emergency Availability"
+        }
+      },
+      {
+        "title": "Comfort-First Approach with Sedation Options",
+        "text": "Nervous about the procedure? We offer multiple sedation options to keep you calm, relaxed, and comfortable throughout your visit.",
+        "image": {
+          "src": "/images/blog/1781283171205.jpg",
+          "alt": "Comfort-First Approach with Sedation Options"
+        }
+      },
+      {
+        "title": "Advanced Diagnostics & Technology",
+        "text": "From 3D imaging to precision surgical tools, we use the latest equipment to ensure efficient and accurate treatment."
+      },
+      {
+        "title": "Transparent Pricing & Payment Plans",
+        "text": "With a $59 new patient special, clear cost breakdowns, and flexible financing, expert care is always within reach."
       }
     ]
   },
   "process": {
-    "heading": "What to expect",
-    "intro": "Whether your extraction is simple or surgical, Dr. Lavi walks you through every step.",
+    "heading": "Our Tooth Extraction Process: What to Expect",
+    "intro": "At Valencia Dentistry, we make the tooth extraction process as smooth and stress-free as possible. Whether it’s a simple or surgical procedure, Dr. Lavi and our experienced team walk you through every step with compassion, transparency, and personalized care.",
     "steps": [
       {
-        "title": "Consultation and 3D imaging",
-        "text": "Dr. Lavi examines the tooth and takes 3D CBCT images to see the roots and surrounding bone. He listens to your symptoms, explains your options and confirms whether extraction is the right step."
+        "title": "Consultation & Digital Imaging",
+        "text": "We begin with a comprehensive exam and 3D imaging to assess the tooth and surrounding structures. Dr. Lavi will discuss your symptoms, explain your options, and determine whether an extraction is the right solution for you."
       },
       {
-        "title": "Comfortable removal",
-        "text": "The tooth is removed here in our Valencia office under local anesthesia, with sedation options when appropriate. Whether simple or surgical, Dr. Lavi works carefully to minimize discomfort."
+        "title": "Comfortable Tooth Removal",
+        "text": "The extraction is performed right in our Valencia office using local anesthesia to fully numb the area. For anxious patients, we also offer sedation options. Whether the procedure is simple or surgical, Dr. Lavi uses advanced techniques to minimize discomfort and ensure safe removal."
       },
       {
-        "title": "Recovery and follow-up",
-        "text": "You leave with clear aftercare instructions and a follow-up visit to check healing. Many patients feel significant relief within a few days. If you plan to replace the tooth, we map out the next steps together."
+        "title": "Guided Recovery & Follow-Up",
+        "text": "After the extraction, we provide detailed aftercare instructions and schedule a follow-up to check your healing. Most patients recover quickly and experience significant relief within just a few days. If you plan to replace the tooth, we’ll walk you through your next steps for implants or restorations."
       }
     ]
   },
-  "technology": {
-    "heading": "Technology that supports a precise extraction",
-    "intro": "Seeing the whole picture before treatment makes the procedure safer and more predictable.",
-    "items": [
-      {
-        "title": "3D CBCT imaging",
-        "text": "Three-dimensional scans show root shape, nerve position and bone density so Dr. Lavi can plan the safest approach."
-      },
-      {
-        "title": "Digital X-rays",
-        "text": "Low-radiation images that appear instantly, so your exam and diagnosis move quickly."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "Close-up images let you see the damaged tooth for yourself and understand why removal is recommended."
-      }
-    ]
-  },
-  "aftercare": {
-    "heading": "Before and after your extraction",
-    "before": [
-      "Avoid smoking and alcohol for at least 24 hours before your appointment",
-      "Tell us about any medications you take and any health conditions",
-      "Eat a light meal beforehand unless sedation is planned",
-      "Arrange a ride home if you will be receiving sedation",
-      "Keep up good brushing and flossing to lower the risk of infection"
+  "candidate": {
+    "heading": "Who Might Need a Tooth Extraction?",
+    "text": "Tooth extractions are typically a last resort—but when a tooth poses a risk to your oral health or daily comfort, removal can provide lasting relief and prevent further complications. You may be a good candidate for a tooth extraction if you’re experiencing:",
+    "bullets": [
+      "Severe tooth decay that cannot be repaired with a filling, crown, or root canal",
+      "Infection or abscess that has spread to the pulp or surrounding bone",
+      "Impacted wisdom teeth causing pain, swelling, or shifting of other teeth",
+      "Advanced periodontal disease that has loosened the tooth’s foundation",
+      "Overcrowding that interferes with orthodontic treatment or bite alignment",
+      "Cracked or fractured teeth beyond restoration due to trauma or grinding"
     ],
-    "after": [
-      "Rest for the first 24 hours and skip strenuous activity",
-      "Do not use straws, smoke or spit forcefully; this can dislodge the blood clot and cause dry socket",
-      "Choose soft, cool foods such as yogurt, smoothies, scrambled eggs or mashed potatoes",
-      "Use ice packs and take any prescribed medication to manage swelling and discomfort",
-      "After the first 24 hours, rinse gently with warm salt water to keep the area clean"
-    ]
+    "image": {
+      "src": "/images/blog/1781284187540.jpg",
+      "alt": ""
+    }
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "The cost of an extraction depends on whether it is simple or surgical, the tooth's position and whether you choose sedation. Before any treatment begins, Dr. Lavi reviews your imaging with you and you receive a written estimate, so there are no surprises. We accept most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna and Blue Cross Blue Shield, and our team checks your benefits for you. Flexible financing is available for any remaining balance. If you are new to the practice, the $59 new patient special covers your exam and X-rays."
-  },
+  "tables": [],
+  "extra": [
+    {
+      "heading": "How to Care for Your Mouth Before and After a Tooth Extraction",
+      "paragraphs": [
+        "Proper care before and after your extraction helps ensure a smooth procedure and quick, comfortable healing. At Valencia Dentistry, we provide personalized guidance every step of the way so you can feel confident and cared for.",
+        "Before Your Extraction:",
+        "After Your Extraction:"
+      ],
+      "bullets": [
+        "Avoid smoking or alcohol for at least 24 hours prior",
+        "Let us know about any medications or health conditions",
+        "Eat a light meal (unless sedation is planned)",
+        "Arrange transportation if you’ll be receiving sedation",
+        "Practice good oral hygiene to reduce infection risk",
+        "Rest for the first 24 hours and avoid strenuous activity",
+        "Don’t use straws, smoke, or spit forcefully, as this can dislodge the blood clot and cause dry socket",
+        "Stick to soft, cool foods like yogurt, smoothies, scrambled eggs, or mashed potatoes",
+        "Use ice packs and take any prescribed medications to manage swelling and discomfort",
+        "Rinse gently with saltwater after the first 24 hours to keep the area clean"
+      ],
+      "cards": []
+    }
+  ],
   "faqs": [
     {
       "q": "Is getting a tooth pulled painful?",
-      "a": "Most patients find the procedure quicker and more comfortable than they expected. Dr. Lavi numbs the area completely with local anesthesia, and sedation options are available if you feel anxious. You may notice pressure while the tooth is loosened, but the goal is that you do not feel pain during the extraction itself."
+      "a": "Most patients are surprised at how quick and comfortable the procedure is. We use local anesthesia to numb the area completely, and sedation options are available if you’re feeling anxious. You may feel some pressure—but not pain—during the extraction."
     },
     {
       "q": "How long does it take to recover after a tooth extraction?",
-      "a": "Initial healing often takes one to three days after a simple extraction and about a week after a surgical one. Most patients return to normal activities within a few days when they follow their aftercare instructions. Dr. Lavi schedules a follow-up visit to confirm the site is healing well."
+      "a": "Initial healing typically takes 1–3 days for simple extractions, and about a week for surgical ones. Most patients return to normal activities within a few days, following proper aftercare."
     },
     {
       "q": "What can I eat after a tooth extraction?",
-      "a": "For the first couple of days, choose soft, cool foods such as yogurt, smoothies, applesauce and scrambled eggs. Avoid straws, crunchy snacks and anything very hot until the area has started to heal, since suction and sharp edges can disturb the clot that protects the socket."
+      "a": "Stick to soft, cool foods for the first couple of days—think yogurt, smoothies, applesauce, and scrambled eggs. Avoid straws, crunchy snacks, or anything too hot until the area has started to heal."
     },
     {
-      "q": "Do I need to replace a tooth after it's extracted?",
-      "a": "In most cases, yes, unless the extracted tooth was a wisdom tooth. A gap lets neighboring teeth drift and can change your bite over time. At your follow-up, Dr. Lavi can walk you through replacement options such as a dental implant, a bridge or a partial denture."
+      "q": "Do I need to replace a tooth after it’s extracted?",
+      "a": "In most cases, yes—especially if the extracted tooth isn’t a wisdom tooth. Missing teeth can cause neighboring teeth to shift and affect your bite. We can discuss options like dental implants, bridges, or partial dentures during your follow-up."
     },
     {
       "q": "How is a tooth extraction performed?",
-      "a": "A simple extraction removes a fully visible tooth by gently loosening it under local anesthesia. A surgical extraction is used when a tooth is impacted, broken at the gumline or not fully erupted. Dr. Lavi makes a small incision in the gum and may divide the tooth into sections so it can be removed with less force."
+      "a": "To learn more about how extractions are done—including the difference between simple and surgical procedures—visit this helpful guide from Cleveland Clinic."
     }
   ],
   "related": [
     "wisdom-teeth-removal",
     "dental-implants",
-    "bone-grafting",
-    "dental-bridges"
+    "oral-surgery"
   ],
   "cta": {
-    "heading": "Ready for relief from tooth pain?",
-    "text": "Same-day and emergency appointments are available at our Valencia office. Call (661) 254-5200 or book online and Dr. Lavi will help you find the gentlest way forward.",
+    "heading": "Schedule your tooth extractions consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

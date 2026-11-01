@@ -21,7 +21,7 @@ async function load(params: Props["params"]) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const s = await load(params);
   if (!s) return {};
-  return buildMetadata({ title: s.seo.title, description: s.seo.description, path: s.path, image: s.hero.image, noindex: s.seo.noindex });
+  return buildMetadata({ title: s.seo.title, description: s.seo.description, path: s.path, image: s.hero.image.src, noindex: s.seo.noindex });
 }
 
 export default async function ServicePage({ params }: Props) {

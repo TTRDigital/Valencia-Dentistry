@@ -4,155 +4,187 @@
   "parentPath": "/services/",
   "category": "restorative",
   "name": "Dental Crowns",
-  "shortDescription": "Custom porcelain and ceramic caps that protect cracked, worn or root-canal-treated teeth.",
+  "shortDescription": "Custom crowns, often designed and placed in one visit.",
   "seo": {
     "title": "Dental Crowns in Santa Clarita | Dr. Nuriel Lavi",
     "description": "Porcelain and ceramic dental crowns in Santa Clarita, matched to your teeth by Dr. Nuriel Lavi. Same-day crowns possible. $59 new patient exam."
   },
   "hero": {
-    "eyebrow": "Restorative dentistry",
-    "h1": "Dental Crowns in Santa Clarita",
-    "lead": "Protect a cracked, worn or weakened tooth with a crown made to match your smile. Porcelain and ceramic, designed in-house by Dr. Nuriel Lavi.",
-    "image": "/images/brand/panel-restorative.jpg",
-    "imageAlt": ""
+    "h1": "Dental Crowns in Valencia | Santa Clarita’s Trusted Restorative Dentistry Experts",
+    "subtitle": "Restoring Smiles in Santa Clarita",
+    "text": "Strengthen and protect your teeth with crowns designed for comfort, durability, and a natural look.",
+    "image": {
+      "src": "/images/blog/1781299448369.jpg",
+      "alt": "Dental Crowns at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "What a dental crown does",
+    "heading": "Restoring Smiles in Santa Clarita",
     "paragraphs": [
-      "A dental crown is a custom cap that covers a tooth weakened by decay, a crack, a large filling or a root canal. Where a filling patches part of a tooth, a crown restores its full shape, strength and appearance so it can chew and function normally again. At Valencia Dentistry we craft crowns from durable porcelain and ceramic, matched to the color of your natural teeth.",
-      "Crowns are often the right choice when a tooth is too damaged for a filling but healthy enough to save. They strengthen teeth with large fillings or fractures, restore chewing and speech, improve the look of discolored or misshapen teeth and protect a tooth after root canal treatment. Dr. Lavi makes custom crowns in-house, so same-day crowns are possible in some cases, and patients in Santa Clarita with an urgent problem can often be seen the same day."
+      "A dental crown is one of the most reliable ways to protect a damaged tooth and bring back its natural strength and appearance. Whether your tooth is cracked, worn down, or weakened after a root canal, a crown covers it securely while blending in with your smile. At Valencia Dentistry, Dr. Lavi uses advanced technology and a detail-oriented approach to design crowns that look natural, fit comfortably, and support long-term oral health. Schedule your dental crown appointment today at Valencia Dentistry."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "We recommend a crown when a tooth is too weak for a filling alone, including:",
+  "understanding": {
+    "heading": "What Are Dental Crowns?",
+    "intro": "A dental crown is a custom-made cap that covers and protects a tooth that has been weakened by decay, cracks, or a root canal. Unlike a simple filling, a crown restores both the strength and appearance of the tooth, allowing it to function like normal again. At Valencia Dentistry, we craft crowns from durable porcelain and ceramic materials that are carefully matched to your natural teeth, so your smile looks seamless. Crowns are often used to:",
+    "image": {
+      "src": "/images/blog/1781299654294.jpg",
+      "alt": "Dental Crowns: treatment at Valencia Dentistry"
+    },
     "items": [
-      "Cracked or broken teeth",
-      "Severely worn-down teeth",
-      "Teeth with large fillings",
-      "Teeth treated with a root canal",
-      "Discolored or misshapen teeth with cosmetic concerns"
+      {
+        "title": "Strength and Protection",
+        "text": "Crowns act as a durable cover, shielding weak or fractured teeth from breaking further."
+      },
+      {
+        "title": "Natural Appearance",
+        "text": "Porcelain and ceramic crowns are carefully color-matched so they blend seamlessly with your surrounding teeth."
+      },
+      {
+        "title": "Improved Comfort",
+        "text": "By restoring the full shape of a tooth, crowns allow you to chew and speak normally without pain or sensitivity."
+      },
+      {
+        "title": "Long-Lasting Solution",
+        "text": "With good oral hygiene and routine dental visits, crowns can last 10–15 years or even longer."
+      },
+      {
+        "title": "Confidence Boost",
+        "text": "A crown enhances the look of your smile while preserving the natural tooth underneath, helping you feel more confident day to day."
+      }
+    ],
+    "bullets": [
+      "Strengthen teeth that have large fillings or fractures",
+      "Restore normal chewing and speaking function",
+      "Improve the look of discolored or misshapen teeth",
+      "Protect a tooth after root canal treatment"
     ]
   },
-  "benefits": {
-    "heading": "Benefits of a crown",
-    "intro": "A crown protects the tooth underneath and keeps your smile looking even.",
-    "items": [
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for Dental Crowns?",
+    "intro": "When it comes to restoring your smile, you want a dental team that combines advanced technology with a personal touch. Patients looking for dental crowns in Santa Clarita trust Valencia Dentistry because we offer:",
+    "cards": [
       {
-        "title": "Strength and protection",
-        "text": "A durable cover shields a weak or fractured tooth from breaking further."
+        "title": "Same-Day & Emergency Appointments",
+        "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most.",
+        "image": {
+          "src": "/images/blog/1781299654294.jpg",
+          "alt": "Same-Day & Emergency Appointments"
+        }
       },
       {
-        "title": "Natural appearance",
-        "text": "Porcelain and ceramic are color-matched to blend with the surrounding teeth."
+        "title": "Advanced Technology",
+        "text": "From digital impressions to precision shade-matching, we use modern tools to make your crown accurate, comfortable, and natural-looking.",
+        "image": {
+          "src": "/images/stock/crown-model.jpg",
+          "alt": "Advanced Technology"
+        }
       },
       {
-        "title": "Comfortable function",
-        "text": "Restoring the full shape of the tooth lets you chew and speak normally, with less sensitivity."
+        "title": "Comfort-First Care",
+        "text": "With sedation options and a warm, welcoming office, even patients with dental anxiety feel at ease during treatment.",
+        "image": {
+          "src": "/images/blog/1781299448369.jpg",
+          "alt": "Comfort-First Care"
+        }
       },
       {
-        "title": "Long-lasting",
-        "text": "With good hygiene and routine visits, crowns can last 10 to 15 years or longer."
+        "title": "Affordable, Transparent Pricing",
+        "text": "We offer flexible financing and clear communication so there are no surprises about your care or costs."
       },
       {
-        "title": "Keeps your own tooth",
-        "text": "A crown preserves the natural tooth underneath rather than replacing it."
-      },
-      {
-        "title": "Avoids bigger treatment",
-        "text": "Protecting a damaged tooth early can help you avoid extraction or more invasive work later."
+        "title": "Doctor-Led Personalization",
+        "text": "Dr. Lavi is known for his attention to detail and compassionate approach, ensuring every crown is designed to fit your smile perfectly."
       }
     ]
   },
   "process": {
-    "heading": "The crown procedure",
-    "intro": "Three steps, with a temporary crown protecting the tooth in between unless a same-day crown is planned.",
+    "heading": "Our Dental Crown Procedure – What to Expect",
+    "intro": "We make your tooth implant process as smooth and comfortable as possible—combining advanced technology with personalized, compassionate care. Here’s how it works:",
     "steps": [
       {
-        "title": "Exam and preparation",
-        "text": "A full exam, then Dr. Lavi reshapes the damaged tooth so it can hold a crown securely. A digital impression is taken for accuracy and comfort, with no trays."
+        "title": "Step 1: Exam and Preparation",
+        "text": "We begin with a full exam, then reshape the damaged tooth so it can securely hold a crown. A digital impression is taken for accuracy and comfort."
       },
       {
-        "title": "Temporary protection",
-        "text": "A temporary crown protects the tooth and keeps your smile working while your custom crown is made. In some cases the final crown can be made in-house the same day."
+        "title": "Step 2: Temporary Protection",
+        "text": "A temporary crown is placed to protect your tooth and keep your smile functional while your custom crown is crafted in the lab."
       },
       {
-        "title": "Final placement",
-        "text": "Your permanent crown is bonded in place, adjusted so your bite feels natural and polished to blend with the surrounding teeth."
+        "title": "Step 3: Final Placement",
+        "text": "Your permanent crown is bonded in place, adjusted for a natural bite, and polished so it blends seamlessly with your surrounding teeth."
       }
     ]
   },
-  "technology": {
-    "heading": "Technology behind a better-fitting crown",
-    "intro": "Digital impressions and in-house fabrication mean fewer visits and a closer fit.",
-    "items": [
-      {
-        "title": "iTero digital scanner",
-        "text": "Captures a precise digital impression of the prepared tooth without trays or putty."
-      },
-      {
-        "title": "In-house custom crowns",
-        "text": "Crowns are designed and made on site, so same-day crowns are possible for some cases."
-      },
-      {
-        "title": "Digital X-rays",
-        "text": "Show the extent of decay or a fracture and check the root before a crown is planned."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "Document the damaged tooth and guide precise shade matching."
-      }
-    ]
+  "candidate": {
+    "heading": "Who Needs Dental Crowns?",
+    "text": "Not every dental issue requires a crown, but they’re often the best choice when a tooth is too weak to be repaired with a filling. At Valencia Dentistry, we recommend dental crowns in Santa Clarita for patients who have:",
+    "bullets": [
+      "#### Cracked or Broken Teeth",
+      "#### Severely Worn-Down Teeth",
+      "#### Large Fillings",
+      "#### Root Canal–Treated Teeth",
+      "Improved comfort and chewing function",
+      "Stronger, more stable teeth",
+      "Natural-looking results that boost your confidence",
+      "Better speech and bite alignment",
+      "Protection against future dental problems",
+      "Restored facial balance and symmetry"
+    ],
+    "image": {
+      "src": "/images/stock/crown-model.jpg",
+      "alt": ""
+    }
   },
-  "aftercare": {
-    "heading": "Caring for your crown",
+  "care": {
+    "heading": "Caring for Your New Dental Crown",
+    "intro": "Taking care of your crown is simple and helps ensure it lasts for many years. Here’s what to keep in mind before and after treatment: After Treatment",
     "before": [
-      "Keep up your daily brushing and flossing routine",
-      "Avoid chewing very hard foods if the tooth is already cracked or weakened",
-      "Tell us about any sensitivity or grinding habits so we can plan the right approach"
+      "Before Treatment",
+      "Keep up with your daily brushing and flossing routine",
+      "Avoid chewing on very hard foods if your tooth is already cracked or weakened",
+      "Let us know about any dental sensitivity or grinding habits so we can plan the best approach"
     ],
     "after": [
-      "Brush and floss as normal, paying attention to the gumline around the crown",
-      "Avoid sticky or hard foods for the first few days while you adjust",
-      "Keep regular checkups so we can monitor the crown and your overall oral health",
-      "If you grind at night, ask about a custom night guard to protect the crown and your other teeth"
-    ]
+      "Brush and floss as you normally would, paying attention to the gumline around the crown",
+      "Avoid sticky or hard foods during the first few days while you adjust",
+      "Schedule regular checkups so we can monitor your crown and overall oral health",
+      "If you grind your teeth at night, ask about a custom night guard to protect your crown and other teeth"
+    ],
+    "cards": []
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "The cost of a crown depends on the material and on your insurance coverage. Crowns are a restorative treatment, and most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna, United Concordia, Blue Cross Blue Shield, Principal and Humana, cover a portion. Our front desk checks your benefits in advance and you receive a written estimate before treatment begins. Flexible financing is available for any remaining balance. If you are new to Valencia Dentistry, the $59 new patient special covers the exam and X-rays needed to plan your crown."
-  },
+  "tables": [],
+  "extra": [],
   "faqs": [
     {
       "q": "How long do dental crowns last?",
-      "a": "With good oral hygiene and regular checkups, most crowns last 10 to 15 years, and some last longer. Grinding, chewing ice or hard objects and gum problems around the crown shorten its life; a night guard and routine cleanings help extend it."
+      "a": "With good oral hygiene and regular checkups, most crowns last 10–15 years, and some even longer."
     },
     {
       "q": "Will getting a crown hurt?",
-      "a": "Most patients find the procedure comfortable. Dr. Lavi numbs the tooth with local anesthetic before any reshaping, and sedation options are available when appropriate for patients with dental anxiety. Some mild sensitivity in the days after is common and usually settles."
+      "a": "The procedure is not painful. We use local anesthetic to numb the tooth, and sedation options are available for patients with dental anxiety."
     },
     {
       "q": "What are dental crowns made of?",
-      "a": "Crowns can be made from porcelain, ceramic, metal or a combination. At Valencia Dentistry we focus on porcelain and ceramic because they are strong, durable and blend naturally with your teeth, in keeping with our preference for biocompatible, metal-free materials."
+      "a": "Most crowns are made from porcelain, ceramic, metal, or a combination of materials. At Valencia Dentistry, we focus on porcelain and ceramic because they are strong, durable, and blend naturally with your smile. You can also explore the Cleveland Clinic’s overview of dental crowns for more details on the different types available."
     },
     {
       "q": "How much do dental crowns cost in Santa Clarita?",
-      "a": "Cost varies with the type of crown and your insurance coverage. We offer transparent pricing and flexible financing, and you receive a written estimate before treatment. Call (661) 254-5200 and our team will check your benefits and explain your payment options."
+      "a": "The cost can vary depending on the type of crown and your insurance coverage. We offer transparent pricing and flexible financing to keep treatment affordable. Give us a call to discuss your coverage and payment options."
     },
     {
       "q": "Can I get a same-day crown?",
-      "a": "In some cases, yes. We make custom crowns in-house, so a same-day crown is possible when the tooth and the situation allow. If you have a dental emergency, we will do everything possible to see you the same day and provide temporary or permanent protection."
+      "a": "In some cases, yes. If you have a dental emergency, we’ll do everything possible to see you the same day and provide temporary or permanent protection as needed."
     }
   ],
   "related": [
-    "composite-filling",
-    "dental-implants",
     "dental-bridges",
-    "restorative-dentistry"
+    "dental-implants",
+    "composite-filling"
   ],
   "cta": {
-    "heading": "Protect the tooth before it breaks further",
-    "text": "Book a crown appointment in Valencia. Same-day and emergency visits are available, and you will know the cost before we begin.",
+    "heading": "Schedule your dental crowns consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

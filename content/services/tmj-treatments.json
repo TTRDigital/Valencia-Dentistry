@@ -4,160 +4,186 @@
   "parentPath": "/services/",
   "category": "preventive",
   "name": "TMJ Treatments",
-  "shortDescription": "Relief for jaw pain, clicking and headaches with night guards, Botox and bite care.",
+  "shortDescription": "Relief for jaw pain, clicking and headaches.",
   "seo": {
     "title": "TMJ Treatment in Santa Clarita | Dr. Nuriel Lavi",
     "description": "TMJ treatment in Santa Clarita for jaw pain, clicking and headaches: custom night guards, Botox, bite adjustments and oral appliances from Dr. Nuriel Lavi."
   },
   "hero": {
-    "eyebrow": "Jaw pain and headaches",
-    "h1": "TMJ Treatment in Valencia for Jaw Pain and Headaches",
-    "lead": "Jaw pain, clicking and tension headaches often trace back to the jaw joint. Dr. Lavi looks for the cause and treats it with custom appliances, bite correction and whole-body guidance.",
-    "image": "/images/brand/panel-preventive.jpg",
-    "imageAlt": ""
+    "h1": "TMJ Dentist in Valencia for Jaw Pain & Headaches",
+    "subtitle": "Get Relief with a TMJ Dentist in Santa Clarita",
+    "text": "Restore comfort and function with expert TMJ treatment from Valencia Dentistry",
+    "image": {
+      "src": "/images/blog/1776894737538.jpg",
+      "alt": "TMJ Treatments at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Treating the cause, not just the ache",
+    "heading": "Get Relief with a TMJ Dentist in Santa Clarita",
     "paragraphs": [
-      "The temporomandibular joint, or TMJ, is the hinge that connects your lower jaw to your skull. It works every time you chew, speak or yawn. When the joint or the muscles around it are strained, injured or out of alignment, the result is a TMJ disorder, often shortened to TMD. Common causes include grinding or clenching, a misaligned bite, stress, arthritis in the joint and injury to the jaw or face.",
-      "Dr. Lavi takes an integrative view of TMJ care. Rather than only masking symptoms, he looks for what is driving them, whether that is nighttime clenching, worn teeth or muscle tension, and builds a plan around it. Treatment may include a custom night guard, Botox to relax overactive jaw muscles, bite adjustments or practical guidance on posture and stress. Patients from Valencia and across Santa Clarita come to us for this calm, thorough approach."
+      "Living with jaw pain, headaches or difficulty chewing can ruin your day. At Valencia Dentistry we have gentle and effective solutions to help you get back to comfort and function. Our TMJ treatments in Santa Clarita are personalized – using advanced diagnostics, custom oral appliances and holistic approaches to address the root cause of the discomfort not just the symptoms. Schedule your TMJ appointment in Santa Clarita with us today and get full function and comfort back to your jaw."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Occasional jaw tension is common, but frequent or worsening symptoms deserve a closer look.",
-    "items": [
-      "Frequent jaw pain or stiffness, often in the morning or after chewing",
-      "Clicking, popping or locking when you open or close your mouth",
-      "Recurring headaches or earaches that seem to start in the jaw or temples",
-      "Pain or limited movement when biting or chewing firmer foods",
-      "Nighttime grinding or clenching, often noticed first by a partner",
-      "Neck or shoulder pain from muscle tension that spreads beyond the jaw"
-    ]
-  },
-  "benefits": {
-    "heading": "What treatment can do for you",
-    "intro": "Addressing a TMJ disorder tends to improve more than just your jaw.",
+  "understanding": {
+    "heading": "What Are TMJ Disorders?",
+    "intro": "The temporomandibular joint (TMJ) is the hinge that connects your jawbone to your skull, allowing you to chew, speak, and yawn. When this joint becomes strained, injured, or misaligned, it can lead to temporomandibular disorders (TMD). These conditions often cause ongoing discomfort that affects more than just your jaw. Common causes of TMJ disorders include: At Valencia Dentistry, we take a comprehensive approach to TMJ care. Our goal is to relieve pain, protect your teeth, and restore balance with treatment options tailored to your needs.",
+    "image": {
+      "src": "/images/stock/exam-mirror.jpg",
+      "alt": "TMJ Treatments: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Less pain",
-        "text": "Targeted treatment can reduce jaw tension, headaches and muscle soreness linked to TMJ disorders."
+        "title": "Custom Night Guards",
+        "text": "Designed to reduce teeth grinding and clenching, night guards ease pressure on the jaw joint and protect your teeth from wear."
       },
       {
-        "title": "Smoother jaw movement",
-        "text": "Many patients find speaking, chewing and yawning more comfortable once the joint is under less strain."
+        "title": "Botox for TMJ Relief",
+        "text": "Targeted Botox injections can relax overactive jaw muscles, reducing pain, tension, and strain caused by TMJ disorders."
       },
       {
-        "title": "Better sleep",
-        "text": "Night guards and other appliances help limit grinding and clenching, so you and your teeth rest easier."
+        "title": "Sleep Apnea & Oral Devices",
+        "text": "Specialized appliances not only improve nighttime breathing but also help reduce clenching and grinding that worsen TMJ symptoms."
       },
       {
-        "title": "Protection for teeth and gums",
-        "text": "Reducing grinding and uneven bite pressure helps prevent long-term wear and damage."
+        "title": "Bite Adjustments & Restorative Solutions",
+        "text": "Correcting bite alignment or addressing worn teeth restores proper function and reduces stress on the jaw joint."
       },
       {
-        "title": "Everyday ease",
-        "text": "With less pain and tension, daily activities feel simpler again."
+        "title": "Lifestyle & Stress Management Guidance",
+        "text": "Our team provides practical strategies for posture, relaxation, and daily habits that can minimize TMJ triggers and support long-term relief."
+      },
+      {
+        "title": "Lasting Pain Relief",
+        "text": "Targeted treatment reduces jaw tension, headaches, and muscle soreness linked to TMJ disorders."
+      },
+      {
+        "title": "Improved Jaw Function",
+        "text": "Restores smoother, more comfortable movement when speaking, chewing, or yawning."
+      },
+      {
+        "title": "Better Sleep Quality",
+        "text": "Night guards and other therapies help minimize teeth grinding and nighttime clenching."
+      },
+      {
+        "title": "Protection for Teeth and Gums",
+        "text": "Prevents long-term damage caused by grinding, uneven bite pressure, or misalignment."
+      },
+      {
+        "title": "Enhanced Overall Well-Being",
+        "text": "Relief from pain and tension allows you to enjoy daily activities with greater ease and confidence."
       }
+    ],
+    "bullets": [
+      "Teeth grinding or clenching (bruxism)",
+      "Misaligned bite or jaw structure",
+      "Stress and muscle tension",
+      "Arthritis or inflammation in the joint",
+      "Injury to the jaw or face"
     ]
   },
-  "options": {
-    "heading": "TMJ treatment options",
-    "intro": "Dr. Lavi combines these as needed to relieve pain, protect your teeth and restore balance.",
-    "items": [
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for TMJ Treatment in Santa Clarita",
+    "intro": "Choosing the right Santa Clarita TMJ treatment provider is important for lasting relief from TMJ pain. At Valencia Dentistry, our team goes beyond symptom management to deliver personalized, compassionate care you can trust.",
+    "cards": [
       {
-        "title": "Custom night guards",
-        "text": "A precisely fitted guard worn during sleep that cushions grinding and clenching, easing pressure on the joint and protecting your teeth from wear."
+        "title": "Compassionate, Patient-Centered Care",
+        "text": "Dr. Lavi is known for his detail-oriented approach and commitment to helping patients feel comfortable and understood.",
+        "image": {
+          "src": "/images/stock/exam-mirror.jpg",
+          "alt": "Compassionate, Patient-Centered Care"
+        }
       },
       {
-        "title": "Botox for TMJ relief",
-        "text": "Targeted injections relax overactive jaw muscles, which can reduce pain, tension and strain on the joint."
+        "title": "Advanced Technology",
+        "text": "From digital imaging to precision oral appliances, we use the latest tools to diagnose and treat TMJ disorders effectively.",
+        "image": {
+          "src": "/images/blog/1781217378905.jpg",
+          "alt": "Advanced Technology"
+        }
       },
       {
-        "title": "Sleep apnea and oral devices",
-        "text": "Custom appliances that support nighttime breathing and can also lessen the clenching and grinding that aggravate TMJ symptoms."
+        "title": "Stress-Free Experience",
+        "text": "With sedation options and a welcoming environment, our office feels less like a clinic and more like a trusted space for care.",
+        "image": {
+          "src": "/images/blog/1776894737538.jpg",
+          "alt": "Stress-Free Experience"
+        }
       },
       {
-        "title": "Bite adjustments and restorative care",
-        "text": "Correcting how your teeth meet or rebuilding worn teeth restores balanced function and takes stress off the jaw joint."
+        "title": "Comprehensive Services Under One Roof",
+        "text": "Whether you need a night guard, Botox therapy, or restorative treatment, everything is available in one convenient Santa Clarita location."
       },
       {
-        "title": "Lifestyle and stress guidance",
-        "text": "Practical strategies for posture, relaxation and daily habits that reduce TMJ triggers and support long-term comfort."
+        "title": "Transparent Pricing & Flexible Options",
+        "text": "We make TMJ care accessible with clear communication, flexible financing, and a $59 new patient special."
       }
     ]
   },
   "process": {
-    "heading": "What to expect",
-    "intro": "Relief starts with understanding your symptoms and building a plan that fits your life.",
+    "heading": "What to Expect: Step-by-Step TMJ Treatment Process",
+    "intro": "Getting relief from TMJ pain starts with understanding your unique symptoms and creating a plan that fits your lifestyle. At Valencia Dentistry, here’s how the process works:",
     "steps": [
       {
-        "title": "Comprehensive evaluation",
-        "text": "Dr. Lavi examines your jaw, bite and muscles, reviews your medical history and may take digital X-rays or 3D CBCT images of the joint to pinpoint the source of your discomfort."
+        "title": "Comprehensive Evaluation",
+        "text": "We begin with a thorough exam that may include bite analysis, digital imaging, and a review of your medical history to pinpoint the cause of your discomfort."
       },
       {
-        "title": "A personalized plan",
-        "text": "Based on what he finds, Dr. Lavi designs a plan that may combine an oral appliance, Botox therapy, bite adjustment and holistic recommendations. You will understand each step and why it is included."
+        "title": "Personalized Treatment Plan",
+        "text": "Based on your diagnosis, Dr. Lavi designs a custom treatment plan that may involve oral appliances, Botox therapy, bite adjustments, or holistic recommendations."
       },
       {
-        "title": "Ongoing care and support",
-        "text": "Follow-up visits track your progress so treatment can be fine-tuned. You get at-home guidance along the way, and the aim is steady, durable improvement in comfort and function."
+        "title": "Ongoing Care & Support",
+        "text": "Your progress is monitored closely with follow-up visits to adjust treatment, provide at-home guidance, and ensure lasting relief and improved jaw function."
       }
     ]
   },
-  "technology": {
-    "heading": "Diagnostics that find the source",
-    "intro": "Accurate imaging and digital records lead to appliances that fit and plans that work.",
-    "items": [
-      {
-        "title": "3D CBCT imaging",
-        "text": "Three-dimensional scans show the jaw joint and surrounding bone in detail when a closer look is needed."
-      },
-      {
-        "title": "iTero digital scanner",
-        "text": "Digital impressions capture your bite accurately for a night guard or oral appliance that fits well."
-      },
-      {
-        "title": "Digital X-rays",
-        "text": "Low-radiation images help assess your teeth, bite and joint at your first visit."
-      }
-    ]
+  "candidate": {
+    "heading": "Typical symptoms may include:",
+    "text": "Have you been searching for TMJ treatment near me? Not every case of jaw tension requires professional care, but if your symptoms are frequent or getting worse, it may be time to see a TMJ specialist in Valencia. Seeking treatment early can prevent long-term complications and protect your teeth and jaw health.",
+    "bullets": [
+      "Jaw pain or stiffness",
+      "Clicking, popping, or locking of the jaw",
+      "Headaches or earaches",
+      "Difficulty chewing or opening your mouth fully",
+      "Neck or shoulder pain from muscle tension"
+    ],
+    "image": {
+      "src": "/images/blog/1781217378905.jpg",
+      "alt": ""
+    }
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "TMJ treatment costs depend on what your plan includes, whether that is a custom night guard, Botox therapy, bite adjustments or a combination. After your evaluation, Dr. Lavi explains the recommended approach and you receive a written estimate before treatment begins. Coverage for TMJ care varies by insurance provider; some plans cover appliances and others do not. We accept most major PPO plans, including Delta Dental, MetLife, Cigna and Aetna, and our team reviews your benefits so you know what to expect. Flexible financing is available, and new patients can begin with the $59 exam and X-ray special."
-  },
+  "tables": [],
+  "extra": [],
   "faqs": [
     {
       "q": "What are the most common symptoms of TMJ disorders?",
-      "a": "The most common signs are jaw pain or stiffness, clicking or popping sounds when you open and close, headaches and earaches, and difficulty chewing or opening wide. Some patients also notice discomfort spreading to the neck and shoulders, because the jaw muscles connect to those areas."
+      "a": "Patients often notice jaw pain, stiffness, clicking or popping sounds, headaches, and even discomfort that spreads to the neck or shoulders."
     },
     {
       "q": "How do I know if I need TMJ treatment?",
-      "a": "Occasional jaw tension is normal, but ongoing discomfort, trouble chewing, frequent headaches or a jaw that clicks or locks are worth evaluating. Getting assessed early can help prevent worn teeth and longer-term joint problems. Dr. Lavi can tell you whether treatment makes sense or whether watchful waiting is enough."
+      "a": "If you’re experiencing ongoing jaw discomfort, difficulty chewing, or frequent headaches, it may be time to see a TMJ dentist in Santa Clarita. According to WebMD’s overview of TMJ disorders, getting an evaluation early can prevent long-term complications."
     },
     {
       "q": "Are TMJ treatments painful?",
-      "a": "Most TMJ treatments are non-invasive and intended to ease discomfort, not add to it. Night guards and oral appliances are custom fitted, bite adjustments are minor and can be done with local anesthesia if needed, and Botox injections involve brief, small needle sticks that most patients tolerate well."
+      "a": "Most TMJ treatments are non-invasive and designed to ease discomfort, not add to it. Oral appliances, Botox therapy, and bite adjustments are comfortable and focused on relief."
     },
     {
       "q": "How long does it take to see results from TMJ treatment?",
-      "a": "It varies. Some patients notice improvement within a few weeks of wearing a night guard or receiving Botox, while others take longer, depending on the severity of the condition and the elements of the plan. Dr. Lavi monitors your progress at follow-up visits and adjusts treatment as needed."
+      "a": "Some patients notice improvements within weeks, while others may take longer depending on the severity of their condition and treatment plan."
     },
     {
       "q": "Does insurance cover TMJ treatments?",
-      "a": "Coverage for TMJ treatment varies widely by provider and plan. Some cover oral appliances, some cover a portion of other therapies and some exclude TMJ care altogether. Our team will review your benefits, explain what is included and help you explore financing options if needed."
+      "a": "Coverage varies by provider. Our team will review your benefits, explain what’s included, and help you explore financing options if needed."
     }
   ],
   "related": [
     "holistic-dentistry",
     "dental-crowns",
-    "restorative-dentistry",
-    "invisalign"
+    "oral-surgery"
   ],
   "cta": {
-    "heading": "Find out what is behind your jaw pain",
-    "text": "Schedule a TMJ evaluation with Dr. Lavi at our Valencia office. Call (661) 254-5200 or book online.",
+    "heading": "Schedule your tmj treatments consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

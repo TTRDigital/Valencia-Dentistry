@@ -4,151 +4,160 @@
   "parentPath": "/services/cosmetic-dentistry/",
   "category": "cosmetic",
   "name": "Teeth Whitening",
-  "shortDescription": "Dentist-supervised whitening in the office or at home, with enamel-safe gels.",
+  "shortDescription": "Professional whitening in the office or at home.",
   "seo": {
     "title": "Teeth Whitening in Santa Clarita | Dr. Nuriel Lavi",
     "description": "Professional teeth whitening in Santa Clarita. In-office in about an hour or custom take-home trays, supervised by Dr. Nuriel Lavi. $59 new patient exam."
   },
   "hero": {
-    "eyebrow": "Cosmetic dentistry",
-    "h1": "Teeth Whitening in Santa Clarita",
-    "lead": "Lift coffee, wine and everyday stains with whitening that is matched to your teeth and your sensitivity. In the office in about an hour, or at home at your pace.",
-    "image": "/images/brand/panel-cosmetic.jpg",
-    "imageAlt": ""
+    "h1": "Teeth Whitening Santa Clarita – Safe, Effective, and Dentist-Approved",
+    "subtitle": "Reveal a Brighter Smile with Teeth Whitening in Santa Clarita",
+    "text": "Skip the store-bought strips—experience real results with enamel-safe treatments from Valencia Dentistry.",
+    "image": {
+      "src": "/images/blog/1776382495907.jpg",
+      "alt": "Teeth Whitening at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Whitening that is planned, not guessed",
+    "heading": "Reveal a Brighter Smile with Teeth Whitening in Santa Clarita",
     "paragraphs": [
-      "Coffee, tea, red wine, tobacco and simple age all dull enamel over time. Professional whitening lifts those stains with dentist-grade gels that are stronger and more predictable than store-bought strips. At Valencia Dentistry every whitening plan starts with an exam, because whitening works best on healthy teeth, and a shade match so we can set realistic expectations and measure the result.",
-      "There is no single formula here. Dr. Lavi tailors the strength, timing and method to your shade goal and your sensitivity, so you get a noticeably brighter smile with little to no sensitivity. Choose in-office whitening for a fast result, custom take-home trays for gradual brightening, or a combination plan for both. Patients across Santa Clarita and Valencia come to us for exactly this kind of measured approach."
+      "If your smile has lost its sparkle due to coffee, wine, or everyday wear, professional teeth whitening in Santa Clarita can help you regain that fresh, confident look. At Valencia Dentistry, we offer safe, customized whitening treatments that lift stains, even out discoloration, and brighten your teeth—often in just one visit. Whether you’re prepping for a big event or simply want to feel more confident, our dentist-guided approach ensures effective results without sensitivity."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "You are likely a good candidate for professional whitening if:",
-    "items": [
-      "You have surface stains from coffee, tea, wine or tobacco",
-      "Your teeth are healthy, with no untreated decay or gum disease",
-      "You want fast, noticeable results without harming your enamel",
-      "You are after a lasting improvement, not a quick fix",
-      "Your smile looks yellowed or duller than it used to"
+  "understanding": {
+    "heading": "What Makes Our Whitening Treatments Different",
+    "intro": "At Valencia Dentistry, we don’t believe in one-size-fits-all solutions. Our whitening treatments are customized to your unique smile goals and sensitivity levels. Using professional-grade whitening agents and advanced techniques, we can safely remove deep-set stains while protecting your enamel and gum health. We offer: Whether you’re dealing with discoloration from coffee, tobacco, wine, or age, our treatments are designed to deliver a noticeably brighter smile with little to no sensitivity.",
+    "image": {
+      "src": "/images/stock/cosmetic-checkup.jpg",
+      "alt": "Teeth Whitening: treatment at Valencia Dentistry"
+    },
+    "items": [],
+    "bullets": [
+      "In-office whitening for fast, dramatic results",
+      "Custom take-home trays for flexible, gradual whitening",
+      "Combination plans for long-term brightness and maintenance"
     ]
   },
-  "benefits": {
-    "heading": "Why patients whiten with us",
-    "intro": "The difference is supervision: a dentist chooses the gel, checks your teeth and watches your sensitivity.",
-    "items": [
-      {
-        "title": "Customized care",
-        "text": "Strength and timing matched to your shade goal and your sensitivity level."
-      },
-      {
-        "title": "Dental-grade materials",
-        "text": "Professional whitening agents that are enamel-safe and used under supervision."
-      },
-      {
-        "title": "Minimal sensitivity",
-        "text": "Modern formulas and careful technique keep discomfort low for most patients."
-      },
-      {
-        "title": "Real results",
-        "text": "Professional gels lift deeper stains than store-bought kits can reach."
-      },
-      {
-        "title": "Guidance throughout",
-        "text": "From consultation to follow-up, you deal with Dr. Lavi and his team, not a box."
-      }
-    ]
-  },
-  "options": {
-    "heading": "Whitening options",
-    "intro": "Three ways to whiten, depending on how fast you want results and how you like to work.",
-    "items": [
-      {
-        "title": "In-office whitening",
-        "text": "Best for quick, dramatic results. About one hour in the chair with a professional high-concentration gel. Results are immediate."
-      },
-      {
-        "title": "Custom take-home trays",
-        "text": "Best for flexible, gradual whitening. Wear your custom trays with professional gel for 30 to 60 minutes a day; results build over 7 to 14 days."
-      },
-      {
-        "title": "Combination plan",
-        "text": "Best for long-term brightness. An in-office boost for immediate results, plus a take-home kit for maintenance."
-      }
-    ]
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for Teeth Whitening?",
+    "intro": "Your smile deserves expert care—and that’s exactly what we deliver. Patients throughout Santa Clarita trust us not just for visible results, but for our personalized, enamel-safe approach to cosmetic whitening. Here’s why patients love whitening with us: Safe, dental-grade materials Safe, dental-grade materials approved by top cosmetic dentists Minimal sensitivity Minimal sensitivity thanks to advanced formulas and techniques Real results Real results that go beyond what store-bought kits can deliver Expert guidance Expert guidance every step of the way—from consultation to follow-up",
+    "cards": []
   },
   "process": {
-    "heading": "How whitening works here",
-    "intro": "Three steps, whether you whiten in the office or at home.",
+    "heading": "How Our Whitening Process Works",
+    "intro": "We make whitening simple, safe, and tailored to your smile. Whether you choose an in-office treatment or a take-home plan, our process is designed for results you’ll see—and feel—fast.",
     "steps": [
       {
-        "title": "Consultation and shade match",
-        "text": "Dr. Lavi examines your teeth, talks through your goals and records your current shade. This sets realistic expectations and shapes your plan."
+        "title": "Consultation & Shade Match",
+        "text": "We’ll evaluate your teeth, discuss your goals, and determine the current shade. This helps us set realistic expectations and customize your treatment plan."
       },
       {
-        "title": "Whitening treatment",
-        "text": "In the office, professional-grade gel is applied in a single visit. For take-home whitening, you are fitted for custom trays. All products are enamel-safe and chosen with sensitivity in mind."
+        "title": "Whitening Treatment",
+        "text": "Your whitening procedure is performed in-office using professional-grade gel, or you’ll be fitted for custom take-home trays. All products are enamel-safe and sensitivity-conscious."
       },
       {
-        "title": "Aftercare and follow-up",
-        "text": "You leave with tips to protect your results and avoid common staining habits, plus the option of touch-ups or extra gel for home use."
+        "title": "Aftercare & Results Monitoring",
+        "text": "We’ll provide tips to help you maintain your results and avoid common stain-causing habits. You’ll also have the option to schedule touch-ups or receive additional gel for at-home use."
+      },
+      {
+        "title": "Book Your Veneers Consultation Today",
+        "text": "Ready to enhance your smile with natural-looking veneers? At Valencia Dentistry, we’re here to guide you every step of the way with personalized care, advanced technology, and results that speak for themselves. Whether you’re just exploring your options or ready to get started, we’re here to help you smile with confidence. Discover the difference that expertly crafted veneers in Santa Clarita can make."
       }
     ]
   },
-  "technology": {
-    "heading": "What supports the result",
-    "intro": "Whitening is low-tech by design, but the exam around it is not.",
-    "items": [
-      {
-        "title": "Digital X-rays",
-        "text": "Confirm there is no untreated decay before whitening, so the gel does not reach a vulnerable tooth."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "Document your starting shade and show the change at your follow-up."
-      },
-      {
-        "title": "iTero digital scanner",
-        "text": "Digital impressions for custom take-home trays that fit closely and keep gel where it belongs."
-      }
-    ]
+  "candidate": {
+    "heading": "Is Professional Whitening Right for You?",
+    "text": "If your teeth are yellowed, stained, or simply not as bright as they used to be, professional whitening may be a great fit. At Valencia Dentistry, we begin every treatment with a thorough evaluation to ensure whitening is safe and effective for your smile. You’re likely a good candidate if:",
+    "bullets": [
+      "You have surface stains from coffee, tea, wine, or tobacco",
+      "Your teeth are healthy and free of untreated decay or gum disease",
+      "You want fast, noticeable results without damaging your enamel",
+      "You’re looking for a long-term solution—not just a quick fix"
+    ],
+    "image": {
+      "src": "/images/blog/1776894737538.jpg",
+      "alt": ""
+    }
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "Whitening is a cosmetic treatment, so dental insurance generally does not cover it. We keep pricing straightforward: after your consultation and shade match you receive a written estimate for the option you choose, whether in-office, take-home or the combination plan, before any treatment begins. Flexible financing is available if you prefer to spread the cost. Whitening starts with a healthy mouth, and if you are new to the practice the $59 new patient special covers the exam and X-rays we need before we whiten."
-  },
+  "tables": [
+    {
+      "heading": "Teeth Whitening Options at Valencia Dentistry",
+      "rows": [
+        [
+          "Whitening Option",
+          "Best For"
+        ],
+        [
+          "Treatment Time",
+          "Results Timeline"
+        ],
+        [
+          "Includes",
+          "In-Office Whitening"
+        ],
+        [
+          "Quick, dramatic results",
+          "~1 Hour"
+        ],
+        [
+          "Immediate",
+          "Professional application, high-concentration gel"
+        ],
+        [
+          "Take-Home Trays",
+          "Custom trays, professional gel"
+        ],
+        [
+          "Combo Whitening Plan",
+          "Long-term results & maintenance"
+        ],
+        [
+          "In-office + at-home use",
+          "Immediate + lasting"
+        ],
+        [
+          "In-office boost + take-home kit",
+          "Flexible, gradual whitening"
+        ],
+        [
+          "30–60 min/day for 1–2 weeks",
+          "7–14 days"
+        ]
+      ],
+      "text": ""
+    }
+  ],
+  "extra": [],
   "faqs": [
     {
       "q": "How long do teeth whitening results last?",
-      "a": "Results often last from 6 months to 2 years, depending on your oral hygiene, diet and habits. Coffee, red wine and tobacco shorten that window; limiting them stretches it. Periodic touch-ups with take-home gel are an easy way to hold your shade."
+      "a": "Results can last anywhere from 6 months to 2 years depending on your oral hygiene, diet, and lifestyle habits. Avoiding coffee, red wine, and tobacco can help extend your results."
     },
     {
       "q": "Will my teeth be sensitive afterward?",
-      "a": "Some patients notice mild sensitivity for a day or two, especially to cold. Our treatments are chosen and timed to keep this to a minimum, and we will recommend aftercare steps and products, such as a sensitivity toothpaste, that help if it occurs."
+      "a": "Some patients experience mild sensitivity, but our treatments are designed to minimize discomfort. We’ll also recommend aftercare tips and products to help reduce any sensitivity."
     },
     {
       "q": "Is professional whitening better than over-the-counter options?",
-      "a": "Yes, for most people. Professional gels are stronger and are applied under a dentist's supervision, so they reach deeper stains and work faster than strips or kits, with less risk to enamel and gums. You also get a shade match, custom-fit trays and someone to call with questions."
+      "a": "Yes. Professional treatments use stronger, dentist-supervised formulas that remove deeper stains and deliver faster, longer-lasting results without damaging enamel."
     },
     {
       "q": "Is teeth whitening safe?",
-      "a": "Whitening performed under dental supervision is considered safe for healthy teeth and gums. The exam beforehand matters: we check for decay, gum disease and exposed roots that could cause problems, and we choose the gel strength and timing to protect your enamel."
+      "a": "When performed under dental supervision, whitening is completely safe for your teeth and gums. Learn more about safety recommendations from the Cleveland Clinic."
     },
     {
       "q": "How white will my teeth get?",
-      "a": "Results vary with the type and depth of staining, but many patients see an improvement of 2 to 8 shades. At your shade match we give you a realistic expectation based on your current color and the cause of the discoloration, before you commit."
+      "a": "Whitening results vary by individual, but most patients see a 2–8 shade improvement. We’ll give you a realistic expectation based on your current tooth color and type of staining."
     }
   ],
   "related": [
-    "cosmetic-dentistry",
     "veneers",
-    "invisalign",
-    "composite-filling"
+    "cosmetic-dentistry",
+    "invisalign"
   ],
   "cta": {
-    "heading": "Brighter in about an hour",
-    "text": "Book a whitening consultation in Valencia. We will match your shade, check your teeth and recommend the option that fits.",
+    "heading": "Schedule your teeth whitening consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

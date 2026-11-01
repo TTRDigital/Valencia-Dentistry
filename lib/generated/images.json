@@ -279,12 +279,108 @@
   "height": 82,
   "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACwAAAgAAQUxQSCUAAAAA/f39/f39/f38/fXn7+/v7+/v7+/u7ufa1tbW1tbW1tbV1tDDAFZQOCAmAAAAkAEAnQEqDAADAAOAWiUAAFufXJdwAP73JvVYDCHeXo9e46QAAAA="
  },
- "/images/team/dr-lavi.jpg": {
-  "width": 314,
-  "height": 340,
-  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoLAAwAA4BaJYwC7ADciL01XWAAANy1AeXUbW3OoYxc3ampMSAeZveLMxb4PhLnXhmNjjEOAAA=",
+ "/images/stock/cbct-scan.jpg": {
+  "width": 1206,
+  "height": 950,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAkAA4BaJYwCdAD0Mcj5cAD+yjGq3N4yPNkBNJI0XBlRcjzOJDbFw3AAAA=="
+ },
+ "/images/stock/cosmetic-checkup.jpg": {
+  "width": 1208,
+  "height": 636,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAYAA4BaJYwCdADdH5GIGAD+bKggQK5DSL7v5VMb12QDEmQTY75H/I4AAA=="
+ },
+ "/images/stock/crown-model.jpg": {
+  "width": 1080,
+  "height": 720,
+  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoMAAgAA4BaJQBOgBZNgPCAAP7gv1HQBlLqZispf2mMJy2yBlz7ibQSRJZyEKq326XyzS8m8AA="
+ },
+ "/images/stock/exam-mirror.jpg": {
+  "width": 1208,
+  "height": 636,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAYAA4BaJYgCdADdGCO5AAD+fgh4nFakKptyW2vIztw37KPwJHyiPeMSgAAA"
+ },
+ "/images/stock/family-visit.jpg": {
+  "width": 604,
+  "height": 318,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoMAAYAA4BaJYwAAq9f+CJnSwAA/reXaEE8oe7FxKLU0U2o8UOqtgAA"
+ },
+ "/images/team/dr-lavi-casual.jpg": {
+  "width": 1200,
+  "height": 1800,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAwAA4BaJZwCdADZml5CgAD+t4vFfxNdT7LWD+Q6rZzkZCXxoBNIBgUYVgAA",
   "opt": [
-   314
+   390,
+   480,
+   640,
+   768,
+   1080,
+   1200
+  ]
+ },
+ "/images/team/dr-lavi-office.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoIAAwAA4BaJZQC7AEWUMvo+QAA/psub2yJc3Xc1CpT1l0jabiwIAAA",
+  "opt": [
+   390,
+   480,
+   640,
+   768,
+   1080,
+   1280,
+   1334
+  ]
+ },
+ "/images/team/dr-lavi-outdoor.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJZQAAl25nX+tfAAA/vLinT8Lq3NnnGl3fF0yGPluO2mwEKl+RAOAAAA=",
+  "opt": [
+   390,
+   480,
+   640,
+   768,
+   1080,
+   1280,
+   1600
+  ]
+ },
+ "/images/team/dr-lavi-portrait.jpg": {
+  "width": 1200,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoJAAwAA4BaJZwAAp3OqYFAAP74jNzaVvQ32pUY+BJS74T6oIMDCgAA",
+  "opt": [
+   390,
+   480,
+   640,
+   768,
+   1080,
+   1200
+  ]
+ },
+ "/images/team/dr-lavi-treating.jpg": {
+  "width": 768,
+  "height": 514,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoMAAgAA4BaJYwCdACEylyAAP7rGW6Wq5hsJEV8phcDCvH75skC52pBAAA=",
+  "opt": [
+   390,
+   480,
+   640,
+   768
+  ]
+ },
+ "/images/team/dr-lavi.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAAAQAgCdASoIAAwAA4BaJZQC7AD0o0UijggAAP3/hJmqT0Z6TzZADNHarhaQ+JAA",
+  "opt": [
+   390,
+   480,
+   640,
+   768,
+   1080,
+   1280,
+   1334
   ]
  }
 }

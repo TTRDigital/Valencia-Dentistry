@@ -45,7 +45,7 @@ export function PhotoCards({ s }: { s: PhotoCardsSection }) {
 /** Full-width banner with text over a photo (or the dark brand surface when no photo is supplied). */
 export function Banner({ s }: { s: BannerSection }) {
   return (
-    <section className="relative isolate overflow-hidden bg-ink-900 text-white" aria-labelledby="banner-heading">
+    <section className="on-dark relative isolate overflow-hidden bg-ink-900 text-white" aria-labelledby="banner-heading">
       {s.image && (
         <div className="absolute inset-0 -z-10">
           <Picture image={s.image} fill sizes="100vw" className="object-cover" quality={70} />

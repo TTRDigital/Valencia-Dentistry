@@ -16,7 +16,7 @@ export const client = sanityConfigured
 const IMG = `{ "src": asset->url, "width": asset->metadata.dimensions.width, "height": asset->metadata.dimensions.height, "blurDataURL": asset->metadata.lqip, alt }`;
 
 const QUERIES: Record<string, string> = {
-  services: `*[_type == "service" && !(_id in path("drafts.**"))] | order(name asc) { ..., "hero": hero { ..., "image": coalesce(photo.asset->url, image) } }`,
+  services: `*[_type == "service" && !(_id in path("drafts.**"))] | order(name asc) { ..., hero { ..., image ${IMG} }, understanding { ..., image ${IMG} }, why { ..., cards[] { ..., image ${IMG} } }, candidate { ..., image ${IMG} } }`,
   posts: `*[_type == "post" && !(_id in path("drafts.**"))] | order(datePublished desc) { ..., "image": coalesce(photo.asset->url, image), "imageAlt": coalesce(photo.alt, imageAlt), "bodyPT": body, "body": "" }`,
   pages: `*[_type == "page" && !(_id in path("drafts.**"))] { ..., sections[] { ..., image ${IMG}, images[] ${IMG} } }`,
   legal: `*[_type == "legalPage" && !(_id in path("drafts.**"))] { ... }`,

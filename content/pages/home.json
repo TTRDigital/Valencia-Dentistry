@@ -23,7 +23,7 @@
       },
       "image": {
         "src": "/images/team/dr-lavi.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS, in the Valencia Dentistry treatment room"
+        "alt": "Dr. Nuriel Lavi, DDS"
       },
       "trust": true
     },
@@ -49,8 +49,8 @@
           "title": "Built to last",
           "text": "We use the best materials available, with 3D imaging and guided planning, because your smile should still look great years from now.",
           "image": {
-            "src": "/images/team/dr-lavi.jpg",
-            "alt": "Dr. Nuriel Lavi in the treatment room"
+            "src": "/images/team/dr-lavi-treating.jpg",
+            "alt": "Dr. Nuriel Lavi treating a patient"
           },
           "link": {
             "label": "Dental implants",
@@ -61,8 +61,8 @@
           "title": "One of a kind",
           "text": "Every plan is built around the person in the chair. No templates, no shortcuts, no handoffs, just work we are proud of.",
           "image": {
-            "src": "/images/brand/panel-holistic.jpg",
-            "alt": ""
+            "src": "/images/stock/cosmetic-checkup.jpg",
+            "alt": "Smiling woman in a dental chair during a checkup"
           },
           "link": {
             "label": "Holistic dentistry",
@@ -79,6 +79,10 @@
       "cta": {
         "label": "About Valencia Dentistry",
         "href": "/about/"
+      },
+      "image": {
+        "src": "/images/stock/exam-mirror.jpg",
+        "alt": "Dentist examining a patient's teeth with a mirror"
       }
     },
     {
@@ -87,8 +91,8 @@
       "heading": "Precise diagnosis, gentler treatment",
       "lead": "We invest in technology that makes care more accurate and more comfortable: clearer images, fewer visits and treatment that is planned before it begins.",
       "image": {
-        "src": "/images/team/dr-lavi.jpg",
-        "alt": "Dr. Nuriel Lavi next to a digital X-ray display in the treatment room"
+        "src": "/images/team/dr-lavi-office.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS next to a digital X-ray display"
       },
       "items": [
         {
@@ -142,24 +146,24 @@
           "title": "Book your consultation",
           "text": "Every great smile starts with a conversation. Dr. Lavi takes the time to understand what you want and maps out exactly how to get you there.",
           "image": {
-            "src": "/images/brand/panel-surgical.jpg",
-            "alt": ""
+            "src": "/images/blog/1776382495907.jpg",
+            "alt": "Patient smiling during a dental cleaning"
           }
         },
         {
           "title": "Transform your smile",
           "text": "Your smile should look like yours, just better. Every restoration is crafted to blend seamlessly, so no one can tell the difference except you.",
           "image": {
-            "src": "/images/cases/case-5-after.jpg",
-            "alt": "Close-up of new white front teeth"
+            "src": "/images/blog/1776893633346.jpg",
+            "alt": "Smiling woman in a dental office"
           }
         },
         {
           "title": "Feel the difference",
           "text": "Our relationship does not end when you leave the chair. From ongoing care to routine visits, we are your partner in keeping that smile for life.",
           "image": {
-            "src": "/images/brand/panel-holistic.jpg",
-            "alt": ""
+            "src": "/images/blog/1776894737538.jpg",
+            "alt": "Smiling older woman"
           }
         }
       ]

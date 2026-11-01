@@ -5,10 +5,8 @@
     "credentials": "DDS",
     "role": "Dentist and practice owner",
     "image": {
-      "src": "/images/team/dr-lavi.jpg",
-      "alt": "Dr. Nuriel Lavi, DDS, in the Valencia Dentistry treatment room",
-      "width": 314,
-      "height": 340
+      "src": "/images/team/dr-lavi-office.jpg",
+      "alt": "Dr. Nuriel Lavi, DDS in the treatment room"
     },
     "bio": [
       "Dr. Nuriel Lavi leads Valencia Dentistry on Tourney Road in Valencia. He sees every patient himself, at every visit, and takes the time to listen before he recommends anything.",

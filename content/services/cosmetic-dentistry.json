@@ -4,171 +4,183 @@
   "parentPath": "/services/",
   "category": "cosmetic",
   "name": "Cosmetic Dentistry",
-  "shortDescription": "Whitening, Invisalign, veneers, bonding and full smile makeovers, planned by Dr. Lavi.",
+  "shortDescription": "Veneers, whitening, Invisalign and bonding for a smile that looks like you.",
   "seo": {
     "title": "Cosmetic Dentistry in Santa Clarita | Dr. Nuriel Lavi",
     "description": "Cosmetic dentistry in Santa Clarita: whitening, Invisalign, veneers and smile makeovers, planned one-on-one with Dr. Nuriel Lavi. $59 new patient exam."
   },
   "hero": {
-    "eyebrow": "Cosmetic dentistry",
-    "h1": "Cosmetic Dentistry in Santa Clarita",
-    "lead": "Whitening, clear aligners, veneers and bonding, planned by Dr. Nuriel Lavi for a smile that looks natural and feels like yours. One dentist, every visit.",
-    "image": "/images/brand/panel-cosmetic.jpg",
-    "imageAlt": ""
+    "h1": "Cosmetic Dentistry Santa Clarita: Trusted Smile Transformations",
+    "subtitle": "The Best Cosmetic Dentistry Experts of Santa Clarita",
+    "text": "Let Dr. Lavi and his team help you achieve a confident, radiant smile with the top cosmetic dentistry in Santa Clarita.",
+    "image": {
+      "src": "/images/stock/cosmetic-checkup.jpg",
+      "alt": "Cosmetic Dentistry at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Cosmetic dentistry, done quietly well",
-    "paragraphs": [
-      "Cosmetic dentistry improves how your smile looks: stained or discolored teeth, gaps, chipped or cracked enamel, uneven gum lines, crooked or misaligned teeth. At Valencia Dentistry it also goes a step further. Dr. Lavi plans every treatment around your face, your bite and your goals, so the result reads as a healthy, natural smile rather than dental work. Comfortable, minimally invasive techniques are the default.",
-      "Whether you want a subtle refinement or a full smile makeover in Santa Clarita, you see the same dentist at every visit. Dr. Lavi listens first, explains your options in plain language and gives you clear pricing before anything begins. Patients come to us from Valencia, Stevenson Ranch, Newhall, Saugus and Canyon Country for the same reason: no handoffs, no rush."
-    ]
+    "heading": "The Best Cosmetic Dentistry Experts of Santa Clarita",
+    "paragraphs": []
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Cosmetic dentistry can help if you are living with any of these concerns.",
-    "items": [
-      "Stained or discolored teeth",
-      "Gaps between teeth",
-      "Chipped or cracked enamel",
-      "Uneven gum lines or a gummy smile",
-      "Crooked or misaligned teeth"
-    ]
-  },
-  "benefits": {
-    "heading": "What cosmetic dentistry can do for you",
-    "intro": "Beyond appearance, well-planned cosmetic work can support confidence, comfort and oral health.",
+  "understanding": {
+    "heading": "What Is Cosmetic Dentistry and Why It Matters",
+    "intro": "Cosmetic dentistry enhances the look of your smile by addressing issues like discoloration, uneven teeth, and gaps—but at Valencia Dentistry, it goes deeper. Under the care of Dr. Lavi, every treatment is personalized to boost your confidence and deliver beautiful, natural-looking results with advanced, comfortable techniques. Common concerns cosmetic dentistry can address: At Valencia Dentistry, we offer a full range of cosmetic dental treatments designed to help you achieve a natural-looking smile you’ll love. Whether you’re looking for subtle improvements or a full smile makeover in Santa Clarita, Dr. Lavi and his experienced team provide modern, minimally invasive solutions tailored to your goals.",
+    "image": {
+      "src": "/images/blog/1776893633346.jpg",
+      "alt": "Cosmetic Dentistry: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Confidence",
-        "text": "A bright, even smile can help you feel more at ease in social and professional settings."
+        "title": "Professional Teeth Whitening",
+        "text": "Brighten your smile quickly and safely with clinical-strength whitening treatments—far more effective than store-bought kits. Ideal for patients looking to reverse years of tooth discoloration."
       },
       {
-        "title": "Natural-looking results",
-        "text": "Dr. Lavi designs for a smile that looks real and in proportion, never overdone."
+        "title": "Invisalign® Clear Aligners",
+        "text": "Straighten your teeth discreetly with removable aligners that fit your lifestyle. Invisalign is a popular choice for adults in Valencia CA who want a straighter smile without braces."
       },
       {
-        "title": "Better function",
-        "text": "Treatments like Invisalign straighten teeth and can also improve your bite and overall dental health."
-      },
-      {
-        "title": "Results that last",
-        "text": "With proper care, veneers, whitening and bonding can hold their results for years."
-      },
-      {
-        "title": "Fewer visits, little downtime",
-        "text": "Many cosmetic treatments are completed in one or two visits, often with little to no downtime."
-      }
-    ]
-  },
-  "options": {
-    "heading": "Cosmetic treatments we offer",
-    "intro": "Each treatment is available on its own or combined into a single plan.",
-    "items": [
-      {
-        "title": "Teeth Whitening",
-        "text": "Dentist-supervised, enamel-safe whitening in the office or at home. Stronger and more predictable than store-bought kits."
-      },
-      {
-        "title": "Invisalign",
-        "text": "Removable clear aligners that straighten teeth discreetly, planned with the iTero digital scanner."
-      },
-      {
-        "title": "Veneers",
-        "text": "Thin porcelain or composite shells, custom-shaped to cover chips, gaps and deep stains."
-      },
-      {
-        "title": "Composite Filling",
-        "text": "Tooth-colored, metal-free fillings that repair decay and small chips while blending into the tooth."
+        "title": "Porcelain Veneers",
+        "text": "Custom-crafted to fit your facial features, veneers cover chips, gaps, and stains for a flawless finish. Patients seeking cosmetic veneers in Santa Clarita love the immediate, dramatic results."
       },
       {
         "title": "Cosmetic Dental Bonding",
-        "text": "A quick, economical way to repair chips, close small gaps or reshape a tooth with tooth-colored resin."
+        "text": "A quick, affordable option to repair chips, close small gaps, or reshape teeth using a tooth-colored resin that blends seamlessly with your smile."
       },
       {
-        "title": "Gum Contouring and Smile Design",
-        "text": "Soft-tissue reshaping that balances teeth and gums, helpful for uneven gum lines or a gummy smile."
+        "title": "Gum Contouring & Smile Design",
+        "text": "Refine your dental aesthetics with soft-tissue sculpting that creates balance between teeth and gums—ideal for patients with uneven gum lines or a “gummy” smile."
       },
       {
         "title": "Full Smile Makeovers",
-        "text": "Two or more treatments, such as Invisalign, veneers and whitening, combined into one plan by Dr. Lavi."
+        "text": "Combine two or more treatments like Invisalign, veneers, and whitening into a comprehensive plan, personalized by Dr. Lavi for long-lasting, confidence-boosting results."
+      },
+      {
+        "title": "Boosted Confidence",
+        "text": "A bright, even smile can help you feel more self-assured in social and professional settings."
+      },
+      {
+        "title": "Natural-Looking Results",
+        "text": "With Dr. Lavi’s expert touch, you’ll achieve a smile that looks beautifully real—not overdone."
+      },
+      {
+        "title": "Improved Oral Function",
+        "text": "Treatments like Invisalign not only straighten teeth but also improve your bite and overall dental health."
+      },
+      {
+        "title": "Long-Lasting Transformations",
+        "text": "With proper care, veneers, whitening, and bonding can provide lasting results for years to come."
+      },
+      {
+        "title": "Fast, Minimally Invasive Procedures",
+        "text": "Many cosmetic treatments can be completed in just one or two visits, with little to no downtime."
+      }
+    ],
+    "bullets": [
+      "Stained or discolored teeth",
+      "Gaps between teeth",
+      "Chipped or cracked enamel",
+      "Uneven gum lines",
+      "Crooked or misaligned teeth"
+    ]
+  },
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for Cosmetic Dentistry?",
+    "intro": "",
+    "cards": [
+      {
+        "title": "Doctor-Led Expertise",
+        "text": "Dr. Lavi is hands-on with every patient, bringing artistic precision and years of experience in advanced cosmetic dentistry.",
+        "image": {
+          "src": "/images/blog/1776893633346.jpg",
+          "alt": "Doctor-Led Expertise"
+        }
+      },
+      {
+        "title": "Modern Technology",
+        "text": "From digital smile previews to guided Invisalign planning, we use today’s most effective tools to ensure natural, lasting results.",
+        "image": {
+          "src": "/images/blog/1776382495907.jpg",
+          "alt": "Modern Technology"
+        }
+      },
+      {
+        "title": "Same-Day Appointments",
+        "text": "We respect your time with flexible scheduling and convenient care, perfect for busy professionals and families alike.",
+        "image": {
+          "src": "/images/stock/cosmetic-checkup.jpg",
+          "alt": "Same-Day Appointments"
+        }
+      },
+      {
+        "title": "Stress-Free Experience",
+        "text": "With sedation options and a warm, upbeat atmosphere, even nervous patients feel at ease."
+      },
+      {
+        "title": "Affordable & Transparent",
+        "text": "Enjoy upfront pricing, flexible financing, and our $59 new patient special—because a confident smile should be within reach."
       }
     ]
   },
   "process": {
-    "heading": "How to get started",
-    "intro": "Three steps, with Dr. Lavi at each one.",
+    "heading": "How to Get Started with Your Smile Transformation",
+    "intro": "Getting the smile you’ve always wanted is simple with our caring, patient-focused team. Here’s how it works:",
     "steps": [
       {
-        "title": "Consultation",
-        "text": "Book a same-day or next-day appointment online or by phone. Dr. Lavi meets with you, listens to what you would like to change and recommends the treatments that fit."
+        "title": "Schedule Your Consultation",
+        "text": "Book a same-day or next-day appointment online or by phone. Dr. Lavi will meet with you to understand your goals and recommend the right cosmetic dental treatments for your smile."
       },
       {
-        "title": "Personalized plan",
-        "text": "We build a custom plan using digital diagnostics and digital smile design to map the result. You receive clear pricing and flexible payment options up front, with no surprises."
+        "title": "Get a Personalized Treatment Plan",
+        "text": "We’ll create a custom plan using advanced diagnostics and digital smile design tools to map out your ideal results. You’ll receive clear pricing and flexible payment options up front—no surprises."
       },
       {
-        "title": "Treatment",
-        "text": "Whether it is whitening, Invisalign, veneers or a full makeover, treatment proceeds at a comfortable pace, with sedation options when appropriate."
+        "title": "Begin Your Smile Makeover",
+        "text": "Whether it’s professional teeth whitening, Invisalign, veneers, or a full smile makeover, we’ll deliver beautiful, natural-looking results with comfort and care every step of the way."
       }
     ]
   },
-  "technology": {
-    "heading": "Technology that supports the plan",
-    "intro": "We use digital tools to plan carefully and show you the result before we start.",
-    "items": [
-      {
-        "title": "iTero digital scanner",
-        "text": "Mess-free digital impressions for Invisalign and veneer planning, with a preview of the result."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "Close-up images of your teeth so you can see what Dr. Lavi sees and follow the plan."
-      },
-      {
-        "title": "Digital X-rays",
-        "text": "Low-dose imaging that confirms your teeth and gums are healthy before cosmetic work begins."
-      },
-      {
-        "title": "Laser dentistry",
-        "text": "Available for soft-tissue procedures such as gum contouring, with precise control."
-      }
-    ]
+  "candidate": {
+    "heading": "Are you a good candidate for cosmetic dentistry?",
+    "text": "",
+    "bullets": [],
+    "image": {
+      "src": "/images/blog/1776382495907.jpg",
+      "alt": ""
+    }
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "Cosmetic treatment is rarely covered by dental insurance, so we keep pricing simple and transparent. After your consultation you receive a written estimate before any treatment begins, with each option and its cost spelled out. Flexible financing is available to spread the investment over time. If your plan includes restorative work, such as a crown or filling, we accept most major PPO plans and will check your benefits for you. New to the practice? The $59 new patient special covers your exam and X-rays, a sensible first step before planning cosmetic work."
-  },
+  "tables": [],
+  "extra": [],
   "faqs": [
     {
       "q": "How do I know which cosmetic treatment is right for me?",
-      "a": "At your consultation Dr. Lavi examines your teeth and gums, listens to what you would like to change and walks you through the options that fit, whether that is whitening, Invisalign, veneers or a combination. You leave with a clear recommendation and pricing, and time to decide."
+      "a": "During your consultation, Dr. Lavi will evaluate your smile, listen to your goals, and recommend the best cosmetic dental treatments—whether that’s whitening, Invisalign, veneers, or a full smile makeover. You can also learn more about the different types of cosmetic procedures and their benefits from this helpful Cleveland Clinic guide on cosmetic dentistry."
     },
     {
       "q": "Is cosmetic dentistry painful?",
-      "a": "Most cosmetic procedures are minimally invasive and most patients find them comfortable. Local anesthetic is used where needed, and sedation options are available when appropriate for anxious patients. Our Santa Clarita office is designed to be calm, and Dr. Lavi works at a pace that suits you."
+      "a": "Most cosmetic procedures are minimally invasive and virtually painless. At our Santa Clarita office, we offer sedation options and gentle techniques to ensure a comfortable, stress-free experience."
     },
     {
       "q": "How long do veneers or whitening results last?",
-      "a": "Porcelain veneers often last 10 to 15 years or longer with proper care. Professional whitening results can last a year or more, depending on diet and habits, and are easy to maintain with periodic touch-ups. Good home care and regular checkups help both last longer."
+      "a": "Porcelain veneers can last 10–15 years or longer with proper care. Professional teeth whitening results can last up to a year or more and are easy to maintain with periodic touch-ups."
     },
     {
       "q": "Does insurance cover cosmetic dentistry?",
-      "a": "Cosmetic procedures are usually not covered by dental insurance. We offer transparent pricing and flexible financing so you can plan treatment with confidence. When a treatment also has a restorative purpose, such as a crown or a filling, your PPO plan may contribute and we will check for you."
+      "a": "Cosmetic procedures are typically not covered by insurance. However, we offer transparent pricing and flexible financing options to make treatment accessible and affordable."
     },
     {
       "q": "How soon can I schedule an appointment?",
-      "a": "We offer same-day and next-day appointments whenever possible. Call (661) 254-5200 or book online and we will find you the earliest opening. Office hours are Monday to Friday, 8am to 5pm, and we will confirm your visit the same day you reach out."
+      "a": "We offer same-day and next-day appointments whenever possible. If you’re ready to explore cosmetic dentistry in Santa Clarita, give us a call or book online—we’ll get you in quickly."
     }
   ],
   "related": [
+    "veneers",
     "teeth-whitening",
     "invisalign",
-    "veneers",
     "composite-filling"
   ],
   "cta": {
-    "heading": "Start with a conversation",
-    "text": "Book a cosmetic consultation with Dr. Lavi in Valencia. You will leave knowing your options and what they cost.",
+    "heading": "Schedule your cosmetic dentistry consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

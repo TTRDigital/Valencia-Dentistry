@@ -27,6 +27,12 @@ export type Step = { title: string; text: string };
 
 export type ServiceCategory = "cosmetic" | "restorative" | "surgical" | "holistic" | "preventive";
 
+export type ServiceCard = { title: string; text: string; image?: SiteImage };
+
+/**
+ * Service page content in the Ideal Dental Solutions structure, filled from
+ * the original Valencia Smile Expert page text (scripts/build-services.ts).
+ */
 export type Service = {
   slug: string;
   path: string;
@@ -35,15 +41,24 @@ export type Service = {
   name: string;
   shortDescription: string;
   seo: { title: string; description: string; noindex?: boolean };
-  hero: { eyebrow: string; h1: string; lead: string; image: string; imageAlt: string };
+  /** Photo hero: title, subtitle, intro paragraph over a full-bleed image. */
+  hero: { h1: string; subtitle: string; text: string; image: SiteImage };
+  /** Light intro: heading + paragraphs (the page's opening section). */
   intro: { heading: string; paragraphs: string[] };
-  whoItsFor: { heading: string; intro: string; items: string[] };
-  benefits: { heading: string; intro: string; items: Feature[] };
-  options?: { heading: string; intro: string; items: Feature[] };
-  process: { heading: string; intro: string; steps: Step[] };
-  technology: { heading: string; intro: string; items: Feature[] };
-  aftercare?: { heading: string; before: string[]; after: string[] };
-  cost: { heading: string; text: string };
+  /** Dark section: heading, intro, photo and an accordion of items (treatment types, benefits). */
+  understanding: { heading: string; intro: string; image: SiteImage; items: ServiceCard[]; bullets?: string[] };
+  /** Why choose us: heading, intro and photo cards. */
+  why: { heading: string; intro: string; cards: ServiceCard[] };
+  /** Dark process section: numbered steps. */
+  process: { heading: string; intro: string; steps: ServiceCard[] };
+  /** Full-bleed banner: who is a good candidate. */
+  candidate: { heading: string; text: string; bullets: string[]; image: SiteImage };
+  /** Optional pre/post care columns. */
+  care?: { heading: string; intro?: string; before: string[]; after: string[]; cards?: ServiceCard[] };
+  /** Comparison tables flattened on the live site (first row = header). */
+  tables?: { heading: string; rows: string[][]; text?: string }[];
+  /** Any remaining sections from the page, printed as text blocks. */
+  extra: { heading: string; paragraphs: string[]; bullets: string[]; cards: ServiceCard[] }[];
   faqs: Faq[];
   related: string[];
   cta: { heading: string; text: string; buttonLabel: string };

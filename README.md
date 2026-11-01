@@ -49,6 +49,7 @@ npm run lint         # ESLint
 npm run typecheck    # TypeScript
 npm run images       # image manifest (sizes + blur placeholders) and static hero variants (public/images/_opt)
 npm run favicons     # favicon set from public/logo.svg (the brand mark) on an ivory tile
+node --experimental-strip-types scripts/build-services.ts <crawl-dir>   # rebuild content/services from the crawled live pages (original wording)
 npm run seed         # publish content/ to Sanity (needs SANITY_WRITE_TOKEN; --force, --dry-run)
 npm run audit -- https://<site>   # launch checks: lang/charset, one H1, titles, descriptions, canonical, OG image, JSON-LD, alt text, links, old URLs
 npm run screenshots -- http://localhost:3000   # full-page screenshots at 390/768/1024/1440/1920 + overflow check (needs Playwright)

@@ -4,166 +4,246 @@
   "parentPath": "/services/cosmetic-dentistry/",
   "category": "cosmetic",
   "name": "Veneers",
-  "shortDescription": "Thin porcelain or composite shells that cover chips, gaps and deep stains.",
+  "shortDescription": "Thin porcelain shells that correct shape, color and gaps.",
   "seo": {
     "title": "Porcelain Veneers in Santa Clarita | Dr. Nuriel Lavi",
     "description": "Custom porcelain and composite veneers in Santa Clarita, designed by Dr. Nuriel Lavi with digital smile design. Cover chips, gaps and deep stains."
   },
   "hero": {
-    "eyebrow": "Cosmetic dentistry",
-    "h1": "Veneers in Santa Clarita",
-    "lead": "Thin, custom-made shells that reshape chipped, worn, gapped or stained front teeth. Designed by Dr. Nuriel Lavi to suit your face, not a template.",
-    "image": "/images/brand/panel-cosmetic.jpg",
-    "imageAlt": ""
+    "h1": "Stunning Custom Veneers in Santa Clarita",
+    "subtitle": "Smile Brighter with Personalized Veneers in Santa Clarita",
+    "text": "Advanced cosmetic dentistry that makes your dream smile a reality—right here in Valencia, CA.",
+    "image": {
+      "src": "/images/blog/1776893633346.jpg",
+      "alt": "Veneers at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "What veneers are and what they fix",
+    "heading": "Smile Brighter with Personalized Veneers in Santa Clarita",
     "paragraphs": [
-      "A veneer is an ultra-thin shell of porcelain or composite resin bonded to the front of a tooth. It changes the shape, length, color and surface of that tooth without major dental work. Veneers address chipped or cracked teeth, uneven or worn edges, small gaps, minor misalignment and deep discoloration that whitening cannot reach. One veneer can correct a single tooth; a set can reshape a whole smile.",
-      "At Valencia Dentistry, veneers begin with design. Dr. Lavi studies your facial features, tooth shape and ideal shade, then previews the result digitally before any enamel is touched. Porcelain veneers take two to three visits; composite veneers are often finished in one. Patients across Santa Clarita and Valencia choose us because the same dentist designs, prepares and places every veneer."
+      "Looking to transform your smile with precision-crafted veneers in Santa Clarita? At Valencia Dentistry, we specialize in creating confident, natural-looking smiles using advanced cosmetic dentistry. Whether you’re dealing with chipped teeth, small gaps, or uneven edges, our personalized veneer treatments can help you achieve a brighter, more symmetrical smile. Led by Dr. Lavi, our team combines expert care with modern technology to ensure results that not only look beautiful—but feel completely you.",
+      "Discover what’s possible with veneers tailored to your smile—book your consultation today."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Veneers suit adults who want to improve their smile without extensive dental work. You may be a good candidate if you:",
-    "items": [
-      "Have healthy teeth and gums",
-      "Have cosmetic concerns such as chips, gaps or stains",
-      "Want better symmetry or a more uniform smile",
-      "Have minor alignment issues you would rather not treat with braces",
-      "Want a long-lasting result that looks and feels natural"
-    ]
-  },
-  "benefits": {
-    "heading": "The benefits of veneers",
-    "intro": "Veneers can change how a smile looks and how you feel about using it.",
+  "understanding": {
+    "heading": "What Exactly Are Veneers—and What Can They Fix?",
+    "intro": "Veneers are ultra-thin, custom-crafted shells—typically made of durable porcelain or composite resin—that are bonded to the front surface of your teeth. Designed to enhance both function and appearance, veneers are a trusted solution for refining your smile without major dental work. Veneers address a range of common concerns, including:",
+    "image": {
+      "src": "/images/blog/1781298845777.jpg",
+      "alt": "Veneers: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Natural-looking results",
-        "text": "Porcelain mimics the translucency and texture of real enamel for a lifelike finish."
+        "title": "Natural-Looking Results",
+        "text": "Veneers mimic the translucency and texture of real enamel for a lifelike smile."
       },
       {
-        "title": "Whiter, brighter teeth",
-        "text": "Veneers conceal deep stains that whitening cannot lift."
+        "title": "Whiter, Brighter Teeth",
+        "text": "Permanently conceal deep stains that whitening can’t fix."
       },
       {
-        "title": "Improved symmetry",
-        "text": "Uneven edges and mismatched tooth sizes are balanced for a more harmonious smile."
+        "title": "Improved Symmetry",
+        "text": "Balance uneven edges and tooth sizes for a more harmonious smile."
       },
       {
-        "title": "Lasting confidence",
-        "text": "Smile, speak and laugh without thinking about your teeth."
+        "title": "Lasting Confidence",
+        "text": "Enjoy the freedom to smile, speak, and laugh without hesitation."
       },
       {
-        "title": "Stain-resistant and strong",
-        "text": "Porcelain veneers resist staining and are built to withstand daily function."
+        "title": "Fast, Minimally Invasive Procedures",
+        "text": "Porcelain veneers are stain-resistant and built to withstand daily function."
       },
       {
-        "title": "Low maintenance",
-        "text": "Care for veneers like natural teeth: brush, floss and keep routine checkups."
+        "title": "Low Maintenance",
+        "text": "Care for your veneers just like natural teeth—daily brushing, flossing, and routine checkups."
       }
+    ],
+    "bullets": [
+      "Chipped or cracked teeth",
+      "Uneven or worn edges",
+      "Small gaps between teeth",
+      "Minor misalignment",
+      "Deep discoloration that whitening can’t fix"
     ]
   },
-  "options": {
-    "heading": "Porcelain vs. composite resin veneers",
-    "intro": "Both are custom-made; they differ in material, lifespan, finish and cost.",
-    "items": [
+  "why": {
+    "heading": "Why Santa Clarita Locals Trust Valencia Dentistry for Veneers",
+    "intro": "When it comes to enhancing your smile, precision and personalization make all the difference. At Valencia Dentistry, we combine advanced cosmetic dentistry with a warm, patient-focused approach to deliver exceptional results—every time.",
+    "cards": [
       {
-        "title": "Porcelain veneers",
-        "text": "High-quality ceramic. Often last 10 to 15 years or more. More natural and stain-resistant. Two to three visits. Higher cost. Not reversible."
+        "title": "Doctor-Led Expertise",
+        "text": "Dr. Lavi is known for his attention to detail, artistic eye, and genuine commitment to each patient’s goals.",
+        "image": {
+          "src": "/images/blog/1781298845777.jpg",
+          "alt": "Doctor-Led Expertise"
+        }
       },
       {
-        "title": "Composite resin veneers",
-        "text": "Tooth-colored resin. Often last 5 to 7 years. Good appearance but more prone to staining. Often done in one visit. More budget-friendly. Sometimes reversible."
+        "title": "Custom Smile Design",
+        "text": "Every veneer is crafted with your facial features, tooth shape, and ideal shade in mind.",
+        "image": {
+          "src": "/images/stock/cosmetic-checkup.jpg",
+          "alt": "Custom Smile Design"
+        }
+      },
+      {
+        "title": "Advanced Technolog",
+        "text": "We use modern digital imaging and shade matching for precise, predictable results.",
+        "image": {
+          "src": "/images/blog/1776893633346.jpg",
+          "alt": "Advanced Technolog"
+        }
+      },
+      {
+        "title": "Comfortable Experience",
+        "text": "Our caring team offers a stress-free atmosphere with clear communication and gentle techniques."
+      },
+      {
+        "title": "Affordable, Transparent Pricing",
+        "text": "No hidden fees, flexible financing options, and a focus on value at every step."
       }
     ]
   },
   "process": {
-    "heading": "Your veneers, step by step",
-    "intro": "Three visits for porcelain, with Dr. Lavi at each one.",
+    "heading": "Your Veneers Journey: What to Expect",
+    "intro": "At Valencia Dentistry, getting veneers is a smooth, personalized experience. Here’s how we make your smile transformation simple and stress-free:",
     "steps": [
       {
-        "title": "Consultation and smile design",
-        "text": "Dr. Lavi assesses your oral health, discusses your goals and designs a custom plan. Digital tools preview your new smile and help select the veneer type and shade."
+        "title": "Personalized Consultation & Smile Design",
+        "text": "Dr. Lavi will assess your oral health, discuss your goals, and design a custom treatment plan. Using digital tools, we’ll preview your new smile and select the ideal veneer type and shade."
       },
       {
-        "title": "Preparation and impressions",
-        "text": "A minimal amount of enamel is removed where needed, and precise impressions are taken so the lab can craft your veneers. You leave with temporary veneers protecting your teeth."
+        "title": "Tooth Preparation & Impressions",
+        "text": "A minimal amount of enamel is gently removed (if needed), and we take precise impressions to craft your custom veneers. You’ll leave this visit with temporary veneers to protect your teeth."
       },
       {
-        "title": "Final placement",
-        "text": "Your finished veneers are bonded in place, checked for fit and bite, and polished. You see the result the same day."
+        "title": "Final Placement & Smile Reveal",
+        "text": "Once your veneers are ready, we bond them securely in place, make any final adjustments, and polish your smile to perfection. The result? A natural, confident look you’ll love from day one."
       }
     ]
   },
-  "technology": {
-    "heading": "Designing before we touch a tooth",
-    "intro": "Digital imaging and shade matching make the result predictable.",
-    "items": [
-      {
-        "title": "iTero digital scanner",
-        "text": "A digital impression of your teeth for smile design and lab-crafted veneers, without impression trays."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "Close-up images that guide shade matching and let you see each stage."
-      },
-      {
-        "title": "Digital X-rays",
-        "text": "Confirm your teeth and roots are healthy before cosmetic work begins."
-      }
-    ]
+  "candidate": {
+    "heading": "Is Veneer Treatment Right for You?",
+    "text": "Veneers are ideal for adults looking to improve the appearance of their smile without undergoing extensive dental work. You may be a great candidate if you: Have healthy teeth and gums Are dealing with cosmetic concerns like chips, gaps, or stains Want to improve symmetry or create a more uniform smile Have minor alignment issues you’d rather not treat with braces Are looking for a long-lasting solution that looks and feels natural",
+    "bullets": [],
+    "image": {
+      "src": "/images/stock/cosmetic-checkup.jpg",
+      "alt": ""
+    }
   },
-  "aftercare": {
-    "heading": "Caring for your veneers",
-    "before": [
-      "Treat any decay or gum disease first; veneers need healthy teeth and gums underneath",
-      "Tell Dr. Lavi if you grind or clench; a night guard may be part of the plan"
-    ],
-    "after": [
-      "Brush twice daily with a soft-bristled toothbrush and a non-abrasive toothpaste",
-      "Floss gently once a day; skipping it can lead to gum problems around the veneer",
-      "Keep cleanings and exams every 6 months, and do not skip follow-ups",
-      "Wear a night guard if you grind or clench; never grind without protection",
-      "Limit coffee, red wine and other staining drinks, and avoid smoking",
-      "Avoid hard-bristled brushes and abrasive toothpaste"
-    ]
-  },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "Veneer cost depends on the material you choose and the number of teeth being treated. Composite veneers are the more budget-friendly option; porcelain costs more and usually lasts longer. Because veneers are cosmetic, dental insurance rarely contributes. After your consultation and smile design, you receive a written quote with every tooth and option itemized before any preparation begins, and flexible financing lets you spread the cost over time. New patients can start with the $59 exam and X-ray special, which is the first step in any veneer plan."
-  },
+  "tables": [
+    {
+      "heading": "How to Care for Your Veneers",
+      "rows": [
+        [
+          "Veneer Care: Do's and Don'ts",
+          "Do"
+        ],
+        [
+          "Brush twice daily with a soft-bristled toothbrush",
+          "Floss gently once a day"
+        ],
+        [
+          "Visit your dentist every 6 months for cleanings and exams",
+          "Wear a night guard if you grind your teeth"
+        ],
+        [
+          "Limit stain-causing foods and drinks (coffee, red wine)",
+          "Don't"
+        ],
+        [
+          "Use abrasive toothpaste or hard-bristled brushes",
+          "Skip flossing (this can lead to gum issues)"
+        ],
+        [
+          "Delay checkups or ignore follow-ups",
+          "Clench or grind without protection"
+        ]
+      ],
+      "text": "Veneers are designed to be durable and low-maintenance—but keeping them beautiful for years comes down to a few simple habits. Whether you choose porcelain veneers or composite veneers, following these care tips will help protect your investment and preserve your results."
+    },
+    {
+      "heading": "Types of Veneers: Porcelain vs. Composite Resin",
+      "rows": [
+        [
+          "Feature",
+          "Porcelain Veneers",
+          "Composite Resin Veneers"
+        ],
+        [
+          "Material",
+          "High-quality ceramic",
+          "Tooth-colored resin"
+        ],
+        [
+          "Aesthetics",
+          "More natural, stain-resistant",
+          "Good, but more prone to staining"
+        ],
+        [
+          "Procedure Time",
+          "Requires 2–3 visits",
+          "Often completed in a single visit"
+        ],
+        [
+          "Cost",
+          "Higher",
+          "More budget-friendly"
+        ],
+        [
+          "Reversibility",
+          "Not reversible",
+          "Sometimes reversible"
+        ],
+        [
+          "Durability",
+          "10–15 years or more",
+          "5–7 years"
+        ]
+      ],
+      "text": ""
+    }
+  ],
+  "extra": [
+    {
+      "heading": "How to Care for Your Veneers",
+      "paragraphs": [
+        "Veneers are designed to be durable and low-maintenance—but keeping them beautiful for years comes down to a few simple habits. Whether you choose porcelain veneers or composite veneers, following these care tips will help protect your investment and preserve your results."
+      ],
+      "bullets": [],
+      "cards": []
+    }
+  ],
   "faqs": [
     {
       "q": "How long do veneers last?",
-      "a": "Porcelain veneers typically last 10 to 15 years or more with proper care. Composite veneers tend to have a shorter lifespan, around 5 to 7 years. Both can last longer with good home care, a night guard if you grind and regular dental visits."
+      "a": "Porcelain veneers typically last 10 to 15 years or more with proper care. Composite veneers may have a shorter lifespan, around 5 to 7 years, but both can last longer with good oral hygiene and regular dental visits."
     },
     {
       "q": "Do veneers look like natural teeth?",
-      "a": "Yes. Each veneer is designed to match the color, shape and surface texture of your natural teeth and proportioned to your face. Porcelain in particular has a translucency close to enamel. Most people will see a good smile, not dental work."
+      "a": "Yes! Our veneers are custom-designed to match the color, shape, and texture of your natural teeth. Most people won’t be able to tell you’ve had dental work done—they’ll just see a beautiful smile."
     },
     {
       "q": "Is getting veneers painful?",
-      "a": "The procedure is minimally invasive and most patients find it comfortable. Local anesthetic is used during tooth preparation. Some people notice mild sensitivity for a short time afterward, which usually fades. Sedation options are available when appropriate if you are anxious."
+      "a": "The procedure is minimally invasive and usually very comfortable. Some patients experience mild sensitivity after tooth preparation, but this typically fades quickly. We always prioritize your comfort at every step."
     },
     {
       "q": "Are veneers permanent?",
-      "a": "Porcelain veneers are not reversible, because a small amount of enamel is usually removed to make room for them. They are designed as a long-term solution and can be replaced when they eventually wear. Composite veneers sometimes involve less preparation and can be reversible."
+      "a": "Porcelain veneers are not reversible, as a small amount of enamel is typically removed. That said, they’re a long-term solution that offers lasting beauty and strength."
     },
     {
       "q": "How much do veneers cost in Santa Clarita?",
-      "a": "Cost varies with the material, porcelain or composite, and the number of teeth treated. At your consultation we give you a transparent, itemized quote and go over financing options before you decide, so there are no surprises at any stage of treatment."
+      "a": "The cost of veneers can vary based on the material used and the number of teeth being treated. During your consultation, we’ll provide a transparent quote and discuss financing options if needed."
     }
   ],
   "related": [
-    "cosmetic-dentistry",
     "teeth-whitening",
-    "invisalign",
+    "cosmetic-dentistry",
     "dental-crowns"
   ],
   "cta": {
-    "heading": "Preview your new smile",
-    "text": "Book a veneers consultation in Valencia. Dr. Lavi will design the result digitally so you can see it before you commit.",
+    "heading": "Schedule your veneers consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

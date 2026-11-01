@@ -4,181 +4,183 @@
   "parentPath": "/services/",
   "category": "surgical",
   "name": "Oral Surgery",
-  "shortDescription": "Extractions, wisdom teeth, bone grafting and implant surgery, all in one office.",
+  "shortDescription": "Extractions, grafting and implant surgery with comfort options.",
   "seo": {
     "title": "Oral Surgery in Santa Clarita | Dr. Nuriel Lavi",
     "description": "Oral surgery in Santa Clarita with Dr. Nuriel Lavi: tooth extractions, wisdom teeth removal, bone grafting and implant placement, with sedation options."
   },
   "hero": {
-    "eyebrow": "Oral surgery",
-    "h1": "Oral Surgery in Santa Clarita",
-    "lead": "Wisdom teeth, extractions, bone grafting and implant surgery, performed in our Valencia office by Dr. Nuriel Lavi with 3D imaging, PRF therapy and sedation options when appropriate.",
-    "image": "/images/brand/panel-surgical.jpg",
-    "imageAlt": ""
+    "h1": "Advanced Oral Surgery in Santa Clarita for Lasting Relief",
+    "subtitle": "Restore Your Health with Oral Surgery in Santa Clarita",
+    "text": "",
+    "image": {
+      "src": "/images/stock/cbct-scan.jpg",
+      "alt": "Oral Surgery at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Surgical care with one dentist, start to finish",
+    "heading": "Restore Your Health with Oral Surgery in Santa Clarita",
     "paragraphs": [
-      "Oral surgery covers the procedures that go beyond a filling or a crown: removing a damaged or impacted tooth, rebuilding jawbone, clearing a stubborn infection or placing an implant. At Valencia Dentistry in Santa Clarita, these are done in the same office, by the same dentist you see for everything else. Dr. Lavi plans each case with 3D imaging and walks you through what will happen before anything begins.",
-      "Comfort is built into the plan. Local anesthesia is standard, sedation options are offered when appropriate, and the office is quiet and unhurried. Many patients are back to their normal routine within a few days, depending on the procedure. Whether you need a single extraction or you are preparing for full-arch implants, you get a clear timeline, honest pricing and a direct line to the person who treated you."
+      "Oral surgery doesn’t have to be overwhelming—at Valencia Dentistry, we make it a comfortable, empowering experience. Whether you need a wisdom tooth removed, bone grafting for dental implants, or treatment for chronic infection, our oral surgery in Santa Clarita is designed with your comfort and results in mind. Dr. Lavi and our experienced team combine advanced technology, gentle techniques, and personalized care to help you heal faster and feel better. From consultation to recovery, we’re here to guide you every step of the way."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Oral surgery may be the right step if any of the following sounds familiar.",
+  "understanding": {
+    "heading": "What Is Oral Surgery?",
+    "intro": "Dental Implants Permanent tooth replacements that look and function like natural teeth Tooth Extractions Safe, gentle removal of damaged, infected, or overcrowded teeth Wisdom Teeth Removal Surgical removal of third molars that are impacted or causing pain",
+    "image": {
+      "src": "/images/blog/1781282838501.jpg",
+      "alt": "Oral Surgery: treatment at Valencia Dentistry"
+    },
     "items": [
-      "A tooth is too damaged, decayed or infected to save",
-      "Wisdom teeth are impacted, crowding other teeth or causing pain",
-      "You have persistent tooth pain, swelling or jaw discomfort that has not resolved",
-      "You are planning dental implants and need bone rebuilt first",
-      "You have lost bone or facial support after missing teeth for some time"
-    ]
-  },
-  "benefits": {
-    "heading": "What oral surgery can do for you",
-    "intro": "Treating the problem at its source brings relief now and protects your options later.",
-    "items": [
-      {
-        "title": "Relief from pain and infection",
-        "text": "Removing the cause of chronic discomfort rather than managing it indefinitely."
-      },
-      {
-        "title": "Better everyday function",
-        "text": "Chew, speak and smile without working around a sore or missing tooth."
-      },
-      {
-        "title": "A foundation for implants",
-        "text": "Grafting and careful extraction create the stable bone an implant needs to last."
-      },
-      {
-        "title": "Bone and facial structure preserved",
-        "text": "Timely treatment limits bone loss and helps maintain the natural contours of your face."
-      },
-      {
-        "title": "Confidence in your smile",
-        "text": "A healthier, more complete smile that feels like your own."
-      }
-    ]
-  },
-  "options": {
-    "heading": "Our oral surgery services",
-    "intro": "Each of these is planned and performed by Dr. Lavi in our Santa Clarita office.",
-    "items": [
-      {
-        "title": "Dental Implants",
-        "text": "Permanent tooth replacements anchored in the jawbone that look and work like natural teeth."
-      },
       {
         "title": "All-on-4 Implants",
-        "text": "A full-arch restoration supported by four strategically placed implants per jaw."
-      },
-      {
-        "title": "Tooth Extractions",
-        "text": "Gentle removal of damaged, infected or crowded teeth, with socket preservation when implants are planned."
+        "text": "A full-arch solution using just four strategically placed implants for maximum support"
       },
       {
         "title": "Bone Grafting",
-        "text": "Rebuilds jawbone lost to extraction, infection or time, preparing the site for implants."
+        "text": "Strengthens and rebuilds jawbone structure to prepare for dental implants"
       },
       {
-        "title": "Wisdom Teeth Removal",
-        "text": "Surgical removal of third molars that are impacted, misaligned or causing pain."
+        "title": "Relief from Pain and Infections",
+        "text": "Eliminate the root cause of chronic discomfort"
+      },
+      {
+        "title": "Improved Oral Function",
+        "text": "Restore your ability to chew, speak, and smile confidently"
+      },
+      {
+        "title": "Support for Dental Implants",
+        "text": "Create a strong, stable foundation for long-lasting restorations"
+      },
+      {
+        "title": "Preservation of Bone and Facial Structure",
+        "text": "Prevent bone loss and maintain facial contours"
+      },
+      {
+        "title": "Boosted Self-Esteem",
+        "text": "Enjoy a healthier, more complete smile that feels like your own"
+      }
+    ],
+    "bullets": []
+  },
+  "why": {
+    "heading": "Why Choose Valencia Dentistry for Oral Surgery?",
+    "intro": "",
+    "cards": [
+      {
+        "title": "Doctor-Led Surgical Care",
+        "text": "Dr. Lavi performs all surgical treatments with a focus on safety, detail, and long-term success.",
+        "image": {
+          "src": "/images/blog/1781282838501.jpg",
+          "alt": "Doctor-Led Surgical Care"
+        }
+      },
+      {
+        "title": "Advanced Technology for Better Outcomes",
+        "text": "We use digital 3D imaging, guided surgery tools, and PRF (Platelet-Rich Fibrin) therapy to promote faster healing and greater precision.",
+        "image": {
+          "src": "/images/blog/1781281585705.jpg",
+          "alt": "Advanced Technology for Better Outcomes"
+        }
+      },
+      {
+        "title": "Compassionate, One-on-One Approach",
+        "text": "You’ll never feel rushed—Dr. Lavi takes the time to explain your options and answer all your questions.",
+        "image": {
+          "src": "/images/stock/cbct-scan.jpg",
+          "alt": "Compassionate, One-on-One Approach"
+        }
+      },
+      {
+        "title": "Sedation Options for Comfort",
+        "text": "From local anesthesia to sedation dentistry, we offer multiple ways to keep you relaxed throughout your visit."
+      },
+      {
+        "title": "Transparent Pricing and Flexible Scheduling",
+        "text": "No surprises—just honest pricing, insurance assistance, and convenient appointment times that work for your life."
       }
     ]
   },
   "process": {
-    "heading": "What to expect",
-    "intro": "A three-stage path, clearly explained, from first scan to final check.",
+    "heading": "Our Oral Surgery Process: What to Expect",
+    "intro": "At Valencia Dentistry, we take the stress out of oral surgery with a step-by-step approach that’s clear, comfortable, and fully personalized. From your initial consultation to post-op recovery, our team is here to guide you through every phase with compassion and transparency.",
     "steps": [
       {
-        "title": "Consultation and digital imaging",
-        "text": "A comprehensive exam, a 3D CBCT scan and a careful discussion of your symptoms and goals. Dr. Lavi reviews your options and designs a surgical plan around your anatomy and health history."
+        "title": "Consultation & Digital Imaging",
+        "text": "We begin with a comprehensive exam, 3D imaging, and a detailed discussion of your symptoms and goals. Dr. Lavi will walk you through your options and design a surgical plan that fits your unique needs."
       },
       {
-        "title": "Surgery day",
-        "text": "Your procedure takes place in our office under local anesthesia, with sedation if planned. Guided techniques and precise instruments keep the work efficient and the discomfort low."
+        "title": "Surgery Day",
+        "text": "Your procedure is performed in-office using local anesthesia and optional sedation. Whether you’re having a tooth removed or receiving implants, we use precise techniques and advanced tools to ensure optimal results with minimal discomfort."
       },
       {
-        "title": "Recovery and follow-up",
-        "text": "You leave with written instructions and a follow-up visit on the calendar. Most patients return to normal activity within a few days, depending on the procedure, and Dr. Lavi checks healing personally."
+        "title": "Recovery & Follow-Up",
+        "text": "After surgery, we provide detailed instructions and schedule follow-up visits to monitor healing. Most patients recover quickly and return to normal activities within a few days, depending on the procedure performed."
       }
     ]
   },
-  "technology": {
-    "heading": "Technology in our surgical care",
-    "intro": "The tools on site make surgery more precise and recovery smoother.",
-    "items": [
-      {
-        "title": "3D CBCT imaging",
-        "text": "A full three-dimensional view of bone, roots, nerves and sinuses before any incision is made."
-      },
-      {
-        "title": "Guided surgery",
-        "text": "Digital planning from your scan guides implant placement to the intended position and angle."
-      },
-      {
-        "title": "PRF therapy",
-        "text": "Platelet-rich fibrin from your own blood is placed at the surgical site to support healing."
-      },
-      {
-        "title": "Laser dentistry",
-        "text": "Used for soft-tissue work where it allows a gentler procedure with less bleeding."
-      }
-    ]
+  "candidate": {
+    "heading": "Are you a good candidate for oral surgery?",
+    "text": "",
+    "bullets": [],
+    "image": {
+      "src": "/images/blog/1781281585705.jpg",
+      "alt": ""
+    }
   },
-  "aftercare": {
-    "heading": "Before and after surgery",
+  "care": {
+    "heading": "Pre- and Post-Op Care for Oral Surgery",
+    "intro": "",
     "before": [
       "Follow fasting instructions if sedation is planned",
-      "Pause medications only if Dr. Lavi advises it",
-      "Arrange a ride home if you will be sedated",
-      "Avoid smoking and alcohol for at least 24 hours before your appointment",
-      "Keep up careful brushing and flossing to lower the risk of infection"
+      "Pause certain medications only if advised by Dr. Lavi",
+      "Arrange for someone to drive you home if sedation will be used",
+      "Avoid smoking and alcohol for at least 24 hours prior",
+      "Maintain good oral hygiene to reduce infection risk"
     ],
     "after": [
-      "Rest and limit physical activity for the first 24 to 48 hours",
-      "Eat soft, cool foods such as yogurt, smoothies and soup",
-      "Do not drink through a straw, smoke or spit forcefully",
-      "Use ice packs and any prescribed medication to manage swelling and discomfort",
-      "Keep the area clean with gentle brushing and saltwater rinses"
-    ]
+      "Rest and limit physical activity for the first 24–48 hours",
+      "Eat soft, cool foods like yogurt, smoothies, and soup",
+      "Avoid drinking through a straw, smoking, or spitting forcefully",
+      "Use ice packs and prescribed medications to manage swelling and discomfort",
+      "Keep the surgical area clean with gentle brushing and saltwater rinses"
+    ],
+    "cards": []
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "Oral surgery costs depend on the procedure, its complexity and how your insurance plan handles surgical codes. A simple extraction and a full-arch implant case sit at very different points on that range, so we do not post single prices. After your exam and imaging, you receive a written estimate that lists each step, what your plan is expected to cover and what you would pay. We accept most major PPO plans, including Delta Dental, MetLife, Cigna, Aetna and Blue Cross Blue Shield, and we help you make the most of your benefits. Flexible financing is available for larger treatment plans."
-  },
+  "tables": [],
+  "extra": [],
   "faqs": [
     {
       "q": "Is oral surgery painful?",
-      "a": "Most procedures are done under local anesthesia, so you should not feel pain while the work is being done, and sedation options are available for added comfort. Afterward, some soreness and swelling is normal for a few days. Most patients tell us it was less than they had braced for, and it is managed with ice and the medication Dr. Lavi recommends."
+      "a": "Most oral surgeries are performed under local anesthesia, and we offer sedation options for added comfort. You may experience mild soreness afterward, but most patients report less discomfort than expected."
     },
     {
       "q": "How long is recovery after oral surgery?",
-      "a": "Initial recovery usually takes two to five days, depending on the procedure. That is the period for rest, soft foods and keeping the site clean. Complete healing takes longer, especially for implants and bone grafts, where the bone itself needs several weeks to a few months to mature."
+      "a": "Initial recovery usually takes 2–5 days, depending on the procedure. Complete healing—especially for implants or bone grafts—can take several weeks to a few months."
     },
     {
       "q": "What can I eat after oral surgery?",
-      "a": "For the first few days, stay with soft foods: smoothies, yogurt, mashed potatoes, soup and scrambled eggs. Cool or lukewarm is better than hot. Avoid anything crunchy, spicy or very hot, and skip straws, until our team tells you it is fine to return to a normal diet."
+      "a": "Stick to soft foods like smoothies, mashed potatoes, yogurt, soup, and scrambled eggs for the first few days. Avoid crunchy, spicy, or hot foods until cleared by our team."
     },
     {
       "q": "How much does oral surgery cost?",
-      "a": "It depends on the procedure and your insurance coverage. We give you a written estimate before treatment, with each step itemized and your expected insurance contribution shown. Most major PPO plans are accepted, and flexible financing is available so cost does not have to delay care you need."
+      "a": "Costs vary by procedure and insurance coverage. We provide transparent pricing and offer financing options to make treatment accessible."
     },
     {
       "q": "Do you offer sedation for anxious patients?",
-      "a": "Yes. Beyond local anesthesia, we offer nitrous oxide and oral sedation to help you stay relaxed during your procedure. Dr. Lavi will discuss which option fits your health history and the length of the procedure, and explain what to arrange beforehand, such as a ride home."
+      "a": "Yes. We offer nitrous oxide and oral sedation to help you stay calm and comfortable throughout your procedure."
     },
     {
       "q": "When should wisdom teeth be removed?",
-      "a": "Wisdom teeth are commonly removed between the ages of 17 and 25, when the roots are still forming and recovery tends to be easier. Removal is recommended when they are impacted, coming in at an angle, crowding other teeth or causing pain or infection. Early evaluation with a 3D scan helps avoid problems later."
+      "a": "Wisdom teeth are often removed between ages 17–25, especially if they’re impacted, misaligned, or causing pain. Early removal can help prevent future complications."
     },
     {
       "q": "How do I know if I need oral surgery?",
-      "a": "Persistent tooth pain, swelling, jaw discomfort, a tooth that cannot be saved, or plans for dental implants are the usual reasons. The only way to know for sure is an exam and imaging. Dr. Lavi will explain what he sees and whether surgery, a less invasive option or simply monitoring is the right call."
+      "a": "If you’re dealing with persistent tooth pain, swelling, jaw discomfort, or preparing for implants, oral surgery might be necessary. Learn more about common surgical dental procedures and when they’re recommended from this Mayo Clinic overview on oral surgery."
     },
     {
       "q": "Can I get oral surgery if I have a medical condition?",
-      "a": "Many patients with medical conditions can have oral surgery safely. Dr. Lavi reviews your full health history and medication list first, and may coordinate with your physician when a condition such as diabetes or a blood thinner needs to be managed around the procedure. Precautions are built into your plan."
+      "a": "Many patients with medical conditions can safely undergo oral surgery. Dr. Lavi will review your full health history to ensure any necessary precautions are taken."
     }
   ],
   "related": [
@@ -188,8 +190,8 @@
     "all-on-4-implants"
   ],
   "cta": {
-    "heading": "Ready to talk about oral surgery?",
-    "text": "A consultation includes an exam, 3D imaging and a clear plan with a written estimate. Patients come to us from across Santa Clarita, including Valencia, Stevenson Ranch, Newhall, Saugus and Canyon Country.",
+    "heading": "Schedule your oral surgery consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

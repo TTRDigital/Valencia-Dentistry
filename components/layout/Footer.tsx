@@ -32,13 +32,13 @@ export function Footer({ nav }: { nav: Navigation }) {
           {nav.footer.map((col) => (
             <nav key={col.title} aria-label={col.title} className="lg:col-span-2">
               <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">{col.title}</p>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-3 space-y-1">
                 {col.items.map((it) => (
                   <li key={it.href}>
                     {/^https?:/.test(it.href) ? (
-                      <a href={it.href} target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white hover:underline">{it.label}</a>
+                      <a href={it.href} target="_blank" rel="noopener noreferrer" className="inline-block py-1 text-white/80 hover:text-white hover:underline">{it.label}</a>
                     ) : (
-                      <Link href={it.href} prefetch={false} className="text-white/80 hover:text-white hover:underline">{it.label}</Link>
+                      <Link href={it.href} prefetch={false} className="inline-block py-1 text-white/80 hover:text-white hover:underline">{it.label}</Link>
                     )}
                   </li>
                 ))}
@@ -61,9 +61,9 @@ export function Footer({ nav }: { nav: Navigation }) {
           <p>© {year} {site.name}. All rights reserved.</p>
           <ul className="flex flex-wrap gap-x-5 gap-y-2">
             {nav.legal.map((l) => (
-              <li key={l.href}><Link href={l.href} prefetch={false} className="hover:text-white hover:underline">{l.label}</Link></li>
+              <li key={l.href}><Link href={l.href} prefetch={false} className="inline-block py-1 hover:text-white hover:underline">{l.label}</Link></li>
             ))}
-            <li><a href="https://ttrdigitalmarketing.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline">Website by TTR Digital Marketing</a></li>
+            <li><a href="https://ttrdigitalmarketing.com/" target="_blank" rel="noopener noreferrer" className="inline-block py-1 hover:text-white hover:underline">Website by TTR Digital Marketing</a></li>
           </ul>
         </div>
       </div>

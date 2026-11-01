@@ -116,11 +116,11 @@ export function serviceNode(s: Service) {
     name: s.name,
     description: s.seo.description,
     url: absoluteUrl(s.path),
-    image: absoluteUrl(s.hero.image),
+    image: absoluteUrl(s.hero.image.src),
     procedureType: "https://schema.org/NoninvasiveProcedure",
     bodyLocation: "Mouth",
     provider: { "@id": IDS.dentist },
-    howPerformed: s.process.steps.map((st) => st.title).join("; "),
+    howPerformed: s.process.steps.map((st) => st.title).join("; ") || undefined,
     areaServed: site.areas.map((a) => ({ "@type": "City", name: a })),
   };
 }

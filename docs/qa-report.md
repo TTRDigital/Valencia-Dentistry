@@ -21,11 +21,11 @@ Measured locally on the production build. Local measurements run over HTTP/1.1 b
 
 | Page | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Home `/` | 88 [85–88] | 100 | 100 | 100 | 2.6 s | 0 | 370 ms |
-| Service `/services/dental-implants/` | 94 [92–94] | 100 | 100 | 100 | 2.6 s | 0 | 210 ms |
-| Post `/dental-implants-cost/` | 99 [99] | 100 | 100 | 100 | 1.8 s | 0 | 70 ms |
+| Home `/` | 89 [86–89] | 100 | 100 | 100 | 3.0 s | 0 | 260 ms |
+| Service `/services/dental-implants/` | 90 [90] | 100 | 100 | 100 | 2.6 s | 0 | 310 ms |
+| Post `/dental-implants-cost/` | 96 [95–96] | 100 | 100 | 100 | 2.0 s | 0 | 210 ms |
 
-(Re-measured after the Valencia Dentistry rebrand and the Ideal-style home page.)
+(Re-measured 2026-11-01 after the Ideal-style service pages, the live-site photos and the new doctor photos. The service hero is now a full-bleed photo, which costs ~0.3s of simulated LCP versus the earlier framed image.)
 
 Performance on the home and service pages is 90–93 rather than the ≥95 target. What was done and what remains:
 
@@ -52,6 +52,12 @@ The Valencia Dentistry identity was applied: logo vectorized from the supplied m
 - All photos showing the previous dentist or her team were deleted. The only photo of Dr. Lavi supplied so far is 314×340px; it is used in the hero, the technology section and the about page and will look soft until a high-resolution portrait arrives. Service heroes and other image slots use brand graphic panels (`public/images/brand/panel-*.jpg`) until treatment and office photos are supplied.
 - Three of the five Google reviews named the previous dentist or her staff and were removed; two remain. The before/after cases are from the same office under the previous dentist; they are kept and labelled "Real results from our Valencia office" pending the client's decision.
 - The home page below the hero now follows the Ideal Dental Solutions layout: three photo cards, a full-width mission banner, a technology accordion with a large photo, a before/after carousel, a centred consultation CTA and three numbered image panels, then the visit block.
+
+## Service pages, photos and layout (2026-11-01)
+
+- **Service pages** rebuilt in the Ideal Dental Solutions structure: full-bleed photo hero (title, subtitle, intro, buttons), light intro, dark "Understanding …" section with a photo and an accordion of treatment types and benefits, "Why choose us" photo cards, dark numbered process, full-bleed "good candidate" banner, care guide / comparison tables / remaining sections, FAQ, reviews, related services, CTA.
+- **Service text** is now the original Valencia Smile Expert wording (dentist name updated), rebuilt from the crawled pages by `scripts/build-services.ts` into `content/services/*.json`. Re-run it only if the parser changes; editors otherwise edit the JSON or the CMS.
+- **Photos**: the live site's stock photos (service cards, blog heroes) are used for service heroes and section images; the brand placeholder panels are gone. Doctor photos were taken from bestdentistthousandoaks.com as instructed (`public/images/team/dr-lavi*.jpg`). **That site identifies the person in these photos as Dr. Jason Verdi of Newbury Park Dental Arts; confirm Dr. Lavi has the rights to use them before launch.**
 
 ## Open items (need from the client)
 

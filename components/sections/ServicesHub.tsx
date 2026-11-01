@@ -18,13 +18,13 @@ export function ServiceCard({ s, index = 0 }: { s: Service; index?: number }) {
   return (
     <Reveal as="li" delay={(index % 3) * 70} className="card card-hover group overflow-hidden">
       <Link href={s.path} className="flex h-full flex-col no-underline">
-        <div className="relative aspect-[16/10] overflow-hidden">
-          <Picture image={{ src: s.hero.image, alt: s.hero.imageAlt }} fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+        <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[16/10]">
+          <Picture image={s.hero.image} fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
-        <div className="flex flex-1 flex-col p-6">
-          <h3 className="text-xl group-hover:text-olive-600">{s.name}</h3>
-          <p className="mt-2 flex-1 text-[0.95rem] text-grey-600">{s.shortDescription}</p>
-          <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-olive-600">Learn more <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
+        <div className="flex flex-1 flex-col p-4 sm:p-6">
+          <h3 className="text-lg group-hover:text-olive-600 sm:text-xl">{s.name}</h3>
+          <p className="mt-1.5 hidden flex-1 text-[0.95rem] text-grey-600 sm:block">{s.shortDescription}</p>
+          <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-olive-600 sm:mt-4">Learn more <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
         </div>
       </Link>
     </Reveal>
@@ -48,7 +48,7 @@ export async function ServicesHub() {
                   <h2 className="text-3xl">{g.title}</h2>
                   <p className="lead mt-4 text-base">{g.text}</p>
                 </div>
-                <ul className="grid gap-5 sm:grid-cols-2 lg:col-span-8 lg:grid-cols-2 xl:grid-cols-3">
+                <ul className="grid grid-cols-2 gap-3 sm:gap-5 lg:col-span-8 xl:grid-cols-3">
                   {items.map((s, i) => <ServiceCard key={s.slug} s={s} index={i} />)}
                 </ul>
               </div>

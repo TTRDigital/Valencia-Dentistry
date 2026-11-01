@@ -4,157 +4,209 @@
   "parentPath": "/services/cosmetic-dentistry/",
   "category": "cosmetic",
   "name": "Invisalign",
-  "shortDescription": "Clear, removable aligners that straighten teeth discreetly, planned on the iTero scanner.",
+  "shortDescription": "Clear aligners planned with digital scans, no brackets or wires.",
   "seo": {
     "title": "Invisalign in Santa Clarita | Dr. Nuriel Lavi, DDS",
     "description": "Invisalign clear aligners in Santa Clarita with Dr. Nuriel Lavi. iTero digital scans, no messy impressions, most cases done in 6 to 18 months."
   },
   "hero": {
-    "eyebrow": "Cosmetic dentistry",
-    "h1": "Invisalign in Santa Clarita",
-    "lead": "Straighten your teeth with clear, removable aligners instead of metal braces. Planned by Dr. Nuriel Lavi from a digital scan, with a preview of the result before you start.",
-    "image": "/images/brand/panel-cosmetic.jpg",
-    "imageAlt": ""
+    "h1": "Invisalign Santa Clarita – The Clear Way to a Straighter Smile",
+    "subtitle": "Straighten Your Teeth with Invisalign in Santa Clarita",
+    "text": "Discover the modern alternative to braces with custom Invisalign treatment at Valencia Dentistry.",
+    "image": {
+      "src": "/images/blog/1776893633346.jpg",
+      "alt": "Invisalign at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "How Invisalign works",
-    "paragraphs": [
-      "Invisalign straightens teeth with a series of clear, BPA-free plastic aligners made for your mouth. Each set moves your teeth a small step, and you switch to a new set every one to two weeks. You wear them 20 to 22 hours a day and remove them to eat, brush and floss, so there are no food restrictions and no change to your hygiene routine.",
-      "At Valencia Dentistry, planning starts with the iTero digital scanner rather than impression trays. The scan builds an interactive map of your smile and lets you preview where your teeth are headed. Dr. Lavi, an Invisalign-certified provider, designs the plan and sees you at every check-in. Most patients in Santa Clarita finish within 6 to 18 months."
-    ]
+    "heading": "Straighten Your Teeth with Invisalign in Santa Clarita",
+    "paragraphs": []
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Invisalign suits many teens and adults who want straighter teeth without braces, including those with:",
-    "items": [
-      "Mild to moderate crowding",
-      "Gaps or spacing between teeth",
-      "An overbite, underbite or crossbite",
-      "Teeth that have shifted after past orthodontic work",
-      "A preference for a discreet, low-maintenance option"
-    ]
+  "understanding": {
+    "heading": "Understanding invisalign",
+    "intro": "",
+    "image": {
+      "src": "/images/stock/cosmetic-checkup.jpg",
+      "alt": "Invisalign: treatment at Valencia Dentistry"
+    },
+    "items": [],
+    "bullets": []
   },
-  "benefits": {
-    "heading": "Invisalign compared with metal braces",
-    "intro": "The comparison below reflects typical differences; your case may vary.",
-    "items": [
+  "why": {
+    "heading": "Why Choose Us for Invisalign in Valencia, CA?",
+    "intro": "",
+    "cards": [
       {
-        "title": "Nearly invisible",
-        "text": "Clear aligners are hard to notice. Metal brackets and wires are not."
+        "title": "Invisalign-Certified Provider",
+        "text": "Dr. Lavi has advanced training in clear aligner therapy and has helped countless patients achieve confident, lasting results.",
+        "image": {
+          "src": "/images/stock/cosmetic-checkup.jpg",
+          "alt": "Invisalign-Certified Provider"
+        }
       },
       {
-        "title": "More comfortable",
-        "text": "Smooth plastic sits gently against lips and cheeks, with no brackets to rub."
+        "title": "Advanced 3D Imaging",
+        "text": "Our iTero scanner creates precise digital impressions—no messy molds—and allows you to preview your future smile before starting treatment.",
+        "image": {
+          "src": "/images/blog/1776812130201.jpg",
+          "alt": "Advanced 3D Imaging"
+        }
       },
       {
-        "title": "Removable",
-        "text": "Take them out to eat, brush and floss. Braces are fixed and need special cleaning tools."
+        "title": "Personalized Orthodontic Plans",
+        "text": "We don’t believe in one-size-fits-all. Every Invisalign plan is tailored to your unique dental needs and lifestyle goals.",
+        "image": {
+          "src": "/images/blog/1776893633346.jpg",
+          "alt": "Personalized Orthodontic Plans"
+        }
       },
       {
-        "title": "No diet restrictions",
-        "text": "Eat what you normally eat. Braces rule out sticky, chewy and hard foods."
+        "title": "Comfort-Focused Office Experience",
+        "text": "From your first consultation to your last aligner, our team is here to make your journey smooth, supportive, and stress-free."
       },
       {
-        "title": "Fewer office visits",
-        "text": "Quick check-ins every 6 to 8 weeks instead of frequent adjustment appointments."
-      },
-      {
-        "title": "Shorter average treatment",
-        "text": "Typically 6 to 18 months, compared with 18 to 24 months for braces."
+        "title": "Local Expertise, Trusted Results",
+        "text": "As one of the top Invisalign providers in Santa Clarita, we’re proud to serve our community with modern, patient-centered care."
       }
     ]
   },
   "process": {
-    "heading": "Your Invisalign plan, step by step",
-    "intro": "Five steps from scan to finished smile.",
+    "heading": "How Invisalign Works",
+    "intro": "",
     "steps": [
       {
-        "title": "Digital scan",
-        "text": "A quick, mess-free iTero scan creates a high-resolution, interactive map of your teeth. No impression trays."
+        "title": "3D Digital Imaging",
+        "text": "We start with a quick, mess-free scan using our iTero scanner to create a high-resolution, interactive map of your smile—no traditional impressions needed."
       },
       {
-        "title": "Custom aligners",
-        "text": "Dr. Lavi designs your treatment plan, and a set of BPA-free aligners is made specifically for your mouth."
+        "title": "Custom Clear Aligners",
+        "text": "Your treatment plan is carefully designed to guide your teeth into better alignment using a set of BPA-free plastic aligners made specifically for your mouth."
       },
       {
-        "title": "Daily wear",
-        "text": "Wear your aligners 20 to 22 hours a day, removing them only to eat, brush and floss. Your diet and hygiene routine stay the same."
+        "title": "Daily Wear & Routine Care",
+        "text": "Wear your aligners 20–22 hours a day, removing them only to eat, brush, and floss. You’ll enjoy the flexibility to maintain your normal diet and hygiene routine—something traditional metal braces can’t offer."
       },
       {
-        "title": "Progress check-ins",
-        "text": "Regular visits every 6 to 8 weeks confirm your teeth are tracking. You move to a new set of aligners every 1 to 2 weeks."
+        "title": "Progress Monitoring",
+        "text": "We’ll schedule regular check-ins to ensure your teeth are tracking correctly. As your smile improves, you’ll switch to a new set of aligners every 1–2 weeks."
       },
       {
-        "title": "Finished smile",
-        "text": "Most patients complete treatment in 6 to 18 months, depending on how much correction is needed."
+        "title": "Smile Transformation",
+        "text": "Most patients complete their clear aligner treatment within 6 to 18 months, depending on the level of correction needed. The result? A straighter, healthier-looking smile with minimal disruption to your lifestyle."
       }
     ]
   },
-  "technology": {
-    "heading": "iTero digital planning",
-    "intro": "The scanner does more than replace impressions.",
-    "items": [
-      {
-        "title": "iTero digital scanner",
-        "text": "Captures your teeth in minutes with no trays or putty, for precise, comfortable impressions."
-      },
-      {
-        "title": "Smile preview",
-        "text": "The scan models your projected result so you can see where your teeth are headed before you begin."
-      },
-      {
-        "title": "Digital X-rays",
-        "text": "Confirm roots, bone and jaw are healthy before orthodontic movement begins."
-      }
-    ]
+  "candidate": {
+    "heading": "Is Invisalign Right for You?",
+    "text": "Invisalign is a great option for many teens and adults who want to straighten their teeth without the appearance or hassle of metal braces. But is it the right fit for your smile?",
+    "bullets": [
+      "Mild to moderate crowding",
+      "Gaps or spacing between teeth",
+      "An overbite, underbite, or crossbite",
+      "Teeth that have shifted after past orthodontic work",
+      "A preference for a low-maintenance, discreet solution"
+    ],
+    "image": {
+      "src": "/images/blog/1776812130201.jpg",
+      "alt": ""
+    }
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "Invisalign in Santa Clarita typically ranges from $3,500 to $8,000, depending on how complex your case is and how long treatment takes. Many dental plans with orthodontic benefits cover part of the cost, and our front desk will check your coverage before you commit. After your consultation and scan, you receive a written estimate with the full fee and a monthly financing option, so there are no surprises later. If you are new to the practice, the $59 new patient special covers the exam and X-rays that come first."
-  },
+  "tables": [
+    {
+      "heading": "Invisalign vs. Braces: Which One’s Right for You?",
+      "rows": [
+        [
+          "Feature",
+          "Invisalign",
+          "Metal Braces"
+        ],
+        [
+          "Appearance",
+          "Nearly invisible",
+          "Very noticeable"
+        ],
+        [
+          "Comfort",
+          "Smooth plastic aligners",
+          "Metal brackets may cause discomfort"
+        ],
+        [
+          "Removability",
+          "Yes – for eating, brushing, and flossing",
+          "No – fixed to teeth"
+        ],
+        [
+          "Diet Restrictions",
+          "None",
+          "Yes – avoid sticky, chewy, or hard foods"
+        ],
+        [
+          "Oral Hygiene",
+          "Easy to maintain",
+          "Requires special tools and extra care"
+        ],
+        [
+          "Office Visits",
+          "Fewer, quicker check-ins",
+          "Frequent in-office adjustments"
+        ],
+        [
+          "Estimated Cost Range",
+          "$3,500–$8,000 (varies by case)",
+          "$3,000–$7,000 (varies by case)"
+        ],
+        [
+          "Average Treatment Time",
+          "6–18 months",
+          "18–24 months"
+        ]
+      ],
+      "text": ""
+    }
+  ],
+  "extra": [],
   "faqs": [
     {
       "q": "How much does Invisalign cost?",
-      "a": "Invisalign typically costs between $3,500 and $8,000, depending on case complexity, treatment length and insurance coverage. At your consultation we give you a personalized written estimate and walk you through payment and financing options, so you know the full cost before you start."
+      "a": "The cost of Invisalign typically ranges from $3,500 to $8,000, depending on your unique treatment needs. Factors like case complexity, treatment length, and insurance coverage all play a role. During your consultation, we’ll provide a personalized estimate and walk you through flexible payment and financing options."
     },
     {
       "q": "How long does Invisalign treatment take?",
-      "a": "Most patients finish within 6 to 18 months. Simple spacing or mild crowding sits at the shorter end; bite corrections take longer. Wearing your aligners the full 20 to 22 hours a day is the single biggest factor in staying on schedule."
+      "a": "Most patients complete treatment within 6 to 18 months, depending on the complexity of the case and how consistently the aligners are worn."
     },
     {
       "q": "Does Invisalign hurt?",
-      "a": "Invisalign is generally more comfortable than traditional braces. When you move to a new set of aligners you may feel mild pressure or tightness for a day or two, which is the aligners doing their work. It usually eases quickly. There are no wires or brackets to irritate your cheeks."
+      "a": "Invisalign is generally more comfortable than traditional braces. You may experience mild pressure or tightness for a day or two when switching to a new set of aligners, but this usually fades quickly."
     },
     {
       "q": "Can I eat with my aligners in?",
-      "a": "No. Remove your aligners before eating or drinking anything other than water. Food and colored drinks can stain or warp the plastic and trap sugar against your teeth. Rinse, brush if you can, and put the aligners back in so you keep up your daily wear time."
+      "a": "No. You should remove your aligners before eating or drinking anything other than water. This helps avoid staining and keeps the aligners clean and effective."
     },
     {
       "q": "How do I clean my Invisalign trays?",
-      "a": "Brush your aligners daily with a soft toothbrush and clear, gentle soap, then rinse in lukewarm water. Avoid hot water, which can warp the plastic, and avoid colored or abrasive toothpaste. Invisalign cleaning crystals are another option if you prefer a soak."
+      "a": "Use a soft toothbrush and clear, gentle soap to clean your aligners daily. Avoid hot water, which can warp the plastic. Specialized Invisalign cleaning crystals are also available."
     },
     {
       "q": "How often do I need to visit the office during treatment?",
-      "a": "Plan on a visit every 6 to 8 weeks. Dr. Lavi checks that your teeth are tracking to the plan and hands you your next sets of aligners. These appointments are short, and because you see the same dentist each time, nothing gets lost between visits."
+      "a": "You’ll typically visit every 6–8 weeks so Dr. Lavi can monitor your progress and provide your next set of aligners. These visits are quick and easy."
     },
     {
       "q": "Will insurance cover Invisalign?",
-      "a": "Many dental insurance plans with orthodontic benefits cover part of the cost of Invisalign. Coverage varies by plan and sometimes by age. Our front desk team can check your benefits before your consultation and explain exactly what your plan contributes and what remains."
+      "a": "Many dental insurance plans with orthodontic benefits will cover part of the cost of Invisalign. Our front desk team can check your benefits and help you understand your coverage."
     },
     {
-      "q": "What's the difference between Invisalign and traditional braces?",
-      "a": "Invisalign uses clear, removable aligners; braces use metal brackets and wires fixed to the teeth. Both are effective. Invisalign is more discreet, lets you eat and clean normally and usually needs fewer visits. Braces can be the better choice for some complex cases, which Dr. Lavi will tell you at your consultation."
+      "q": "What’s the difference between Invisalign and traditional braces?",
+      "a": "Invisalign uses clear, removable aligners while traditional braces rely on metal brackets and wires. Both are effective, but Invisalign is more discreet and allows for easier cleaning and eating. For a detailed comparison, check out this guide by the American Association of Orthodontists on how clear aligners differ from braces."
     }
   ],
   "related": [
-    "cosmetic-dentistry",
-    "teeth-whitening",
     "veneers",
-    "tmj-treatments"
+    "teeth-whitening",
+    "cosmetic-dentistry"
   ],
   "cta": {
-    "heading": "See your future smile first",
-    "text": "Book an Invisalign consultation in Valencia. A quick iTero scan shows you the projected result before you decide.",
+    "heading": "Schedule your invisalign consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

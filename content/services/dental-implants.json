@@ -10,180 +10,187 @@
     "description": "Dental implants in Santa Clarita, planned by Dr. Nuriel Lavi with 3D imaging and guided surgery. Single tooth, several teeth or full arch. Book a consult."
   },
   "hero": {
-    "eyebrow": "Restorative dentistry",
     "h1": "Dental Implants in Santa Clarita",
-    "lead": "Replace one tooth, several teeth or a full arch with implants planned by Dr. Nuriel Lavi using 3D imaging and guided surgery. One dentist, every visit, from first scan to final crown.",
-    "image": "/images/brand/panel-restorative.jpg",
-    "imageAlt": ""
+    "subtitle": "Advanced, Comfortable Implant Care Led by Dr. Lavi",
+    "text": "Replace missing teeth with natural-looking, long-lasting implants planned by Dr. Nuriel Lavi using digital imaging, guided surgery, and personalized care.",
+    "image": {
+      "src": "/images/blog/1784586115299.jpg",
+      "alt": "Dental Implants at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Implant care led by Dr. Lavi, start to finish",
+    "heading": "Advanced, Comfortable Implant Care Led by Dr. Lavi",
     "paragraphs": [
-      "A missing tooth changes how you chew, how you speak and how freely you smile. At Valencia Dentistry in Santa Clarita, Dr. Nuriel Lavi treats patients who are missing one tooth, several teeth or a whole arch. Every plan starts with your oral health, your bone support, your bite and what you want your smile to look like, along with how comfortable you need to feel along the way.",
-      "An implant is a small titanium post set into the jawbone. Once it has healed, it holds a custom crown, bridge or denture. Because the post is anchored in bone, implants often chew more securely and sit more steadily than removable options. You see Dr. Lavi at every step, from the first scan to the final restoration, with clear explanations and no handoffs."
+      "Missing teeth can affect how you eat, speak, and feel every day. At Valencia Dentistry, Dr. Nuriel Lavi provides dental implant treatment in Santa Clarita for patients missing one tooth, several teeth, or a full arch. Each case is carefully planned around your oral health, bone support, bite, smile goals, and comfort needs.",
+      "From your first consultation to your final restoration, our team focuses on clear communication, modern technology, and a supportive experience so you can feel confident about your treatment."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Many adults with missing teeth are candidates, and Dr. Lavi confirms this with a careful exam, imaging and a review of your health history.",
-    "items": [
-      "You are missing one or more teeth",
-      "You want a fixed replacement rather than a removable denture",
-      "Your gums are healthy, or gum disease can be treated before placement",
-      "You have enough jawbone, or you are open to bone grafting if needed",
-      "You have loose dentures or failing teeth and want a longer-term answer",
-      "You want to chew, speak and smile with more confidence"
-    ]
-  },
-  "benefits": {
-    "heading": "Benefits of dental implants",
-    "intro": "Implants do more than fill a gap. Because they are anchored in bone, they can restore chewing strength and help keep the jaw and neighboring teeth stable.",
+  "understanding": {
+    "heading": "What Are Dental Implants?",
+    "intro": "Dental implants are long-lasting tooth replacements designed to restore missing teeth from the root up. An implant is a small titanium post placed in the jawbone, where it supports a custom crown, bridge, or denture. Because implants are anchored in the jawbone, they can provide strong chewing support, a natural look, and better stability than many removable tooth replacement options. At Valencia Dentistry, Dr. Lavi will evaluate your bone support, gum health, and smile goals to recommend the right implant option for you.",
+    "image": {
+      "src": "/images/blog/1781216113972.jpg",
+      "alt": "Dental Implants: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Natural look and feel",
-        "text": "Implants are built to look, work and feel much like your own teeth."
+        "title": "Multiple Tooth Implants",
+        "text": "Implant-supported bridges can replace several missing teeth with stable, natural-looking results."
       },
       {
-        "title": "Steady confidence",
-        "text": "No slipping dentures and no visible gaps when you talk, laugh or eat."
+        "title": "Full-Arch Implant Options",
+        "text": "For patients missing most or all teeth, full-arch options may restore an entire upper or lower smile."
       },
       {
-        "title": "Healthier mouth",
-        "text": "Implants help preserve jawbone and stop neighboring teeth from drifting into the space."
+        "title": "Zygomatic Implants",
+        "text": "A specialized option anchored in the cheekbone (zygoma), typically used for severe bone loss in the upper jaw."
       },
       {
-        "title": "Better function",
-        "text": "Eat, speak and chew comfortably, with far fewer limits on what is on your plate."
+        "title": "Implant-Supported Dentures",
+        "text": "A more secure alternative to traditional removable dentures for patients missing many teeth."
       },
       {
-        "title": "Long-lasting results",
-        "text": "With proper care and regular checkups, implants can last for decades."
+        "title": "Single Tooth Implants",
+        "text": "A strong option for replacing one missing tooth without reshaping nearby healthy teeth."
       },
       {
-        "title": "Healthy teeth left alone",
-        "text": "Unlike a bridge, an implant does not require reshaping the teeth next to the gap."
+        "title": "Improved Confidence",
+        "text": "Restore your smile without the worry of slipping dentures or visible gaps."
+      },
+      {
+        "title": "Enhanced Oral Health",
+        "text": "Implants help preserve bone structure and prevent surrounding teeth from shifting."
+      },
+      {
+        "title": "Better Functionality",
+        "text": "Eat, speak, and chew comfortably—no dietary restrictions or discomfort."
       }
-    ]
+    ],
+    "bullets": []
   },
-  "options": {
-    "heading": "Implant options",
-    "intro": "Dr. Lavi matches the implant approach to how many teeth are missing and how much bone is available.",
-    "items": [
+  "why": {
+    "heading": "Why Choose Valencia Dentistry For Dental Implants?",
+    "intro": "Choosing the right implant dentist matters. Dental implants require careful planning, healthy bone support, precise placement, and a restoration that looks and feels natural. At Valencia Dentistry, Dr. Lavi combines digital imaging, guided implant planning, comfort-focused care, and personalized treatment options to help patients restore their smiles with confidence.",
+    "cards": [
       {
-        "title": "Single tooth implant",
-        "text": "Replaces one missing tooth with its own post and crown, with no reshaping of the healthy teeth on either side."
+        "title": "Doctor-Led, Detail-Oriented Care",
+        "text": "Dr. Lavi personally evaluates your smile, bite, bone support, and treatment goals before recommending an implant plan.",
+        "image": {
+          "src": "/images/blog/1781216113972.jpg",
+          "alt": "Doctor-Led, Detail-Oriented Care"
+        }
       },
       {
-        "title": "Multiple tooth implants",
-        "text": "An implant-supported bridge replaces several missing teeth in a row with a stable, natural-looking result."
+        "title": "Advanced Technology for Predictable Outcomes",
+        "text": "We use digital imaging and guided implant planning to evaluate your jawbone, bite, and treatment needs before implant placement.",
+        "image": {
+          "src": "/images/blog/1784586458312.jpg",
+          "alt": "Advanced Technology for Predictable Outcomes"
+        }
       },
       {
-        "title": "Full-arch implants",
-        "text": "For patients missing most or all of their teeth, a full-arch restoration can rebuild an entire upper or lower smile."
+        "title": "Stress-Free Experience",
+        "text": "Our team explains each step clearly and offers comfort-focused care, including sedation options when appropriate.",
+        "image": {
+          "src": "/images/blog/1784586115299.jpg",
+          "alt": "Stress-Free Experience"
+        }
       },
       {
-        "title": "Implant-supported dentures",
-        "text": "A denture that locks onto implants for a far more secure fit than a traditional removable denture."
+        "title": "Same-Day Appointments & Flexible Scheduling",
+        "text": "We make it easier for busy Santa Clarita patients to schedule consultations, treatment visits, and follow-up care."
       },
       {
-        "title": "Zygomatic implants",
-        "text": "A specialized option anchored in the cheekbone, usually considered for severe bone loss in the upper jaw."
+        "title": "Transparent Pricing & Financing Options",
+        "text": "You’ll receive a clear treatment estimate before care begins, with flexible financing options to help make implants more manageable."
       }
     ]
   },
   "process": {
-    "heading": "How implant treatment works",
-    "intro": "Timelines vary with your health, bone support and whether extractions or grafting come first, but the path has three main stages.",
+    "heading": "Our Dental Implant Process",
+    "intro": "We make the dental implant process clear and comfortable from the first consultation to the final restoration. Your timeline may vary depending on your oral health, bone support, healing needs, and whether extractions or bone grafting are required.",
     "steps": [
       {
-        "title": "Consultation and planning",
-        "text": "An exam, 3D imaging and a conversation about your health, bite and goals. If needed, Dr. Lavi may recommend extractions, gum treatment or bone grafting before the implant."
+        "title": "Consultation & Personalized Planning",
+        "text": "We begin with an exam, digital imaging, and a review of your health, bite, missing teeth, and smile goals. If needed, Dr. Lavi may recommend preparatory care such as extractions, periodontal treatment, or bone grafting."
       },
       {
-        "title": "Implant placement",
-        "text": "The post is placed in the jawbone using a guided, pre-planned approach under local anesthesia, with sedation options when appropriate. Over the following months the implant bonds with the bone."
+        "title": "Implant Placement",
+        "text": "The implant is placed in the jawbone using a carefully planned approach. Local anesthesia is used, and sedation options may be available. Over time, the implant heals and bonds with the bone to create a stable foundation."
       },
       {
-        "title": "Restoration",
-        "text": "Once healed, a custom crown, bridge or denture is attached. Dr. Lavi checks your bite, comfort and healing so the new tooth looks natural and works properly."
+        "title": "Restoration & Smile Reveal",
+        "text": "After healing, a custom crown, bridge, or denture is attached to restore your smile. We check your bite, comfort, and healing so your implant restoration feels natural and functions properly."
       }
     ]
   },
-  "technology": {
-    "heading": "Technology behind your implant",
-    "intro": "Planning tools on site let Dr. Lavi see your bone before surgery and place implants with precision.",
-    "items": [
-      {
-        "title": "3D CBCT imaging",
-        "text": "A three-dimensional scan of your jaw shows bone height, width and nerve position before anything is placed."
-      },
-      {
-        "title": "Guided implant surgery",
-        "text": "A digital plan built from your scan guides the implant to the planned position, depth and angle."
-      },
-      {
-        "title": "iTero digital scanner",
-        "text": "A digital impression of your teeth and gums, no putty trays, used to design a crown that fits your bite."
-      },
-      {
-        "title": "PRF therapy",
-        "text": "Platelet-rich fibrin made from your own blood can be placed at the surgical site to support healing."
-      }
-    ]
+  "candidate": {
+    "heading": "Who Is a Good Candidate for Dental Implants?",
+    "text": "Many adults with missing teeth are candidates for dental implants, but every case needs a careful evaluation. During your consultation at Valencia Dentistry, Dr. Lavi will review your oral health, jawbone support, gum condition, bite, and medical history to determine the safest and most effective treatment plan. Even if you have bone loss, gum disease history, loose dentures, or failing teeth, you may still have implant options after the right preparation.",
+    "bullets": [
+      "You are missing one or more teeth",
+      "You want a fixed replacement instead of a removable denture",
+      "Your gums are healthy or can be treated before implant placement",
+      "You have enough jawbone support, or you are open to bone grafting if needed",
+      "You want to improve chewing, speaking, and smile confidence"
+    ],
+    "image": {
+      "src": "/images/blog/1784586458312.jpg",
+      "alt": ""
+    }
   },
-  "aftercare": {
-    "heading": "Before and after your procedure",
+  "care": {
+    "heading": "Pre- And Post-Care For Dental Implants",
+    "intro": "Proper preparation and aftercare can support smoother healing and better long-term results. Before and after your implant procedure, our team gives you personalized instructions based on your treatment plan, medical history, and comfort needs. For more guidance on eating during recovery, read our guide on the best foods after dental implant surgery.",
     "before": [
-      "Follow Dr. Lavi's pre-op instructions, which may include pausing certain medications or arranging a ride home if sedation is planned",
-      "Keep up thorough brushing and flossing to reduce bacteria and inflammation",
-      "Eat a balanced diet in the days leading up to surgery"
+      "Follow pre-op instructions from Dr. Lavi (this may include pausing certain medications or arranging a ride home if sedation is used)",
+      "Maintain good oral hygiene to reduce bacteria and inflammation",
+      "Eat a healthy, well-balanced diet leading up to surgery"
     ],
     "after": [
       "Stick to soft foods for the first few days",
-      "Avoid smoking, straws and strenuous exercise while the site heals",
-      "Keep the area clean with gentle rinses and brushing as directed",
-      "Take any prescribed medication and attend follow-up visits so healing can be checked"
-    ]
+      "Avoid smoking, drinking through straws, or intense physical activity",
+      "Keep the area clean with gentle rinses and brushing as advised",
+      "Take prescribed medication and attend follow-up visits for healing checks"
+    ],
+    "cards": []
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "The cost of dental implants depends on how many teeth are being replaced, the type of restoration and whether extractions or bone grafting come first. We do not quote a single price online because every plan is different. After your exam and imaging, Dr. Lavi gives you a written estimate before treatment begins, with each stage itemized. We accept most major PPO plans, including Delta Dental, MetLife, Cigna and Aetna, and will help you understand what your plan covers. Flexible financing is available to spread the cost over time. New patients can start with our $59 exam and X-rays."
-  },
+  "tables": [],
+  "extra": [],
   "faqs": [
     {
       "q": "How long do dental implants last?",
-      "a": "With good home care and regular checkups, dental implants can last 20 years or more, and many patients keep them for life. The crown on top may need replacing sooner from normal wear. Implants are among the most durable ways to replace a missing tooth."
+      "a": "With proper care and regular checkups, dental implants can last 20 years or more—often a lifetime. They’re one of the most durable tooth replacement options available."
     },
     {
       "q": "Does getting a dental implant hurt?",
-      "a": "The implant is placed under local anesthesia, and sedation options are available when appropriate, so you should not feel pain during the procedure. Afterward, most patients describe mild soreness for a few days, often less than they expected from a tooth extraction, and it is usually managed with the medication Dr. Lavi recommends."
+      "a": "The procedure is typically done under local anesthesia, with sedation options available for added comfort. Most patients report minimal discomfort during recovery, often less than a tooth extraction."
     },
     {
       "q": "What is the cost of dental implants in Santa Clarita?",
-      "a": "Costs vary with the number of implants, the type of restoration and any preparatory work such as grafting. Rather than a one-size price, you receive a detailed written estimate after your consultation, before any treatment starts. We accept most major PPO plans and offer flexible financing to make implants more manageable."
+      "a": "Costs vary depending on your specific treatment plan. At Valencia Dentistry, we offer transparent pricing, flexible financing, and a detailed breakdown before treatment begins."
     },
     {
       "q": "How long does it take to get dental implants?",
-      "a": "Start to finish, implant treatment often takes a few months. Most of that is healing time while the implant bonds with your jawbone. If you need extractions, gum treatment or bone grafting first, the timeline is longer. In select cases a temporary tooth can be placed the same day the implant goes in."
+      "a": "The full process can take a few months, depending on healing and any preparatory treatments like bone grafting. However, same-day implants may be possible in select cases."
     },
     {
       "q": "Are dental implants safe for seniors?",
-      "a": "Yes. Age alone is not a barrier. Implants are a well-established option for older adults in good general health who have enough bone to support them, or who are willing to have bone grafting first. Dr. Lavi reviews your medical history and medications to make sure the plan is appropriate for you."
+      "a": "Yes. Dental implants are a safe, effective option for older adults in good overall health and with sufficient bone density—or those open to bone grafting."
     },
     {
-      "q": "What is the difference between dental implants and dentures?",
-      "a": "Dentures rest on the gums and are removed for cleaning. Implants are fixed in the jawbone and become part of it, so they do not slip, need no adhesive and help preserve the bone that tends to shrink under a denture. Many patients find implants closer to the feel of natural teeth."
+      "q": "What’s the difference between dental implants and dentures?",
+      "a": "Dental implants are permanent fixtures that integrate with your jawbone, providing a stable, natural-feeling replacement for missing teeth. Unlike traditional dentures, they don’t slip, don’t require adhesives, and help prevent bone loss over time."
     }
   ],
   "related": [
-    "bone-grafting",
     "all-on-4-implants",
-    "dental-crowns",
-    "tooth-extractions"
+    "bone-grafting",
+    "dental-bridges"
   ],
   "cta": {
-    "heading": "Talk with Dr. Lavi about implants",
-    "text": "A consultation in our Valencia office includes an exam, imaging and a clear plan with a written estimate. Patients come to us from Stevenson Ranch, Newhall, Saugus and Canyon Country as well as Santa Clarita.",
+    "heading": "Schedule your dental implants consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [

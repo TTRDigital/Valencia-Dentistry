@@ -4,179 +4,125 @@
   "parentPath": "/services/",
   "category": "holistic",
   "name": "Holistic Dentistry",
-  "shortDescription": "Biocompatible, mercury-free care that considers your whole body.",
+  "shortDescription": "Biocompatible materials and whole-body wellness.",
   "seo": {
     "title": "Holistic Dentist in Valencia, CA | Dr. Nuriel Lavi",
     "description": "Holistic dentistry in Valencia, CA: mercury-free fillings, SMART amalgam removal, fluoride-free cleanings and ozone therapy with Dr. Nuriel Lavi."
   },
   "hero": {
-    "eyebrow": "Holistic dentistry",
-    "h1": "A Holistic Dentist in Valencia",
-    "lead": "Dr. Nuriel Lavi practices biological dentistry in Santa Clarita: biocompatible materials, minimally invasive treatment and care that respects the link between your mouth and the rest of your body.",
-    "image": "/images/brand/panel-holistic.jpg",
-    "imageAlt": ""
+    "h1": "A Truly Holistic Dentist in Valencia",
+    "subtitle": "Natural Dental Care That Supports Whole-Body Wellness",
+    "text": "",
+    "image": {
+      "src": "/images/blog/1781217378905.jpg",
+      "alt": "Holistic Dentistry at Valencia Dentistry"
+    }
   },
   "intro": {
-    "heading": "Dental care that considers the whole body",
+    "heading": "Natural Dental Care That Supports Whole-Body Wellness",
     "paragraphs": [
-      "Your mouth is not separate from the rest of you. Gum inflammation, infection and the materials placed in your teeth can all have effects beyond your smile. Holistic dentistry at Valencia Dentistry starts from that idea. Dr. Lavi chooses biocompatible, mercury-free materials, favors prevention over intervention and avoids procedures you do not need. The aim is a healthy mouth that supports a healthy body.",
-      "This approach suits people managing a chronic condition, people who want to limit their exposure to metals and additives, and anyone who simply prefers a more thoughtful, less aggressive style of dental care. From tooth-colored fillings made without mercury or BPA to fluoride-free cleanings and gentle gum therapy, every treatment is chosen with your body, your history and your preferences in mind."
+      "At Valencia Dentistry, we believe your oral health is deeply connected to your overall well-being. That’s why we offer holistic dentistry in Santa Clarita—a patient-first approach that focuses on safe, biocompatible materials and minimally invasive techniques. From mercury-free fillings to fluoride-free cleanings, our care is designed to protect not just your teeth, but your entire body. Whether you’re managing a chronic condition, avoiding toxins, or simply seeking a more mindful dental experience, our team is here to support your health—naturally."
     ]
   },
-  "whoItsFor": {
-    "heading": "Who it's for",
-    "intro": "Holistic care is for anyone who wants a safer, more natural approach to their teeth, and it fits especially well if you recognize yourself below.",
-    "items": [
-      "You prefer metal-free, mercury-free and fluoride-free treatment options",
-      "You live with a chronic illness or autoimmune condition and want your dental care to account for it",
-      "You have had allergic or sensitivity reactions to dental materials in the past",
-      "You want old silver fillings removed with safety protocols in place",
-      "You are looking for gentle, minimally invasive care for your family"
-    ]
-  },
-  "benefits": {
-    "heading": "Benefits of holistic dental care",
-    "intro": "Holistic dentistry offers more than a healthy smile; it reduces what your body has to deal with and keeps the focus on long-term wellness.",
+  "understanding": {
+    "heading": "What Is Holistic Dentistry and How Is It Different?",
+    "intro": "Holistic dentistry looks at the mouth as a window to your overall health. At Valencia Dentistry, we take a biological, whole-body approach—using non-toxic materials, focusing on prevention, and avoiding unnecessary procedures. It’s ideal for patients seeking safer, more mindful dental care. Core principles we follow: At Valencia Dentistry, our holistic dental treatments are designed to protect both your oral health and your overall well-being. Each treatment is rooted in a commitment to safe materials, gentle techniques, and personalized dental care that aligns with your body’s natural healing processes. Safe Amalgam Removal SMART-certified techniques to safely remove old silver fillings Fluoride-Free Cleanings Gentle preventive care using alternative remineralizing agents Non-Metal Restorations Durable, aesthetic crowns and bridges free from toxic metals Holistic Periodontal Therapy Gum care that reduces inflammation and supports systemic health",
+    "image": {
+      "src": "/images/blog/1776894737538.jpg",
+      "alt": "Holistic Dentistry: treatment at Valencia Dentistry"
+    },
     "items": [
       {
-        "title": "Less exposure to mercury and fluoride",
-        "text": "Materials and preventive products are chosen to avoid substances many patients prefer to keep out of their bodies."
-      },
-      {
-        "title": "Prevention first",
-        "text": "Regular, gentle care aimed at keeping teeth and gums healthy so that fewer repairs are ever needed."
-      },
-      {
-        "title": "Works with your body",
-        "text": "Treatments are chosen to support your natural healing rather than work against it."
-      },
-      {
-        "title": "Thoughtful care for chronic and autoimmune conditions",
-        "text": "A careful choice of materials and techniques for patients whose health already asks a lot of them."
-      },
-      {
-        "title": "Fewer material reactions",
-        "text": "Metal-free, BPA-free restorations lower the chance of allergic or sensitivity reactions."
-      },
-      {
-        "title": "Whole-body support",
-        "text": "Minimally invasive care and natural therapies that consider the whole person, not just the tooth."
+        "title": "Ozone Therapy",
+        "text": "A natural antibacterial treatment that supports healing and reduces infection"
       }
+    ],
+    "bullets": [
+      "Use of biocompatible, mercury-free materials",
+      "Minimally invasive, preventive treatments",
+      "Personalized care that supports full-body wellness",
+      "Biocompatible Fillings",
+      "Tooth-colored restorations made without mercury or BPA",
+      "Holistic Bone & Gum Grafting"
     ]
   },
-  "options": {
-    "heading": "Our holistic treatments",
-    "intro": "Each treatment uses safe materials and gentle technique, chosen to fit your body and your health goals.",
-    "items": [
-      {
-        "title": "Biocompatible fillings",
-        "text": "Tooth-colored restorations made without mercury or BPA."
-      },
-      {
-        "title": "Safe amalgam removal",
-        "text": "SMART-protocol removal of old silver fillings, with safeguards to limit mercury exposure during the procedure."
-      },
-      {
-        "title": "Ozone therapy",
-        "text": "A natural antibacterial treatment used to support healing and reduce infection."
-      },
-      {
-        "title": "Fluoride-free cleanings",
-        "text": "Gentle preventive care using alternative remineralizing agents."
-      },
-      {
-        "title": "Non-metal restorations",
-        "text": "Durable, natural-looking crowns and bridges made without metal."
-      },
-      {
-        "title": "Holistic periodontal therapy",
-        "text": "Gum care focused on reducing inflammation, which matters for the rest of the body too."
-      },
-      {
-        "title": "Holistic bone and gum grafting",
-        "text": "Regenerative options such as PRF from your own blood and your own bone, with no synthetic additives."
-      }
-    ]
+  "why": {
+    "heading": "Why Choose Holistic Dentistry at Valencia Dentistry?",
+    "intro": "Choosing holistic dentistry in Valencia means prioritizing your total health—not just your teeth. We combine advanced dental technology with a whole-body philosophy to deliver integrative dental care that’s safe, effective, and personalized. Our team is trained in biocompatibility, integrative methods, and SMART mercury removal protocols to ensure your experience supports both your oral and systemic health.",
+    "cards": []
   },
   "process": {
-    "heading": "What to expect",
-    "intro": "Your care follows three steps, each designed to keep your overall health in view.",
+    "heading": "Our Holistic Dentistry Process: What to Expect",
+    "intro": "At Valencia Dentistry, we make your holistic dental experience comfortable, safe, and personalized from the start. Our step-by-step approach ensures that every treatment supports your overall health as well as your smile.",
     "steps": [
       {
-        "title": "Comprehensive evaluation",
-        "text": "A full oral exam and a review of your medical history. When it is helpful, biocompatibility testing identifies which materials are the safest fit for your body."
+        "title": "Comprehensive Evaluation",
+        "text": "We begin with a full oral health exam, medical history review, and, if needed, biocompatibility testing to identify the safest treatment options for your body."
       },
       {
-        "title": "Personalized treatment plan",
-        "text": "Dr. Lavi designs a plan around your wellness goals, prioritizing non-toxic materials, gentle technique and natural therapies, and explains each recommendation."
+        "title": "Personalized Treatment Plan",
+        "text": "We design a plan that aligns with your wellness goals—prioritizing non-toxic materials, gentle techniques, and natural therapies."
       },
       {
-        "title": "Long-term care and prevention",
-        "text": "Ongoing preventive visits, education and natural maintenance strategies that fit your lifestyle, so good health is maintained rather than repaired."
+        "title": "Long-Term Care & Prevention",
+        "text": "Our team supports your continued health with ongoing preventive care, education, and natural maintenance strategies tailored to your lifestyle."
       }
     ]
   },
-  "technology": {
-    "heading": "Technology that supports gentle care",
-    "intro": "Precise tools let us treat conservatively and see problems early.",
-    "items": [
-      {
-        "title": "Digital X-rays and 3D CBCT imaging",
-        "text": "Detailed images with less radiation than film, so small problems are found before they need bigger fixes."
-      },
-      {
-        "title": "Laser dentistry",
-        "text": "Laser treatment for gum tissue can mean less bleeding and a gentler experience than traditional methods."
-      },
-      {
-        "title": "PRF therapy",
-        "text": "Platelet-rich fibrin from your own blood supports healing after grafting and surgery with nothing synthetic added."
-      },
-      {
-        "title": "Intraoral cameras",
-        "text": "You see what Dr. Lavi sees, which makes conservative decisions easier to understand and agree on."
-      }
-    ]
+  "candidate": {
+    "heading": "Who Is a Good Candidate for Holistic Dentistry?",
+    "text": "Holistic dentistry is ideal for anyone looking for a safer, more natural approach to oral care. Whether you’re managing a health condition or simply want to avoid exposure to toxins, Valencia Dentistry offers solutions that align with your wellness goals. Prefer metal-free, mercury-free, and fluoride-free treatment options",
+    "bullets": [
+      "Have chronic conditions or autoimmune concerns",
+      "Seek gentle, minimally invasive dental care for your family",
+      "Reduced exposure to toxins like mercury and fluoride",
+      "Focus on prevention and long-term oral health",
+      "Care that aligns with your body’s natural healing processes",
+      "Safer treatment options for individuals with chronic or autoimmune conditions",
+      "Lower risk of allergic or sensitivity reactions to dental materials",
+      "Whole-body support through minimally invasive care and natural therapies"
+    ],
+    "image": {
+      "src": "/images/blog/1776382495907.jpg",
+      "alt": ""
+    }
   },
-  "cost": {
-    "heading": "Cost and financing",
-    "text": "Many holistic treatments, such as tooth-colored fillings and cleanings, are covered by most major PPO plans in the same way as conventional care. We accept plans including Delta Dental, MetLife, Cigna and Aetna. Biocompatibility testing and some natural therapies may not be covered. Before any treatment starts, you receive a written estimate that shows what your plan is expected to pay and what you would owe. Flexible financing is available for larger plans. If you are new to the practice, the $59 new patient exam and X-rays is an easy first step."
-  },
+  "tables": [],
+  "extra": [],
   "faqs": [
     {
       "q": "What makes holistic dentistry different from traditional dentistry?",
-      "a": "Holistic dentistry treats the mouth as part of the whole body. In practice that means biocompatible, mercury-free materials, fluoride-free options for those who prefer them, and a lean toward prevention and minimally invasive technique. The clinical skills are the same; the philosophy about materials and when to intervene is different."
+      "a": "Holistic dentistry focuses on the connection between oral and overall health, using biocompatible materials and avoiding toxins like mercury and fluoride. It emphasizes prevention, minimally invasive techniques, and whole-body wellness."
     },
     {
       "q": "Is holistic dentistry safe for kids and families?",
-      "a": "Yes. Holistic care suits children and families who want gentle treatment without exposure to materials they would rather avoid. We offer fluoride-free preventive options and tooth-colored fillings made without mercury or BPA. Dr. Lavi takes time with younger patients so visits feel calm rather than rushed."
+      "a": "Yes! Holistic care is ideal for children and families who want natural, gentle treatments without exposure to potentially harmful materials. We also offer fluoride-free options for preventive care."
     },
     {
       "q": "What is SMART-certified amalgam removal?",
-      "a": "SMART stands for Safe Mercury Amalgam Removal Technique, a protocol developed by the IAOMT, the International Academy of Oral Medicine and Toxicology. It sets out steps such as isolation, high-volume suction and protective barriers that reduce mercury exposure while old silver fillings are removed. Our team follows these guidelines when taking out amalgam."
+      "a": "SMART stands for Safe Mercury Amalgam Removal Technique. It’s a strict protocol for removing old silver fillings while minimizing mercury exposure. We follow guidelines set by the IAOMT to ensure your safety."
     },
     {
       "q": "Do holistic dentists use fluoride?",
-      "a": "Most holistic dentists, including Dr. Lavi, offer fluoride-free alternatives. These use other remineralizing agents to help strengthen enamel without synthetic additives. If you have questions about fluoride for yourself or your children, raise them at your visit. The choice stays with you."
+      "a": "Most holistic dentists, including ours, offer fluoride-free alternatives that help remineralize and protect teeth naturally—without synthetic additives."
     },
     {
       "q": "Can holistic dental care help with chronic health issues?",
-      "a": "Holistic dentistry does not treat medical conditions, and we do not claim that it does. What it can do is reduce the load on your body by avoiding reactive materials and keeping gum inflammation under control. Many patients with autoimmune conditions, allergies or sensitivities find that this approach fits well with how they manage their health."
+      "a": "While holistic dentistry doesn’t treat medical conditions, it may support those with autoimmune disorders, allergies, or sensitivities by reducing the toxic burden on the body and promoting overall wellness."
     },
     {
       "q": "Are the materials used really that different?",
-      "a": "Yes. We avoid metals, BPA and other substances that can provoke reactions, and every material is chosen for its compatibility with your body. Where it helps, biocompatibility testing can show which options are the best fit for you. You will always know what is going into your mouth and why."
+      "a": "Yes. We avoid metals, BPA, and other potentially reactive substances. All materials are chosen based on their compatibility with your body and your unique health needs."
     }
   ],
   "related": [
     "composite-filling",
-    "dental-crowns",
-    "bone-grafting",
-    "dental-implants"
+    "cosmetic-dentistry",
+    "tmj-treatments"
   ],
   "cta": {
-    "heading": "Meet a holistic dentist in Valencia",
-    "text": "Bring your questions, your history and your preferences. Dr. Lavi listens first and plans second. Patients visit us from Santa Clarita, Stevenson Ranch, Newhall, Saugus and Canyon Country.",
+    "heading": "Schedule your holistic dentistry consultation",
+    "text": "Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [
