@@ -67,7 +67,7 @@ export function Hero({ s }: { s: HeroSection }) {
           {s.image && (
             <div className="order-first lg:order-none lg:col-span-5">
               <div className="overflow-hidden rounded-4xl ring-1 ring-white/10 shadow-lift">
-                <Picture image={s.image} priority sizes="(min-width: 1024px) 480px, calc(100vw - 32px)" className="aspect-[4/3] w-full object-cover" />
+                <Picture image={s.image} priority sizes="(min-width: 1024px) 480px, calc(100vw - 32px)" className="aspect-[4/3] w-full object-cover object-top" />
               </div>
             </div>
           )}
@@ -94,7 +94,7 @@ export function Hero({ s }: { s: HeroSection }) {
         {s.image && (
           <div className="order-first lg:order-none lg:col-span-6">
             <div className="overflow-hidden rounded-4xl shadow-lift ring-1 ring-ink-900/5">
-              <Picture image={s.image} priority sizes="(min-width: 1024px) 600px, calc(100vw - 32px)" className="aspect-[5/4] w-full object-cover" />
+              <Picture image={s.image} priority sizes="(min-width: 1024px) 600px, calc(100vw - 32px)" className="aspect-[5/4] w-full object-cover object-top" />
             </div>
           </div>
         )}

@@ -4,9 +4,13 @@ import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
 import { cn } from "@/lib/utils";
+import manifest from "@/lib/generated/images.json";
 
 export function IntroSplit({ s }: { s: IntroSplitSection }) {
   const left = s.imageSide !== "right";
+  // Portrait photos get a portrait frame, anchored to the top so faces are never cropped.
+  const meta = (manifest as Record<string, { width: number; height: number }>)[s.image.src];
+  const portrait = (s.image.height ?? meta?.height ?? 0) > (s.image.width ?? meta?.width ?? 1);
   return (
     <Section>
       <Container>
@@ -15,7 +19,7 @@ export function IntroSplit({ s }: { s: IntroSplitSection }) {
             <div className="relative">
               <div className="absolute -left-4 -top-4 h-full w-full rounded-4xl bg-sand-100" aria-hidden="true" />
               <div className="relative overflow-hidden rounded-4xl shadow-lift">
-                <Picture image={s.image} sizes="(min-width: 1024px) 560px, 100vw" className="aspect-[5/4] w-full object-cover" />
+                <Picture image={s.image} sizes="(min-width: 1024px) 560px, 100vw" className={cn("w-full object-cover object-top", portrait ? "aspect-[4/5]" : "aspect-[5/4]")} />
               </div>
             </div>
           </Reveal>

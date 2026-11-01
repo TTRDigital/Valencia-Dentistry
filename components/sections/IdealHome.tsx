@@ -27,7 +27,7 @@ export function PhotoCards({ s }: { s: PhotoCardsSection }) {
           {s.cards.map((c, i) => (
             <Reveal as="li" key={c.title} delay={i * 80} className="card card-hover overflow-hidden">
               <div className="relative aspect-[4/3] bg-greige-50">
-                <Picture image={c.image} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
+                <Picture image={c.image} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover object-top" />
               </div>
               <div className="p-6 sm:p-7">
                 <h3 className="text-xl">{c.title}</h3>
