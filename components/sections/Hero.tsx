@@ -57,7 +57,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
             </div>
             {s.trust && <div data-stage="5"><TrustRow light className="mt-10" /></div>}
           </div>
-          <div className="hero-parallax relative lg:col-span-5">
+          <div data-hero-media className="hero-parallax relative lg:col-span-5">
             <div className="pointer-events-none absolute inset-x-6 bottom-0 top-10 arch bg-gradient-to-b from-olive-600/40 to-transparent" aria-hidden="true" />
             <div className="pointer-events-none absolute -right-6 top-6 h-56 w-56 rounded-full border border-bronze-300/30 sm:h-72 sm:w-72" aria-hidden="true" />
             {s.image && /\.png$/i.test(s.image.src) ? (
@@ -102,7 +102,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
             {s.trust && <div data-stage="5"><TrustRow light className="mt-8" /></div>}
           </div>
           {s.image && (
-            <div className="lg:col-span-6 xl:col-span-5">
+            <div data-hero-media className="lg:col-span-6 xl:col-span-5">
               <PhotoFrame image={s.image} priority sizes="(min-width: 1280px) 520px, (min-width: 1024px) 45vw, 100vw" arch accent="olive" className="mx-auto max-w-[520px]">
                 <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
                 <FloatingBadge className="-right-2 top-6 hidden sm:flex sm:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />

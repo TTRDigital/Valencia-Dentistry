@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { TechExplainerSection } from "@/lib/types";
-import { FeatureIcon } from "@/components/sections/FeatureGrid";
+import { FeatureIcon } from "@/components/ui/FeatureIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
 

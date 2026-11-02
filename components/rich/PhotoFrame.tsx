@@ -50,14 +50,14 @@ export function PhotoFrame({
 }) {
   const ratio = ratioOf(image);
   return (
-    <div data-reveal={priority ? undefined : ""} className={cn("photo-reveal relative", className)}>
+    <div className={cn("pf relative", className)}>
       {accent !== "none" && (
         <div
           aria-hidden="true"
           className={cn("absolute inset-0 rounded-lg", arch && ratio < 1 && "arch", ACCENT[accent], accentSide === "right" ? "translate-x-4 translate-y-4 sm:translate-x-6 sm:translate-y-6" : "-translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6")}
         />
       )}
-      <div className={cn("relative overflow-hidden bg-greige-50", arch && ratio < 1 ? "arch" : "rounded-lg", frameClassName)} style={{ aspectRatio: String(ratio) }}>
+      <div className={cn("pf-frame relative overflow-hidden bg-greige-50", arch && ratio < 1 ? "arch" : "rounded-lg", frameClassName)} style={{ aspectRatio: String(ratio) }}>
         <Picture image={image} fill priority={priority} sizes={sizes} className="object-cover" />
       </div>
       {children}

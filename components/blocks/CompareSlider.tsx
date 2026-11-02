@@ -141,7 +141,7 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
                 aria-label={`Show case: ${k.title}, ${k.treatment}`}
                 className={cn("block w-full overflow-hidden rounded-md ring-2 ring-offset-2 ring-offset-warm transition-transform duration-[var(--dur-micro)] hover:-translate-y-0.5", i === active ? "ring-olive-600" : "ring-transparent")}
               >
-                <Picture image={k.after} sizes="(min-width: 768px) 200px, 30vw" className="aspect-[4/3] w-full object-cover" quality={60} alt="" />
+                <Picture image={k.after} sizes="(min-width: 768px) 200px, 30vw" className="aspect-[4/3] w-full object-cover" alt="" />
               </button>
             </li>
           ))}

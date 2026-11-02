@@ -182,7 +182,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
       </div>
 
       {/* Mobile full-screen menu */}
-      <div id="mobile-menu" className={cn("fixed inset-0 top-[var(--mobile-top,0px)] z-40 overflow-y-auto bg-offwhite transition-[opacity,visibility] duration-200 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 72 }}>
+      <div id="mobile-menu" data-lenis-prevent className={cn("fixed inset-0 top-[var(--mobile-top,0px)] z-40 overflow-y-auto bg-offwhite transition-[opacity,visibility] duration-200 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 72 }}>
         <nav aria-label="Mobile" className="container-x pb-28 pt-4">
           <ul className="divide-y hairline">
             {nav.header.map((item) => (

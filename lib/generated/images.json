@@ -1,72 +1,72 @@
 {
  "/images/cases/case-1-after.jpg": {
-  "width": 425,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAsAA4BaJZgCdAD1a4F6UAAA+m7zlHqqbsZ9h7qov+RN50nEBLvbpYQ3LIiwAAA="
+  "width": 850,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAsAA4BaJZgCdAD1a4F6BAAA+m7zku3CBS4PqU5oHDIFLcYsNzkerN2tWUA0AAA="
  },
  "/images/cases/case-1-before.jpg": {
-  "width": 437,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoMAAsAA4BaJagCdAEQIaMwgAD+sSrDVEOGK/bxN70tcgF4u7EcYoAA"
+  "width": 874,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoMAAsAA4BaJagCdAEQIaOY8GAA/rEqw1RBTik6W+r8YsPDa/i7sRxigAA="
  },
  "/images/cases/case-2-after.jpg": {
-  "width": 425,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAsAA4BaJQBOgCHUsTFncAD+72RIh8a9HwcS3gkgvW2nxhiD/I5aooAAAA=="
+  "width": 850,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAsAA4BaJQBOgCHahsEcAAD+72RJU7twJ35Mwpw7O+haB08QmZTR+wAAAA=="
  },
  "/images/cases/case-2-before.jpg": {
-  "width": 437,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAsAA4BaJQBOgCHW8Ks0gAD+7A5pedvSpfPPGXaZ3pBVHui5TWRGudBLMTIA"
+  "width": 874,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoMAAsAA4BaJQBOgCHWrIAAAP7sDml529Kk/8xSN6Yfocg2Vhww030RIx/QAA=="
  },
  "/images/cases/case-3-after.jpg": {
-  "width": 425,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoMAAsAA4BaJZACdAEDfXAqZVAAAP7qTarM4pT/EQGc0hLmRBMrL1NnjayZxmFum2qVxYBCdAjoAAAA"
+  "width": 850,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoMAAsAA4BaJZACdAEO/YrgoMAA/upNqs0KczGMN7B/GCa8S0QPbwFA8noPQxu1hh0bLaBQ0Va4AA=="
  },
  "/images/cases/case-3-before.jpg": {
-  "width": 437,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAgCdASoMAAsAA4BaJbACdAEVvLddwFPa1AD+SgPK47AO3OzDAawjETKHzsxzY7Zli60VV79av9RXfqhIAA=="
+  "width": 874,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAgCdASoMAAsAA4BaJagCdAEVvMf6LD0KgAD+SgPK47AO3OzDFIlzC97s+iZQnUPvk9PmW+HR92TTu8PjjPAA"
  },
  "/images/cases/case-4-after.jpg": {
-  "width": 425,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAsAA4BaJYgCdAEO+EVkU2AA/b0VBOos5L63ZU7Fr3MiUJDDdIPozawD8cVIAAA="
+  "width": 850,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoMAAsAA4BaJYgCdADc9lc6FIAA/b6tFXzWCS8hy+EOQTxGNWJCDwsdQiMUPFue3r1uAAAA"
  },
  "/images/cases/case-4-before.jpg": {
-  "width": 437,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoMAAsAA4BaJQBOgBuko8WEhIAAzigjcJ7XwfyvBLIqn217t4V4C5Kx/qSY3v2hrxU98AAA"
+  "width": 874,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAwAgCdASoMAAsAA4BaJQBOgB9iu0/IkkN64ADOKCNwntfB/K8FLcycTZmFHUEdeltgernvbtKbn88AAAA="
  },
  "/images/cases/case-5-after.jpg": {
-  "width": 425,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoMAAsAA4BaJagCdADcBFogcAD+zGjkE7j+fyimAxr4pdlKv+3kbNSAVxs5P0vc/fKGgQRXm/OYAAAA"
+  "width": 850,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoMAAsAA4BaJagCdADcFgj7IAD+0HNq5wgoXsvwMCaqhkafRSTA48Btv6ZP0vc/fKGgQRXm/OYAAA=="
  },
  "/images/cases/case-5-before.jpg": {
-  "width": 437,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoMAAsAA4BaJagCdAEOwD2DYAD+7vMN9hdS+VRISTESGUWf6xKAV3ITAdSjDVf3keCE8/fGDMAAAA=="
+  "width": 874,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoMAAsAA4BaJagCdAEOkKoYAAD+7vMN9hdS+VRISQ8HLL5y3BiZle5if8ExvFkHkeCE8/fGDMAAAA=="
  },
  "/images/cases/case-6-after.jpg": {
-  "width": 425,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoMAAsAA4BaJZACdADZup9dQ1AAAP6fEWbrQdo7EdlnCpWaADb16Lq2UiVM1ln/Hc3fXvnatL0AAA=="
+  "width": 850,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoMAAsAA4BaJZACdADZN4FOgAD+nxFm60HaOxHXAHTyqCONRJ0Ya1nDvEZvUmKb4ElS94AA"
  },
  "/images/cases/case-6-before.jpg": {
-  "width": 443,
-  "height": 404,
-  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoMAAsAA4BaJbACdACR29rjPADNdFrumXU/nZp9JVwFVmZCaNvsQRidEaxiwBTNOR2EO4JRF8AAAA=="
+  "width": 886,
+  "height": 808,
+  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoMAAsAA4BaJbACdACRHTTgFwAAzXRa7pl1P52afSVYirMyE0cvJfre0pOGspcjsIdwSiL4AAA="
  },
  "/images/cases/implant-after.jpg": {
-  "width": 599,
-  "height": 351,
-  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAcAA4BaJbACdADbX5mDwAD4Gdz2yfXLASWWig7snrwbka/G71K366JUAAAA"
+  "width": 1198,
+  "height": 702,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoMAAcAA4BaJbACdACk+M0oAPgZ3PbJ+FI4226itIlEAp6q0tmy77eZ+8YoAAAA"
  },
  "/images/cases/implant-before.jpg": {
-  "width": 599,
-  "height": 351,
+  "width": 1198,
+  "height": 702,
   "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoMAAcAA4BaJagCdAFAAAD+4rPuMrNx9N0x6MWHhtfxd2I4ySAAAA=="
  },
  "/images/insurance/aetna.png": {
@@ -75,14 +75,14 @@
   "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4WAoAAAAQAAAACwAAAQAAQUxQSBkAAAAAp5p8cX2AgX90cWZNoZqMkaKWi4iGkINXAFZQOCAmAAAAcAEAnQEqDAACAAOAWiWgAnQBQAAA/ue7j6lb9dFWfwJK1aOAAAA="
  },
  "/images/insurance/blue-cross-blue-shield.png": {
-  "width": 298,
+  "width": 167,
   "height": 98,
-  "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4WAoAAAAQAAAACwAAAwAAQUxQSCYAAAABT0CQbePPvO3XiIhYfvRhMBBJhg4a6KISGfQWYiei/5EBvwtuFlZQOCAsAAAAsAEAnQEqDAAEAAOAWiUAToAh3wVpsAD+8oMu9xFyhJ6ZO7kW+UKxHV1BYAA="
+  "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAACwAABgAAQUxQSCcAAAABL2AgbRv/lrf9sRERwQQUAkDDpJBCCilMYf4wHyGi/xNA1D+rZlQAVlA4IDoAAADwAQCdASoMAAcAA4BaJaACdAEO/nxgswAA/vVZLoy29NYFhNt8TLJIMigVr5cZXPltNvwQFI+PFLAA"
  },
  "/images/insurance/cigna.png": {
   "width": 253,
-  "height": 143,
-  "blurDataURL": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4WAoAAAAQAAAACwAABgAAQUxQSEYAAAANcBhJthLtE9wh/xwd7t77kkZEhJTinpEBYNqq8wzZM5CXqTQDgyj8SZnKtm4Ro53/JKpVE4342X+1mHuCNr/dSgnfX5kIVlA4IFQAAADwAQCdASoMAAcAA4BaJbACdLoAArSfxcAA2vZ/wZQ+55ouc55Dh1bljW/xamQ1MieW1GMaHKaQrxVEtJyOw/5N+/U1+4v/JMB2HKR2qcgf/Bvy8AA="
+  "height": 96,
+  "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAACwAABAAAQUxQSD0AAAAAFztJLhILCgQDAwIBJE1eQysnJyIhIh4WI05gSDc9R01LSUEzFjlINCYvP0xJQTsvDiUwIA8QGyQfFRMQAFZQOCA6AAAA8AEAnQEqDAAFAAOAWiWwAnS6AAJjYJAAANyYp41X4AHJwE02h71d7cyIutEq7rhgl/5UNt57edRwAA=="
  },
  "/images/insurance/delta-dental.png": {
   "width": 426,
@@ -95,9 +95,9 @@
   "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACwAAAgAAQUxQSCUAAAAAbV1BNT9CPDo9Ojo/cWleXWJjY2NhXWBnXF5ob2lmbXJqZGt3AFZQOCAmAAAAcAEAnQEqDAADAAOAWiWgAnQBQAAA/uC5fxv+a/0KGKwwmDTgAAA="
  },
  "/images/insurance/metlife.png": {
-  "width": 459,
-  "height": 258,
-  "blurDataURL": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4WAoAAAAQAAAACwAABgAAQUxQSEMAAAANYBxJtpL5LtiNE/nnRQjuDkFERIKAi7/U4jwvuC4oqrQdr5O5XUUsfb+I61qnlalZnFFgHFdb98FeUmgBx3QKcQkAAFZQOCBYAAAA0AEAnQEqDAAHAAOAWiWwAnQA3UU83IAA/cVuTc2ab16F9wX/IrH5X2j9wQEH1SlXH4kutYetdpwcTfuqPx696r537efwf72wmi9v0LG+/8rW38Tv0AAAAA=="
+  "width": 293,
+  "height": 70,
+  "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAACwAAAgAAQUxQSCUAAAAAkIxxUD88NDIxOT0vrbSOW01WU01HTFNMrbuPTjlHS0dDQ0VFAFZQOCAwAAAAsAEAnQEqDAADAAOAWiWQAnQA9IG0oADKBC1/0nEFu8APu/A/Gah34Jix86q90vAA"
  },
  "/images/insurance/principal.png": {
   "width": 360,
@@ -108,6 +108,16 @@
   "width": 380,
   "height": 82,
   "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACwAAAgAAQUxQSCUAAAAA/f39/f39/f38/fXn7+/v7+/v7+/u7ufa1tbW1tbW1tbV1tDDAFZQOCAmAAAAkAEAnQEqDAADAAOAWiUAAFufXJdwAP73JvVYDCHeXo9e46QAAAA="
+ },
+ "/images/map/office-map-1600.webp": {
+  "width": 1600,
+  "height": 1200,
+  "blurDataURL": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoMAAkAA4BaJaQAA3AA/vIJ/hsQOwt+kAA="
+ },
+ "/images/map/office-map-800.webp": {
+  "width": 800,
+  "height": 600,
+  "blurDataURL": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoMAAkAA4BaJaQAA3AA/vIJ/hsQOwt+kAA="
  },
  "/images/real/aligner-model.jpg": {
   "width": 1600,

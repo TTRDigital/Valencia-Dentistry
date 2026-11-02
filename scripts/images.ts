@@ -35,7 +35,7 @@ async function walk(dir: string) {
     if (dir.endsWith("/team") || dir.endsWith("/real")) {
       const name = basename(f, extname(f));
       const widths = [...new Set([...WIDTHS.filter((w) => w < meta.width!), meta.width!])];
-      for (const w of widths) await sharp(p).resize(w).webp({ quality: 74, alphaQuality: 80 }).toFile(join(OPT, `${name}-${w}.webp`));
+      for (const w of widths) await sharp(p).resize(w).webp({ quality: 88, alphaQuality: 90, smartSubsample: true }).toFile(join(OPT, `${name}-${w}.webp`));
       entry.opt = widths;
     }
     out[key] = entry;

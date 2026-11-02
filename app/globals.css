@@ -269,13 +269,6 @@
   @keyframes fade-rise-sm { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
   @keyframes settle { from { transform: scale(1.04); } to { transform: none; } }
   @keyframes curtain { from { transform: translateY(0); } to { transform: translateY(-120%); } }
-  /* Gentle parallax on the portrait, desktop only, scroll-driven (no JS); browsers without scroll timelines keep it still */
-  @supports (animation-timeline: view()) {
-    @media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
-      .hero-parallax { animation: parallax linear both; animation-timeline: view(); animation-range: exit 0% exit 100%; }
-      @keyframes parallax { from { transform: translateY(0); } to { transform: translateY(-48px); } }
-    }
-  }
 
   /* Before/after: a soft ring pulses around the handle while the one-time drag hint plays */
   .compare-knob::after { content: ""; position: absolute; inset: -6px; border-radius: 9999px; border: 2px solid #fff; opacity: 0; pointer-events: none; }
@@ -326,9 +319,16 @@
   .seal-spin { animation: spin 26s linear infinite; transform-origin: 50% 50%; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* Photos settle from a slight zoom as they are revealed */
-  .photo-reveal img { transition: transform 1.2s var(--ease-enter); }
-  .photo-reveal.reveal-pending img { transform: scale(1.12); }
+  /* Smooth scrolling (Lenis) */
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
+  /* Split-line headings keep descenders inside their masks */
+  .motion-on main h2 { overflow-wrap: break-word; }
+  /* Horizontal gallery: scrollable by hand without motion; GSAP slides it when motion is on (desktop) */
+  [data-hscroll-track] { overflow-x: auto; scroll-snap-type: x mandatory; }
+  @media (min-width: 1024px) { .motion-on [data-hscroll-track] { overflow: visible; scroll-snap-type: none; } }
 
   /* Route change: content fades in (first load is never animated, see PageTransition.tsx) */
   .page-enter { animation: fade-in var(--dur-std) var(--ease-enter) both; }

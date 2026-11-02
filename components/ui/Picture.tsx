@@ -44,7 +44,6 @@ export function Picture({ image, alt, fill, sizes: sizesIn, className, priority,
   const width = img.width ?? meta?.width;
   const height = img.height ?? meta?.height;
   const sizes = sizesIn && cropTo && width && height ? scaleSizes(sizesIn, width / height / cropTo) : sizesIn;
-  const blur = img.blurDataURL ?? meta?.blurDataURL;
   const altText = alt ?? img.alt ?? "";
   // A content-defined focal point wins over the component's default object-position class
   if (img.focus) (rest as { style?: React.CSSProperties }).style = { ...(rest as { style?: React.CSSProperties }).style, objectPosition: img.focus };
@@ -67,13 +66,14 @@ export function Picture({ image, alt, fill, sizes: sizesIn, className, priority,
         fetchPriority={priority ? "high" : undefined}
         decoding={priority ? "sync" : "async"}
         className={cn(fill && "absolute inset-0 h-full w-full", className)}
-        style={{ ...(blur && !/\.png$/i.test(img.src) ? { backgroundImage: `url(${blur})`, backgroundSize: "cover" } : {}), ...style }}
+        style={style}
         {...imgRest}
       />
     );
   }
 
-  const common = { sizes: sizes ?? (fill ? "100vw" : undefined), className, priority, quality: quality ?? 75, ...(blur ? { placeholder: "blur" as const, blurDataURL: blur } : {}), ...rest };
+  // No blurred placeholders: frames show a calm neutral tone until the sharp image arrives.
+  const common = { sizes: sizes ?? (fill ? "100vw" : undefined), className, priority, quality: quality ?? 85, ...rest };
   if (fill || !width || !height) return <Image src={img.src} alt={altText} fill {...common} />;
   return <Image src={img.src} alt={altText} width={width} height={height} {...common} />;
 }

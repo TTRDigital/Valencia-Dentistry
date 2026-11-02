@@ -4,39 +4,58 @@ import type { Service, ServiceShowcaseSection } from "@/lib/types";
 import { RichHeading } from "@/components/rich/Blocks";
 import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
-import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
-import { cn } from "@/lib/utils";
+
+const LABEL: Record<string, string> = { surgical: "Oral surgery", cosmetic: "Cosmetic", restorative: "Restorative", holistic: "Holistic", preventive: "Jaw & comfort" };
 
 /**
- * Photo-led services overview: one large feature card and four smaller ones in a bento grid.
- * Photos are anchored near the top so faces stay in frame; text sits on a soft gradient.
+ * Treatments gallery. On desktop with motion on, the section pins and the cards slide sideways as
+ * you scroll (MotionProvider, [data-hscroll]); on phones, or without motion, it is a swipeable row.
+ * Square photo cards (photos anchored near the top, shown no larger than their files) keep it sharp.
  */
 export async function ServiceShowcase({ s }: { s: ServiceShowcaseSection }) {
   const all = await getServices();
-  const items = s.slugs.map((slug) => all.find((x) => x.slug === slug)).filter((x): x is Service => !!x).slice(0, 5);
+  const items = s.slugs.map((slug) => all.find((x) => x.slug === slug)).filter((x): x is Service => !!x);
   return (
-    <Section className="bg-white" id="services">
-      <Container>
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-          <Link href="/services/" className="link-arrow shrink-0">All {all.length} treatments <Icon.arrow className="h-4 w-4" /></Link>
-        </div>
-        <ul data-stagger className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
-          {items.map((it, i) => (
-            <Reveal as="li" key={it.slug} className={cn(i === 0 && "sm:col-span-2 lg:row-span-2")}>
-              <Link href={it.path} className={cn("group relative isolate flex h-full min-h-72 flex-col justify-end overflow-hidden rounded-lg bg-ink-900 p-6 text-white no-underline card-hover", i === 0 ? "sm:min-h-[26rem] lg:min-h-[34rem] lg:p-9" : "sm:min-h-80")}>
-                <Picture image={it.hero.image} fill cropTo={i === 0 ? 1.1 : 0.9} sizes={i === 0 ? "(min-width: 1024px) 640px, 100vw" : "(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw"} className="-z-10 object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
-                <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-950/90 via-ink-900/35 to-transparent" />
-                <p className="text-sm font-semibold uppercase tracking-[0.12em] text-bronze-300">{it.category === "surgical" ? "Oral surgery" : it.category === "cosmetic" ? "Cosmetic" : it.category === "restorative" ? "Restorative" : "Care"}</p>
-                <h3 className={cn("mt-2 text-white", i === 0 ? "text-4xl" : "text-2xl")}>{it.name}</h3>
-                {it.shortDescription && <p className={cn("mt-2 text-white/80", i === 0 ? "max-w-md text-lg" : "text-base")}>{it.shortDescription}</p>}
-                <span className="mt-4 inline-flex items-center gap-2 font-semibold text-white">Learn more <Icon.arrow className="arrow-nudge h-4 w-4" /></span>
+    <Section className="overflow-hidden bg-white" id="services">
+      <div data-hscroll className="lg:flex lg:min-h-screen lg:flex-col lg:justify-center">
+        <Container>
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
+            <Link href="/services/" className="link-arrow shrink-0">All {all.length} treatments <Icon.arrow className="h-4 w-4" /></Link>
+          </div>
+        </Container>
+        <div className="container-x mt-12">
+          <ul data-hscroll-track className="no-scrollbar -mx-4 flex gap-5 px-4 pb-2 sm:mx-0 sm:px-0">
+            {items.map((it, i) => (
+              <li key={it.slug} className="w-[min(80vw,420px)] shrink-0 snap-start">
+                <Link href={it.path} className="group block no-underline">
+                  <div className="relative aspect-square overflow-hidden rounded-lg bg-ink-900">
+                    <Picture image={it.hero.image} fill cropTo={1} sizes="(min-width: 1024px) 420px, 80vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" />
+                    <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-900/10 to-transparent" />
+                    <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-ink-900">{LABEL[it.category] ?? "Care"}</span>
+                    <span aria-hidden="true" className="absolute right-5 top-4 font-display text-4xl text-white/80">{String(i + 1).padStart(2, "0")}</span>
+                    <div className="absolute inset-x-5 bottom-5 text-white">
+                      <h3 className="font-display text-3xl font-normal text-white">{it.name}</h3>
+                    </div>
+                  </div>
+                  {it.shortDescription && <p className="mt-4 text-grey-700">{it.shortDescription}</p>}
+                  <span className="mt-2 inline-flex min-h-11 items-center gap-2 font-semibold text-olive-700">Learn more <Icon.arrow className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></span>
+                </Link>
+              </li>
+            ))}
+            <li className="w-[min(80vw,420px)] shrink-0 snap-start">
+              <Link href="/services/" className="group flex aspect-square flex-col justify-between rounded-lg bg-olive-700 p-8 text-white no-underline">
+                <Icon.tooth className="h-10 w-10 text-bronze-300" />
+                <span>
+                  <span className="block font-display text-4xl">See all {all.length} treatments</span>
+                  <span className="mt-4 inline-flex items-center gap-2 font-semibold">Browse services <Icon.arrow className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></span>
+                </span>
               </Link>
-            </Reveal>
-          ))}
-        </ul>
-      </Container>
+            </li>
+          </ul>
+        </div>
+      </div>
     </Section>
   );
 }

@@ -96,7 +96,7 @@ export async function ServiceView({ s }: { s: Service }) {
               </div>
               <div data-stage="5"><TrustRow light className="mt-8" /></div>
             </div>
-            <div className="lg:col-span-6 xl:col-span-5">
+            <div data-hero-media className="lg:col-span-6 xl:col-span-5">
               <PhotoFrame image={s.hero.image} priority sizes="(min-width: 1280px) 520px, (min-width: 1024px) 45vw, 100vw" arch accent="olive" className="mx-auto max-w-[520px]">
                 <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
                 <FloatingBadge className="-right-2 top-6 hidden sm:flex sm:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />

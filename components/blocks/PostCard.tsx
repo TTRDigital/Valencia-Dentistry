@@ -11,7 +11,7 @@ export function PostCard({ post, priority, headingLevel = 3 }: { post: CardPost;
     <li className="card card-hover group">
       <Link href={post.path} className="flex h-full flex-col no-underline">
         <div className="relative aspect-[16/9] overflow-hidden rounded-t-lg bg-greige-50">
-          <Picture image={{ src: post.image, alt: post.imageAlt }} fill priority={priority} sizes="(min-width: 1024px) 400px, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" quality={60} />
+          <Picture image={{ src: post.image, alt: post.imageAlt }} fill priority={priority} sizes="(min-width: 1024px) 400px, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
         <div className="flex flex-1 flex-col p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-olive-600">{post.category}</p>

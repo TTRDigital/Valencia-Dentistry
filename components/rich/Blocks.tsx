@@ -13,7 +13,7 @@ import { PhotoFrame } from "./PhotoFrame";
 /** The logo's V-and-tooth mark as a large, faint background watermark. */
 export function Watermark({ className, light }: { className?: string; light?: boolean }) {
   return (
-    <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} aria-hidden="true" focusable="false" className={cn("pointer-events-none absolute -z-10 select-none", light ? "text-white/[0.05]" : "text-ink-900/[0.035]", className)}>
+    <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} aria-hidden="true" focusable="false" className={cn("watermark pointer-events-none absolute -z-10 select-none", light ? "text-white/[0.05]" : "text-ink-900/[0.035]", className)}>
       <path fill="currentColor" d={MARK.v} />
       <path fill="currentColor" d={MARK.tooth} />
     </svg>

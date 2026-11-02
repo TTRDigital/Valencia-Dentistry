@@ -7,14 +7,7 @@ import { IconCard } from "@/components/rich/Blocks";
 
 const VALUE_ICONS: IconName[] = ["user", "leaf", "shield", "heart", "sparkle", "smile", "pin", "calendar"];
 
-export function FeatureIcon({ name, dark }: { name?: string; dark?: boolean }) {
-  const I = (name && (Icon as Record<string, (p: React.SVGProps<SVGSVGElement>) => React.JSX.Element>)[name]) || Icon.sparkle;
-  return (
-    <span className={cn("inline-flex h-12 w-12 items-center justify-center rounded-2xl", dark ? "bg-white/10 text-bronze-300" : "bg-greige-50 text-olive-600")}>
-      <I className="h-6 w-6" />
-    </span>
-  );
-}
+export { FeatureIcon } from "@/components/ui/FeatureIcon";
 
 export function FeatureGrid({ s }: { s: FeatureGridSection }) {
   const cols = s.columns ?? 3;
