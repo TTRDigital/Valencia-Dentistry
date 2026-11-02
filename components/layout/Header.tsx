@@ -8,13 +8,15 @@ import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Icon } from "@/components/ui/Icons";
 import { Logo } from "./Logo";
+import { navSectionFor } from "@/lib/nav";
 
-export function Header({ nav }: { nav: Navigation }) {
+export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: string[] }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const megaRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const closeTimer = useRef<number | undefined>(undefined);
   const megaId = useId();
 
@@ -36,7 +38,13 @@ export function Header({ nav }: { nav: Navigation }) {
   // Lock scroll while the mobile menu is open; close on Escape
   useEffect(() => {
     document.documentElement.style.overflow = mobileOpen ? "hidden" : "";
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") { setMobileOpen(false); setMegaOpen(false); } };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      // return focus to the control that opened the menu
+      if (megaRef.current?.contains(document.activeElement) || document.activeElement === triggerRef.current) triggerRef.current?.focus();
+      setMobileOpen(false);
+      setMegaOpen(false);
+    };
     window.addEventListener("keydown", onKey);
     return () => { window.removeEventListener("keydown", onKey); document.documentElement.style.overflow = ""; };
   }, [mobileOpen]);
@@ -49,21 +57,32 @@ export function Header({ nav }: { nav: Navigation }) {
     return () => document.removeEventListener("pointerdown", onDown);
   }, [megaOpen]);
 
-  const openMega = () => { window.clearTimeout(closeTimer.current); setMegaOpen(true); };
+  const hoverOpenedAt = useRef(0);
+  const openMega = () => { window.clearTimeout(closeTimer.current); if (!megaOpen) hoverOpenedAt.current = Date.now(); setMegaOpen(true); };
+  // A click that lands right after the hover opened the panel must not close it again;
+  // keyboard (Enter/Space, detail 0) and later clicks toggle as usual.
+  const onMegaClick = (e: React.MouseEvent) => {
+    if (e.detail > 0 && megaOpen && Date.now() - hoverOpenedAt.current < 600) return;
+    setMegaOpen((v) => !v);
+  };
   const scheduleClose = () => { closeTimer.current = window.setTimeout(() => setMegaOpen(false), 160); };
-  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
+  // The top-level item for the current page (a service page highlights Services, a blog post highlights Blog, …)
+  const section = navSectionFor(pathname, postPaths);
+  const isActive = (href: string) => section === href;
+  const current = (href: string) => (pathname === href ? ("page" as const) : isActive(href) ? ("true" as const) : undefined);
   const desktopNav = nav.header;
 
   return (
-    <header className="sticky top-0 z-50 h-[72px]" data-scrolled={scrolled || undefined}>
-      {/* The header box keeps a fixed 72px height (no layout shift). The shrink is visual only:
-          the background scales to 64px and the row moves up 4px, both with transforms. */}
-      <div aria-hidden="true" className={cn("absolute inset-0 origin-top bg-offwhite transition-transform duration-300 ease-out", scrolled && "scale-y-[0.889]")} />
+    <header className="site-header sticky top-0 z-50 h-[72px]" data-scrolled={scrolled || undefined} data-open={megaOpen || mobileOpen || undefined}>
+      {/* The header box keeps a fixed 72px height (no layout shift). Over a hero it starts transparent
+          (the hero runs underneath it, see [data-hero] in globals.css); after scrolling the background
+          fades in, scales to 64px and gains a shadow, and the row moves up 4px. Transforms and opacity only. */}
+      <div aria-hidden="true" className={cn("header-bg absolute inset-0 origin-top bg-offwhite", scrolled && "scale-y-[0.889]")} />
       <div aria-hidden="true" className={cn("pointer-events-none absolute inset-x-0 top-[64px] h-4 bg-gradient-to-b from-ink-900/10 to-transparent opacity-0 transition-opacity duration-300", scrolled && "opacity-100")} />
       {/* Main bar */}
       <div className={cn("container-x relative transition-transform duration-300 ease-out", scrolled && "-translate-y-1")}>
         <div className="flex h-[72px] items-center justify-between gap-6">
-          <Link href="/" className={cn("inline-flex min-h-11 origin-left items-center rounded-md transition-transform duration-300 ease-out", scrolled && "scale-[0.92]")}>
+          <Link href="/" className={cn("inline-flex min-h-12 origin-left items-center rounded-md transition-transform duration-300 ease-out", scrolled && "scale-[0.92]")}>
             <Logo />
           </Link>
 
@@ -73,11 +92,21 @@ export function Header({ nav }: { nav: Navigation }) {
                 item.mega ? (
                   <li key={item.href} className="relative" onMouseEnter={openMega} onMouseLeave={scheduleClose}>
                     <button
+                      ref={triggerRef}
                       type="button"
-                      className={cn("relative flex min-h-11 items-center gap-1 px-3 text-[0.9375rem] font-medium text-ink-900 hover:text-olive-700", (megaOpen || isActive(item.href)) && "text-olive-700")}
+                      className={cn("nav-link relative flex min-h-11 items-center gap-1 px-3 text-[0.9375rem] font-medium text-[var(--header-fg)] hover:text-[var(--header-accent)]", megaOpen && "text-[var(--header-accent)]")}
+                      data-active={isActive(item.href) || undefined}
                       aria-expanded={megaOpen}
                       aria-controls={megaId}
-                      onClick={() => setMegaOpen((v) => !v)}
+                      onClick={onMegaClick}
+                      onKeyDown={(e) => {
+                        // Down Arrow (or Tab while the panel is open) moves focus into the panel's first link
+                        if (e.key === "ArrowDown" || (e.key === "Tab" && !e.shiftKey && megaOpen)) {
+                          e.preventDefault();
+                          setMegaOpen(true);
+                          requestAnimationFrame(() => megaRef.current?.querySelector<HTMLElement>("a")?.focus());
+                        }
+                      }}
                     >
                       {item.label}
                       <Icon.chevron className={cn("h-4 w-4 transition-transform", megaOpen && "rotate-180")} />
@@ -85,7 +114,7 @@ export function Header({ nav }: { nav: Navigation }) {
                   </li>
                 ) : (
                   <li key={item.href}>
-                    <Link href={item.href} className={cn("relative flex min-h-11 items-center px-3 text-[0.9375rem] font-medium text-ink-900 hover:text-olive-700", isActive(item.href) && "text-olive-700 after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:bg-olive-600")} aria-current={isActive(item.href) ? "page" : undefined}>
+                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center px-3 text-[0.9375rem] font-medium text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)}>
                       {item.label}
                     </Link>
                   </li>
@@ -95,13 +124,13 @@ export function Header({ nav }: { nav: Navigation }) {
           </nav>
 
           <div className="flex items-center gap-1 lg:gap-3">
-            <a href={`tel:${site.phone.tel}`} className="hidden min-h-11 items-center gap-2 px-1 text-[0.9375rem] font-semibold text-ink-900 hover:text-olive-700 xl:inline-flex">
-              <Icon.phone className="h-4 w-4 text-olive-600" /> {site.phone.display}
+            <a href={`tel:${site.phone.tel}`} className="hidden min-h-11 items-center gap-2 px-1 text-[0.9375rem] font-semibold text-[var(--header-fg)] hover:text-[var(--header-accent)] xl:inline-flex">
+              <Icon.phone className="h-4 w-4 text-[var(--header-accent)]" /> {site.phone.display}
             </a>
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm whitespace-nowrap px-3.5 sm:px-5">
               Book Now
             </a>
-            <button type="button" className="inline-flex h-11 w-11 items-center justify-center text-ink-900 hover:text-olive-600 lg:hidden" aria-expanded={mobileOpen} aria-controls="mobile-menu" aria-label={mobileOpen ? "Close menu" : "Open menu"} onClick={() => setMobileOpen((v) => !v)}>
+            <button type="button" className="inline-flex h-11 w-11 items-center justify-center text-[var(--header-fg)] hover:text-[var(--header-accent)] lg:hidden" aria-expanded={mobileOpen} aria-controls="mobile-menu" aria-label={mobileOpen ? "Close menu" : "Open menu"} onClick={() => setMobileOpen((v) => !v)}>
               {mobileOpen ? <Icon.close className="h-6 w-6" /> : <Icon.menu className="h-6 w-6" />}
             </button>
           </div>
@@ -114,13 +143,15 @@ export function Header({ nav }: { nav: Navigation }) {
         ref={megaRef}
         onMouseEnter={openMega}
         onMouseLeave={scheduleClose}
+        onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node) && e.relatedTarget !== triggerRef.current) setMegaOpen(false); }}
         style={{ top: scrolled ? 64 : 72 }}
-        className={cn("absolute inset-x-0 hidden border-t hairline bg-offwhite shadow-lift transition-[opacity,transform] duration-200 ease-out lg:block", megaOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0")}
+        data-open={megaOpen || undefined}
+        className={cn("mega absolute inset-x-0 hidden border-t hairline bg-offwhite shadow-lift lg:block", !megaOpen && "pointer-events-none")}
         aria-hidden={!megaOpen}
       >
         <div className="container-x grid grid-cols-4 gap-8 py-8">
-          {nav.serviceGroups.map((g) => (
-            <div key={g.title}>
+          {nav.serviceGroups.map((g, gi) => (
+            <div key={g.title} className="mega-item" style={{ "--i": gi } as React.CSSProperties}>
               {g.href ? (
                 <Link href={g.href} prefetch={false} className="group inline-flex items-center gap-1.5 text-[0.8125rem] font-bold uppercase tracking-[0.06em] text-ink-900 hover:text-olive-600" tabIndex={megaOpen ? 0 : -1}>
                   {g.title} <Icon.arrow className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" />
@@ -132,7 +163,7 @@ export function Header({ nav }: { nav: Navigation }) {
               <ul className="mt-4 space-y-1">
                 {g.items.map((it) => (
                   <li key={it.href}>
-                    <Link href={it.href} prefetch={false} className="block rounded-xl px-3 py-2 -mx-3 hover:bg-greige-50" tabIndex={megaOpen ? 0 : -1}>
+                    <Link href={it.href} prefetch={false} aria-current={pathname === it.href ? "page" : undefined} className={cn("-mx-3 block rounded-md border-l-2 px-3 py-2 hover:bg-greige-50", pathname === it.href ? "border-olive-600 bg-greige-50" : "border-transparent")} tabIndex={megaOpen ? 0 : -1}>
                       <span className="block text-[0.9375rem] font-medium text-ink-900">{it.label}</span>
                       {it.description && <span className="block text-[0.8125rem] text-grey-600">{it.description}</span>}
                     </Link>
@@ -158,8 +189,8 @@ export function Header({ nav }: { nav: Navigation }) {
               <li key={item.href}>
                 {item.mega ? (
                   <details className="group">
-                    <summary className="flex min-h-14 cursor-pointer items-center justify-between py-3 text-lg font-medium text-ink-900">
-                      {item.label} <Icon.chevron className="h-5 w-5 transition-transform group-open:rotate-180" />
+                    <summary className={cn("flex min-h-14 cursor-pointer items-center justify-between py-3 text-lg font-medium", isActive(item.href) ? "font-semibold text-olive-700" : "text-ink-900")}>
+                      <span className="flex items-center gap-3">{isActive(item.href) && <span className="h-5 w-0.5 rounded-full bg-olive-600" aria-hidden="true" />}{item.label}</span> <Icon.chevron className="h-5 w-5 transition-transform group-open:rotate-180" />
                     </summary>
                     <div className="pb-4">
                       {nav.serviceGroups.map((g) => (
@@ -167,7 +198,7 @@ export function Header({ nav }: { nav: Navigation }) {
                           {g.href ? <Link href={g.href} prefetch={false} className="block py-1 text-sm font-semibold uppercase tracking-wider text-olive-600" tabIndex={mobileOpen ? 0 : -1}>{g.title}</Link> : <p className="py-1 text-sm font-semibold uppercase tracking-wider text-olive-600">{g.title}</p>}
                           <ul>
                             {g.items.map((it) => (
-                              <li key={it.href}><Link href={it.href} prefetch={false} className="block min-h-11 py-2.5 text-ink-900" tabIndex={mobileOpen ? 0 : -1}>{it.label}</Link></li>
+                              <li key={it.href}><Link href={it.href} prefetch={false} aria-current={pathname === it.href ? "page" : undefined} className={cn("-ml-3 block min-h-11 border-l-2 py-2.5 pl-3", pathname === it.href ? "border-olive-600 font-semibold text-olive-700" : "border-transparent text-ink-900")} tabIndex={mobileOpen ? 0 : -1}>{it.label}</Link></li>
                             ))}
                           </ul>
                         </div>
@@ -175,7 +206,7 @@ export function Header({ nav }: { nav: Navigation }) {
                     </div>
                   </details>
                 ) : (
-                  <Link href={item.href} prefetch={false} className="flex min-h-14 items-center py-3 text-lg font-medium text-ink-900" tabIndex={mobileOpen ? 0 : -1}>{item.label}</Link>
+                  <Link href={item.href} prefetch={false} aria-current={current(item.href)} className={cn("flex min-h-14 items-center gap-3 py-3 text-lg", isActive(item.href) ? "font-semibold text-olive-700" : "font-medium text-ink-900")} tabIndex={mobileOpen ? 0 : -1}>{isActive(item.href) && <span className="h-5 w-0.5 rounded-full bg-olive-600" aria-hidden="true" />}{item.label}</Link>
                 )}
               </li>
             ))}

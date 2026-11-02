@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getLegalPages, getPages, getPosts, getServices } from "@/lib/content";
 import { breadcrumbNode, buildMetadata, graph, JsonLd, webPageNode } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
 
 export const metadata: Metadata = buildMetadata({ title: "Sitemap | Valencia Dentistry", description: "Every page on the Valencia Dentistry website: services, about, blog articles, contact and legal pages.", path: "/sitemap/" });
@@ -16,7 +17,7 @@ export default async function SitemapPage() {
   return (
     <>
       <Section className="border-b hairline bg-warm" tight>
-        <Container><SectionHeading as="h1" eyebrow="Sitemap" heading="Everything on this site" lead="A full list of our pages, services and articles." /></Container>
+        <Container><Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Sitemap", path: "/sitemap/" }]} /><SectionHeading className="mt-6" as="h1" eyebrow="Sitemap" heading="Everything on this site" lead="A full list of our pages, services and articles." /></Container>
       </Section>
       <Section className="bg-white">
         <Container>

@@ -7,7 +7,7 @@ export function PageView({ page, extraNodes = [] }: { page: Page; extraNodes?: R
   const crumbs = page.path === "/" ? [{ name: "Home", path: "/" }] : [{ name: "Home", path: "/" }, { name: page.breadcrumb ?? page.title, path: page.path }];
   return (
     <>
-      <Sections sections={page.sections} />
+      <Sections sections={page.sections} crumbs={page.path === "/" ? undefined : crumbs} />
       <JsonLd data={graph([webPageNode(page.path, page.seo.title ?? page.title, page.seo.description ?? ""), breadcrumbNode(crumbs), ...extraNodes])} />
     </>
   );

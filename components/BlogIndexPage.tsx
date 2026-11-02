@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getPosts } from "@/lib/content";
 import { breadcrumbNode, graph, JsonLd, webPageNode } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
 import { BlogIndex } from "@/components/blocks/BlogIndex";
 
@@ -16,7 +17,8 @@ export async function BlogIndexPage({ page }: { page: number }) {
     <>
       <Section className="border-b hairline bg-warm" tight>
         <Container>
-          <SectionHeading as="h1" eyebrow="Blog" heading={page > 1 ? `Dental advice from Valencia, page ${page}` : "Dental advice from Dr. Lavi"} lead="Plain-English guides on implants, crowns, bridges, extractions and everyday oral health, written for Santa Clarita patients." />
+          <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Blog", path: "/category/blogs/" }, ...(page > 1 ? [{ name: `Page ${page}`, path: `/category/blogs/page/${page}/` }] : [])]} />
+          <SectionHeading className="mt-6" as="h1" eyebrow="Blog" heading={page > 1 ? `Dental advice from Valencia, page ${page}` : "Dental advice from Dr. Lavi"} lead="Plain-English guides on implants, crowns, bridges, extractions and everyday oral health, written for Santa Clarita patients." />
         </Container>
       </Section>
       <Section className="bg-white">

@@ -18,13 +18,13 @@ import { FocusAreas } from "./FocusAreas";
 import { TechExplainer } from "./TechExplainer";
 import { TreatmentPicker } from "./TreatmentPicker";
 
-export function Sections({ sections }: { sections: PageSection[] }) {
+export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs?: { name: string; path: string }[] }) {
   return (
     <>
       {sections.map((s, i) => {
         const key = `${s._type}-${i}`;
         switch (s._type) {
-          case "hero": return <Hero key={key} s={s} />;
+          case "hero": return <Hero key={key} s={s} crumbs={i === 0 ? crumbs : undefined} />;
           case "introSplit": return <IntroSplit key={key} s={s} />;
           case "featureGrid": return <FeatureGrid key={key} s={s} />;
           case "values": return <Values key={key} s={s} />;
