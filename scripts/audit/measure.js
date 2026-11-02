@@ -160,6 +160,7 @@
     if (ws[0] > vw * 0.9) continue; // single column stack
     if (Math.max(...ws) / Math.min(...ws) > 1.1) continue; // a layout grid (e.g. 8/4 columns), not a card row
     if (kids.some((k) => k.querySelector("h2"))) continue; // section-level layout
+    if (kids.every((k) => { const im = k.querySelector("img"); return im && getComputedStyle(im).objectFit === "contain" && im.getBoundingClientRect().height < 60; })) continue; // logo strips
     rowSets.push([g, kids]);
   }
   for (const [g, kids] of rowSets) {
@@ -272,6 +273,7 @@
     const small = [];
     for (const el of document.querySelectorAll("a[href],button,input,select,textarea,[role=button],[role=radio],[role=slider],[tabindex='0']")) {
       if (!visible(el) || el.type === "hidden") continue;
+      if (el.getBoundingClientRect().right < 0 || el.closest("[aria-hidden=true]")) continue; // off-screen spam traps
       const p = el.closest("p,li,dd,td");
       const inline = el.tagName === "A" && p && p.innerText.trim().length > el.innerText.trim().length + 8; // links inside running text are exempt (WCAG 2.5.8)
       if (inline) continue;
