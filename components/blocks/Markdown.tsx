@@ -36,7 +36,7 @@ function BlockView({ b }: { b: Block }) {
     }
     case "table":
       return (
-        <div className="table-wrap">
+        <div className="table-wrap" tabIndex={0} role="region" aria-label="Table (scroll sideways on small screens)">
           <table>
             <thead><tr>{b.rows[0]?.map((c, i) => <th key={i} scope="col"><Inlines nodes={c} /></th>)}</tr></thead>
             <tbody>{b.rows.slice(1).map((r, i) => <tr key={i}>{r.map((c, j) => <td key={j}><Inlines nodes={c} /></td>)}</tr>)}</tbody>

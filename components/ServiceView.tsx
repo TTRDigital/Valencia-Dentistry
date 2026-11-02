@@ -1,13 +1,13 @@
-import Link from "next/link";
 import type { Service } from "@/lib/types";
 import { getServices, getTestimonials } from "@/lib/content";
 import { site } from "@/lib/site";
 import { breadcrumbNode, faqNode, graph, JsonLd, serviceNode, serviceOfferNode, webPageNode } from "@/lib/seo";
 import { OpenBadge } from "@/components/layout/OpenBadge";
 import { TimelineProgress } from "@/components/motion/TimelineProgress";
+import { TocSpy } from "@/components/motion/TocSpy";
 import { ReviewCarousel } from "@/components/blocks/ReviewCarousel";
 import { FaqList } from "@/components/sections/Faq";
-import { ServiceCard } from "@/components/sections/ServicesHub";
+import { CardList } from "@/components/sections/ServicesHub";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
@@ -23,20 +23,8 @@ const PARENT_NAMES: Record<string, string> = {
 };
 const CATEGORY_LABEL: Record<string, string> = { cosmetic: "Cosmetic dentistry", restorative: "Restorative dentistry", surgical: "Oral surgery", holistic: "Holistic dentistry", preventive: "Jaw & comfort care" };
 
-export function Breadcrumbs({ items, light }: { items: { name: string; path: string }[]; light?: boolean }) {
-  return (
-    <nav aria-label="Breadcrumb" className={`text-sm ${light ? "text-white/70" : "text-grey-600"}`}>
-      <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
-        {items.map((it, i) => (
-          <li key={it.path} className="flex items-center gap-2">
-            {i > 0 && <span aria-hidden="true" className="opacity-50">/</span>}
-            {i === items.length - 1 ? <span aria-current="page" className={light ? "text-white" : "text-ink-900"}>{it.name}</span> : <Link href={it.path} className="hover:underline">{it.name}</Link>}
-          </li>
-        ))}
-      </ol>
-    </nav>
-  );
-}
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+export { Breadcrumbs };
 
 function Check({ children }: { children: React.ReactNode }) {
   return (
@@ -59,7 +47,7 @@ function Block({ id, label, children, className }: { id: string; label: string; 
 /** Booking card used in the sticky sidebar (desktop) and inline after the overview (mobile). */
 function BookingCard({ s, className }: { s: Service; className?: string }) {
   return (
-    <div className={cn("rounded-md bg-ink-900 p-6 text-white", className)}>
+    <div className={cn("rounded-lg bg-ink-900 p-6 text-white", className)}>
       <p className="text-sm font-semibold text-bronze-300">Start with a consultation</p>
       <p className="mt-2 text-lg">See Dr. Lavi about {inSentence(s.name)}. New patients: exam &amp; X-rays for <span className="font-semibold">$59</span>.</p>
       <div className="mt-5 grid gap-2">
@@ -97,8 +85,10 @@ export async function ServiceView({ s }: { s: Service }) {
 
   return (
     <article>
+      {/* Reading progress along the top edge (CSS scroll timeline; hidden where unsupported) */}
+      <div className="reading-progress" aria-hidden="true" />
       {/* Split hero: text on cream, photo in a soft frame */}
-      <header data-hero className="border-b border-ink-900/10 bg-warm">
+      <header data-hero="light" className="border-b border-ink-900/10 bg-warm">
         <Container>
           <div className="grid items-center gap-8 py-10 lg:grid-cols-12 lg:gap-14 lg:py-16">
             <div className="lg:col-span-7">
@@ -113,8 +103,8 @@ export async function ServiceView({ s }: { s: Service }) {
               </div>
             </div>
             <div className="lg:col-span-5">
-              <div className="overflow-hidden rounded-t-[160px] rounded-b-md bg-greige-50">
-                <Picture image={s.hero.image} priority quality={80} sizes="(min-width: 1024px) 460px, 100vw" className="aspect-[5/4] w-full object-cover object-top lg:aspect-[4/5]" />
+              <div className="overflow-hidden arch bg-greige-50">
+                <Picture image={s.hero.image} priority quality={80} sizes="(min-width: 1024px) 880px, 125vw" className="aspect-[5/4] w-full object-cover object-top lg:aspect-[4/5]" />
               </div>
             </div>
           </div>
@@ -122,7 +112,7 @@ export async function ServiceView({ s }: { s: Service }) {
       </header>
 
       <Container>
-        <div className="grid gap-12 py-12 lg:grid-cols-12 lg:gap-14 lg:py-16">
+        <div className="grid gap-12 py-[var(--section-y-tight)] lg:grid-cols-12 lg:gap-14">
           {/* Article column */}
           <div className="min-w-0 space-y-12 lg:col-span-8">
             <Block id="overview" label="Overview">
@@ -131,7 +121,7 @@ export async function ServiceView({ s }: { s: Service }) {
                 {(s.intro.paragraphs.length ? s.intro.paragraphs : [s.hero.text]).map((p, i) => <p key={i}>{p}</p>)}
               </div>
               {children.length > 0 && (
-                <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 xl:grid-cols-3">{children.map((c, i) => <ServiceCard key={c.slug} s={c} index={i} />)}</ul>
+                <CardList items={children} className="mt-8" />
               )}
               <BookingCard s={s} className="mt-8 lg:hidden" />
             </Block>
@@ -143,11 +133,11 @@ export async function ServiceView({ s }: { s: Service }) {
                 {s.understanding.bullets && s.understanding.bullets.length > 0 && (
                   <ul className="mt-6 grid gap-3 sm:grid-cols-2">{s.understanding.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>
                 )}
-                <Reveal className="mt-8 overflow-hidden rounded-md">
-                  <Picture image={s.understanding.image} sizes="(min-width: 1024px) 760px, 100vw" className="aspect-[16/9] w-full object-cover object-top" />
+                <Reveal className="mt-8 overflow-hidden rounded-lg">
+                  <Picture image={s.understanding.image} sizes="(min-width: 1024px) 760px, 100vw" cropTo={16 / 9} className="aspect-[16/9] w-full object-cover object-top" />
                 </Reveal>
                 {s.understanding.items.length > 0 && (
-                  <dl className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2">
+                  <dl className="fill-odd mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2">
                     {s.understanding.items.map((it, i) => (
                       <Reveal key={it.title + i} delay={(i % 2) * 70} className="border-l-2 border-olive-600 pl-4">
                         <dt className="font-semibold text-ink-900">{it.title}</dt>
@@ -161,11 +151,11 @@ export async function ServiceView({ s }: { s: Service }) {
 
             {hasWho && (
               <Block id="who-its-for" label="Who it's for">
-                <div className="rounded-md bg-warm p-6 ring-1 ring-ink-900/10 sm:p-8">
+                <div className="rounded-lg bg-warm p-6 ring-1 ring-ink-900/10 sm:p-8">
                   <h2 className="text-3xl">{s.candidate.heading}</h2>
                   {s.candidate.text && <p className="mt-4 max-w-[68ch] text-grey-700">{s.candidate.text}</p>}
                   {s.candidate.bullets.length > 0 && <ul className="mt-6 grid gap-3 sm:grid-cols-2">{s.candidate.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>}
-                  <p className="mt-6 text-sm text-grey-700">Not sure? Dr. Lavi will tell you honestly at your consultation, including when another option suits you better.</p>
+                  <p className="mt-6 text-base text-grey-700">Not sure? Dr. Lavi will tell you honestly at your consultation, including when another option suits you better.</p>
                 </div>
               </Block>
             )}
@@ -202,13 +192,13 @@ export async function ServiceView({ s }: { s: Service }) {
                 {whyPhotos.length > 0 && (
                   <div className="mt-8 grid grid-cols-3 gap-3">
                     {whyPhotos.slice(0, 3).map((img, i) => (
-                      <div key={img.src + i} className="overflow-hidden rounded-md"><Picture image={img} sizes="(min-width: 1024px) 250px, 33vw" className="aspect-square w-full object-cover object-top" /></div>
+                      <div key={img.src + i} className="overflow-hidden rounded-lg"><Picture image={img} sizes="(min-width: 1024px) 250px, 33vw" cropTo={1} className="aspect-square w-full object-cover object-top" /></div>
                     ))}
                   </div>
                 )}
-                <ul className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2">
+                <ul data-stagger className="fill-odd mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2">
                   {s.why.cards.map((c, i) => (
-                    <Reveal as="li" key={c.title} delay={(i % 2) * 70} className="flex gap-4">
+                    <Reveal as="li" key={c.title} className="flex gap-4">
                       <span className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sand-100 text-sm font-bold text-bronze-600">{i + 1}</span>
                       <div><h3 className="text-lg font-semibold">{c.title}</h3><p className="mt-1 text-grey-700">{c.text}</p></div>
                     </Reveal>
@@ -225,7 +215,7 @@ export async function ServiceView({ s }: { s: Service }) {
                     {s.care.intro && <p className="mt-4 max-w-[68ch] text-grey-700">{s.care.intro}</p>}
                     <div className="mt-6 grid gap-5 md:grid-cols-2">
                       {[["Before your appointment", s.care.before], ["After your appointment", s.care.after]].map(([t, items]) => (items as string[]).length > 0 && (
-                        <div key={t as string} className="rounded-md bg-greige-50 p-6">
+                        <div key={t as string} className="rounded-lg bg-greige-50 p-6">
                           <h3 className="text-lg font-semibold">{t as string}</h3>
                           <ul className="mt-4 space-y-3">{(items as string[]).map((b) => <Check key={b}>{b}</Check>)}</ul>
                         </div>
@@ -237,8 +227,8 @@ export async function ServiceView({ s }: { s: Service }) {
                   <div key={t.heading}>
                     <h2 className="text-3xl">{t.heading}</h2>
                     {t.text && <p className="mt-4 max-w-[68ch] text-grey-700">{t.text}</p>}
-                    <div className="mt-6 overflow-x-auto rounded-md ring-1 ring-ink-900/10">
-                      <table className="w-full text-[0.95rem]">
+                    <div className="mt-6 overflow-x-auto rounded-lg ring-1 ring-ink-900/10">
+                      <table className="w-full text-base sm:text-[0.95rem]">
                         <thead className="bg-greige-50 text-left"><tr>{t.rows[0].map((c, i) => <th key={i} scope="col" className="px-4 py-3 font-semibold text-ink-900">{c}</th>)}</tr></thead>
                         <tbody>{t.rows.slice(1).map((r, i) => <tr key={i} className="border-t border-ink-900/10">{r.map((c, j) => <td key={j} className={cn("px-4 py-3 align-top", j === 0 && "font-semibold text-ink-900")}>{c}</td>)}</tr>)}</tbody>
                       </table>
@@ -250,7 +240,7 @@ export async function ServiceView({ s }: { s: Service }) {
                     <h2 className="text-3xl">{e.heading}</h2>
                     <div className="mt-4 max-w-[68ch] space-y-4 text-grey-700">{e.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div>
                     {e.bullets.length > 0 && <ul className="mt-5 grid gap-3 sm:grid-cols-2">{e.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>}
-                    {e.cards.length > 0 && <dl className="mt-6 grid gap-x-8 gap-y-5 sm:grid-cols-2">{e.cards.map((c) => <div key={c.title} className="border-l-2 border-olive-600 pl-4"><dt className="font-semibold text-ink-900">{c.title}</dt><dd className="mt-1 text-grey-700">{c.text}</dd></div>)}</dl>}
+                    {e.cards.length > 0 && <dl className="fill-odd mt-6 grid gap-x-8 gap-y-5 sm:grid-cols-2">{e.cards.map((c) => <div key={c.title} className="border-l-2 border-olive-600 pl-4"><dt className="font-semibold text-ink-900">{c.title}</dt><dd className="mt-1 text-grey-700">{c.text}</dd></div>)}</dl>}
                   </div>
                 ))}
               </Block>
@@ -269,12 +259,7 @@ export async function ServiceView({ s }: { s: Service }) {
           <aside className="hidden lg:col-span-4 lg:block" aria-label={`Book ${inSentence(s.name)}`}>
             <div className="sticky top-24 space-y-6">
               <BookingCard s={s} />
-              <nav aria-label="On this page" className="rounded-md p-1">
-                <p className="text-sm font-semibold text-ink-900">On this page</p>
-                <ol className="mt-3 space-y-0.5 border-l border-ink-900/10">
-                  {toc.map((t) => <li key={t.id}><a href={`#${t.id}`} className="-ml-px block min-h-9 border-l-2 border-transparent py-1.5 pl-4 text-[0.95rem] text-grey-700 hover:border-olive-600 hover:text-ink-900">{t.label}</a></li>)}
-                </ol>
-              </nav>
+              <TocSpy items={toc} className="p-1" />
             </div>
           </aside>
         </div>
@@ -287,7 +272,7 @@ export async function ServiceView({ s }: { s: Service }) {
             <div>
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <h2 className="text-3xl">From our Google reviews</h2>
-                <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-olive-700 underline-offset-4 hover:underline"><Icon.google className="h-4 w-4" /> {site.rating.value} · {site.rating.count} reviews</a>
+                <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-olive-700 underline-offset-4 hover:underline"><Icon.google className="h-4 w-4" /> {site.rating.value} · {site.rating.count} reviews</a>
               </div>
               <div className="mt-8"><ReviewCarousel items={testimonials} /></div>
             </div>
@@ -295,7 +280,7 @@ export async function ServiceView({ s }: { s: Service }) {
           {related.length > 0 && (
             <div className="mt-16">
               <h2 className="text-3xl">Related treatments</h2>
-              <ul className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">{related.map((r, i) => <ServiceCard key={r.slug} s={r} index={i} />)}</ul>
+              <CardList items={related} className="mt-8" wideCols={4} wideAt="lg" />
             </div>
           )}
         </Container>
@@ -303,7 +288,7 @@ export async function ServiceView({ s }: { s: Service }) {
 
       <Section tight className="bg-warm">
         <Container>
-          <div className="flex flex-col items-start justify-between gap-6 rounded-md bg-olive-700 px-7 py-10 text-white sm:px-10 lg:flex-row lg:items-center">
+          <div className="flex flex-col items-start justify-between gap-6 rounded-lg bg-olive-700 px-7 py-10 text-white sm:px-10 lg:flex-row lg:items-center">
             <div>
               <h2 className="text-3xl text-white">{s.cta.heading}</h2>
               <p className="mt-2 max-w-xl text-white/85">{s.cta.text}</p>

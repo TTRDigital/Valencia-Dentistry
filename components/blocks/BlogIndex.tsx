@@ -50,7 +50,7 @@ export function BlogIndex({ posts, page = 1, categories }: { posts: PostSummary[
         {filtering ? `${list.length} article${list.length === 1 ? "" : "s"}${dq ? ` for “${q.trim()}”` : ""}${cat !== "All" ? ` in ${cat}` : ""}` : `${posts.length} articles`}
       </p>
       {shown.length ? (
-        <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{shown.map((p, i) => <PostCard key={p.slug} post={p} priority={i < 3 && page === 1} />)}</ul>
+        <ul data-stagger className="fill-odd-until-lg mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{shown.map((p, i) => <PostCard key={p.slug} post={p} priority={i < 3 && page === 1} headingLevel={2} />)}</ul>
       ) : (
         <p className="mt-10 rounded-3xl bg-greige-50 p-8 text-center text-grey-700">Nothing matches yet. Try another word, or <Link href="/contact/" className="font-semibold text-olive-600 underline-offset-4 hover:underline">ask us directly</Link>.</p>
       )}

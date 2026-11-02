@@ -28,8 +28,8 @@ export async function PostView({ post }: { post: Post }) {
     <article>
       <header className="border-b hairline bg-warm">
         <Container>
-          <div className="mx-auto max-w-[52rem] pt-8 pb-10 lg:pt-12 lg:pb-14">
-            <Breadcrumbs items={crumbs.slice(0, 2)} />
+          <div className="mx-auto max-w-[64rem] pt-8 pb-10 lg:pt-12 lg:pb-14"><div className="max-w-[52rem]">
+            <Breadcrumbs items={crumbs} />
             <p className="eyebrow mt-8 mb-4">{post.category}</p>
             <h1 className="text-5xl">{post.title}</h1>
             <p className="lead mt-5">{post.excerpt}</p>
@@ -39,25 +39,26 @@ export async function PostView({ post }: { post: Post }) {
               {post.dateModified && post.dateModified > post.datePublished && <span>Updated {formatDate(post.dateModified)}</span>}
               <span>{minutes} min read</span>
             </div>
-          </div>
+          </div></div>
         </Container>
       </header>
 
       <Container>
         <div className="mx-auto -mt-0 max-w-[64rem] pt-8">
-          <div className="overflow-hidden rounded-4xl shadow-lift">
-            <Picture image={{ src: post.image, alt: post.imageAlt }} priority sizes="(min-width: 1024px) 1024px, 100vw" className="aspect-[21/9] w-full object-cover" quality={80} />
+          <div className="overflow-hidden rounded-lg">
+            <Picture image={{ src: post.image, alt: post.imageAlt }} priority sizes="(min-width: 1024px) 1024px, 100vw" className="aspect-[16/10] w-full object-[center_30%] sm:aspect-[21/9] object-cover" quality={80} />
           </div>
         </div>
 
-        <div className="mx-auto grid max-w-[64rem] gap-12 py-12 lg:grid-cols-12 lg:py-16">
-          <aside className="lg:col-span-4">
-            <div className="sticky top-28 space-y-6">
+        <div className="mx-auto grid max-w-[64rem] grid-cols-1 gap-12 py-[var(--section-y-tight)] lg:grid-cols-12">
+          {/* Phones: the article comes first; the contents list and booking card follow it. */}
+          <aside className="order-last min-w-0 lg:order-first lg:col-span-4">
+            <div className="space-y-6 lg:sticky lg:top-28">
               {toc.length > 2 && (
                 <nav aria-label="Table of contents" className="card p-6">
                   <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">In this article</p>
-                  <ol className="mt-3 space-y-0.5 text-[0.95rem]">
-                    {toc.map((h) => <li key={h.id}><a href={`#${h.id}`} className="inline-block py-1 text-grey-700 hover:text-ink-900 hover:underline">{h.text}</a></li>)}
+                  <ol className="mt-3 text-base sm:text-[0.95rem]">
+                    {toc.map((h) => <li key={h.id}><a href={`#${h.id}`} className="flex min-h-11 items-center py-1 text-grey-700 hover:text-ink-900 hover:underline">{h.text}</a></li>)}
                   </ol>
                 </nav>
               )}
@@ -65,12 +66,12 @@ export async function PostView({ post }: { post: Post }) {
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">Talk to Dr. Lavi</p>
                 <p className="mt-2 text-white/80">Questions about your own situation? A $59 new patient exam includes X-rays and an unhurried consultation.</p>
                 <Button href={site.bookingUrl} variant="light" className="mt-4 w-full" arrow>Book online</Button>
-                <a href={`tel:${site.phone.tel}`} className="mt-3 block text-center text-sm text-white/80 hover:text-white">or call {site.phone.display}</a>
+                <a href={`tel:${site.phone.tel}`} className="mt-2 flex min-h-11 items-center justify-center text-sm text-white/80 hover:text-white">or call {site.phone.display}</a>
               </div>
             </div>
           </aside>
 
-          <div className="lg:col-span-8">
+          <div className="min-w-0 lg:col-span-8">
             {post.keyTakeaways.length > 0 && (
               <section aria-labelledby="takeaways" className="mb-10 rounded-3xl border border-bronze-300/70 bg-sand-50 p-6 sm:p-7">
                 <h2 id="takeaways" className="font-sans text-base font-semibold uppercase tracking-[0.14em] text-bronze-600">Key takeaways</h2>
@@ -104,21 +105,21 @@ export async function PostView({ post }: { post: Post }) {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>
                 <h2 id="author" className="mt-1 text-xl">{site.doctor.name}</h2>
-                <p className="mt-2 text-[0.95rem] text-grey-700">Dentist and owner of Valencia Dentistry in Santa Clarita. Dr. Lavi practices holistic, one-on-one dentistry with a focus on implants, cosmetic care and prevention.</p>
-                <Link href="/about/" className="mt-2 inline-block text-sm font-semibold text-olive-600 underline-offset-4 hover:underline">Meet Dr. Lavi →</Link>
+                <p className="mt-2 text-base sm:text-[0.95rem] text-grey-700">Dentist and owner of Valencia Dentistry in Santa Clarita. Dr. Lavi practices holistic, one-on-one dentistry with a focus on implants, cosmetic care and prevention.</p>
+                <Link href="/about/" className="link-arrow mt-1 text-sm">Meet Dr. Lavi <Icon.arrow className="h-4 w-4" /></Link>
               </div>
             </section>
-            <p className="mt-8 text-xs text-grey-600">This article is for general information and does not replace an examination. Treatment recommendations, timelines and costs depend on your individual situation.</p>
+            <p className="mt-8 text-base text-grey-600 sm:text-sm">This article is for general information and does not replace an examination. Treatment recommendations, timelines and costs depend on your individual situation.</p>
           </div>
         </div>
       </Container>
 
       {(related.length + fallback.length) > 0 && (
-        <section className="border-t hairline bg-white py-16" aria-labelledby="related-posts">
+        <section className="section-tight border-t hairline bg-white" aria-labelledby="related-posts">
           <Container>
             <div className="flex items-end justify-between gap-6">
               <h2 id="related-posts" className="text-3xl">Keep reading</h2>
-              <Link href="/category/blogs/" className="text-sm font-semibold text-olive-600 underline-offset-4 hover:underline">All articles →</Link>
+              <Link href="/category/blogs/" className="link-arrow text-sm">All articles <Icon.arrow className="h-4 w-4" /></Link>
             </div>
             <ul className="mt-8 grid gap-5 md:grid-cols-3">{[...related, ...fallback].map((p) => <PostCard key={p.slug} post={p} />)}</ul>
           </Container>
