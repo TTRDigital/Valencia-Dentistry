@@ -62,19 +62,24 @@
   --text-6xl: clamp(2.125rem, 1.7rem + 1.8vw, 3.25rem);
   --text-6xl--line-height: 1.1;
 
-  /* Radii: near-square (Ideal style) */
-  --radius-xl: 4px;
-  --radius-2xl: 4px;
-  --radius-3xl: 4px;
-  --radius-4xl: 6px;
+  /* Radii: one small set. sm = tags and badges, md = buttons and fields, lg (and the xl–4xl aliases) = cards, panels, images */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 10px;
+  --radius-2xl: 10px;
+  --radius-3xl: 10px;
+  --radius-4xl: 10px;
 
   /* Flat surfaces */
   --shadow-soft: 0 0 0 0 transparent;
   --shadow-lift: 0 12px 28px -18px rgb(20 20 20 / 0.35);
   --shadow-ring: 0 0 0 1px rgb(20 20 20 / 0.06);
 
-  /* Motion */
+  /* Motion tokens: durations (micro / standard / large), easings (out for enter, in for exit), travel distance */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
 }
 
 /* ------------------------------------------------------------------ */
@@ -86,8 +91,20 @@
     --display-weight: 600;
     --display-tracking: 0;
     --header-h: 72px;
+    /* Motion tokens (used by every animation; reduced motion zeroes them below) */
+    --dur-micro: 150ms;
+    --dur-std: 300ms;
+    --dur-large: 600ms;
+    --rise: 16px;
+    /* Section rhythm: one vertical spacing scale (mobile / tablet / desktop) */
+    --section-y: 64px;
+    --section-y-tight: 48px;
     color-scheme: light;
+    interpolate-size: allow-keywords;
   }
+  @media (min-width: 768px) { :root { --section-y: 96px; --section-y-tight: 64px; } }
+  @media (min-width: 1280px) { :root { --section-y: 128px; --section-y-tight: 80px; } }
+  @media (prefers-reduced-motion: reduce) { :root { --rise: 0px; } }
 
   html {
     overflow-x: clip;
@@ -113,7 +130,9 @@
   h1 { font-size: var(--text-5xl); line-height: var(--text-5xl--line-height); }
   h2 { font-size: var(--text-4xl); line-height: var(--text-4xl--line-height); }
   h3 { font-size: var(--text-2xl); line-height: var(--text-2xl--line-height); }
-  h4 { @apply font-sans font-semibold text-ink-900; font-size: var(--text-lg); }
+  h4 { @apply font-sans font-semibold text-ink-900; font-size: var(--text-lg); text-wrap: balance; }
+  /* One heading rhythm: headings never carry outer margins; spacing comes from the parent (mt-* on the next element). */
+  h1, h2, h3, h4 { margin: 0; }
   p { text-wrap: pretty; }
   a { @apply underline-offset-4; }
   ::selection { background: var(--color-olive-100); color: var(--color-ink-900); }
@@ -136,8 +155,8 @@
 /* ------------------------------------------------------------------ */
 @layer components {
   .container-x { @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8; }
-  .section { @apply py-14 sm:py-16 lg:py-24; }
-  .section-tight { @apply py-12 sm:py-14 lg:py-16; }
+  .section { padding-block: var(--section-y); }
+  .section-tight { padding-block: var(--section-y-tight); }
   .prose-measure { max-width: 70ch; }
 
   .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-bold uppercase tracking-[0.12em] text-olive-600; }
@@ -147,28 +166,55 @@
   .dark-section .lead, .on-dark .lead { @apply text-white/75; }
   .dark-section h1, .dark-section h2, .dark-section h3 { color: var(--color-white); }
 
-  /* Buttons: ≥44px tap targets */
-  /* Buttons: sentence case, softly rounded */
-  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-6 py-2.5 text-[0.9375rem] font-semibold no-underline transition-transform duration-200 ease-out select-none; }
-  .btn:active { transform: translateY(1px); }
-  .btn-primary { @apply bg-olive-600 text-white shadow-soft; }
-  .btn-primary:hover { @apply -translate-y-px bg-olive-700 shadow-lift; }
+  /* Buttons: one system. primary (olive), secondary (outline), light (on dark photos), dark; text links use .link-arrow.
+     One radius (md), one height per size (44 / 48 / 52px), labels never wrap. Hover: lift 1px + shadow + arrow nudge; press: settle. */
+  .btn { @apply relative inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-6 py-2.5 text-[0.9375rem] font-semibold no-underline whitespace-nowrap select-none; transition: transform var(--dur-micro) var(--ease-enter); }
+  .btn::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: var(--shadow-lift); opacity: 0; transition: opacity var(--dur-std) var(--ease-enter); pointer-events: none; }
+  .btn svg { transition: transform var(--dur-std) var(--ease-enter); }
+  .btn:hover { transform: translateY(-1px); }
+  .btn:hover::after { opacity: 1; }
+  .btn:hover svg:last-child:not(:first-child) { transform: translateX(3px); }
+  .btn:active { transform: translateY(0) scale(0.98); transition-duration: 80ms; }
+  .btn-primary { @apply bg-olive-600 text-white; }
+  .btn-primary:hover { @apply bg-olive-700; }
   .btn-dark { @apply bg-ink-900 text-white; }
   .btn-dark:hover { @apply bg-ink-800; }
-  .btn-light { @apply bg-white text-ink-900 shadow-soft; }
+  .btn-light { @apply bg-white text-ink-900; }
   .btn-light:hover { @apply bg-greige-50; }
-  .btn-outline { @apply border border-ink-900/20 text-ink-900 bg-transparent; }
-  .btn-outline:hover { @apply border-ink-900 bg-ink-900/5; }
+  .btn-outline, .btn-secondary { @apply border border-ink-900/25 bg-transparent text-ink-900; }
+  .btn-outline:hover, .btn-secondary:hover { @apply border-ink-900 bg-ink-900/5; }
+  .btn-outline::after, .btn-secondary::after { display: none; }
   .dark-section .btn-outline, .on-dark .btn-outline { @apply border-white/40 text-white; }
   .dark-section .btn-outline:hover, .on-dark .btn-outline:hover { @apply border-white bg-white/10; }
   .btn-lg { @apply min-h-13 px-7 text-base; }
-  .btn-sm { @apply min-h-11 px-4 text-sm; } /* 44px: every button is a full tap target */
+  .btn-sm { @apply min-h-11 px-4 text-sm; }
+  /* Text link with an arrow that nudges on hover (third button style) */
+  .link-arrow { @apply inline-flex min-h-11 items-center gap-1.5 font-semibold text-olive-700 no-underline; }
+  .link-arrow svg { transition: transform var(--dur-std) var(--ease-enter); }
+  .link-arrow:hover { @apply underline decoration-olive-600/40 underline-offset-4; }
+  .link-arrow:hover svg { transform: translateX(3px); }
 
-  /* Flat cards: photo on top, cream text block (Ideal style) */
-  .card { @apply rounded-[4px] bg-[#f4f2ea]; }
-  .card-hover { @apply transition-transform duration-300 ease-out; }
-  .card-hover:hover { @apply -translate-y-0.5 shadow-lift; }
-  @media (prefers-reduced-motion: reduce) { .card-hover:hover { transform: none; } }
+  /* Cards: one surface, one radius. Interactive cards lift 3px with a shadow fade and nudge their arrow. */
+  .card { @apply rounded-lg bg-[#f4f2ea]; }
+  .card-hover { position: relative; transition: transform var(--dur-std) var(--ease-enter); }
+  .card-hover::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: var(--shadow-lift); opacity: 0; transition: opacity var(--dur-std) var(--ease-enter); pointer-events: none; }
+  .card-hover:hover { transform: translateY(-3px); }
+  .card-hover:hover::after { opacity: 1; }
+  .card-hover:active { transform: translateY(-1px); }
+  .card-hover .arrow-nudge { transition: transform var(--dur-std) var(--ease-enter); }
+  .card-hover:hover .arrow-nudge, .card-hover:focus-within .arrow-nudge { transform: translateX(4px); }
+  @media (prefers-reduced-motion: reduce) { .card-hover:hover, .btn:hover { transform: none; } }
+  /* Cards in a row share rows (subgrid), so icons, titles, text and actions line up across siblings */
+  .subgrid-card { grid-row: span var(--rows, 4); display: grid; grid-template-rows: subgrid; row-gap: 0; align-content: start; }
+  /* No orphans in two-column lists: an odd last item spans the row */
+  @media (min-width: 640px) { .fill-odd > :last-child:nth-child(odd) { grid-column: 1 / -1; } }
+  @media (min-width: 640px) and (max-width: 1023.98px) { .fill-odd-until-lg > :last-child:nth-child(odd) { grid-column: 1 / -1; } }
+  /* Equal-height card content: image top, title, text, action pinned to the bottom */
+  .card-body { @apply flex flex-1 flex-col; }
+  .card-action { margin-top: auto; }
+
+  /* Portrait arch: the one decorative shape (fully round top, card radius at the bottom) */
+  .arch { border-radius: 9999px 9999px var(--radius-lg) var(--radius-lg); }
 
   .hairline { @apply border-ink-900/10; }
 
@@ -180,8 +226,85 @@
   /* ---------- Motion (all transform/opacity, 200-600ms, ease-out; off under reduced motion) ---------- */
 
   /* Scroll reveal (components/motion/RevealObserver.tsx): only elements below the fold get .reveal-pending after hydration. */
-  [data-reveal].reveal-pending { opacity: 0; transform: translateY(16px); }
-  [data-reveal].reveal-in { opacity: 1; transform: none; transition: opacity 500ms var(--ease-out-soft), transform 500ms var(--ease-out-soft); transition-delay: var(--reveal-delay, 0ms); }
+  [data-reveal].reveal-pending { opacity: 0; transform: translateY(var(--rise)); }
+  [data-reveal].reveal-in { opacity: 1; transform: none; transition: opacity var(--dur-large) var(--ease-enter), transform var(--dur-large) var(--ease-enter); transition-delay: var(--reveal-delay, var(--reveal-auto, 0ms)); }
+
+  /* Header over the hero: the hero runs under the transparent header; once scrolled (or a menu is open) the
+     header turns solid. Over dark heroes the header text and logo turn light. Pages without a hero: always solid. */
+  .site-header { --header-fg: var(--color-ink-900); --header-accent: var(--color-olive-700); }
+  .header-bg { transition: transform var(--dur-std) var(--ease-enter), opacity var(--dur-std) var(--ease-enter); }
+  [data-hero] { margin-top: calc(-1 * var(--header-h)); padding-top: var(--header-h); }
+  html:has([data-hero]) .site-header:not([data-scrolled]):not([data-open]) .header-bg { opacity: 0; }
+  html:has([data-hero="dark"]) .site-header:not([data-scrolled]):not([data-open]) {
+    --header-fg: #fff; --header-accent: var(--color-bronze-300);
+    --logo-ink: #fff; --logo-bronze: var(--color-bronze-300); --logo-bronze-text: var(--color-bronze-300);
+  }
+  .site-header svg path { transition: fill var(--dur-std) ease-out; }
+
+  /* Mega menu: panel drops in (--dur-std, ease-out), columns follow 40ms apart; closing is quicker and ease-in */
+  .mega { opacity: 0; transform: translateY(-6px); transition: opacity var(--dur-micro) var(--ease-exit), transform var(--dur-micro) var(--ease-exit); }
+  .mega[data-open] { opacity: 1; transform: none; transition: opacity var(--dur-std) var(--ease-enter), transform var(--dur-std) var(--ease-enter); }
+  .mega .mega-item { opacity: 0; transform: translateY(8px); transition: opacity var(--dur-micro) var(--ease-exit), transform var(--dur-micro) var(--ease-exit); }
+  .mega[data-open] .mega-item { opacity: 1; transform: none; transition: opacity var(--dur-std) var(--ease-enter), transform var(--dur-std) var(--ease-enter); transition-delay: calc(60ms + var(--i, 0) * 40ms); }
+
+  /* Hero staged entrance (CSS only, runs on first paint, no JS needed): eyebrow → headline words → lead →
+     buttons → trust points, ~80ms apart; the portrait is uncovered by a soft curtain while it settles from 104%.
+     Everything is finished by ~650ms, Book Now is readable from ~320ms. Reduced motion: no animation. */
+  .hero-stage [data-stage] { animation: fade-rise-sm var(--dur-large) var(--ease-enter) both; animation-delay: calc(var(--d, 0) * 1ms); }
+  .hero-stage [data-stage="0"] { --d: 0; }
+  .hero-stage [data-stage="3"] { --d: 220; }
+  .hero-stage [data-stage="4"] { --d: 300; }
+  .hero-stage [data-stage="5"] { --d: 380; }
+  .hero-word { display: inline-block; animation: fade-rise-sm var(--dur-large) var(--ease-enter) both; animation-delay: calc(60ms + min(var(--w, 0), 8) * 35ms); }
+  .hero-portrait > img { animation: settle 900ms var(--ease-enter) both; }
+  .hero-portrait::after { content: ""; position: absolute; inset: -2px; background: linear-gradient(to bottom, var(--color-ink-900) 82%, transparent); transform: translateY(-120%); animation: curtain 700ms var(--ease-enter) 120ms backwards; pointer-events: none; }
+  @keyframes fade-rise-sm { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes settle { from { transform: scale(1.04); } to { transform: none; } }
+  @keyframes curtain { from { transform: translateY(0); } to { transform: translateY(-120%); } }
+  /* Gentle parallax on the portrait, desktop only, scroll-driven (no JS); browsers without scroll timelines keep it still */
+  @supports (animation-timeline: view()) {
+    @media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+      .hero-parallax { animation: parallax linear both; animation-timeline: view(); animation-range: exit 0% exit 100%; }
+      @keyframes parallax { from { transform: translateY(0); } to { transform: translateY(-48px); } }
+    }
+  }
+
+  /* Before/after: a soft ring pulses around the handle while the one-time drag hint plays */
+  .compare-knob::after { content: ""; position: absolute; inset: -6px; border-radius: 9999px; border: 2px solid #fff; opacity: 0; pointer-events: none; }
+  .compare-knob[data-hint]::after { animation: knob-pulse 650ms var(--ease-enter) 2; }
+  @keyframes knob-pulse { from { opacity: 0.9; transform: scale(0.85); } to { opacity: 0; transform: scale(1.35); } }
+
+  /* FAQ accordions: the answer opens with a smooth height (::details-content + interpolate-size, Chromium 131+;
+     other browsers open instantly) and fades/settles in. Height is animated only here, on user input, so it never
+     counts as layout shift. */
+  .faq-item::details-content { block-size: 0; overflow: clip; transition: block-size var(--dur-std) var(--ease-enter), content-visibility var(--dur-std) allow-discrete; }
+  .faq-item[open]::details-content { block-size: auto; }
+  .faq-item .faq-answer { opacity: 0; transform: translateY(-6px); transition: opacity var(--dur-std) var(--ease-enter), transform var(--dur-std) var(--ease-enter); }
+  .faq-item[open] .faq-answer { opacity: 1; transform: none; }
+
+  /* Map pin drops onto the office once the map scrolls into view (CSS only; static without motion) */
+  .office-map:has(.reveal-pending) .map-pin { opacity: 0; }
+  .office-map:has(.reveal-in) .map-pin { animation: pin-drop var(--dur-large) var(--ease-enter) 150ms both; }
+  @keyframes pin-drop { from { opacity: 0; transform: translate(-50%, calc(-100% - 18px)); } to { opacity: 1; transform: translate(-50%, -100%); } }
+
+  /* Review carousel: progress line fills while waiting for the next automatic advance */
+  .review-progress { animation-name: grow-x; animation-timing-function: linear; animation-fill-mode: both; }
+  @keyframes grow-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+  /* Service pages: reading progress line across the top of the viewport, driven by scroll (no JS) */
+  .reading-progress { display: none; }
+  @supports (animation-timeline: scroll()) {
+    .reading-progress { display: block; position: fixed; inset: 0 0 auto 0; z-index: 60; height: 3px; background: var(--color-olive-600); transform-origin: left; animation: grow-x linear both; animation-timeline: scroll(root); }
+    @media (prefers-reduced-motion: reduce) { .reading-progress { display: none; } }
+  }
+  .toc-link { transition: border-color var(--dur-micro) ease-out, color var(--dur-micro) ease-out; }
+
+  /* Current page in the header: bolder label and a solid underline in the accent colour (draws in on load) */
+  .nav-link[data-active] { font-weight: 600; color: var(--header-accent); }
+  .nav-link[data-active]::after { content: ""; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 0.25rem; height: 2px; border-radius: 2px; background: currentColor; transform-origin: left; animation: grow-x var(--dur-std) var(--ease-enter) both; }
+
+  /* Route change: content fades in (first load is never animated, see PageTransition.tsx) */
+  .page-enter { animation: fade-in var(--dur-std) var(--ease-enter) both; }
 
   /* First-visit timeline: finished state by default; JS adds data-animated */
   .timeline-line { transition: transform 500ms var(--ease-out-soft); }
@@ -226,7 +349,9 @@
   .rich table { @apply w-full border-collapse text-[0.95rem]; }
   .rich .table-wrap { @apply my-6 overflow-x-auto rounded-[4px] ring-1 ring-ink-900/10; }
   .rich th { @apply bg-greige-50 px-4 py-3 text-left font-semibold text-ink-900; }
-  .rich td { @apply border-t border-ink-900/10 px-4 py-3 align-top; }
+  .rich td { @apply border-t border-ink-900/10 px-4 py-3 align-top; font-variant-numeric: tabular-nums; }
+  .rich td:first-child { min-width: 9rem; }
+  .rich table { min-width: 34rem; } /* scrolls inside .table-wrap on phones instead of squeezing */
   .rich img { @apply rounded-2xl; }
   .rich hr { @apply my-10 border-ink-900/10; }
 }

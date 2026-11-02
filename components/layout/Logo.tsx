@@ -8,9 +8,10 @@ import { MARK, WORD } from "./logo-paths";
  * and "DENTISTRY" stay bronze in both.
  */
 export function Logo({ className, inverted, markOnly }: { className?: string; inverted?: boolean; markOnly?: boolean }) {
-  const ink = inverted ? "#FFFFFF" : "#2E2E2E";
-  const bronze = inverted ? "#C9BA9C" : "#9A8B72";
-  const bronzeText = inverted ? "#C9BA9C" : "#7A6B52";
+  // CSS variables let a parent recolour the lockup (the header does over dark heroes).
+  const ink = inverted ? "#FFFFFF" : "var(--logo-ink, #2E2E2E)";
+  const bronze = inverted ? "#C9BA9C" : "var(--logo-bronze, #9A8B72)";
+  const bronzeText = inverted ? "#C9BA9C" : "var(--logo-bronze-text, #7A6B52)";
   return (
     <span className={cn("inline-flex items-center gap-3", className)}>
       <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} className="h-8 w-auto shrink-0 sm:h-10" aria-hidden="true" focusable="false">

@@ -11,7 +11,25 @@ type Props = Omit<ImageProps, "src" | "alt" | "width" | "height" | "placeholder"
   alt?: string;
   /** When true, width/height come from the parent (object-cover). */
   fill?: boolean;
+  /**
+   * Aspect ratio (width / height) of the box the image is cropped into with object-fit: cover.
+   * When the photo is wider than the box, cover scales it by box height, so the browser needs a
+   * proportionally wider file than `sizes` alone suggests; the sizes are scaled up to match.
+   */
+  cropTo?: number;
 };
+
+/** Multiply every length in a sizes attribute (not the media conditions) by `f`. */
+export function scaleSizes(sizes: string, f: number) {
+  if (f <= 1.02) return sizes;
+  return sizes.split(",").map((part) => {
+    const i = part.lastIndexOf(")");
+    const cond = i > -1 ? part.slice(0, i + 1) : "";
+    const len = (i > -1 ? part.slice(i + 1) : part).trim();
+    const m = len.match(/^(\d+(?:\.\d+)?)(px|vw)$/);
+    return `${cond} ${m ? `${Math.round(Number(m[1]) * f)}${m[2]}` : len}`.trim();
+  }).join(", ");
+}
 
 /**
  * next/image with dimensions and blur placeholders filled in from the
@@ -20,13 +38,16 @@ type Props = Omit<ImageProps, "src" | "alt" | "width" | "height" | "placeholder"
  * printed as a plain <img srcset> of static files, so the LCP hero never
  * waits for on-request optimization.
  */
-export function Picture({ image, alt, fill, sizes, className, priority, quality, ...rest }: Props) {
+export function Picture({ image, alt, fill, sizes: sizesIn, className, priority, quality, cropTo, ...rest }: Props) {
   const img: SiteImage = typeof image === "string" ? { src: image, alt: alt ?? "" } : image;
   const meta = known[img.src];
   const width = img.width ?? meta?.width;
   const height = img.height ?? meta?.height;
+  const sizes = sizesIn && cropTo && width && height ? scaleSizes(sizesIn, width / height / cropTo) : sizesIn;
   const blur = img.blurDataURL ?? meta?.blurDataURL;
   const altText = alt ?? img.alt ?? "";
+  // A content-defined focal point wins over the component's default object-position class
+  if (img.focus) (rest as { style?: React.CSSProperties }).style = { ...(rest as { style?: React.CSSProperties }).style, objectPosition: img.focus };
 
   if (meta?.opt?.length) {
     const name = img.src.replace(/^.*\//, "").replace(/\.[a-z0-9]+$/i, "");
