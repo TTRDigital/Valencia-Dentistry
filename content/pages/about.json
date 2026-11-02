@@ -89,52 +89,58 @@
       "lead": "Dentist and practice owner, known for compassionate care, technical precision and the long-term relationships he builds with patients."
     },
     {
-      "_type": "featureGrid",
-      "eyebrow": "Technology",
-      "heading": "Comfort meets innovation",
-      "lead": "Our office is equipped for safe, efficient and minimally invasive care, combined with a calming environment and sedation options.",
-      "columns": 4,
-      "dark": true,
+      "_type": "techExplainer",
+      "eyebrow": "Inside the office",
+      "heading": "Technology in the office, explained",
+      "lead": "Our office is equipped for safe, efficient and minimally invasive care. Tap or hover over each one to see what it means for you.",
       "items": [
         {
           "icon": "tech",
           "title": "3D CBCT imaging",
-          "text": "Detailed three-dimensional scans for precise diagnosis and guided implant planning."
+          "text": "Detailed three-dimensional scans for precise diagnosis and guided implant planning.",
+          "forYou": "Implants are planned on your own scan, so there are fewer surprises on the day."
         },
         {
           "icon": "sparkle",
           "title": "iTero digital scanning",
-          "text": "Comfortable digital impressions for Invisalign, crowns and smile previews. No goopy trays."
+          "text": "Digital impressions for Invisalign, crowns and smile previews.",
+          "forYou": "No goopy trays, and you can preview your new smile on screen."
         },
         {
           "icon": "leaf",
           "title": "PRF therapy",
-          "text": "Platelet-rich fibrin from your own blood to support healing after surgery and grafting."
+          "text": "Platelet-rich fibrin from your own blood.",
+          "forYou": "Used after surgery and grafting to support your healing."
         },
         {
           "icon": "shield",
           "title": "Guided implant surgery",
-          "text": "Implants placed with a surgical guide planned on your CBCT scan for accuracy and comfort."
+          "text": "Implants placed with a surgical guide planned on your CBCT scan.",
+          "forYou": "Accurate placement that is mapped out before your procedure begins."
         },
         {
           "icon": "bolt",
           "title": "In-house crowns",
-          "text": "Custom crowns designed and made on site, so many patients leave with the final crown the same day."
+          "text": "Custom crowns designed and made on site.",
+          "forYou": "Many patients leave with the final crown the same day."
         },
         {
           "icon": "smile",
           "title": "Intraoral cameras",
-          "text": "See what we see. Clear images make it easier to understand your options."
+          "text": "Clear close-up images of your teeth.",
+          "forYou": "You see what we see, so your options are easier to understand."
         },
         {
           "icon": "sparkle",
           "title": "Laser dentistry",
-          "text": "Precise, gentle treatment of soft tissue with less bleeding and faster recovery."
+          "text": "Precise, gentle treatment of soft tissue.",
+          "forYou": "Less bleeding and a faster recovery."
         },
         {
           "icon": "heart",
           "title": "Sedation options",
-          "text": "Comfort choices for anxious patients and longer procedures, discussed at your consultation."
+          "text": "Comfort choices for anxious patients and longer procedures.",
+          "forYou": "We talk through what would help you relax at your consultation."
         }
       ]
     },

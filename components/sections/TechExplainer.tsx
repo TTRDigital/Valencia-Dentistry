@@ -19,7 +19,7 @@ export function TechExplainer({ s }: { s: TechExplainerSection }) {
     <Section className={s.dark ? "dark-section" : "bg-white"} id="technology">
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-        <ul className="mt-12 grid gap-px overflow-hidden rounded-[4px] bg-ink-900/10 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className={cn("mt-12 grid gap-px overflow-hidden rounded-[4px] bg-ink-900/10 sm:grid-cols-2", s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3")}>
           {s.items.map((it, i) => (
             <Reveal as="li" key={it.title} delay={(i % 3) * 70} className={cn("tech-card group relative flex flex-col p-7", s.dark ? "bg-ink-900" : "bg-white")}>
               <div data-open={open[i] ? "" : undefined} className="tech-inner flex h-full flex-col">

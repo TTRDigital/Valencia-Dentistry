@@ -27,29 +27,38 @@ export async function Team({ s }: { s: TeamSection }) {
   const people = await getPeople();
   const list = s.slugs?.length ? people.filter((p) => s.slugs!.includes(p.slug)) : people;
   return (
-    <section id="team" aria-labelledby="team-heading">
-      <h2 id="team-heading" className="sr-only">{s.heading}</h2>
-      {list.map((p, i) => (
-        <article key={p.slug} className="grid bg-ink-900 text-white lg:min-h-[560px] lg:grid-cols-2">
-          <div className={i % 2 ? "relative min-h-[420px] lg:order-1" : "relative min-h-[420px] lg:order-2"}>
-            <Picture image={p.image} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-top" />
-          </div>
-          <div className={i % 2 ? "flex items-center lg:order-2" : "flex items-center lg:order-1"}>
-            <div className="w-full px-4 py-12 sm:px-10 lg:px-16 lg:py-20 xl:pl-[max(4rem,calc((100vw-1280px)/2+2rem))]">
-              {s.eyebrow && <p className="eyebrow mb-4 text-bronze-300">{s.eyebrow}</p>}
-              <h3 className="text-3xl text-white">{p.name}{p.credentials ? `, ${p.credentials}` : ""}</h3>
-              <p className="mt-1 text-sm font-bold uppercase tracking-[0.1em] text-bronze-300">{p.role}</p>
-              <div className="mt-6 max-w-xl space-y-4 text-white/80">{p.bio.map((b, k) => <p key={k}>{b}</p>)}</div>
+    <Section id="team" className="bg-greige-50" aria-labelledby="team-heading">
+      <Container>
+        <Reveal className="max-w-3xl">
+          {s.eyebrow && <p className="eyebrow mb-4">{s.eyebrow}</p>}
+          <h2 id="team-heading" className="text-4xl">{s.heading}</h2>
+          {s.lead && <p className="mt-4 text-lg text-grey-700">{s.lead}</p>}
+        </Reveal>
+        {list.map((p) => (
+          <article key={p.slug} className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-14">
+            {/* Profile card: portrait and the essentials, kept in view while the bio scrolls */}
+            <div className="lg:col-span-4">
+              <div className="overflow-hidden rounded-md bg-white ring-1 ring-ink-900/10 lg:sticky lg:top-24">
+                <Picture image={p.image} sizes="(min-width: 1024px) 380px, 100vw" className="aspect-[4/5] w-full object-cover object-top" />
+                <div className="p-5">
+                  <h3 className="text-2xl">{p.name}{p.credentials ? `, ${p.credentials}` : ""}</h3>
+                  <p className="mt-1 text-sm font-semibold text-olive-700">{p.role}</p>
+                  <Button href={site.bookingUrl} size="sm" className="mt-4" arrow>Book with Dr. Lavi</Button>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-8">
+              <div className="max-w-[66ch] space-y-5 text-lg text-grey-700">{p.bio.map((b, k) => <Reveal key={k} delay={Math.min(k, 3) * 60}><p>{b}</p></Reveal>)}</div>
               {p.highlights && (
-                <ul className="mt-6 grid max-w-xl gap-2.5 sm:grid-cols-2">
-                  {p.highlights.map((h) => <li key={h} className="flex items-start gap-2.5 text-[0.95rem] text-white/85"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-bronze-300" />{h}</li>)}
+                <ul className="mt-10 grid gap-x-8 gap-y-4 border-t border-ink-900/10 pt-8 sm:grid-cols-2">
+                  {p.highlights.map((h) => <li key={h} className="flex items-start gap-3 text-grey-900"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-olive-600" aria-hidden="true" />{h}</li>)}
                 </ul>
               )}
             </div>
-          </div>
-        </article>
-      ))}
-    </section>
+          </article>
+        ))}
+      </Container>
+    </Section>
   );
 }
 
