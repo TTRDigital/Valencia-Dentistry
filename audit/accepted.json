@@ -1,0 +1,5 @@
+[
+  { "check": "left-edge", "where": "^(p|h1|h2) \"", "reason": "Intentional: centred reading column (blog posts, legal pages, emergency checklist) narrower than the page container" },
+  { "check": "heading-orphan", "where": "^Heading \"[^ ]+ [^ ]+\"$", "reason": "Two-word card titles in narrow cards can only break into one word per line" },
+  { "check": "image-blurry", "where": "After: a full set|^Image \"\"$", "reason": "Before/after source photos are only 345–437px wide; the slider is capped at 440px, the closest it can get without new photos" }
+]

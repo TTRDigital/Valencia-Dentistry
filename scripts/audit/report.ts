@@ -12,6 +12,9 @@ const after = load("audit/data/after.json");
 const lhBefore = load("audit/data/lighthouse-before.json");
 const lhAfter = load("audit/data/lighthouse-after.json");
 const manual: Manual[] = load("audit/visual-review.json") ?? [];
+// Findings judged intentional after review: shown as "Accepted" with the reason instead of "Remaining".
+const accepted: { check: string; where: string; reason: string }[] = load("audit/accepted.json") ?? [];
+const acceptedFor = (check: string, where: string) => accepted.find((a) => a.check === check && new RegExp(a.where).test(where));
 if (!before) throw new Error("Run npm run audit:visual -- --phase before first");
 
 const SEV = ["Critical", "High", "Medium", "Low"];
@@ -136,7 +139,8 @@ for (const g of groups) {
     let status = "";
     if (A) {
       const k = [...A.keys()].find((k) => { const x = A.get(k)!; return x.group === e.group && x.check === e.check && norm(x.where) === norm(e.where); });
-      status = k ? `Remaining${A.get(k)!.widths.size < e.widths.size ? ` (${widthsTxt(A.get(k)!.widths)})` : ""}` : "Fixed";
+      const acc = acceptedFor(e.check, e.where);
+      status = k ? (acc ? `Accepted: ${acc.reason}` : `Remaining${A.get(k)!.widths.size < e.widths.size ? ` (${widthsTxt(A.get(k)!.widths)})` : ""}`) : "Fixed";
     }
     md += `| ${esc(e.check)}: ${esc(e.detail).slice(0, 170)} | ${esc(where)} | ${e.severity} | ${shotPath("before", r, w)} | ${esc(fixFor(e.check))}${A ? ` | ${status}` : ""} |\n`;
   }
@@ -146,8 +150,9 @@ for (const g of groups) {
 if (A) {
   const total = B.size, fixed = [...B.keys()].filter((k) => { const e = B.get(k)!; return ![...A.values()].some((x) => x.group === e.group && x.check === e.check && norm(x.where) === norm(e.where)); }).length;
   const newOnes = [...A.values()].filter((x) => ![...B.values()].some((e) => e.group === x.group && e.check === x.check && norm(x.where) === norm(e.where)));
+  const accCount = [...B.keys()].filter((k) => { const e = B.get(k)!; return [...A.values()].some((x) => x.group === e.group && x.check === e.check && norm(x.where) === norm(e.where)) && acceptedFor(e.check, e.where); }).length;
   const bySev = (m: Map<string, { severity: string }>) => SEV.map((s) => `${s} ${[...m.values()].filter((e) => e.severity === s).length}`).join(" · ");
-  md += `\n## AFTER\n\nMeasured ${after.date.slice(0, 10)} with the same script. ${fixed} of ${total} measured findings fixed; ${total - fixed} remaining (see the After column above).\n\n- Before: ${bySev(B)}\n- After: ${bySev(A)}\n`;
+  md += `\n## AFTER\n\nMeasured ${after.date.slice(0, 10)} with the same script. ${fixed} of ${total} measured findings fixed, ${accCount} accepted as intentional (reason given in the After column), ${total - fixed - accCount} remaining.\n\n- Before: ${bySev(B)}\n- After: ${bySev(A)}\n`;
   if (newOnes.length) {
     md += `\nNew findings that appeared after the changes:\n\n| Page | Issue | Where | Severity |\n|---|---|---|---|\n`;
     for (const x of newOnes) md += `| ${x.group} | ${esc(x.check)}: ${esc(x.detail).slice(0, 150)} | ${esc(x.where)} @ ${widthsTxt(x.widths)} | ${x.severity} |\n`;

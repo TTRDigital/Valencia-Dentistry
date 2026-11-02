@@ -1,10 +1,10 @@
 // Visual + layout audit for every route at seven widths.
-//   npm run audit:visual -- [--base http://localhost:3000] [--phase before|after] [--routes /,/about/] [--widths 375,1440] [--no-shots]
+//   npm run audit:visual -- [--base http://localhost:3000] [--phase before|after] [--routes /,/about/] [--widths 375,1440] [--no-shots] [--merge]
 // Output:
 //   audit/screenshots/<route>/<width>.png          (phase "before")
 //   audit/after/screenshots/<route>/<width>.png    (phase "after")
 //   audit/data/<phase>.json                        (all measurements; read by report.ts)
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { chromium, type Browser, type Page } from "playwright";
 
@@ -187,7 +187,16 @@ await Promise.all(Array.from({ length: CONCURRENCY }, async () => {
 await browser.close();
 mkdirSync(join(ROOT, "audit/data"), { recursive: true });
 const file = join(ROOT, "audit/data", `${PHASE}.json`);
-results.sort((a, b) => list.indexOf(a.route) - list.indexOf(b.route) || a.width - b.width);
-writeFileSync(file, JSON.stringify({ base: BASE, date: new Date().toISOString(), widths: WIDTHS, routes: list, results }, null, 1));
+// --merge: re-measure only the given routes and replace their results in an existing run
+if (process.argv.includes("--merge") && existsSync(file)) {
+  const prev = JSON.parse(readFileSync(file, "utf8"));
+  const redone = new Set(results.map((r) => `${r.route}|${r.width}`));
+  const merged = [...prev.results.filter((r: Result) => !redone.has(`${r.route}|${r.width}`)), ...results];
+  merged.sort((a: Result, b: Result) => prev.routes.indexOf(a.route) - prev.routes.indexOf(b.route) || a.width - b.width);
+  writeFileSync(file, JSON.stringify({ ...prev, date: new Date().toISOString(), results: merged }, null, 1));
+} else {
+  results.sort((a, b) => list.indexOf(a.route) - list.indexOf(b.route) || a.width - b.width);
+  writeFileSync(file, JSON.stringify({ base: BASE, date: new Date().toISOString(), widths: WIDTHS, routes: list, results }, null, 1));
+}
 const n = results.reduce((s, r) => s + r.issues.length, 0);
 console.log(`Wrote ${file}: ${n} raw findings, ${results.filter((r) => r.console.length).length} runs with console errors, ${results.filter((r) => r.failed.length).length} with failed requests`);

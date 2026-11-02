@@ -20,11 +20,15 @@ const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
  * `featured` cards span two columns (see cardGrid) with a wider image; `unspanAt` returns them
  * to a normal card where the grid widens to a single row.
  */
-export function ServiceCard({ s, featured, className, unspanAt }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null }) {
-  const imgAspect = featured ? cn("aspect-[16/9] sm:aspect-[21/9]", unspanAt === "lg" && "lg:aspect-[16/10]", unspanAt === "xl" && "xl:aspect-[16/10]") : "aspect-[4/3] sm:aspect-[16/10]";
+export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null; sharesRowAt?: "lg" | "xl" | null }) {
+  // Cards are two-row subgrids (image, text), so cards in one row share both row heights: images,
+  // titles and "Learn more" line up. A featured card that shares its row lets the row height win.
+  const imgAspect = featured
+    ? cn("aspect-[16/9] sm:aspect-[21/9]", unspanAt === "lg" && "lg:aspect-[16/10]", unspanAt === "xl" && "xl:aspect-[16/10]", sharesRowAt === "lg" && "lg:aspect-auto lg:h-full", sharesRowAt === "xl" && "xl:aspect-auto xl:h-full")
+    : "aspect-[4/3] sm:aspect-[16/10]";
   return (
-    <Reveal as="li" className={cn("card card-hover group flex flex-col", className)}>
-      <Link href={s.path} className="flex h-full flex-col no-underline">
+    <Reveal as="li" className={cn("card card-hover group row-span-2 grid grid-rows-subgrid gap-y-0", className)}>
+      <Link href={s.path} className="row-span-2 grid grid-rows-subgrid gap-y-0 no-underline">
         <div className={cn("relative overflow-hidden rounded-t-lg", imgAspect)}>
           <Picture image={s.hero.image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw"} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
@@ -43,7 +47,7 @@ export function CardList({ items, className, wideCols = 3, wideAt = "xl" }: { it
   const plan = cardGrid(items.length, wideCols, wideAt);
   return (
     <ul data-stagger className={cn(plan.ul, "gap-3 sm:gap-5", className)}>
-      {items.map((s, i) => <ServiceCard key={s.slug} s={s} featured={i === 0 && plan.featured} unspanAt={plan.unspanAt} className={i === 0 ? plan.first : undefined} />)}
+      {items.map((s, i) => <ServiceCard key={s.slug} s={s} featured={i === 0 && plan.featured} unspanAt={plan.unspanAt} sharesRowAt={plan.featured && !plan.unspanAt && plan.ul.includes(`${wideAt}:grid-cols-`) ? wideAt : null} className={i === 0 ? plan.first : undefined} />)}
     </ul>
   );
 }
