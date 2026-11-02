@@ -233,11 +233,6 @@
 
 @layer utilities {
   /* Lead form on a dark section (utilities layer, so it overrides the form's own text colours) */
-  .form-dark label, .form-dark label .text-ink-900 { color: #fff; }
-  .form-dark .text-grey-700, .form-dark .text-grey-600 { color: rgb(255 255 255 / 0.75); }
-  .form-dark a.text-olive-600 { color: var(--color-bronze-300); }
-  .form-dark .text-danger { color: #f4a291; }
-  .form-dark [role="alert"].bg-red-50 { color: var(--color-danger); }
   .text-balance { text-wrap: balance; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { scrollbar-width: none; }
