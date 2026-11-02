@@ -1,0 +1,101 @@
+{
+ "date": "2026-11-02T18:53:18.246Z",
+ "rows": [
+  {
+   "page": "/",
+   "form": "mobile",
+   "performance": 96,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "2.0 s",
+   "cls": "0",
+   "tbt": "210 ms",
+   "inp": "80 ms"
+  },
+  {
+   "page": "/",
+   "form": "desktop",
+   "performance": 100,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "0.4 s",
+   "cls": "0",
+   "tbt": "10 ms",
+   "inp": "144 ms"
+  },
+  {
+   "page": "/services/dental-implants/",
+   "form": "mobile",
+   "performance": 99,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "1.8 s",
+   "cls": "0",
+   "tbt": "120 ms",
+   "inp": "96 ms"
+  },
+  {
+   "page": "/services/dental-implants/",
+   "form": "desktop",
+   "performance": 100,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "0.5 s",
+   "cls": "0",
+   "tbt": "0 ms",
+   "inp": "128 ms"
+  },
+  {
+   "page": "/services/oral-surgery/all-on-4-implants/",
+   "form": "mobile",
+   "performance": 98,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "2.0 s",
+   "cls": "0",
+   "tbt": "120 ms",
+   "inp": "168 ms"
+  },
+  {
+   "page": "/services/oral-surgery/all-on-4-implants/",
+   "form": "desktop",
+   "performance": 100,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "0.5 s",
+   "cls": "0",
+   "tbt": "0 ms",
+   "inp": "32 ms"
+  },
+  {
+   "page": "/services/cosmetic-dentistry/veneers/",
+   "form": "mobile",
+   "performance": 98,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "2.0 s",
+   "cls": "0",
+   "tbt": "140 ms",
+   "inp": "88 ms"
+  },
+  {
+   "page": "/services/cosmetic-dentistry/veneers/",
+   "form": "desktop",
+   "performance": 100,
+   "accessibility": 100,
+   "bestPractices": 100,
+   "seo": 100,
+   "lcp": "0.5 s",
+   "cls": "0",
+   "tbt": "0 ms",
+   "inp": "176 ms"
+  }
+ ]
+}
