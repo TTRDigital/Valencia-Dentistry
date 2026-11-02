@@ -10,7 +10,7 @@ import { chromium } from "playwright";
 
 const BASE = (process.argv[2] || "http://localhost:3000").replace(/\/$/, "");
 const pages = process.argv.slice(3).length ? process.argv.slice(3) : ["/", "/about/", "/services/", "/services/dental-implants/", "/category/blogs/", "/dental-implants-cost/", "/contact/", "/appointment/", "/new-patient-offer/", "/styleguide/"];
-const widths = [390, 768, 1024, 1440, 1920];
+const widths = process.env.WIDTHS ? process.env.WIDTHS.split(",").map(Number) : [390, 768, 1024, 1440, 1920];
 mkdirSync("qa/screenshots", { recursive: true });
 const browser = await chromium.launch();
 for (const w of widths) {
