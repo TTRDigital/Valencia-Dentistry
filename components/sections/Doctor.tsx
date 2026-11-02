@@ -12,9 +12,9 @@ export function Doctor({ s }: { s: DoctorSection }) {
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <div className="relative mx-auto max-w-md">
-              <div className="absolute -inset-3 rounded-[2.5rem] border border-bronze-300/30" aria-hidden="true" />
+              <div className="absolute -inset-3 rounded-lg border border-bronze-300/30" aria-hidden="true" />
               <div className="overflow-hidden rounded-4xl shadow-lift">
-                <Picture image={s.image} sizes="(min-width: 1024px) 460px, 90vw" className="aspect-[4/5] w-full object-cover object-top" />
+                <Picture image={s.image} sizes="(min-width: 1024px) 460px, 90vw" cropTo={4 / 5} className="aspect-[4/5] w-full object-cover object-top" />
               </div>
             </div>
           </Reveal>

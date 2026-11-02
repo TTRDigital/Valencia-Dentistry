@@ -12,8 +12,8 @@ export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
       <Container>
         <div className="grid items-center gap-10 md:grid-cols-12 lg:gap-16">
           <Reveal className="md:col-span-5">
-            <div className="overflow-hidden rounded-t-[999px] rounded-b-[4px] bg-greige-50">
-              <Picture image={s.image} sizes="(min-width: 768px) 420px, 100vw" className="aspect-[4/5] w-full object-cover object-top" />
+            <div className="overflow-hidden arch bg-greige-50">
+              <Picture image={s.image} sizes="(min-width: 768px) 420px, 100vw" cropTo={4 / 5} className="aspect-[4/5] w-full object-cover object-top" />
             </div>
           </Reveal>
           <div className="md:col-span-7">

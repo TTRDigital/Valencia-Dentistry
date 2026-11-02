@@ -19,12 +19,13 @@ export function FeatureGrid({ s }: { s: FeatureGridSection }) {
     <Section dark={s.dark}>
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
-        <ul className={cn("mt-12 grid gap-5 sm:grid-cols-2", cols === 3 && "lg:grid-cols-3", cols === 4 && "lg:grid-cols-4")}>
-          {s.items.map((f, i) => (
-            <Reveal as="li" key={f.title} delay={(i % cols) * 70} className={cn("card card-hover p-7", s.dark && "bg-white/[0.06] shadow-none ring-white/10")}>
+        {/* Three items sit in one row from tablet up; other odd counts let the last card span the row below lg (no orphan). */}
+        <ul data-stagger className={cn("mt-12 grid gap-5", s.items.length === 3 && cols === 3 ? "md:grid-cols-3" : "sm:grid-cols-2", s.items.length % 2 === 1 && s.items.length !== 3 && "fill-odd-until-lg", cols === 3 && "lg:grid-cols-3", cols === 4 && "lg:grid-cols-4")}>
+          {s.items.map((f) => (
+            <Reveal as="li" key={f.title} className={cn("card p-7", s.dark && "bg-white/[0.06] shadow-none ring-white/10")}>
               <FeatureIcon name={f.icon as IconName} dark={s.dark} />
               <h3 className="mt-5 text-xl">{f.title}</h3>
-              <p className={cn("mt-2 text-[0.95rem] leading-relaxed", s.dark ? "text-white/70" : "text-grey-600")}>{f.text}</p>
+              <p className={cn("mt-2 text-base leading-relaxed sm:text-[0.95rem]", s.dark ? "text-white/70" : "text-grey-600")}>{f.text}</p>
             </Reveal>
           ))}
         </ul>
@@ -42,7 +43,7 @@ export function Values({ s }: { s: ValuesSection }) {
           {s.items.map((f, i) => (
             <Reveal as="li" key={f.title} delay={(i % 4) * 60} className="border-t-2 border-bronze-300 pt-5">
               <h3 className="text-lg font-semibold font-sans">{f.title}</h3>
-              <p className="mt-2 text-[0.95rem] text-grey-600">{f.text}</p>
+              <p className="mt-2 text-base text-grey-600 sm:text-[0.95rem]">{f.text}</p>
             </Reveal>
           ))}
         </ul>

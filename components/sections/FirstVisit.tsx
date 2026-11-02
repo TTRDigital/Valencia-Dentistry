@@ -15,9 +15,9 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-28">
               <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-              <div className="mt-8 rounded-[4px] border border-ink-900/10 bg-warm p-6">
+              <div className="mt-8 rounded-lg border border-ink-900/10 bg-warm p-6">
                 <p className="flex items-baseline gap-3"><span className="text-5xl font-semibold text-ink-900">$59</span><span className="text-grey-700">new patient exam &amp; X-rays</span></p>
-                <ul className="mt-4 space-y-2 text-[0.95rem] text-grey-700">
+                <ul className="mt-4 space-y-2 text-base sm:text-[0.95rem] text-grey-700">
                   <li className="flex gap-2.5"><Icon.shield className="mt-0.5 h-5 w-5 shrink-0 text-olive-600" />Most PPO plans accepted; we check your benefits first</li>
                   <li className="flex gap-2.5"><Icon.pin className="mt-0.5 h-5 w-5 shrink-0 text-olive-600" />Free parking, elevator to Suite 240</li>
                 </ul>
@@ -46,7 +46,7 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
                 </li>
               ))}
             </ol>
-            {s.note && <p className="mt-10 pl-[60px] text-sm text-grey-600">{s.note}</p>}
+            {s.note && <p className="mt-10 pl-[60px] text-base text-grey-600 sm:text-sm">{s.note}</p>}
           </TimelineProgress>
         </div>
       </Container>

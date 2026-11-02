@@ -243,7 +243,8 @@
           "text": "Biocompatible, mercury-free materials and a look at how your mouth affects the rest of your health.",
           "image": {
             "src": "/images/real/mirror-view-2.jpg",
-            "alt": "A patient checking her smile in a mirror while talking with Dr. Lavi"
+            "alt": "A patient checking her smile in a mirror while talking with Dr. Lavi",
+            "focus": "center 70%"
           },
           "points": [
             "Mercury-free, tooth-colored fillings",
@@ -260,7 +261,8 @@
           "text": "For clicking, a jaw that feels tired in the morning, or tension headaches that keep coming back.",
           "image": {
             "src": "/images/real/consult-seated-2.jpg",
-            "alt": "Dr. Lavi in a consultation with a patient"
+            "alt": "Dr. Lavi in a consultation with a patient",
+            "focus": "center 70%"
           },
           "points": [
             "A careful exam of your bite and joint",

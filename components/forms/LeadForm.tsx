@@ -108,7 +108,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
           aria-describedby={err ? `${fid}-err` : hint ? `${fid}-hint` : undefined}
           onChange={() => err && setErrors((x) => ({ ...x, [name]: undefined }))}
           {...props}
-          className={cn("block min-h-12 w-full rounded-xl border bg-white px-4 py-3 text-ink-900 placeholder:text-grey-400 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25", err ? "border-danger" : "border-grey-300")}
+          className={cn("block min-h-12 w-full rounded-md border bg-white px-4 py-3 text-ink-900 placeholder:text-grey-400 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25", err ? "border-danger" : "border-grey-300")}
         />
         {hint && !err && <p id={`${fid}-hint`} className="mt-1 text-xs text-grey-600">{hint}</p>}
         {err && <p id={`${fid}-err`} className="mt-1 text-sm text-danger" role="alert">{err}</p>}
@@ -140,7 +140,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
         {services && (
           <div>
             <label htmlFor={`${id}-service`} className="mb-1.5 block text-sm font-semibold text-ink-900">Service of interest</label>
-            <select id={`${id}-service`} name="service" className="block min-h-12 w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-ink-900 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" defaultValue="">
+            <select id={`${id}-service`} name="service" className="block min-h-12 w-full rounded-md border border-grey-300 bg-white px-4 py-3 text-ink-900 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" defaultValue="">
               <option value="">Select a service</option>
               {SERVICES.map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
@@ -148,7 +148,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
         )}
         <div>
           <label htmlFor={`${id}-time`} className="mb-1.5 block text-sm font-semibold text-ink-900">Preferred time</label>
-          <select id={`${id}-time`} name="preferred_time" className="block min-h-12 w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-ink-900 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" defaultValue="">
+          <select id={`${id}-time`} name="preferred_time" className="block min-h-12 w-full rounded-md border border-grey-300 bg-white px-4 py-3 text-ink-900 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" defaultValue="">
             <option value="">No preference</option>
             {TIMES.map((t) => <option key={t} value={t}>{t}</option>)}
           </select>
@@ -157,7 +157,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
       {!compact && (
         <div>
           <label htmlFor={`${id}-message`} className="mb-1.5 block text-sm font-semibold text-ink-900">Message</label>
-          <textarea id={`${id}-message`} name="message" rows={4} placeholder="Tell us what's going on, or any questions you have." className="block w-full rounded-xl border border-grey-300 bg-white px-4 py-3 text-ink-900 placeholder:text-grey-400 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" />
+          <textarea id={`${id}-message`} name="message" rows={4} placeholder="Tell us what's going on, or any questions you have." className="block w-full rounded-md border border-grey-300 bg-white px-4 py-3 text-ink-900 placeholder:text-grey-400 focus:border-olive-600 focus:ring-2 focus:ring-olive-600/25" />
         </div>
       )}
       <div>
@@ -169,7 +169,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
       </div>
       {siteKey && <div className="cf-turnstile" data-sitekey={siteKey} data-theme="light" />}
       {status === "error" && (
-        <div role="alert" className="rounded-xl border border-danger/30 bg-red-50 px-4 py-3 text-sm text-danger">
+        <div role="alert" className="rounded-lg border border-danger/30 bg-red-50 px-4 py-3 text-sm text-danger">
           {serverMsg} <a href={`tel:${site.phone.tel}`} className="font-semibold underline">Call {site.phone.display}</a>
         </div>
       )}

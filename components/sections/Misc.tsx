@@ -13,7 +13,7 @@ export function RichText({ s }: { s: RichTextSection }) {
   return (
     <Section tight>
       <Container>
-        <div className={s.narrow !== false ? "mx-auto max-w-[72ch]" : ""}>
+        <div className={s.narrow !== false ? "max-w-[72ch] rounded-lg bg-white p-6 ring-1 ring-ink-900/10 sm:p-10" : ""}>
           {s.heading && <h2 className="mb-6">{s.heading}</h2>}
           <Markdown source={s.body} />
         </div>
@@ -38,8 +38,8 @@ export async function Team({ s }: { s: TeamSection }) {
           <article key={p.slug} className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-14">
             {/* Profile card: portrait and the essentials, kept in view while the bio scrolls */}
             <div className="lg:col-span-4">
-              <div className="overflow-hidden rounded-md bg-white ring-1 ring-ink-900/10 lg:sticky lg:top-24">
-                <Picture image={p.image} sizes="(min-width: 1024px) 380px, 100vw" className="aspect-[4/5] w-full object-cover object-top" />
+              <div className="overflow-hidden rounded-lg bg-white ring-1 ring-ink-900/10 lg:sticky lg:top-24">
+                <Picture image={p.image} sizes="(min-width: 1024px) 380px, 100vw" cropTo={4 / 5} className="aspect-[4/5] w-full object-cover object-top" />
                 <div className="p-5">
                   <h3 className="text-2xl">{p.name}{p.credentials ? `, ${p.credentials}` : ""}</h3>
                   <p className="mt-1 text-sm font-semibold text-olive-700">{p.role}</p>
@@ -89,12 +89,17 @@ export function Insurance({ s }: { s: InsuranceSection }) {
           <h2 className="text-2xl">{s.heading ?? "Most major PPO plans accepted"}</h2>
           <p className="mx-auto mt-3 max-w-[48rem] text-grey-600">{s.text ?? "We verify your benefits before treatment and offer flexible financing so cost never stands between you and care. Not sure about your plan? Call us and we'll check."}</p>
         </div>
-        <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
-          {site.insurers.map((i) => (
-            <li key={i.name} className="opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0">
-              <Picture image={{ src: i.logo, alt: i.name, width: i.w, height: i.h }} sizes="120px" className="h-7 w-auto max-w-[120px] object-contain" quality={85} />
-            </li>
-          ))}
+        {/* Equal cells; each logo is sized by its shape so wide wordmarks and compact marks read at a similar weight */}
+        <ul className="mx-auto mt-8 grid max-w-5xl grid-cols-2 gap-3 sm:grid-cols-4">
+          {site.insurers.map((i) => {
+            const ratio = i.w / i.h;
+            const h = ratio > 4.5 ? "h-6" : ratio > 3 ? "h-7" : ratio > 2 ? "h-9" : "h-11";
+            return (
+              <li key={i.name} className="flex h-20 items-center justify-center rounded-lg bg-warm px-4 opacity-85 grayscale transition-[filter,opacity] duration-[var(--dur-std)] hover:opacity-100 hover:grayscale-0">
+                <Picture image={{ src: i.logo, alt: i.name, width: i.w, height: i.h }} sizes="140px" className={`${h} w-auto max-w-full object-contain`} quality={85} />
+              </li>
+            );
+          })}
         </ul>
       </Container>
     </Section>
@@ -115,7 +120,7 @@ export function Offer({ s }: { s: OfferSection }) {
                 {s.bullets.map((b) => <li key={b} className="flex items-start gap-2.5 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{b}</li>)}
               </ul>
             )}
-            {s.fine && <p className="mt-5 text-sm text-grey-600">{s.fine}</p>}
+            {s.fine && <p className="mt-5 text-base text-grey-600 sm:text-sm">{s.fine}</p>}
           </div>
           <div className="flex flex-col justify-center gap-3 rounded-3xl bg-ink-900 p-7 text-white lg:col-span-5">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">{site.offer.headline}</p>

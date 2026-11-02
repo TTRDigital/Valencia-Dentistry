@@ -5,6 +5,7 @@ import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
+import { cardGrid, cn } from "@/lib/utils";
 
 const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
   { key: "cosmetic", title: "Cosmetic Dentistry", text: "Refinements that look like you, only brighter: veneers, Invisalign, whitening and tooth-colored fillings." },
@@ -14,20 +15,36 @@ const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
   { key: "preventive", title: "Preventive & Comfort Care", text: "Cleanings, exams, night guards and TMJ care to keep small problems small." },
 ];
 
-export function ServiceCard({ s, index = 0 }: { s: Service; index?: number }) {
+/**
+ * Service card: image, title, short text, "Learn more" pinned to the bottom.
+ * `featured` cards span two columns (see cardGrid) with a wider image; `unspanAt` returns them
+ * to a normal card where the grid widens to a single row.
+ */
+export function ServiceCard({ s, featured, className, unspanAt }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null }) {
+  const imgAspect = featured ? cn("aspect-[16/9] sm:aspect-[21/9]", unspanAt === "lg" && "lg:aspect-[16/10]", unspanAt === "xl" && "xl:aspect-[16/10]") : "aspect-[4/3] sm:aspect-[16/10]";
   return (
-    <Reveal as="li" delay={(index % 3) * 70} className="card card-hover group overflow-hidden">
+    <Reveal as="li" className={cn("card card-hover group flex flex-col", className)}>
       <Link href={s.path} className="flex h-full flex-col no-underline">
-        <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[16/10]">
-          <Picture image={s.hero.image} fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+        <div className={cn("relative overflow-hidden rounded-t-lg", imgAspect)}>
+          <Picture image={s.hero.image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw"} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
         <div className="flex flex-1 flex-col p-4 sm:p-6">
           <h3 className="text-lg group-hover:text-olive-600 sm:text-xl">{s.name}</h3>
-          <p className="mt-1.5 hidden flex-1 text-[0.95rem] text-grey-600 sm:block">{s.shortDescription}</p>
-          <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-olive-600 sm:mt-4">Learn more <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-0.5" /></span>
+          <p className={cn("mt-1.5 text-base text-grey-600 sm:text-[0.95rem]", !featured && "hidden sm:block")}>{s.shortDescription}</p>
+          <span className="card-action inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-olive-700 sm:pt-4">Learn more <Icon.arrow className="arrow-nudge h-4 w-4" /></span>
         </div>
       </Link>
     </Reveal>
+  );
+}
+
+/** A set of service cards laid out with cardGrid (no orphan on the last row), staggered as a group. */
+export function CardList({ items, className, wideCols = 3, wideAt = "xl" }: { items: Service[]; className?: string; wideCols?: 3 | 4; wideAt?: "lg" | "xl" }) {
+  const plan = cardGrid(items.length, wideCols, wideAt);
+  return (
+    <ul data-stagger className={cn(plan.ul, "gap-3 sm:gap-5", className)}>
+      {items.map((s, i) => <ServiceCard key={s.slug} s={s} featured={i === 0 && plan.featured} unspanAt={plan.unspanAt} className={i === 0 ? plan.first : undefined} />)}
+    </ul>
   );
 }
 
@@ -48,9 +65,7 @@ export async function ServicesHub() {
                   <h2 className="text-3xl">{g.title}</h2>
                   <p className="lead mt-4 text-base">{g.text}</p>
                 </div>
-                <ul className="grid grid-cols-2 gap-3 sm:gap-5 lg:col-span-8 xl:grid-cols-3">
-                  {items.map((s, i) => <ServiceCard key={s.slug} s={s} index={i} />)}
-                </ul>
+                <CardList items={items} className="lg:col-span-8" />
               </div>
             </Container>
           </Section>

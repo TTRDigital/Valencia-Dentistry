@@ -24,7 +24,8 @@
       },
       "image": {
         "src": "/images/team/dr-lavi-outdoor.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS"
+        "alt": "Dr. Nuriel Lavi, DDS",
+        "focus": "center 18%"
       },
       "trust": true
     },

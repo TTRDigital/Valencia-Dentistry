@@ -17,8 +17,8 @@ export function IntroSplit({ s }: { s: IntroSplitSection }) {
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <Reveal className={cn("lg:col-span-6", left ? "lg:order-1" : "lg:order-2")}>
             <div className="relative">
-              <div className="relative overflow-hidden rounded-[4px]">
-                <Picture image={s.image} sizes="(min-width: 1024px) 560px, 100vw" className={cn("w-full object-cover object-top", portrait ? "aspect-[4/5]" : "aspect-[5/4]")} />
+              <div className="relative overflow-hidden rounded-lg">
+                <Picture image={s.image} sizes="(min-width: 1024px) 560px, 100vw" cropTo={portrait ? 4 / 5 : 5 / 4} className={cn("w-full object-cover object-top", portrait ? "aspect-[4/5]" : "aspect-[5/4]")} />
               </div>
             </div>
           </Reveal>
