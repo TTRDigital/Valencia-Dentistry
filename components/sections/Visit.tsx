@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
 import { OpenBadge } from "@/components/layout/OpenBadge";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
-import { LazyMap } from "@/components/blocks/LazyMap";
+import { OfficeMap } from "@/components/blocks/OfficeMap";
 
 export function Visit({ s }: { s: VisitSection }) {
   return (
@@ -29,9 +29,9 @@ export function Visit({ s }: { s: VisitSection }) {
                 <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-greige-50 text-olive-600"><Icon.clock className="h-5 w-5" /></span>
                 <div className="text-grey-700">
                   <OpenBadge showNext className="text-ink-900" />
-                  <ul className="mt-2 space-y-0.5">
-                    {site.hours.map((h) => <li key={h.days} className="flex justify-between gap-6"><span>{h.days}</span><span className="font-medium text-ink-900">{h.label}</span></li>)}
-                  </ul>
+                  <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-6 gap-y-0.5">
+                    {site.hours.map((h) => <div key={h.days} className="contents"><dt>{h.days}</dt><dd className="font-medium text-ink-900">{h.label}</dd></div>)}
+                  </dl>
                 </div>
               </li>
             </ul>
@@ -39,10 +39,10 @@ export function Visit({ s }: { s: VisitSection }) {
               <Button href={site.directionsUrl} variant="outline"><Icon.directions className="h-4 w-4" /> Get directions</Button>
               <Button href={site.bookingUrl} arrow>Book an appointment</Button>
             </div>
-            <p className="mt-6 text-sm text-grey-600">Free parking on site. Suite 240 is on the second floor; the building has an elevator. Serving {site.areas.slice(0, -1).join(", ")} and {site.areas.at(-1)}.</p>
+            <p className="mt-6 text-base text-grey-600 sm:text-sm">Free parking on site. Suite 240 is on the second floor; the building has an elevator. Serving {site.areas.slice(0, -1).join(", ")} and {site.areas.at(-1)}.</p>
           </div>
           <div className="lg:col-span-7">
-            {s.showMap !== false && <LazyMap />}
+            {s.showMap !== false && <OfficeMap />}
           </div>
         </div>
       </Container>
