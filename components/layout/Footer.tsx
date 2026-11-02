@@ -47,7 +47,7 @@ export function Footer({ nav }: { nav: Navigation }) {
           ))}
 
           <div className="lg:col-span-3">
-            <p className="text-lg font-semibold text-white">Working hours</p>
+            <p className="text-lg font-semibold text-white">Hours &amp; location</p>
             <address className="mt-4 space-y-3 not-italic text-white/80">
               <p className="flex gap-2.5"><Icon.pin className="mt-1 h-4 w-4 shrink-0 text-bronze-300" /><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline">{site.address.street}<br />{site.address.city}, {site.address.state} {site.address.zip}</a></p>
               <p className="flex gap-2.5"><Icon.phone className="mt-1 h-4 w-4 shrink-0 text-bronze-300" /><a href={`tel:${site.phone.tel}`} className="hover:text-white hover:underline">{site.phone.display}</a></p>

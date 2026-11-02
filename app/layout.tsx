@@ -3,6 +3,7 @@ import { Analytics } from "@/components/layout/Analytics";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileBar } from "@/components/layout/MobileBar";
+import { RevealObserver } from "@/components/motion/RevealObserver";
 import { getNavigation } from "@/lib/content";
 import { urbanist } from "@/lib/fonts";
 import { SITE_URL, site } from "@/lib/site";
@@ -25,13 +26,18 @@ export const viewport: Viewport = { themeColor: "#1c1c1c", width: "device-width"
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const nav = await getNavigation();
   return (
-    <html lang="en" className={urbanist.variable}>
+    <html lang="en" className={urbanist.variable} suppressHydrationWarning>
+      <head>
+        {/* Marks that JavaScript runs, before first paint, so JS-only motion states never flash. */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body className="flex min-h-screen flex-col">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink-900 focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
         <Header nav={nav} />
         <main id="main" tabIndex={-1} className="flex-1 outline-none">{children}</main>
         <Footer nav={nav} />
         <MobileBar />
+        <RevealObserver />
         <Analytics />
       </body>
     </html>

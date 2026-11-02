@@ -75,14 +75,6 @@
 
   /* Motion */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
-  /* Hero entrance: transform only. Starting at opacity 0 would delay the LCP candidate until the animation ends. */
-  --animate-fade-up: rise 0.7s var(--ease-out-soft) both;
-  --animate-fade-in: rise 0.6s var(--ease-out-soft) both;
-
-  @keyframes rise {
-    from { transform: translateY(12px); }
-    to { transform: translateY(0); }
-  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -156,11 +148,11 @@
   .dark-section h1, .dark-section h2, .dark-section h3 { color: var(--color-white); }
 
   /* Buttons: ≥44px tap targets */
-  /* Square, uppercase buttons (Ideal style) */
-  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-[2px] px-6 py-2.5 text-[0.8125rem] font-bold uppercase tracking-[0.1em] no-underline transition-[transform,box-shadow,background-color,color,border-color] duration-200 ease-out select-none; }
+  /* Buttons: sentence case, softly rounded */
+  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-6 py-2.5 text-[0.9375rem] font-semibold no-underline transition-transform duration-200 ease-out select-none; }
   .btn:active { transform: translateY(1px); }
   .btn-primary { @apply bg-olive-600 text-white shadow-soft; }
-  .btn-primary:hover { @apply bg-olive-700 shadow-lift; }
+  .btn-primary:hover { @apply -translate-y-px bg-olive-700 shadow-lift; }
   .btn-dark { @apply bg-ink-900 text-white; }
   .btn-dark:hover { @apply bg-ink-800; }
   .btn-light { @apply bg-white text-ink-900 shadow-soft; }
@@ -169,12 +161,12 @@
   .btn-outline:hover { @apply border-ink-900 bg-ink-900/5; }
   .dark-section .btn-outline, .on-dark .btn-outline { @apply border-white/40 text-white; }
   .dark-section .btn-outline:hover, .on-dark .btn-outline:hover { @apply border-white bg-white/10; }
-  .btn-lg { @apply min-h-13 px-8 text-[0.875rem]; }
-  .btn-sm { @apply min-h-11 px-4 text-[0.75rem]; } /* 44px: every button is a full tap target */
+  .btn-lg { @apply min-h-13 px-7 text-base; }
+  .btn-sm { @apply min-h-11 px-4 text-sm; } /* 44px: every button is a full tap target */
 
   /* Flat cards: photo on top, cream text block (Ideal style) */
   .card { @apply rounded-[4px] bg-[#f4f2ea]; }
-  .card-hover { @apply transition-[transform,box-shadow] duration-300 ease-out; }
+  .card-hover { @apply transition-transform duration-300 ease-out; }
   .card-hover:hover { @apply -translate-y-0.5 shadow-lift; }
   @media (prefers-reduced-motion: reduce) { .card-hover:hover { transform: none; } }
 
@@ -185,22 +177,38 @@
   .dark-section { @apply relative bg-ink-900 text-white; }
   .dark-section > * { position: relative; }
 
-  /* Scroll reveal: CSS scroll-driven animation, no JavaScript (components/ui/Reveal.tsx).
-     Plays once as the element enters the viewport; unsupported browsers show content as is. */
-  @supports (animation-timeline: view()) {
-    @media (prefers-reduced-motion: no-preference) {
-      .reveal {
-        animation: reveal-in 1ms linear both;
-        animation-timeline: view();
-        animation-range: entry 5% entry 35%;
-        animation-delay: var(--reveal-delay, 0ms);
-      }
-    }
+  /* ---------- Motion (all transform/opacity, 200-600ms, ease-out; off under reduced motion) ---------- */
+
+  /* Scroll reveal (components/motion/RevealObserver.tsx): only elements below the fold get .reveal-pending after hydration. */
+  [data-reveal].reveal-pending { opacity: 0; transform: translateY(16px); }
+  [data-reveal].reveal-in { opacity: 1; transform: none; transition: opacity 500ms var(--ease-out-soft), transform 500ms var(--ease-out-soft); transition-delay: var(--reveal-delay, 0ms); }
+
+  /* First-visit timeline: finished state by default; JS adds data-animated */
+  .timeline-line { transition: transform 500ms var(--ease-out-soft); }
+  .timeline[data-animated] .timeline-dot { opacity: 0; transform: scale(0.6); transition: opacity 300ms ease-out, transform 300ms var(--ease-out-soft); }
+  .timeline[data-animated] [data-active] .timeline-dot { opacity: 1; transform: none; }
+
+  /* Treatment picker answer and before/after case change */
+  .picker-answer { animation: fade-rise 320ms var(--ease-out-soft) both; }
+  .compare-fade { animation: fade-in 300ms ease-out both; }
+  @keyframes fade-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+  /* Technology explainer: the "for you" line reveals on hover, focus or tap; always shown on touch screens */
+  .tech-for-you { transition: opacity 250ms ease-out, transform 250ms var(--ease-out-soft); }
+  @media (hover: hover) {
+    .tech-card .tech-for-you { opacity: 0; transform: translateY(6px); }
+    .tech-card:hover .tech-for-you, .tech-card:focus-within .tech-for-you, .tech-inner[data-open] .tech-for-you { opacity: 1; transform: none; }
   }
-  /* Transform only: a partial-opacity start would fail automated contrast checks for content below the fold. */
-  @keyframes reveal-in {
-    from { transform: translateY(18px); }
-    to { transform: translateY(0); }
+  @media (hover: none) { .tech-toggle { display: none; } }
+
+  /* Mobile quick-action bar: slides in once the hero has scrolled away (only when JS runs) */
+  .mobile-bar { transition: transform 300ms var(--ease-out-soft); }
+  .js .mobile-bar:not([data-show]) { transform: translateY(110%); }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-reveal].reveal-pending { opacity: 1; transform: none; }
+    .picker-answer, .compare-fade { animation: none; }
   }
 
   /* Rich text (blog bodies, legal pages) */

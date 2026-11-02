@@ -16,7 +16,7 @@ export function Section({ children, className, dark, tight, id, as: Tag = "secti
 /** Eyebrow → heading → lead, the rhythm used by every section. */
 export function SectionHeading({ eyebrow, heading, lead, align = "left", as: Tag = "h2", id, className }: { eyebrow?: string; heading: ReactNode; lead?: ReactNode; align?: "left" | "center"; as?: "h1" | "h2" | "h3"; id?: string; className?: string }) {
   return (
-    <div className={cn("max-w-[46rem]", align === "center" && "mx-auto text-center", className)}>
+    <div data-reveal="" className={cn("max-w-[46rem]", align === "center" && "mx-auto text-center", className)}>
       {eyebrow && <p className={cn("eyebrow mb-4", align === "center" && "justify-center")}>{eyebrow}</p>}
       <Tag id={id}>{heading}</Tag>
       {lead && <p className={cn("lead mt-5", align === "center" && "mx-auto")}>{lead}</p>}

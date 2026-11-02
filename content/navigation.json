@@ -1,20 +1,20 @@
 {
   "header": [
     {
-      "label": "Home",
-      "href": "/"
-    },
-    {
-      "label": "About Us",
-      "href": "/about/"
-    },
-    {
       "label": "Services",
       "href": "/services/",
       "mega": true
     },
     {
-      "label": "Before & After",
+      "label": "Our Practice",
+      "href": "/about/"
+    },
+    {
+      "label": "New Patients",
+      "href": "/new-patient-offer/"
+    },
+    {
+      "label": "Results & Reviews",
       "href": "/testimonials/"
     },
     {

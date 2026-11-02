@@ -55,11 +55,15 @@ export function Header({ nav }: { nav: Navigation }) {
   const desktopNav = nav.header;
 
   return (
-    <header className={cn("sticky top-0 z-50 bg-offwhite transition-[box-shadow] duration-300", scrolled && "shadow-[0_1px_0_rgb(20_20_20/0.08),0_8px_24px_-16px_rgb(20_20_20/0.25)]")} data-scrolled={scrolled || undefined}>
+    <header className="sticky top-0 z-50 h-[72px]" data-scrolled={scrolled || undefined}>
+      {/* The header box keeps a fixed 72px height (no layout shift). The shrink is visual only:
+          the background scales to 64px and the row moves up 4px, both with transforms. */}
+      <div aria-hidden="true" className={cn("absolute inset-0 origin-top bg-offwhite transition-transform duration-300 ease-out", scrolled && "scale-y-[0.889]")} />
+      <div aria-hidden="true" className={cn("pointer-events-none absolute inset-x-0 top-[64px] h-4 bg-gradient-to-b from-ink-900/10 to-transparent opacity-0 transition-opacity duration-300", scrolled && "opacity-100")} />
       {/* Main bar */}
-      <div className="container-x">
-        <div className={cn("flex items-center justify-between gap-6 transition-[height] duration-300", scrolled ? "h-16" : "h-[72px]")}>
-          <Link href="/" className="inline-flex min-h-11 items-center rounded-md">
+      <div className={cn("container-x relative transition-transform duration-300 ease-out", scrolled && "-translate-y-1")}>
+        <div className="flex h-[72px] items-center justify-between gap-6">
+          <Link href="/" className={cn("inline-flex min-h-11 origin-left items-center rounded-md transition-transform duration-300 ease-out", scrolled && "scale-[0.92]")}>
             <Logo />
           </Link>
 
@@ -70,7 +74,7 @@ export function Header({ nav }: { nav: Navigation }) {
                   <li key={item.href} className="relative" onMouseEnter={openMega} onMouseLeave={scheduleClose}>
                     <button
                       type="button"
-                      className={cn("flex min-h-11 items-center gap-1 px-2.5 text-[0.8125rem] font-bold uppercase tracking-[0.04em] text-ink-900 transition-colors hover:text-olive-600", (megaOpen || isActive(item.href)) && "text-olive-600")}
+                      className={cn("relative flex min-h-11 items-center gap-1 px-3 text-[0.9375rem] font-medium text-ink-900 hover:text-olive-700", (megaOpen || isActive(item.href)) && "text-olive-700")}
                       aria-expanded={megaOpen}
                       aria-controls={megaId}
                       onClick={() => setMegaOpen((v) => !v)}
@@ -81,7 +85,7 @@ export function Header({ nav }: { nav: Navigation }) {
                   </li>
                 ) : (
                   <li key={item.href}>
-                    <Link href={item.href} className={cn("flex min-h-11 items-center px-2.5 text-[0.8125rem] font-bold uppercase tracking-[0.04em] text-ink-900 transition-colors hover:text-olive-600", isActive(item.href) && "text-olive-600")} aria-current={isActive(item.href) ? "page" : undefined}>
+                    <Link href={item.href} className={cn("relative flex min-h-11 items-center px-3 text-[0.9375rem] font-medium text-ink-900 hover:text-olive-700", isActive(item.href) && "text-olive-700 after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:bg-olive-600")} aria-current={isActive(item.href) ? "page" : undefined}>
                       {item.label}
                     </Link>
                   </li>
@@ -91,13 +95,10 @@ export function Header({ nav }: { nav: Navigation }) {
           </nav>
 
           <div className="flex items-center gap-1 lg:gap-3">
-            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="hidden min-h-11 items-center border-b-2 border-ink-900 px-1 text-[0.8125rem] font-bold uppercase tracking-[0.04em] text-ink-900 transition-colors hover:border-olive-600 hover:text-olive-600 lg:inline-flex">
-              Schedule Appointment
+            <a href={`tel:${site.phone.tel}`} className="hidden min-h-11 items-center gap-2 px-1 text-[0.9375rem] font-semibold text-ink-900 hover:text-olive-700 xl:inline-flex">
+              <Icon.phone className="h-4 w-4 text-olive-600" /> {site.phone.display}
             </a>
-            <a href={`tel:${site.phone.tel}`} className="hidden min-h-11 items-center px-1 text-[0.8125rem] font-bold text-ink-900 hover:text-olive-600 xl:inline-flex">
-              {site.phone.display}
-            </a>
-            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm whitespace-nowrap px-3.5 sm:px-4 lg:hidden">
+            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm whitespace-nowrap px-3.5 sm:px-5">
               Book Now
             </a>
             <button type="button" className="inline-flex h-11 w-11 items-center justify-center text-ink-900 hover:text-olive-600 lg:hidden" aria-expanded={mobileOpen} aria-controls="mobile-menu" aria-label={mobileOpen ? "Close menu" : "Open menu"} onClick={() => setMobileOpen((v) => !v)}>
@@ -113,7 +114,8 @@ export function Header({ nav }: { nav: Navigation }) {
         ref={megaRef}
         onMouseEnter={openMega}
         onMouseLeave={scheduleClose}
-        className={cn("absolute inset-x-0 top-full hidden border-t hairline bg-offwhite shadow-lift transition-[opacity,transform] duration-200 ease-out lg:block", megaOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0")}
+        style={{ top: scrolled ? 64 : 72 }}
+        className={cn("absolute inset-x-0 hidden border-t hairline bg-offwhite shadow-lift transition-[opacity,transform] duration-200 ease-out lg:block", megaOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0")}
         aria-hidden={!megaOpen}
       >
         <div className="container-x grid grid-cols-4 gap-8 py-8">
