@@ -62,7 +62,9 @@ const posts = new Set(readdirSync(join(ROOT, "content/posts")).filter((f) => f.e
 const groupOf = (route: string) => (posts.has(route) ? "Blog posts (31 pages, one template)" : route);
 const shotPath = (phase: string, route: string, width: number) => `${phase === "before" ? "audit/screenshots" : "audit/after/screenshots"}/${route === "/" ? "home" : route.replace(/^\/|\/$/g, "")}/${width}.png`;
 
-function collect(data: any) {
+type RunResult = { route: string; width: number; issues: Issue[]; console: string[]; failed: string[] };
+type LhRow = Record<string, string | number> & { page: string; form: string };
+function collect(data: { results: RunResult[] }) {
   const issues: Issue[] = [];
   for (const r of data.results) {
     issues.push(...r.issues);
@@ -110,7 +112,7 @@ top.forEach((t, i) => { md += `| ${i + 1} | ${esc(t.title)} | ${t.severity} | ${
 if (lhBefore) {
   md += `\n## Lighthouse (median of 3 runs; INP measured separately with real interactions at 4× CPU throttle)\n\n| Page | Form | Perf | A11y | BP | SEO | LCP | CLS | TBT | INP |\n|---|---|---|---|---|---|---|---|---|---|\n`;
   for (const r of lhBefore.rows) {
-    const a = lhAfter?.rows.find((x: any) => x.page === r.page && x.form === r.form);
+    const a = (lhAfter?.rows as LhRow[] | undefined)?.find((x) => x.page === r.page && x.form === r.form);
     const cell = (k: string) => (a ? `${r[k]} → ${a[k]}` : `${r[k]}`);
     md += `| ${r.page} | ${r.form} | ${cell("performance")} | ${cell("accessibility")} | ${cell("bestPractices")} | ${cell("seo")} | ${cell("lcp")} | ${cell("cls")} | ${cell("tbt")} | ${cell("inp")} |\n`;
   }
@@ -144,7 +146,7 @@ for (const g of groups) {
 if (A) {
   const total = B.size, fixed = [...B.keys()].filter((k) => { const e = B.get(k)!; return ![...A.values()].some((x) => x.group === e.group && x.check === e.check && norm(x.where) === norm(e.where)); }).length;
   const newOnes = [...A.values()].filter((x) => ![...B.values()].some((e) => e.group === x.group && e.check === x.check && norm(x.where) === norm(e.where)));
-  const bySev = (m: Map<string, any>) => SEV.map((s) => `${s} ${[...m.values()].filter((e) => e.severity === s).length}`).join(" · ");
+  const bySev = (m: Map<string, { severity: string }>) => SEV.map((s) => `${s} ${[...m.values()].filter((e) => e.severity === s).length}`).join(" · ");
   md += `\n## AFTER\n\nMeasured ${after.date.slice(0, 10)} with the same script. ${fixed} of ${total} measured findings fixed; ${total - fixed} remaining (see the After column above).\n\n- Before: ${bySev(B)}\n- After: ${bySev(A)}\n`;
   if (newOnes.length) {
     md += `\nNew findings that appeared after the changes:\n\n| Page | Issue | Where | Severity |\n|---|---|---|---|\n`;

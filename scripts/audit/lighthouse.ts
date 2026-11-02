@@ -45,11 +45,12 @@ for (const p of PAGES) {
     const args = ["-y", "lighthouse", `https://localhost:${PORT}${p}`, "--quiet", `--chrome-flags=--headless --no-sandbox --ignore-certificate-errors`, "--only-categories=performance,accessibility,best-practices,seo", "--output=json", `--output-path=${out}`];
     if (form === "desktop") args.push("--preset=desktop");
     // Lighthouse varies run to run; take the median performance of three runs.
-    const runs: { score: number; r: any }[] = [];
+    type LhJson = { runtimeError?: { code: string }; categories: Record<string, { score: number }>; audits: Record<string, { displayValue: string }> };
+    const runs: { score: number; r: LhJson }[] = [];
     for (let i = 0; i < 3; i++) {
       // async spawn: the proxy runs in this process and must keep serving while Lighthouse loads pages
       await new Promise<void>((resolve) => spawn("npx", args, { env: { ...process.env, CHROME_PATH: CHROME }, stdio: "ignore" }).on("exit", () => resolve()));
-      const r = JSON.parse(readFileSync(out, "utf8"));
+      const r = JSON.parse(readFileSync(out, "utf8")) as LhJson;
       if (r.runtimeError) { console.log(p, form, r.runtimeError.code); continue; }
       runs.push({ score: r.categories.performance.score, r });
     }
@@ -71,8 +72,9 @@ for (const p of PAGES) {
     const cdp = await ctx.newCDPSession(page);
     await cdp.send("Emulation.setCPUThrottlingRate", { rate: 4 });
     await page.addInitScript(() => {
-      (window as any).__inp = 0;
-      new PerformanceObserver((l) => { for (const e of l.getEntries() as any[]) if (e.interactionId) (window as any).__inp = Math.max((window as any).__inp, e.duration); })
+      const w = window as unknown as { __inp: number };
+      w.__inp = 0;
+      new PerformanceObserver((l) => { for (const e of l.getEntries() as (PerformanceEntry & { interactionId?: number })[]) if (e.interactionId) w.__inp = Math.max(w.__inp, e.duration); })
         .observe({ type: "event", buffered: true, durationThreshold: 16 } as PerformanceObserverInit);
     });
     await page.goto(`https://localhost:${PORT}${p}`, { waitUntil: "networkidle" });
@@ -84,7 +86,7 @@ for (const p of PAGES) {
     if (await slider.count()) { await slider.scrollIntoViewIfNeeded(); await slider.focus(); await page.keyboard.press("ArrowLeft"); await page.waitForTimeout(250); }
     await tap("details summary");
     await tap("details summary");
-    const inp = await page.evaluate(() => (window as any).__inp as number);
+    const inp = await page.evaluate(() => (window as unknown as { __inp: number }).__inp);
     const row = rows.find((x) => x.page === p && x.form === form);
     if (row) row.inp = `${Math.round(inp)} ms`;
     await ctx.close();

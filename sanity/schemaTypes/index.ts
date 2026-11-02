@@ -27,7 +27,10 @@ export const siteImage = defineType({
   title: "Image",
   type: "image",
   options: { hotspot: true },
-  fields: [defineField({ name: "alt", type: "string", title: "Alt text (describe the picture)", validation: (r) => r.required() })],
+  fields: [
+    defineField({ name: "alt", type: "string", title: "Alt text (describe the picture)", validation: (r) => r.required() }),
+    defineField({ name: "focus", type: "string", title: "Focal point for cropping (CSS object-position, e.g. \"center 20%\")" }),
+  ],
 });
 
 export const faqItem = defineType({ name: "faqItem", title: "FAQ", type: "object", fields: [defineField({ name: "q", type: "string", title: "Question", validation: (r) => r.required() }), defineField({ name: "a", type: "text", rows: 3, title: "Answer", validation: (r) => r.required() })], preview: { select: { title: "q" } } });
@@ -99,9 +102,6 @@ export const page = defineType({
   ],
   preview: { select: { title: "title", subtitle: "path" } },
 });
-
-const serviceSection = (name: string, title: string, extra: ReturnType<typeof defineField>[] = []) =>
-  defineField({ name, title, type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "intro", type: "text", rows: 2 }), ...extra] });
 
 const cardList = (name: string, title: string) => defineField({ name, title, type: "array", group: "content", of: [defineArrayMember({ type: "object", fields: [defineField({ name: "title", type: "string" }), defineField({ name: "text", type: "text", rows: 3 }), defineField({ name: "image", type: "siteImage" })] })] });
 
