@@ -31,32 +31,42 @@
     {
       "_type": "form",
       "eyebrow": "Request a time",
-      "heading": "Request an appointment",
+      "heading": "Ask for a time that suits you",
       "lead": "Fill in the form and a member of our team will reach out to confirm your appointment.",
       "formName": "Appointment request"
     },
     {
-      "_type": "featureGrid",
+      "_type": "firstVisit",
       "eyebrow": "What to expect",
-      "heading": "Your first visit, step by step",
-      "columns": 3,
-      "items": [
+      "heading": "From the parking lot to your plan",
+      "lead": "No rush and no surprises. Here is exactly what to expect when you come in for your new patient exam.",
+      "steps": [
         {
-          "icon": "calendar",
-          "title": "1. A warm welcome",
-          "text": "Arrive a few minutes early for a short health history. Bring your ID, insurance card and current medications."
+          "title": "Before you arrive",
+          "text": "We check your PPO benefits ahead of time. Park free on site; Suite 240 is on the second floor, and the building has an elevator."
         },
         {
-          "icon": "tech",
-          "title": "2. A thorough exam",
-          "text": "Digital X-rays, an oral cancer screening and an unhurried exam with Dr. Lavi."
+          "title": "A short health history",
+          "text": "Arrive a few minutes early with a photo ID, your insurance card and a list of the medications you take."
         },
         {
-          "icon": "heart",
-          "title": "3. A plan you understand",
-          "text": "Clear options, honest priorities and a written estimate before anything begins."
+          "title": "Digital X-rays",
+          "text": "Low-radiation digital X-rays show what can't be seen in the chair, and appear on screen right away."
+        },
+        {
+          "title": "An unhurried exam with Dr. Lavi",
+          "text": "Teeth, gums and bite, plus an oral cancer screening. He explains what he sees as he goes."
+        },
+        {
+          "title": "A plan you can take home",
+          "text": "Your options, what is urgent and what can wait, a written estimate, and time for every question."
         }
-      ]
+      ],
+      "cta": {
+        "label": "Book your $59 exam",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      },
+      "note": "The $59 new patient special covers a comprehensive exam and X-rays."
     },
     {
       "_type": "insurance"
