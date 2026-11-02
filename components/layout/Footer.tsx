@@ -22,7 +22,7 @@ export function Footer({ nav }: { nav: Navigation }) {
             <p className="mt-5 max-w-sm text-white/75">Comfortable, holistic dentistry for Valencia and Santa Clarita families, delivered one on one by Dr. Nuriel Lavi.</p>
             <div className="mt-6 flex items-center gap-2">
               {socials.map(({ name, href, I }) => (
-                <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${site.name} on ${name}`} className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20">
+                <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${site.name} on ${name}`} className="inline-flex h-11 w-11 items-center justify-center rounded-[2px] bg-white/10 text-white transition-colors hover:bg-olive-600">
                   <I className="h-5 w-5" />
                 </a>
               ))}
@@ -31,7 +31,7 @@ export function Footer({ nav }: { nav: Navigation }) {
 
           {nav.footer.map((col) => (
             <nav key={col.title} aria-label={col.title} className="lg:col-span-2">
-              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">{col.title}</p>
+              <p className="text-lg font-semibold text-white">{col.title}</p>
               <ul className="mt-3 space-y-1">
                 {col.items.map((it) => (
                   <li key={it.href}>
@@ -47,7 +47,7 @@ export function Footer({ nav }: { nav: Navigation }) {
           ))}
 
           <div className="lg:col-span-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">Visit</p>
+            <p className="text-lg font-semibold text-white">Working hours</p>
             <address className="mt-4 space-y-3 not-italic text-white/80">
               <p className="flex gap-2.5"><Icon.pin className="mt-1 h-4 w-4 shrink-0 text-bronze-300" /><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline">{site.address.street}<br />{site.address.city}, {site.address.state} {site.address.zip}</a></p>
               <p className="flex gap-2.5"><Icon.phone className="mt-1 h-4 w-4 shrink-0 text-bronze-300" /><a href={`tel:${site.phone.tel}`} className="hover:text-white hover:underline">{site.phone.display}</a></p>

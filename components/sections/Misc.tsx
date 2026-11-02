@@ -22,36 +22,34 @@ export function RichText({ s }: { s: RichTextSection }) {
   );
 }
 
+/** Doctor / team rows: 50/50 split, black text panel and full-height photo, alternating sides (Ideal style). */
 export async function Team({ s }: { s: TeamSection }) {
   const people = await getPeople();
   const list = s.slugs?.length ? people.filter((p) => s.slugs!.includes(p.slug)) : people;
   return (
-    <Section className="bg-white" id="team">
-      <Container>
-        <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-        <div className="mt-12 space-y-16">
-          {list.map((p) => (
-            <article key={p.slug} className="grid items-start gap-8 lg:grid-cols-12 lg:gap-14">
-              <Reveal className="lg:col-span-5">
-                <div className="overflow-hidden rounded-4xl shadow-lift">
-                  <Picture image={p.image} sizes="(min-width: 1024px) 480px, 100vw" className="aspect-[5/4] w-full object-cover object-top" />
-                </div>
-              </Reveal>
-              <Reveal className="lg:col-span-7" delay={80}>
-                <h3 className="text-3xl">{p.name}{p.credentials ? `, ${p.credentials}` : ""}</h3>
-                <p className="mt-1 text-olive-600 font-medium">{p.role}</p>
-                <div className="prose-measure mt-5 space-y-4 text-lg text-grey-700">{p.bio.map((b, i) => <p key={i}>{b}</p>)}</div>
-                {p.highlights && (
-                  <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                    {p.highlights.map((h) => <li key={h} className="flex items-start gap-2.5 text-[0.95rem] text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{h}</li>)}
-                  </ul>
-                )}
-              </Reveal>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </Section>
+    <section id="team" aria-labelledby="team-heading">
+      <h2 id="team-heading" className="sr-only">{s.heading}</h2>
+      {list.map((p, i) => (
+        <article key={p.slug} className="grid bg-ink-900 text-white lg:min-h-[560px] lg:grid-cols-2">
+          <div className={i % 2 ? "relative min-h-[420px] lg:order-1" : "relative min-h-[420px] lg:order-2"}>
+            <Picture image={p.image} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-top" />
+          </div>
+          <div className={i % 2 ? "flex items-center lg:order-2" : "flex items-center lg:order-1"}>
+            <div className="w-full px-4 py-12 sm:px-10 lg:px-16 lg:py-20 xl:pl-[max(4rem,calc((100vw-1280px)/2+2rem))]">
+              {s.eyebrow && <p className="eyebrow mb-4 text-bronze-300">{s.eyebrow}</p>}
+              <h3 className="text-3xl text-white">{p.name}{p.credentials ? `, ${p.credentials}` : ""}</h3>
+              <p className="mt-1 text-sm font-bold uppercase tracking-[0.1em] text-bronze-300">{p.role}</p>
+              <div className="mt-6 max-w-xl space-y-4 text-white/80">{p.bio.map((b, k) => <p key={k}>{b}</p>)}</div>
+              {p.highlights && (
+                <ul className="mt-6 grid max-w-xl gap-2.5 sm:grid-cols-2">
+                  {p.highlights.map((h) => <li key={h} className="flex items-start gap-2.5 text-[0.95rem] text-white/85"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-bronze-300" />{h}</li>)}
+                </ul>
+              )}
+            </div>
+          </div>
+        </article>
+      ))}
+    </section>
   );
 }
 

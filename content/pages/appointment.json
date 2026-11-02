@@ -22,12 +22,16 @@
         "label": "Call (661) 254-5200",
         "href": "tel:+16612545200"
       },
-      "trust": true
+      "trust": true,
+      "image": {
+        "src": "/images/blog/1781217378905.jpg",
+        "alt": "Smiling patient and dentist in the treatment room"
+      }
     },
     {
       "_type": "form",
       "eyebrow": "Request a time",
-      "heading": "Prefer we call you?",
+      "heading": "Request an appointment",
       "lead": "Fill in the form and a member of our team will reach out to confirm your appointment.",
       "formName": "Appointment request"
     },

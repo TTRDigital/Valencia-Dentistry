@@ -4,8 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileBar } from "@/components/layout/MobileBar";
 import { getNavigation } from "@/lib/content";
-import { displayFace } from "@/lib/design";
-import { fraunces, inter } from "@/lib/fonts";
+import { urbanist } from "@/lib/fonts";
 import { SITE_URL, site } from "@/lib/site";
 import "./globals.css";
 
@@ -21,12 +20,12 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export const viewport: Viewport = { themeColor: "#2e2e2e", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#1c1c1c", width: "device-width", initialScale: 1 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const nav = await getNavigation();
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable}`} data-display={displayFace === "calsans" ? "calsans" : undefined}>
+    <html lang="en" className={urbanist.variable}>
       <body className="flex min-h-screen flex-col">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink-900 focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
         <Header nav={nav} />

@@ -50,54 +50,29 @@ export function Hero({ s }: { s: HeroSection }) {
       </section>
     );
   }
-  if (s.variant === "landing") {
-    return (
-      <section className="dark-section" aria-labelledby="hero-heading">
-        <div className="container-x grid items-center gap-10 py-16 lg:grid-cols-12 lg:py-24">
-          <div className="lg:col-span-7">
-            {s.eyebrow && <p className="eyebrow mb-5">{s.eyebrow}</p>}
-            <h1 id="hero-heading" className="text-5xl">{s.heading}</h1>
-            {s.lead && <p className="lead mt-6 max-w-[38rem] text-xl">{s.lead}</p>}
-            <div className="mt-8 flex flex-wrap gap-3">
-              {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
-              {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
-            </div>
-            {s.trust && <TrustRow light className="mt-10" />}
-          </div>
-          {s.image && (
-            <div className="order-first lg:order-none lg:col-span-5">
-              <div className="overflow-hidden rounded-4xl ring-1 ring-white/10 shadow-lift">
-                <Picture image={s.image} priority sizes="(min-width: 1024px) 480px, calc(100vw - 32px)" className="aspect-[4/3] w-full object-cover object-top" />
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
-    );
-  }
-  // Page hero (About, Contact…)
+  // Page and landing heroes: full-bleed photo with the text on the left (Ideal style).
+  const landing = s.variant === "landing";
   return (
-    <section className="border-b hairline bg-warm" aria-labelledby="hero-heading">
-      <div className="container-x grid items-center gap-10 py-14 lg:grid-cols-12 lg:py-20">
-        <div className={cn(s.image ? "lg:col-span-6" : "lg:col-span-8")}>
-          {s.eyebrow && <p className="eyebrow mb-5">{s.eyebrow}</p>}
-          <h1 id="hero-heading">{s.heading}</h1>
-          {s.lead && <p className="lead mt-6 max-w-[38rem]">{s.lead}</p>}
+    <section className="on-dark relative isolate overflow-hidden bg-ink-900 text-white" aria-labelledby="hero-heading">
+      {s.image && (
+        <div className="absolute inset-0 -z-10">
+          <Picture image={s.image} fill priority sizes="100vw" quality={70} className="object-cover object-[70%_25%] lg:object-[center_25%]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-950/95 via-ink-900/60 to-ink-900/25 lg:bg-gradient-to-r lg:from-ink-950/85 lg:via-ink-900/55 lg:to-ink-900/10" aria-hidden="true" />
+        </div>
+      )}
+      <div className="container-x">
+        <div className={cn("max-w-2xl", s.image ? "pb-12 pt-[42vw] sm:pt-28 sm:pb-20 lg:py-28" : "py-14 lg:py-20", landing && "lg:py-32")}>
+          {s.eyebrow && <p className="eyebrow mb-4 text-bronze-300">{s.eyebrow}</p>}
+          <h1 id="hero-heading" className="text-5xl text-white">{s.heading}</h1>
+          {s.lead && <p className="mt-5 max-w-xl text-lg text-white/85">{s.lead}</p>}
           {(s.primary || s.secondary) && (
             <div className="mt-8 flex flex-wrap gap-3">
-              {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
+              {s.primary && <Button href={s.primary.href} variant="light" size="lg" arrow>{s.primary.label}</Button>}
               {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
             </div>
           )}
-          {s.trust && <TrustRow className="mt-8" />}
+          {s.trust && <TrustRow light className="mt-8" />}
         </div>
-        {s.image && (
-          <div className="order-first lg:order-none lg:col-span-6">
-            <div className="overflow-hidden rounded-4xl shadow-lift ring-1 ring-ink-900/5">
-              <Picture image={s.image} priority sizes="(min-width: 1024px) 600px, calc(100vw - 32px)" className="aspect-[5/4] w-full object-cover object-top" />
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

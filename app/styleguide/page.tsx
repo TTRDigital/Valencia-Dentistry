@@ -3,19 +3,18 @@ import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
 import { FaqList } from "@/components/sections/Faq";
-import { DisplayToggle } from "./DisplayToggle";
 
 export const metadata: Metadata = { title: "Style guide", robots: { index: false, follow: false } };
 
 const colors = [
-  ["Charcoal (ink 900)", "#2E2E2E", "Headings, dark surfaces, primary text", "bg-ink-900 text-white"],
+  ["Near-black (ink 900)", "#1C1C1C", "Headings, dark sections, primary text", "bg-ink-900 text-white"],
   ["Olive 600", "#5B6B5A", "Accents, links, buttons", "bg-olive-600 text-white"],
   ["Bronze 500", "#9A8B72", "Logo bronze, decorative lines", "bg-bronze-500 text-white"],
   ["Bronze 300", "#C9BA9C", "Eyebrows and lines on dark", "bg-bronze-300 text-ink-900"],
   ["Warm grey 400", "#A7A7A0", "Icons, placeholders (brand warm grey)", "bg-grey-400 text-ink-900"],
   ["Grey 600", "#5E5E57", "Secondary text (warm grey darkened for AA)", "bg-grey-600 text-white"],
   ["Greige 200", "#D6D3CC", "Borders, dividers", "bg-grey-200 text-ink-900"],
-  ["Ivory", "#F7F5EF", "Page background", "bg-warm text-ink-900"],
+  ["Cream", "#FAFAF4", "Page background", "bg-warm text-ink-900"],
 ];
 
 /** Contrast ratio (WCAG) between two hex colours. */
@@ -28,15 +27,15 @@ function contrast(a: string, b: string) {
   return ((l1 + 0.05) / (l2 + 0.05)).toFixed(2);
 }
 const pairs: [string, string, string][] = [
-  ["Grey 600 on ivory", "#5E5E57", "#F7F5EF"],
+  ["Grey 600 on cream", "#5E5E57", "#FAFAF4"],
   ["Grey 600 on white", "#5E5E57", "#FFFFFF"],
   ["Grey 600 on sand 50", "#5E5E57", "#F1ECE2"],
-  ["Olive 600 on ivory (links)", "#5B6B5A", "#F7F5EF"],
+  ["Olive 600 on cream (links)", "#5B6B5A", "#FAFAF4"],
   ["White on olive 600 (buttons)", "#FFFFFF", "#5B6B5A"],
-  ["Charcoal on ivory", "#2E2E2E", "#F7F5EF"],
-  ["White on charcoal", "#FFFFFF", "#2E2E2E"],
-  ["Bronze 300 on charcoal", "#C9BA9C", "#2E2E2E"],
-  ["White 75% on charcoal (lead text)", "#C7C7C7", "#2E2E2E"],
+  ["Near-black on cream", "#1C1C1C", "#FAFAF4"],
+  ["White on near-black", "#FFFFFF", "#1C1C1C"],
+  ["Bronze 300 on near-black", "#C9BA9C", "#1C1C1C"],
+  ["White 75% on near-black (lead text)", "#CBCBCB", "#1C1C1C"],
   ["Bronze 600 text on sand 50", "#6F6049", "#F1ECE2"],
   ["Charcoal on greige 50", "#2E2E2E", "#F0EEE8"],
 ];
@@ -46,8 +45,7 @@ export default function StyleGuide() {
     <>
       <Section className="border-b hairline bg-warm" tight>
         <Container>
-          <SectionHeading as="h1" eyebrow="Style guide · not indexed" heading="Valencia Dentistry design system" lead="Quiet-luxury dental: the brand palette from the identity board (charcoal, olive, warm grey, greige, ivory) plus the logo bronze, a two-option type pairing, an 8px spacing system, large rounded cards and tasteful motion. Use the toggle to compare the display faces." />
-          <DisplayToggle />
+          <SectionHeading as="h1" eyebrow="Style guide · not indexed" heading="Valencia Dentistry design system" lead="The Ideal Dental Solutions design language in the Valencia Dentistry colours: Urbanist type, cream and near-black flat sections, full-bleed photo heroes, square photos and buttons, and the brand charcoal, olive and bronze." />
         </Container>
       </Section>
 
@@ -78,14 +76,14 @@ export default function StyleGuide() {
 
       <Section className="bg-white">
         <Container>
-          <SectionHeading eyebrow="02" heading="Typography" lead="Option A (recommended): Fraunces, an editorial serif with optical sizing, for headings. Option B: Cal Sans, the geometric sans the current site uses. Both pair with Inter for body text. Fluid sizes use clamp() between 390px and 1440px; body line-height 1.65; measure capped at 70ch." />
+          <SectionHeading eyebrow="02" heading="Typography" lead="Urbanist for headings (semibold) and body text, as on the Ideal Dental Solutions site. Fluid sizes use clamp() between 390px and 1440px; body line-height 1.65; measure capped at 70ch." />
           <div className="mt-10 space-y-8">
             <div><p className="text-sm text-grey-600">Display 6xl · hero</p><p className="font-display text-6xl text-ink-900">Dentistry that feels calm.</p></div>
             <div><p className="text-sm text-grey-600">H1 · 5xl</p><p className="font-display text-5xl">Dental Implants in Santa Clarita</p></div>
             <div><p className="text-sm text-grey-600">H2 · 4xl</p><h2>Why patients choose us</h2></div>
             <div><p className="text-sm text-grey-600">H3 · 2xl</p><h3>Personalized attention</h3></div>
             <div><p className="text-sm text-grey-600">Lead · xl</p><p className="lead text-xl prose-measure">Dr. Nuriel Lavi sees every patient himself, at every visit. Holistic, integrative care with modern technology.</p></div>
-            <div><p className="text-sm text-grey-600">Body · base / Inter</p><p className="prose-measure text-grey-700">From holistic preventive care and long-term treatment plans to advanced cosmetic and surgical solutions, our Santa Clarita office offers everything you need in one trusted location.</p></div>
+            <div><p className="text-sm text-grey-600">Body · base / Urbanist</p><p className="prose-measure text-grey-700">From holistic preventive care and long-term treatment plans to advanced cosmetic and surgical solutions, our Santa Clarita office offers everything you need in one trusted location.</p></div>
             <div><p className="text-sm text-grey-600">Eyebrow</p><p className="eyebrow">Our services</p></div>
           </div>
         </Container>
@@ -93,7 +91,7 @@ export default function StyleGuide() {
 
       <Section>
         <Container>
-          <SectionHeading eyebrow="03" heading="Components" lead="Pill buttons with 44px minimum height, 24px-radius cards with hairline rings and layered shadows, accordion, trust row, and the dark section treatment with a subtle grain." />
+          <SectionHeading eyebrow="03" heading="Components" lead="Square uppercase buttons with a 44px minimum height, flat cream cards with the photo on top, accordions, trust row, and flat near-black sections." />
           <div className="mt-10 flex flex-wrap gap-3">
             <Button arrow>Primary</Button><Button variant="dark">Dark</Button><Button variant="outline">Outline</Button><Button variant="light">Light</Button><Button size="lg" arrow>Large</Button><Button size="sm">Small</Button>
           </div>

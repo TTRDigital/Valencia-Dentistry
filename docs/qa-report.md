@@ -21,11 +21,11 @@ Measured locally on the production build. Local measurements run over HTTP/1.1 b
 
 | Page | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Home `/` | 89 [86–89] | 100 | 100 | 100 | 3.0 s | 0 | 260 ms |
-| Service `/services/dental-implants/` | 90 [90] | 100 | 100 | 100 | 2.6 s | 0 | 310 ms |
-| Post `/dental-implants-cost/` | 96 [95–96] | 100 | 100 | 100 | 2.0 s | 0 | 210 ms |
+| Home `/` | 90 [69–90, first run cold] | 100 | 100 | 100 | 2.9 s | 0 | 260 ms |
+| Service `/services/dental-implants/` | 94 [94] | 100 | 100 | 100 | 2.5 s | 0 | 210 ms |
+| Post `/dental-implants-cost/` | 99 [99] | 100 | 100 | 100 | 1.8 s | 0 | 70 ms |
 
-(Re-measured 2026-11-01 after the Ideal-style service pages, the live-site photos and the new doctor photos. The service hero is now a full-bleed photo, which costs ~0.3s of simulated LCP versus the earlier framed image.)
+(Re-measured 2026-11-02 after the site-wide Ideal Dental restyle: Urbanist replaces Inter + Fraunces, which saves one font file.)
 
 Performance on the home and service pages is 90–93 rather than the ≥95 target. What was done and what remains:
 
@@ -58,6 +58,10 @@ The Valencia Dentistry identity was applied: logo vectorized from the supplied m
 - **Service pages** rebuilt in the Ideal Dental Solutions structure: full-bleed photo hero (title, subtitle, intro, buttons), light intro, dark "Understanding …" section with a photo and an accordion of treatment types and benefits, "Why choose us" photo cards, dark numbered process, full-bleed "good candidate" banner, care guide / comparison tables / remaining sections, FAQ, reviews, related services, CTA.
 - **Service text** is now the original Valencia Smile Expert wording (dentist name updated), rebuilt from the crawled pages by `scripts/build-services.ts` into `content/services/*.json`. Re-run it only if the parser changes; editors otherwise edit the JSON or the CMS.
 - **Photos**: the live site's stock photos (service cards, blog heroes) are used for service heroes and section images; the brand placeholder panels are gone. Doctor photos were taken from bestdentistthousandoaks.com as instructed (`public/images/team/dr-lavi*.jpg`). **That site identifies the person in these photos as Dr. Jason Verdi of Newbury Park Dental Arts; confirm Dr. Lavi has the rights to use them before launch.**
+
+## Site-wide Ideal Dental style (2026-11-02)
+
+At the client's request the whole site now follows idealdentalsolutions.com: Urbanist for all text, compact semibold headings, cream (#FAFAF4) and flat near-black (#1C1C1C) sections, cream header with uppercase navigation, an underlined "Schedule Appointment" link and the phone number, square uppercase buttons, square photos, flat cream cards with the photo on top, full-bleed photo heroes on every inner page, the doctor shown in a 50/50 black text and photo row, and Ideal's dark contact block (phone, address, hours, then the request form). The home hero the client approved is kept. Brand colours stay Valencia Dentistry's (charcoal, olive, bronze). The navigation now matches Ideal's order: Home, About Us, Services, Before & After, Blog, Contact.
 
 ## Open items (need from the client)
 

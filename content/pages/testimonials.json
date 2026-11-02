@@ -11,9 +11,9 @@
     {
       "_type": "hero",
       "variant": "page",
-      "eyebrow": "Testimonials",
-      "heading": "What our patients say.",
-      "lead": "Google reviews from Santa Clarita patients, shown exactly as written. Rated 4.9 across 180 reviews.",
+      "eyebrow": "Before & after",
+      "heading": "Real results and patient reviews",
+      "lead": "Smiles restored in our Valencia office, and Google reviews from Santa Clarita patients shown exactly as written.",
       "primary": {
         "label": "Read all reviews on Google",
         "href": "https://maps.app.goo.gl/zf8fsL8TG72B2QZh9"
@@ -29,16 +29,16 @@
       "trust": true
     },
     {
-      "_type": "reviews",
-      "eyebrow": "Google reviews",
-      "heading": "Recent reviews",
-      "lead": "Every review here was written by a patient on Google."
-    },
-    {
       "_type": "caseCarousel",
       "eyebrow": "Before and after",
       "heading": "Results you can see",
       "lead": "A few of the smiles restored in our Valencia office. Results vary from person to person."
+    },
+    {
+      "_type": "reviews",
+      "eyebrow": "Google reviews",
+      "heading": "Recent reviews",
+      "lead": "Every review here was written by a patient on Google."
     },
     {
       "_type": "cta",

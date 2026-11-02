@@ -2,22 +2,14 @@
 
 @custom-variant hocus (&:hover, &:focus-visible);
 
-/* Option B display face: downloaded only when used (data-display="calsans"). */
-@font-face {
-  font-family: "Cal Sans";
-  src: url("/fonts/CalSans-Regular.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
 
 /* ------------------------------------------------------------------ */
 /* Design tokens                                                        */
 /* ------------------------------------------------------------------ */
 @theme {
   /* Brand palette: Valencia Dentistry brand board (charcoal, olive, warm grey, greige, ivory) + the logo's bronze */
-  --color-ink-950: #1c1c1c;
-  --color-ink-900: #2e2e2e; /* charcoal: headings, dark surfaces */
+  --color-ink-950: #141414;
+  --color-ink-900: #1c1c1c; /* near-black: headings, dark surfaces (Ideal style) */
   --color-ink-800: #3a3a3a;
   --color-ink-700: #474747;
   --color-olive-700: #4a574a;
@@ -40,46 +32,46 @@
   --color-grey-200: #d6d3cc; /* greige: borders, dividers */
   --color-grey-100: #eceae4;
   --color-white: #ffffff;
-  --color-offwhite: #faf9f6;
-  --color-warm: #f7f5ef;      /* ivory page background */
+  --color-offwhite: #fffaf4;  /* header cream */
+  --color-warm: #fafaf4;      /* cream page background (Ideal style) */
   --color-success: #3f6b45;
   --color-danger: #a8321f;
 
   /* Type */
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-display: var(--font-display-active), var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-urbanist), system-ui, sans-serif;
+  --font-display: var(--font-urbanist), system-ui, sans-serif;
 
-  /* Fluid type scale (clamp between 390px and 1440px) */
+  /* Type scale (Ideal style: compact, semibold headings, clamp between 390px and 1440px) */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-base--line-height: 1.65;
   --text-md: 1.0625rem;
-  --text-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.25vw, 1.125rem);
   --text-lg--line-height: 1.6;
-  --text-xl: clamp(1.1875rem, 1.1rem + 0.45vw, 1.375rem);
+  --text-xl: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
   --text-xl--line-height: 1.45;
-  --text-2xl: clamp(1.375rem, 1.25rem + 0.6vw, 1.625rem);
+  --text-2xl: clamp(1.1875rem, 1.1rem + 0.35vw, 1.375rem);
   --text-2xl--line-height: 1.3;
-  --text-3xl: clamp(1.625rem, 1.4rem + 1vw, 2.125rem);
-  --text-3xl--line-height: 1.2;
-  --text-4xl: clamp(2rem, 1.6rem + 1.6vw, 2.875rem);
-  --text-4xl--line-height: 1.12;
-  --text-5xl: clamp(2.375rem, 1.8rem + 2.4vw, 3.75rem);
-  --text-5xl--line-height: 1.06;
-  --text-6xl: clamp(2.75rem, 2rem + 3.4vw, 4.75rem);
-  --text-6xl--line-height: 1.02;
+  --text-3xl: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
+  --text-3xl--line-height: 1.25;
+  --text-4xl: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+  --text-4xl--line-height: 1.2;
+  --text-5xl: clamp(1.875rem, 1.55rem + 1.3vw, 2.625rem);
+  --text-5xl--line-height: 1.15;
+  --text-6xl: clamp(2.125rem, 1.7rem + 1.8vw, 3.25rem);
+  --text-6xl--line-height: 1.1;
 
-  /* Radii (large rounded cards) */
-  --radius-xl: 1rem;
-  --radius-2xl: 1.25rem;
-  --radius-3xl: 1.5rem;
-  --radius-4xl: 2rem;
+  /* Radii: near-square (Ideal style) */
+  --radius-xl: 4px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
+  --radius-4xl: 6px;
 
-  /* Soft layered shadows */
-  --shadow-soft: 0 1px 2px rgb(46 46 46 / 0.04), 0 8px 24px -12px rgb(46 46 46 / 0.14);
-  --shadow-lift: 0 2px 4px rgb(46 46 46 / 0.05), 0 20px 40px -16px rgb(46 46 46 / 0.24);
-  --shadow-ring: 0 0 0 1px rgb(46 46 46 / 0.06);
+  /* Flat surfaces */
+  --shadow-soft: 0 0 0 0 transparent;
+  --shadow-lift: 0 12px 28px -18px rgb(20 20 20 / 0.35);
+  --shadow-ring: 0 0 0 1px rgb(20 20 20 / 0.06);
 
   /* Motion */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
@@ -98,19 +90,11 @@
 /* ------------------------------------------------------------------ */
 @layer base {
   :root {
-    --font-display-active: var(--font-fraunces);
-    /* Fraunces: optical size and softness for a quiet, editorial feel */
-    --display-settings: normal;
-    --display-weight: 500;
-    --display-tracking: -0.015em;
-    --header-h: 76px;
-    color-scheme: light;
-  }
-  :root[data-display="calsans"] {
-    --font-display-active: "Cal Sans", var(--font-inter), system-ui, sans-serif;
     --display-settings: normal;
     --display-weight: 600;
-    --display-tracking: -0.01em;
+    --display-tracking: 0;
+    --header-h: 72px;
+    color-scheme: light;
   }
 
   html {
@@ -160,19 +144,20 @@
 /* ------------------------------------------------------------------ */
 @layer components {
   .container-x { @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8; }
-  .section { @apply py-16 sm:py-20 lg:py-28; }
-  .section-tight { @apply py-12 sm:py-16 lg:py-20; }
+  .section { @apply py-14 sm:py-16 lg:py-24; }
+  .section-tight { @apply py-12 sm:py-14 lg:py-16; }
   .prose-measure { max-width: 70ch; }
 
-  .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.14em] text-olive-600; }
-  .eyebrow::before { content: ""; @apply h-px w-6 bg-current opacity-70; }
+  .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-bold uppercase tracking-[0.12em] text-olive-600; }
+  .eyebrow::before { content: ""; @apply h-[2px] w-6 bg-current; }
   .dark-section .eyebrow, .on-dark .eyebrow { @apply text-bronze-300; }
-  .lead { @apply text-grey-600 text-lg; }
+  .lead { @apply text-grey-700 text-lg; }
   .dark-section .lead, .on-dark .lead { @apply text-white/75; }
   .dark-section h1, .dark-section h2, .dark-section h3 { color: var(--color-white); }
 
   /* Buttons: ≥44px tap targets */
-  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 py-2.5 text-[0.9375rem] font-semibold no-underline transition-[transform,box-shadow,background-color,color,border-color] duration-200 ease-out select-none; }
+  /* Square, uppercase buttons (Ideal style) */
+  .btn { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-[2px] px-6 py-2.5 text-[0.8125rem] font-bold uppercase tracking-[0.1em] no-underline transition-[transform,box-shadow,background-color,color,border-color] duration-200 ease-out select-none; }
   .btn:active { transform: translateY(1px); }
   .btn-primary { @apply bg-olive-600 text-white shadow-soft; }
   .btn-primary:hover { @apply bg-olive-700 shadow-lift; }
@@ -184,21 +169,20 @@
   .btn-outline:hover { @apply border-ink-900 bg-ink-900/5; }
   .dark-section .btn-outline, .on-dark .btn-outline { @apply border-white/40 text-white; }
   .dark-section .btn-outline:hover, .on-dark .btn-outline:hover { @apply border-white bg-white/10; }
-  .btn-lg { @apply min-h-13 px-8 text-base; }
-  .btn-sm { @apply min-h-11 px-4 text-sm; } /* 44px: every button is a full tap target */
+  .btn-lg { @apply min-h-13 px-8 text-[0.875rem]; }
+  .btn-sm { @apply min-h-11 px-4 text-[0.75rem]; } /* 44px: every button is a full tap target */
 
-  .card { @apply rounded-3xl bg-white shadow-soft ring-1 ring-ink-900/[0.06]; }
+  /* Flat cards: photo on top, cream text block (Ideal style) */
+  .card { @apply rounded-[4px] bg-[#f4f2ea]; }
   .card-hover { @apply transition-[transform,box-shadow] duration-300 ease-out; }
-  .card-hover:hover { @apply -translate-y-1 shadow-lift; }
+  .card-hover:hover { @apply -translate-y-0.5 shadow-lift; }
   @media (prefers-reduced-motion: reduce) { .card-hover:hover { transform: none; } }
 
   .hairline { @apply border-ink-900/10; }
 
-  /* Dark surfaces with a subtle grain + gradient */
+
+  /* Flat near-black sections (Ideal style) */
   .dark-section { @apply relative bg-ink-900 text-white; }
-  .dark-section::before { content: ""; @apply pointer-events-none absolute inset-0; background: radial-gradient(1200px 500px at 15% -10%, rgb(91 107 90 / 0.42), transparent 60%), radial-gradient(900px 400px at 100% 110%, rgb(201 186 156 / 0.16), transparent 55%); }
-  /* Grain: a 1.2kB 64px noise tile inlined as a data URI, so it paints with the section's first paint (a background image fetched over the network would become the LCP candidate on dark-hero pages). */
-  .dark-section::after { content: ""; @apply pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAgMAAADXB5lNAAAADFBMVEX///+qqqpVVVUAAAABM1s0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAES0lEQVQ4ywFABL/7AJ0mK9HlOReYWpuFj/E/OIYAl9x4WdHJRVDeq65u44YBTgDjnmRb9o1CW4115UppZV2NAIKArIGxPsOrxzZgIoHe8qgABgNub1/s+0770RSw120KAwBPdNYLRAzGsT8s3xF7nZesACpY01ZTVa0SyDTU4uf8u1cAAYbc9jSYk78DEEz8bZik/QD3+w7L5yM2ZPAAqRGEJu3cANUa0C+QFraL7+aGScr47doAMy43jYS6KroWcM5qizMN/wCrTk4X7J+EeqZh+mR0hyMCAIr77FGU9cRoZL+ewFxWquQAFOZcf5ZXciS2q9BjyPirgwBb3y4j+/rOlXUAbSaxEsyvALzOWPxY/XZB8pSe9cJCZn4AMwnvxPNxbgfD4+gh5dahogA+ojnf7fd87lAYCJ07gGu4AG7GNtiKrmJd4JJHoTQIppMAWlNXJhNto9eGWtq6fGrh2gBZxbPrYzs8W+Uee4ySl3mtAOA2D3edGPkynHt1YkTkhAMAMf0nmiTAHVspRMY5xMvfCwDAQAvh0lhQe9MGz/mKW4nzAM6bHlsqZvBLpyb6sni8cgEAFf5rbK5pOrsIeCzt5vGUYACxD/JSXNgko8OUSEr7UPq5AIIi/h3rjmpxyml8vQKz5W8ACqA6rBiXioHstm1e4Xwi1gAFygasrR5uym23NGgq5RqHAIr5003AtYeKHAK3rZ+yr/UANSYqf8+ClR11n7tRrslxgwBgd02C7Zzz5Rv58c3KGpD1AGWck5GWMv7CpHrGfLKo2JoAtDUPR3PeJwAzyqrQ/rRtYgDS+4SlsvrJ+/HixjMKmiCIAOZS0wsa+2sh9quYfJj6KEIAjgeYsPoSa2eV8b+DhOCNIwCN7TIp26VDzNxcuwt+I1LgAFRWKWqfJLzWTUC9r8hOQTAAqlYiwP5F9YYbfKeV0wqStgDjyZMx0yzAnBU+pQNIq1z3AANzwZ4psf5oy/jyb4c3yxMA63VBdIiaGrGp1NpAQY38BADFcY7bb7IGR3lK49W51VLdADn9WDe4R4KaPlSLQhRBakIA3ochNIViU+VUDQ18t2DL3gBveYd/T4oySay5NtB4Jr/7AJJ0N3zRgK8vHPHAdPXKLXkA7GhbbC8xBEq7H2omFPKfNwCREatv3QvkR0yN9H3XIb09ABuMvY3sIcXojipV8yC08MYAe+hhVStFvdZ6tk9zbxTPvQBcmO5pWM7oKeKgrAH1xImBAAFutdn2gQ4+Sqdx3cjkDncARvenmSzyQLY13AaE311C7wA1IEZDy9mhzfBzowe/WGjZAAdSgo0SI1YgMdouto+m9F4AtaLCcSdpCDzfTfkysnQHgAD/mdcQqdEGZRUs3CePHMauAHCgDebuEg5UuB2A0XKjvGIADiFBhEdijIevlgrsRFzU8QCqIZFZvsX3ng36M817ofTjAD1TuQNolb3ect+CypiDSZQ/lxOGC44JUQAAAABJRU5ErkJggg=="); background-size: 64px 64px; }
   .dark-section > * { position: relative; }
 
   /* Scroll reveal: CSS scroll-driven animation, no JavaScript (components/ui/Reveal.tsx).
@@ -222,7 +206,7 @@
   /* Rich text (blog bodies, legal pages) */
   .rich { @apply text-[1.0625rem] leading-[1.75] text-grey-700; }
   .rich > * + * { @apply mt-5; }
-  .rich h2 { @apply mt-12 mb-4 text-3xl; }
+  .rich h2 { @apply mt-12 mb-4 text-4xl; }
   .rich h3 { @apply mt-9 mb-3 text-2xl; }
   .rich h4 { @apply mt-7 mb-2; }
   .rich a { @apply text-olive-600 underline decoration-olive-600/40 hover:decoration-olive-600; }
@@ -232,7 +216,7 @@
   .rich li::marker { @apply text-olive-600; }
   .rich blockquote { @apply border-l-2 border-bronze-300 pl-5 italic text-grey-700; }
   .rich table { @apply w-full border-collapse text-[0.95rem]; }
-  .rich .table-wrap { @apply my-6 overflow-x-auto rounded-2xl ring-1 ring-ink-900/10; }
+  .rich .table-wrap { @apply my-6 overflow-x-auto rounded-[4px] ring-1 ring-ink-900/10; }
   .rich th { @apply bg-greige-50 px-4 py-3 text-left font-semibold text-ink-900; }
   .rich td { @apply border-t border-ink-900/10 px-4 py-3 align-top; }
   .rich img { @apply rounded-2xl; }
@@ -240,6 +224,12 @@
 }
 
 @layer utilities {
+  /* Lead form on a dark section (utilities layer, so it overrides the form's own text colours) */
+  .form-dark label, .form-dark label .text-ink-900 { color: #fff; }
+  .form-dark .text-grey-700, .form-dark .text-grey-600 { color: rgb(255 255 255 / 0.75); }
+  .form-dark a.text-olive-600 { color: var(--color-bronze-300); }
+  .form-dark .text-danger { color: #f4a291; }
+  .form-dark [role="alert"].bg-red-50 { color: var(--color-danger); }
   .text-balance { text-wrap: balance; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { scrollbar-width: none; }

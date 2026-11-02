@@ -23,20 +23,14 @@
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
       },
       "image": {
-        "src": "/images/blog/1781217378905.jpg",
-        "alt": "Smiling patient and dentist in the treatment room"
+        "src": "/images/stock/exam-mirror.jpg",
+        "alt": "Dentist examining a patient's teeth with a mirror"
       }
-    },
-    {
-      "_type": "visit",
-      "eyebrow": "Visit us",
-      "heading": "Find us on Tourney Road",
-      "lead": "Suite 240 is on the second floor. Free parking on site and an elevator in the lobby."
     },
     {
       "_type": "form",
       "eyebrow": "Send a message",
-      "heading": "Tell us how we can help",
+      "heading": "Request an appointment",
       "lead": "Share a few details and we'll call or email you back. For emergencies, please phone the office directly.",
       "formName": "Contact form"
     },
@@ -69,6 +63,12 @@
           "a": "Often, yes. Call (661) 254-5200 as early as possible and we will do our best to see you the same day."
         }
       ]
+    },
+    {
+      "_type": "visit",
+      "eyebrow": "Visit us",
+      "heading": "Find us on Tourney Road",
+      "lead": "Suite 240 is on the second floor. Free parking on site and an elevator in the lobby."
     }
   ]
 }
