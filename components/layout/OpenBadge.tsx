@@ -17,7 +17,7 @@ export function OpenBadge({ className, showNext }: { className?: string; showNex
     <span className={cn("inline-flex items-center gap-2 text-sm", className)} aria-live="polite">
       <span className={cn("inline-block h-2.5 w-2.5 rounded-full", state ? (state.open ? "bg-emerald-400" : "bg-grey-400") : "bg-grey-300")} aria-hidden="true" />
       <span className="font-semibold">{state ? state.label : "Hours"}</span>
-      {showNext && state?.next && <span className="opacity-70">· {state.next}</span>}
+      {showNext && state?.next && <span className="font-normal">· {state.next}</span>}
     </span>
   );
 }
