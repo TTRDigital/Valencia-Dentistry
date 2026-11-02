@@ -62,6 +62,11 @@
   - Back and forward keep the browser's own scroll position.
   - Highlighting is correct: a service page highlights Services, About highlights Our Practice, and a blog post highlights Blog.
 
+### Lighthouse notes
+
+- **Scores:** every score is equal or better. Mobile performance rose 4–10 points and mobile LCP fell by 0.8–1.1s. The static map, crop-aware image sizes and the page-hero band all request less or better-fitting data.
+- **INP:** this is a lab probe (real clicks and keys at 4× CPU slowdown, one run), not field data. Desktop service pages went from about 30ms to 128–176ms. Per-interaction timing shows the cause is the FAQ's new smooth open: its first frame takes 40–120ms at 4× slowdown, against about 30ms for the old instant open. Every page stays under Google's 200ms "good" threshold. Home desktop improved from 240ms to 144ms.
+
 ### Not fixed, and why
 
 - **Photos with another dentist's name:** several practice photos show a coat or scrubs embroidered "Dr. Jason Verdi". These are the real photos supplied for the site. The practice needs to confirm who is pictured, or supply replacement photos.
