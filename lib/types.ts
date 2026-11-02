@@ -139,7 +139,7 @@ export type FeatureGridSection = { _type: "featureGrid"; eyebrow?: string; headi
 export type ServiceCategoriesSection = { _type: "serviceCategories"; eyebrow?: string; heading: string; lead?: string; categories: { title: string; text: string; href?: string; items: Link[] }[] };
 export type GallerySection = { _type: "beforeAfter"; eyebrow?: string; heading: string; lead?: string; caseIds?: string[] };
 export type DoctorSection = { _type: "doctor"; eyebrow?: string; heading: string; quote?: string; body: string[]; image: SiteImage; cta?: Link; stats?: { label: string; value: string }[] };
-export type ReviewsSection = { _type: "reviews"; eyebrow?: string; heading: string; lead?: string; ids?: string[] };
+export type ReviewsSection = { _type: "reviews"; eyebrow?: string; heading: string; lead?: string; ids?: string[]; trust?: boolean };
 export type FaqSection = { _type: "faq"; eyebrow?: string; heading: string; lead?: string; items: Faq[]; schema?: boolean };
 export type VisitSection = { _type: "visit"; eyebrow?: string; heading: string; lead?: string; showMap?: boolean };
 export type CtaSection = { _type: "cta"; eyebrow?: string; heading: string; text?: string; primary?: Link; secondary?: Link; image?: SiteImage };
@@ -152,18 +152,17 @@ export type ServicesHubSection = { _type: "servicesHub" };
 export type InsuranceSection = { _type: "insurance"; heading?: string; text?: string };
 export type OfferSection = { _type: "offer"; eyebrow?: string; heading: string; text: string; bullets?: string[]; fine?: string; cta?: Link };
 
-export type PhotoCardsSection = { _type: "photoCards"; eyebrow?: string; heading: string; lead?: string; cards: { title: string; text: string; image: SiteImage; link?: Link }[] };
-export type BannerSection = { _type: "banner"; eyebrow?: string; heading: string; text: string; image?: SiteImage; cta?: Link };
-export type TechAccordionSection = { _type: "techAccordion"; eyebrow?: string; heading: string; lead?: string; image: SiteImage; items: { title: string; text: string }[] };
-export type CaseCarouselSection = { _type: "caseCarousel"; eyebrow?: string; heading: string; lead?: string; note?: string };
-export type CenteredCtaSection = { _type: "centeredCta"; eyebrow?: string; heading: string; text: string; cta?: Link; secondary?: Link };
-export type StepPanelsSection = { _type: "stepPanels"; heading?: string; steps: { title: string; text: string; image?: SiteImage }[] };
+export type TreatmentPickerSection = { _type: "treatmentPicker"; eyebrow?: string; heading: string; lead?: string; options: { id: string; label: string; title: string; text: string; links: Link[] }[] };
+export type FirstVisitSection = { _type: "firstVisit"; eyebrow?: string; heading: string; lead?: string; steps: Step[]; cta?: Link; note?: string };
+export type TechExplainerSection = { _type: "techExplainer"; eyebrow?: string; heading: string; lead?: string; dark?: boolean; items: { title: string; text: string; forYou: string; icon?: string }[] };
+export type DoctorIntroSection = { _type: "doctorIntro"; eyebrow?: string; heading: string; body: string[]; image: SiteImage; points?: string[]; cta?: Link };
+export type FocusAreasSection = { _type: "focusAreas"; eyebrow?: string; heading: string; lead?: string; areas: { title: string; text: string; image: SiteImage; link: Link; points?: string[] }[] };
 
 export type PageSection =
   | HeroSection | IntroSplitSection | FeatureGridSection | ServiceCategoriesSection | GallerySection | DoctorSection
   | ReviewsSection | FaqSection | VisitSection | CtaSection | RichTextSection | TeamSection | PhotoGridSection
   | ValuesSection | FormSection | ServicesHubSection | InsuranceSection | OfferSection
-  | PhotoCardsSection | BannerSection | TechAccordionSection | CaseCarouselSection | CenteredCtaSection | StepPanelsSection;
+  | TreatmentPickerSection | FirstVisitSection | TechExplainerSection | DoctorIntroSection | FocusAreasSection;
 
 export type Page = {
   slug: string;

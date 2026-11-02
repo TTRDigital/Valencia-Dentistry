@@ -12,7 +12,11 @@ import { Reviews } from "./Reviews";
 import { ServiceCategories } from "./ServiceCategories";
 import { ServicesHub } from "./ServicesHub";
 import { Visit } from "./Visit";
-import { Banner, CaseCarouselSectionView, CenteredCta, PhotoCards, StepPanels, TechAccordion } from "./IdealHome";
+import { DoctorIntro } from "./DoctorIntro";
+import { FirstVisit } from "./FirstVisit";
+import { FocusAreas } from "./FocusAreas";
+import { TechExplainer } from "./TechExplainer";
+import { TreatmentPicker } from "./TreatmentPicker";
 
 export function Sections({ sections }: { sections: PageSection[] }) {
   return (
@@ -38,12 +42,11 @@ export function Sections({ sections }: { sections: PageSection[] }) {
           case "servicesHub": return <ServicesHub key={key} />;
           case "insurance": return <Insurance key={key} s={s} />;
           case "offer": return <Offer key={key} s={s} />;
-          case "photoCards": return <PhotoCards key={key} s={s} />;
-          case "banner": return <Banner key={key} s={s} />;
-          case "techAccordion": return <TechAccordion key={key} s={s} />;
-          case "caseCarousel": return <CaseCarouselSectionView key={key} s={s} />;
-          case "centeredCta": return <CenteredCta key={key} s={s} />;
-          case "stepPanels": return <StepPanels key={key} s={s} />;
+          case "treatmentPicker": return <TreatmentPicker key={key} s={s} />;
+          case "firstVisit": return <FirstVisit key={key} s={s} />;
+          case "techExplainer": return <TechExplainer key={key} s={s} />;
+          case "doctorIntro": return <DoctorIntro key={key} s={s} />;
+          case "focusAreas": return <FocusAreas key={key} s={s} />;
           default: return null;
         }
       })}

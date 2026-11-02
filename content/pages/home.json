@@ -28,151 +28,301 @@
       "trust": true
     },
     {
-      "_type": "photoCards",
-      "eyebrow": "Why Valencia Dentistry",
-      "heading": "Exceptional smiles. Only at Valencia Dentistry.",
-      "lead": "Dr. Lavi and the team are here to give you a smile you are genuinely proud of, done right the first time.",
-      "cards": [
+      "_type": "treatmentPicker",
+      "eyebrow": "Start here",
+      "heading": "What's bringing you in?",
+      "lead": "Choose what's on your mind and we'll show you where to start. Or call (661) 254-5200 and talk it through with our front desk.",
+      "options": [
         {
-          "title": "Dentistry as artistry",
-          "text": "Dr. Lavi treats every smile like a custom project. The result is not just a better smile, it is one that actually looks like you.",
-          "image": {
-            "src": "/images/real/veneer-tryin.jpg",
-            "alt": "A patient smiling during a veneer try-in"
-          },
-          "link": {
-            "label": "Cosmetic dentistry",
-            "href": "/services/cosmetic-dentistry/"
-          }
+          "id": "missing",
+          "label": "Missing teeth",
+          "title": "Replacing one tooth, several, or a full arch",
+          "text": "Dr. Lavi plans every implant on a 3D CBCT scan, so you know how much bone you have and what your real options are before anything begins. If an implant isn't the right fit, a fixed bridge may be.",
+          "links": [
+            {
+              "label": "Dental implants",
+              "href": "/services/dental-implants/",
+              "description": "One tooth or several"
+            },
+            {
+              "label": "All-on-4 implants",
+              "href": "/services/oral-surgery/all-on-4-implants/",
+              "description": "A full arch on four implants"
+            },
+            {
+              "label": "Dental bridges",
+              "href": "/services/restorative-dentistry/dental-bridges/",
+              "description": "A fixed, non-surgical option"
+            },
+            {
+              "label": "Bone grafting",
+              "href": "/services/oral-surgery/bone-grafting/",
+              "description": "When there isn't enough bone yet"
+            }
+          ]
         },
         {
-          "title": "Built to last",
-          "text": "We use the best materials available, with 3D imaging and guided planning, because your smile should still look great years from now.",
-          "image": {
-            "src": "/images/real/scan-doctor.jpg",
-            "alt": "Dr. Nuriel Lavi taking a digital scan"
-          },
-          "link": {
-            "label": "Dental implants",
-            "href": "/services/dental-implants/"
-          }
+          "id": "chipped",
+          "label": "Chipped or worn teeth",
+          "title": "Repairing chips, cracks and worn edges",
+          "text": "Small chips can often be repaired with tooth-colored bonding. Larger breaks or worn-down teeth usually need a crown, which we design and make in house, often in a single visit. Veneers can reshape several front teeth at once.",
+          "links": [
+            {
+              "label": "Dental crowns",
+              "href": "/services/dental-crowns/",
+              "description": "Often finished the same day"
+            },
+            {
+              "label": "Veneers",
+              "href": "/services/cosmetic-dentistry/veneers/",
+              "description": "Shape and color for front teeth"
+            },
+            {
+              "label": "Composite fillings",
+              "href": "/services/cosmetic-dentistry/composite-filling/",
+              "description": "Tooth-colored, mercury-free"
+            }
+          ]
         },
         {
-          "title": "One of a kind",
-          "text": "Every plan is built around the person in the chair. No templates, no shortcuts, no handoffs, just work we are proud of.",
-          "image": {
-            "src": "/images/real/mirror-smile-3.jpg",
-            "alt": "A patient checking her new smile in a mirror with Dr. Lavi"
-          },
-          "link": {
-            "label": "Holistic dentistry",
-            "href": "/services/holistic-dentistry/"
-          }
+          "id": "crooked",
+          "label": "Crooked or crowded teeth",
+          "title": "Straightening without metal braces",
+          "text": "Invisalign clear aligners are planned from an iTero digital scan, with no impression trays. How long it takes depends on your bite; Dr. Lavi gives you a realistic estimate at your consultation.",
+          "links": [
+            {
+              "label": "Invisalign",
+              "href": "/services/cosmetic-dentistry/invisalign/",
+              "description": "Clear aligners"
+            },
+            {
+              "label": "Cosmetic dentistry",
+              "href": "/services/cosmetic-dentistry/",
+              "description": "All smile options"
+            }
+          ]
+        },
+        {
+          "id": "jaw",
+          "label": "Jaw pain or headaches",
+          "title": "Relief for a sore, clicking or tired jaw",
+          "text": "Morning jaw soreness, clicking or tension headaches can come from the jaw joint or from grinding at night. We start with a careful look at your bite and joint, then talk through options such as a custom night guard.",
+          "links": [
+            {
+              "label": "TMJ treatments",
+              "href": "/tmj-treatments/",
+              "description": "Night guards and bite care"
+            },
+            {
+              "label": "Holistic dentistry",
+              "href": "/services/holistic-dentistry/",
+              "description": "A whole-body view"
+            }
+          ]
+        },
+        {
+          "id": "nervous",
+          "label": "Nervous about the dentist",
+          "title": "Going at your pace",
+          "text": "You'll see Dr. Lavi at every visit, and nothing happens without an explanation first. Tell us how you feel at the start; sedation options are available when appropriate.",
+          "links": [
+            {
+              "label": "Your first visit",
+              "href": "#first-visit",
+              "description": "What happens at the $59 exam"
+            },
+            {
+              "label": "Holistic dentistry",
+              "href": "/services/holistic-dentistry/",
+              "description": "Calm, whole-body care"
+            }
+          ]
+        },
+        {
+          "id": "pain",
+          "label": "Toothache or a broken tooth",
+          "title": "In pain right now",
+          "text": "Call (661) 254-5200 as early as you can. Same-day appointments are often available for pain, swelling or a broken tooth, Monday to Friday, 8am to 5pm.",
+          "links": [
+            {
+              "label": "Emergency dental care",
+              "href": "/emergency-dental/",
+              "description": "What to do right now"
+            },
+            {
+              "label": "Tooth extractions",
+              "href": "/services/oral-surgery/tooth-extractions/",
+              "description": "When a tooth can't be saved"
+            },
+            {
+              "label": "Wisdom teeth removal",
+              "href": "/services/oral-surgery/wisdom-teeth-removal/",
+              "description": "Planned with 3D imaging"
+            }
+          ]
         }
       ]
     },
     {
-      "_type": "banner",
-      "eyebrow": "Our mission",
-      "heading": "Modern dentistry, done with care",
-      "text": "Our mission is to protect the oral health and well-being of our community through comprehensive, compassionate and technically precise dental care, delivered by one dentist who knows you.",
+      "_type": "doctorIntro",
+      "eyebrow": "Your dentist",
+      "heading": "Meet Dr. Nuriel Lavi, DDS",
+      "image": {
+        "src": "/images/team/dr-lavi-portrait.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS"
+      },
+      "body": [
+        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He sees every patient himself, at every visit, and he listens before he recommends anything.",
+        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
+      ],
+      "points": [
+        "One dentist at every visit, no handoffs",
+        "3D imaging before implants and surgery",
+        "Holistic, whole-body approach",
+        "Crowns made in house, often same day"
+      ],
       "cta": {
-        "label": "About Valencia Dentistry",
+        "label": "More about the practice",
         "href": "/about/"
-      },
-      "image": {
-        "src": "/images/real/treatment-room.jpg",
-        "alt": "A treatment room with a digital X-ray screen"
       }
     },
     {
-      "_type": "techAccordion",
-      "eyebrow": "Technology and innovation",
-      "heading": "Precise diagnosis, gentler treatment",
-      "lead": "We invest in technology that makes care more accurate and more comfortable: clearer images, fewer visits and treatment that is planned before it begins.",
-      "image": {
-        "src": "/images/real/consult-xray-model.jpg",
-        "alt": "Dr. Nuriel Lavi explaining an X-ray and an implant model"
-      },
-      "items": [
-        {
-          "title": "Digital X-rays",
-          "text": "Detailed images with minimal radiation exposure, available instantly for accurate diagnosis and treatment planning."
-        },
-        {
-          "title": "Intraoral cameras",
-          "text": "See what we see. Clear close-up images make it easier to understand your options and track progress."
-        },
-        {
-          "title": "3D imaging and cone beam CT",
-          "text": "A three-dimensional view of teeth, bone and nerves for guided implant surgery, wisdom teeth and TMJ assessment."
-        },
-        {
-          "title": "Digital scanning and in-house crowns",
-          "text": "iTero digital impressions instead of trays, and custom crowns designed and made on site, often the same day."
-        },
-        {
-          "title": "PRF therapy and laser dentistry",
-          "text": "Platelet-rich fibrin from your own blood to support healing after surgery, and precise, gentle soft-tissue treatment with a laser."
-        }
-      ]
-    },
-    {
-      "_type": "caseCarousel",
-      "eyebrow": "Before and after",
-      "heading": "Real results from our Valencia office",
-      "lead": "A few of the smiles restored here. Results vary from person to person.",
-      "note": "Patients shown with permission."
-    },
-    {
-      "_type": "centeredCta",
-      "eyebrow": "Smile reimagined",
-      "heading": "Smile reimagined at Valencia Dentistry",
-      "text": "Dr. Lavi and the team bring together clinical excellence and genuine care, delivering smiles that look natural, feel right and last. New patients receive a comprehensive exam and X-rays for $59.",
-      "cta": {
-        "label": "Schedule a consultation",
-        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
-      },
-      "secondary": {
-        "label": "Call (661) 254-5200",
-        "href": "tel:+16612545200"
-      }
-    },
-    {
-      "_type": "stepPanels",
-      "heading": "How it works",
+      "_type": "firstVisit",
+      "eyebrow": "Your $59 first visit",
+      "heading": "What happens at your first visit",
+      "lead": "No rush and no surprises. Here is exactly what to expect when you come in for your new patient exam.",
       "steps": [
         {
-          "title": "Book your consultation",
-          "text": "Every great smile starts with a conversation. Dr. Lavi takes the time to understand what you want and maps out exactly how to get you there.",
+          "title": "Before you arrive",
+          "text": "We check your PPO benefits ahead of time. Park free on site; Suite 240 is on the second floor, and the building has an elevator."
+        },
+        {
+          "title": "A short health history",
+          "text": "Arrive a few minutes early with a photo ID, your insurance card and a list of the medications you take."
+        },
+        {
+          "title": "Digital X-rays",
+          "text": "Low-radiation digital X-rays show what can't be seen in the chair, and appear on screen right away."
+        },
+        {
+          "title": "An unhurried exam with Dr. Lavi",
+          "text": "Teeth, gums and bite, plus an oral cancer screening. He explains what he sees as he goes."
+        },
+        {
+          "title": "A plan you can take home",
+          "text": "Your options, what is urgent and what can wait, a written estimate, and time for every question."
+        }
+      ],
+      "cta": {
+        "label": "Book your $59 exam",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      },
+      "note": "The $59 new patient special covers a comprehensive exam and X-rays."
+    },
+    {
+      "_type": "beforeAfter",
+      "eyebrow": "Real cases",
+      "heading": "Results from patients in our office",
+      "lead": "Drag the handle to compare each smile before and after treatment. Results vary from person to person."
+    },
+    {
+      "_type": "reviews",
+      "eyebrow": "What patients say",
+      "heading": "Rated 4.9 by Santa Clarita patients",
+      "lead": "Unedited Google reviews from people who sit in our chair.",
+      "trust": true
+    },
+    {
+      "_type": "focusAreas",
+      "eyebrow": "Beyond the tooth",
+      "heading": "Holistic care and jaw pain relief, in the same office",
+      "lead": "Two things patients often can't find in one place: a whole-body approach to dentistry, and real help for jaw pain and headaches.",
+      "areas": [
+        {
+          "title": "Holistic dentistry",
+          "text": "Biocompatible, mercury-free materials and a look at how your mouth affects the rest of your health.",
           "image": {
-            "src": "/images/real/consult-seated.jpg",
-            "alt": "Dr. Nuriel Lavi in a consultation with a patient"
+            "src": "/images/real/mirror-view-2.jpg",
+            "alt": "A patient checking her smile in a mirror while talking with Dr. Lavi"
+          },
+          "points": [
+            "Mercury-free, tooth-colored fillings",
+            "Prevention before treatment",
+            "PRF from your own blood to support healing"
+          ],
+          "link": {
+            "label": "About holistic dentistry",
+            "href": "/services/holistic-dentistry/"
           }
         },
         {
-          "title": "Transform your smile",
-          "text": "Your smile should look like yours, just better. Every restoration is crafted to blend seamlessly, so no one can tell the difference except you.",
+          "title": "TMJ treatments",
+          "text": "For clicking, a jaw that feels tired in the morning, or tension headaches that keep coming back.",
           "image": {
-            "src": "/images/real/smile-plan-7.jpg",
-            "alt": "Dr. Lavi showing a patient the digital plan for her smile"
+            "src": "/images/real/consult-seated-2.jpg",
+            "alt": "Dr. Lavi in a consultation with a patient"
+          },
+          "points": [
+            "A careful exam of your bite and joint",
+            "Custom night guards",
+            "Care planned around what's causing it"
+          ],
+          "link": {
+            "label": "About TMJ treatments",
+            "href": "/tmj-treatments/"
           }
+        }
+      ]
+    },
+    {
+      "_type": "techExplainer",
+      "eyebrow": "Technology",
+      "heading": "The equipment, and what it means for you",
+      "lead": "Tap or hover over each one to see why it matters at your visit.",
+      "items": [
+        {
+          "icon": "tech",
+          "title": "3D CBCT imaging",
+          "text": "A three-dimensional view of teeth, bone and nerves.",
+          "forYou": "Implants and wisdom teeth are planned with fewer surprises."
         },
         {
-          "title": "Feel the difference",
-          "text": "Our relationship does not end when you leave the chair. From ongoing care to routine visits, we are your partner in keeping that smile for life.",
-          "image": {
-            "src": "/images/real/mirror-view.jpg",
-            "alt": "A patient seeing her new smile in a mirror"
-          }
+          "icon": "sparkle",
+          "title": "iTero digital scanning",
+          "text": "Digital impressions instead of trays of putty.",
+          "forYou": "No gag-inducing impression material, and you see your scan on screen."
+        },
+        {
+          "icon": "shield",
+          "title": "Digital X-rays",
+          "text": "Instant images with low radiation.",
+          "forYou": "Quicker answers in the chair, with less exposure."
+        },
+        {
+          "icon": "bolt",
+          "title": "Crowns made in house",
+          "text": "Crowns designed and made here in the office.",
+          "forYou": "Many crowns are finished in one visit, without a temporary."
+        },
+        {
+          "icon": "leaf",
+          "title": "PRF therapy",
+          "text": "Platelet-rich fibrin made from a small sample of your own blood.",
+          "forYou": "Used after extractions, grafting and implants to support healing."
+        },
+        {
+          "icon": "smile",
+          "title": "Intraoral cameras",
+          "text": "Close-up photos of your teeth.",
+          "forYou": "You see exactly what Dr. Lavi sees before you decide anything."
         }
       ]
     },
     {
       "_type": "visit",
       "eyebrow": "Visit us",
-      "heading": "In the heart of Valencia",
-      "lead": "Just off the I-5 on Tourney Road, minutes from Stevenson Ranch, Newhall, Saugus and Canyon Country."
+      "heading": "Easy to reach, easy to park",
+      "lead": "27420 Tourney Rd, Suite 240, just off the I-5 in Valencia. Free parking on site and an elevator to the second floor. Minutes from Stevenson Ranch, Newhall, Saugus and Canyon Country."
     }
   ]
 }

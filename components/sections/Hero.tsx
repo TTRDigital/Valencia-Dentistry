@@ -23,25 +23,25 @@ export function TrustRow({ className, light }: { className?: string; light?: boo
 export function Hero({ s }: { s: HeroSection }) {
   if (s.variant === "home") {
     return (
-      <section className="dark-section overflow-hidden" aria-labelledby="hero-heading">
+      <section data-hero className="dark-section overflow-hidden" aria-labelledby="hero-heading">
         <div className="container-x grid items-end gap-10 pt-14 sm:pt-20 lg:grid-cols-12 lg:gap-8 lg:pt-24">
           <div className="pb-10 lg:col-span-7 lg:pb-24">
-            {s.eyebrow && <p className="eyebrow mb-5 animate-fade-in">{s.eyebrow}</p>}
-            <h1 id="hero-heading" className="animate-fade-up text-6xl" style={{ animationDelay: "60ms" }}>{s.heading}</h1>
-            {s.lead && <p className="lead mt-6 max-w-[38rem] animate-fade-up text-xl" style={{ animationDelay: "140ms" }}>{s.lead}</p>}
-            <div className="mt-8 flex flex-wrap gap-3 animate-fade-up" style={{ animationDelay: "220ms" }}>
+            {s.eyebrow && <p className="eyebrow mb-5">{s.eyebrow}</p>}
+            <h1 id="hero-heading" className=" text-6xl">{s.heading}</h1>
+            {s.lead && <p className="lead mt-6 max-w-[38rem] text-xl">{s.lead}</p>}
+            <div className="mt-8 flex flex-wrap gap-3">
               {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
               {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
             </div>
-            {s.trust && <TrustRow light className="mt-10 animate-fade-in" />}
+            {s.trust && <TrustRow light className="mt-10" />}
           </div>
           <div className="relative lg:col-span-5">
             <div className="pointer-events-none absolute inset-x-6 bottom-0 top-10 rounded-t-[12rem] bg-gradient-to-b from-olive-600/40 to-transparent" aria-hidden="true" />
             <div className="pointer-events-none absolute -right-6 top-6 h-56 w-56 rounded-full border border-bronze-300/30 sm:h-72 sm:w-72" aria-hidden="true" />
             {s.image && /\.png$/i.test(s.image.src) ? (
-              <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 480px, (min-width: 640px) 60vw, 90vw" className="relative mx-auto block w-[min(85%,420px)] animate-fade-in object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)] lg:w-full lg:max-w-[480px]" />
+              <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 480px, (min-width: 640px) 60vw, 90vw" className="relative mx-auto block w-[min(85%,420px)] object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)] lg:w-full lg:max-w-[480px]" />
             ) : s.image ? (
-              <div className="relative mx-auto mb-10 w-[min(88%,440px)] animate-fade-in overflow-hidden rounded-t-[12rem] rounded-b-4xl shadow-lift ring-1 ring-white/10 lg:mb-0 lg:w-full lg:max-w-[460px]">
+              <div className="relative mx-auto mb-10 w-[min(88%,440px)] overflow-hidden rounded-t-[12rem] rounded-b-4xl shadow-lift ring-1 ring-white/10 lg:mb-0 lg:w-full lg:max-w-[460px]">
                 <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 460px, (min-width: 640px) 60vw, 88vw" className="aspect-[4/5] w-full object-cover object-top" />
               </div>
             ) : null}
@@ -53,7 +53,7 @@ export function Hero({ s }: { s: HeroSection }) {
   // Page and landing heroes: full-bleed photo with the text on the left (Ideal style).
   const landing = s.variant === "landing";
   return (
-    <section className="on-dark relative isolate overflow-hidden bg-ink-900 text-white" aria-labelledby="hero-heading">
+    <section data-hero className="on-dark relative isolate overflow-hidden bg-ink-900 text-white" aria-labelledby="hero-heading">
       {s.image && (
         <div className="absolute inset-0 -z-10">
           <Picture image={s.image} fill priority sizes="100vw" quality={70} className="object-cover object-[70%_25%] lg:object-[center_25%]" />
