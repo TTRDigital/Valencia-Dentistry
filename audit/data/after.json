@@ -1,6 +1,6 @@
 {
  "base": "http://localhost:3000",
- "date": "2026-11-02T18:47:10.307Z",
+ "date": "2026-11-02T19:06:49.173Z",
  "widths": [
   375,
   414,
@@ -1111,7 +1111,7 @@
      "severity": "Low",
      "where": "Heading \"Composite Fillings\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 375
     },
@@ -1120,7 +1120,7 @@
      "severity": "Low",
      "where": "Heading \"Restorative Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 375
     },
@@ -1129,7 +1129,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 375
     }
@@ -1251,7 +1251,7 @@
     "scrollWidth": 375,
     "height": 9575,
     "images": 25,
-    "cardGroups": 1
+    "cardGroups": 13
    },
    "console": [],
    "failed": [],
@@ -1266,7 +1266,7 @@
      "severity": "Low",
      "where": "Heading \"Restorative Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 414
     },
@@ -1275,7 +1275,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 414
     }
@@ -1397,7 +1397,7 @@
     "scrollWidth": 414,
     "height": 9561,
     "images": 25,
-    "cardGroups": 1
+    "cardGroups": 13
    },
    "console": [],
    "failed": [],
@@ -1406,17 +1406,7 @@
   {
    "route": "/services/",
    "width": 768,
-   "issues": [
-    {
-     "check": "image-blurry",
-     "severity": "Medium",
-     "where": "Image \"Dr. Nuriel Lavi reviewing a digital smil\"",
-     "detail": "upscaled 1.19× (file 860px wide shown at 768px)",
-     "selector": "div > section.on-dark.relative > div.absolute.inset-x-0 > img.absolute.inset-0",
-     "route": "/services/",
-     "width": 768
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -1534,7 +1524,7 @@
     "scrollWidth": 768,
     "height": 9911,
     "images": 25,
-    "cardGroups": 2
+    "cardGroups": 14
    },
    "console": [],
    "failed": [],
@@ -1661,7 +1651,7 @@
     "scrollWidth": 1024,
     "height": 7442,
     "images": 25,
-    "cardGroups": 2
+    "cardGroups": 18
    },
    "console": [],
    "failed": [],
@@ -1676,7 +1666,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 1280
     }
@@ -1702,7 +1692,7 @@
      "pt": 80,
      "pb": 80,
      "top": 723,
-     "height": 742
+     "height": 700
     },
     {
      "i": 2,
@@ -1712,7 +1702,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 1625,
+     "top": 1583,
      "height": 846
     },
     {
@@ -1723,8 +1713,8 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 2631,
-     "height": 746
+     "top": 2588,
+     "height": 704
     },
     {
      "i": 4,
@@ -1734,7 +1724,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 3537,
+     "top": 3452,
      "height": 487
     },
     {
@@ -1745,7 +1735,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 4184,
+     "top": 4099,
      "height": 487
     },
     {
@@ -1756,7 +1746,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 4831,
+     "top": 4746,
      "height": 442
     },
     {
@@ -1767,7 +1757,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 5528,
+     "top": 5444,
      "height": 297
     },
     {
@@ -1778,7 +1768,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 5988,
+     "top": 5903,
      "height": 367
     },
     {
@@ -1789,16 +1779,16 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 6514,
+     "top": 6430,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1280,
     "scrollWidth": 1280,
-    "height": 7065,
+    "height": 6981,
     "images": 25,
-    "cardGroups": 2
+    "cardGroups": 18
    },
    "console": [],
    "failed": [],
@@ -1813,16 +1803,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
-     "route": "/services/",
-     "width": 1440
-    },
-    {
-     "check": "axe:color-contrast",
-     "severity": "High",
-     "where": "button[data-active=\"true\"]",
-     "detail": "Elements must meet minimum color contrast ratio thresholds (7 elements).   Element has insufficient color contrast of 1.03 (foreground color: #ffffff, background color: #fffaf4, font size: 11.3pt (15px), font weight: normal). Expecte",
-     "selector": "button[data-active=\"true\"]",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 1440
     }
@@ -1848,7 +1829,7 @@
      "pt": 80,
      "pb": 80,
      "top": 772,
-     "height": 742
+     "height": 700
     },
     {
      "i": 2,
@@ -1858,7 +1839,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 1674,
+     "top": 1632,
      "height": 846
     },
     {
@@ -1869,8 +1850,8 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 2680,
-     "height": 746
+     "top": 2637,
+     "height": 704
     },
     {
      "i": 4,
@@ -1880,7 +1861,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 3586,
+     "top": 3501,
      "height": 487
     },
     {
@@ -1891,7 +1872,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 4233,
+     "top": 4148,
      "height": 487
     },
     {
@@ -1902,7 +1883,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 4880,
+     "top": 4795,
      "height": 443
     },
     {
@@ -1913,7 +1894,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 5579,
+     "top": 5494,
      "height": 297
     },
     {
@@ -1924,7 +1905,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 6038,
+     "top": 5953,
      "height": 368
     },
     {
@@ -1935,16 +1916,16 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 6566,
+     "top": 6481,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1440,
     "scrollWidth": 1440,
-    "height": 7116,
+    "height": 7032,
     "images": 25,
-    "cardGroups": 2
+    "cardGroups": 18
    },
    "console": [],
    "failed": [],
@@ -1959,7 +1940,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/",
      "width": 1920
     }
@@ -1985,7 +1966,7 @@
      "pt": 80,
      "pb": 80,
      "top": 772,
-     "height": 742
+     "height": 700
     },
     {
      "i": 2,
@@ -1995,7 +1976,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 1674,
+     "top": 1632,
      "height": 846
     },
     {
@@ -2006,8 +1987,8 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 2680,
-     "height": 746
+     "top": 2637,
+     "height": 704
     },
     {
      "i": 4,
@@ -2017,7 +1998,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 3586,
+     "top": 3501,
      "height": 487
     },
     {
@@ -2028,7 +2009,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 4233,
+     "top": 4148,
      "height": 487
     },
     {
@@ -2039,7 +2020,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 4880,
+     "top": 4795,
      "height": 443
     },
     {
@@ -2050,7 +2031,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 5579,
+     "top": 5494,
      "height": 297
     },
     {
@@ -2061,7 +2042,7 @@
      "usesContainer": true,
      "pt": 80,
      "pb": 80,
-     "top": 6038,
+     "top": 5953,
      "height": 368
     },
     {
@@ -2072,16 +2053,16 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 6566,
+     "top": 6481,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1920,
     "scrollWidth": 1920,
-    "height": 7116,
+    "height": 7032,
     "images": 25,
-    "cardGroups": 2
+    "cardGroups": 18
    },
    "console": [],
    "failed": [],
@@ -2190,17 +2171,7 @@
   {
    "route": "/category/blogs/",
    "width": 768,
-   "issues": [
-    {
-     "check": "image-blurry",
-     "severity": "High",
-     "where": "Image \"Dr. Nuriel Lavi reviewing a full-arch re\"",
-     "detail": "upscaled 1.88× (file 384px wide shown at 720px)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.relative.overflow-hidden > img.absolute.inset-0",
-     "route": "/category/blogs/",
-     "width": 768
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -2682,26 +2653,7 @@
   {
    "route": "/about/",
    "width": 768,
-   "issues": [
-    {
-     "check": "card-action-align",
-     "severity": "Low",
-     "where": "Card group \"Everything under one roof\"",
-     "detail": "links/buttons not aligned to the card bottom: 57 / 32px from bottom",
-     "selector": "div > section.section.bg-white > div.container-x > div.mt-12.grid",
-     "route": "/about/",
-     "width": 768
-    },
-    {
-     "check": "card-action-align",
-     "severity": "Low",
-     "where": "Card group \"Everything under one roof\"",
-     "detail": "links/buttons not aligned to the card bottom: 32 / 38px from bottom",
-     "selector": "div > section.section.bg-white > div.container-x > div.mt-12.grid",
-     "route": "/about/",
-     "width": 768
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -5139,26 +5091,7 @@
   {
    "route": "/new-patient-offer/",
    "width": 375,
-   "issues": [
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"(661) 254-5200\"",
-     "detail": "tap target 95×17px (min 44×44)",
-     "selector": "div.card.grid > div.flex.flex-col > p.text-sm > a.font-semibold.text-white",
-     "route": "/new-patient-offer/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"See everything we offer\"",
-     "detail": "tap target 147×17px (min 44×44)",
-     "selector": "section#offer > div.container-x > p.mt-4.text-center > a.underline",
-     "route": "/new-patient-offer/",
-     "width": 375
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -5180,7 +5113,7 @@
      "pt": 64,
      "pb": 64,
      "top": 876,
-     "height": 1121
+     "height": 1169
     },
     {
      "i": 2,
@@ -5190,7 +5123,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 2125,
+     "top": 2173,
      "height": 1455
     },
     {
@@ -5201,7 +5134,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 3708,
+     "top": 3756,
      "height": 942
     },
     {
@@ -5212,7 +5145,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 4778,
+     "top": 4826,
      "height": 1711
     },
     {
@@ -5223,7 +5156,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 6617,
+     "top": 6665,
      "height": 1062
     },
     {
@@ -5234,14 +5167,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 7807,
+     "top": 7855,
      "height": 1824
     }
    ],
    "stats": {
     "vw": 375,
     "scrollWidth": 375,
-    "height": 9727,
+    "height": 9775,
     "images": 2,
     "cardGroups": 0
    },
@@ -5252,26 +5185,7 @@
   {
    "route": "/new-patient-offer/",
    "width": 414,
-   "issues": [
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"(661) 254-5200\"",
-     "detail": "tap target 95×17px (min 44×44)",
-     "selector": "div.card.grid > div.flex.flex-col > p.text-sm > a.font-semibold.text-white",
-     "route": "/new-patient-offer/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"See everything we offer\"",
-     "detail": "tap target 147×17px (min 44×44)",
-     "selector": "section#offer > div.container-x > p.mt-4.text-center > a.underline",
-     "route": "/new-patient-offer/",
-     "width": 414
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -5293,7 +5207,7 @@
      "pt": 64,
      "pb": 64,
      "top": 897,
-     "height": 1042
+     "height": 1090
     },
     {
      "i": 2,
@@ -5303,7 +5217,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 2067,
+     "top": 2115,
      "height": 1456
     },
     {
@@ -5314,7 +5228,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 3651,
+     "top": 3699,
      "height": 861
     },
     {
@@ -5325,7 +5239,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 4640,
+     "top": 4688,
      "height": 1685
     },
     {
@@ -5336,7 +5250,7 @@
      "usesContainer": true,
      "pt": 64,
      "pb": 64,
-     "top": 6453,
+     "top": 6501,
      "height": 1092
     },
     {
@@ -5347,14 +5261,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 7673,
+     "top": 7721,
      "height": 1798
     }
    ],
    "stats": {
     "vw": 414,
     "scrollWidth": 414,
-    "height": 9567,
+    "height": 9615,
     "images": 2,
     "cardGroups": 0
    },
@@ -5387,7 +5301,7 @@
      "pt": 96,
      "pb": 96,
      "top": 654,
-     "height": 776
+     "height": 824
     },
     {
      "i": 2,
@@ -5397,7 +5311,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 1622,
+     "top": 1670,
      "height": 791
     },
     {
@@ -5408,7 +5322,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 2605,
+     "top": 2653,
      "height": 607
     },
     {
@@ -5419,7 +5333,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 3404,
+     "top": 3452,
      "height": 1250
     },
     {
@@ -5430,7 +5344,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 4846,
+     "top": 4894,
      "height": 1168
     },
     {
@@ -5441,14 +5355,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 6206,
+     "top": 6254,
      "height": 1788
     }
    ],
    "stats": {
     "vw": 768,
     "scrollWidth": 768,
-    "height": 8090,
+    "height": 8138,
     "images": 2,
     "cardGroups": 1
    },
@@ -5481,7 +5395,7 @@
      "pt": 96,
      "pb": 96,
      "top": 722,
-     "height": 604
+     "height": 628
     },
     {
      "i": 2,
@@ -5491,7 +5405,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 1518,
+     "top": 1542,
      "height": 567
     },
     {
@@ -5502,7 +5416,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 2276,
+     "top": 2300,
      "height": 448
     },
     {
@@ -5513,7 +5427,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 2916,
+     "top": 2940,
      "height": 818
     },
     {
@@ -5524,7 +5438,7 @@
      "usesContainer": true,
      "pt": 96,
      "pb": 96,
-     "top": 3926,
+     "top": 3950,
      "height": 734
     },
     {
@@ -5535,14 +5449,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 4853,
+     "top": 4877,
      "height": 570
     }
    ],
    "stats": {
     "vw": 1024,
     "scrollWidth": 1024,
-    "height": 5423,
+    "height": 5447,
     "images": 2,
     "cardGroups": 1
    },
@@ -5575,7 +5489,7 @@
      "pt": 128,
      "pb": 128,
      "top": 726,
-     "height": 470
+     "height": 496
     },
     {
      "i": 2,
@@ -5585,7 +5499,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 1451,
+     "top": 1478,
      "height": 570
     },
     {
@@ -5596,7 +5510,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 2277,
+     "top": 2304,
      "height": 423
     },
     {
@@ -5607,7 +5521,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 2957,
+     "top": 2983,
      "height": 783
     },
     {
@@ -5618,7 +5532,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 3996,
+     "top": 4022,
      "height": 651
     },
     {
@@ -5629,14 +5543,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 4902,
+     "top": 4928,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1280,
     "scrollWidth": 1280,
-    "height": 5453,
+    "height": 5479,
     "images": 2,
     "cardGroups": 1
    },
@@ -5647,17 +5561,7 @@
   {
    "route": "/new-patient-offer/",
    "width": 1440,
-   "issues": [
-    {
-     "check": "axe:color-contrast",
-     "severity": "High",
-     "where": "button[aria-controls=\"_R_lb_\"]",
-     "detail": "Elements must meet minimum color contrast ratio thresholds (7 elements).   Element has insufficient color contrast of 1.03 (foreground color: #ffffff, background color: #fffaf4, font size: 11.3pt (15px), font weight: normal). Expecte",
-     "selector": "button[aria-controls=\"_R_lb_\"]",
-     "route": "/new-patient-offer/",
-     "width": 1440
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -5679,7 +5583,7 @@
      "pt": 128,
      "pb": 128,
      "top": 726,
-     "height": 471
+     "height": 498
     },
     {
      "i": 2,
@@ -5689,7 +5593,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 1453,
+     "top": 1480,
      "height": 571
     },
     {
@@ -5700,7 +5604,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 2280,
+     "top": 2307,
      "height": 425
     },
     {
@@ -5711,7 +5615,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 2961,
+     "top": 2988,
      "height": 783
     },
     {
@@ -5722,7 +5626,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 4000,
+     "top": 4027,
      "height": 653
     },
     {
@@ -5733,14 +5637,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 4909,
+     "top": 4936,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1440,
     "scrollWidth": 1440,
-    "height": 5459,
+    "height": 5486,
     "images": 2,
     "cardGroups": 1
    },
@@ -5773,7 +5677,7 @@
      "pt": 128,
      "pb": 128,
      "top": 726,
-     "height": 471
+     "height": 498
     },
     {
      "i": 2,
@@ -5783,7 +5687,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 1453,
+     "top": 1480,
      "height": 571
     },
     {
@@ -5794,7 +5698,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 2280,
+     "top": 2307,
      "height": 425
     },
     {
@@ -5805,7 +5709,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 2961,
+     "top": 2988,
      "height": 783
     },
     {
@@ -5816,7 +5720,7 @@
      "usesContainer": true,
      "pt": 128,
      "pb": 128,
-     "top": 4000,
+     "top": 4027,
      "height": 653
     },
     {
@@ -5827,14 +5731,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 4909,
+     "top": 4936,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1920,
     "scrollWidth": 1920,
-    "height": 5459,
+    "height": 5486,
     "images": 2,
     "cardGroups": 1
    },
@@ -6520,7 +6424,7 @@
     "scrollWidth": 375,
     "height": 12224,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -6559,7 +6463,7 @@
     "scrollWidth": 414,
     "height": 11724,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -6598,7 +6502,7 @@
     "scrollWidth": 768,
     "height": 10194,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -6637,7 +6541,7 @@
     "scrollWidth": 1024,
     "height": 7694,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -6676,7 +6580,7 @@
     "scrollWidth": 1280,
     "height": 7736,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -6715,7 +6619,7 @@
     "scrollWidth": 1440,
     "height": 7743,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -6754,7 +6658,7 @@
     "scrollWidth": 1920,
     "height": 7743,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -6793,7 +6697,7 @@
     "scrollWidth": 375,
     "height": 13030,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -6832,7 +6736,7 @@
     "scrollWidth": 414,
     "height": 12606,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -6871,7 +6775,7 @@
     "scrollWidth": 768,
     "height": 10700,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -6910,7 +6814,7 @@
     "scrollWidth": 1024,
     "height": 8322,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -6949,7 +6853,7 @@
     "scrollWidth": 1280,
     "height": 8209,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -6988,7 +6892,7 @@
     "scrollWidth": 1440,
     "height": 8215,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -7027,7 +6931,7 @@
     "scrollWidth": 1920,
     "height": 8215,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -7042,7 +6946,7 @@
      "severity": "Low",
      "where": "Heading \"Cosmetic Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/cosmetic-dentistry/composite-filling/",
      "width": 375
     }
@@ -7076,7 +6980,7 @@
     "scrollWidth": 375,
     "height": 10752,
     "images": 7,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -7115,7 +7019,7 @@
     "scrollWidth": 414,
     "height": 10519,
     "images": 7,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -7154,7 +7058,7 @@
     "scrollWidth": 768,
     "height": 9550,
     "images": 7,
-    "cardGroups": 2
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -7193,7 +7097,7 @@
     "scrollWidth": 1024,
     "height": 6895,
     "images": 7,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -7232,7 +7136,7 @@
     "scrollWidth": 1280,
     "height": 7026,
     "images": 7,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -7271,7 +7175,7 @@
     "scrollWidth": 1440,
     "height": 7032,
     "images": 7,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -7310,7 +7214,7 @@
     "scrollWidth": 1920,
     "height": 7032,
     "images": 7,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -7325,7 +7229,7 @@
      "severity": "Low",
      "where": "Heading \"Composite Fillings\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/cosmetic-dentistry/",
      "width": 375
     },
@@ -7334,7 +7238,7 @@
      "severity": "Low",
      "where": "Heading \"Composite Fillings\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/cosmetic-dentistry/",
      "width": 375
     }
@@ -7368,7 +7272,7 @@
     "scrollWidth": 375,
     "height": 11385,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -7407,7 +7311,7 @@
     "scrollWidth": 414,
     "height": 10958,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -7446,7 +7350,7 @@
     "scrollWidth": 768,
     "height": 10097,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -7485,7 +7389,7 @@
     "scrollWidth": 1024,
     "height": 7556,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -7524,7 +7428,7 @@
     "scrollWidth": 1280,
     "height": 7537,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -7563,7 +7467,7 @@
     "scrollWidth": 1440,
     "height": 7542,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -7602,7 +7506,7 @@
     "scrollWidth": 1920,
     "height": 7542,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -7617,7 +7521,7 @@
      "severity": "Low",
      "where": "Heading \"Restorative Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/restorative-dentistry/dental-bridges/",
      "width": 375
     }
@@ -7651,7 +7555,7 @@
     "scrollWidth": 375,
     "height": 14088,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -7666,7 +7570,7 @@
      "severity": "Low",
      "where": "Heading \"Restorative Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/restorative-dentistry/dental-bridges/",
      "width": 414
     }
@@ -7700,7 +7604,7 @@
     "scrollWidth": 414,
     "height": 13457,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -7739,7 +7643,7 @@
     "scrollWidth": 768,
     "height": 11415,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -7778,7 +7682,7 @@
     "scrollWidth": 1024,
     "height": 9086,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -7817,7 +7721,7 @@
     "scrollWidth": 1280,
     "height": 8930,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -7856,7 +7760,7 @@
     "scrollWidth": 1440,
     "height": 8937,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -7895,7 +7799,7 @@
     "scrollWidth": 1920,
     "height": 8937,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -7910,7 +7814,7 @@
      "severity": "Low",
      "where": "Heading \"Composite Fillings\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/dental-crowns/",
      "width": 375
     }
@@ -7944,7 +7848,7 @@
     "scrollWidth": 375,
     "height": 12179,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -7983,7 +7887,7 @@
     "scrollWidth": 414,
     "height": 11628,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -8022,7 +7926,7 @@
     "scrollWidth": 768,
     "height": 10266,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -8061,7 +7965,7 @@
     "scrollWidth": 1024,
     "height": 7744,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -8100,7 +8004,7 @@
     "scrollWidth": 1280,
     "height": 7688,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -8139,7 +8043,7 @@
     "scrollWidth": 1440,
     "height": 7694,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -8178,7 +8082,7 @@
     "scrollWidth": 1920,
     "height": 7694,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -8217,7 +8121,7 @@
     "scrollWidth": 375,
     "height": 12784,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -8256,7 +8160,7 @@
     "scrollWidth": 414,
     "height": 12289,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -8295,7 +8199,7 @@
     "scrollWidth": 768,
     "height": 10535,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -8344,7 +8248,7 @@
     "scrollWidth": 1024,
     "height": 8082,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -8383,7 +8287,7 @@
     "scrollWidth": 1280,
     "height": 7985,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -8422,7 +8326,7 @@
     "scrollWidth": 1440,
     "height": 7991,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -8461,7 +8365,7 @@
     "scrollWidth": 1920,
     "height": 7991,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -8476,7 +8380,7 @@
      "severity": "Low",
      "where": "Heading \"Cosmetic Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/holistic-dentistry/",
      "width": 375
     }
@@ -8510,7 +8414,7 @@
     "scrollWidth": 375,
     "height": 10044,
     "images": 5,
-    "cardGroups": 0
+    "cardGroups": 2
    },
    "console": [],
    "failed": [],
@@ -8549,7 +8453,7 @@
     "scrollWidth": 414,
     "height": 9686,
     "images": 5,
-    "cardGroups": 0
+    "cardGroups": 2
    },
    "console": [],
    "failed": [],
@@ -8588,7 +8492,7 @@
     "scrollWidth": 768,
     "height": 8685,
     "images": 5,
-    "cardGroups": 0
+    "cardGroups": 2
    },
    "console": [],
    "failed": [],
@@ -8627,7 +8531,7 @@
     "scrollWidth": 1024,
     "height": 6173,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -8666,7 +8570,7 @@
     "scrollWidth": 1280,
     "height": 6244,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -8705,7 +8609,7 @@
     "scrollWidth": 1440,
     "height": 6248,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -8744,7 +8648,7 @@
     "scrollWidth": 1920,
     "height": 6248,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -8759,7 +8663,7 @@
      "severity": "Low",
      "where": "Heading \"Cosmetic Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/cosmetic-dentistry/invisalign/",
      "width": 375
     }
@@ -8793,7 +8697,7 @@
     "scrollWidth": 375,
     "height": 10618,
     "images": 7,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -8832,7 +8736,7 @@
     "scrollWidth": 414,
     "height": 10229,
     "images": 7,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -8871,7 +8775,7 @@
     "scrollWidth": 768,
     "height": 9217,
     "images": 7,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -8910,7 +8814,7 @@
     "scrollWidth": 1024,
     "height": 6574,
     "images": 7,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -8949,7 +8853,7 @@
     "scrollWidth": 1280,
     "height": 6550,
     "images": 7,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -8988,7 +8892,7 @@
     "scrollWidth": 1440,
     "height": 6555,
     "images": 7,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -9027,7 +8931,7 @@
     "scrollWidth": 1920,
     "height": 6555,
     "images": 7,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -9042,7 +8946,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/oral-surgery/",
      "width": 375
     },
@@ -9060,7 +8964,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/oral-surgery/",
      "width": 375
     }
@@ -9094,7 +8998,7 @@
     "scrollWidth": 375,
     "height": 11582,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -9109,7 +9013,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/oral-surgery/",
      "width": 414
     },
@@ -9118,7 +9022,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/oral-surgery/",
      "width": 414
     }
@@ -9152,7 +9056,7 @@
     "scrollWidth": 414,
     "height": 11262,
     "images": 13,
-    "cardGroups": 3
+    "cardGroups": 11
    },
    "console": [],
    "failed": [],
@@ -9201,7 +9105,7 @@
     "scrollWidth": 768,
     "height": 10413,
     "images": 13,
-    "cardGroups": 4
+    "cardGroups": 12
    },
    "console": [],
    "failed": [],
@@ -9225,7 +9129,7 @@
      "severity": "Low",
      "where": "Heading \"Wisdom Teeth Removal\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/oral-surgery/",
      "width": 1024
     }
@@ -9259,7 +9163,7 @@
     "scrollWidth": 1024,
     "height": 7864,
     "images": 13,
-    "cardGroups": 4
+    "cardGroups": 12
    },
    "console": [],
    "failed": [],
@@ -9298,7 +9202,7 @@
     "scrollWidth": 1280,
     "height": 7928,
     "images": 13,
-    "cardGroups": 4
+    "cardGroups": 12
    },
    "console": [],
    "failed": [],
@@ -9337,7 +9241,7 @@
     "scrollWidth": 1440,
     "height": 7934,
     "images": 13,
-    "cardGroups": 4
+    "cardGroups": 12
    },
    "console": [],
    "failed": [],
@@ -9376,7 +9280,7 @@
     "scrollWidth": 1920,
     "height": 7934,
     "images": 13,
-    "cardGroups": 4
+    "cardGroups": 12
    },
    "console": [],
    "failed": [],
@@ -9391,7 +9295,7 @@
      "severity": "Low",
      "where": "Heading \"Composite Fillings\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/restorative-dentistry/",
      "width": 375
     }
@@ -9425,7 +9329,7 @@
     "scrollWidth": 375,
     "height": 9565,
     "images": 10,
-    "cardGroups": 2
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -9464,7 +9368,7 @@
     "scrollWidth": 414,
     "height": 9263,
     "images": 10,
-    "cardGroups": 2
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -9503,7 +9407,7 @@
     "scrollWidth": 768,
     "height": 8843,
     "images": 10,
-    "cardGroups": 3
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -9542,7 +9446,7 @@
     "scrollWidth": 1024,
     "height": 6205,
     "images": 10,
-    "cardGroups": 3
+    "cardGroups": 8
    },
    "console": [],
    "failed": [],
@@ -9581,7 +9485,7 @@
     "scrollWidth": 1280,
     "height": 6335,
     "images": 10,
-    "cardGroups": 3
+    "cardGroups": 8
    },
    "console": [],
    "failed": [],
@@ -9620,7 +9524,7 @@
     "scrollWidth": 1440,
     "height": 6341,
     "images": 10,
-    "cardGroups": 3
+    "cardGroups": 8
    },
    "console": [],
    "failed": [],
@@ -9659,7 +9563,7 @@
     "scrollWidth": 1920,
     "height": 6341,
     "images": 10,
-    "cardGroups": 3
+    "cardGroups": 8
    },
    "console": [],
    "failed": [],
@@ -9674,7 +9578,7 @@
      "severity": "Low",
      "where": "Heading \"Cosmetic Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/cosmetic-dentistry/teeth-whitening/",
      "width": 375
     }
@@ -9708,7 +9612,7 @@
     "scrollWidth": 375,
     "height": 10366,
     "images": 5,
-    "cardGroups": 0
+    "cardGroups": 2
    },
    "console": [],
    "failed": [],
@@ -9747,7 +9651,7 @@
     "scrollWidth": 414,
     "height": 10140,
     "images": 5,
-    "cardGroups": 0
+    "cardGroups": 2
    },
    "console": [],
    "failed": [],
@@ -9786,7 +9690,7 @@
     "scrollWidth": 768,
     "height": 9125,
     "images": 5,
-    "cardGroups": 0
+    "cardGroups": 2
    },
    "console": [],
    "failed": [],
@@ -9825,7 +9729,7 @@
     "scrollWidth": 1024,
     "height": 6474,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -9864,7 +9768,7 @@
     "scrollWidth": 1280,
     "height": 6571,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -9903,7 +9807,7 @@
     "scrollWidth": 1440,
     "height": 6575,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -9942,7 +9846,7 @@
     "scrollWidth": 1920,
     "height": 6575,
     "images": 5,
-    "cardGroups": 1
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -9981,7 +9885,7 @@
     "scrollWidth": 375,
     "height": 11879,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10020,7 +9924,7 @@
     "scrollWidth": 414,
     "height": 11259,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10059,7 +9963,7 @@
     "scrollWidth": 768,
     "height": 10054,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -10098,7 +10002,7 @@
     "scrollWidth": 1024,
     "height": 7535,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10137,7 +10041,7 @@
     "scrollWidth": 1280,
     "height": 7346,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10176,7 +10080,7 @@
     "scrollWidth": 1440,
     "height": 7353,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10215,7 +10119,7 @@
     "scrollWidth": 1920,
     "height": 7353,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10254,7 +10158,7 @@
     "scrollWidth": 375,
     "height": 12688,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10293,7 +10197,7 @@
     "scrollWidth": 414,
     "height": 12132,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10332,7 +10236,7 @@
     "scrollWidth": 768,
     "height": 10438,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10371,7 +10275,7 @@
     "scrollWidth": 1024,
     "height": 8045,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -10410,7 +10314,7 @@
     "scrollWidth": 1280,
     "height": 7883,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -10449,7 +10353,7 @@
     "scrollWidth": 1440,
     "height": 7928,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -10488,7 +10392,7 @@
     "scrollWidth": 1920,
     "height": 7928,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -10503,7 +10407,7 @@
      "severity": "Low",
      "where": "Heading \"Cosmetic Dentistry\"",
      "detail": "last line is a single word (2 lines)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.flex.flex-1 > h3.text-lg",
+     "selector": "li.card.card-hover > a.row-span-2.grid > div.flex.flex-1 > h3.text-lg",
      "route": "/services/cosmetic-dentistry/veneers/",
      "width": 375
     }
@@ -10537,7 +10441,7 @@
     "scrollWidth": 375,
     "height": 12778,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10576,7 +10480,7 @@
     "scrollWidth": 414,
     "height": 12251,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10615,7 +10519,7 @@
     "scrollWidth": 768,
     "height": 10584,
     "images": 8,
-    "cardGroups": 2
+    "cardGroups": 4
    },
    "console": [],
    "failed": [],
@@ -10654,7 +10558,7 @@
     "scrollWidth": 1024,
     "height": 8185,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10693,7 +10597,7 @@
     "scrollWidth": 1280,
     "height": 8086,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10732,7 +10636,7 @@
     "scrollWidth": 1440,
     "height": 8093,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10771,7 +10675,7 @@
     "scrollWidth": 1920,
     "height": 8093,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 6
    },
    "console": [],
    "failed": [],
@@ -10810,7 +10714,7 @@
     "scrollWidth": 375,
     "height": 12419,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10849,7 +10753,7 @@
     "scrollWidth": 414,
     "height": 11945,
     "images": 8,
-    "cardGroups": 1
+    "cardGroups": 3
    },
    "console": [],
    "failed": [],
@@ -10888,7 +10792,7 @@
     "scrollWidth": 768,
     "height": 10363,
     "images": 8,
-    "cardGroups": 3
+    "cardGroups": 5
    },
    "console": [],
    "failed": [],
@@ -10927,7 +10831,7 @@
     "scrollWidth": 1024,
     "height": 8000,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -10966,7 +10870,7 @@
     "scrollWidth": 1280,
     "height": 7801,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -11005,7 +10909,7 @@
     "scrollWidth": 1440,
     "height": 7808,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -11044,7 +10948,7 @@
     "scrollWidth": 1920,
     "height": 7808,
     "images": 8,
-    "cardGroups": 4
+    "cardGroups": 7
    },
    "console": [],
    "failed": [],
@@ -17007,9 +16911,7 @@
     "images": 5,
     "cardGroups": 1
    },
-   "console": [
-    "Failed to load resource: net::ERR_CONNECTION_RESET"
-   ],
+   "console": [],
    "failed": [],
    "shot": "audit/after/screenshots/how-long-do-dental-bridge-last/1024.png"
   },
@@ -20799,44 +20701,7 @@
   {
    "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
    "width": 375,
-   "issues": [
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Services overview\"",
-     "detail": "tap target 134×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Dental implants\"",
-     "detail": "tap target 116×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Wisdom teeth removal and oral surgery\"",
-     "detail": "tap target 292×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Dental crowns and restorative options\"",
-     "detail": "tap target 281×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 375
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -20857,14 +20722,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 11793,
+     "top": 11850,
      "height": 1824
     }
    ],
    "stats": {
     "vw": 375,
     "scrollWidth": 375,
-    "height": 13713,
+    "height": 13770,
     "images": 5,
     "cardGroups": 0
    },
@@ -20875,44 +20740,7 @@
   {
    "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
    "width": 414,
-   "issues": [
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Services overview\"",
-     "detail": "tap target 134×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Dental implants\"",
-     "detail": "tap target 116×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Wisdom teeth removal and oral surgery\"",
-     "detail": "tap target 292×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Dental crowns and restorative options\"",
-     "detail": "tap target 281×20px (min 44×44)",
-     "selector": "div.rich > ul > li > a",
-     "route": "/why-choose-valencia-smile-what-to-expect-on-your-first-visit/",
-     "width": 414
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -20933,14 +20761,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 11199,
+     "top": 11256,
      "height": 1798
     }
    ],
    "stats": {
     "vw": 414,
     "scrollWidth": 414,
-    "height": 13093,
+    "height": 13150,
     "images": 5,
     "cardGroups": 0
    },
@@ -20972,14 +20800,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 8140,
+     "top": 8211,
      "height": 1788
     }
    ],
    "stats": {
     "vw": 768,
     "scrollWidth": 768,
-    "height": 10023,
+    "height": 10095,
     "images": 5,
     "cardGroups": 1
    },
@@ -21011,14 +20839,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 7603,
+     "top": 7675,
      "height": 570
     }
    ],
    "stats": {
     "vw": 1024,
     "scrollWidth": 1024,
-    "height": 8173,
+    "height": 8245,
     "images": 5,
     "cardGroups": 1
    },
@@ -21060,14 +20888,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 7613,
+     "top": 7684,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1280,
     "scrollWidth": 1280,
-    "height": 8164,
+    "height": 8235,
     "images": 5,
     "cardGroups": 1
    },
@@ -21109,14 +20937,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 7630,
+     "top": 7702,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1440,
     "scrollWidth": 1440,
-    "height": 8181,
+    "height": 8252,
     "images": 5,
     "cardGroups": 1
    },
@@ -21158,14 +20986,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 7630,
+     "top": 7702,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1920,
     "scrollWidth": 1920,
-    "height": 8181,
+    "height": 8252,
     "images": 5,
     "cardGroups": 1
    },
@@ -21176,125 +21004,7 @@
   {
    "route": "/sitemap/",
    "width": 375,
-   "issues": [
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Home\"",
-     "detail": "tap target 42×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Our Practice\"",
-     "detail": "tap target 86×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Appointment\"",
-     "detail": "tap target 93×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Contact\"",
-     "detail": "tap target 56×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Emergency Dental\"",
-     "detail": "tap target 129×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"New Patient Offer\"",
-     "detail": "tap target 125×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Services\"",
-     "detail": "tap target 59×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Testimonials\"",
-     "detail": "tap target 87×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Blog\"",
-     "detail": "tap target 30×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Privacy Policy\"",
-     "detail": "tap target 92×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Terms and Services\"",
-     "detail": "tap target 139×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"All services\"",
-     "detail": "tap target 77×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 375
-    },
-    {
-     "check": "tap-target",
-     "severity": "Medium",
-     "where": "Page",
-     "detail": "19 more targets under 44×44px",
-     "selector": "",
-     "route": "/sitemap/",
-     "width": 375
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -21316,7 +21026,7 @@
      "pt": 64,
      "pb": 64,
      "top": 362,
-     "height": 3023
+     "height": 3019
     },
     {
      "i": 2,
@@ -21326,14 +21036,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 3514,
+     "top": 3510,
      "height": 1824
     }
    ],
    "stats": {
     "vw": 375,
     "scrollWidth": 375,
-    "height": 5434,
+    "height": 5430,
     "images": 0,
     "cardGroups": 0
    },
@@ -21344,125 +21054,7 @@
   {
    "route": "/sitemap/",
    "width": 414,
-   "issues": [
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Home\"",
-     "detail": "tap target 42×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Our Practice\"",
-     "detail": "tap target 86×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Appointment\"",
-     "detail": "tap target 93×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Contact\"",
-     "detail": "tap target 56×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Emergency Dental\"",
-     "detail": "tap target 129×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"New Patient Offer\"",
-     "detail": "tap target 125×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Services\"",
-     "detail": "tap target 59×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Testimonials\"",
-     "detail": "tap target 87×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Blog\"",
-     "detail": "tap target 30×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Privacy Policy\"",
-     "detail": "tap target 92×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"Terms and Services\"",
-     "detail": "tap target 139×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "High",
-     "where": "\"All services\"",
-     "detail": "tap target 77×19px (min 44×44)",
-     "selector": "nav > ul.mt-5.space-y-2.5 > li > a.text-grey-700.underline-offset-4",
-     "route": "/sitemap/",
-     "width": 414
-    },
-    {
-     "check": "tap-target",
-     "severity": "Medium",
-     "where": "Page",
-     "detail": "24 more targets under 44×44px",
-     "selector": "",
-     "route": "/sitemap/",
-     "width": 414
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,
@@ -21484,7 +21076,7 @@
      "pt": 64,
      "pb": 64,
      "top": 363,
-     "height": 2892
+     "height": 2975
     },
     {
      "i": 2,
@@ -21494,14 +21086,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 3382,
+     "top": 3466,
      "height": 1798
     }
    ],
    "stats": {
     "vw": 414,
     "scrollWidth": 414,
-    "height": 5276,
+    "height": 5360,
     "images": 0,
     "cardGroups": 0
    },
@@ -21534,7 +21126,7 @@
      "pt": 96,
      "pb": 96,
      "top": 401,
-     "height": 2368
+     "height": 2078
     },
     {
      "i": 2,
@@ -21544,14 +21136,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 96,
-     "top": 2962,
+     "top": 2672,
      "height": 1788
     }
    ],
    "stats": {
     "vw": 768,
     "scrollWidth": 768,
-    "height": 4846,
+    "height": 4556,
     "images": 0,
     "cardGroups": 0
    },
@@ -21584,7 +21176,7 @@
      "pt": 96,
      "pb": 96,
      "top": 405,
-     "height": 1895
+     "height": 1622
     },
     {
      "i": 2,
@@ -21594,14 +21186,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 2492,
+     "top": 2220,
      "height": 570
     }
    ],
    "stats": {
     "vw": 1024,
     "scrollWidth": 1024,
-    "height": 3062,
+    "height": 2789,
     "images": 0,
     "cardGroups": 0
    },
@@ -21634,7 +21226,7 @@
      "pt": 128,
      "pb": 128,
      "top": 441,
-     "height": 1711
+     "height": 1562
     },
     {
      "i": 2,
@@ -21644,14 +21236,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 2408,
+     "top": 2259,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1280,
     "scrollWidth": 1280,
-    "height": 2959,
+    "height": 2810,
     "images": 0,
     "cardGroups": 0
    },
@@ -21684,7 +21276,7 @@
      "pt": 128,
      "pb": 128,
      "top": 442,
-     "height": 1711
+     "height": 1562
     },
     {
      "i": 2,
@@ -21694,14 +21286,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 2409,
+     "top": 2260,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1440,
     "scrollWidth": 1440,
-    "height": 2959,
+    "height": 2810,
     "images": 0,
     "cardGroups": 0
    },
@@ -21734,7 +21326,7 @@
      "pt": 128,
      "pb": 128,
      "top": 442,
-     "height": 1711
+     "height": 1562
     },
     {
      "i": 2,
@@ -21744,14 +21336,14 @@
      "usesContainer": true,
      "pt": 0,
      "pb": 0,
-     "top": 2409,
+     "top": 2260,
      "height": 551
     }
    ],
    "stats": {
     "vw": 1920,
     "scrollWidth": 1920,
-    "height": 2959,
+    "height": 2810,
     "images": 0,
     "cardGroups": 0
    },
@@ -21862,17 +21454,7 @@
   {
    "route": "/category/blogs/page/2/",
    "width": 768,
-   "issues": [
-    {
-     "check": "image-blurry",
-     "severity": "High",
-     "where": "Image \"Dr. Nuriel Lavi planning a restoration w\"",
-     "detail": "upscaled 1.88× (file 384px wide shown at 720px)",
-     "selector": "li.card.card-hover > a.flex.h-full > div.relative.overflow-hidden > img.absolute.inset-0",
-     "route": "/category/blogs/page/2/",
-     "width": 768
-    }
-   ],
+   "issues": [],
    "sections": [
     {
      "i": 0,

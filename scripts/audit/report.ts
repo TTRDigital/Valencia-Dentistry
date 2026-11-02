@@ -154,8 +154,8 @@ if (A) {
   const bySev = (m: Map<string, { severity: string }>) => SEV.map((s) => `${s} ${[...m.values()].filter((e) => e.severity === s).length}`).join(" · ");
   md += `\n## AFTER\n\nMeasured ${after.date.slice(0, 10)} with the same script. ${fixed} of ${total} measured findings fixed, ${accCount} accepted as intentional (reason given in the After column), ${total - fixed - accCount} remaining.\n\n- Before: ${bySev(B)}\n- After: ${bySev(A)}\n`;
   if (newOnes.length) {
-    md += `\nNew findings that appeared after the changes:\n\n| Page | Issue | Where | Severity |\n|---|---|---|---|\n`;
-    for (const x of newOnes) md += `| ${x.group} | ${esc(x.check)}: ${esc(x.detail).slice(0, 150)} | ${esc(x.where)} @ ${widthsTxt(x.widths)} | ${x.severity} |\n`;
+    md += `\nNew findings that appeared after the changes:\n\n| Page | Issue | Where | Severity | Status |\n|---|---|---|---|---|\n`;
+    for (const x of newOnes) { const acc = acceptedFor(x.check, x.where); md += `| ${x.group} | ${esc(x.check)}: ${esc(x.detail).slice(0, 150)} | ${esc(x.where)} @ ${widthsTxt(x.widths)} | ${x.severity} | ${acc ? `Accepted: ${acc.reason}` : "Open"} |\n`; }
   }
 }
 if (existsSync(join(ROOT, "audit/after-notes.md"))) md += "\n" + readFileSync(join(ROOT, "audit/after-notes.md"), "utf8");

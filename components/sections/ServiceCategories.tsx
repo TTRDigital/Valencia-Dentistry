@@ -28,7 +28,7 @@ export function ServiceCategories({ s }: { s: ServiceCategoriesSection }) {
                   </li>
                 ))}
               </ul>
-              <div className="mt-7 flex flex-wrap gap-3 pt-1">
+              <div className="card-action flex flex-wrap gap-3 pt-8">
                 {c.href && <Link href={c.href} className="btn btn-outline">Explore {c.title.toLowerCase()}</Link>}
                 <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book now</a>
               </div>
