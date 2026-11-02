@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import type { HeroSection } from "@/lib/types";
 import { site } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { Watermark } from "@/components/rich/Blocks";
+import { Seal, Watermark } from "@/components/rich/Blocks";
 import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
@@ -25,16 +25,17 @@ export function TrustRow({ className, light }: { className?: string; light?: boo
 }
 
 /** Headline split into words for the staged entrance; each word rises 35ms after the previous, so lines build in reading order. */
-function StagedHeading({ text }: { text: string }) {
+export function StagedHeading({ text, accent = 2 }: { text: string; accent?: number }) {
+  // The last `accent` words are set in the italic display cut (visual emphasis only; the words are unchanged).
   const words = text.split(" ");
+  const from = words.length > accent + 1 ? words.length - accent : words.length;
+  const word = (w: string, i: number) => <span className="hero-word" style={{ "--w": i } as React.CSSProperties}>{w}</span>;
   return (
     <>
-      {words.map((w, i) => (
-        <Fragment key={i}>
-          <span className="hero-word" style={{ "--w": i } as React.CSSProperties}>{w}</span>
-          {i < words.length - 1 ? " " : null}
-        </Fragment>
-      ))}
+      {words.slice(0, from).map((w, i) => <Fragment key={i}>{word(w, i)}{" "}</Fragment>)}
+      {from < words.length && (
+        <em>{words.slice(from).map((w, j) => <Fragment key={j}>{word(w, from + j)}{j < words.length - from - 1 ? " " : null}</Fragment>)}</em>
+      )}
     </>
   );
 }
@@ -48,7 +49,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
         <div className="container-x grid items-end gap-10 pt-14 sm:pt-20 lg:grid-cols-12 lg:gap-8 lg:pt-24">
           <div className="hero-stage pb-10 lg:col-span-7 lg:pb-24">
             {s.eyebrow && <p className="eyebrow mb-5" data-stage="0">{s.eyebrow}</p>}
-            <h1 id="hero-heading" className="text-6xl"><StagedHeading text={s.heading} /></h1>
+            <h1 id="hero-heading" className="text-6xl"><StagedHeading text={s.heading} accent={3} /></h1>
             {s.lead && <p className="lead mt-6 max-w-[38rem] text-xl" data-stage="3">{s.lead}</p>}
             <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
               {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
@@ -70,6 +71,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
               <>
                 <FloatingBadge className="bottom-20 left-0 sm:-left-2 lg:-left-10" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews from local patients`} />
                 <FloatingBadge className="right-0 top-24 hidden sm:flex lg:-right-6" icon={<Icon.tag className="h-5 w-5" />} title="$59 first visit" text="Exam & digital X-rays" />
+                <Seal text="VALENCIA DENTISTRY · SANTA CLARITA · " className="absolute -left-2 top-4 hidden lg:block lg:-left-12" />
               </>
             )}
           </div>

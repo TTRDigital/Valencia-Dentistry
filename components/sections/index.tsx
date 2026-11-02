@@ -18,7 +18,7 @@ import { FocusAreas } from "./FocusAreas";
 import { TechExplainer } from "./TechExplainer";
 import { TreatmentPicker } from "./TreatmentPicker";
 import { ServiceShowcase } from "./ServiceShowcase";
-import { CtaBanner, StatBand } from "@/components/rich/Blocks";
+import { CtaBanner, Marquee, StatBand } from "@/components/rich/Blocks";
 import { Container, Section } from "@/components/ui/Section";
 
 export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs?: { name: string; path: string }[] }) {
@@ -28,6 +28,7 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
         const key = `${s._type}-${i}`;
         switch (s._type) {
           case "serviceShowcase": return <ServiceShowcase key={key} s={s} />;
+          case "marquee": return <div key={key} className={s.dark ? "bg-ink-900" : "border-y border-ink-900/10 bg-warm"}><Marquee items={s.items} dark={s.dark} /></div>;
           case "statBand": return <Section key={key} tight className="bg-warm"><Container><StatBand /></Container></Section>;
           case "ctaBanner": return <Section key={key} className="bg-warm"><Container><CtaBanner heading={s.heading} text={s.text} image={s.image} buttonLabel={s.buttonLabel} /></Container></Section>;
           case "hero": return <Hero key={key} s={s} crumbs={i === 0 ? crumbs : undefined} />;

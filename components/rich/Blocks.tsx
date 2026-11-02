@@ -111,3 +111,35 @@ export function RichHeading({ eyebrow, heading, lead, align = "left", dark, clas
     </div>
   );
 }
+
+/** A slow, endless ticker of words (treatments, promises) separated by the tooth mark. */
+export function Marquee({ items, dark, className }: { items: string[]; dark?: boolean; className?: string }) {
+  const row = (hidden: boolean) => (
+    <ul aria-hidden={hidden || undefined} className="flex shrink-0 items-center">
+      {items.map((w) => (
+        <li key={w} className={cn("flex items-center gap-8 pr-8 font-display text-3xl italic sm:text-5xl", dark ? "text-white/85" : "text-ink-900/80")}>
+          {w}
+          <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} className={cn("h-6 w-auto sm:h-8", dark ? "text-bronze-300" : "text-olive-600")} aria-hidden="true"><path fill="currentColor" d={MARK.tooth} /></svg>
+        </li>
+      ))}
+    </ul>
+  );
+  return (
+    <div className={cn("marquee py-6 sm:py-8", className)}>
+      <div className="marquee-track">{row(false)}{row(true)}</div>
+    </div>
+  );
+}
+
+/** Circular text that turns slowly around the tooth mark: a quiet signature on hero portraits. */
+export function Seal({ text, className }: { text: string; className?: string }) {
+  return (
+    <div className={cn("h-28 w-28 rounded-full bg-ink-900 text-bronze-300 shadow-lift ring-1 ring-white/15 sm:h-32 sm:w-32", className ?? "relative")} aria-hidden="true">
+      <svg viewBox="0 0 120 120" className="seal-spin absolute inset-0 h-full w-full">
+        <defs><path id="seal-path" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
+        <text fill="currentColor" fontSize="10.5" letterSpacing="2.1" textLength="272" lengthAdjust="spacing" fontFamily="var(--font-urbanist)" fontWeight="600"><textPath href="#seal-path">{text}</textPath></text>
+      </svg>
+      <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} className="absolute left-1/2 top-1/2 h-9 w-auto -translate-x-1/2 -translate-y-1/2 sm:h-10"><path fill="#fff" d={MARK.v} /><path fill="currentColor" d={MARK.tooth} /></svg>
+    </div>
+  );
+}

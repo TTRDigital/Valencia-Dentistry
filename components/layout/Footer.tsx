@@ -16,7 +16,18 @@ export function Footer({ nav }: { nav: Navigation }) {
   return (
     <footer className="dark-section mt-auto pb-24 lg:pb-0">
       <div className="container-x pt-[var(--section-y-tight)]">
-        <div className="grid gap-12 lg:grid-cols-12">
+        {/* Closing call to action on every page */}
+        <div className="flex flex-col gap-8 border-b border-white/10 pb-14 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="eyebrow mb-5">{site.offer.headline}: {site.offer.detail}</p>
+            <p className="font-display max-w-3xl text-6xl text-white">Book your visit with <em>Dr. Lavi.</em></p>
+          </div>
+          <div className="grid shrink-0 gap-3 sm:flex">
+            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Book online <Icon.arrow className="h-4 w-4" /></a>
+            <a href={`tel:${site.phone.tel}`} className="btn btn-outline btn-lg"><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
+          </div>
+        </div>
+        <div className="mt-14 grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-3">
             <Link href="/" prefetch={false} className="inline-flex min-h-11 items-center rounded-md"><Logo inverted /></Link>
             <p className="mt-5 max-w-sm text-white/75">Comfortable, holistic dentistry for Valencia and Santa Clarita families, delivered one on one by Dr. Nuriel Lavi.</p>

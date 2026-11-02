@@ -162,6 +162,7 @@ export type FocusAreasSection = { _type: "focusAreas"; eyebrow?: string; heading
 
 export type ServiceShowcaseSection = { _type: "serviceShowcase"; eyebrow?: string; heading: string; lead?: string; slugs: string[] };
 export type StatBandSection = { _type: "statBand" };
+export type MarqueeSection = { _type: "marquee"; items: string[]; dark?: boolean };
 export type CtaBannerSection = { _type: "ctaBanner"; heading: string; text: string; image?: SiteImage; buttonLabel?: string };
 
 export type PageSection =
@@ -169,7 +170,7 @@ export type PageSection =
   | ReviewsSection | FaqSection | VisitSection | CtaSection | RichTextSection | TeamSection | PhotoGridSection
   | ValuesSection | FormSection | ServicesHubSection | InsuranceSection | OfferSection
   | TreatmentPickerSection | FirstVisitSection | TechExplainerSection | DoctorIntroSection | FocusAreasSection
-  | ServiceShowcaseSection | StatBandSection | CtaBannerSection;
+  | ServiceShowcaseSection | StatBandSection | CtaBannerSection | MarqueeSection;
 
 export type Page = {
   slug: string;

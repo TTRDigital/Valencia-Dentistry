@@ -2,7 +2,7 @@ import type { Service, SiteImage } from "@/lib/types";
 import { getPeople, getServices, getTestimonials } from "@/lib/content";
 import { site } from "@/lib/site";
 import { breadcrumbNode, faqNode, graph, JsonLd, serviceNode, serviceOfferNode, webPageNode } from "@/lib/seo";
-import { TrustRow } from "@/components/sections/Hero";
+import { StagedHeading, TrustRow } from "@/components/sections/Hero";
 import { FaqList } from "@/components/sections/Faq";
 import { CardList } from "@/components/sections/ServicesHub";
 import { CtaBanner, IconCard, QuoteHighlight, RichHeading, Watermark } from "@/components/rich/Blocks";
@@ -87,7 +87,7 @@ export async function ServiceView({ s }: { s: Service }) {
             <div className="hero-stage lg:col-span-6 xl:col-span-7">
               <div data-stage="0"><Breadcrumbs items={crumbs} light /></div>
               <p className="eyebrow mb-4 mt-7 text-bronze-300" data-stage="0">{CATEGORY_LABEL[s.category]}</p>
-              <h1 className="text-5xl text-white">{s.hero.h1}</h1>
+              <h1 className="text-5xl text-white"><StagedHeading text={s.hero.h1} /></h1>
               {s.hero.subtitle && s.hero.subtitle !== s.name && <p className="mt-4 text-xl font-semibold text-bronze-300" data-stage="3">{s.hero.subtitle}</p>}
               {s.hero.text && <p className="mt-4 max-w-xl text-lg text-white/80" data-stage="3">{s.hero.text}</p>}
               <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">

@@ -28,6 +28,20 @@
       "trust": true
     },
     {
+      "_type": "marquee",
+      "dark": true,
+      "items": [
+        "Dental implants",
+        "All-on-4 implants",
+        "Veneers",
+        "Invisalign",
+        "Dental crowns",
+        "Teeth whitening",
+        "Holistic dentistry",
+        "TMJ care"
+      ]
+    },
+    {
       "_type": "statBand"
     },
     {

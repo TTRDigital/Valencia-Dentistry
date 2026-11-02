@@ -39,7 +39,7 @@
 
   /* Type */
   --font-sans: var(--font-urbanist), system-ui, sans-serif;
-  --font-display: var(--font-urbanist), system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
 
   /* Type scale (Ideal style: compact, semibold headings, clamp between 390px and 1440px) */
   --text-xs: 0.75rem;
@@ -53,14 +53,14 @@
   --text-xl--line-height: 1.45;
   --text-2xl: clamp(1.1875rem, 1.1rem + 0.35vw, 1.375rem);
   --text-2xl--line-height: 1.3;
-  --text-3xl: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
-  --text-3xl--line-height: 1.25;
-  --text-4xl: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
-  --text-4xl--line-height: 1.2;
-  --text-5xl: clamp(1.875rem, 1.55rem + 1.3vw, 2.625rem);
-  --text-5xl--line-height: 1.15;
-  --text-6xl: clamp(2.125rem, 1.7rem + 1.8vw, 3.25rem);
-  --text-6xl--line-height: 1.1;
+  --text-3xl: clamp(1.625rem, 1.3rem + 1vw, 2.25rem);
+  --text-3xl--line-height: 1.15;
+  --text-4xl: clamp(2rem, 1.35rem + 2.3vw, 3.4rem);
+  --text-4xl--line-height: 1.06;
+  --text-5xl: clamp(2.5rem, 1.5rem + 3.4vw, 4.4rem);
+  --text-5xl--line-height: 1.02;
+  --text-6xl: clamp(2.85rem, 1.4rem + 5vw, 5.75rem);
+  --text-6xl--line-height: 0.98;
 
   /* Radii: one small set. sm = tags and badges, md = buttons and fields, lg (and the xl–4xl aliases) = cards, panels, images */
   --radius-sm: 4px;
@@ -88,8 +88,8 @@
 @layer base {
   :root {
     --display-settings: normal;
-    --display-weight: 600;
-    --display-tracking: 0;
+    --display-weight: 420;
+    --display-tracking: -0.02em;
     --header-h: 72px;
     /* Motion tokens (used by every animation; reduced motion zeroes them below) */
     --dur-micro: 150ms;
@@ -119,7 +119,10 @@
     line-height: var(--text-base--line-height);
     overflow-x: clip;
   }
-  h1, h2, h3, .font-display {
+  h3 { font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01em; color: var(--color-ink-900); text-wrap: balance; }
+  h1 em, h2 em, .font-display em { font-style: italic; font-weight: 380; color: var(--color-olive-600); }
+  .dark-section h1 em, .dark-section h2 em, .dark-section .font-display em, .on-dark h1 em, .on-dark h2 em, .on-dark .font-display em { color: var(--color-bronze-300); }
+  h1, h2, .font-display {
     font-family: var(--font-display);
     font-variation-settings: var(--display-settings);
     font-weight: var(--display-weight);
@@ -168,7 +171,7 @@
 
   /* Buttons: one system. primary (olive), secondary (outline), light (on dark photos), dark; text links use .link-arrow.
      One radius (md), one height per size (44 / 48 / 52px), labels never wrap. Hover: lift 1px + shadow + arrow nudge; press: settle. */
-  .btn { @apply relative inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-6 py-2.5 text-[0.9375rem] font-semibold no-underline whitespace-nowrap select-none; transition: transform var(--dur-micro) var(--ease-enter); }
+  .btn { @apply relative inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-7 py-2.5 text-[0.9375rem] font-semibold no-underline whitespace-nowrap select-none; transition: transform var(--dur-micro) var(--ease-enter); }
   .btn::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: var(--shadow-lift); opacity: 0; transition: opacity var(--dur-std) var(--ease-enter); pointer-events: none; }
   .btn svg { transition: transform var(--dur-std) var(--ease-enter); }
   .btn:hover { transform: translateY(-1px); }
@@ -311,6 +314,21 @@
   /* A line that draws across (left to right) when it scrolls into view */
   [data-reveal].draw-x.reveal-pending { opacity: 1; transform: scaleX(0); }
   [data-reveal].draw-x.reveal-in { transform: none; transition: transform 900ms var(--ease-enter); }
+
+  /* Treatments ticker: a slow, endless line of what the practice does (pauses on hover; still under reduced motion) */
+  .marquee { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .marquee-track { display: flex; width: max-content; animation: marquee 48s linear infinite; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; flex-wrap: wrap; width: auto; } .marquee { mask-image: none; } }
+
+  /* Rotating seal (circular text) */
+  .seal-spin { animation: spin 26s linear infinite; transform-origin: 50% 50%; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Photos settle from a slight zoom as they are revealed */
+  .photo-reveal img { transition: transform 1.2s var(--ease-enter); }
+  .photo-reveal.reveal-pending img { transform: scale(1.12); }
 
   /* Route change: content fades in (first load is never animated, see PageTransition.tsx) */
   .page-enter { animation: fade-in var(--dur-std) var(--ease-enter) both; }

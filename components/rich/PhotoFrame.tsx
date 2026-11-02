@@ -50,7 +50,7 @@ export function PhotoFrame({
 }) {
   const ratio = ratioOf(image);
   return (
-    <div className={cn("relative", className)}>
+    <div data-reveal={priority ? undefined : ""} className={cn("photo-reveal relative", className)}>
       {accent !== "none" && (
         <div
           aria-hidden="true"
