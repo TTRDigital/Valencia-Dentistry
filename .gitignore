@@ -10,3 +10,6 @@ next-env.d.ts
 /qa/screenshots
 /qa/lighthouse
 .DS_Store
+/audit/screenshots
+/audit/after/screenshots
+/audit/.cache

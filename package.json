@@ -12,7 +12,10 @@
     "audit": "node --experimental-strip-types --no-warnings scripts/audit.ts",
     "favicons": "node --experimental-strip-types --no-warnings scripts/favicons.ts",
     "images": "node --experimental-strip-types --no-warnings scripts/images.ts",
-    "screenshots": "node --experimental-strip-types --no-warnings scripts/screenshots.ts"
+    "screenshots": "node --experimental-strip-types --no-warnings scripts/screenshots.ts",
+    "audit:visual": "node --experimental-strip-types --no-warnings scripts/audit/run.ts",
+    "audit:lighthouse": "node --experimental-strip-types --no-warnings scripts/audit/lighthouse.ts",
+    "audit:report": "node --experimental-strip-types --no-warnings scripts/audit/report.ts"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",
@@ -35,9 +38,11 @@
     "@types/node": "^24.0.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "axe-core": "4.14.0",
     "cheerio": "^1.2.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.3",
+    "playwright": "1.63.0",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3"
