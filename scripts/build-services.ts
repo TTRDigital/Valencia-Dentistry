@@ -9,6 +9,7 @@
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
+import { inSentence } from "../lib/utils.ts";
 
 const CRAWL = process.argv[2];
 const ROOT = new URL("..", import.meta.url).pathname;
@@ -158,16 +159,16 @@ for (const svc of SERVICES) {
     seo: existing?.seo ?? { title: `${svc.name} in Santa Clarita | Valencia Dentistry`, description: heroText.slice(0, 152) },
     hero: { h1, subtitle: intro[0]?.heading || svc.name, text: heroText, image: img(svc.img[0], `${svc.name} at Valencia Dentistry`) },
     intro: { heading: intro[0]?.heading ?? `${svc.name} at Valencia Dentistry`, paragraphs: intro.length ? paras(intro) : paras(understanding).slice(0, 1) },
-    understanding: { heading: understanding[0]?.heading ?? `Understanding ${svc.name.toLowerCase()}`, intro: paras(understanding).join(" ") || paras(benefits).join(" "), image: img(svc.img[1], `${svc.name}: treatment at Valencia Dentistry`), items: uItems, bullets: uBullets },
-    why: { heading: why[0]?.heading ?? `Why choose Valencia Dentistry for ${svc.name.toLowerCase()}?`, intro: paras(why).join(" "), cards: cardsFrom(why).map((c, i) => ({ ...c, image: i < 3 ? img(svc.img[2 + i], `${svc.name} at Valencia Dentistry: ${c.title}`) : undefined })) },
-    process: { heading: process[0]?.heading ?? `Our ${svc.name.toLowerCase()} process`, intro: paras(process).join(" "), steps },
-    candidate: { heading: candidate[0]?.heading ?? `Are you a good candidate for ${svc.name.toLowerCase()}?`, text: paras(candidate).join(" "), bullets: candBullets, image: img(svc.img[5], "") },
+    understanding: { heading: understanding[0]?.heading ?? `What ${inSentence(svc.name)} is`, intro: paras(understanding).join(" ") || paras(benefits).join(" "), image: img(svc.img[1], `${svc.name}: treatment at Valencia Dentistry`), items: uItems, bullets: uBullets },
+    why: { heading: why[0]?.heading ?? `Why choose Valencia Dentistry for ${inSentence(svc.name)}?`, intro: paras(why).join(" "), cards: cardsFrom(why).map((c, i) => ({ ...c, image: i < 3 ? img(svc.img[2 + i], `${svc.name} at Valencia Dentistry: ${c.title}`) : undefined })) },
+    process: { heading: process[0]?.heading ?? `Our ${inSentence(svc.name)} process`, intro: paras(process).join(" "), steps },
+    candidate: { heading: candidate[0]?.heading ?? `Are you a good candidate for ${inSentence(svc.name)}?`, text: paras(candidate).join(" "), bullets: candBullets, image: img(svc.img[5], "") },
     ...(care.length ? { care: { heading: care[0].heading, intro: paras(care).join(" ").replace(/\s*(Before|After) Your [^.:]*:?\s*(Before|After) Your [^.:]*:?\s*$/i, "").replace(/\s*(Before|After) Your [^.:]{0,60}:?\s*$/i, "").trim(), before: dedupe(care[0].bullets.slice(0, Math.ceil(care[0].bullets.length / 2))), after: dedupe([...care[0].bullets.slice(Math.ceil(care[0].bullets.length / 2)), ...care.slice(1).flatMap((x) => x.bullets)]), cards: cardsFrom(care) } } : {}),
     tables,
     extra: list.filter((x) => x.heading && (x.paragraphs.length || x.cards.length || x.bullets.length)).map((x) => ({ heading: x.heading, paragraphs: x.paragraphs, bullets: x.bullets, cards: x.cards })),
     faqs,
     related: svc.related,
-    cta: { heading: `Schedule your ${svc.name.toLowerCase()} consultation`, text: `Call (661) 254-5200 or book online to see Dr. Lavi at Valencia Dentistry in Santa Clarita.`, buttonLabel: "Book a consultation" },
+    cta: { heading: `Talk with Dr. Lavi about ${inSentence(svc.name)}`, text: `Come in for a relaxed consultation in our Valencia office. Call (661) 254-5200 or book online.`, buttonLabel: "Book a consultation" },
     flags: existing?.flags ?? [],
   };
   console.log(svc.slug.padEnd(24), `intro=${doc.intro.paragraphs.length}`, `uItems=${uItems.length}/${uBullets.length}`, `why=${doc.why.cards.length}`, `steps=${steps.length}`, `cand=${candBullets.length}/${doc.candidate.text.length}`, `care=${care.length}`, `tables=${tables.length}`, `extra=${doc.extra.length}`, `faq=${faqs.length}`);

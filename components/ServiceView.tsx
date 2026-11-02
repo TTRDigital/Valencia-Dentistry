@@ -13,7 +13,7 @@ import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
-import { cn } from "@/lib/utils";
+import { cn, inSentence } from "@/lib/utils";
 
 const PARENT_NAMES: Record<string, string> = {
   "/services/": "Services",
@@ -61,7 +61,7 @@ function BookingCard({ s, className }: { s: Service; className?: string }) {
   return (
     <div className={cn("rounded-md bg-ink-900 p-6 text-white", className)}>
       <p className="text-sm font-semibold text-bronze-300">Start with a consultation</p>
-      <p className="mt-2 text-lg">See Dr. Lavi about {s.name.toLowerCase()}. New patients: exam &amp; X-rays for <span className="font-semibold">$59</span>.</p>
+      <p className="mt-2 text-lg">See Dr. Lavi about {inSentence(s.name)}. New patients: exam &amp; X-rays for <span className="font-semibold">$59</span>.</p>
       <div className="mt-5 grid gap-2">
         <Button href={site.bookingUrl} variant="light" arrow>Book online</Button>
         <Button href={`tel:${site.phone.tel}`} variant="outline" external={false} className="border-white/40 text-white hover:bg-white/10"><Icon.phone className="h-4 w-4" /> {site.phone.display}</Button>
@@ -258,7 +258,7 @@ export async function ServiceView({ s }: { s: Service }) {
 
             {s.faqs.length > 0 && (
               <Block id="questions" label="Questions">
-                <h2 className="text-4xl">Questions patients ask about {s.name.toLowerCase()}</h2>
+                <h2 className="text-4xl">Questions patients ask about {inSentence(s.name)}</h2>
                 <p className="mt-4 text-grey-700">Answered by Dr. Lavi. Have another? Call {site.phone.display}.</p>
                 <FaqList items={s.faqs} className="mt-6" />
               </Block>
@@ -266,7 +266,7 @@ export async function ServiceView({ s }: { s: Service }) {
           </div>
 
           {/* Sticky sidebar */}
-          <aside className="hidden lg:col-span-4 lg:block" aria-label={`Book ${s.name.toLowerCase()}`}>
+          <aside className="hidden lg:col-span-4 lg:block" aria-label={`Book ${inSentence(s.name)}`}>
             <div className="sticky top-24 space-y-6">
               <BookingCard s={s} />
               <nav aria-label="On this page" className="rounded-md p-1">

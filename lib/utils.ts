@@ -22,3 +22,6 @@ export function readingTime(text: string) {
   const words = text.trim().split(/\s+/).length;
   return Math.max(1, Math.round(words / 220));
 }
+
+/** A service name as it reads mid-sentence: lowercase, but brand names and acronyms keep their case. */
+export const inSentence = (name: string) => name.split(" ").map((w) => (/^(TMJ|Invisalign|All-on-4)$/.test(w) ? w : w.toLowerCase())).join(" ");
