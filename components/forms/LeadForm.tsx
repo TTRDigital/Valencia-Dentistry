@@ -72,7 +72,8 @@ export function LeadForm({ formName = "Appointment request", compact, services =
     const e = validate(fd);
     setErrors(e);
     if (Object.keys(e).length) {
-      const first = form.querySelector<HTMLElement>("[aria-invalid='true']");
+      // Errors render on the next paint, so pick the first invalid field by name, in form order.
+      const first = [...form.elements].find((el) => (el as HTMLInputElement).name in e) as HTMLElement | undefined;
       first?.focus();
       return;
     }
