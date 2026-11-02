@@ -163,7 +163,12 @@ async function runOne(browser: Browser, route: string, width: number): Promise<R
   }
   const chromeRoutes = ["/", "/services/dental-implants/", "/contact/", "/dental-implants-cost/"];
   if (chromeRoutes.includes(route)) m.issues.push(...(await chromeChecks(page, width)));
-  if (width === 375 || width === 1440) m.issues.push(...(await axeCheck(page)));
+  if (width === 375 || width === 1440) {
+    // let the header finish its 300ms fade back to transparent at the top before measuring contrast
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.waitForTimeout(500);
+    m.issues.push(...(await axeCheck(page)));
+  }
   if (width === 1440) m.issues.push(...(await focusCheck(page)));
   await ctx.close();
   for (const i of m.issues) { i.route = route; i.width = width; }

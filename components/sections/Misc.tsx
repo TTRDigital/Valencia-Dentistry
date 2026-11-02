@@ -127,10 +127,10 @@ export function Offer({ s }: { s: OfferSection }) {
             <p className="font-display text-6xl text-white">$59</p>
             <p className="text-white/80">Comprehensive exam and digital X-rays for new patients.</p>
             <Button href={s.cta?.href ?? site.bookingUrl} variant="light" size="lg" className="mt-3" arrow>{s.cta?.label ?? "Claim the offer"}</Button>
-            <p className="text-sm text-white/70">Or call <a href={`tel:${site.phone.tel}`} className="font-semibold text-white underline-offset-4 hover:underline">{site.phone.display}</a></p>
+            <p className="text-sm text-white/70">Or call <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center font-semibold text-white underline-offset-4 hover:underline">{site.phone.display}</a></p>
           </div>
         </div>
-        <p className="mt-4 text-center text-sm text-grey-600"><Link href="/services/" className="underline hover:text-ink-900">See everything we offer</Link></p>
+        <p className="mt-4 text-center text-sm text-grey-600"><Link href="/services/" className="inline-flex min-h-11 items-center underline hover:text-ink-900">See everything we offer</Link></p>
       </Container>
     </Section>
   );

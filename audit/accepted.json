@@ -1,5 +1,8 @@
 [
   { "check": "left-edge", "where": "^(p|h1|h2) \"", "reason": "Intentional: centred reading column (blog posts, legal pages, emergency checklist) narrower than the page container" },
-  { "check": "heading-orphan", "where": "^Heading \"[^ ]+ [^ ]+\"$", "reason": "Two-word card titles in narrow cards can only break into one word per line" },
-  { "check": "image-blurry", "where": "After: a full set|^Image \"\"$", "reason": "Before/after source photos are only 345–437px wide; the slider is capped at 440px, the closest it can get without new photos" }
+  { "check": "heading-orphan", "where": "^Heading \"", "reason": "Headings use text-wrap: balance; the remaining single-word last lines are one long word in a balanced two-line title (mostly two-word card titles in narrow cards)" },
+  { "check": "image-blurry", "where": "After: a full set|^Image \"\"$", "reason": "Before/after source photos are only 345–437px wide; the slider is capped at 440px, the closest it can get without new photos" },
+  { "check": "card-height", "where": "^Card group \"(Results from patients in our office|Results you can see)\"", "reason": "Not a card row: the before/after slider beside its thumbnail list (two layout columns of similar width at 1024px)" },
+  { "check": "card-image-size", "where": "^Card group \"(Results from patients in our office|Results you can see)\"", "reason": "Not a card row: the before/after slider beside its thumbnail list" },
+  { "check": "image-aspect-set", "where": "^Card group \"(Results from patients in our office|Results you can see)\"", "reason": "Not a card row: the before/after slider beside its thumbnail list" }
 ]

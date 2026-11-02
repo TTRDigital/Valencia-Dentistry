@@ -75,7 +75,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
         // Phones: the photo fills a 4:3 band at the top (close to the photos' own ratio, so it is not cropped into
         // a tall box and upscaled) and fades into the dark text area. Tablet and up: full-bleed behind the text.
         <div className="absolute inset-x-0 top-0 -z-10 aspect-[4/3] sm:inset-0 sm:aspect-auto">
-          <Picture image={s.image} fill priority sizes="(min-width: 640px) 100vw, 100vw" cropTo={4 / 3} quality={70} className="object-cover object-[70%_25%] lg:object-[center_25%]" />
+          <Picture image={s.image} fill priority sizes="(min-width: 1024px) 100vw, (min-width: 640px) 140vw, 100vw" cropTo={4 / 3} quality={70} className="object-cover object-[70%_25%] lg:object-[center_25%]" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/45 to-ink-900/10 sm:from-ink-950/95 sm:via-ink-900/60 sm:to-ink-900/25 lg:bg-gradient-to-r lg:from-ink-950/85 lg:via-ink-900/55 lg:to-ink-900/10" aria-hidden="true" />
         </div>
       )}

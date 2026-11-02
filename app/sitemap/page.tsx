@@ -25,7 +25,7 @@ export default async function SitemapPage() {
             {groups.map((g) => (
               <nav key={g.title} aria-labelledby={`sm-${g.title}`}>
                 <h2 id={`sm-${g.title}`} className="text-2xl">{g.title}</h2>
-                <ul className="mt-5 space-y-2.5">{g.items.map((it) => <li key={it.href}><Link href={it.href} className="text-grey-700 underline-offset-4 hover:text-ink-900 hover:underline">{it.label}</Link></li>)}</ul>
+                <ul className="mt-5">{g.items.map((it) => <li key={it.href}><Link href={it.href} className="inline-flex min-h-11 items-center text-grey-700 underline-offset-4 hover:text-ink-900 hover:underline">{it.label}</Link></li>)}</ul>
               </nav>
             ))}
           </div>
