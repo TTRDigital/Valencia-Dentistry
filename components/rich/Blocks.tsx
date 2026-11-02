@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { site } from "@/lib/site";
+import { getServices } from "@/lib/content";
 import type { SiteImage, Testimonial } from "@/lib/types";
 import { CountUp } from "@/components/motion/CountUp";
 import { Button } from "@/components/ui/Button";
@@ -20,11 +21,12 @@ export function Watermark({ className, light }: { className?: string; light?: bo
 }
 
 /** Practice facts as a band of large numbers (count up once in view) with a short label each. */
-export function StatBand({ dark, className }: { dark?: boolean; className?: string }) {
+export async function StatBand({ dark, className }: { dark?: boolean; className?: string }) {
+  const treatments = (await getServices()).length;
   const items: { value: ReactNode; label: string; icon: ReactNode }[] = [
     { value: <><CountUp value={site.rating.value} decimals={1} /><Icon.star className="ml-1.5 inline h-6 w-6 -translate-y-1 text-amber-400" /></>, label: "Google rating", icon: <Icon.google className="h-5 w-5" /> },
     { value: <CountUp value={site.rating.count} />, label: "Google reviews from local patients", icon: <Icon.heart className="h-5 w-5" /> },
-    { value: <CountUp value={59} prefix="$" />, label: "New patient exam & X-rays", icon: <Icon.tag className="h-5 w-5" /> },
+    { value: <CountUp value={treatments} />, label: "Treatments in one office, planned by Dr. Lavi", icon: <Icon.tooth className="h-5 w-5" /> },
     { value: "PPO", label: "Most PPO plans accepted, benefits checked for you", icon: <Icon.shield className="h-5 w-5" /> },
   ];
   return (
@@ -70,7 +72,7 @@ export function QuoteHighlight({ t, className }: { t: Testimonial; className?: s
   );
 }
 
-/** Closing call to action with a photo, the $59 offer, booking, phone and hours. */
+/** Closing call to action with a photo, booking, phone and hours. */
 export function CtaBanner({ heading, text, image, buttonLabel = "Book a consultation", className }: { heading: string; text: string; image?: SiteImage; buttonLabel?: string; className?: string }) {
   return (
     <div className={cn("on-dark relative isolate overflow-hidden rounded-lg bg-ink-900 text-white", className)}>
@@ -78,7 +80,7 @@ export function CtaBanner({ heading, text, image, buttonLabel = "Book a consulta
       <Watermark light className="-bottom-16 -right-10 h-72 w-72" />
       <div className="grid items-center gap-8 p-7 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-14">
         <div className="lg:col-span-7">
-          <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-bronze-300 ring-1 ring-white/15"><Icon.tag className="h-4 w-4" /> {site.offer.headline}: {site.offer.detail}</p>
+          <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-bronze-300 ring-1 ring-white/15"><Icon.user className="h-4 w-4" /> {site.newPatients.headline}</p>
           <h2 className="mt-5 text-4xl text-white">{heading}</h2>
           <p className="mt-4 max-w-xl text-lg text-white/80">{text}</p>
           <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">

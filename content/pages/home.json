@@ -4,7 +4,7 @@
   "title": "Home",
   "seo": {
     "title": "Valencia Dentistry | Dr. Nuriel Lavi, Santa Clarita",
-    "description": "Holistic, one-on-one dentistry in Valencia, Santa Clarita. Dr. Nuriel Lavi offers implants, veneers, Invisalign and same-day crowns. $59 new patient exam."
+    "description": "Holistic, one-on-one dentistry in Valencia, Santa Clarita. Dr. Nuriel Lavi offers implants, veneers, Invisalign and same-day crowns. New patients welcome."
   },
   "sections": [
     {
@@ -146,7 +146,7 @@
             {
               "label": "Your first visit",
               "href": "#first-visit",
-              "description": "What happens at the $59 exam"
+              "description": "What happens at your first exam"
             },
             {
               "label": "Holistic dentistry",
@@ -218,7 +218,7 @@
     },
     {
       "_type": "firstVisit",
-      "eyebrow": "Your $59 first visit",
+      "eyebrow": "Your first visit",
       "heading": "What happens at your first visit",
       "lead": "No rush and no surprises. Here is exactly what to expect when you come in for your new patient exam.",
       "steps": [
@@ -244,10 +244,10 @@
         }
       ],
       "cta": {
-        "label": "Book your $59 exam",
+        "label": "Book your first visit",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
       },
-      "note": "The $59 new patient special covers a comprehensive exam and X-rays."
+      "note": "Your first visit includes a comprehensive exam and X-rays."
     },
     {
       "_type": "beforeAfter",
@@ -359,13 +359,13 @@
     },
     {
       "_type": "ctaBanner",
-      "heading": "Start with a $59 first visit",
+      "heading": "Start with an unhurried first visit",
       "text": "A comprehensive exam and digital X-rays with Dr. Lavi, and a clear plan you can take home. Most PPO plans accepted.",
       "image": {
         "src": "/images/real/consult-seated.jpg",
         "alt": "A consultation with a seated patient at Valencia Dentistry"
       },
-      "buttonLabel": "Book your $59 exam"
+      "buttonLabel": "Book your first visit"
     },
     {
       "_type": "visit",

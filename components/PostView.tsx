@@ -64,7 +64,7 @@ export async function PostView({ post }: { post: Post }) {
               )}
               <div className="dark-section rounded-3xl p-6">
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">Talk to Dr. Lavi</p>
-                <p className="mt-2 text-white/80">Questions about your own situation? A $59 new patient exam includes X-rays and an unhurried consultation.</p>
+                <p className="mt-2 text-white/80">Questions about your own situation? A new patient visit includes an exam, X-rays and an unhurried consultation.</p>
                 <Button href={site.bookingUrl} variant="light" className="mt-4 w-full" arrow>Book online</Button>
                 <a href={`tel:${site.phone.tel}`} className="mt-2 flex min-h-11 items-center justify-center text-sm text-white/80 hover:text-white">or call {site.phone.display}</a>
               </div>

@@ -69,7 +69,7 @@ export async function ServiceView({ s }: { s: Service }) {
 
   const quickFacts: { icon: IconName; title: string; text: string }[] = [
     { icon: "user", title: "Dr. Lavi, every visit", text: "You see the dentist himself, never handed off" },
-    { icon: "tag", title: "$59 first visit", text: "New patient exam and digital X-rays" },
+    { icon: "calendar", title: "Mon–Fri, 8am–5pm", text: "Weekday appointments, same-day when possible" },
     { icon: "shield", title: "Most PPO plans", text: "We check your benefits before you come in" },
     { icon: "pin", title: "Easy to reach", text: "Free parking, elevator to Suite 240" },
   ];
@@ -99,7 +99,7 @@ export async function ServiceView({ s }: { s: Service }) {
             <div className="lg:col-span-6 xl:col-span-5">
               <PhotoFrame image={s.hero.image} priority sizes="(min-width: 1280px) 520px, (min-width: 1024px) 45vw, 100vw" arch accent="olive" className="mx-auto max-w-[520px]">
                 <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
-                <FloatingBadge className="-right-2 top-6 hidden sm:flex sm:-right-6" icon={<Icon.tag className="h-5 w-5" />} title="$59 first visit" text="Exam & X-rays" />
+                <FloatingBadge className="-right-2 top-6 hidden sm:flex sm:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />
               </PhotoFrame>
             </div>
           </div>

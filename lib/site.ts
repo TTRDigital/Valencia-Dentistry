@@ -1,5 +1,5 @@
 /**
- * Practice facts (address, phone, hours, offer and rating verified against the live site on 2026-10-29; the dentist changed to Dr. Nuriel Lavi on the client's instruction, bio details pending). These are
+ * Practice facts (address, phone, hours and rating verified against the live site on 2026-10-29; the dentist changed to Dr. Nuriel Lavi on the client's instruction, bio details pending). These are
  * the built-in defaults; the Sanity "Site settings" document overrides them
  * when the CMS is connected (see lib/content/settings.ts).
  */
@@ -26,7 +26,7 @@ export const site = {
   /** 0 = Sunday … 6 = Saturday; open ranges in minutes, local time (America/Los_Angeles) */
   weekHours: { 1: [480, 1020], 2: [480, 1020], 3: [480, 1020], 4: [480, 1020], 5: [480, 1020] } as Record<number, [number, number]>,
   timeZone: "America/Los_Angeles",
-  offer: { headline: "New Patient Special", detail: "$59 exam & X-rays", short: "$59 new patient exam & X-rays" },
+  newPatients: { headline: "New patients welcome", detail: "Your first visit includes a comprehensive exam and digital X-rays" },
   rating: { value: 4.9, count: 180, source: "Google" },
   social: {
     facebook: "https://www.facebook.com/iHeartDDS1/",

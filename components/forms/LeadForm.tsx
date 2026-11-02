@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 type Errors = Partial<Record<string, string>>;
 
-const SERVICES = ["New patient exam ($59 special)", "Cleaning & checkup", "Dental implants", "Veneers / cosmetic", "Invisalign", "Crowns or bridges", "Tooth extraction / wisdom teeth", "TMJ / jaw pain", "Emergency / tooth pain", "Something else"];
+const SERVICES = ["New patient exam", "Cleaning & checkup", "Dental implants", "Veneers / cosmetic", "Invisalign", "Crowns or bridges", "Tooth extraction / wisdom teeth", "TMJ / jaw pain", "Emergency / tooth pain", "Something else"];
 const TIMES = ["Morning (8am – 11am)", "Midday (11am – 2pm)", "Afternoon (2pm – 5pm)", "First available"];
 
 /**

@@ -35,8 +35,8 @@
       "items": [
         {
           "icon": "tag",
-          "title": "$59 new patient special",
-          "text": "Your first exam and X-rays for $59. Mention it when we call."
+          "title": "Your first visit",
+          "text": "Your first visit includes a comprehensive exam and X-rays."
         },
         {
           "icon": "shield",

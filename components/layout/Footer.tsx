@@ -19,7 +19,7 @@ export function Footer({ nav }: { nav: Navigation }) {
         {/* Closing call to action on every page */}
         <div className="flex flex-col gap-8 border-b border-white/10 pb-14 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="eyebrow mb-5">{site.offer.headline}: {site.offer.detail}</p>
+            <p className="eyebrow mb-5">{site.newPatients.headline}</p>
             <p className="font-display max-w-3xl text-6xl text-white">Book your visit with <em>Dr. Lavi.</em></p>
           </div>
           <div className="grid shrink-0 gap-3 sm:flex">

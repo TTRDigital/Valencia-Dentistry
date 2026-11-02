@@ -4,18 +4,18 @@
   "title": "New Patient Offer",
   "breadcrumb": "New Patient Offer",
   "seo": {
-    "title": "$59 New Patient Special | Exam & X-Rays in Valencia",
-    "description": "New to Valencia Dentistry? Your first comprehensive exam and digital X-rays are $59. One-on-one care with Dr. Nuriel Lavi in Santa Clarita. Book today."
+    "title": "New Patients | Exam & X-Rays in Valencia",
+    "description": "New to Valencia Dentistry? Your first visit includes a comprehensive exam and digital X-rays, one-on-one with Dr. Nuriel Lavi in Santa Clarita. Book today."
   },
   "sections": [
     {
       "_type": "hero",
       "variant": "landing",
-      "eyebrow": "New patient special",
-      "heading": "Your first exam and X-rays for $59.",
+      "eyebrow": "New patients",
+      "heading": "A thorough first visit with Dr. Lavi.",
       "lead": "A thorough, unhurried first visit with Dr. Nuriel Lavi: comprehensive exam, digital X-rays, oral cancer screening and a clear plan, with no pressure to proceed.",
       "primary": {
-        "label": "Claim the $59 offer",
+        "label": "Book your first visit",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
       },
       "secondary": {
@@ -41,7 +41,7 @@
         "Written treatment plan and estimate",
         "Time for all of your questions"
       ],
-      "fine": "Offer for new patients without insurance, or in place of insurance benefits. Cleaning is scheduled separately once gum health is assessed. Cannot be combined with other offers."
+      "fine": "Cleaning is scheduled separately once gum health is assessed. Most PPO plans accepted; we check your benefits before your visit."
     },
     {
       "_type": "featureGrid",
@@ -89,7 +89,7 @@
     {
       "_type": "form",
       "eyebrow": "Reserve your visit",
-      "heading": "Request your $59 new patient visit",
+      "heading": "Request your new patient visit",
       "lead": "Tell us when works best and we'll confirm your appointment.",
       "formName": "New patient offer"
     },

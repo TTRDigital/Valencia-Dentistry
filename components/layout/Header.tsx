@@ -175,7 +175,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
         </div>
         <div className="border-t hairline bg-greige-50/60">
           <div className="container-x flex flex-wrap items-center justify-between gap-3 py-3 text-sm text-grey-700">
-            <p><span className="font-semibold text-ink-900">{site.offer.headline}:</span> {site.offer.detail}. Most PPO plans accepted.</p>
+            <p><span className="font-semibold text-ink-900">{site.newPatients.headline}:</span> {site.newPatients.detail.toLowerCase()}. Most PPO plans accepted.</p>
             <Link href="/services/" prefetch={false} className="font-semibold text-olive-600 hover:underline" tabIndex={megaOpen ? 0 : -1}>View all services →</Link>
           </div>
         </div>

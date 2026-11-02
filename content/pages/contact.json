@@ -44,7 +44,7 @@
       "items": [
         {
           "q": "Do you take new patients?",
-          "a": "Yes. New patients are welcome and receive a comprehensive exam and digital X-rays for $59. Book online or call to reserve a time."
+          "a": "Yes. New patients are welcome, and the first visit includes a comprehensive exam and digital X-rays. Book online or call to reserve a time."
         },
         {
           "q": "Which insurance plans do you accept?",
