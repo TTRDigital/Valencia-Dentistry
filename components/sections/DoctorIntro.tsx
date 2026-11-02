@@ -1,40 +1,44 @@
 import type { DoctorIntroSection } from "@/lib/types";
+import { site } from "@/lib/site";
+import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
+import { RichHeading, Watermark } from "@/components/rich/Blocks";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
-import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
 
-/** "Meet Dr. Lavi": tall portrait beside a short personal introduction. */
+/** "Meet Dr. Lavi": the portrait whole in the arch with an offset block and proof badges, beside his introduction. */
 export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
   return (
-    <Section className="bg-white" id="meet-dr-lavi">
+    <Section className="relative isolate overflow-hidden bg-sand-50" id="meet-dr-lavi">
+      <Watermark className="-right-20 bottom-0 h-[28rem] w-[28rem]" />
       <Container>
-        <div className="grid items-center gap-10 md:grid-cols-12 lg:gap-16">
-          <Reveal className="md:col-span-5">
-            <div className="overflow-hidden arch bg-greige-50">
-              <Picture image={s.image} sizes="(min-width: 768px) 420px, 100vw" cropTo={4 / 5} className="aspect-[4/5] w-full object-cover object-top" />
-            </div>
+        <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
+          <Reveal className="lg:col-span-5">
+            <PhotoFrame image={s.image} sizes="(min-width: 1024px) 440px, 90vw" arch accent="olive" accentSide="left" className="mx-auto max-w-[420px]">
+              <FloatingBadge className="-right-3 bottom-10 sm:-right-10" icon={<Icon.user className="h-5 w-5" />} title="Every visit with Dr. Lavi" text="No handoffs, no rush" />
+              <FloatingBadge className="-left-3 top-16 hidden sm:flex sm:-left-10" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} on Google</>} text={`${site.rating.count} reviews`} />
+            </PhotoFrame>
           </Reveal>
-          <div className="md:col-span-7">
-            <Reveal>
-              {s.eyebrow && <p className="eyebrow mb-4">{s.eyebrow}</p>}
-              <h2 className="text-4xl">{s.heading}</h2>
-            </Reveal>
-            <div className="mt-6 max-w-[60ch] space-y-4 text-lg text-grey-700">
-              {s.body.map((p, i) => <Reveal key={i} delay={i * 70}><p>{p}</p></Reveal>)}
+          <div className="lg:col-span-7">
+            <RichHeading eyebrow={s.eyebrow} heading={s.heading} />
+            <div className="mt-6 space-y-4 text-lg text-grey-700">
+              {s.body.map((p, i) => <Reveal key={i}><p>{p}</p></Reveal>)}
             </div>
             {s.points && (
-              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-                {s.points.map((pt, i) => (
-                  <Reveal as="li" key={pt} delay={i * 60} className="flex items-start gap-3 text-grey-900">
-                    <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-olive-100 text-olive-700"><Icon.check className="h-3.5 w-3.5" /></span>
+              <ul data-stagger className="mt-8 grid gap-3 sm:grid-cols-2">
+                {s.points.map((pt) => (
+                  <Reveal as="li" key={pt} className="flex items-center gap-3 rounded-lg bg-white p-4 text-grey-900 ring-1 ring-ink-900/[0.07]">
+                    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-olive-600 text-white"><Icon.check className="h-4 w-4" /></span>
                     {pt}
                   </Reveal>
                 ))}
               </ul>
             )}
-            {s.cta && <Button href={s.cta.href} variant="outline" className="mt-8" arrow>{s.cta.label}</Button>}
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+              {s.cta && <Button href={s.cta.href} arrow>{s.cta.label}</Button>}
+              <Button href={site.bookingUrl} variant="outline">Book with Dr. Lavi</Button>
+            </div>
           </div>
         </div>
       </Container>

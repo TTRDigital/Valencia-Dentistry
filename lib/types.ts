@@ -156,15 +156,20 @@ export type OfferSection = { _type: "offer"; eyebrow?: string; heading: string; 
 
 export type TreatmentPickerSection = { _type: "treatmentPicker"; eyebrow?: string; heading: string; lead?: string; options: { id: string; label: string; title: string; text: string; links: Link[] }[] };
 export type FirstVisitSection = { _type: "firstVisit"; eyebrow?: string; heading: string; lead?: string; steps: Step[]; cta?: Link; note?: string };
-export type TechExplainerSection = { _type: "techExplainer"; eyebrow?: string; heading: string; lead?: string; dark?: boolean; items: { title: string; text: string; forYou: string; icon?: string }[] };
+export type TechExplainerSection = { _type: "techExplainer"; eyebrow?: string; heading: string; lead?: string; dark?: boolean; image?: SiteImage; items: { title: string; text: string; forYou: string; icon?: string }[] };
 export type DoctorIntroSection = { _type: "doctorIntro"; eyebrow?: string; heading: string; body: string[]; image: SiteImage; points?: string[]; cta?: Link };
 export type FocusAreasSection = { _type: "focusAreas"; eyebrow?: string; heading: string; lead?: string; areas: { title: string; text: string; image: SiteImage; link: Link; points?: string[] }[] };
+
+export type ServiceShowcaseSection = { _type: "serviceShowcase"; eyebrow?: string; heading: string; lead?: string; slugs: string[] };
+export type StatBandSection = { _type: "statBand" };
+export type CtaBannerSection = { _type: "ctaBanner"; heading: string; text: string; image?: SiteImage; buttonLabel?: string };
 
 export type PageSection =
   | HeroSection | IntroSplitSection | FeatureGridSection | ServiceCategoriesSection | GallerySection | DoctorSection
   | ReviewsSection | FaqSection | VisitSection | CtaSection | RichTextSection | TeamSection | PhotoGridSection
   | ValuesSection | FormSection | ServicesHubSection | InsuranceSection | OfferSection
-  | TreatmentPickerSection | FirstVisitSection | TechExplainerSection | DoctorIntroSection | FocusAreasSection;
+  | TreatmentPickerSection | FirstVisitSection | TechExplainerSection | DoctorIntroSection | FocusAreasSection
+  | ServiceShowcaseSection | StatBandSection | CtaBannerSection;
 
 export type Page = {
   slug: string;

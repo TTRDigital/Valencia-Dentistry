@@ -54,7 +54,7 @@ export function PhotoFrame({
       {accent !== "none" && (
         <div
           aria-hidden="true"
-          className={cn("absolute inset-0 rounded-lg", arch && "arch", ACCENT[accent], accentSide === "right" ? "translate-x-4 translate-y-4 sm:translate-x-6 sm:translate-y-6" : "-translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6")}
+          className={cn("absolute inset-0 rounded-lg", arch && ratio < 1 && "arch", ACCENT[accent], accentSide === "right" ? "translate-x-4 translate-y-4 sm:translate-x-6 sm:translate-y-6" : "-translate-x-4 translate-y-4 sm:-translate-x-6 sm:translate-y-6")}
         />
       )}
       <div className={cn("relative overflow-hidden bg-greige-50", arch && ratio < 1 ? "arch" : "rounded-lg", frameClassName)} style={{ aspectRatio: String(ratio) }}>

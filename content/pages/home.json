@@ -28,6 +28,9 @@
       "trust": true
     },
     {
+      "_type": "statBand"
+    },
+    {
       "_type": "treatmentPicker",
       "eyebrow": "Start here",
       "heading": "What's bringing you in?",
@@ -161,6 +164,19 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "_type": "serviceShowcase",
+      "eyebrow": "Our services",
+      "heading": "Treatments patients come to us for",
+      "lead": "From a single crown to a full arch, every treatment is planned with Dr. Lavi in our Valencia office.",
+      "slugs": [
+        "dental-implants",
+        "all-on-4-implants",
+        "veneers",
+        "invisalign",
+        "dental-crowns"
       ]
     },
     {
@@ -318,7 +334,24 @@
           "text": "Close-up photos of your teeth.",
           "forYou": "You see exactly what Dr. Lavi sees before you decide anything."
         }
-      ]
+      ],
+      "image": {
+        "src": "/images/real/scan-intraoral.jpg",
+        "alt": "A digital intraoral scan at Valencia Dentistry"
+      }
+    },
+    {
+      "_type": "insurance"
+    },
+    {
+      "_type": "ctaBanner",
+      "heading": "Start with a $59 first visit",
+      "text": "A comprehensive exam and digital X-rays with Dr. Lavi, and a clear plan you can take home. Most PPO plans accepted.",
+      "image": {
+        "src": "/images/real/consult-seated.jpg",
+        "alt": "A consultation with a seated patient at Valencia Dentistry"
+      },
+      "buttonLabel": "Book your $59 exam"
     },
     {
       "_type": "visit",

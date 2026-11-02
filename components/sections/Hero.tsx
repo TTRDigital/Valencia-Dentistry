@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import type { HeroSection } from "@/lib/types";
 import { site } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { Watermark } from "@/components/rich/Blocks";
+import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
@@ -40,7 +42,9 @@ function StagedHeading({ text }: { text: string }) {
 export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; path: string }[] }) {
   if (s.variant === "home") {
     return (
-      <section data-hero="dark" className="dark-section overflow-hidden" aria-labelledby="hero-heading">
+      <section data-hero="dark" className="dark-section isolate overflow-hidden" aria-labelledby="hero-heading">
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(80%_70%_at_100%_0%,rgba(91,107,90,0.5),transparent_60%),radial-gradient(50%_60%_at_0%_100%,rgba(154,139,114,0.16),transparent_70%)]" />
+        <Watermark light className="-left-28 top-20 h-[36rem] w-[36rem]" />
         <div className="container-x grid items-end gap-10 pt-14 sm:pt-20 lg:grid-cols-12 lg:gap-8 lg:pt-24">
           <div className="hero-stage pb-10 lg:col-span-7 lg:pb-24">
             {s.eyebrow && <p className="eyebrow mb-5" data-stage="0">{s.eyebrow}</p>}
@@ -62,36 +66,47 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
                 <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 460px, (min-width: 640px) 60vw, 88vw" cropTo={4 / 5} className="aspect-[4/5] w-full object-cover object-top" />
               </div>
             ) : null}
+            {s.image && (
+              <>
+                <FloatingBadge className="bottom-20 left-0 sm:-left-2 lg:-left-10" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews from local patients`} />
+                <FloatingBadge className="right-0 top-24 hidden sm:flex lg:-right-6" icon={<Icon.tag className="h-5 w-5" />} title="$59 first visit" text="Exam & digital X-rays" />
+              </>
+            )}
           </div>
         </div>
       </section>
     );
   }
-  // Page and landing heroes: full-bleed photo with the text on the left (Ideal style).
+  // Page and landing heroes: dark band, text on the left, the photo whole on the right (its own proportions,
+  // so heads are never cut), with floating proof points.
   const landing = s.variant === "landing";
   return (
     <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-ink-900 text-white" aria-labelledby="hero-heading">
-      {s.image && (
-        // Phones: the photo fills a 4:3 band at the top (close to the photos' own ratio, so it is not cropped into
-        // a tall box and upscaled) and fades into the dark text area. Tablet and up: full-bleed behind the text.
-        <div className="absolute inset-x-0 top-0 -z-10 aspect-[4/3] sm:inset-0 sm:aspect-auto">
-          <Picture image={s.image} fill priority sizes="(min-width: 1024px) 100vw, (min-width: 640px) 140vw, 100vw" cropTo={4 / 3} quality={70} className="object-cover object-[70%_25%] lg:object-[center_25%]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/45 to-ink-900/10 sm:from-ink-950/95 sm:via-ink-900/60 sm:to-ink-900/25 lg:bg-gradient-to-r lg:from-ink-950/85 lg:via-ink-900/55 lg:to-ink-900/10" aria-hidden="true" />
-        </div>
-      )}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(80%_70%_at_100%_0%,rgba(91,107,90,0.5),transparent_60%),radial-gradient(50%_60%_at_0%_100%,rgba(154,139,114,0.16),transparent_70%)]" />
+      <Watermark light className="-left-28 top-16 h-[34rem] w-[34rem]" />
       <div className="container-x">
-        <div className={cn("hero-stage max-w-2xl", s.image ? "pb-12 pt-[52vw] sm:pt-28 sm:pb-20 lg:py-28" : "py-14 lg:py-20", landing && "lg:py-32")}>
-          {crumbs && <div className="mb-5" data-stage="0"><Breadcrumbs items={crumbs} light /></div>}
-          {s.eyebrow && <p className="eyebrow mb-4 text-bronze-300" data-stage="0">{s.eyebrow}</p>}
-          <h1 id="hero-heading" className="text-5xl text-white"><StagedHeading text={s.heading} /></h1>
-          {s.lead && <p className="mt-5 max-w-xl text-lg text-white/85" data-stage="3">{s.lead}</p>}
-          {(s.primary || s.secondary) && (
-            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
-              {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
-              {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
+        <div className={cn("grid items-center gap-12 pb-14 pt-10 lg:grid-cols-12 lg:gap-16 lg:pb-24 lg:pt-14", landing && "lg:pb-28")}>
+          <div className={cn("hero-stage", s.image ? "lg:col-span-6 xl:col-span-7" : "lg:col-span-9")}>
+            {crumbs && <div className="mb-6" data-stage="0"><Breadcrumbs items={crumbs} light /></div>}
+            {s.eyebrow && <p className="eyebrow mb-4 text-bronze-300" data-stage="0">{s.eyebrow}</p>}
+            <h1 id="hero-heading" className="text-5xl text-white"><StagedHeading text={s.heading} /></h1>
+            {s.lead && <p className="mt-5 max-w-xl text-lg text-white/85" data-stage="3">{s.lead}</p>}
+            {(s.primary || s.secondary) && (
+              <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
+                {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
+                {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
+              </div>
+            )}
+            {s.trust && <div data-stage="5"><TrustRow light className="mt-8" /></div>}
+          </div>
+          {s.image && (
+            <div className="lg:col-span-6 xl:col-span-5">
+              <PhotoFrame image={s.image} priority sizes="(min-width: 1280px) 520px, (min-width: 1024px) 45vw, 100vw" arch accent="olive" className="mx-auto max-w-[520px]">
+                <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
+                <FloatingBadge className="-right-2 top-6 hidden sm:flex sm:-right-6" icon={<Icon.tag className="h-5 w-5" />} title="$59 first visit" text="Exam & X-rays" />
+              </PhotoFrame>
             </div>
           )}
-          {s.trust && <div data-stage="5"><TrustRow light className="mt-8" /></div>}
         </div>
       </div>
     </section>
