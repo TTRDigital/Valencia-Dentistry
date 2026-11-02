@@ -14,7 +14,7 @@
     "subtitle": "Restore Your Smile with the Best in Restorative Dentistry",
     "text": "",
     "image": {
-      "src": "/images/stock/crown-model.jpg",
+      "src": "/images/real/implant-model-hands.jpg",
       "alt": "Restorative Dentistry at Valencia Dentistry"
     }
   },
@@ -26,7 +26,7 @@
     "heading": "What Is Restorative Dentistry?",
     "intro": "",
     "image": {
-      "src": "/images/blog/1781299006361.jpg",
+      "src": "/images/real/scan-closeup.jpg",
       "alt": "Restorative Dentistry: treatment at Valencia Dentistry"
     },
     "items": [
@@ -57,24 +57,24 @@
         "title": "Same-Day & Emergency Appointments",
         "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most.",
         "image": {
-          "src": "/images/blog/1781299006361.jpg",
-          "alt": "Same-Day & Emergency Appointments"
+          "src": "/images/real/smile-plan-3.jpg",
+          "alt": "Restorative Dentistry at Valencia Dentistry: Same-Day & Emergency Appointments"
         }
       },
       {
         "title": "Advanced Technology",
         "text": "From digital imaging to guided treatment planning, we use state-of-the-art tools for precision and efficiency.",
         "image": {
-          "src": "/images/stock/exam-mirror.jpg",
-          "alt": "Advanced Technology"
+          "src": "/images/real/implant-model-2.jpg",
+          "alt": "Restorative Dentistry at Valencia Dentistry: Advanced Technology"
         }
       },
       {
         "title": "Comfort-First Care",
         "text": "With sedation options and a friendly team, even anxious patients feel at ease.",
         "image": {
-          "src": "/images/stock/crown-model.jpg",
-          "alt": "Comfort-First Care"
+          "src": "/images/real/scan-review.jpg",
+          "alt": "Restorative Dentistry at Valencia Dentistry: Comfort-First Care"
         }
       },
       {
@@ -110,7 +110,7 @@
       "Restored facial balance and symmetry"
     ],
     "image": {
-      "src": "/images/stock/exam-mirror.jpg",
+      "src": "/images/real/veneer-tryin.jpg",
       "alt": ""
     }
   },

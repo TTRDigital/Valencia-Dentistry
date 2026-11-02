@@ -63,6 +63,14 @@ The Valencia Dentistry identity was applied: logo vectorized from the supplied m
 
 At the client's request the whole site now follows idealdentalsolutions.com: Urbanist for all text, compact semibold headings, cream (#FAFAF4) and flat near-black (#1C1C1C) sections, cream header with uppercase navigation, an underlined "Schedule Appointment" link and the phone number, square uppercase buttons, square photos, flat cream cards with the photo on top, full-bleed photo heroes on every inner page, the doctor shown in a 50/50 black text and photo row, and Ideal's dark contact block (phone, address, hours, then the request form). The home hero the client approved is kept. Brand colours stay Valencia Dentistry's (charcoal, olive, bronze). The navigation now matches Ideal's order: Home, About Us, Services, Before & After, Blog, Contact.
 
+## Real photos only (2026-11-02)
+
+Every page now uses real photographs only: no stock images and no AI-generated images.
+- All stock and AI images were deleted from the project (`public/images/stock`, `public/images/blog`, the brand placeholder panels). `node scripts/check-images.mjs` fails if any page references them, and checks that every image on every page loads.
+- 53 professional photos of the doctor with patients (consultations, X-ray reviews, digital scanning, aligners, veneer try-ins, implant and denture models, treatment rooms) are in `public/images/real`, matched by topic: each service page uses six photos of its own treatment, every blog post uses a photo of its subject.
+- **Source of these photos: bestdentistthousandoaks.com (Newbury Park Dental Arts), the same site the doctor portraits came from, as instructed. That site presents the dentist in them as Dr. Jason Verdi, and the office and patients are theirs. The client must confirm written permission to use these photos, or supply their own office photos, before launch.**
+- The before/after cases are the Valencia office's own (unchanged).
+
 ## Open items (need from the client)
 
 0. **Dr. Lavi's details**: credentials, education, years in practice, a short bio, and a high-resolution portrait plus office/team/treatment photos. **Also the domain and email questions**: it names **Dr. Nuriel Lavi DDS**, the email ValenciaDentistryCA@gmail.com and the domain ValenciaDentistryCA.com, while the current site, reviews, before/after cases and bios are Dr. Neda Moezzi's. Confirm who the dentist is (and supply their bio, credentials, photo), the final domain (`NEXT_PUBLIC_SITE_URL`, canonicals, sitemap) and the public email. If the practice has changed hands, the reviews that name "Dr Neda", the "since 2007" story and the before/after cases must be replaced or removed.

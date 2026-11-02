@@ -14,7 +14,7 @@
     "subtitle": "Protect Your Oral Health with Advanced Composite Fillings",
     "text": "Fix cavities and cracks with discreet, durable fillings designed to match your smile",
     "image": {
-      "src": "/images/stock/exam-mirror.jpg",
+      "src": "/images/real/scan-doctor.jpg",
       "alt": "Composite Fillings at Valencia Dentistry"
     }
   },
@@ -26,7 +26,7 @@
     "heading": "What Are Composite Fillings??",
     "intro": "Composite fillings are a modern solution for treating cavities and repairing minor tooth damage. Made from a strong, tooth-colored resin, they’re custom-matched to your natural enamel and bonded directly to the tooth for a seamless, long-lasting result.",
     "image": {
-      "src": "/images/blog/1781299654294.jpg",
+      "src": "/images/real/cleaning.jpg",
       "alt": "Composite Fillings: treatment at Valencia Dentistry"
     },
     "items": [
@@ -61,16 +61,16 @@
         "title": "Doctor-led attention to detail",
         "text": "Dr. Lavi takes time to ensure each filling looks and feels just right",
         "image": {
-          "src": "/images/blog/1781299654294.jpg",
-          "alt": "Doctor-led attention to detail"
+          "src": "/images/real/scan-closeup.jpg",
+          "alt": "Composite Fillings at Valencia Dentistry: Doctor-led attention to detail"
         }
       },
       {
         "title": "Advanced technology",
         "text": "We use digital imaging and precise materials for efficient, accurate results",
         "image": {
-          "src": "/images/blog/1781282303677.jpg",
-          "alt": "Advanced technology"
+          "src": "/images/real/shade-match.jpg",
+          "alt": "Composite Fillings at Valencia Dentistry: Advanced technology"
         }
       }
     ]
@@ -112,7 +112,7 @@
       "Bonds tightly to prevent future decay and damage"
     ],
     "image": {
-      "src": "/images/blog/1781282303677.jpg",
+      "src": "/images/real/scan-intraoral.jpg",
       "alt": ""
     }
   },

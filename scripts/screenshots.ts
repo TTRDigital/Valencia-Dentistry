@@ -18,8 +18,15 @@ for (const w of widths) {
   const page = await ctx.newPage();
   for (const p of pages) {
     await page.goto(BASE + p, { waitUntil: "networkidle" });
-    await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 700) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); } window.scrollTo(0, 0); });
-    await page.waitForTimeout(300);
+    // Scroll like a person (wheel events) so lazy images load, then wait until every image is decoded.
+    const height = await page.evaluate(() => document.body.scrollHeight);
+    for (let y = 0; y < height; y += 500) { await page.mouse.wheel(0, 500); await page.waitForTimeout(120); }
+    await page.waitForLoadState("networkidle");
+    await page.evaluate(() => Promise.all([...document.images].map((img) => (img.complete ? img.decode().catch(() => null) : new Promise((r) => { img.onload = img.onerror = r; setTimeout(r, 8000); })))));
+    // Full-page captures skip repainting off-screen async-decoded images; decode them synchronously for the capture.
+    await page.evaluate(() => { for (const img of document.images) { img.decoding = "sync"; img.style.backgroundImage = "none"; } });
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.waitForTimeout(400);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     const name = (p === "/" ? "home" : p.replace(/^\/|\/$/g, "").replace(/\//g, "__")) + `-${w}.png`;
     await page.screenshot({ path: `qa/screenshots/${name}`, fullPage: true });

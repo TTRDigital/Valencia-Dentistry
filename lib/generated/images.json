@@ -1,174 +1,4 @@
 {
- "/images/blog/1776382495907.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAQAgCdASoMAAQAA4BaJYgCdAEXaibQ84MAAP2pORHksb6xF3WgBChlaH5rktfz1MAAAA=="
- },
- "/images/blog/1776812130201.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoMAAQAA4BaJZwCdADdI1rQYAD+7eehGFhm+C4Zd4AEX+dNtAA="
- },
- "/images/blog/1776813209633.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoMAAQAA4BaJQBOgBugjKSAAP2fSho8DnpEB0/fvZmsQTpSAAA="
- },
- "/images/blog/1776893633346.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoMAAQAA4BaJQBOgB6Q/0uAAPkIAd8970Y0pzPoVzAAAA=="
- },
- "/images/blog/1776894084542.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoMAAQAA4BaJYwCdADcPcJf8AD+x3sfloNJMoXvkpOxSwbgAAA="
- },
- "/images/blog/1776894374984.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoMAAQAA4BaJagCdAEWo+qVX7AA/l9NMssLwR1deoZ27EyQvGs/YrthJRmQAA=="
- },
- "/images/blog/1776894737538.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoMAAQAA4BaJQBOgBuHXMyAAPeNjLzNj3O+r5/fBfb8BQAA"
- },
- "/images/blog/1781215752220.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoMAAQAA4BaJZwAAh4/ChAA/bM5sJ5gjcGjpzJ8AAA="
- },
- "/images/blog/1781216113972.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoMAAQAA4BaJQBOgBukJYOAAP2fyB5FMuHWEQUuu56a91AJ3sAAAA=="
- },
- "/images/blog/1781216492203.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoMAAQAA4BaJYwCdAEXfowQmAD+SzgbCzvXL2tAEJ0SNNcZXUAAAA=="
- },
- "/images/blog/1781217034792.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoMAAQAA4BaJYgCdAELht+vecAA+UD4fL/tAdAt7aT1P+YVjv5NlfoPY+AAAA=="
- },
- "/images/blog/1781217378905.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAQCdASoMAAQAA4BaJQBOj+ACdpEnNoAA/sdZ/ZwXBJsiyr+w/uqJwAA="
- },
- "/images/blog/1781281585705.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAQAA4BaJQBWABugeEQAAP5rQeNzFzUErNH64uwoSwISS7E6TIAA"
- },
- "/images/blog/1781282303677.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoMAAQAA4BaJQAAYnQCufYPAAD89Yquk1I5F4NI8SpTpkhjzeGoAAAA"
- },
- "/images/blog/1781282838501.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoMAAQAA4BaJQBdgBuHuEv+AP7F32CVtb2sVEUIcM5+fAAA"
- },
- "/images/blog/1781283171205.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADwAQCdASoMAAQAA4BaJZQC7AEUU/09kEAA/tefIo0f8UpNQGwPomAA"
- },
- "/images/blog/1781284187540.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoMAAQAA4BaJQBOgBujgDQ0AP7YCnKjom+ach/+ovGvpOaQD84REOaSn2AAAA=="
- },
- "/images/blog/1781298215450.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoMAAQAA4BaJQBOgBjdCH6AAP7UMCQ1fq4NE45BeGFZVQQA"
- },
- "/images/blog/1781298589450.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoMAAQAA4BaJQBOgBujC3AAAPazJZuApcymwElHzChh+x8n6XqrSxyuAAA="
- },
- "/images/blog/1781298845777.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAQAA4BaJQBOgBuogzRwAP7f7L7Zdyd9j432Uki42hM62Fh6AAAA"
- },
- "/images/blog/1781299006361.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAQAA4BaJZQCw7DdBGGQAP7G8+zL1BVxW2jDBAew8+HuiegGzgAA"
- },
- "/images/blog/1781299448369.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoMAAQAA4BaJQBOgBZNZIAA/moIkZw4YFDa3HLe84lxY/aAAAA="
- },
- "/images/blog/1781299654294.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoMAAQAA4BaJYwCdADdR3MXIADhT4jf0e5V/vagNlxFok0A14AAAA=="
- },
- "/images/blog/1784585627239.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoMAAQAA4BaJZQCdADdE5McAADMiAoL5/V8RpAVNKIG+aiDKFUgAA=="
- },
- "/images/blog/1784586115299.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoMAAQAA4BaJZQAAll3TRYAAP6OFIUJVroYdAwIHDjK/pSDAAA="
- },
- "/images/blog/1784586458312.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoMAAQAA4BaJYgC7ADc9UrM4AD94yPVW7GVu4Pytavst9D9REIKzAAA"
- },
- "/images/blog/1784586772102.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoMAAQAA4BaJYwCdADdR5NncAD5KTVL635OaBKgmIQTyCqngAA="
- },
- "/images/blog/img-2026-04-08T151242.374Z.jpg": {
-  "width": 1536,
-  "height": 512,
-  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoMAAQAA4BaJZwAAtrQdOwAAP5m1q4w3a2595M3lTFJAXAAAAA="
- },
- "/images/brand/panel-cosmetic.jpg": {
-  "width": 1600,
-  "height": 1200,
-  "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoMAAkAA4BaJZQCdAEO+Y01AAD+9N5PngSdHWgA"
- },
- "/images/brand/panel-general.jpg": {
-  "width": 1600,
-  "height": 1200,
-  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoMAAkAA4BaJZQC7AEO+Y5cvAD+9hKYw9JvAk3wAAA="
- },
- "/images/brand/panel-holistic.jpg": {
-  "width": 1600,
-  "height": 1200,
-  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoMAAkAA4BaJZQCdADdLPyi0AD+cSKzwj+YfR8AAAA="
- },
- "/images/brand/panel-preventive.jpg": {
-  "width": 1600,
-  "height": 1200,
-  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoMAAkAA4BaJYwCdAEO+Y01AAD+9N5PngSgO8k0AAA="
- },
- "/images/brand/panel-restorative.jpg": {
-  "width": 1600,
-  "height": 1200,
-  "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoMAAkAA4BaJZQABDOAAP7wT0+ei0KBfpZgAA=="
- },
- "/images/brand/panel-surgical.jpg": {
-  "width": 1600,
-  "height": 1200,
-  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABwAQCdASoMAAkAA4BaJZwAAls/GAD+7L8J0Zqb8FAdaXWBAAA="
- },
  "/images/cases/case-1-after.jpg": {
   "width": 425,
   "height": 404,
@@ -279,39 +109,641 @@
   "height": 82,
   "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4WAoAAAAQAAAACwAAAgAAQUxQSCUAAAAA/f39/f39/f38/fXn7+/v7+/v7+/u7ufa1tbW1tbW1tbV1tDDAFZQOCAmAAAAkAEAnQEqDAADAAOAWiUAAFufXJdwAP73JvVYDCHeXo9e46QAAAA="
  },
- "/images/stock/cbct-scan.jpg": {
-  "width": 1206,
-  "height": 950,
-  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAkAA4BaJYwCdAD0Mcj5cAD+yjGq3N4yPNkBNJI0XBlRcjzOJDbFw3AAAA=="
+ "/images/real/aligner-model.jpg": {
+  "width": 1600,
+  "height": 1083,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAgAA4BaJQBOgBue3RfIAP6YAfRLWEscWbUQ9N9uliT/NJAmGAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
  },
- "/images/stock/cosmetic-checkup.jpg": {
-  "width": 1208,
-  "height": 636,
-  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAYAA4BaJYwCdADdH5GIGAD+bKggQK5DSL7v5VMb12QDEmQTY75H/I4AAA=="
+ "/images/real/aligner-patient-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJQBOgB6KGcBotgAA/rZVqynhMI693ogtywAoc0lCka0NL6I9RsPwAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
  },
- "/images/stock/crown-model.jpg": {
-  "width": 1080,
-  "height": 720,
-  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoMAAgAA4BaJQBOgBZNgPCAAP7gv1HQBlLqZispf2mMJy2yBlz7ibQSRJZyEKq326XyzS8m8AA="
+ "/images/real/aligner-patient.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoMAAgAA4BaJQBOgB4/LggAAP6v45l5jsmN/h1LFw/I+LF1sfQWMZaAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
  },
- "/images/stock/exam-mirror.jpg": {
-  "width": 1208,
-  "height": 636,
-  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAYAA4BaJYgCdADdGCO5AAD+fgh4nFakKptyW2vIztw37KPwJHyiPeMSgAAA"
+ "/images/real/cleaning.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoMAAgAA4BaJZQCdADbMCr4oAD+xd53m3p8bNcKOYxDhOLSJkbLG+7W+uof6BwgAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
  },
- "/images/stock/family-visit.jpg": {
-  "width": 604,
-  "height": 318,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoMAAYAA4BaJYwAAq9f+CJnSwAA/reXaEE8oe7FxKLU0U2o8UOqtgAA"
+ "/images/real/consult-denture.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoMAAgAA4BaJZQCdAEem6HRm0nIAMyMwxDl85MhUFKqBbGlG4R/pCj5QirNILAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/consult-seated-2.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAwAA4BaJYgC7ADcgF26AAD8jZOzTaZqspwipxoPWPVUhl6j7BEAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1334
+  ]
+ },
+ "/images/real/consult-seated.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoMAAgAA4BaJYwCdABq+sAA/IvTMkSVFZWQTlv4BRtjppoJtpJDXoN+SygAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/consult-xray-model.jpg": {
+  "width": 1600,
+  "height": 1083,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoMAAgAA4BaJQBOgBsjilsAAPg9Jb0phgYAupO64SM0y33Zq7LkCOS+8sMAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/denture-closeup.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoMAAgAA4BaJYwCdAEPrD3jBzgAAP6mxF4Bd3LyadClkZhRHhVJ745/iCc1vO6wgAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/denture-consult.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAgAA4BaJQBOgBuo/dtngAD8M/ZWJUQwpZxE3bpxHpuY+D1Va8sma+E4AAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/implant-consult-chair.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAwAA4BaJQBOgB8/D9XgAP4FEIZsw/QeFYlEUmUUpNu+psdcpBhQFDnDIAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1334
+  ]
+ },
+ "/images/real/implant-mirror.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAAAQAgCdASoIAAwAA4BaJYwCsAD0t7MROIAAAP7ooKAZK4m4eDJ6uDl8Z8DU/VdQAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1334
+  ]
+ },
+ "/images/real/implant-model-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAgAA4BaJYwCsADb68oFgAD+4npCRki18jo6VyNy16xw6SaU04nxdqLBQAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/implant-model-hands.jpg": {
+  "width": 1600,
+  "height": 1083,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoMAAgAA4BaJYwCdACRoGIAAProY+rTJSdl1AtLKo/v58PfNN0jXLH59B+bZUwgAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/implant-model.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAwAA4BaJQBWAB6VdtEoAAD+4keKtIdjdqymQMZwf4hRrFtKClI0zOQcoAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1334
+  ]
+ },
+ "/images/real/implant-xray-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAgAA4BaJQBOgCBUGFfRwAD+1z2Ut+6pVSXwzycdXVFlv8QX8h6DIId71AAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/implant-xray.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoMAAgAA4BaJQBOgBuVY8cO0AAA/tc9L4egzf4C8rCE14WUq3tP9VPQPOyjYAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/loupes.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJYwCdADhXk3G0gAA/pcRSfxeODJ/wkHKksfiGISeikAM/gi/EJAAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/mirror-smile-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoMAAgAA4BaJYwCdAEf3HYLxWgA/ra3HSNDmZrfsGRRowfZ7tPhLCbMX2PrnG3NpPAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/mirror-smile-3.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoMAAgAA4BaJZQCdADdSIhhRwAA/pGmE4q4XjGa6xibUrTU8Ppt6627lGXeEqAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/mirror-smile.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoMAAgAA4BaJZQCdAELQ/9OyAD+mxK76M3aBxdTu+RVXE7ddFPIUOZi+DrpLA+OAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/mirror-view-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJQBOgBs0I1CwAAD+66OqORlGtV0kB+dsEexc+8AklwwmPj0AAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/mirror-view.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoMAAgAA4BaJYwCsADc5JrTAAD+7hz5odbxBoBmAKmAj7LjZBKgrgzOAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/scan-closeup.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJZQCdAEf3K0kP4AA/reavHmE5wvpoDKkvme1eLZgkQVCMhiItDtmgAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/scan-doctor-2.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAwAA4BaJQBOgCHWre0AAP6wIkkeuq8hQldlfD9T43KvinW2ve+L4idvSgAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1334
+  ]
+ },
+ "/images/real/scan-doctor.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoMAAgAA4BaJQBOgCFrgV8IigAA/rDRCN/zvWofKuDuQJyGeDxv4WxSjYnYAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/scan-hygienist.jpg": {
+  "width": 1334,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAQAgCdASoIAAwAA4BaJQBOgCLv1a7dEaGAAN5k7P5M/UaC//2QbtJdcTGCzE6Yqpekpj2jQm24AAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1334
+  ]
+ },
+ "/images/real/scan-intraoral-2.jpg": {
+  "width": 1600,
+  "height": 1083,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoMAAgAA4BaJZQCdAD0PSTGgADOFN/1if31K9CcTNH2lDBbjuJoOskGt/k7qwKAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/scan-intraoral.jpg": {
+  "width": 1600,
+  "height": 1083,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAABQAgCdASoMAAgAA4BaJZQCdH8AGZ3aArYPZAAA/punVhhY8h9bVvCnGvxXaQQ+ecWNFqIAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/scan-review-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoMAAgAA4BaJZQCsADbL7x54ADiTNdDev/ToHYKq78pub4uKVgT/ggAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/scan-review.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoMAAgAA4BaJZwCdADbIP3oAM4pQkE7SUNIXhPhh7IhhnkKcIHb+EDYZ3YAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/shade-match.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoMAAgAA4BaJZQCdADdYa9nGsQAAPlRGSaBC++ipMkjh4f0vqWYRGOkO3KWTWgA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-design.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoMAAgAA4BaJZQCw7DcdWSEAAD+lMyzmund/DSV8gt1dseMT6cuHi40nDrAORMgAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-plan-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoMAAgAA4BaJZQCsADbL7x54AD+txsWX6lql0K1WOTPOlH/T6WkEP4AAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-plan-3.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoMAAgAA4BaJZQC7ADMl3d2B5AA+XWiSPtYCu5I/DqHjOTaOknwWfzlWQTTKgAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-plan-4.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoMAAgAA4BaJYwCsADdcimsaAAA+NrTLz7LildAeJDjtpNq8UXT5ZVy4AA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-plan-5.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoMAAgAA4BaJZQCdAEP1bWnN2uAAP7oUCNeWV2tZOxy0bagIgKRQK8F12fDQAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-plan-6.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoMAAgAA4BaJYwC7ADMlnzRu4AA+TTwj5jVzMXaaqOYJfCTs1sfCn9WNkAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-plan-7.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoMAAgAA4BaJYwC7AEWdHP2SAAA4lpJa6uxydl3C1AvQFrovqnhVgAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/smile-plan.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoMAAgAA4BaJZwCdAD0eyq7sAD7/5zjG3E7pjrV0RLrDeZcoXmVLEnWnvsKsvMAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/treatment-room-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoMAAgAA4BaJQBOgCPtnPkggAD+yexiS9j4qri4oQAv7kc/2PqJAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/treatment-room.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoMAAgAA4BaJQBOgBu2JNbzgAD+63VSAZYbU0Vy/Ma2Qw40At+QAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/tryin-smile.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJQBOgBuyQVHKAAD+8aDGCqCbmGhAflG7kd0Gb9rxaLDCm1AAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/veneer-consult.jpg": {
+  "width": 1333,
+  "height": 2000,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAwAA4BaJQBOgB6GO0moAAD+lqr2Z3tTIZvNBbQWreWyjNPT5P3MbD2AAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1333
+  ]
+ },
+ "/images/real/veneer-mirror.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoMAAgAA4BaJZwC7AD0IOSCYAD+k1o8IA0BaVHsEehTP6qUZ5zaAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/veneer-plan.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJYwCdADcq97oAAD+1N8CmQE+F1oWw+T9mWUvl13nifJoN30AAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/veneer-smile-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoMAAgAA4BaJZACdAEfbao/ENgA/psFkcQM4pjsQuEaOG+jTKv06CWYn4BJAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/veneer-smile.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJZACdADdsUIZMIwA/tdgXYgsEp1SN+tjucCZltECoQlz/B8aJ9fAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/veneer-tryin.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoMAAgAA4BaJQBOgBra3JAA/raPKFtCZ0ZlMrxM8018kfO+0d02z0AA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/xray-explain.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoMAAgAA4BaJZQC7AEGQmngAP6UzJ8f94pOI81GbnHZlP7BszscXtf9vp50yxrKQAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/xray-pointing-2.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoMAAgAA4BaJYwC7ADbmHYSlgD+3v/N9j/SWlEjNHG9ncJ2aZx1IfQA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/xray-pointing.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoMAAgAA4BaJZQC7AD0ZDIMM2AA/iZBuze1h51ee4+MnAvfQEKdOePmBUcdglRTD5wAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/real/xray-review-seated.jpg": {
+  "width": 1600,
+  "height": 1067,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAgAA4BaJQBOgBu0lcIaAAD2PBhm695CK5k0mVLQJbB9DRkzHdUgEl5LwAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
  },
  "/images/team/dr-lavi-casual.jpg": {
   "width": 1200,
   "height": 1800,
   "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAwAA4BaJZwCdADZml5CgAD+t4vFfxNdT7LWD+Q6rZzkZCXxoBNIBgUYVgAA",
   "opt": [
-   390,
    480,
-   640,
    768,
    1080,
    1200
@@ -322,12 +754,9 @@
   "height": 2000,
   "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoIAAwAA4BaJZQC7AEWUMvo+QAA/psub2yJc3Xc1CpT1l0jabiwIAAA",
   "opt": [
-   390,
    480,
-   640,
    768,
    1080,
-   1280,
    1334
   ]
  },
@@ -336,12 +765,10 @@
   "height": 1067,
   "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJZQAAl25nX+tfAAA/vLinT8Lq3NnnGl3fF0yGPluO2mwEKl+RAOAAAA=",
   "opt": [
-   390,
    480,
-   640,
    768,
    1080,
-   1280,
+   1440,
    1600
   ]
  },
@@ -350,9 +777,7 @@
   "height": 1600,
   "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoJAAwAA4BaJZwAAp3OqYFAAP74jNzaVvQ32pUY+BJS74T6oIMDCgAA",
   "opt": [
-   390,
    480,
-   640,
    768,
    1080,
    1200
@@ -363,9 +788,7 @@
   "height": 514,
   "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoMAAgAA4BaJYwCdACEylyAAP7rGW6Wq5hsJEV8phcDCvH75skC52pBAAA=",
   "opt": [
-   390,
    480,
-   640,
    768
   ]
  },
@@ -374,12 +797,9 @@
   "height": 2000,
   "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAAAQAgCdASoIAAwAA4BaJZQC7AD0o0UijggAAP3/hJmqT0Z6TzZADNHarhaQ+JAA",
   "opt": [
-   390,
    480,
-   640,
    768,
    1080,
-   1280,
    1334
   ]
  }

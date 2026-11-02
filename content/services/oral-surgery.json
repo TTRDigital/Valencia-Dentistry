@@ -14,7 +14,7 @@
     "subtitle": "Restore Your Health with Oral Surgery in Santa Clarita",
     "text": "",
     "image": {
-      "src": "/images/stock/cbct-scan.jpg",
+      "src": "/images/real/loupes.jpg",
       "alt": "Oral Surgery at Valencia Dentistry"
     }
   },
@@ -28,7 +28,7 @@
     "heading": "What Is Oral Surgery?",
     "intro": "Dental Implants Permanent tooth replacements that look and function like natural teeth Tooth Extractions Safe, gentle removal of damaged, infected, or overcrowded teeth Wisdom Teeth Removal Surgical removal of third molars that are impacted or causing pain",
     "image": {
-      "src": "/images/blog/1781282838501.jpg",
+      "src": "/images/real/xray-pointing.jpg",
       "alt": "Oral Surgery: treatment at Valencia Dentistry"
     },
     "items": [
@@ -71,24 +71,24 @@
         "title": "Doctor-Led Surgical Care",
         "text": "Dr. Lavi performs all surgical treatments with a focus on safety, detail, and long-term success.",
         "image": {
-          "src": "/images/blog/1781282838501.jpg",
-          "alt": "Doctor-Led Surgical Care"
+          "src": "/images/real/consult-xray-model.jpg",
+          "alt": "Oral Surgery at Valencia Dentistry: Doctor-Led Surgical Care"
         }
       },
       {
         "title": "Advanced Technology for Better Outcomes",
         "text": "We use digital 3D imaging, guided surgery tools, and PRF (Platelet-Rich Fibrin) therapy to promote faster healing and greater precision.",
         "image": {
-          "src": "/images/blog/1781281585705.jpg",
-          "alt": "Advanced Technology for Better Outcomes"
+          "src": "/images/real/implant-xray-2.jpg",
+          "alt": "Oral Surgery at Valencia Dentistry: Advanced Technology for Better Outcomes"
         }
       },
       {
         "title": "Compassionate, One-on-One Approach",
         "text": "You’ll never feel rushed—Dr. Lavi takes the time to explain your options and answer all your questions.",
         "image": {
-          "src": "/images/stock/cbct-scan.jpg",
-          "alt": "Compassionate, One-on-One Approach"
+          "src": "/images/real/xray-explain.jpg",
+          "alt": "Oral Surgery at Valencia Dentistry: Compassionate, One-on-One Approach"
         }
       },
       {
@@ -124,7 +124,7 @@
     "text": "",
     "bullets": [],
     "image": {
-      "src": "/images/blog/1781281585705.jpg",
+      "src": "/images/real/treatment-room.jpg",
       "alt": ""
     }
   },

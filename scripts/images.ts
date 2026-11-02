@@ -4,7 +4,7 @@
  * 1. Scans public/images and writes lib/generated/images.json with width,
  *    height and a tiny blur placeholder for every image, so next/image gets
  *    exact dimensions and placeholder="blur" for images referenced by path.
- * 2. For the practice photos used as page heroes (public/images/team) it also
+ * 2. For the photos used as page heroes (public/images/team and /real) it also
  *    writes static WebP variants to public/images/_opt/<name>-<width>.webp.
  *    Hero images are the LCP element, and serving a pre-built file (instead
  *    of optimizing on the first request for each size) keeps LCP low.
@@ -18,7 +18,7 @@ import sharp from "sharp";
 const ROOT = new URL("..", import.meta.url).pathname;
 const DIR = join(ROOT, "public/images");
 const OPT = join(DIR, "_opt");
-const WIDTHS = [390, 480, 640, 768, 1080, 1280];
+const WIDTHS = [480, 768, 1080, 1440];
 const out: Record<string, { width: number; height: number; blurDataURL: string; opt?: number[] }> = {};
 mkdirSync(OPT, { recursive: true });
 
@@ -32,10 +32,10 @@ async function walk(dir: string) {
     const blur = await img.clone().resize(12, 12, { fit: "inside" }).blur(1).toFormat("webp", { quality: 40 }).toBuffer();
     const key = "/" + relative(join(ROOT, "public"), p).replace(/\\/g, "/");
     const entry: (typeof out)[string] = { width: meta.width!, height: meta.height!, blurDataURL: `data:image/webp;base64,${blur.toString("base64")}` };
-    if (dir.endsWith("/team")) {
+    if (dir.endsWith("/team") || dir.endsWith("/real")) {
       const name = basename(f, extname(f));
       const widths = [...new Set([...WIDTHS.filter((w) => w < meta.width!), meta.width!])];
-      for (const w of widths) await sharp(p).resize(w).webp({ quality: 78, alphaQuality: 80 }).toFile(join(OPT, `${name}-${w}.webp`));
+      for (const w of widths) await sharp(p).resize(w).webp({ quality: 74, alphaQuality: 80 }).toFile(join(OPT, `${name}-${w}.webp`));
       entry.opt = widths;
     }
     out[key] = entry;

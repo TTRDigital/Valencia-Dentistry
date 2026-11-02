@@ -14,7 +14,7 @@
     "subtitle": "Straighten Your Teeth with Invisalign in Santa Clarita",
     "text": "Discover the modern alternative to braces with custom Invisalign treatment at Valencia Dentistry.",
     "image": {
-      "src": "/images/blog/1776893633346.jpg",
+      "src": "/images/real/aligner-patient-2.jpg",
       "alt": "Invisalign at Valencia Dentistry"
     }
   },
@@ -26,7 +26,7 @@
     "heading": "Understanding invisalign",
     "intro": "",
     "image": {
-      "src": "/images/stock/cosmetic-checkup.jpg",
+      "src": "/images/real/aligner-patient.jpg",
       "alt": "Invisalign: treatment at Valencia Dentistry"
     },
     "items": [],
@@ -40,24 +40,24 @@
         "title": "Invisalign-Certified Provider",
         "text": "Dr. Lavi has advanced training in clear aligner therapy and has helped countless patients achieve confident, lasting results.",
         "image": {
-          "src": "/images/stock/cosmetic-checkup.jpg",
-          "alt": "Invisalign-Certified Provider"
+          "src": "/images/real/aligner-model.jpg",
+          "alt": "Invisalign at Valencia Dentistry: Invisalign-Certified Provider"
         }
       },
       {
         "title": "Advanced 3D Imaging",
         "text": "Our iTero scanner creates precise digital impressions—no messy molds—and allows you to preview your future smile before starting treatment.",
         "image": {
-          "src": "/images/blog/1776812130201.jpg",
-          "alt": "Advanced 3D Imaging"
+          "src": "/images/real/scan-intraoral-2.jpg",
+          "alt": "Invisalign at Valencia Dentistry: Advanced 3D Imaging"
         }
       },
       {
         "title": "Personalized Orthodontic Plans",
         "text": "We don’t believe in one-size-fits-all. Every Invisalign plan is tailored to your unique dental needs and lifestyle goals.",
         "image": {
-          "src": "/images/blog/1776893633346.jpg",
-          "alt": "Personalized Orthodontic Plans"
+          "src": "/images/real/smile-plan-2.jpg",
+          "alt": "Invisalign at Valencia Dentistry: Personalized Orthodontic Plans"
         }
       },
       {
@@ -107,7 +107,7 @@
       "A preference for a low-maintenance, discreet solution"
     ],
     "image": {
-      "src": "/images/blog/1776812130201.jpg",
+      "src": "/images/real/veneer-smile.jpg",
       "alt": ""
     }
   },
