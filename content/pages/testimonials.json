@@ -29,10 +29,10 @@
       "trust": true
     },
     {
-      "_type": "caseCarousel",
+      "_type": "beforeAfter",
       "eyebrow": "Before and after",
       "heading": "Results you can see",
-      "lead": "A few of the smiles restored in our Valencia office. Results vary from person to person."
+      "lead": "Drag the handle to compare. Each case was treated in our Valencia office; results vary from person to person."
     },
     {
       "_type": "reviews",
@@ -43,7 +43,7 @@
     {
       "_type": "cta",
       "eyebrow": "Join them",
-      "heading": "Experience the difference yourself.",
+      "heading": "Come and meet us.",
       "text": "New patients receive a comprehensive exam and X-rays for $59. Book online or call to get started."
     }
   ]
