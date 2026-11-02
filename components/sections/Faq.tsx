@@ -1,6 +1,10 @@
 import type { Faq as FaqItem, FaqSection } from "@/lib/types";
 import { faqNode, JsonLd } from "@/lib/seo";
 import { Icon } from "@/components/ui/Icons";
+import { getPeople } from "@/lib/content";
+import { site } from "@/lib/site";
+import { PhotoFrame } from "@/components/rich/PhotoFrame";
+import { Button } from "@/components/ui/Button";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
 import { cn } from "@/lib/utils";
 
@@ -24,14 +28,31 @@ export function FaqList({ items, className }: { items: FaqItem[]; className?: st
   );
 }
 
-export function Faq({ s }: { s: FaqSection }) {
+export async function Faq({ s }: { s: FaqSection }) {
+  const [doctor] = await getPeople();
   return (
     <Section className="bg-warm" id="faq">
       <Container>
-        <div className="grid gap-10 lg:grid-cols-12">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
-            <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-            <p className="mt-6 flex items-center gap-2 text-sm text-grey-600"><Icon.phone className="h-4 w-4 text-olive-600" /> Still have a question? Call (661) 254-5200.</p>
+            <div className="lg:sticky lg:top-28">
+              <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
+              {doctor && (
+                <div className="mt-8 overflow-hidden rounded-lg bg-white ring-1 ring-ink-900/[0.07]">
+                  <div className="flex items-center gap-4 p-5">
+                    <div className="w-20 shrink-0"><PhotoFrame image={doctor.image} sizes="80px" arch /></div>
+                    <div>
+                      <p className="font-semibold text-ink-900">Still have a question?</p>
+                      <p className="mt-0.5 text-sm text-grey-700">{doctor.name} and the front desk are happy to help.</p>
+                    </div>
+                  </div>
+                  <div className="grid gap-2 border-t border-ink-900/10 p-5">
+                    <Button href={`tel:${site.phone.tel}`} external={false}><Icon.phone className="h-4 w-4" /> {site.phone.display}</Button>
+                    <Button href={site.bookingUrl} variant="outline">Book online</Button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
           <div className="lg:col-span-8">
             <FaqList items={s.items} />

@@ -24,7 +24,7 @@ export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt }: {
   // Cards are two-row subgrids (image, text), so cards in one row share both row heights: images,
   // titles and "Learn more" line up. A featured card that shares its row lets the row height win.
   const imgAspect = featured
-    ? cn("aspect-[16/9] sm:aspect-[21/9]", unspanAt === "lg" && "lg:aspect-[16/10]", unspanAt === "xl" && "xl:aspect-[16/10]", sharesRowAt === "lg" && "lg:aspect-auto lg:h-full", sharesRowAt === "xl" && "xl:aspect-auto xl:h-full")
+    ? cn("aspect-[3/2] sm:aspect-[16/9]", unspanAt === "lg" && "lg:aspect-[16/10]", unspanAt === "xl" && "xl:aspect-[16/10]", sharesRowAt === "lg" && "lg:aspect-auto lg:h-full", sharesRowAt === "xl" && "xl:aspect-auto xl:h-full")
     : "aspect-[4/3] sm:aspect-[16/10]";
   return (
     <Reveal as="li" className={cn("card card-hover group row-span-2 grid grid-rows-subgrid gap-y-0", className)}>

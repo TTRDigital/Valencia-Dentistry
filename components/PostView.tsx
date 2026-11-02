@@ -46,7 +46,7 @@ export async function PostView({ post }: { post: Post }) {
       <Container>
         <div className="mx-auto -mt-0 max-w-[64rem] pt-8">
           <div className="overflow-hidden rounded-lg">
-            <Picture image={{ src: post.image, alt: post.imageAlt }} priority sizes="(min-width: 1024px) 1024px, 100vw" className="aspect-[16/10] w-full object-[center_30%] sm:aspect-[21/9] object-cover" quality={80} />
+            <Picture image={{ src: post.image, alt: post.imageAlt }} priority sizes="(min-width: 1024px) 1024px, 100vw" className="aspect-[3/2] w-full object-cover object-[50%_15%] sm:aspect-[16/9]" quality={80} />
           </div>
         </div>
 

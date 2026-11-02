@@ -214,7 +214,7 @@ export async function ServiceView({ s }: { s: Service }) {
             <RichHeading eyebrow="How it works" heading={s.process.heading} lead={s.process.intro || undefined} align="center" />
             <div className="relative mt-14">
               <div aria-hidden="true" data-reveal="" className="draw-x absolute left-[8%] right-[8%] top-7 hidden h-0.5 origin-left bg-olive-600/30 lg:block" />
-              <ol data-stagger className={cn("relative grid gap-6 sm:grid-cols-2", STEP_COLS[s.process.steps.length] ?? "lg:grid-cols-3")}>
+              <ol data-stagger className={cn("fill-odd-until-lg relative grid gap-6 sm:grid-cols-2", STEP_COLS[s.process.steps.length] ?? "lg:grid-cols-3")}>
                 {s.process.steps.map((st, i) => (
                   <Reveal as="li" key={st.title + i} className="relative flex flex-col items-center text-center">
                     <span className="relative z-10 inline-flex h-14 w-14 items-center justify-center rounded-full bg-olive-600 font-display text-xl font-semibold text-white ring-8 ring-white">{i + 1}</span>

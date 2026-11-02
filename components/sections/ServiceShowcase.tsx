@@ -26,7 +26,7 @@ export async function ServiceShowcase({ s }: { s: ServiceShowcaseSection }) {
           {items.map((it, i) => (
             <Reveal as="li" key={it.slug} className={cn(i === 0 && "sm:col-span-2 lg:row-span-2")}>
               <Link href={it.path} className={cn("group relative isolate flex h-full min-h-72 flex-col justify-end overflow-hidden rounded-lg bg-ink-900 p-6 text-white no-underline card-hover", i === 0 ? "sm:min-h-[26rem] lg:min-h-[34rem] lg:p-9" : "sm:min-h-80")}>
-                <Picture image={it.hero.image} fill sizes={i === 0 ? "(min-width: 1024px) 640px, 100vw" : "(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw"} className="-z-10 object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+                <Picture image={it.hero.image} fill cropTo={i === 0 ? 1.1 : 0.9} sizes={i === 0 ? "(min-width: 1024px) 640px, 100vw" : "(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw"} className="-z-10 object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
                 <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-950/90 via-ink-900/35 to-transparent" />
                 <p className="text-sm font-semibold uppercase tracking-[0.12em] text-bronze-300">{it.category === "surgical" ? "Oral surgery" : it.category === "cosmetic" ? "Cosmetic" : it.category === "restorative" ? "Restorative" : "Care"}</p>
                 <h3 className={cn("mt-2 text-white", i === 0 ? "text-4xl" : "text-2xl")}>{it.name}</h3>

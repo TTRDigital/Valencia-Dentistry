@@ -13,10 +13,25 @@ export function RichText({ s }: { s: RichTextSection }) {
   return (
     <Section tight>
       <Container>
-        <div className={s.narrow !== false ? "max-w-[72ch] rounded-lg bg-white p-6 ring-1 ring-ink-900/10 sm:p-10" : ""}>
-          {s.heading && <h2 className="mb-6">{s.heading}</h2>}
-          <Markdown source={s.body} />
-        </div>
+        {s.heading && s.narrow !== false ? (
+          // Highlighted guidance: a dark panel with the heading and a call button beside the text card
+          <div className="grid overflow-hidden rounded-lg ring-1 ring-ink-900/10 lg:grid-cols-12">
+            <div className="on-dark relative isolate overflow-hidden bg-olive-700 p-7 text-white sm:p-10 lg:col-span-4">
+              <Icon.bolt className="h-10 w-10 text-bronze-300" />
+              <h2 className="mt-5 text-white">{s.heading}</h2>
+              <p className="mt-3 text-white/85">In pain? Call us first. Same-day emergency appointments are available.</p>
+              <Button href={`tel:${site.phone.tel}`} variant="light" className="mt-6" external={false}><Icon.phone className="h-4 w-4" /> {site.phone.display}</Button>
+            </div>
+            <div className="bg-white p-7 sm:p-10 lg:col-span-8">
+              <Markdown source={s.body} />
+            </div>
+          </div>
+        ) : (
+          <div className={s.narrow !== false ? "max-w-[72ch]" : ""}>
+            {s.heading && <h2 className="mb-6">{s.heading}</h2>}
+            <Markdown source={s.body} />
+          </div>
+        )}
       </Container>
     </Section>
   );

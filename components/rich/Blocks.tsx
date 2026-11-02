@@ -46,7 +46,7 @@ export function IconCard({ icon = "sparkle", title, text, number, dark, classNam
     <div className={cn("group relative h-full rounded-lg p-6 sm:p-7", dark ? "bg-white/[0.06] ring-1 ring-white/10" : "bg-white ring-1 ring-ink-900/[0.07]", className)}>
       <div className="flex items-start justify-between gap-4">
         <span className={cn("inline-flex h-12 w-12 items-center justify-center rounded-md", dark ? "bg-bronze-300/15 text-bronze-300" : "bg-olive-100 text-olive-700")}><I className="h-6 w-6" /></span>
-        {number !== undefined && <span className={cn("font-display text-3xl font-semibold", dark ? "text-white/20" : "text-ink-900/10")}>{String(number).padStart(2, "0")}</span>}
+        {number !== undefined && <span aria-hidden="true" data-num={String(number).padStart(2, "0")} className={cn("font-display text-3xl font-semibold before:content-[attr(data-num)]", dark ? "text-white/20" : "text-ink-900/10")} />}
       </div>
       <h3 className={cn("mt-5 text-xl", dark && "text-white")}>{title}</h3>
       {text && <p className={cn("mt-2 text-base sm:text-[0.95rem]", dark ? "text-white/75" : "text-grey-700")}>{text}</p>}
