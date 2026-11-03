@@ -329,7 +329,7 @@
   .motion-on main h2 { overflow-wrap: break-word; }
   /* Horizontal gallery: scrollable by hand without motion; GSAP slides it when motion is on (desktop) */
   [data-hscroll-track] { overflow-x: auto; scroll-snap-type: x mandatory; }
-  @media (min-width: 1024px) { .motion-on [data-hscroll-track] { overflow: visible; scroll-snap-type: none; } }
+  .motion-on [data-hscroll-track] { overflow: visible; scroll-snap-type: none; }
 
   /* ---------- WOW layer ---------- */
   /* Custom cursor (desktop, fine pointer, motion allowed) */
@@ -378,6 +378,11 @@
   .spotlight::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 0%), rgb(201 186 156 / 0.18), transparent 60%); opacity: 0; transition: opacity 300ms; }
   .spotlight:hover::before { opacity: 1; }
 
+  /* Mobile menu: items cascade in when it opens */
+  .mobile-menu .mm-item { opacity: 0; transform: translateY(18px); }
+  .mobile-menu[data-open] .mm-item { opacity: 1; transform: none; transition: opacity 500ms var(--ease-enter), transform 600ms var(--ease-enter); transition-delay: calc(80ms + var(--i, 0) * 55ms); }
+  @media (prefers-reduced-motion: reduce) { .mobile-menu .mm-item { opacity: 1; transform: none; } }
+
   /* Route change: content fades in (first load is never animated, see PageTransition.tsx) */
   .page-enter { animation: fade-in var(--dur-std) var(--ease-enter) both; }
 
@@ -404,7 +409,7 @@
 
   /* Mobile quick-action bar: slides in once the hero has scrolled away (only when JS runs) */
   .mobile-bar { transition: transform 300ms var(--ease-out-soft); }
-  .js .mobile-bar:not([data-show]) { transform: translateY(110%); }
+  .js .mobile-bar:not([data-show]) { transform: translateY(160%); }
 
   @media (prefers-reduced-motion: reduce) {
     [data-reveal].reveal-pending { opacity: 1; transform: none; }

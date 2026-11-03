@@ -24,9 +24,9 @@ export function TechCards({ s }: { s: TechExplainerSection }) {
         li.style.setProperty("--mx", `${e.clientX - r.left}px`);
         li.style.setProperty("--my", `${e.clientY - r.top}px`);
       }}
-      className={cn("mt-12 grid gap-px overflow-hidden rounded-lg sm:grid-cols-2", s.dark ? "bg-white/10" : "bg-ink-900/10", s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3")}>
+      className={cn("no-scrollbar -mx-4 mt-12 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:snap-none sm:gap-px sm:overflow-hidden sm:rounded-lg sm:px-0 sm:pb-0 sm:grid-cols-2", s.dark ? "sm:bg-white/10" : "sm:bg-ink-900/10", s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3")}>
           {s.items.map((it, i) => (
-            <Reveal as="li" key={it.title} delay={(i % 3) * 70} className={cn("tech-card spotlight subgrid-card group relative p-7 [--rows:4] sm:p-9", s.dark ? "bg-ink-900" : "bg-white")}>
+            <Reveal as="li" key={it.title} delay={(i % 3) * 70} className={cn("tech-card spotlight subgrid-card group relative w-[82%] shrink-0 snap-start rounded-lg p-7 [--rows:4] sm:w-auto sm:rounded-none sm:p-9", s.dark ? "bg-ink-900" : "bg-white")}>
               <div data-open={open[i] ? "" : undefined} className="tech-inner subgrid-card [--rows:4]">
                 <div><FeatureIcon name={it.icon} dark={s.dark} /></div>
                 <h3 className={cn("mt-5 text-xl", s.dark && "text-white")}>{it.title}</h3>

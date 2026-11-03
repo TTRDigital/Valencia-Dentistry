@@ -97,7 +97,7 @@ export async function ServiceView({ s }: { s: Service }) {
               </div>
               <div data-stage="5"><TrustRow light className="mt-8" /></div>
             </div>
-            <div data-hero-media className="relative lg:col-span-6 xl:col-span-5">
+            <div data-hero-media className="relative order-first mx-auto w-full max-w-[420px] lg:order-none lg:col-span-6 lg:max-w-none xl:col-span-5">
               <FannedStack main={s.hero.image} side={[pic(1), pic(2)]} mainRatio={ratioOf(s.hero.image)} />
               <>
                 <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />

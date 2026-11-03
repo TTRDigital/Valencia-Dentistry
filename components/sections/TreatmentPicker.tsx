@@ -19,6 +19,7 @@ import { cn } from "@/lib/utils";
 export function TreatmentPicker({ s }: { s: TreatmentPickerSection }) {
   const [sel, setSel] = useState(0);
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
+  const answer = useRef<HTMLDivElement>(null);
   const groupId = useId();
   const opt = s.options[sel];
 
@@ -49,7 +50,11 @@ export function TreatmentPicker({ s }: { s: TreatmentPickerSection }) {
                   role="radio"
                   aria-checked={i === sel}
                   tabIndex={i === sel ? 0 : -1}
-                  onClick={() => setSel(i)}
+                  onClick={() => {
+                    setSel(i);
+                    // on phones the answer is below the list: bring it into view
+                    if (window.innerWidth < 1024) requestAnimationFrame(() => answer.current?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" }));
+                  }}
                   onKeyDown={(e) => onKey(e, i)}
                   className={cn(
                     "group relative flex min-h-14 w-full items-center gap-4 border-b border-ink-900/10 py-3 text-left font-display text-2xl transition-[color,transform] duration-300 ease-out hover:translate-x-2 sm:text-3xl",
@@ -65,7 +70,7 @@ export function TreatmentPicker({ s }: { s: TreatmentPickerSection }) {
             </div>
           </div>
           <div className="lg:col-span-7">
-            <div aria-live="polite" className="h-full">
+            <div ref={answer} aria-live="polite" className="h-full scroll-mt-24">
               <div key={opt.id} className="picker-answer flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-lift ring-1 ring-ink-900/[0.06]">
                 {opt.image && (
                   <div className="relative overflow-hidden bg-greige-50" style={{ aspectRatio: "3 / 2" }}>

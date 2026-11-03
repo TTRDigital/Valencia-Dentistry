@@ -21,7 +21,7 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
         <TimelineProgress className="timeline relative mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
           {photos.length > 0 && (
-            <div className="lg:col-span-6">
+            <div className="sticky top-[68px] z-10 -mx-4 bg-white px-4 pb-4 pt-2 sm:mx-0 sm:px-0 lg:static lg:col-span-6 lg:bg-transparent lg:p-0">
               <div className="lg:sticky lg:top-28">
                 <div className="relative overflow-hidden rounded-lg bg-ink-900 shadow-lift" style={{ aspectRatio: "3 / 2" }}>
                   {photos.map((img, i) => (
@@ -32,7 +32,7 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
                     {photos.map((img, i) => <li key={img.src} data-i={i} className="step-tick h-1 w-8 rounded-full bg-white/30" />)}
                   </ol>
                 </div>
-                <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-lg bg-warm p-5 ring-1 ring-ink-900/[0.06]">
+                <div className="mt-6 hidden flex-wrap items-center gap-x-6 gap-y-3 rounded-lg bg-warm p-5 ring-1 ring-ink-900/[0.06] lg:flex">
                   <Button href={s.cta?.href ?? site.bookingUrl} arrow>{s.cta?.label ?? "Book your first visit"}</Button>
                   <span className="flex items-center gap-2 text-grey-700"><Icon.shield className="h-5 w-5 text-olive-600" /> Most PPO plans accepted</span>
                   <span className="flex items-center gap-2 text-grey-700"><Icon.pin className="h-5 w-5 text-olive-600" /> Free parking, Suite 240</span>

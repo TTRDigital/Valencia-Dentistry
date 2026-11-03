@@ -9,6 +9,7 @@ import Lenis from "lenis";
 import { prefersReducedMotion } from "./useReducedMotion";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 let lenis: Lenis | null = null;
 /** The smooth-scroll instance (null under reduced motion), for other components that need to scroll. */
@@ -71,19 +72,20 @@ export function MotionProvider() {
           .fromTo(img, { scale: 1.25 }, { scale: 1, duration: 1.8, ease: "expo.out", clearProps: "transform" }, 0);
       });
 
-      mm.add("(min-width: 1024px)", () => {
+      mm.add({ desktop: "(min-width: 1024px)", phone: "(max-width: 1023.98px)" }, (mq) => {
+        const k = mq.conditions?.desktop ? 1 : 0.55; // phones move a little less
         // 3. Gentle parallax: whole frames drift (no image scaling, so nothing softens)
         document.querySelectorAll<HTMLElement>("main .pf").forEach((root) => {
           if (root.closest("[data-hero]")) return;
-          gsap.fromTo(root, { y: 36 }, { y: -36, ease: "none", scrollTrigger: { trigger: root, start: "top bottom", end: "bottom top", scrub: 0.6 } });
+          gsap.fromTo(root, { y: 36 * k }, { y: -36 * k, ease: "none", scrollTrigger: { trigger: root, start: "top bottom", end: "bottom top", scrub: 0.6 } });
         });
         // 4. Heroes recede: copy lifts and fades a little, media drifts down
         document.querySelectorAll<HTMLElement>("main [data-hero]").forEach((hero) => {
           const copy = hero.querySelector(".hero-stage");
           const media = hero.querySelector("[data-hero-media]");
           const st = { trigger: hero, start: "top top", end: "bottom top", scrub: 0.5 };
-          if (copy) gsap.to(copy, { y: -90, opacity: 0.35, ease: "none", scrollTrigger: st });
-          if (media) gsap.to(media, { y: 70, scale: 0.94, ease: "none", scrollTrigger: st });
+          if (copy) gsap.to(copy, { y: -90 * k, opacity: 0.35, ease: "none", scrollTrigger: st });
+          if (media) gsap.to(media, { y: 70 * k, scale: 0.94, ease: "none", scrollTrigger: st });
         });
         // 5. Horizontal galleries pin and slide
         document.querySelectorAll<HTMLElement>("[data-hscroll]").forEach((section) => {

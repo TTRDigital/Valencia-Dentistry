@@ -47,7 +47,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
       <section data-hero="dark" className="dark-section isolate overflow-hidden lg:flex lg:min-h-[100svh] lg:items-center" aria-labelledby="hero-heading">
         <div className="aurora" aria-hidden="true"><i /><i /><i /></div>
         <Watermark light className="-left-28 top-20 h-[36rem] w-[36rem]" />
-        <div className="container-x grid w-full items-center gap-12 pb-16 pt-10 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:pt-6">
+        <div className="container-x grid w-full items-center gap-8 pb-16 pt-4 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:pt-6">
           <div className="hero-stage lg:col-span-7">
             <div className="mb-6 flex flex-wrap items-center gap-3" data-stage="0">
               {s.eyebrow && <p className="eyebrow">{s.eyebrow}</p>}
@@ -61,7 +61,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
             </div>
             {s.trust && <div data-stage="5"><TrustRow light className="mt-10" /></div>}
           </div>
-          <div data-hero-media className="relative lg:col-span-5">
+          <div data-hero-media className="relative order-first mx-auto w-full max-w-[380px] lg:order-none lg:col-span-5 lg:max-w-none">
             {s.image && <FannedStack main={s.image} side={s.gallery ?? []} />}
             {s.image && (
               <>

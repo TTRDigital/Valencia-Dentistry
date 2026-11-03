@@ -181,24 +181,25 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
         </div>
       </div>
 
-      {/* Mobile full-screen menu */}
-      <div id="mobile-menu" data-lenis-prevent className={cn("fixed inset-0 top-[var(--mobile-top,0px)] z-40 overflow-y-auto bg-offwhite transition-[opacity,visibility] duration-200 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 72 }}>
-        <nav aria-label="Mobile" className="container-x pb-28 pt-4">
-          <ul className="divide-y hairline">
-            {nav.header.map((item) => (
-              <li key={item.href}>
+      {/* Mobile full-screen menu: dark panel, large serif links that cascade in */}
+      <div id="mobile-menu" data-lenis-prevent data-open={mobileOpen || undefined} className={cn("mobile-menu fixed inset-0 z-40 isolate overflow-y-auto bg-ink-900 text-white transition-[opacity,visibility] duration-300 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 72 }}>
+        <div className="aurora" aria-hidden="true"><i /><i /><i /></div>
+        <nav aria-label="Mobile" className="container-x pb-32 pt-6">
+          <ul>
+            {nav.header.map((item, i) => (
+              <li key={item.href} className="mm-item border-b border-white/10" style={{ "--i": i } as React.CSSProperties}>
                 {item.mega ? (
                   <details className="group">
-                    <summary className={cn("flex min-h-14 cursor-pointer items-center justify-between py-3 text-lg font-medium", isActive(item.href) ? "font-semibold text-olive-700" : "text-ink-900")}>
-                      <span className="flex items-center gap-3">{isActive(item.href) && <span className="h-5 w-0.5 rounded-full bg-olive-600" aria-hidden="true" />}{item.label}</span> <Icon.chevron className="h-5 w-5 transition-transform group-open:rotate-180" />
+                    <summary className={cn("flex min-h-16 cursor-pointer items-center justify-between py-3 font-display text-4xl", isActive(item.href) ? "italic text-bronze-300" : "text-white")}>
+                      {item.label} <Icon.chevron className="h-6 w-6 text-white/60 transition-transform group-open:rotate-180" />
                     </summary>
-                    <div className="pb-4">
+                    <div className="grid gap-5 pb-6 pt-1">
                       {nav.serviceGroups.map((g) => (
-                        <div key={g.title} className="mb-4">
-                          {g.href ? <Link href={g.href} prefetch={false} className="block py-1 text-sm font-semibold uppercase tracking-wider text-olive-600" tabIndex={mobileOpen ? 0 : -1}>{g.title}</Link> : <p className="py-1 text-sm font-semibold uppercase tracking-wider text-olive-600">{g.title}</p>}
-                          <ul>
+                        <div key={g.title}>
+                          {g.href ? <Link href={g.href} prefetch={false} className="block py-1 text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300" tabIndex={mobileOpen ? 0 : -1}>{g.title}</Link> : <p className="py-1 text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">{g.title}</p>}
+                          <ul className="mt-1 grid grid-cols-2 gap-x-4">
                             {g.items.map((it) => (
-                              <li key={it.href}><Link href={it.href} prefetch={false} aria-current={pathname === it.href ? "page" : undefined} className={cn("-ml-3 block min-h-11 border-l-2 py-2.5 pl-3", pathname === it.href ? "border-olive-600 font-semibold text-olive-700" : "border-transparent text-ink-900")} tabIndex={mobileOpen ? 0 : -1}>{it.label}</Link></li>
+                              <li key={it.href}><Link href={it.href} prefetch={false} aria-current={pathname === it.href ? "page" : undefined} className={cn("flex min-h-11 items-center text-[1.0625rem]", pathname === it.href ? "font-semibold text-bronze-300" : "text-white/85")} tabIndex={mobileOpen ? 0 : -1}>{it.label}</Link></li>
                             ))}
                           </ul>
                         </div>
@@ -206,17 +207,20 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                     </div>
                   </details>
                 ) : (
-                  <Link href={item.href} prefetch={false} aria-current={current(item.href)} className={cn("flex min-h-14 items-center gap-3 py-3 text-lg", isActive(item.href) ? "font-semibold text-olive-700" : "font-medium text-ink-900")} tabIndex={mobileOpen ? 0 : -1}>{isActive(item.href) && <span className="h-5 w-0.5 rounded-full bg-olive-600" aria-hidden="true" />}{item.label}</Link>
+                  <Link href={item.href} prefetch={false} aria-current={current(item.href)} className={cn("flex min-h-16 items-center justify-between py-3 font-display text-4xl", isActive(item.href) ? "italic text-bronze-300" : "text-white")} tabIndex={mobileOpen ? 0 : -1}>
+                    {item.label}
+                    <Icon.arrow className="h-6 w-6 text-white/40" />
+                  </Link>
                 )}
               </li>
             ))}
-            <li><Link href="/appointment/" prefetch={false} className="flex min-h-14 items-center py-3 text-lg font-medium text-ink-900" tabIndex={mobileOpen ? 0 : -1}>Request an Appointment</Link></li>
           </ul>
-          <div className="mt-6 flex flex-col gap-3">
-            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg" tabIndex={mobileOpen ? 0 : -1}>Book Online</a>
-            <a href={`tel:${site.phone.tel}`} className="btn btn-outline btn-lg" tabIndex={mobileOpen ? 0 : -1}><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
+          <div className="mm-item mt-8 grid gap-3" style={{ "--i": nav.header.length } as React.CSSProperties}>
+            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg" tabIndex={mobileOpen ? 0 : -1}>Book online <Icon.arrow className="h-4 w-4" /></a>
+            <a href={`tel:${site.phone.tel}`} className="btn btn-lg border border-white/30 text-white" tabIndex={mobileOpen ? 0 : -1}><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
+            <Link href="/appointment/" prefetch={false} className="flex min-h-11 items-center justify-center text-white/80 underline-offset-4 hover:underline" tabIndex={mobileOpen ? 0 : -1}>Request an appointment</Link>
           </div>
-          <p className="mt-6 text-sm text-grey-600">{site.address.street}, {site.address.city}, {site.address.state} {site.address.zip}<br />Mon – Fri 8am – 5pm</p>
+          <p className="mm-item mt-8 text-white/60" style={{ "--i": nav.header.length + 1 } as React.CSSProperties}>{site.address.street}, {site.address.city}, {site.address.state} {site.address.zip}<br />Mon – Fri 8am – 5pm</p>
         </nav>
       </div>
     </header>
