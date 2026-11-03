@@ -68,7 +68,8 @@ export function Footer({ nav }: { nav: Navigation }) {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 py-7 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
+        <p aria-hidden="true" data-drift-footer className="pointer-events-none mt-16 select-none text-center font-display text-[21vw] leading-[0.8] tracking-[-0.04em] text-white/[0.06] lg:text-[17rem]">Valencia</p>
+        <div className="flex flex-col gap-4 border-t border-white/10 py-7 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
           <p>© {year} {site.name}. All rights reserved.</p>
           <ul className="flex flex-wrap gap-x-5">
             {nav.legal.map((l) => (

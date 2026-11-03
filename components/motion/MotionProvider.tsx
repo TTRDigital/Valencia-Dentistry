@@ -90,7 +90,18 @@ export function MotionProvider() {
           const track = section.querySelector<HTMLElement>("[data-hscroll-track]");
           if (!track) return;
           const distance = () => Math.max(0, track.scrollWidth - track.clientWidth);
-          gsap.to(track, { x: () => -distance(), ease: "none", scrollTrigger: { trigger: section, start: "top top", end: () => `+=${distance()}`, scrub: 0.8, pin: true, invalidateOnRefresh: true, anticipatePin: 1 } });
+          const bar = section.querySelector<HTMLElement>("[data-hscroll-progress]");
+          const count = section.querySelector<HTMLElement>("[data-hscroll-count]");
+          const n = track.querySelectorAll(":scope > li").length - 1;
+          gsap.to(track, { x: () => -distance(), ease: "none", scrollTrigger: { trigger: section, start: "top top", end: () => `+=${distance()}`, scrub: 0.8, pin: true, invalidateOnRefresh: true, anticipatePin: 1,
+            onUpdate: (st) => {
+              if (bar) bar.style.transform = `scaleX(${st.progress})`;
+              if (count) count.textContent = String(Math.min(n, Math.floor(st.progress * n) + 1)).padStart(2, "0");
+            } } });
+        });
+        // 6b. Giant outline type drifts sideways with scroll
+        document.querySelectorAll<HTMLElement>("main [data-drift]").forEach((el) => {
+          gsap.fromTo(el, { xPercent: 0 }, { xPercent: -30, ease: "none", scrollTrigger: { trigger: el.parentElement, start: "top bottom", end: "bottom top", scrub: 0.8 } });
         });
         // 6. Watermarks drift slowly
         document.querySelectorAll<SVGElement>("main svg.watermark").forEach((w) => {
@@ -101,7 +112,8 @@ export function MotionProvider() {
       // 7. Ticker: endless loop whose speed follows scroll velocity
       document.querySelectorAll<HTMLElement>(".marquee-track").forEach((track) => {
         track.style.animation = "none";
-        const loop = gsap.to(track, { xPercent: -50, duration: 46, ease: "none", repeat: -1 });
+        const rev = track.dataset.reverse !== undefined;
+        const loop = rev ? gsap.fromTo(track, { xPercent: -50 }, { xPercent: 0, duration: 52, ease: "none", repeat: -1 }) : gsap.to(track, { xPercent: -50, duration: 46, ease: "none", repeat: -1 });
         const onScroll = ({ velocity }: { velocity: number }) => {
           gsap.to(loop, { timeScale: (velocity < 0 ? -1 : 1) * (1 + Math.min(Math.abs(velocity) * 0.35, 6)), duration: 0.25, overwrite: true });
           gsap.to(loop, { timeScale: velocity < 0 ? -1 : 1, duration: 1.2, delay: 0.25, overwrite: false });

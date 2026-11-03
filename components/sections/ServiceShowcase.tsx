@@ -25,7 +25,12 @@ export async function ServiceShowcase({ s }: { s: ServiceShowcaseSection }) {
             <Link href="/services/" className="link-arrow shrink-0">All {all.length} treatments <Icon.arrow className="h-4 w-4" /></Link>
           </div>
         </Container>
-        <div className="container-x mt-12">
+        <div className="container-x mt-10 hidden items-center gap-5 lg:flex" aria-hidden="true">
+          <span className="font-display text-2xl text-ink-900"><span data-hscroll-count>01</span><span className="text-grey-400"> / {String(items.length).padStart(2, "0")}</span></span>
+          <span className="h-px flex-1 bg-ink-900/10"><span data-hscroll-progress className="block h-full origin-left scale-x-0 bg-olive-600" /></span>
+          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-grey-600">Scroll to explore</span>
+        </div>
+        <div className="container-x mt-8" data-cursor="Drag">
           <ul data-hscroll-track className="no-scrollbar -mx-4 flex gap-5 px-4 pb-2 sm:mx-0 sm:px-0">
             {items.map((it, i) => (
               <li key={it.slug} className="w-[min(80vw,420px)] shrink-0 snap-start">

@@ -3,7 +3,6 @@ import { site } from "@/lib/site";
 import { getServices } from "@/lib/content";
 import type { SiteImage, Testimonial } from "@/lib/types";
 import { CountUp } from "@/components/motion/CountUp";
-import { Button } from "@/components/ui/Button";
 import { Icon, type IconName } from "@/components/ui/Icons";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
@@ -32,9 +31,9 @@ export async function StatBand({ dark, className }: { dark?: boolean; className?
   return (
     <dl data-stagger className={cn("grid grid-cols-2 gap-px overflow-hidden rounded-lg lg:grid-cols-4", dark ? "bg-white/10" : "bg-ink-900/10", className)}>
       {items.map((it) => (
-        <Reveal key={it.label} className={cn("flex flex-col-reverse justify-end gap-2 p-5 sm:p-7", dark ? "bg-ink-900" : "bg-white")}>
+        <Reveal key={it.label} className={cn("flex flex-col-reverse justify-end gap-4 p-6 sm:p-9", dark ? "bg-ink-900" : "bg-white")}>
           <dt className={cn("flex items-start gap-2 text-sm sm:text-base", dark ? "text-white/75" : "text-grey-700")}><span className={cn("mt-0.5 shrink-0", dark ? "text-bronze-300" : "text-olive-600")}>{it.icon}</span>{it.label}</dt>
-          <dd className={cn("font-display text-4xl font-semibold sm:text-5xl", dark ? "text-white" : "text-ink-900")}>{it.value}</dd>
+          <dd className={cn("font-display text-6xl leading-none tracking-tight sm:text-7xl xl:text-8xl", dark ? "text-white" : "text-ink-900")}>{it.value}</dd>
         </Reveal>
       ))}
     </dl>
@@ -72,26 +71,38 @@ export function QuoteHighlight({ t, className }: { t: Testimonial; className?: s
   );
 }
 
-/** Closing call to action with a photo, booking, phone and hours. */
+/** A round link with its label running around the rim (rotates slowly); the arrow sits in the middle. */
+export function RoundCta({ href, text, className }: { href: string; text: string; className?: string }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={text.replace(/·/g, "").trim()} data-cursor="Book" className={cn("btn-primary group relative inline-grid h-36 w-36 shrink-0 place-items-center rounded-full bg-olive-600 text-white shadow-lift transition-transform duration-500 hover:scale-105 sm:h-44 sm:w-44", className)}>
+      <svg viewBox="0 0 120 120" className="seal-spin absolute inset-0 h-full w-full" aria-hidden="true">
+        <defs><path id="round-cta-path" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs>
+        <text fill="currentColor" fontSize="9.5" fontWeight="700" letterSpacing="2" textLength="285" lengthAdjust="spacing" fontFamily="var(--font-urbanist)"><textPath href="#round-cta-path">{text}</textPath></text>
+      </svg>
+      <Icon.arrow className="h-8 w-8 -rotate-45 transition-transform duration-500 group-hover:rotate-0" />
+    </a>
+  );
+}
+
+/** Closing call to action: a statement headline, a rotating Book button, contact details and a photo. */
 export function CtaBanner({ heading, text, image, buttonLabel = "Book a consultation", className }: { heading: string; text: string; image?: SiteImage; buttonLabel?: string; className?: string }) {
   return (
     <div className={cn("on-dark relative isolate overflow-hidden rounded-lg bg-ink-900 text-white", className)}>
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(120%_120%_at_0%_0%,rgba(91,107,90,0.55),transparent_55%)]" />
+      <div className="aurora" aria-hidden="true"><i /><i /><i /></div>
       <Watermark light className="-bottom-16 -right-10 h-72 w-72" />
-      <div className="grid items-center gap-8 p-7 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-14">
+      <div className="grid items-center gap-10 p-7 sm:p-12 lg:grid-cols-12 lg:gap-14 lg:p-16">
         <div className="lg:col-span-7">
           <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-bronze-300 ring-1 ring-white/15"><Icon.user className="h-4 w-4" /> {site.newPatients.headline}</p>
-          <h2 className="mt-5 text-4xl text-white">{heading}</h2>
-          <p className="mt-4 max-w-xl text-lg text-white/80">{text}</p>
-          <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
-            <Button href={site.bookingUrl} size="lg" arrow>{buttonLabel}</Button>
-            <Button href={`tel:${site.phone.tel}`} variant="outline" size="lg" external={false}><Icon.phone className="h-4 w-4" /> {site.phone.display}</Button>
+          <h2 className="text-hero mt-6 text-white">{heading}</h2>
+          <p className="mt-6 max-w-xl text-lg text-white/80">{text}</p>
+          <div className="mt-9 flex flex-wrap items-center gap-6">
+            <RoundCta href={site.bookingUrl} text={`${buttonLabel.toUpperCase()} · ${buttonLabel.toUpperCase()} · `} />
+            <div className="grid gap-2">
+              <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center gap-2 font-display text-3xl text-white hover:text-bronze-300"><Icon.phone className="h-6 w-6 text-bronze-300" /> {site.phone.display}</a>
+              <p className="flex items-center gap-2 text-sm text-white/75"><Icon.clock className="h-4 w-4 text-bronze-300" /> {site.hours[0].days}, {site.hours[0].label}</p>
+              <p className="flex items-center gap-2 text-sm text-white/75"><Icon.pin className="h-4 w-4 text-bronze-300" /> {site.address.street}, {site.address.city}</p>
+            </div>
           </div>
-          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/75">
-            <li className="flex items-center gap-2"><Icon.clock className="h-4 w-4 text-bronze-300" /> {site.hours[0].days}, {site.hours[0].label}</li>
-            <li className="flex items-center gap-2"><Icon.pin className="h-4 w-4 text-bronze-300" /> {site.address.street}, {site.address.city}</li>
-            <li className="flex items-center gap-2"><Icon.shield className="h-4 w-4 text-bronze-300" /> Most PPO plans accepted</li>
-          </ul>
         </div>
         {image && (
           <div className="lg:col-span-5">
@@ -115,11 +126,11 @@ export function RichHeading({ eyebrow, heading, lead, align = "left", dark, clas
 }
 
 /** A slow, endless ticker of words (treatments, promises) separated by the tooth mark. */
-export function Marquee({ items, dark, className }: { items: string[]; dark?: boolean; className?: string }) {
+export function Marquee({ items, dark, outline, reverse, className }: { items: string[]; dark?: boolean; outline?: boolean; reverse?: boolean; className?: string }) {
   const row = (hidden: boolean) => (
     <ul aria-hidden={hidden || undefined} className="flex shrink-0 items-center">
       {items.map((w) => (
-        <li key={w} className={cn("flex items-center gap-8 pr-8 font-display text-3xl italic sm:text-5xl", dark ? "text-white/85" : "text-ink-900/80")}>
+        <li key={w} className={cn("flex items-center gap-8 pr-8 font-display text-4xl sm:text-7xl", outline ? "text-outline not-italic" : "italic", dark ? (outline ? "text-white/50" : "text-white/90") : "text-ink-900/80")}>
           {w}
           <svg viewBox={`0 0 ${MARK.width} ${MARK.height}`} className={cn("h-6 w-auto sm:h-8", dark ? "text-bronze-300" : "text-olive-600")} aria-hidden="true"><path fill="currentColor" d={MARK.tooth} /></svg>
         </li>
@@ -127,8 +138,8 @@ export function Marquee({ items, dark, className }: { items: string[]; dark?: bo
     </ul>
   );
   return (
-    <div className={cn("marquee py-6 sm:py-8", className)}>
-      <div className="marquee-track">{row(false)}{row(true)}</div>
+    <div className={cn("marquee py-4 sm:py-6", className)}>
+      <div className="marquee-track" data-reverse={reverse || undefined}>{row(false)}{row(true)}</div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ import { DoctorIntro } from "./DoctorIntro";
 import { FirstVisit } from "./FirstVisit";
 import { FocusAreas } from "./FocusAreas";
 import { TechExplainer } from "./TechExplainer";
-import { TreatmentPicker } from "./TreatmentPicker";
+import { TreatmentPickerWithPhotos } from "./TreatmentPickerSection";
 import { ServiceShowcase } from "./ServiceShowcase";
 import { CtaBanner, Marquee, StatBand } from "@/components/rich/Blocks";
 import { Container, Section } from "@/components/ui/Section";
@@ -28,7 +28,7 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
         const key = `${s._type}-${i}`;
         switch (s._type) {
           case "serviceShowcase": return <ServiceShowcase key={key} s={s} />;
-          case "marquee": return <div key={key} className={s.dark ? "bg-ink-900" : "border-y border-ink-900/10 bg-warm"}><Marquee items={s.items} dark={s.dark} /></div>;
+          case "marquee": return <div key={key} className={s.dark ? "bg-ink-900 py-6 sm:py-10" : "border-y border-ink-900/10 bg-warm py-6"}><Marquee items={s.items} dark={s.dark} />{s.items2 && <Marquee items={s.items2} dark={s.dark} outline reverse />}</div>;
           case "statBand": return <Section key={key} tight className="bg-warm"><Container><StatBand /></Container></Section>;
           case "ctaBanner": return <Section key={key} className="bg-warm"><Container><CtaBanner heading={s.heading} text={s.text} image={s.image} buttonLabel={s.buttonLabel} /></Container></Section>;
           case "hero": return <Hero key={key} s={s} crumbs={i === 0 ? crumbs : undefined} />;
@@ -49,7 +49,7 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
           case "servicesHub": return <ServicesHub key={key} />;
           case "insurance": return <Insurance key={key} s={s} />;
           case "offer": return <Offer key={key} s={s} />;
-          case "treatmentPicker": return <TreatmentPicker key={key} s={s} />;
+          case "treatmentPicker": return <TreatmentPickerWithPhotos key={key} s={s} />;
           case "firstVisit": return <FirstVisit key={key} s={s} />;
           case "techExplainer": return <TechExplainer key={key} s={s} />;
           case "doctorIntro": return <DoctorIntro key={key} s={s} />;

@@ -312,6 +312,7 @@
   .marquee { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
   .marquee-track { display: flex; width: max-content; animation: marquee 48s linear infinite; }
   .marquee:hover .marquee-track { animation-play-state: paused; }
+  .marquee-track[data-reverse] { animation-direction: reverse; }
   @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; flex-wrap: wrap; width: auto; } .marquee { mask-image: none; } }
 
@@ -330,6 +331,53 @@
   [data-hscroll-track] { overflow-x: auto; scroll-snap-type: x mandatory; }
   @media (min-width: 1024px) { .motion-on [data-hscroll-track] { overflow: visible; scroll-snap-type: none; } }
 
+  /* ---------- WOW layer ---------- */
+  /* Custom cursor (desktop, fine pointer, motion allowed) */
+  .cursor-dot, .cursor-ring { display: none; }
+  .has-cursor .cursor-dot, .has-cursor .cursor-ring { display: block; position: fixed; left: 0; top: 0; z-index: 90; pointer-events: none; }
+  .has-cursor .cursor-dot { width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 9999px; background: var(--color-olive-600); }
+  .has-cursor .cursor-ring { width: 38px; height: 38px; margin: -19px 0 0 -19px; border-radius: 9999px; border: 1.5px solid rgb(91 107 90 / 0.55); display: grid; place-items: center; transition: width 300ms var(--ease-enter), height 300ms var(--ease-enter), margin 300ms var(--ease-enter), background-color 300ms, border-color 300ms, opacity 200ms; }
+  .has-cursor .cursor-ring span { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; opacity: 0; transition: opacity 200ms; }
+  .has-cursor .cursor-ring[data-mode="hover"] { width: 64px; height: 64px; margin: -32px 0 0 -32px; border-color: rgb(91 107 90 / 0.35); background: rgb(91 107 90 / 0.08); }
+  .has-cursor .cursor-ring[data-mode="label"] { width: 92px; height: 92px; margin: -46px 0 0 -46px; background: var(--color-ink-900); border-color: transparent; }
+  .has-cursor .cursor-ring[data-mode="label"] span { opacity: 1; }
+  .has-cursor [data-mode="hidden"] { opacity: 0; }
+
+  /* Slowly moving aurora of brand colours behind dark heroes and banners */
+  .aurora { position: absolute; inset: -20%; z-index: -10; pointer-events: none; filter: blur(70px); opacity: 0.85; }
+  .aurora i { position: absolute; border-radius: 9999px; display: block; }
+  .aurora i:nth-child(1) { width: 46vw; height: 46vw; left: 48%; top: 0%; background: rgb(91 107 90 / 0.65); animation: drift-a 22s ease-in-out infinite alternate; }
+  .aurora i:nth-child(2) { width: 34vw; height: 34vw; left: 8%; top: 52%; background: rgb(154 139 114 / 0.38); animation: drift-b 26s ease-in-out infinite alternate; }
+  .aurora i:nth-child(3) { width: 26vw; height: 26vw; left: 70%; top: 58%; background: rgb(201 186 156 / 0.22); animation: drift-c 30s ease-in-out infinite alternate; }
+  @keyframes drift-a { to { transform: translate(-18%, 22%) scale(1.15); } }
+  @keyframes drift-b { to { transform: translate(30%, -20%) scale(0.9); } }
+  @keyframes drift-c { to { transform: translate(-40%, -30%) scale(1.25); } }
+
+  /* Outline display type and an extra-large size for statement lines */
+  .text-outline { color: transparent; -webkit-text-stroke: 1.5px currentColor; }
+  .text-hero { font-size: clamp(3rem, 1.3rem + 5.4vw, 6.4rem); line-height: 0.96; letter-spacing: -0.03em; }
+  .scroll-cue span { animation: cue 1.8s var(--ease-enter) infinite; }
+  @keyframes cue { from { transform: translateY(-100%); } to { transform: translateY(200%); } }
+  .text-mega { font-size: clamp(3.4rem, 1rem + 9vw, 10rem); line-height: 0.92; letter-spacing: -0.035em; }
+
+  /* First-visit story: the photo for the step being read (TimelineProgress sets data-current) */
+  .step-photo { opacity: 0; transform: scale(1.04); transition: opacity 700ms var(--ease-enter), transform 1200ms var(--ease-enter); }
+  .step-photo:first-child { opacity: 1; transform: none; }
+  [data-current] .step-photo:first-child { opacity: 0; transform: scale(1.04); }
+  [data-current="0"] .step-photo[data-i="0"], [data-current="1"] .step-photo[data-i="1"], [data-current="2"] .step-photo[data-i="2"], [data-current="3"] .step-photo[data-i="3"], [data-current="4"] .step-photo[data-i="4"], [data-current="5"] .step-photo[data-i="5"] { opacity: 1; transform: none; }
+
+  .step-tick { transition: background-color 500ms; }
+  [data-current="0"] .step-tick[data-i="0"], [data-current="1"] .step-tick[data-i="1"], [data-current="2"] .step-tick[data-i="2"], [data-current="3"] .step-tick[data-i="3"], [data-current="4"] .step-tick[data-i="4"], [data-current="5"] .step-tick[data-i="5"] { background: #fff; }
+  .timeline[data-animated] [data-step][data-active] .step-card { background: var(--color-warm); border-color: rgb(28 28 28 / 0.06); }
+
+  /* Stacking cards: each card sticks a little lower than the last, so they pile up as you scroll */
+  .stack-card { position: sticky; top: calc(96px + var(--i, 0) * 28px); }
+
+  /* Spotlight cards: a soft light follows the pointer (TechCards sets --mx / --my) */
+  .spotlight { position: relative; isolation: isolate; }
+  .spotlight::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 0%), rgb(201 186 156 / 0.18), transparent 60%); opacity: 0; transition: opacity 300ms; }
+  .spotlight:hover::before { opacity: 1; }
+
   /* Route change: content fades in (first load is never animated, see PageTransition.tsx) */
   .page-enter { animation: fade-in var(--dur-std) var(--ease-enter) both; }
 
@@ -339,7 +387,9 @@
   .timeline[data-animated] [data-active] .timeline-dot { opacity: 1; transform: none; }
 
   /* Treatment picker answer and before/after case change */
-  .picker-answer { animation: fade-rise 320ms var(--ease-out-soft) both; }
+  .picker-answer { animation: fade-rise 420ms var(--ease-out-soft) both; }
+  .picker-photo { animation: photo-settle 1100ms var(--ease-enter) both; }
+  @keyframes photo-settle { from { transform: scale(1.12); opacity: 0.4; } to { transform: none; opacity: 1; } }
   .compare-fade { animation: fade-in 300ms ease-out both; }
   @keyframes fade-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
   @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }

@@ -135,7 +135,7 @@ export type LegalPage = {
 
 /* ---------- Flexible page sections ---------- */
 
-export type HeroSection = { _type: "hero"; eyebrow?: string; heading: string; lead?: string; primary?: Link; secondary?: Link; image?: SiteImage; variant?: "home" | "page" | "landing"; trust?: boolean };
+export type HeroSection = { _type: "hero"; eyebrow?: string; heading: string; lead?: string; primary?: Link; secondary?: Link; image?: SiteImage; gallery?: SiteImage[]; variant?: "home" | "page" | "landing"; trust?: boolean };
 export type IntroSplitSection = { _type: "introSplit"; eyebrow?: string; heading: string; body: string[]; image: SiteImage; imageSide?: "left" | "right"; cta?: Link };
 export type FeatureGridSection = { _type: "featureGrid"; eyebrow?: string; heading: string; lead?: string; items: Feature[]; columns?: 2 | 3 | 4; dark?: boolean };
 export type ServiceCategoriesSection = { _type: "serviceCategories"; eyebrow?: string; heading: string; lead?: string; categories: { title: string; text: string; href?: string; items: Link[] }[] };
@@ -154,15 +154,15 @@ export type ServicesHubSection = { _type: "servicesHub" };
 export type InsuranceSection = { _type: "insurance"; heading?: string; text?: string };
 export type OfferSection = { _type: "offer"; eyebrow?: string; heading: string; text: string; bullets?: string[]; fine?: string; cta?: Link };
 
-export type TreatmentPickerSection = { _type: "treatmentPicker"; eyebrow?: string; heading: string; lead?: string; options: { id: string; label: string; title: string; text: string; links: Link[] }[] };
-export type FirstVisitSection = { _type: "firstVisit"; eyebrow?: string; heading: string; lead?: string; steps: Step[]; cta?: Link; note?: string };
+export type TreatmentPickerSection = { _type: "treatmentPicker"; eyebrow?: string; heading: string; lead?: string; options: { id: string; label: string; title: string; text: string; links: Link[]; image?: SiteImage }[] };
+export type FirstVisitSection = { _type: "firstVisit"; eyebrow?: string; heading: string; lead?: string; steps: Step[]; cta?: Link; note?: string; images?: SiteImage[] };
 export type TechExplainerSection = { _type: "techExplainer"; eyebrow?: string; heading: string; lead?: string; dark?: boolean; image?: SiteImage; items: { title: string; text: string; forYou: string; icon?: string }[] };
 export type DoctorIntroSection = { _type: "doctorIntro"; eyebrow?: string; heading: string; body: string[]; image: SiteImage; points?: string[]; cta?: Link };
 export type FocusAreasSection = { _type: "focusAreas"; eyebrow?: string; heading: string; lead?: string; areas: { title: string; text: string; image: SiteImage; link: Link; points?: string[] }[] };
 
 export type ServiceShowcaseSection = { _type: "serviceShowcase"; eyebrow?: string; heading: string; lead?: string; slugs: string[] };
 export type StatBandSection = { _type: "statBand" };
-export type MarqueeSection = { _type: "marquee"; items: string[]; dark?: boolean };
+export type MarqueeSection = { _type: "marquee"; items: string[]; items2?: string[]; dark?: boolean };
 export type CtaBannerSection = { _type: "ctaBanner"; heading: string; text: string; image?: SiteImage; buttonLabel?: string };
 
 export type PageSection =

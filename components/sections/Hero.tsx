@@ -4,9 +4,10 @@ import { site } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Seal, Watermark } from "@/components/rich/Blocks";
 import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
+import { FannedStack } from "@/components/rich/FannedStack";
+import { OpenBadge } from "@/components/layout/OpenBadge";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
-import { Picture } from "@/components/ui/Picture";
 import { cn } from "@/lib/utils";
 
 export function TrustRow({ className, light }: { className?: string; light?: boolean }) {
@@ -43,42 +44,42 @@ export function StagedHeading({ text, accent = 2 }: { text: string; accent?: num
 export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; path: string }[] }) {
   if (s.variant === "home") {
     return (
-      <section data-hero="dark" className="dark-section isolate overflow-hidden" aria-labelledby="hero-heading">
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(80%_70%_at_100%_0%,rgba(91,107,90,0.5),transparent_60%),radial-gradient(50%_60%_at_0%_100%,rgba(154,139,114,0.16),transparent_70%)]" />
+      <section data-hero="dark" className="dark-section isolate overflow-hidden lg:flex lg:min-h-[100svh] lg:items-center" aria-labelledby="hero-heading">
+        <div className="aurora" aria-hidden="true"><i /><i /><i /></div>
         <Watermark light className="-left-28 top-20 h-[36rem] w-[36rem]" />
-        <div className="container-x grid items-end gap-10 pt-14 sm:pt-20 lg:grid-cols-12 lg:gap-8 lg:pt-24">
-          <div className="hero-stage pb-10 lg:col-span-7 lg:pb-24">
-            {s.eyebrow && <p className="eyebrow mb-5" data-stage="0">{s.eyebrow}</p>}
-            <h1 id="hero-heading" className="text-6xl"><StagedHeading text={s.heading} accent={3} /></h1>
-            {s.lead && <p className="lead mt-6 max-w-[38rem] text-xl" data-stage="3">{s.lead}</p>}
-            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
+        <div className="container-x grid w-full items-center gap-12 pb-16 pt-10 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:pt-6">
+          <div className="hero-stage lg:col-span-7">
+            <div className="mb-6 flex flex-wrap items-center gap-3" data-stage="0">
+              {s.eyebrow && <p className="eyebrow">{s.eyebrow}</p>}
+              <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 ring-1 ring-white/15"><OpenBadge showNext className="text-white" /></span>
+            </div>
+            <h1 id="hero-heading" className="text-hero"><StagedHeading text={s.heading} accent={3} /></h1>
+            {s.lead && <p className="lead mt-7 max-w-[36rem] text-xl" data-stage="3">{s.lead}</p>}
+            <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
               {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
               {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
             </div>
             {s.trust && <div data-stage="5"><TrustRow light className="mt-10" /></div>}
           </div>
-          <div data-hero-media className="hero-parallax relative lg:col-span-5">
-            <div className="pointer-events-none absolute inset-x-6 bottom-0 top-10 arch bg-gradient-to-b from-olive-600/40 to-transparent" aria-hidden="true" />
-            <div className="pointer-events-none absolute -right-6 top-6 h-56 w-56 rounded-full border border-bronze-300/30 sm:h-72 sm:w-72" aria-hidden="true" />
-            {s.image && /\.png$/i.test(s.image.src) ? (
-              <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 480px, (min-width: 640px) 60vw, 90vw" className="relative mx-auto block w-[min(85%,420px)] object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)] lg:w-full lg:max-w-[480px]" />
-            ) : s.image ? (
-              <div className="hero-portrait arch relative mx-auto mb-10 w-[min(88%,440px)] overflow-hidden shadow-lift ring-1 ring-white/10 lg:mb-0 lg:w-full lg:max-w-[460px]">
-                <Picture image={s.image} priority quality={85} sizes="(min-width: 1024px) 460px, (min-width: 640px) 60vw, 88vw" cropTo={4 / 5} className="aspect-[4/5] w-full object-cover object-top" />
-              </div>
-            ) : null}
+          <div data-hero-media className="relative lg:col-span-5">
+            {s.image && <FannedStack main={s.image} side={s.gallery ?? []} />}
             {s.image && (
               <>
-                <FloatingBadge className="bottom-20 left-0 sm:-left-2 lg:-left-10" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews from local patients`} />
-                <FloatingBadge className="right-0 top-24 hidden sm:flex lg:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />
-                <Seal text="VALENCIA DENTISTRY · SANTA CLARITA · " className="absolute -left-2 top-4 hidden lg:block lg:-left-12" />
+                <FloatingBadge className="bottom-6 left-0 lg:-left-6" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews from local patients`} />
+                <Seal text="VALENCIA DENTISTRY · SANTA CLARITA · " className="absolute right-0 top-0 hidden lg:block lg:-right-4" />
               </>
             )}
           </div>
         </div>
+        {/* Scroll cue */}
+        <div className="pointer-events-none absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/60 lg:flex" aria-hidden="true">
+          Scroll
+          <span className="scroll-cue relative h-10 w-px overflow-hidden bg-white/15"><span className="absolute inset-x-0 top-0 h-1/2 bg-bronze-300" /></span>
+        </div>
       </section>
     );
   }
+
   // Page and landing heroes: dark band, text on the left, the photo whole on the right (its own proportions,
   // so heads are never cut), with floating proof points.
   const landing = s.variant === "landing";

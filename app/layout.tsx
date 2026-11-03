@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { MobileBar } from "@/components/layout/MobileBar";
 import { ScrollToTop } from "@/components/motion/ScrollToTop";
 import { MotionProvider } from "@/components/motion/MotionProvider";
+import { CustomCursor } from "@/components/motion/CustomCursor";
 import { RevealObserver } from "@/components/motion/RevealObserver";
 import { getNavigation, getPosts } from "@/lib/content";
 import { fraunces, urbanist } from "@/lib/fonts";
@@ -42,6 +43,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <RevealObserver />
         <ScrollToTop />
         <MotionProvider />
+        <CustomCursor />
         <Analytics />
       </body>
     </html>

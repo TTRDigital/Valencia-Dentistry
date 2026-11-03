@@ -22,6 +22,7 @@ export function TimelineProgress({ children, className }: { children: ReactNode;
     const update = () => {
       steps.forEach((s, i) => s.toggleAttribute("data-active", done.has(i)));
       const last = Math.max(-1, ...done);
+      el.dataset.current = String(Math.max(0, last)); // lets a section swap its photo per step
       line.style.transform = `scaleY(${(last + 1) / steps.length})`;
     };
     steps.forEach((s, i) => { if (s.getBoundingClientRect().top < window.innerHeight * 0.6) done.add(i); });

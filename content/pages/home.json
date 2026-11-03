@@ -25,7 +25,17 @@
         "src": "/images/team/dr-lavi.jpg",
         "alt": "Dr. Nuriel Lavi, DDS"
       },
-      "trust": true
+      "trust": true,
+      "gallery": [
+        {
+          "src": "/images/real/smile-plan.jpg",
+          "alt": "Reviewing a smile plan on screen at Valencia Dentistry"
+        },
+        {
+          "src": "/images/real/scan-intraoral.jpg",
+          "alt": "A digital intraoral scan at Valencia Dentistry"
+        }
+      ]
     },
     {
       "_type": "marquee",
@@ -39,6 +49,14 @@
         "Teeth whitening",
         "Holistic dentistry",
         "TMJ care"
+      ],
+      "items2": [
+        "Calm",
+        "Personal",
+        "Thorough",
+        "One dentist, every visit",
+        "Holistic",
+        "Unhurried"
       ]
     },
     {
@@ -250,7 +268,29 @@
         "label": "Book your first visit",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
       },
-      "note": "Your first visit includes a comprehensive exam and X-rays."
+      "note": "Your first visit includes a comprehensive exam and X-rays.",
+      "images": [
+        {
+          "src": "/images/real/treatment-room.jpg",
+          "alt": "A treatment room at Valencia Dentistry"
+        },
+        {
+          "src": "/images/real/consult-seated.jpg",
+          "alt": "Talking through health history in the chair"
+        },
+        {
+          "src": "/images/real/xray-explain.jpg",
+          "alt": "Digital X-rays explained on screen"
+        },
+        {
+          "src": "/images/real/loupes.jpg",
+          "alt": "A careful exam with dental loupes"
+        },
+        {
+          "src": "/images/real/smile-plan-3.jpg",
+          "alt": "Going over a treatment plan together"
+        }
+      ]
     },
     {
       "_type": "beforeAfter",
@@ -355,7 +395,8 @@
       "image": {
         "src": "/images/real/scan-intraoral.jpg",
         "alt": "A digital intraoral scan at Valencia Dentistry"
-      }
+      },
+      "dark": true
     },
     {
       "_type": "insurance"

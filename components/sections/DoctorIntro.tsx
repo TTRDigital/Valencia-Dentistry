@@ -12,6 +12,7 @@ export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
   return (
     <Section className="relative isolate overflow-hidden bg-sand-50" id="meet-dr-lavi">
       <Watermark className="-right-20 bottom-0 h-[28rem] w-[28rem]" />
+      <p aria-hidden="true" data-drift className="text-mega text-outline pointer-events-none absolute left-0 top-10 -z-10 select-none whitespace-nowrap font-display text-ink-900/15">Nuriel Lavi · Nuriel Lavi</p>
       <Container>
         <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">

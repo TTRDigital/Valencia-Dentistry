@@ -15,9 +15,18 @@ import { cn } from "@/lib/utils";
 export function TechCards({ s }: { s: TechExplainerSection }) {
   const [open, setOpen] = useState<Record<number, boolean>>({});
   return (
-    <ul className={cn("mt-12 grid gap-px overflow-hidden rounded-lg bg-ink-900/10 sm:grid-cols-2", s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3")}>
+    <ul
+      onPointerMove={(e) => {
+        // the light follows the pointer inside the card it is over
+        const li = (e.target as HTMLElement).closest<HTMLElement>("li");
+        if (!li) return;
+        const r = li.getBoundingClientRect();
+        li.style.setProperty("--mx", `${e.clientX - r.left}px`);
+        li.style.setProperty("--my", `${e.clientY - r.top}px`);
+      }}
+      className={cn("mt-12 grid gap-px overflow-hidden rounded-lg sm:grid-cols-2", s.dark ? "bg-white/10" : "bg-ink-900/10", s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3")}>
           {s.items.map((it, i) => (
-            <Reveal as="li" key={it.title} delay={(i % 3) * 70} className={cn("tech-card subgrid-card group relative p-7 [--rows:4]", s.dark ? "bg-ink-900" : "bg-white")}>
+            <Reveal as="li" key={it.title} delay={(i % 3) * 70} className={cn("tech-card spotlight subgrid-card group relative p-7 [--rows:4] sm:p-9", s.dark ? "bg-ink-900" : "bg-white")}>
               <div data-open={open[i] ? "" : undefined} className="tech-inner subgrid-card [--rows:4]">
                 <div><FeatureIcon name={it.icon} dark={s.dark} /></div>
                 <h3 className={cn("mt-5 text-xl", s.dark && "text-white")}>{it.title}</h3>

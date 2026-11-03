@@ -104,18 +104,24 @@ export function Insurance({ s }: { s: InsuranceSection }) {
           <h2 className="text-2xl">{s.heading ?? "Most major PPO plans accepted"}</h2>
           <p className="mx-auto mt-3 max-w-[48rem] text-grey-600">{s.text ?? "We verify your benefits before treatment and offer flexible financing so cost never stands between you and care. Not sure about your plan? Call us and we'll check."}</p>
         </div>
-        {/* Equal cells; each logo is sized by its shape so wide wordmarks and compact marks read at a similar weight */}
-        <ul className="mx-auto mt-8 grid max-w-5xl grid-cols-2 gap-3 sm:grid-cols-4">
-          {site.insurers.map((i) => {
-            const ratio = i.w / i.h;
-            const h = ratio > 4.5 ? "h-6" : ratio > 3 ? "h-7" : ratio > 2 ? "h-9" : "h-11";
-            return (
-              <li key={i.name} className="flex h-20 items-center justify-center rounded-lg bg-warm px-4 opacity-85 grayscale transition-[filter,opacity] duration-[var(--dur-std)] hover:opacity-100 hover:grayscale-0">
-                <Picture image={{ src: i.logo, alt: i.name, width: i.w, height: i.h }} sizes="140px" className={`${h} w-auto max-w-full object-contain`} quality={85} />
-              </li>
-            );
-          })}
-        </ul>
+        {/* Logos glide past in an endless row (still and wrapped under reduced motion); each is sized by its shape */}
+        <div className="marquee mt-10">
+          <div className="marquee-track">
+            {[0, 1].map((copy) => (
+              <ul key={copy} aria-hidden={copy === 1 || undefined} className="flex shrink-0 items-center gap-4 pr-4">
+                {site.insurers.map((i) => {
+                  const ratio = i.w / i.h;
+                  const h = ratio > 4.5 ? "h-7" : ratio > 3 ? "h-8" : ratio > 2 ? "h-10" : "h-12";
+                  return (
+                    <li key={i.name} className="flex h-24 w-52 items-center justify-center rounded-lg bg-warm px-6 opacity-85 grayscale transition-[filter,opacity] duration-[var(--dur-std)] hover:opacity-100 hover:grayscale-0">
+                      <Picture image={{ src: i.logo, alt: copy === 1 ? "" : i.name, width: i.w, height: i.h }} sizes="180px" className={`${h} w-auto max-w-full object-contain`} />
+                    </li>
+                  );
+                })}
+              </ul>
+            ))}
+          </div>
+        </div>
       </Container>
     </Section>
   );

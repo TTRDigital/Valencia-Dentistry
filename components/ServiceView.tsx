@@ -5,8 +5,9 @@ import { breadcrumbNode, faqNode, graph, JsonLd, serviceNode, serviceOfferNode, 
 import { StagedHeading, TrustRow } from "@/components/sections/Hero";
 import { FaqList } from "@/components/sections/Faq";
 import { CardList } from "@/components/sections/ServicesHub";
-import { CtaBanner, IconCard, QuoteHighlight, RichHeading, Watermark } from "@/components/rich/Blocks";
-import { FloatingBadge, PhotoCollage, PhotoFrame } from "@/components/rich/PhotoFrame";
+import { CtaBanner, IconCard, Marquee, QuoteHighlight, RichHeading, Watermark } from "@/components/rich/Blocks";
+import { FloatingBadge, PhotoCollage, PhotoFrame, ratioOf } from "@/components/rich/PhotoFrame";
+import { FannedStack } from "@/components/rich/FannedStack";
 import { SectionNav } from "@/components/rich/SectionNav";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Button } from "@/components/ui/Button";
@@ -96,11 +97,12 @@ export async function ServiceView({ s }: { s: Service }) {
               </div>
               <div data-stage="5"><TrustRow light className="mt-8" /></div>
             </div>
-            <div data-hero-media className="lg:col-span-6 xl:col-span-5">
-              <PhotoFrame image={s.hero.image} priority sizes="(min-width: 1280px) 520px, (min-width: 1024px) 45vw, 100vw" arch accent="olive" className="mx-auto max-w-[520px]">
+            <div data-hero-media className="relative lg:col-span-6 xl:col-span-5">
+              <FannedStack main={s.hero.image} side={[pic(1), pic(2)]} mainRatio={ratioOf(s.hero.image)} />
+              <>
                 <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
                 <FloatingBadge className="-right-2 top-6 hidden sm:flex sm:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />
-              </PhotoFrame>
+              </>
             </div>
           </div>
         </Container>
@@ -123,7 +125,9 @@ export async function ServiceView({ s }: { s: Service }) {
         </Container>
       </div>
 
-      <SectionNav items={nav} label={`${s.name}: on this page`} className="mt-10" />
+      <div className="mt-12 border-y border-ink-900/10 bg-warm" aria-hidden="true"><Marquee items={[s.name, "Dr. Nuriel Lavi", "Santa Clarita", "Most PPO plans", "Valencia Dentistry"]} /></div>
+
+      <SectionNav items={nav} label={`${s.name}: on this page`} />
 
       {/* ---------- Overview: text beside a two-photo collage ---------- */}
       <Section id="overview" className="scroll-mt-32 bg-warm">
