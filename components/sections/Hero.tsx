@@ -24,7 +24,7 @@ export function TrustRow({ className, light }: { className?: string; light?: boo
 
 /** Headline split into words for the staged entrance; each word rises 35ms after the previous, so lines build in reading order. */
 export function StagedHeading({ text, accent = 2 }: { text: string; accent?: number }) {
-  // The last `accent` words are set in the italic display cut (visual emphasis only; the words are unchanged).
+  // The last `accent` words are set in the accent colour (visual emphasis only; the words are unchanged).
   const words = text.split(" ");
   const from = words.length > accent + 1 ? words.length - accent : words.length;
   const word = (w: string, i: number) => <span className="hero-word" style={{ "--w": i } as React.CSSProperties}>{w}</span>;

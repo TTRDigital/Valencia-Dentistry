@@ -424,7 +424,7 @@
   .rich li::marker { @apply text-olive-600; }
   /* A list item that is only a link is a menu of links, not running text: give it a full tap target */
   .rich li > a:only-child { display: inline-flex; min-height: 2.75rem; align-items: center; }
-  .rich blockquote { @apply border-l-2 border-bronze-300 pl-5 italic text-grey-700; }
+  .rich blockquote { @apply border-l-2 border-bronze-300 pl-5 text-grey-700; }
   .rich table { @apply w-full border-collapse text-[0.95rem]; }
   .rich .table-wrap { @apply my-6 overflow-x-auto rounded-[4px] ring-1 ring-ink-900/10; }
   .rich th { @apply bg-greige-50 px-4 py-3 text-left font-semibold text-ink-900; }
