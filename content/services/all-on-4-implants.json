@@ -6,8 +6,8 @@
   "name": "All-on-4 Implants",
   "shortDescription": "A full arch of fixed teeth on four implants.",
   "seo": {
-    "title": "All-on-4 Dental Implants in Santa Clarita | Dr. Lavi",
-    "description": "All-on-4 full-arch dental implants in Santa Clarita. Four implants per jaw, same-day temporary teeth and care from Dr. Nuriel Lavi at every visit."
+    "title": "All-on-4 Dental Implants in Santa Clarita | Valencia Dentistry",
+    "description": "All-on-4 full-arch dental implants in Santa Clarita. Four implants per jaw, same-day temporary teeth and careful follow-up at every visit."
   },
   "hero": {
     "h1": "All-On-X Dental Implants in Santa Clarita",
@@ -21,7 +21,7 @@
   "intro": {
     "heading": "Confident, Comfortable Smiles Start Here",
     "paragraphs": [
-      "Missing most or all of your teeth doesn’t mean you have to settle for loose dentures or multiple surgeries. At Valencia Dentistry, we offer All-On-X dental implants in Santa Clarita—a revolutionary full-arch restoration that gives you a permanent, natural-looking smile using just four implants per jaw. Led by Dr. Lavi, our team combines advanced technology, gentle care, and personalized attention to deliver same-day results that look and feel like your real teeth. If you’re ready to reclaim your bite, your confidence, and your quality of life, All-On-X may be the solution you’ve been waiting for."
+      "Missing most or all of your teeth doesn’t mean you have to settle for loose dentures or multiple surgeries. At Valencia Dentistry, we offer All-On-X dental implants in Santa Clarita—a revolutionary full-arch restoration that gives you a permanent, natural-looking smile using just four implants per jaw. at Valencia Dentistry, our team combines advanced technology, gentle care, and personalized attention to deliver same-day results that look and feel like your real teeth. If you’re ready to reclaim your bite, your confidence, and your quality of life, All-On-X may be the solution you’ve been waiting for."
     ]
   },
   "understanding": {
@@ -40,7 +40,7 @@
     "cards": [
       {
         "title": "Specialized, Doctor-Led Implant Care",
-        "text": "Dr. Lavi personally performs every All-On-4 procedure with precision and compassion. You’ll work directly with his from consultation through final restoration.",
+        "text": "Every All-On-4 procedure is performed in our office with precision and compassion. You’ll work with the same team from consultation through final restoration.",
         "image": {
           "src": "/images/real/xray-pointing-2.jpg",
           "alt": "All-on-4 Implants at Valencia Dentistry: Specialized, Doctor-Led Implant Care"
@@ -78,7 +78,7 @@
     "steps": [
       {
         "title": "Consultation & Digital Imaging",
-        "text": "We begin with a thorough exam, 3D CBCT scan, and full discussion of your goals. Dr. Lavi evaluates your bone structure and designs a personalized surgical plan for precise implant placement."
+        "text": "We begin with a thorough exam, 3D CBCT scan, and full discussion of your goals. Your dentist evaluates your bone structure and designs a personalized surgical plan for precise implant placement."
       },
       {
         "title": "Implant Placement & Temporary Restoration",
@@ -92,7 +92,7 @@
   },
   "candidate": {
     "heading": "Are You a Candidate for All-On-X?",
-    "text": "Many patients who have been told they’re not eligible for traditional implants due to bone loss are excellent candidates for All-On-X. This technique is designed to work with existing bone structure and provide a long-lasting solution—even if you’ve worn dentures for years. During your consultation, Dr. Lavi will assess your oral health, review digital scans, and help you decide if All-On-X is the best option for your smile and lifestyle.",
+    "text": "Many patients who have been told they’re not eligible for traditional implants due to bone loss are excellent candidates for All-On-X. This technique is designed to work with existing bone structure and provide a long-lasting solution—even if you’ve worn dentures for years. During your consultation, your dentist will assess your oral health, review digital scans, and help you decide if All-On-X is the best option for your smile and lifestyle.",
     "bullets": [
       "Are missing most or all of your upper or lower teeth",
       "Struggle with loose or uncomfortable dentures",
@@ -170,14 +170,14 @@
     "oral-surgery"
   ],
   "cta": {
-    "heading": "Talk with Dr. Lavi about All-on-4 implants",
+    "heading": "Talk with our team about All-on-4 implants",
     "text": "Come in for a relaxed consultation in our Valencia office. Call (661) 254-5200 or book online.",
     "buttonLabel": "Book a consultation"
   },
   "flags": [
     "Source calls the procedure 'revolutionary' and 'life-changing'; omitted as hype.",
     "Source promises 'same-day results' for all patients; softened to 'usually' since immediate temporary teeth depend on bone quality and implant stability on the day.",
-    "Source lists osteoporosis alongside diabetes as a condition that may rule patients out; kept as 'uncontrolled' conditions per the source, but Dr. Lavi should confirm the wording.",
+    "Source lists osteoporosis alongside diabetes as a condition that may rule patients out; kept as 'uncontrolled' conditions per the source, but your dentist should confirm the wording.",
     "Source FAQ links to the American Academy of Implant Dentistry; external link omitted because the content is plain text."
   ]
 }

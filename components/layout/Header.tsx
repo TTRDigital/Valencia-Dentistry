@@ -81,13 +81,13 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
       <div aria-hidden="true" className={cn("pointer-events-none absolute inset-x-0 top-[64px] h-4 bg-gradient-to-b from-ink-900/10 to-transparent opacity-0 transition-opacity duration-300", scrolled && "opacity-100")} />
       {/* Main bar */}
       <div className={cn("container-x relative transition-transform duration-300 ease-out", scrolled && "-translate-y-1")}>
-        <div className="flex h-[72px] items-center justify-between gap-6">
+        <div className="flex h-[72px] items-center justify-between gap-10">
           <Link href="/" className={cn("inline-flex min-h-12 origin-left items-center rounded-md transition-transform duration-300 ease-out", scrolled && "scale-[0.92]")}>
             <Logo />
           </Link>
 
-          <nav aria-label="Main" className="hidden lg:block">
-            <ul className="flex items-center gap-0.5 xl:gap-1.5">
+          <nav aria-label="Main" className="ml-auto hidden lg:block">
+            <ul className="flex items-center gap-1 xl:gap-3">
               {desktopNav.map((item) =>
                 item.mega ? (
                   <li key={item.href} className="relative" onMouseEnter={openMega} onMouseLeave={scheduleClose}>
@@ -112,6 +112,20 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                       <Icon.chevron className={cn("h-4 w-4 transition-transform", megaOpen && "rotate-180")} />
                     </button>
                   </li>
+                ) : item.children ? (
+                  <li key={item.href} className="group relative">
+                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center gap-1 px-3 text-[0.8125rem] font-semibold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)} aria-haspopup="true">
+                      {item.label}
+                      <Icon.chevron className="h-4 w-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
+                    </Link>
+                    <ul className="invisible absolute left-0 top-full min-w-56 translate-y-1 rounded-lg bg-white p-2 opacity-0 shadow-lift ring-1 ring-ink-900/5 transition duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                      {item.children.map((c) => (
+                        <li key={c.href}>
+                          <Link href={c.href} prefetch={false} aria-current={pathname === c.href ? "page" : undefined} className={cn("block rounded-md px-3 py-2.5 text-[0.9375rem] font-medium hover:bg-greige-50 hover:text-olive-700", pathname === c.href || (c.href === "/category/blogs/" && (pathname.startsWith("/category/blogs/") || postPaths.includes(pathname))) ? "text-olive-700" : "text-ink-900")}>{c.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
                 ) : (
                   <li key={item.href}>
                     <Link href={item.href} className="nav-link relative flex min-h-11 items-center px-3 text-[0.8125rem] font-semibold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)}>
@@ -123,7 +137,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
             </ul>
           </nav>
 
-          <div className="flex items-center gap-1 lg:gap-3">
+          <div className="flex items-center gap-1 lg:ml-6 lg:gap-6">
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="hidden min-h-11 items-center whitespace-nowrap border-b-2 border-ink-900 px-0.5 text-[0.8125rem] font-semibold uppercase tracking-[0.06em] text-ink-900 hover:border-olive-700 hover:text-olive-700 lg:inline-flex">
               Schedule appointment
             </a>
@@ -207,6 +221,17 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                         </div>
                       ))}
                     </div>
+                  </details>
+                ) : item.children ? (
+                  <details className="group" open={isActive(item.href) || undefined}>
+                    <summary className={cn("flex min-h-16 cursor-pointer items-center justify-between py-3 text-2xl font-semibold", isActive(item.href) ? "text-olive-700" : "text-ink-900")}>
+                      {item.label} <Icon.chevron className="h-6 w-6 text-grey-400 transition-transform group-open:rotate-180" />
+                    </summary>
+                    <ul className="pb-4">
+                      {item.children.map((c) => (
+                        <li key={c.href}><Link href={c.href} prefetch={false} aria-current={pathname === c.href ? "page" : undefined} className={cn("flex min-h-12 items-center text-lg", pathname === c.href ? "font-semibold text-olive-700" : "text-grey-700")} tabIndex={mobileOpen ? 0 : -1}>{c.label}</Link></li>
+                      ))}
+                    </ul>
                   </details>
                 ) : (
                   <Link href={item.href} prefetch={false} aria-current={current(item.href)} className={cn("flex min-h-16 items-center justify-between py-3 text-2xl font-semibold", isActive(item.href) ? "text-olive-700" : "text-ink-900")} tabIndex={mobileOpen ? 0 : -1}>

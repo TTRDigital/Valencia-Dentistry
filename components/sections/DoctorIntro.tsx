@@ -7,7 +7,7 @@ import { Icon } from "@/components/ui/Icons";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
 
-/** "Meet Dr. Lavi": the portrait whole in the arch with an offset block and proof badges, beside his introduction. */
+/** Our lead dentist: the portrait whole in the arch with an offset block and a badge, beside his introduction. */
 export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
   return (
     <Section className="relative isolate overflow-hidden bg-sand-50" id="meet-dr-lavi">
@@ -15,7 +15,7 @@ export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
         <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">
             <PhotoFrame image={s.image} sizes="(min-width: 1024px) 440px, 90vw" arch accent="olive" accentSide="left" className="mx-auto max-w-[420px]">
-              <FloatingBadge className="-right-3 bottom-10 sm:-right-10" icon={<Icon.user className="h-5 w-5" />} title="Every visit with Dr. Lavi" text="No handoffs, no rush" />
+              <FloatingBadge className="-right-3 bottom-10 sm:-right-10" icon={<Icon.user className="h-5 w-5" />} title="Lead dentist" text="Valencia Dentistry" />
               <FloatingBadge className="-left-3 top-16 hidden sm:flex sm:-left-10" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} on Google</>} text={`${site.rating.count} reviews`} />
             </PhotoFrame>
           </Reveal>
@@ -36,7 +36,7 @@ export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
             )}
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
               {s.cta && <Button href={s.cta.href} arrow>{s.cta.label}</Button>}
-              <Button href={site.bookingUrl} variant="outline">Book with Dr. Lavi</Button>
+              <Button href={site.bookingUrl} variant="outline">Book a visit</Button>
             </div>
           </div>
         </div>

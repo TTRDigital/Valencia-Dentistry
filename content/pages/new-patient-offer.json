@@ -5,15 +5,15 @@
   "breadcrumb": "New Patient Offer",
   "seo": {
     "title": "New Patients | Exam & X-Rays in Valencia",
-    "description": "New to Valencia Dentistry? Your first visit includes a comprehensive exam and digital X-rays, one-on-one with Dr. Nuriel Lavi in Santa Clarita. Book today."
+    "description": "New to Valencia Dentistry? Your first visit includes a comprehensive exam and digital X-rays, at Valencia Dentistry in Santa Clarita. Book today."
   },
   "sections": [
     {
       "_type": "hero",
       "variant": "landing",
       "eyebrow": "New patients",
-      "heading": "A thorough first visit with Dr. Lavi.",
-      "lead": "A thorough, unhurried first visit with Dr. Nuriel Lavi: comprehensive exam, digital X-rays, oral cancer screening and a clear plan, with no pressure to proceed.",
+      "heading": "A thorough first visit at Valencia Dentistry.",
+      "lead": "A thorough, unhurried first visit with your dentist: comprehensive exam, digital X-rays, oral cancer screening and a clear plan, with no pressure to proceed.",
       "primary": {
         "label": "Book your first visit",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -34,7 +34,7 @@
       "heading": "Everything a great first visit should have",
       "text": "This is a real first appointment, not a quick look. You will leave knowing exactly where your oral health stands and what, if anything, needs attention.",
       "bullets": [
-        "Comprehensive exam with Dr. Lavi",
+        "Comprehensive exam with your dentist",
         "Full set of digital X-rays",
         "Oral cancer screening",
         "Gum health assessment",
@@ -51,8 +51,8 @@
       "items": [
         {
           "icon": "user",
-          "title": "One dentist, every visit",
-          "text": "You see Dr. Lavi himself at every appointment. No handoffs, no rush."
+          "title": "Unhurried, every visit",
+          "text": "Every appointment gets our full attention. No rush, and nothing happens without an explanation."
         },
         {
           "icon": "leaf",

@@ -4,8 +4,8 @@
   "title": "Our Practice",
   "breadcrumb": "Our Practice",
   "seo": {
-    "title": "About Dr. Nuriel Lavi | Valencia Dentistry",
-    "description": "Meet Dr. Nuriel Lavi and the Valencia Dentistry team in Santa Clarita: holistic, one-on-one dentistry with 3D imaging, PRF therapy and same-day crowns."
+    "title": "About Valencia Dentistry | Dentist in Santa Clarita",
+    "description": "Meet the Valencia Dentistry team in Santa Clarita: holistic, personal dentistry with 3D imaging, PRF therapy and same-day crowns."
   },
   "sections": [
     {
@@ -13,7 +13,7 @@
       "variant": "page",
       "eyebrow": "Our practice",
       "heading": "Dentistry with heart, in Valencia.",
-      "lead": "Valencia Dentistry blends clinical precision and modern technology with a warm, one-on-one approach. Dr. Nuriel Lavi leads every visit himself, so you are never handed off and never rushed.",
+      "lead": "Valencia Dentistry blends clinical precision and modern technology with a warm, personal approach. Our team, led by Dr. Nuriel Lavi, takes the time to explain every step, so you are never rushed.",
       "primary": {
         "label": "Book a visit",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -34,7 +34,7 @@
       "eyebrow": "Our story",
       "heading": "Santa Clarita's dental home",
       "body": [
-        "Valencia Dentistry serves Santa Clarita families from Tourney Road in Valencia. Under Dr. Lavi it is a place where advanced care and genuine kindness sit side by side: a calm office, a small team that knows your name, and a dentist who treats every patient the way he would treat his own family.",
+        "Valencia Dentistry serves Santa Clarita families from Tourney Road in Valencia. It is a place where advanced care and genuine kindness sit side by side: a calm office, a small team that knows your name, and a dentist who treats every patient the way he would treat his own family.",
         "The mission is simple. High-quality dentistry should be accessible, compassionate and truly patient-centered, whether you are here for a routine cleaning or a full smile reconstruction."
       ],
       "image": {
@@ -51,7 +51,7 @@
       "items": [
         {
           "title": "Individualized attention",
-          "text": "Every patient, every visit, gets our full focus. You see Dr. Lavi himself, every time."
+          "text": "Every patient, every visit, gets our full focus."
         },
         {
           "title": "Holistic approach",
@@ -85,7 +85,7 @@
     },
     {
       "_type": "team",
-      "eyebrow": "Meet your dentist",
+      "eyebrow": "Our lead dentist",
       "heading": "Led by Dr. Nuriel Lavi, DDS",
       "lead": "Dentist and practice owner, known for compassionate care, technical precision and the long-term relationships he builds with patients."
     },
@@ -149,7 +149,7 @@
       "_type": "serviceCategories",
       "eyebrow": "Comprehensive services",
       "heading": "Everything under one roof",
-      "lead": "Dr. Lavi's expertise spans the full spectrum of dental care, from your child's first checkup to smile restoration.",
+      "lead": "Our care spans the full spectrum of dental care, from your child's first checkup to smile restoration.",
       "categories": [
         {
           "title": "Preventive care",
@@ -246,7 +246,7 @@
       "_type": "cta",
       "eyebrow": "New patients",
       "heading": "Become part of the family.",
-      "text": "Schedule your consultation with Dr. Lavi today. New patients receive a comprehensive exam and X-rays."
+      "text": "Schedule your consultation today. New patients receive a comprehensive exam and X-rays."
     }
   ]
 }

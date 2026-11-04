@@ -3,8 +3,8 @@
   "path": "/",
   "title": "Home",
   "seo": {
-    "title": "Valencia Dentistry | Dr. Nuriel Lavi, Santa Clarita",
-    "description": "Holistic, one-on-one dentistry in Valencia, Santa Clarita. Dr. Nuriel Lavi offers implants, veneers, Invisalign and same-day crowns. New patients welcome."
+    "title": "Valencia Dentistry | Dentist in Valencia, Santa Clarita",
+    "description": "Holistic, modern dentistry in Valencia, Santa Clarita. Valencia Dentistry offers implants, veneers, Invisalign and same-day crowns. New patients welcome."
   },
   "sections": [
     {
@@ -12,7 +12,7 @@
       "variant": "home",
       "eyebrow": "Valencia · Santa Clarita",
       "heading": "Dentistry that feels calm, personal and thorough.",
-      "lead": "Dr. Nuriel Lavi sees every patient himself, at every visit. Holistic, integrative care with modern technology, in a quiet office on Tourney Road.",
+      "lead": "Holistic, integrative care with modern technology, in a calm office on Tourney Road. Implants, cosmetic and family dentistry under one roof.",
       "primary": {
         "label": "Book now",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -22,8 +22,8 @@
         "href": "/services/"
       },
       "image": {
-        "src": "/images/team/dr-lavi-outdoor.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS, outside Valencia Dentistry"
+        "src": "/images/real/veneer-smile.jpg",
+        "alt": "A patient smiling at her new smile in a hand mirror at Valencia Dentistry"
       },
       "trust": true,
       "gallery": [
@@ -61,7 +61,7 @@
           "id": "missing",
           "label": "Missing teeth",
           "title": "Replacing one tooth, several, or a full arch",
-          "text": "Dr. Lavi plans every implant on a 3D CBCT scan, so you know how much bone you have and what your real options are before anything begins. If an implant isn't the right fit, a fixed bridge may be.",
+          "text": "Your dentist plans every implant on a 3D CBCT scan, so you know how much bone you have and what your real options are before anything begins. If an implant isn't the right fit, a fixed bridge may be.",
           "links": [
             {
               "label": "Dental implants",
@@ -112,7 +112,7 @@
           "id": "crooked",
           "label": "Crooked or crowded teeth",
           "title": "Straightening without metal braces",
-          "text": "Invisalign clear aligners are planned from an iTero digital scan, with no impression trays. How long it takes depends on your bite; Dr. Lavi gives you a realistic estimate at your consultation.",
+          "text": "Invisalign clear aligners are planned from an iTero digital scan, with no impression trays. How long it takes depends on your bite; your dentist gives you a realistic estimate at your consultation.",
           "links": [
             {
               "label": "Invisalign",
@@ -148,7 +148,7 @@
           "id": "nervous",
           "label": "Nervous about the dentist",
           "title": "Going at your pace",
-          "text": "You'll see Dr. Lavi at every visit, and nothing happens without an explanation first. Tell us how you feel at the start; sedation options are available when appropriate.",
+          "text": "Nothing happens without an explanation first. Tell us how you feel at the start; sedation options are available when appropriate.",
           "links": [
             {
               "label": "Your first visit",
@@ -189,18 +189,18 @@
     },
     {
       "_type": "doctorIntro",
-      "eyebrow": "Your dentist",
+      "eyebrow": "Our lead dentist",
       "heading": "Meet Dr. Nuriel Lavi, DDS",
       "image": {
         "src": "/images/team/dr-lavi-portrait.jpg",
         "alt": "Dr. Nuriel Lavi, DDS"
       },
       "body": [
-        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He sees every patient himself, at every visit, and he listens before he recommends anything.",
+        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
         "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
       ],
       "points": [
-        "One dentist at every visit, no handoffs",
+        "Unhurried visits, no surprises",
         "3D imaging before implants and surgery",
         "Holistic, whole-body approach",
         "Crowns made in house, often same day"
@@ -229,7 +229,7 @@
           "text": "Low-radiation digital X-rays show what can't be seen in the chair, and appear on screen right away."
         },
         {
-          "title": "An unhurried exam with Dr. Lavi",
+          "title": "An unhurried exam with your dentist",
           "text": "Teeth, gums and bite, plus an oral cancer screening. He explains what he sees as he goes."
         },
         {
@@ -362,7 +362,7 @@
           "icon": "smile",
           "title": "Intraoral cameras",
           "text": "Close-up photos of your teeth.",
-          "forYou": "You see exactly what Dr. Lavi sees before you decide anything."
+          "forYou": "You see exactly what your dentist sees before you decide anything."
         }
       ],
       "image": {
@@ -377,7 +377,7 @@
     {
       "_type": "ctaBanner",
       "heading": "Start with an unhurried first visit",
-      "text": "A comprehensive exam and digital X-rays with Dr. Lavi, and a clear plan you can take home. Most PPO plans accepted.",
+      "text": "A comprehensive exam and digital X-rays with your dentist, and a clear plan you can take home. Most PPO plans accepted.",
       "image": {
         "src": "/images/real/consult-seated.jpg",
         "alt": "A consultation with a seated patient at Valencia Dentistry"

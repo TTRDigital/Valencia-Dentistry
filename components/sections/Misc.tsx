@@ -58,7 +58,7 @@ export async function Team({ s }: { s: TeamSection }) {
                 <div className="p-5">
                   <h3 className="text-2xl">{p.name}{p.credentials ? `, ${p.credentials}` : ""}</h3>
                   <p className="mt-1 text-sm font-semibold text-olive-700">{p.role}</p>
-                  <Button href={site.bookingUrl} size="sm" className="mt-4" arrow>Book with Dr. Lavi</Button>
+                  <Button href={site.bookingUrl} size="sm" className="mt-4" arrow>Book a visit</Button>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ export function Offer({ s }: { s: OfferSection }) {
           <div className="on-dark flex flex-col justify-center gap-3 rounded-lg bg-ink-900 p-7 text-white lg:col-span-5">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">{site.newPatients.headline}</p>
             <p className="font-display text-6xl text-white">Your <em>first visit</em></p>
-            <p className="text-white/80">Comprehensive exam and digital X-rays, one-on-one with Dr. Lavi. Most PPO plans accepted.</p>
+            <p className="text-white/80">Comprehensive exam and digital X-rays, at Valencia Dentistry. Most PPO plans accepted.</p>
             <Button href={s.cta?.href ?? site.bookingUrl} variant="light" size="lg" className="mt-3" arrow>{s.cta?.label ?? "Book your first visit"}</Button>
             <p className="text-sm text-white/70">Or call <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center font-semibold text-white underline-offset-4 hover:underline">{site.phone.display}</a></p>
           </div>

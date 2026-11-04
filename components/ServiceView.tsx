@@ -68,7 +68,7 @@ export async function ServiceView({ s }: { s: Service }) {
   ];
 
   const quickFacts: { icon: IconName; title: string; text: string }[] = [
-    { icon: "user", title: "Dr. Lavi, every visit", text: "You see the dentist himself, never handed off" },
+    { icon: "user", title: "Unhurried visits", text: "Every step explained before treatment" },
     { icon: "calendar", title: "Mon–Fri, 8am–5pm", text: "Weekday appointments, same-day when possible" },
     { icon: "shield", title: "Most PPO plans", text: "We check your benefits before you come in" },
     { icon: "pin", title: "Easy to reach", text: "Free parking, elevator to Suite 240" },
@@ -139,7 +139,7 @@ export async function ServiceView({ s }: { s: Service }) {
             </div>
             <div className="lg:col-span-6">
               <PhotoCollage main={pic(1)} second={pic(2)}>
-                <FloatingBadge className="bottom-28 left-0 sm:-left-4" icon={<Icon.user className="h-5 w-5" />} title="Planned by Dr. Lavi" text="One dentist, start to finish" />
+                <FloatingBadge className="bottom-28 left-0 sm:-left-4" icon={<Icon.user className="h-5 w-5" />} title="Planned in our office" text="3D imaging, start to finish" />
               </PhotoCollage>
             </div>
           </div>
@@ -196,7 +196,7 @@ export async function ServiceView({ s }: { s: Service }) {
                 )}
                 <div className="mt-6 flex items-start gap-3 rounded-lg bg-olive-700 p-5 text-white">
                   <Icon.heart className="mt-0.5 h-5 w-5 shrink-0 text-bronze-300" />
-                  <p>Not sure? Dr. Lavi will tell you honestly at your consultation, including when another option suits you better.</p>
+                  <p>Not sure? We will tell you honestly at your consultation, including when another option suits you better.</p>
                 </div>
               </div>
             </div>

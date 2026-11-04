@@ -6,8 +6,8 @@
   "name": "Veneers",
   "shortDescription": "Thin porcelain shells that correct shape, color and gaps.",
   "seo": {
-    "title": "Porcelain Veneers in Santa Clarita | Dr. Nuriel Lavi",
-    "description": "Custom porcelain and composite veneers in Santa Clarita, designed by Dr. Nuriel Lavi with digital smile design. Cover chips, gaps and deep stains."
+    "title": "Porcelain Veneers in Santa Clarita | Valencia Dentistry",
+    "description": "Custom porcelain and composite veneers in Santa Clarita, designed by your dentist with digital smile design. Cover chips, gaps and deep stains."
   },
   "hero": {
     "h1": "Stunning Custom Veneers in Santa Clarita",
@@ -21,7 +21,7 @@
   "intro": {
     "heading": "Smile Brighter with Personalized Veneers in Santa Clarita",
     "paragraphs": [
-      "Looking to transform your smile with precision-crafted veneers in Santa Clarita? At Valencia Dentistry, we specialize in creating confident, natural-looking smiles using advanced cosmetic dentistry. Whether you’re dealing with chipped teeth, small gaps, or uneven edges, our personalized veneer treatments can help you achieve a brighter, more symmetrical smile. Led by Dr. Lavi, our team combines expert care with modern technology to ensure results that not only look beautiful—but feel completely you.",
+      "Looking to transform your smile with precision-crafted veneers in Santa Clarita? At Valencia Dentistry, we specialize in creating confident, natural-looking smiles using advanced cosmetic dentistry. Whether you’re dealing with chipped teeth, small gaps, or uneven edges, our personalized veneer treatments can help you achieve a brighter, more symmetrical smile. at Valencia Dentistry, our team combines expert care with modern technology to ensure results that not only look beautiful—but feel completely you.",
       "Discover what’s possible with veneers tailored to your smile—book your consultation today."
     ]
   },
@@ -72,7 +72,7 @@
     "cards": [
       {
         "title": "Doctor-Led Expertise",
-        "text": "Dr. Lavi is known for his attention to detail, artistic eye, and genuine commitment to each patient’s goals.",
+        "text": "Our team is known for attention to detail, an artistic eye and genuine commitment to each patient’s goals.",
         "image": {
           "src": "/images/real/smile-plan-4.jpg",
           "alt": "Veneers at Valencia Dentistry: Doctor-Led Expertise"
@@ -110,7 +110,7 @@
     "steps": [
       {
         "title": "Personalized Consultation & Smile Design",
-        "text": "Dr. Lavi will assess your oral health, discuss your goals, and design a custom treatment plan. Using digital tools, we’ll preview your new smile and select the ideal veneer type and shade."
+        "text": "Your dentist will assess your oral health, discuss your goals, and design a custom treatment plan. Using digital tools, we’ll preview your new smile and select the ideal veneer type and shade."
       },
       {
         "title": "Tooth Preparation & Impressions",
@@ -242,7 +242,7 @@
     "dental-crowns"
   ],
   "cta": {
-    "heading": "Talk with Dr. Lavi about veneers",
+    "heading": "Talk with our team about veneers",
     "text": "Come in for a relaxed consultation in our Valencia office. Call (661) 254-5200 or book online.",
     "buttonLabel": "Book a consultation"
   },

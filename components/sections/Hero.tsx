@@ -11,7 +11,7 @@ export function TrustRow({ className, light }: { className?: string; light?: boo
   const items = [
     { I: Icon.google, text: <><strong className="font-semibold">{site.rating.value}</strong> on Google · {site.rating.count} reviews</> },
     { I: Icon.shield, text: <>Most PPO plans accepted</> },
-    { I: Icon.user, text: <>Dr. Lavi at <strong className="font-semibold">every visit</strong></> },
+    { I: Icon.user, text: <><strong className="font-semibold">New patients</strong> welcome</> },
   ];
   return (
     <ul className={cn("flex flex-wrap gap-x-6 gap-y-2 text-sm", light ? "text-white/80" : "text-grey-700", className)}>

@@ -1,25 +1,31 @@
 {
   "header": [
     {
+      "label": "About",
+      "href": "/about/",
+      "children": [
+        {
+          "label": "Our Practice",
+          "href": "/about/"
+        },
+        {
+          "label": "Results & Reviews",
+          "href": "/testimonials/"
+        },
+        {
+          "label": "Blog",
+          "href": "/category/blogs/"
+        }
+      ]
+    },
+    {
       "label": "Services",
       "href": "/services/",
       "mega": true
     },
     {
-      "label": "Our Practice",
-      "href": "/about/"
-    },
-    {
       "label": "New Patients",
       "href": "/new-patient-offer/"
-    },
-    {
-      "label": "Results & Reviews",
-      "href": "/testimonials/"
-    },
-    {
-      "label": "Blog",
-      "href": "/category/blogs/"
     },
     {
       "label": "Contact",

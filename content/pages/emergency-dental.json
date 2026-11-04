@@ -13,7 +13,7 @@
       "variant": "landing",
       "eyebrow": "Emergency dental care",
       "heading": "In pain? Call us first.",
-      "lead": "Same-day emergency appointments in Valencia for toothaches, broken or knocked-out teeth, lost crowns and swelling. Dr. Lavi will relieve the pain, then fix the cause.",
+      "lead": "Same-day emergency appointments in Valencia for toothaches, broken or knocked-out teeth, lost crowns and swelling. Your dentist will relieve the pain, then fix the cause.",
       "primary": {
         "label": "Call (661) 254-5200",
         "href": "tel:+16612545200"
@@ -85,8 +85,8 @@
         },
         {
           "icon": "user",
-          "title": "Dr. Lavi himself",
-          "text": "The dentist who sees you is the dentist who treats you. No handoffs."
+          "title": "Seen by a dentist",
+          "text": "A dentist examines you and explains the plan before treating anything."
         },
         {
           "icon": "tag",

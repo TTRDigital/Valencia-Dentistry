@@ -72,7 +72,7 @@ export async function PostView({ post }: { post: Post }) {
               )}
               <div className="rounded-lg bg-olive-700 p-6 text-white">
                 <p className="text-lg font-semibold">Want to talk it through?</p>
-                <p className="mt-1.5 text-white/80">Your first visit is an exam and a conversation about your options with Dr. Lavi.</p>
+                <p className="mt-1.5 text-white/80">Your first visit is an exam and a conversation about your options with our team.</p>
                 <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-light mt-5 w-full">Request an appointment</a>
                 <a href={`tel:${site.phone.tel}`} className="mt-2 flex min-h-11 items-center justify-center gap-2 text-white/90 hover:text-white"><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
               </div>
@@ -117,7 +117,7 @@ export async function PostView({ post }: { post: Post }) {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>
                 <h2 id="author" className="mt-1 text-xl">{site.doctor.name}</h2>
-                <p className="mt-2 text-base sm:text-[0.95rem] text-grey-700">Dentist and owner of Valencia Dentistry in Santa Clarita. Dr. Lavi practices holistic, one-on-one dentistry with a focus on implants, cosmetic care and prevention.</p>
+                <p className="mt-2 text-base sm:text-[0.95rem] text-grey-700">Dentist and owner of Valencia Dentistry in Santa Clarita. Dr. Lavi practices holistic, personal dentistry with a focus on implants, cosmetic care and prevention.</p>
                 <Link href="/about/" className="link-arrow mt-1 text-sm">Meet Dr. Lavi <Icon.arrow className="h-4 w-4" /></Link>
               </div>
             </section>

@@ -82,7 +82,7 @@ export default function StyleGuide() {
             <div><p className="text-sm text-grey-600">H1 · 5xl</p><p className="font-display text-5xl">Dental Implants in Santa Clarita</p></div>
             <div><p className="text-sm text-grey-600">H2 · 4xl</p><h2>Why patients choose us</h2></div>
             <div><p className="text-sm text-grey-600">H3 · 2xl</p><h3>Personalized attention</h3></div>
-            <div><p className="text-sm text-grey-600">Lead · xl</p><p className="lead text-xl prose-measure">Dr. Nuriel Lavi sees every patient himself, at every visit. Holistic, integrative care with modern technology.</p></div>
+            <div><p className="text-sm text-grey-600">Lead · xl</p><p className="lead text-xl prose-measure">Holistic, integrative care with modern technology.</p></div>
             <div><p className="text-sm text-grey-600">Body · base / Urbanist</p><p className="prose-measure text-grey-700">From holistic preventive care and long-term treatment plans to advanced cosmetic and surgical solutions, our Santa Clarita office offers everything you need in one trusted location.</p></div>
             <div><p className="text-sm text-grey-600">Eyebrow</p><p className="eyebrow">Our services</p></div>
           </div>

@@ -5,7 +5,7 @@
   "breadcrumb": "Services",
   "seo": {
     "title": "Dental Services in Santa Clarita | Valencia Dentistry",
-    "description": "Preventive, cosmetic, restorative, holistic and surgical dentistry in Valencia, Santa Clarita. One dentist at every visit, Dr. Nuriel Lavi."
+    "description": "Preventive, cosmetic, restorative, holistic and surgical dentistry in Valencia, Santa Clarita. Modern, holistic care at Valencia Dentistry."
   },
   "sections": [
     {
@@ -13,7 +13,7 @@
       "variant": "page",
       "eyebrow": "Our services",
       "heading": "Complete dentistry, one calm place.",
-      "lead": "Cleanings, crowns, implants, veneers, Invisalign and oral surgery, all planned on 3D imaging and delivered by Dr. Lavi himself. Browse by category, or tell us what is bothering you and we will point you to the right care.",
+      "lead": "Cleanings, crowns, implants, veneers, Invisalign and oral surgery, all planned on 3D imaging and delivered in our office. Browse by category, or tell us what is bothering you and we will point you to the right care.",
       "primary": {
         "label": "Book now",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -67,7 +67,7 @@
       "_type": "cta",
       "eyebrow": "Not sure where to start?",
       "heading": "Begin with a new patient exam.",
-      "text": "A thorough exam, digital X-rays and an unhurried conversation with Dr. Lavi about what you need and what you can wait on."
+      "text": "A thorough exam, digital X-rays and an unhurried conversation with your dentist about what you need and what you can wait on."
     }
   ]
 }

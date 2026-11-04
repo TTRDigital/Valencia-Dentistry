@@ -6,8 +6,8 @@
   "name": "Tooth Extractions",
   "shortDescription": "Gentle removal when a tooth cannot be saved.",
   "seo": {
-    "title": "Tooth Extractions in Santa Clarita | Dr. Nuriel Lavi",
-    "description": "Gentle simple and surgical tooth extractions in Santa Clarita with 3D imaging, sedation options and same-day appointments. Dr. Nuriel Lavi, Valencia."
+    "title": "Tooth Extractions in Santa Clarita | Valencia Dentistry",
+    "description": "Gentle simple and surgical tooth extractions in Santa Clarita with 3D imaging, sedation options and same-day appointments. Valencia Dentistry."
   },
   "hero": {
     "h1": "Expert Tooth Extraction in Valencia",
@@ -21,7 +21,7 @@
   "intro": {
     "heading": "Regain Comfort with Gentle Tooth Extraction in Valencia",
     "paragraphs": [
-      "Tooth pain doesn’t have to disrupt your life. At Valencia Dentistry, we offer expert tooth extraction in Valencia designed to relieve discomfort, stop infections, and support long-term oral health—all in a calm, welcoming environment. Whether you’re dealing with a severely decayed tooth, impacted wisdom teeth, or overcrowding, Dr. Lavi and our caring team use advanced techniques and sedation options to make the process as smooth and stress-free as possible. From same-day appointments to clear recovery instructions, we’re here to support you every step of the way."
+      "Tooth pain doesn’t have to disrupt your life. At Valencia Dentistry, we offer expert tooth extraction in Valencia designed to relieve discomfort, stop infections, and support long-term oral health—all in a calm, welcoming environment. Whether you’re dealing with a severely decayed tooth, impacted wisdom teeth, or overcrowding, your dentist and our caring team use advanced techniques and sedation options to make the process as smooth and stress-free as possible. From same-day appointments to clear recovery instructions, we’re here to support you every step of the way."
     ]
   },
   "understanding": {
@@ -69,7 +69,7 @@
     "cards": [
       {
         "title": "Doctor-Led Care with a Personal Touch",
-        "text": "Dr. Lavi personally oversees every procedure, taking time to answer your questions and explain your options without pressure.",
+        "text": "Your dentist personally oversees every procedure, taking time to answer your questions and explain your options without pressure.",
         "image": {
           "src": "/images/real/consult-seated.jpg",
           "alt": "Tooth Extractions at Valencia Dentistry: Doctor-Led Care with a Personal Touch"
@@ -103,15 +103,15 @@
   },
   "process": {
     "heading": "Our Tooth Extraction Process: What to Expect",
-    "intro": "At Valencia Dentistry, we make the tooth extraction process as smooth and stress-free as possible. Whether it’s a simple or surgical procedure, Dr. Lavi and our experienced team walk you through every step with compassion, transparency, and personalized care.",
+    "intro": "At Valencia Dentistry, we make the tooth extraction process as smooth and stress-free as possible. Whether it’s a simple or surgical procedure, your dentist and our experienced team walk you through every step with compassion, transparency, and personalized care.",
     "steps": [
       {
         "title": "Consultation & Digital Imaging",
-        "text": "We begin with a comprehensive exam and 3D imaging to assess the tooth and surrounding structures. Dr. Lavi will discuss your symptoms, explain your options, and determine whether an extraction is the right solution for you."
+        "text": "We begin with a comprehensive exam and 3D imaging to assess the tooth and surrounding structures. Your dentist will discuss your symptoms, explain your options, and determine whether an extraction is the right solution for you."
       },
       {
         "title": "Comfortable Tooth Removal",
-        "text": "The extraction is performed right in our Valencia office using local anesthesia to fully numb the area. For anxious patients, we also offer sedation options. Whether the procedure is simple or surgical, Dr. Lavi uses advanced techniques to minimize discomfort and ensure safe removal."
+        "text": "The extraction is performed right in our Valencia office using local anesthesia to fully numb the area. For anxious patients, we also offer sedation options. Whether the procedure is simple or surgical, your dentist uses advanced techniques to minimize discomfort and ensure safe removal."
       },
       {
         "title": "Guided Recovery & Follow-Up",
@@ -187,7 +187,7 @@
     "oral-surgery"
   ],
   "cta": {
-    "heading": "Talk with Dr. Lavi about tooth extractions",
+    "heading": "Talk with our team about tooth extractions",
     "text": "Come in for a relaxed consultation in our Valencia office. Call (661) 254-5200 or book online.",
     "buttonLabel": "Book a consultation"
   },

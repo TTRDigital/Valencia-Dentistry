@@ -25,7 +25,7 @@ export async function StatBand({ dark, className }: { dark?: boolean; className?
   const items: { value: ReactNode; label: string; icon: ReactNode }[] = [
     { value: <><CountUp value={site.rating.value} decimals={1} /><Icon.star className="ml-1.5 inline h-6 w-6 -translate-y-1 text-amber-400" /></>, label: "Google rating", icon: <Icon.google className="h-5 w-5" /> },
     { value: <CountUp value={site.rating.count} />, label: "Google reviews from local patients", icon: <Icon.heart className="h-5 w-5" /> },
-    { value: <CountUp value={treatments} />, label: "Treatments in one office, planned by Dr. Lavi", icon: <Icon.tooth className="h-5 w-5" /> },
+    { value: <CountUp value={treatments} />, label: "Treatments under one roof", icon: <Icon.tooth className="h-5 w-5" /> },
     { value: "PPO", label: "Most PPO plans accepted, benefits checked for you", icon: <Icon.shield className="h-5 w-5" /> },
   ];
   return (

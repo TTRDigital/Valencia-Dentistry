@@ -183,7 +183,7 @@ export type Page = {
 
 export type NavGroup = { title: string; description?: string; href?: string; items: Link[] };
 export type Navigation = {
-  header: { label: string; href: string; mega?: boolean }[];
+  header: { label: string; href: string; mega?: boolean; children?: { label: string; href: string }[] }[];
   serviceGroups: NavGroup[];
   footer: { title: string; items: Link[] }[];
   legal: Link[];
