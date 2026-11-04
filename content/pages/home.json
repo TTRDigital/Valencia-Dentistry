@@ -10,14 +10,14 @@
     {
       "_type": "hero",
       "variant": "home",
-      "heading": "Calm, modern dentistry in Valencia",
-      "lead": "Invisalign, veneers, cosmetic dentistry and implants at Valencia Dentistry, on Tourney Road in Santa Clarita.",
+      "heading": "Calm, Modern Dentistry",
+      "lead": "Holistic, cosmetic, restorative and family dentistry on Tourney Road in Santa Clarita.",
       "primary": {
-        "label": "Book now",
+        "label": "Schedule Appointment",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
       },
       "secondary": {
-        "label": "Call us",
+        "label": "Call (661) 254-5200",
         "href": "tel:+16612545200"
       },
       "image": {
@@ -25,60 +25,56 @@
         "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
       },
       "trust": false,
-      "mobileImage": {
-        "src": "/images/team/dr-lavi-portrait.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
-      }
+      "typed": "In The Heart Of Valencia"
     },
     {
-      "_type": "featuredServices",
-      "eyebrow": "Our services",
-      "heading": "Precise dentistry, thoughtfully delivered",
-      "lead": "From routine cleanings to complete smile makeovers, planned with 3D imaging in our office.",
-      "slugs": [
-        "dental-implants",
-        "invisalign",
-        "veneers",
-        "cosmetic-dentistry",
-        "teeth-whitening"
-      ],
-      "featuredTags": [
-        "3D CBCT planning",
-        "Guided surgery",
-        "Single tooth to full arch"
-      ],
-      "consult": {
-        "heading": "Book a consultation.",
-        "text": "We'll build a plan around your goals, timeline and budget. Same-day appointments when possible.",
-        "buttonLabel": "Book a consultation"
-      },
-      "images": {
-        "dental-implants": {
-          "src": "/images/real/implant-model-hands.jpg",
-          "alt": "Showing a patient a dental implant model at Valencia Dentistry"
+      "_type": "photoTrio",
+      "heading": "Exceptional Smiles. Only at Valencia Dentistry.",
+      "lead": "Our team is here to give you a smile you're genuinely proud of, planned carefully and done right the first time.",
+      "items": [
+        {
+          "title": "Planned Before We Begin",
+          "text": "3D imaging and digital smile design let you see the plan on screen before any treatment starts.",
+          "image": {
+            "src": "/images/real/smile-plan-screen.jpg",
+            "alt": "A digital smile plan on screen at Valencia Dentistry"
+          }
         },
-        "invisalign": {
-          "src": "/images/real/aligner-patient-2.jpg",
-          "alt": "A smiling patient with her clear aligner at Valencia Dentistry"
+        {
+          "title": "Holistic by Design",
+          "text": "Biocompatible, mercury-free materials and a whole-body view of your health guide every recommendation.",
+          "image": {
+            "src": "/images/real/treatment-room-2.jpg",
+            "alt": "A calm treatment room with natural light at Valencia Dentistry"
+          }
         },
-        "veneers": {
-          "src": "/images/real/tryin-smile.jpg",
-          "alt": "A patient smiling during a veneer try-in at Valencia Dentistry"
-        },
-        "cosmetic-dentistry": {
-          "src": "/images/real/veneer-smile-2.jpg",
-          "alt": "A patient checking her new smile in a mirror at Valencia Dentistry"
-        },
-        "teeth-whitening": {
-          "src": "/images/real/smile-design.jpg",
-          "alt": "A patient viewing her brighter smile design on screen at Valencia Dentistry"
+        {
+          "title": "Smiles That Look Like You",
+          "text": "Veneers, whitening and Invisalign planned around your features, so the result looks natural.",
+          "image": {
+            "src": "/images/real/veneer-smile-2.jpg",
+            "alt": "A patient checking her new smile in a mirror at Valencia Dentistry"
+          }
         }
+      ]
+    },
+    {
+      "_type": "photoBanner",
+      "heading": "Modern Dentistry, Close to Home",
+      "text": "Our mission is to care for the oral health and well-being of Santa Clarita families through comprehensive, compassionate and modern dentistry.",
+      "image": {
+        "src": "/images/real/treatment-room.jpg",
+        "alt": "A bright treatment room at Valencia Dentistry"
+      },
+      "link": {
+        "label": "About Valencia Dentistry",
+        "href": "/about/"
       }
     },
     {
       "_type": "techExplainer",
       "eyebrow": "Modern dentistry",
-      "heading": "The technology behind every smile",
+      "heading": "The Technology Behind Every Perfect Smile",
       "items": [
         {
           "label": "Advanced diagnostics",
@@ -118,24 +114,27 @@
       }
     },
     {
+      "_type": "beforeAfter",
+      "heading": "Before and After Photos",
+      "lead": "Real patients from our office, shown with their permission. Results vary from person to person."
+    },
+    {
       "_type": "newPatient",
       "eyebrow": "New patient special",
-      "heading": "Your first visit, done properly",
-      "text": "A real first appointment, not a quick look. You leave knowing exactly where your oral health stands and what, if anything, needs attention.",
+      "heading": "Exam, X-rays and cleaning for $99",
+      "text": "For new patients without dental insurance (regularly $285). Just mention the offer when you book.",
       "bullets": [
         "Comprehensive exam",
         "Full set of digital X-rays",
-        "Oral cancer screening",
-        "Gum health assessment",
-        "Written treatment plan and estimate",
-        "Time for all of your questions"
+        "Standard cleaning",
+        "Personalized treatment plan"
       ],
       "image": {
-        "src": "/images/real/treatment-room-2.jpg",
-        "alt": "A calm treatment room with natural light at Valencia Dentistry"
+        "src": "/images/real/cleaning.jpg",
+        "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
       },
-      "buttonLabel": "Book your first visit",
-      "fine": "Most PPO plans accepted; we check your benefits before your visit."
+      "buttonLabel": "Claim this offer",
+      "fine": "One-time offer for new patients. Cannot be combined with other offers. Expires 12/31/2026."
     },
     {
       "_type": "doctorIntro",
@@ -161,21 +160,45 @@
       "lead": "Most major PPO plans accepted. Pick your plan type and carrier to see where you stand; we verify your benefits before every visit."
     },
     {
-      "_type": "ctaBanner",
-      "heading": "Ready to transform your smile?",
-      "text": "A comprehensive exam and digital X-rays with your dentist, and a clear plan you can take home. Most PPO plans accepted.",
-      "image": {
-        "src": "/images/real/cleaning.jpg",
-        "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
-      },
-      "buttonLabel": "Book your first visit"
-    },
-    {
       "_type": "reviews",
       "eyebrow": "What patients say",
       "heading": "Trusted by Santa Clarita families",
       "lead": "Unedited Google reviews from people who sit in our chair.",
       "trust": true
+    },
+    {
+      "_type": "photoSteps",
+      "label": "Your first visit",
+      "items": [
+        {
+          "title": "Book Your Consultation",
+          "text": "Every great smile starts with a conversation. We listen to what you want and map out how to get you there.",
+          "image": {
+            "src": "/images/real/scan-hygienist.jpg",
+            "alt": "A digital scan with a hygienist at Valencia Dentistry"
+          },
+          "link": {
+            "label": "Book online",
+            "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+          }
+        },
+        {
+          "title": "Transform Your Smile",
+          "text": "Your treatment is planned on 3D imaging and done carefully, so the result looks natural and lasts.",
+          "image": {
+            "src": "/images/real/smile-plan-5.jpg",
+            "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
+          }
+        },
+        {
+          "title": "Feel the Difference",
+          "text": "Our care doesn't end when you leave the chair. Routine visits keep your smile healthy for years.",
+          "image": {
+            "src": "/images/real/veneer-smile.jpg",
+            "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
+          }
+        }
+      ]
     },
     {
       "_type": "visit",

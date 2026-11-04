@@ -94,7 +94,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                     <button
                       ref={triggerRef}
                       type="button"
-                      className={cn("nav-link relative flex min-h-11 items-center gap-1 px-3 text-[0.8125rem] font-semibold text-[var(--header-fg)] hover:text-[var(--header-accent)]", megaOpen && "text-[var(--header-accent)]")}
+                      className={cn("nav-link relative flex min-h-11 items-center gap-1 px-3 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]", megaOpen && "text-[var(--header-accent)]")}
                       data-active={isActive(item.href) || undefined}
                       aria-expanded={megaOpen}
                       aria-controls={megaId}
@@ -114,7 +114,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                   </li>
                 ) : item.children ? (
                   <li key={item.href} className="group relative">
-                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center gap-1 px-3 text-[0.8125rem] font-semibold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)} aria-haspopup="true">
+                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center gap-1 px-3 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)} aria-haspopup="true">
                       {item.label}
                       <Icon.chevron className="h-4 w-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
                     </Link>
@@ -128,7 +128,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                   </li>
                 ) : (
                   <li key={item.href}>
-                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center px-3 text-[0.8125rem] font-semibold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)}>
+                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center px-3 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)}>
                       {item.label}
                     </Link>
                   </li>

@@ -20,6 +20,7 @@ import { TreatmentPickerWithPhotos } from "./TreatmentPickerSection";
 import { ServiceShowcase } from "./ServiceShowcase";
 import { FeaturedServices, NewPatient, WhyChoose } from "./HomeBlocks";
 import { InsuranceChecker } from "./InsuranceCheckerSection";
+import { PhotoBanner, PhotoSteps, PhotoTrio } from "./HomeExtras";
 import { CtaBanner, Marquee, StatBand } from "@/components/rich/Blocks";
 import { Container, Section } from "@/components/ui/Section";
 
@@ -30,6 +31,9 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
         const key = `${s._type}-${i}`;
         switch (s._type) {
           case "featuredServices": return <FeaturedServices key={key} s={s} />;
+          case "photoTrio": return <PhotoTrio key={key} s={s} />;
+          case "photoBanner": return <PhotoBanner key={key} s={s} />;
+          case "photoSteps": return <PhotoSteps key={key} s={s} />;
           case "insuranceChecker": return <InsuranceChecker key={key} s={s} />;
           case "whyChoose": return <WhyChoose key={key} s={s} />;
           case "newPatient": return <NewPatient key={key} s={s} />;

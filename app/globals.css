@@ -43,26 +43,29 @@
   --font-sans: var(--font-urbanist), system-ui, sans-serif;
   --font-display: var(--font-urbanist), system-ui, sans-serif;
 
-  /* Type scale (Ideal style: compact, semibold headings, clamp between 390px and 1440px) */
+  /* Type scale: matched to Beverly Hills Dental and Ideal Dental Solutions (measured, same on phones):
+     page title 34px, section heading 24px, card title 20px, body 16px, menu 15px bold caps, buttons 15px */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-base--line-height: 1.65;
-  --text-md: 1.0625rem;
-  --text-lg: clamp(1.0625rem, 1rem + 0.25vw, 1.125rem);
-  --text-lg--line-height: 1.6;
-  --text-xl: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
-  --text-xl--line-height: 1.45;
-  --text-2xl: clamp(1.1875rem, 1.1rem + 0.35vw, 1.375rem);
-  --text-2xl--line-height: 1.3;
-  --text-3xl: clamp(1.625rem, 1.3rem + 1vw, 2.25rem);
-  --text-3xl--line-height: 1.15;
-  --text-4xl: clamp(2rem, 1.35rem + 2.3vw, 3.4rem);
-  --text-4xl--line-height: 1.06;
-  --text-5xl: clamp(2.5rem, 1.5rem + 3.4vw, 4.4rem);
-  --text-5xl--line-height: 1.02;
-  --text-6xl: clamp(2.85rem, 1.4rem + 5vw, 5.75rem);
-  --text-6xl--line-height: 0.98;
+  --text-md: 1rem;
+  --text-lg: 1rem;
+  --text-lg--line-height: 1.65;
+  --text-xl: 1.125rem;
+  --text-xl--line-height: 1.5;
+  --text-2xl: 1.25rem;
+  --text-2xl--line-height: 1.5;
+  --text-3xl: 1.25rem;
+  --text-3xl--line-height: 1.5;
+  --text-4xl: 1.5rem;
+  --text-4xl--line-height: 1.3;
+  --text-5xl: 2.125rem;
+  --text-5xl--line-height: 1.1;
+  --text-6xl: 2.125rem;
+  --text-6xl--line-height: 1.1;
+  --text-7xl: 2.125rem;
+  --text-8xl: 2.125rem;
 
   /* Radii: one small set. sm = tags and badges, md = buttons and fields, lg (and the xl–4xl aliases) = cards, panels, images */
   --radius-sm: 4px;
@@ -91,7 +94,7 @@
   :root {
     --display-settings: normal;
     --display-weight: 600;
-    --display-tracking: -0.025em;
+    --display-tracking: 0;
     --header-h: 72px;
     /* Motion tokens (used by every animation; reduced motion zeroes them below) */
     --dur-micro: 150ms;
@@ -167,7 +170,7 @@
   .eyebrow { @apply inline-flex items-center gap-2 text-[0.8125rem] font-bold uppercase tracking-[0.12em] text-olive-600; }
   .eyebrow::before { content: ""; @apply h-[2px] w-6 bg-current; }
   .dark-section .eyebrow, .on-dark .eyebrow { @apply text-bronze-300; }
-  .lead { @apply text-grey-700 text-lg; }
+  .lead { @apply text-grey-700 text-base; }
   .dark-section .lead, .on-dark .lead { @apply text-white/75; }
   .dark-section h1, .dark-section h2, .dark-section h3 { color: var(--color-white); }
 
@@ -194,7 +197,7 @@
   .dark-section .btn-primary, .on-dark .btn-primary { @apply bg-white text-olive-900; }
   .dark-section .btn-primary:hover, .on-dark .btn-primary:hover { @apply bg-sand-50; }
   .dark-section .btn-outline:hover, .on-dark .btn-outline:hover { @apply border-white bg-white/10; }
-  .btn-lg { @apply min-h-13 px-7 text-base; }
+  .btn-lg { @apply min-h-12 px-7 text-[0.9375rem]; }
   .btn-sm { @apply min-h-11 px-4 text-sm; }
   /* Text link with an arrow that nudges on hover (third button style) */
   .link-arrow { @apply inline-flex min-h-11 items-center gap-1.5 font-semibold text-olive-700 no-underline; }
@@ -244,7 +247,7 @@
 
   /* Header: always solid, a soft sage band with dark text (clean, like the reference the client chose). */
   .site-header { --header-fg: var(--color-ink-900); --header-accent: var(--color-olive-700); }
-  .nav-link { letter-spacing: 0.06em; text-transform: uppercase; }
+  .nav-link { letter-spacing: 0; text-transform: uppercase; }
   .header-bg { transition: transform var(--dur-std) var(--ease-enter); }
   .site-header svg path { transition: fill var(--dur-std) ease-out; }
 
@@ -354,10 +357,10 @@
 
   /* Outline display type and an extra-large size for statement lines */
   .text-outline { color: transparent; -webkit-text-stroke: 1.5px currentColor; }
-  .text-hero { font-size: clamp(2.375rem, 1.5rem + 3.4vw, 4.5rem); line-height: 1.05; letter-spacing: -0.03em; }
+  .text-hero { font-size: 2.125rem; line-height: 1.1; }
   .scroll-cue span { animation: cue 1.8s var(--ease-enter) infinite; }
   @keyframes cue { from { transform: translateY(-100%); } to { transform: translateY(200%); } }
-  .text-mega { font-size: clamp(3.4rem, 1rem + 9vw, 10rem); line-height: 0.92; letter-spacing: -0.035em; }
+  .text-mega { font-size: 2.125rem; line-height: 1.1; }
 
   /* First-visit story: the photo for the step being read (TimelineProgress sets data-current) */
   .step-photo { opacity: 0; transform: scale(1.04); transition: opacity 700ms var(--ease-enter), transform 1200ms var(--ease-enter); }
@@ -446,4 +449,27 @@
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { scrollbar-width: none; }
   .min-h-13 { min-height: 3.25rem; }
+}
+
+/* Typing caret for the home banner */
+@layer components {
+  .type-caret { display: inline-block; margin-left: 2px; font-weight: 300; animation: caret 1s steps(1) infinite; }
+  @keyframes caret { 50% { opacity: 0; } }
+}
+
+/* Technology cards (Agoura Hills style): lift, photo zoom and the description slides open on hover or tap */
+@layer components {
+  .tech-card { overflow: hidden; border-radius: 16px; background: var(--color-offwhite); border: 1px solid rgb(46 46 46 / 0.08); transition: transform 300ms, box-shadow 300ms, border-color 300ms; }
+  .tech-card .tech-photo { transition: transform 500ms; }
+  .tech-card .tech-desc { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 380ms, opacity 300ms, margin 300ms; }
+  .tech-card .tech-plus { transition: transform 300ms; }
+  .tech-card[data-open] .tech-desc { max-height: 12rem; opacity: 1; margin-top: 0.5rem; }
+  .tech-card[data-open] .tech-plus { transform: rotate(45deg); }
+  @media (hover: hover) and (pointer: fine) {
+    .tech-card:hover { transform: translateY(-5px); box-shadow: 0 20px 52px rgb(46 46 46 / 0.12); border-color: rgb(46 46 46 / 0.14); }
+    .tech-card:hover .tech-photo { transform: scale(1.04); }
+    .tech-card:hover .tech-desc { max-height: 12rem; opacity: 1; margin-top: 0.5rem; }
+    .tech-card:hover .tech-plus { transform: rotate(45deg); }
+  }
+  @media (prefers-reduced-motion: reduce) { .tech-card, .tech-card .tech-desc, .tech-card .tech-photo { transition: none; } }
 }

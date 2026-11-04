@@ -10,8 +10,8 @@ export async function BeforeAfter({ s }: { s: GallerySection }) {
   return (
     <Section className="bg-warm" id="transformations">
       <Container>
-        <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-        <div className="mt-12">
+        <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
+        <div className="mt-10">
           <CompareSlider cases={cases} />
         </div>
         <p className="mt-6 text-center text-sm text-grey-600">Patients shown with permission.</p>

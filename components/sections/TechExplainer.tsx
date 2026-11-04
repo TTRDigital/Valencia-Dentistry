@@ -1,42 +1,35 @@
 import Link from "next/link";
 import type { TechExplainerSection } from "@/lib/types";
-import { RichHeading } from "@/components/rich/Blocks";
-import { FeatureIcon } from "@/components/ui/FeatureIcon";
 import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
-import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
+import { TechCard } from "./TechCard";
 
 /**
- * Technology: clean cards, each with a photo (or an icon when there is none), a small label,
- * the name and what it means for the patient. Centered heading, optional link below.
+ * Technology, like the Agoura Hills reference: centered eyebrow and heading (last words in olive), then photo
+ * cards. Hover lifts the card, zooms the photo and slides the description open; on phones a tap opens it.
  */
 export function TechExplainer({ s }: { s: TechExplainerSection }) {
-  const withPhotos = s.items.some((it) => it.image);
+  const words = s.heading.split(" ");
+  const cut = Math.max(1, words.length - 2);
+  const cols = s.items.length % 4 === 0 ? "lg:grid-cols-4 lg:max-w-none" : "lg:grid-cols-3";
   return (
     <Section className="bg-warm" id="technology">
       <Container>
-        <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
-        <ul data-stagger className={`-mx-4 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:mt-10 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:mt-14 ${s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
+        <div className="text-center">
+          {s.eyebrow && <p className="eyebrow mb-3 justify-center">{s.eyebrow}</p>}
+          <h2>{words.slice(0, cut).join(" ")} <span className="text-olive-600">{words.slice(cut).join(" ")}</span></h2>
+          {s.lead && <p className="mx-auto mt-3 max-w-2xl text-grey-700">{s.lead}</p>}
+        </div>
+        <ul className={`mx-auto mt-10 grid max-w-[980px] gap-4 sm:grid-cols-2 ${cols}`}>
           {s.items.map((it) => (
-            <Reveal as="li" key={it.title} className="flex w-[80%] shrink-0 snap-start flex-col overflow-hidden rounded-xl bg-white ring-1 ring-ink-900/10 sm:w-auto">
-              {it.image ? (
-                <span className="relative block aspect-[3/2] overflow-hidden bg-greige-50">
-                  <Picture image={it.image} fill cropTo={3 / 2} sizes="(min-width: 1024px) 400px, (min-width: 640px) 45vw, 100vw" className="object-cover object-top" />
-                </span>
-              ) : withPhotos ? null : (
-                <span className="px-6 pt-6"><FeatureIcon name={it.icon} /></span>
-              )}
-              <span className="flex flex-1 flex-col p-6">
-                {it.label && <span className="text-xs font-semibold uppercase tracking-[0.12em] text-bronze-600">{it.label}</span>}
-                <span className="mt-1.5 text-xl font-semibold text-ink-900">{it.title}</span>
-                <span className="mt-2 text-grey-700">{it.text} {it.forYou}</span>
-              </span>
-            </Reveal>
+            <TechCard key={it.title} label={it.label} title={it.title} text={`${it.text} ${it.forYou}`}>
+              {it.image && <Picture image={it.image} fill cropTo={16 / 10} sizes="(min-width: 1024px) 330px, (min-width: 640px) 50vw, 100vw" className="tech-photo object-cover" />}
+            </TechCard>
           ))}
         </ul>
         {s.link && (
-          <p className="mt-10 text-center"><Link href={s.link.href} className="link-arrow">{s.link.label} <Icon.arrow className="h-4 w-4" /></Link></p>
+          <p className="mt-10 text-center"><Link href={s.link.href} className="inline-flex items-center gap-2 border-b border-ink-900/20 pb-0.5 text-sm font-semibold text-grey-700 hover:border-olive-600 hover:text-olive-700">{s.link.label} <Icon.arrow className="h-4 w-4" /></Link></p>
         )}
       </Container>
     </Section>

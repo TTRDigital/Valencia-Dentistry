@@ -135,7 +135,7 @@ export type LegalPage = {
 
 /* ---------- Flexible page sections ---------- */
 
-export type HeroSection = { _type: "hero"; mobileImage?: SiteImage; eyebrow?: string; heading: string; lead?: string; primary?: Link; secondary?: Link; image?: SiteImage; gallery?: SiteImage[]; variant?: "home" | "page" | "landing"; trust?: boolean };
+export type HeroSection = { _type: "hero"; mobileImage?: SiteImage; typed?: string; eyebrow?: string; heading: string; lead?: string; primary?: Link; secondary?: Link; image?: SiteImage; gallery?: SiteImage[]; variant?: "home" | "page" | "landing"; trust?: boolean };
 export type IntroSplitSection = { _type: "introSplit"; eyebrow?: string; heading: string; body: string[]; image: SiteImage; imageSide?: "left" | "right"; cta?: Link };
 export type FeatureGridSection = { _type: "featureGrid"; eyebrow?: string; heading: string; lead?: string; items: Feature[]; columns?: 2 | 3 | 4; dark?: boolean };
 export type ServiceCategoriesSection = { _type: "serviceCategories"; eyebrow?: string; heading: string; lead?: string; categories: { title: string; text: string; href?: string; items: Link[] }[] };
@@ -158,6 +158,9 @@ export type TreatmentPickerSection = { _type: "treatmentPicker"; eyebrow?: strin
 export type FirstVisitSection = { _type: "firstVisit"; eyebrow?: string; heading: string; lead?: string; steps: Step[]; cta?: Link; note?: string; images?: SiteImage[] };
 export type TechExplainerSection = { _type: "techExplainer"; eyebrow?: string; heading: string; lead?: string; dark?: boolean; image?: SiteImage; link?: Link; items: { title: string; text: string; forYou: string; icon?: string; label?: string; image?: SiteImage }[] };
 export type FeaturedServicesSection = { _type: "featuredServices"; eyebrow?: string; heading: string; lead?: string; slugs: string[]; images?: Record<string, SiteImage>; featuredTags?: string[]; consult?: { heading: string; text: string; buttonLabel: string } };
+export type PhotoTrioSection = { _type: "photoTrio"; heading: string; lead?: string; items: { title: string; text: string; image: SiteImage }[] };
+export type PhotoBannerSection = { _type: "photoBanner"; heading: string; text: string; image: SiteImage; link?: Link };
+export type PhotoStepsSection = { _type: "photoSteps"; label?: string; items: { title: string; text: string; image: SiteImage; link?: Link }[] };
 export type InsuranceCheckerSection = { _type: "insuranceChecker"; eyebrow?: string; heading: string; lead?: string };
 export type WhyChooseSection = { _type: "whyChoose"; eyebrow?: string; heading: string; lead?: string; image: SiteImage; items: Feature[] };
 export type NewPatientSection = { _type: "newPatient"; eyebrow?: string; heading: string; text: string; bullets: string[]; image?: SiteImage; buttonLabel?: string; fine?: string };
@@ -175,7 +178,8 @@ export type PageSection =
   | ValuesSection | FormSection | ServicesHubSection | InsuranceSection | OfferSection
   | TreatmentPickerSection | FirstVisitSection | TechExplainerSection | DoctorIntroSection | FocusAreasSection
   | ServiceShowcaseSection | StatBandSection | CtaBannerSection | MarqueeSection
-  | FeaturedServicesSection | WhyChooseSection | NewPatientSection | InsuranceCheckerSection;
+  | FeaturedServicesSection | WhyChooseSection | NewPatientSection | InsuranceCheckerSection
+  | PhotoTrioSection | PhotoBannerSection | PhotoStepsSection;
 
 export type Page = {
   slug: string;

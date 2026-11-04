@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Button } from "@/components/ui/Button";
 import { Picture } from "@/components/ui/Picture";
+import { TypeLoop } from "@/components/ui/TypeLoop";
 import { Icon } from "@/components/ui/Icons";
 import { cn } from "@/lib/utils";
 
@@ -41,29 +42,31 @@ export function StagedHeading({ text, accent = 2 }: { text: string; accent?: num
 
 export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; path: string }[] }) {
   if (s.variant === "home") {
-    // Desktop: one solid photo edge to edge, the words over the glass on its left (clear of his face).
-    // Phones: the photo stands on its own at the top (nothing over his face), the words sit below it on deep olive.
+    // Ideal Dental style: one full photo, words low on the left (clear of his face), a second line that types
+    // itself (Agoura Hills style), rating pill, one outline button. Phones: photo first, words below on olive.
     return (
-      <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white lg:flex lg:min-h-[680px] lg:items-center" aria-labelledby="hero-heading">
+      <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white lg:flex lg:min-h-[640px] lg:items-end" aria-labelledby="hero-heading">
         {s.image && (
           <div data-hero-media className="relative aspect-[4/3] w-full sm:aspect-[16/9] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto">
-            {/* The same photo as desktop, shown whole on phones (sharp, his face clear), fading into the olive below */}
             <Picture image={s.image} fill priority sizes="100vw" className="object-cover object-[60%_20%] lg:object-top" />
             <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-olive-900 lg:hidden" />
           </div>
         )}
-        <div aria-hidden="true" className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,rgba(91,107,90,0.92)_0%,rgba(91,107,90,0.7)_30%,rgba(91,107,90,0)_48%)]" />
-        <div className="container-x w-full pb-10 pt-2 lg:py-24">
-          <div className="hero-stage lg:max-w-[25rem] xl:max-w-[31rem]">
-            <h1 id="hero-heading" className="text-4xl text-white sm:text-5xl lg:text-[clamp(2.75rem,1.2rem+2.6vw,4rem)]"><StagedHeading text={s.heading} accent={0} /></h1>
-            {s.lead && <p className="mt-4 text-white/85 sm:text-lg lg:mt-5" data-stage="3">{s.lead}</p>}
-            <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap lg:mt-8" data-stage="4">
-              {s.primary && <Button href={s.primary.href} size="lg" variant="light" arrow className="px-4">{s.primary.label}</Button>}
-              {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg" className="px-4">{s.secondary.label}</Button>}
-            </div>
-            <p className="mt-6 inline-flex items-center gap-2 text-sm text-white/85" data-stage="5">
-              <Icon.google className="h-4 w-4" /> <strong className="font-semibold text-white">{site.rating.value}</strong> <Icon.star className="h-3.5 w-3.5 text-amber-400" /> {site.rating.count} Google reviews
+        <div aria-hidden="true" className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,rgba(91,107,90,0.92)_0%,rgba(91,107,90,0.6)_32%,rgba(91,107,90,0)_50%)]" />
+        <div className="container-x w-full pb-10 pt-2 lg:pb-24">
+          <div className="hero-stage lg:max-w-[30rem]">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm text-white/90 ring-1 ring-white/25" data-stage="0">
+              <span className="text-amber-300" aria-hidden="true">★★★★★</span> {site.rating.value} · {site.rating.count} Google reviews
             </p>
+            <h1 id="hero-heading" className="text-5xl text-white">
+              {s.heading}
+              {s.typed && <><br /><TypeLoop text={s.typed} className="text-white/75" /></>}
+            </h1>
+            {s.lead && <p className="mt-4 text-white/85" data-stage="3">{s.lead}</p>}
+            <div className="mt-6 flex flex-wrap gap-3" data-stage="4">
+              {s.primary && <a href={s.primary.href} target="_blank" rel="noopener noreferrer" className="btn border border-white text-white hover:bg-white hover:text-olive-900">{s.primary.label}</a>}
+              {s.secondary && <Button href={s.secondary.href} variant="light">{s.secondary.label}</Button>}
+            </div>
           </div>
         </div>
       </section>
