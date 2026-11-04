@@ -4,6 +4,7 @@ import { site } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Button } from "@/components/ui/Button";
+import { Picture } from "@/components/ui/Picture";
 import { Icon } from "@/components/ui/Icons";
 import { cn } from "@/lib/utils";
 
@@ -40,25 +41,30 @@ export function StagedHeading({ text, accent = 2 }: { text: string; accent?: num
 
 export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; path: string }[] }) {
   if (s.variant === "home") {
-    // Clean and calm: one headline, one line of support, two actions, one photo. Nothing else competes.
+    // One solid photo with the words over it (Dr. Lavi stands left of centre, so the text sits on the right).
+    // Phones: the photo fills the screen and the text sits on a dark fade at the bottom.
     return (
-      <section data-hero="light" className="relative isolate overflow-hidden bg-[linear-gradient(180deg,#eef1ea_0%,#fafaf4_100%)]" aria-labelledby="hero-heading">
-        <div className="container-x grid w-full items-center gap-10 pb-14 pt-10 lg:grid-cols-12 lg:gap-16 lg:pb-24 lg:pt-16">
-          <div className="hero-stage lg:col-span-7">
-            {s.eyebrow && <p className="eyebrow mb-5" data-stage="0">{s.eyebrow}</p>}
-            <h1 id="hero-heading" className="text-hero max-w-[15ch]"><StagedHeading text={s.heading} accent={3} /></h1>
-            {s.lead && <p className="mt-6 max-w-[34rem] text-lg text-grey-700 sm:text-xl" data-stage="3">{s.lead}</p>}
+      <section data-hero="dark" className="on-dark relative isolate flex min-h-[calc(100svh-72px)] items-end overflow-hidden bg-ink-900 text-white lg:min-h-[640px] lg:items-center" aria-labelledby="hero-heading">
+        {s.image && (
+          <div data-hero-media className="absolute inset-0 -z-20 lg:right-auto lg:w-[64%]">
+            {/* Phones get a portrait photo (sharp at full height); desktop shows the wide one across the left two thirds, fading into the dark panel the words sit on */}
+            {s.mobileImage && <Picture image={s.mobileImage} fill priority sizes="(max-width: 1023px) 100vw, 1px" className="object-cover object-top lg:hidden" />}
+            <Picture image={s.image} fill priority sizes="(min-width: 1024px) 64vw, 1px" className={s.mobileImage ? "hidden object-cover object-top lg:block" : "object-cover object-top"} />
+          </div>
+        )}
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(18,18,16,0)_30%,rgba(18,18,16,0.88)_72%)] lg:bg-[linear-gradient(90deg,rgba(28,28,26,0)_0%,rgba(28,28,26,0)_38%,rgba(28,28,26,0.85)_56%,#1c1c1a_64%)]" />
+        <div className="container-x w-full pb-28 pt-16 lg:py-24">
+          <div className="hero-stage lg:ml-auto lg:max-w-[30rem]">
+            <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm ring-1 ring-white/20 backdrop-blur-sm" data-stage="0">
+              <Icon.google className="h-4 w-4" /> <strong className="font-semibold">{site.rating.value}</strong> <Icon.star className="h-3.5 w-3.5 text-amber-400" /> {site.rating.count} Google reviews
+            </p>
+            <h1 id="hero-heading" className="text-5xl text-white"><StagedHeading text={s.heading} accent={0} /></h1>
+            {s.lead && <p className="mt-5 text-lg text-white/85" data-stage="3">{s.lead}</p>}
             <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
-              {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
+              {s.primary && <Button href={s.primary.href} size="lg" variant="light" arrow>{s.primary.label}</Button>}
               {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
             </div>
-            {s.trust && <div data-stage="5"><TrustRow className="mt-8" /></div>}
           </div>
-          {s.image && (
-            <div data-hero-media className="relative mx-auto w-full max-w-[340px] sm:max-w-[400px] lg:col-span-5 lg:max-w-[460px]">
-              <PhotoFrame image={s.image} priority sizes="(min-width: 1024px) 460px, 90vw" frameClassName="rounded-2xl shadow-lift" />
-            </div>
-          )}
         </div>
       </section>
     );

@@ -10,274 +10,97 @@
     {
       "_type": "hero",
       "variant": "home",
-      "eyebrow": "Dentist in Valencia · Santa Clarita",
-      "heading": "Valencia Dentistry: your home for calm, holistic dentistry.",
-      "lead": "Holistic, integrative care with modern technology, in a calm office on Tourney Road. Implants, cosmetic and family dentistry under one roof.",
+      "heading": "Calm, modern dentistry in Valencia",
+      "lead": "Invisalign, veneers, cosmetic dentistry and implants at Valencia Dentistry, on Tourney Road in Santa Clarita.",
       "primary": {
-        "label": "Book now",
+        "label": "Book an appointment",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
       },
       "secondary": {
-        "label": "Explore services",
-        "href": "/services/"
+        "label": "Call (661) 254-5200",
+        "href": "tel:+16612545200"
       },
       "image": {
         "src": "/images/team/dr-lavi-outdoor.jpg",
         "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
       },
-      "trust": true,
-      "gallery": [
-        {
-          "src": "/images/real/smile-plan.jpg",
-          "alt": "Reviewing a smile plan on screen at Valencia Dentistry"
-        },
-        {
-          "src": "/images/real/scan-intraoral.jpg",
-          "alt": "A digital intraoral scan at Valencia Dentistry"
+      "trust": false,
+      "mobileImage": {
+        "src": "/images/team/dr-lavi-portrait.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
+      }
+    },
+    {
+      "_type": "featuredServices",
+      "eyebrow": "Our services",
+      "heading": "Smiles we create every day",
+      "lead": "Clear aligners, veneers, cosmetic care and implants, planned with 3D imaging in our office.",
+      "slugs": [
+        "invisalign",
+        "veneers",
+        "cosmetic-dentistry",
+        "dental-implants"
+      ],
+      "images": {
+        "cosmetic-dentistry": {
+          "src": "/images/real/mirror-smile.jpg",
+          "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
         }
-      ]
+      }
     },
     {
-      "_type": "marquee",
-      "dark": true,
-      "items": [
-        "Dental implants",
-        "All-on-4 implants",
-        "Veneers",
-        "Invisalign",
-        "Dental crowns",
-        "Teeth whitening",
-        "Holistic dentistry",
-        "TMJ care"
-      ]
+      "_type": "newPatient",
+      "eyebrow": "New patient special",
+      "heading": "Your first visit, done properly",
+      "text": "A real first appointment, not a quick look. You leave knowing exactly where your oral health stands and what, if anything, needs attention.",
+      "bullets": [
+        "Comprehensive exam",
+        "Full set of digital X-rays",
+        "Oral cancer screening",
+        "Gum health assessment",
+        "Written treatment plan and estimate",
+        "Time for all of your questions"
+      ],
+      "image": {
+        "src": "/images/real/consult-seated.jpg",
+        "alt": "A new patient consultation at Valencia Dentistry"
+      },
+      "buttonLabel": "Book your first visit",
+      "fine": "Most PPO plans accepted; we check your benefits before your visit."
     },
     {
-      "_type": "treatmentPicker",
-      "eyebrow": "Start here",
-      "heading": "What's bringing you in?",
-      "lead": "Choose what's on your mind and we'll show you where to start. Or call (661) 254-5200 and talk it through with our front desk.",
-      "options": [
-        {
-          "id": "missing",
-          "label": "Missing teeth",
-          "title": "Replacing one tooth, several, or a full arch",
-          "text": "Your dentist plans every implant on a 3D CBCT scan, so you know how much bone you have and what your real options are before anything begins. If an implant isn't the right fit, a fixed bridge may be.",
-          "links": [
-            {
-              "label": "Dental implants",
-              "href": "/services/dental-implants/",
-              "description": "One tooth or several"
-            },
-            {
-              "label": "All-on-4 implants",
-              "href": "/services/oral-surgery/all-on-4-implants/",
-              "description": "A full arch on four implants"
-            },
-            {
-              "label": "Dental bridges",
-              "href": "/services/restorative-dentistry/dental-bridges/",
-              "description": "A fixed, non-surgical option"
-            },
-            {
-              "label": "Bone grafting",
-              "href": "/services/oral-surgery/bone-grafting/",
-              "description": "When there isn't enough bone yet"
-            }
-          ]
-        },
-        {
-          "id": "chipped",
-          "label": "Chipped or worn teeth",
-          "title": "Repairing chips, cracks and worn edges",
-          "text": "Small chips can often be repaired with tooth-colored bonding. Larger breaks or worn-down teeth usually need a crown, which we design and make in house, often in a single visit. Veneers can reshape several front teeth at once.",
-          "links": [
-            {
-              "label": "Dental crowns",
-              "href": "/services/dental-crowns/",
-              "description": "Often finished the same day"
-            },
-            {
-              "label": "Veneers",
-              "href": "/services/cosmetic-dentistry/veneers/",
-              "description": "Shape and color for front teeth"
-            },
-            {
-              "label": "Composite fillings",
-              "href": "/services/cosmetic-dentistry/composite-filling/",
-              "description": "Tooth-colored, mercury-free"
-            }
-          ]
-        },
-        {
-          "id": "crooked",
-          "label": "Crooked or crowded teeth",
-          "title": "Straightening without metal braces",
-          "text": "Invisalign clear aligners are planned from an iTero digital scan, with no impression trays. How long it takes depends on your bite; your dentist gives you a realistic estimate at your consultation.",
-          "links": [
-            {
-              "label": "Invisalign",
-              "href": "/services/cosmetic-dentistry/invisalign/",
-              "description": "Clear aligners"
-            },
-            {
-              "label": "Cosmetic dentistry",
-              "href": "/services/cosmetic-dentistry/",
-              "description": "All smile options"
-            }
-          ]
-        },
-        {
-          "id": "jaw",
-          "label": "Jaw pain or headaches",
-          "title": "Relief for a sore, clicking or tired jaw",
-          "text": "Morning jaw soreness, clicking or tension headaches can come from the jaw joint or from grinding at night. We start with a careful look at your bite and joint, then talk through options such as a custom night guard.",
-          "links": [
-            {
-              "label": "TMJ treatments",
-              "href": "/tmj-treatments/",
-              "description": "Night guards and bite care"
-            },
-            {
-              "label": "Holistic dentistry",
-              "href": "/services/holistic-dentistry/",
-              "description": "A whole-body view"
-            }
-          ]
-        },
-        {
-          "id": "nervous",
-          "label": "Nervous about the dentist",
-          "title": "Going at your pace",
-          "text": "Nothing happens without an explanation first. Tell us how you feel at the start; sedation options are available when appropriate.",
-          "links": [
-            {
-              "label": "Your first visit",
-              "href": "#first-visit",
-              "description": "What happens at your first exam"
-            },
-            {
-              "label": "Holistic dentistry",
-              "href": "/services/holistic-dentistry/",
-              "description": "Calm, whole-body care"
-            }
-          ]
-        },
-        {
-          "id": "pain",
-          "label": "Toothache or a broken tooth",
-          "title": "In pain right now",
-          "text": "Call (661) 254-5200 as early as you can. Same-day appointments are often available for pain, swelling or a broken tooth, Monday to Friday, 8am to 5pm.",
-          "links": [
-            {
-              "label": "Emergency dental care",
-              "href": "/emergency-dental/",
-              "description": "What to do right now"
-            },
-            {
-              "label": "Tooth extractions",
-              "href": "/services/oral-surgery/tooth-extractions/",
-              "description": "When a tooth can't be saved"
-            },
-            {
-              "label": "Wisdom teeth removal",
-              "href": "/services/oral-surgery/wisdom-teeth-removal/",
-              "description": "Planned with 3D imaging"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "_type": "featureGrid",
+      "_type": "whyChoose",
       "eyebrow": "Why Valencia Dentistry",
       "heading": "Why patients choose Valencia Dentistry",
       "lead": "One office for the whole family, from cleanings to implants, with the time and technology to do it well.",
-      "columns": 3,
+      "image": {
+        "src": "/images/real/treatment-room.jpg",
+        "alt": "A treatment room at Valencia Dentistry"
+      },
       "items": [
         {
-          "icon": "calendar",
           "title": "Same-day care when possible",
           "text": "Weekday appointments, and we fit in patients in pain as quickly as we can."
         },
         {
-          "icon": "tooth",
           "title": "Complete care under one roof",
           "text": "Preventive, cosmetic, restorative and surgical dentistry in the same office."
         },
         {
-          "icon": "tech",
           "title": "Modern technology",
           "text": "3D CBCT imaging, digital X-rays and iTero scans, so plans are precise and easy to understand."
         },
         {
-          "icon": "sparkle",
           "title": "Same-day crowns",
           "text": "Crowns made in our office, often finished in a single visit."
         },
         {
-          "icon": "leaf",
           "title": "Holistic options",
           "text": "Biocompatible, mercury-free materials and a whole-body approach to your care."
         },
         {
-          "icon": "shield",
           "title": "Insurance made simple",
           "text": "Most PPO plans accepted. We check your benefits before you come in and offer flexible financing."
-        }
-      ]
-    },
-    {
-      "_type": "firstVisit",
-      "eyebrow": "Your first visit",
-      "heading": "What happens at your first visit",
-      "lead": "No rush and no surprises. Here is exactly what to expect when you come in for your new patient exam.",
-      "steps": [
-        {
-          "title": "Before you arrive",
-          "text": "We check your PPO benefits ahead of time. Park free on site; Suite 240 is on the second floor, and the building has an elevator."
-        },
-        {
-          "title": "A short health history",
-          "text": "Arrive a few minutes early with a photo ID, your insurance card and a list of the medications you take."
-        },
-        {
-          "title": "Digital X-rays",
-          "text": "Low-radiation digital X-rays show what can't be seen in the chair, and appear on screen right away."
-        },
-        {
-          "title": "An unhurried exam with your dentist",
-          "text": "Teeth, gums and bite, plus an oral cancer screening. He explains what he sees as he goes."
-        },
-        {
-          "title": "A plan you can take home",
-          "text": "Your options, what is urgent and what can wait, a written estimate, and time for every question."
-        }
-      ],
-      "cta": {
-        "label": "Book your first visit",
-        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
-      },
-      "note": "Your first visit includes a comprehensive exam and X-rays.",
-      "images": [
-        {
-          "src": "/images/real/treatment-room.jpg",
-          "alt": "A treatment room at Valencia Dentistry"
-        },
-        {
-          "src": "/images/real/consult-seated.jpg",
-          "alt": "Talking through health history in the chair"
-        },
-        {
-          "src": "/images/real/xray-explain.jpg",
-          "alt": "Digital X-rays explained on screen"
-        },
-        {
-          "src": "/images/real/loupes.jpg",
-          "alt": "A careful exam with dental loupes"
-        },
-        {
-          "src": "/images/real/smile-plan-3.jpg",
-          "alt": "Going over a treatment plan together"
         }
       ]
     },
@@ -286,6 +109,78 @@
       "eyebrow": "Real cases",
       "heading": "Results from patients in our office",
       "lead": "Drag the handle to compare each smile before and after treatment. Results vary from person to person."
+    },
+    {
+      "_type": "techExplainer",
+      "eyebrow": "Modern dentistry",
+      "heading": "The technology behind every smile",
+      "items": [
+        {
+          "label": "Advanced diagnostics",
+          "title": "3D CBCT imaging",
+          "text": "A three-dimensional view of teeth, bone and nerves.",
+          "forYou": "Implants and wisdom teeth are planned with fewer surprises.",
+          "image": {
+            "src": "/images/real/xray-explain.jpg",
+            "alt": "Reviewing 3D imaging on screen at Valencia Dentistry"
+          }
+        },
+        {
+          "label": "Digital impressions",
+          "title": "iTero digital scanning",
+          "text": "Digital impressions instead of trays of putty.",
+          "forYou": "You see your scan on screen right away.",
+          "image": {
+            "src": "/images/real/scan-intraoral.jpg",
+            "alt": "A digital iTero scan at Valencia Dentistry"
+          }
+        },
+        {
+          "label": "Low radiation",
+          "title": "Digital X-rays",
+          "text": "Instant images with low radiation.",
+          "forYou": "Quicker answers in the chair, with less exposure.",
+          "image": {
+            "src": "/images/real/implant-xray.jpg",
+            "alt": "Explaining a digital X-ray to a patient at Valencia Dentistry"
+          }
+        }
+      ],
+      "dark": false,
+      "link": {
+        "label": "Explore all our technology",
+        "href": "/about/#technology"
+      }
+    },
+    {
+      "_type": "doctorIntro",
+      "eyebrow": "Our lead dentist",
+      "heading": "Meet Dr. Nuriel Lavi, DDS",
+      "image": {
+        "src": "/images/team/dr-lavi-portrait.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS"
+      },
+      "body": [
+        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
+        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
+      ],
+      "points": [
+        "Unhurried visits, no surprises",
+        "3D imaging before implants and surgery",
+        "Holistic, whole-body approach",
+        "Crowns made in house, often same day"
+      ],
+      "cta": {
+        "label": "More about the practice",
+        "href": "/about/"
+      }
+    },
+    {
+      "_type": "reviews",
+      "eyebrow": "What patients say",
+      "heading": "Trusted by Santa Clarita families",
+      "lead": "Unedited Google reviews from people who sit in our chair.",
+      "trust": true
     },
     {
       "_type": "focusAreas",
@@ -330,85 +225,6 @@
           }
         }
       ]
-    },
-    {
-      "_type": "techExplainer",
-      "eyebrow": "Technology",
-      "heading": "The technology in our office, and what it means for you",
-      "lead": "Tap or hover over each one to see why it matters at your visit.",
-      "items": [
-        {
-          "icon": "tech",
-          "title": "3D CBCT imaging",
-          "text": "A three-dimensional view of teeth, bone and nerves.",
-          "forYou": "Implants and wisdom teeth are planned with fewer surprises."
-        },
-        {
-          "icon": "sparkle",
-          "title": "iTero digital scanning",
-          "text": "Digital impressions instead of trays of putty.",
-          "forYou": "No gag-inducing impression material, and you see your scan on screen."
-        },
-        {
-          "icon": "shield",
-          "title": "Digital X-rays",
-          "text": "Instant images with low radiation.",
-          "forYou": "Quicker answers in the chair, with less exposure."
-        },
-        {
-          "icon": "bolt",
-          "title": "Crowns made in house",
-          "text": "Crowns designed and made here in the office.",
-          "forYou": "Many crowns are finished in one visit, without a temporary."
-        },
-        {
-          "icon": "leaf",
-          "title": "PRF therapy",
-          "text": "Platelet-rich fibrin made from a small sample of your own blood.",
-          "forYou": "Used after extractions, grafting and implants to support healing."
-        },
-        {
-          "icon": "smile",
-          "title": "Intraoral cameras",
-          "text": "Close-up photos of your teeth.",
-          "forYou": "You see exactly what your dentist sees before you decide anything."
-        }
-      ],
-      "image": {
-        "src": "/images/real/scan-intraoral.jpg",
-        "alt": "A digital intraoral scan at Valencia Dentistry"
-      },
-      "dark": true
-    },
-    {
-      "_type": "doctorIntro",
-      "eyebrow": "Our lead dentist",
-      "heading": "Meet Dr. Nuriel Lavi, DDS",
-      "image": {
-        "src": "/images/team/dr-lavi-portrait.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS"
-      },
-      "body": [
-        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
-        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
-      ],
-      "points": [
-        "Unhurried visits, no surprises",
-        "3D imaging before implants and surgery",
-        "Holistic, whole-body approach",
-        "Crowns made in house, often same day"
-      ],
-      "cta": {
-        "label": "More about the practice",
-        "href": "/about/"
-      }
-    },
-    {
-      "_type": "reviews",
-      "eyebrow": "What patients say",
-      "heading": "Trusted by Santa Clarita families",
-      "lead": "Unedited Google reviews from people who sit in our chair.",
-      "trust": true
     },
     {
       "_type": "insurance"

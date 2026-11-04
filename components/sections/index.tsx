@@ -18,6 +18,7 @@ import { FocusAreas } from "./FocusAreas";
 import { TechExplainer } from "./TechExplainer";
 import { TreatmentPickerWithPhotos } from "./TreatmentPickerSection";
 import { ServiceShowcase } from "./ServiceShowcase";
+import { FeaturedServices, NewPatient, WhyChoose } from "./HomeBlocks";
 import { CtaBanner, Marquee, StatBand } from "@/components/rich/Blocks";
 import { Container, Section } from "@/components/ui/Section";
 
@@ -27,6 +28,9 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
       {sections.map((s, i) => {
         const key = `${s._type}-${i}`;
         switch (s._type) {
+          case "featuredServices": return <FeaturedServices key={key} s={s} />;
+          case "whyChoose": return <WhyChoose key={key} s={s} />;
+          case "newPatient": return <NewPatient key={key} s={s} />;
           case "serviceShowcase": return <ServiceShowcase key={key} s={s} />;
           case "marquee": return <div key={key} className={s.dark ? "bg-ink-900 py-6 sm:py-10" : "border-y border-ink-900/10 bg-warm py-6"}><Marquee items={s.items} dark={s.dark} />{s.items2 && <Marquee items={s.items2} dark={s.dark} outline reverse />}</div>;
           case "statBand": return <Section key={key} tight className="bg-warm"><Container><StatBand /></Container></Section>;
