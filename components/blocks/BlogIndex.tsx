@@ -34,7 +34,7 @@ export function BlogIndex({ posts, page = 1, categories }: { posts: PostSummary[
         <ul className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 md:mx-0 md:flex-wrap md:px-0" aria-label="Categories">
           {["All", ...categories].map((c) => (
             <li key={c}>
-              <button type="button" onClick={() => setCat(c)} aria-pressed={cat === c} className={cn("inline-flex min-h-11 shrink-0 items-center rounded-full border px-4 text-sm font-medium transition-colors", cat === c ? "border-ink-900 bg-ink-900 text-white" : "hairline bg-white text-ink-900 hover:border-olive-600")}>
+              <button type="button" onClick={() => setCat(c)} aria-pressed={cat === c} className={cn("inline-flex min-h-11 shrink-0 items-center rounded-full border px-4 text-sm font-medium transition-colors", cat === c ? "border-ink-900 bg-olive-900 text-white" : "hairline bg-white text-ink-900 hover:border-olive-600")}>
                 {c}
               </button>
             </li>
@@ -57,7 +57,7 @@ export function BlogIndex({ posts, page = 1, categories }: { posts: PostSummary[
       {!filtering && total > 1 && (
         <nav aria-label="Pagination" className="mt-12 flex items-center justify-center gap-2">
           {Array.from({ length: total }, (_, i) => i + 1).map((n) => (
-            <Link key={n} href={n === 1 ? "/category/blogs/" : `/category/blogs/page/${n}/`} aria-current={n === page ? "page" : undefined} className={cn("inline-flex h-11 w-11 items-center justify-center rounded-full border text-sm font-semibold", n === page ? "border-ink-900 bg-ink-900 text-white" : "hairline bg-white text-ink-900 hover:border-olive-600")}>
+            <Link key={n} href={n === 1 ? "/category/blogs/" : `/category/blogs/page/${n}/`} aria-current={n === page ? "page" : undefined} className={cn("inline-flex h-11 w-11 items-center justify-center rounded-full border text-sm font-semibold", n === page ? "border-ink-900 bg-olive-900 text-white" : "hairline bg-white text-ink-900 hover:border-olive-600")}>
               {n}
             </Link>
           ))}

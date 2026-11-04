@@ -23,7 +23,7 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
           {photos.length > 0 && (
             <div className="sticky top-[68px] z-10 -mx-4 bg-white px-4 pb-4 pt-2 sm:mx-0 sm:px-0 lg:static lg:col-span-6 lg:bg-transparent lg:p-0">
               <div className="lg:sticky lg:top-28">
-                <div className="relative overflow-hidden rounded-lg bg-ink-900 shadow-lift" style={{ aspectRatio: "3 / 2" }}>
+                <div className="relative overflow-hidden rounded-lg bg-olive-900 shadow-lift" style={{ aspectRatio: "3 / 2" }}>
                   {photos.map((img, i) => (
                     <Picture key={img.src} image={img} fill sizes="(min-width: 1024px) 600px, 100vw" data-i={i} className="step-photo object-cover" />
                   ))}

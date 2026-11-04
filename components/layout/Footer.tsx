@@ -17,18 +17,18 @@ export function Footer({ nav }: { nav: Navigation }) {
     <footer className="dark-section mt-auto pb-24 lg:pb-0">
       <div className="container-x pt-[var(--section-y-tight)]">
         {/* Closing call to action on every page */}
-        <div className="flex flex-col gap-8 border-b border-white/10 pb-14 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex flex-col gap-6 border-b border-white/10 pb-10 sm:gap-8 sm:pb-14 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="eyebrow mb-5">{site.newPatients.headline}</p>
-            <p className="font-display max-w-3xl text-6xl text-white">Book your visit at <em>Valencia Dentistry.</em></p>
+            <p className="font-display max-w-3xl text-4xl text-white sm:text-6xl">Book your visit at <em>Valencia Dentistry.</em></p>
           </div>
-          <div className="grid shrink-0 gap-3 sm:flex">
+          <div className="grid shrink-0 grid-cols-2 gap-3 sm:flex">
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Book online <Icon.arrow className="h-4 w-4" /></a>
             <a href={`tel:${site.phone.tel}`} className="btn btn-outline btn-lg"><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
           </div>
         </div>
-        <div className="mt-14 grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-3">
+        <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:mt-14 sm:gap-12 lg:grid-cols-12">
+          <div className="col-span-2 lg:col-span-3">
             <Link href="/" prefetch={false} className="inline-flex min-h-11 items-center rounded-md"><Logo inverted /></Link>
             <p className="mt-5 max-w-sm text-white/75">Comfortable, holistic dentistry for Valencia and Santa Clarita families, in a calm office on Tourney Road.</p>
             <div className="mt-6 flex items-center gap-2">
@@ -47,9 +47,9 @@ export function Footer({ nav }: { nav: Navigation }) {
                 {col.items.map((it) => (
                   <li key={it.href}>
                     {/^https?:/.test(it.href) ? (
-                      <a href={it.href} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 min-w-11 items-center text-white/80 hover:text-white hover:underline">{it.label}</a>
+                      <a href={it.href} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-10 min-w-11 items-center text-white/80 hover:text-white hover:underline">{it.label}</a>
                     ) : (
-                      <Link href={it.href} prefetch={false} className="inline-flex min-h-11 min-w-11 items-center text-white/80 hover:text-white hover:underline">{it.label}</Link>
+                      <Link href={it.href} prefetch={false} className="inline-flex min-h-10 min-w-11 items-center text-white/80 hover:text-white hover:underline">{it.label}</Link>
                     )}
                   </li>
                 ))}
@@ -57,7 +57,7 @@ export function Footer({ nav }: { nav: Navigation }) {
             </nav>
           ))}
 
-          <div className="lg:col-span-3">
+          <div className="col-span-2 lg:col-span-3">
             <p className="text-lg font-semibold text-white">Hours &amp; location</p>
             <address className="mt-4 space-y-3 not-italic text-white/80">
               <p className="flex gap-2.5"><Icon.pin className="mt-1 h-4 w-4 shrink-0 text-bronze-300" /><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-block py-1 hover:text-white hover:underline">{site.address.street}<br />{site.address.city}, {site.address.state} {site.address.zip}</a></p>

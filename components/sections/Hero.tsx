@@ -41,29 +41,29 @@ export function StagedHeading({ text, accent = 2 }: { text: string; accent?: num
 
 export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; path: string }[] }) {
   if (s.variant === "home") {
-    // One solid photo with the words over it (Dr. Lavi stands left of centre, so the text sits on the right).
-    // Phones: the photo fills the screen and the text sits on a dark fade at the bottom.
+    // Desktop: one solid photo edge to edge, the words over the glass on its left (clear of his face).
+    // Phones: the photo stands on its own at the top (nothing over his face), the words sit below it on deep olive.
     return (
-      <section data-hero="dark" className="on-dark relative isolate flex min-h-[calc(100svh-72px)] items-end overflow-hidden bg-ink-900 text-white lg:min-h-[680px] lg:items-center" aria-labelledby="hero-heading">
+      <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white lg:flex lg:min-h-[680px] lg:items-center" aria-labelledby="hero-heading">
         {s.image && (
-          <div data-hero-media className="absolute inset-0 -z-20">
-            {/* Phones get a portrait photo (sharp at full height); desktop shows the wide photo edge to edge with the words over the glass on its left, clear of his face */}
-            {s.mobileImage && <Picture image={s.mobileImage} fill priority sizes="(max-width: 1023px) 100vw, 1px" className="object-cover object-top lg:hidden" />}
+          <div data-hero-media className="relative aspect-[4/5] max-h-[58svh] w-full lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:max-h-none">
+            {s.mobileImage && <Picture image={s.mobileImage} fill priority sizes="(max-width: 1023px) 100vw, 1px" className="object-cover object-[50%_12%] lg:hidden" />}
             <Picture image={s.image} fill priority sizes="(min-width: 1024px) 100vw, 1px" className={s.mobileImage ? "hidden object-cover object-top lg:block" : "object-cover object-top"} />
+            <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-olive-900 lg:hidden" />
           </div>
         )}
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(18,18,16,0)_30%,rgba(18,18,16,0.88)_72%)] lg:bg-[linear-gradient(90deg,rgba(18,18,16,0.85)_0%,rgba(18,18,16,0.6)_30%,rgba(18,18,16,0)_48%)]" />
-        <div className="container-x w-full pb-28 pt-16 lg:py-24">
+        <div aria-hidden="true" className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,rgba(47,56,47,0.9)_0%,rgba(47,56,47,0.65)_30%,rgba(47,56,47,0)_48%)]" />
+        <div className="container-x w-full pb-10 pt-2 lg:py-24">
           <div className="hero-stage lg:max-w-[25rem] xl:max-w-[31rem]">
-            <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm ring-1 ring-white/20 backdrop-blur-sm" data-stage="0">
-              <Icon.google className="h-4 w-4" /> <strong className="font-semibold">{site.rating.value}</strong> <Icon.star className="h-3.5 w-3.5 text-amber-400" /> {site.rating.count} Google reviews
-            </p>
-            <h1 id="hero-heading" className="text-5xl text-white lg:text-[clamp(2.75rem,1.2rem+2.6vw,4rem)]"><StagedHeading text={s.heading} accent={0} /></h1>
-            {s.lead && <p className="mt-5 text-lg text-white/85" data-stage="3">{s.lead}</p>}
-            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
-              {s.primary && <Button href={s.primary.href} size="lg" variant="light" arrow>{s.primary.label}</Button>}
-              {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
+            <h1 id="hero-heading" className="text-4xl text-white sm:text-5xl lg:text-[clamp(2.75rem,1.2rem+2.6vw,4rem)]"><StagedHeading text={s.heading} accent={0} /></h1>
+            {s.lead && <p className="mt-4 text-white/85 sm:text-lg lg:mt-5" data-stage="3">{s.lead}</p>}
+            <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap lg:mt-8" data-stage="4">
+              {s.primary && <Button href={s.primary.href} size="lg" variant="light" arrow className="px-4">{s.primary.label}</Button>}
+              {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg" className="px-4">{s.secondary.label}</Button>}
             </div>
+            <p className="mt-6 inline-flex items-center gap-2 text-sm text-white/85" data-stage="5">
+              <Icon.google className="h-4 w-4" /> <strong className="font-semibold text-white">{site.rating.value}</strong> <Icon.star className="h-3.5 w-3.5 text-amber-400" /> {site.rating.count} Google reviews
+            </p>
           </div>
         </div>
       </section>
@@ -74,7 +74,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
   // so heads are never cut), with floating proof points.
   const landing = s.variant === "landing";
   return (
-    <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-ink-900 text-white" aria-labelledby="hero-heading">
+    <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white" aria-labelledby="hero-heading">
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(80%_70%_at_100%_0%,rgba(91,107,90,0.5),transparent_60%),radial-gradient(50%_60%_at_0%_100%,rgba(154,139,114,0.16),transparent_70%)]" />
       <div className="container-x">
         <div className={cn("grid items-center gap-12 pb-14 pt-10 lg:grid-cols-12 lg:gap-16 lg:pb-24 lg:pt-14", landing && "lg:pb-28")}>

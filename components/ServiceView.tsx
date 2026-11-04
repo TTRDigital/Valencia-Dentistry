@@ -79,7 +79,7 @@ export async function ServiceView({ s }: { s: Service }) {
       <div className="reading-progress" aria-hidden="true" />
 
       {/* ---------- Hero: dark, the photo whole in its own proportions with floating proof points ---------- */}
-      <header data-hero="dark" className="on-dark relative isolate overflow-hidden bg-ink-900 text-white">
+      <header data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white">
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(90%_80%_at_100%_0%,rgba(91,107,90,0.55),transparent_60%),radial-gradient(60%_60%_at_0%_100%,rgba(154,139,114,0.18),transparent_70%)]" />
         <Container>
           <div className="grid items-center gap-12 pb-14 pt-10 lg:grid-cols-12 lg:gap-16 lg:pb-32 lg:pt-14">
@@ -232,7 +232,7 @@ export async function ServiceView({ s }: { s: Service }) {
 
       {/* ---------- Why patients choose us: dark section with photo and numbered reasons ---------- */}
       {s.why.cards.length > 0 && (
-        <Section id="why-here" className="scroll-mt-32 relative isolate overflow-hidden bg-ink-900 text-white">
+        <Section id="why-here" className="scroll-mt-32 relative isolate overflow-hidden bg-olive-900 text-white">
           <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(70%_70%_at_0%_0%,rgba(91,107,90,0.45),transparent_60%)]" />
           <Container>
             <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
@@ -273,7 +273,7 @@ export async function ServiceView({ s }: { s: Service }) {
                   <RichHeading heading={t.heading} lead={t.text || undefined} />
                   <div className="mt-6 overflow-x-auto rounded-lg bg-white ring-1 ring-ink-900/10" tabIndex={0} role="region" aria-label={t.heading}>
                     <table className="w-full min-w-[34rem] text-base sm:text-[0.95rem]">
-                      <thead className="bg-ink-900 text-left text-white"><tr>{t.rows[0].map((c, i) => <th key={i} scope="col" className="px-5 py-3.5 font-semibold">{c}</th>)}</tr></thead>
+                      <thead className="bg-olive-900 text-left text-white"><tr>{t.rows[0].map((c, i) => <th key={i} scope="col" className="px-5 py-3.5 font-semibold">{c}</th>)}</tr></thead>
                       <tbody>{t.rows.slice(1).map((r, i) => <tr key={i} className="border-t border-ink-900/10 even:bg-warm/60">{r.map((c, j) => <td key={j} className={cn("px-5 py-3.5 align-top", j === 0 && "font-semibold text-ink-900")}>{c}</td>)}</tr>)}</tbody>
                     </table>
                   </div>

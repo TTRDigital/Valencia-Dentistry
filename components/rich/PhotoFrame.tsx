@@ -18,7 +18,7 @@ type Accent = "olive" | "sand" | "ink" | "none";
 const ACCENT: Record<Accent, string> = {
   olive: "bg-olive-600/90",
   sand: "bg-sand-100",
-  ink: "bg-ink-900",
+  ink: "bg-olive-900",
   none: "",
 };
 

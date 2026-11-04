@@ -38,7 +38,7 @@ export async function ServiceShowcase({ s }: { s: ServiceShowcaseSection }) {
             {items.map((it, i) => (
               <li key={it.slug} className="w-[min(80vw,420px)] shrink-0 snap-start">
                 <Link href={it.path} className="group block no-underline">
-                  <div className="relative aspect-square overflow-hidden rounded-lg bg-ink-900">
+                  <div className="relative aspect-square overflow-hidden rounded-lg bg-olive-900">
                     <Picture image={photos[i] ?? it.hero.image} fill cropTo={1} sizes="(min-width: 1024px) 420px, 80vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" />
                     <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-900/10 to-transparent" />
                     <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-ink-900">{LABEL[it.category] ?? "Care"}</span>

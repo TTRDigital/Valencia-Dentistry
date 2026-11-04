@@ -17,9 +17,9 @@ export function TechExplainer({ s }: { s: TechExplainerSection }) {
     <Section className="bg-white" id="technology">
       <Container>
         <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
-        <ul data-stagger className={`mt-10 grid gap-5 sm:grid-cols-2 lg:mt-14 ${s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
+        <ul data-stagger className={`-mx-4 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:mt-10 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:mt-14 ${s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
           {s.items.map((it) => (
-            <Reveal as="li" key={it.title} className="flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-ink-900/10">
+            <Reveal as="li" key={it.title} className="flex w-[80%] shrink-0 snap-start flex-col overflow-hidden rounded-xl bg-white ring-1 ring-ink-900/10 sm:w-auto">
               {it.image ? (
                 <span className="relative block aspect-[3/2] overflow-hidden bg-greige-50">
                   <Picture image={it.image} fill cropTo={3 / 2} sizes="(min-width: 1024px) 400px, (min-width: 640px) 45vw, 100vw" className="object-cover object-top" />

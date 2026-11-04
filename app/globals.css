@@ -12,6 +12,8 @@
   --color-ink-900: #1c1c1c; /* near-black: headings, dark surfaces (Ideal style) */
   --color-ink-800: #3a3a3a;
   --color-ink-700: #474747;
+  --color-olive-900: #2f382f; /* deep olive: dark brand surfaces (replaces black) */
+  --color-olive-800: #3b463b;
   --color-olive-700: #4a574a;
   --color-olive-600: #5b6b5a; /* olive: accents, links, buttons */
   --color-olive-500: #6f806e;
@@ -97,8 +99,8 @@
     --dur-large: 600ms;
     --rise: 16px;
     /* Section rhythm: one vertical spacing scale (mobile / tablet / desktop) */
-    --section-y: 64px;
-    --section-y-tight: 48px;
+    --section-y: 48px;
+    --section-y-tight: 36px;
     color-scheme: light;
     interpolate-size: allow-keywords;
   }
@@ -180,7 +182,7 @@
   .btn:active { transform: translateY(0) scale(0.98); transition-duration: 80ms; }
   .btn-primary { @apply bg-olive-600 text-white; }
   .btn-primary:hover { @apply bg-olive-700; }
-  .btn-dark { @apply bg-ink-900 text-white; }
+  .btn-dark { @apply bg-olive-900 text-white; }
   .btn-dark:hover { @apply bg-ink-800; }
   .btn-light { @apply bg-white text-ink-900; }
   .btn-light:hover { @apply bg-greige-50; }
@@ -188,6 +190,9 @@
   .btn-outline:hover, .btn-secondary:hover { @apply border-ink-900 bg-ink-900/5; }
   .btn-outline::after, .btn-secondary::after { display: none; }
   .dark-section .btn-outline, .on-dark .btn-outline { @apply border-white/40 text-white; }
+  /* On the deep olive surfaces the primary button turns ivory so it stands out */
+  .dark-section .btn-primary, .on-dark .btn-primary { @apply bg-white text-olive-900; }
+  .dark-section .btn-primary:hover, .on-dark .btn-primary:hover { @apply bg-sand-50; }
   .dark-section .btn-outline:hover, .on-dark .btn-outline:hover { @apply border-white bg-white/10; }
   .btn-lg { @apply min-h-13 px-7 text-base; }
   .btn-sm { @apply min-h-11 px-4 text-sm; }
@@ -228,7 +233,7 @@
 
 
   /* Flat near-black sections (Ideal style) */
-  .dark-section { @apply relative bg-ink-900 text-white; }
+  .dark-section { @apply relative bg-olive-900 text-white; }
   .dark-section > * { position: relative; }
 
   /* ---------- Motion (all transform/opacity, 200-600ms, ease-out; off under reduced motion) ---------- */

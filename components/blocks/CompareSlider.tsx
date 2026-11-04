@@ -102,7 +102,7 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
               <Picture key={`b-${c.id}`} image={c.before} fill sizes="(min-width: 768px) 440px, 100vw" className="compare-fade object-cover" alt="" />
             </div>
           </div>
-          <span className="pointer-events-none absolute left-3 top-3 rounded-sm bg-ink-900/85 px-2.5 py-1 text-xs font-bold uppercase tracking-[0.1em] text-white">Before</span>
+          <span className="pointer-events-none absolute left-3 top-3 rounded-sm bg-olive-900/85 px-2.5 py-1 text-xs font-bold uppercase tracking-[0.1em] text-white">Before</span>
           <span className="pointer-events-none absolute right-3 top-3 rounded-sm bg-white/90 px-2.5 py-1 text-xs font-bold uppercase tracking-[0.1em] text-ink-900">After</span>
           {/* Handle: a full-width track moved with translateX, line and knob at its left edge */}
           <div className="pointer-events-none absolute inset-0" style={{ transform: `translateX(${pos}%)` }}>

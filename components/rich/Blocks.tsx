@@ -31,7 +31,7 @@ export async function StatBand({ dark, className }: { dark?: boolean; className?
   return (
     <dl data-stagger className={cn("grid grid-cols-2 gap-px overflow-hidden rounded-lg lg:grid-cols-4", dark ? "bg-white/10" : "bg-ink-900/10", className)}>
       {items.map((it) => (
-        <Reveal key={it.label} className={cn("flex flex-col-reverse justify-end gap-4 p-6 sm:p-9", dark ? "bg-ink-900" : "bg-white")}>
+        <Reveal key={it.label} className={cn("flex flex-col-reverse justify-end gap-4 p-6 sm:p-9", dark ? "bg-olive-900" : "bg-white")}>
           <dt className={cn("flex items-start gap-2 text-sm sm:text-base", dark ? "text-white/75" : "text-grey-700")}><span className={cn("mt-0.5 shrink-0", dark ? "text-bronze-300" : "text-olive-600")}>{it.icon}</span>{it.label}</dt>
           <dd className={cn("font-display text-6xl leading-none tracking-tight sm:text-7xl xl:text-8xl", dark ? "text-white" : "text-ink-900")}>{it.value}</dd>
         </Reveal>
@@ -88,8 +88,8 @@ export function RoundCta({ href, text, className }: { href: string; text: string
 /** Closing call to action: a clear headline, one Book button, contact details and a photo. */
 export function CtaBanner({ heading, text, image, buttonLabel = "Book a consultation", className }: { heading: string; text: string; image?: SiteImage; buttonLabel?: string; className?: string }) {
   return (
-    <div className={cn("on-dark relative isolate overflow-hidden rounded-lg bg-ink-900 text-white", className)}>
-      <div className="grid items-center gap-10 p-7 sm:p-12 lg:grid-cols-12 lg:gap-14 lg:p-16">
+    <div className={cn("on-dark relative isolate overflow-hidden rounded-lg bg-olive-900 text-white", className)}>
+      <div className="grid items-center gap-10 p-6 sm:p-12 lg:grid-cols-12 lg:gap-14 lg:p-16">
         <div className="lg:col-span-7">
           <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-bronze-300 ring-1 ring-white/15"><Icon.user className="h-4 w-4" /> {site.newPatients.headline}</p>
           <h2 className="mt-6 text-5xl text-white">{heading}</h2>
@@ -104,7 +104,7 @@ export function CtaBanner({ heading, text, image, buttonLabel = "Book a consulta
           </div>
         </div>
         {image && (
-          <div className="lg:col-span-5">
+          <div className="hidden lg:col-span-5 lg:block">
             <PhotoFrame image={image} sizes="(min-width: 1024px) 460px, 100vw" accent="olive" />
           </div>
         )}
@@ -146,7 +146,7 @@ export function Marquee({ items, dark, outline, reverse, className }: { items: s
 /** Circular text that turns slowly around the tooth mark: a quiet signature on hero portraits. */
 export function Seal({ text, className }: { text: string; className?: string }) {
   return (
-    <div className={cn("h-28 w-28 rounded-full bg-ink-900 text-bronze-300 shadow-lift ring-1 ring-white/15 sm:h-32 sm:w-32", className ?? "relative")} aria-hidden="true">
+    <div className={cn("h-28 w-28 rounded-full bg-olive-900 text-bronze-300 shadow-lift ring-1 ring-white/15 sm:h-32 sm:w-32", className ?? "relative")} aria-hidden="true">
       <svg viewBox="0 0 120 120" className="seal-spin absolute inset-0 h-full w-full">
         <defs><path id="seal-path" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
         <text fill="currentColor" fontSize="10.5" letterSpacing="2.1" textLength="272" lengthAdjust="spacing" fontFamily="var(--font-urbanist)" fontWeight="600"><textPath href="#seal-path">{text}</textPath></text>

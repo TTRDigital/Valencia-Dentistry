@@ -35,7 +35,7 @@ export function SectionNav({ items, label = "On this page", className }: { items
               <a
                 href={`#${t.id}`}
                 aria-current={active === t.id ? "location" : undefined}
-                className={cn("inline-flex min-h-11 items-center rounded-full px-4 text-[0.9375rem] font-medium transition-colors duration-[var(--dur-micro)]", active === t.id ? "bg-ink-900 text-white" : "text-grey-700 hover:bg-ink-900/5 hover:text-ink-900")}
+                className={cn("inline-flex min-h-11 items-center rounded-full px-4 text-[0.9375rem] font-medium transition-colors duration-[var(--dur-micro)]", active === t.id ? "bg-olive-900 text-white" : "text-grey-700 hover:bg-ink-900/5 hover:text-ink-900")}
               >
                 {t.label}
               </a>

@@ -34,7 +34,7 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
           case "whyChoose": return <WhyChoose key={key} s={s} />;
           case "newPatient": return <NewPatient key={key} s={s} />;
           case "serviceShowcase": return <ServiceShowcase key={key} s={s} />;
-          case "marquee": return <div key={key} className={s.dark ? "bg-ink-900 py-6 sm:py-10" : "border-y border-ink-900/10 bg-warm py-6"}><Marquee items={s.items} dark={s.dark} />{s.items2 && <Marquee items={s.items2} dark={s.dark} outline reverse />}</div>;
+          case "marquee": return <div key={key} className={s.dark ? "bg-olive-900 py-6 sm:py-10" : "border-y border-ink-900/10 bg-warm py-6"}><Marquee items={s.items} dark={s.dark} />{s.items2 && <Marquee items={s.items2} dark={s.dark} outline reverse />}</div>;
           case "statBand": return <Section key={key} tight className="bg-warm"><Container><StatBand /></Container></Section>;
           case "ctaBanner": return <Section key={key} className="bg-warm"><Container><CtaBanner heading={s.heading} text={s.text} image={s.image} buttonLabel={s.buttonLabel} /></Container></Section>;
           case "hero": return <Hero key={key} s={s} crumbs={i === 0 ? crumbs : undefined} />;

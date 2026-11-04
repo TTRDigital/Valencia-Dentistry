@@ -19,7 +19,7 @@ export function FocusAreas({ s }: { s: FocusAreasSection }) {
         <div className="mt-16 space-y-8">
           {s.areas.map((a, i) => (
             <article key={a.title} className="stack-card" style={{ "--i": i } as React.CSSProperties}>
-              <div className={cn("grid items-center gap-10 overflow-hidden rounded-lg p-6 shadow-lift sm:p-10 lg:grid-cols-12 lg:gap-14 lg:p-14", i % 2 ? "bg-ink-900 text-white" : "bg-white ring-1 ring-ink-900/[0.06]")}>
+              <div className={cn("grid items-center gap-10 overflow-hidden rounded-lg p-6 shadow-lift sm:p-10 lg:grid-cols-12 lg:gap-14 lg:p-14", i % 2 ? "bg-olive-900 text-white" : "bg-white ring-1 ring-ink-900/[0.06]")}>
                 <div className={cn("lg:col-span-5", i % 2 === 1 && "lg:order-2")}>
                   <PhotoFrame image={a.image} sizes="(min-width: 1024px) 480px, 100vw" arch accent={i % 2 ? "olive" : "sand"} accentSide={i % 2 ? "left" : "right"} className="mx-auto max-w-[440px]" />
                 </div>
