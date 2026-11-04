@@ -1,46 +1,34 @@
 import type { DoctorIntroSection } from "@/lib/types";
 import { site } from "@/lib/site";
-import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
 import { RichHeading } from "@/components/rich/Blocks";
 import { Button } from "@/components/ui/Button";
-import { Icon } from "@/components/ui/Icons";
+import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
-import { Container, Section } from "@/components/ui/Section";
 
-/** Our lead dentist: the portrait whole in the arch with an offset block and a badge, beside his introduction. */
+/**
+ * Meet the lead dentist: words on the left, a large photo filling the right half to the edge of the
+ * screen (anchored at the top so his head is never cut). Phones: words first, then the photo.
+ */
 export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
   return (
-    <Section className="relative isolate overflow-hidden bg-sand-50" id="meet-dr-lavi">
-      <Container>
-        <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
-          <Reveal className="lg:col-span-5">
-            <PhotoFrame image={s.image} sizes="(min-width: 1024px) 440px, 90vw" arch accent="olive" accentSide="left" className="mx-auto max-w-[420px]">
-              <FloatingBadge className="-right-3 bottom-10 sm:-right-10" icon={<Icon.user className="h-5 w-5" />} title="Lead dentist" text="Valencia Dentistry" />
-              <FloatingBadge className="-left-3 top-16 hidden sm:flex sm:-left-10" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} on Google</>} text={`${site.rating.count} reviews`} />
-            </PhotoFrame>
-          </Reveal>
-          <div className="lg:col-span-7">
-            <RichHeading eyebrow={s.eyebrow} heading={s.heading} />
+    <section className="bg-warm" id="meet-dr-lavi" aria-labelledby="meet-heading">
+      <div className="grid lg:min-h-[640px] lg:grid-cols-2">
+        <div className="flex items-center">
+          <div className="w-full px-4 py-16 sm:px-8 lg:ml-auto lg:max-w-[38rem] lg:py-24 lg:pl-8 lg:pr-16 xl:pr-20">
+            <RichHeading eyebrow={s.eyebrow} heading={s.heading} id="meet-heading" />
             <div className="mt-6 space-y-4 text-lg text-grey-700">
               {s.body.map((p, i) => <Reveal key={i}><p>{p}</p></Reveal>)}
             </div>
-            {s.points && (
-              <ul data-stagger className="mt-8 grid gap-3 sm:grid-cols-2">
-                {s.points.map((pt) => (
-                  <Reveal as="li" key={pt} className="flex items-center gap-3 rounded-lg bg-white p-4 text-grey-900 ring-1 ring-ink-900/[0.07]">
-                    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-olive-600 text-white"><Icon.check className="h-4 w-4" /></span>
-                    {pt}
-                  </Reveal>
-                ))}
-              </ul>
-            )}
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-              {s.cta && <Button href={s.cta.href} arrow>{s.cta.label}</Button>}
-              <Button href={site.bookingUrl} variant="outline">Book a visit</Button>
+            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+              <Button href={site.bookingUrl} arrow>Book a visit</Button>
+              {s.cta && <Button href={s.cta.href} variant="outline">{s.cta.label}</Button>}
             </div>
           </div>
         </div>
-      </Container>
-    </Section>
+        <div className="relative aspect-[4/5] w-full sm:aspect-[4/3] lg:aspect-auto">
+          <Picture image={s.image} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-top" />
+        </div>
+      </div>
+    </section>
   );
 }

@@ -44,15 +44,15 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
     // One solid photo with the words over it (Dr. Lavi stands left of centre, so the text sits on the right).
     // Phones: the photo fills the screen and the text sits on a dark fade at the bottom.
     return (
-      <section data-hero="dark" className="on-dark relative isolate flex min-h-[calc(100svh-72px)] items-end overflow-hidden bg-ink-900 text-white lg:min-h-[640px] lg:items-center" aria-labelledby="hero-heading">
+      <section data-hero="dark" className="on-dark relative isolate flex min-h-[calc(100svh-72px)] items-end overflow-hidden bg-ink-900 text-white lg:min-h-[680px] lg:items-center" aria-labelledby="hero-heading">
         {s.image && (
-          <div data-hero-media className="absolute inset-0 -z-20 lg:right-auto lg:w-[64%]">
-            {/* Phones get a portrait photo (sharp at full height); desktop shows the wide one across the left two thirds, fading into the dark panel the words sit on */}
+          <div data-hero-media className="absolute inset-0 -z-20">
+            {/* Phones get a portrait photo (sharp at full height); desktop shows the wide photo edge to edge with the words over its right side */}
             {s.mobileImage && <Picture image={s.mobileImage} fill priority sizes="(max-width: 1023px) 100vw, 1px" className="object-cover object-top lg:hidden" />}
-            <Picture image={s.image} fill priority sizes="(min-width: 1024px) 64vw, 1px" className={s.mobileImage ? "hidden object-cover object-top lg:block" : "object-cover object-top"} />
+            <Picture image={s.image} fill priority sizes="(min-width: 1024px) 100vw, 1px" className={s.mobileImage ? "hidden object-cover object-top lg:block" : "object-cover object-top"} />
           </div>
         )}
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(18,18,16,0)_30%,rgba(18,18,16,0.88)_72%)] lg:bg-[linear-gradient(90deg,rgba(28,28,26,0)_0%,rgba(28,28,26,0)_38%,rgba(28,28,26,0.85)_56%,#1c1c1a_64%)]" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(18,18,16,0)_30%,rgba(18,18,16,0.88)_72%)] lg:bg-[linear-gradient(90deg,rgba(18,18,16,0)_35%,rgba(18,18,16,0.55)_58%,rgba(18,18,16,0.8)_100%)]" />
         <div className="container-x w-full pb-28 pt-16 lg:py-24">
           <div className="hero-stage lg:ml-auto lg:max-w-[30rem]">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm ring-1 ring-white/20 backdrop-blur-sm" data-stage="0">

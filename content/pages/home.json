@@ -33,19 +33,26 @@
     {
       "_type": "featuredServices",
       "eyebrow": "Our services",
-      "heading": "Smiles we create every day",
-      "lead": "Clear aligners, veneers, cosmetic care and implants, planned with 3D imaging in our office.",
+      "heading": "Precise dentistry, thoughtfully delivered",
+      "lead": "From routine cleanings to complete smile makeovers, planned with 3D imaging in our office.",
       "slugs": [
+        "dental-implants",
         "invisalign",
         "veneers",
         "cosmetic-dentistry",
-        "dental-implants"
+        "teeth-whitening",
+        "all-on-4-implants",
+        "dental-crowns"
       ],
-      "images": {
-        "cosmetic-dentistry": {
-          "src": "/images/real/mirror-smile.jpg",
-          "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
-        }
+      "featuredTags": [
+        "3D CBCT planning",
+        "Guided surgery",
+        "Single tooth to full arch"
+      ],
+      "consult": {
+        "heading": "Book a consultation.",
+        "text": "We'll build a plan around your goals, timeline and budget. Same-day appointments when possible.",
+        "buttonLabel": "Book a consultation"
       }
     },
     {
@@ -69,46 +76,21 @@
       "fine": "Most PPO plans accepted; we check your benefits before your visit."
     },
     {
-      "_type": "whyChoose",
-      "eyebrow": "Why Valencia Dentistry",
-      "heading": "Why patients choose Valencia Dentistry",
-      "lead": "One office for the whole family, from cleanings to implants, with the time and technology to do it well.",
+      "_type": "doctorIntro",
+      "eyebrow": "Our lead dentist",
+      "heading": "Meet Dr. Nuriel Lavi, DDS",
       "image": {
-        "src": "/images/real/treatment-room.jpg",
-        "alt": "A treatment room at Valencia Dentistry"
+        "src": "/images/team/dr-lavi-casual.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
       },
-      "items": [
-        {
-          "title": "Same-day care when possible",
-          "text": "Weekday appointments, and we fit in patients in pain as quickly as we can."
-        },
-        {
-          "title": "Complete care under one roof",
-          "text": "Preventive, cosmetic, restorative and surgical dentistry in the same office."
-        },
-        {
-          "title": "Modern technology",
-          "text": "3D CBCT imaging, digital X-rays and iTero scans, so plans are precise and easy to understand."
-        },
-        {
-          "title": "Same-day crowns",
-          "text": "Crowns made in our office, often finished in a single visit."
-        },
-        {
-          "title": "Holistic options",
-          "text": "Biocompatible, mercury-free materials and a whole-body approach to your care."
-        },
-        {
-          "title": "Insurance made simple",
-          "text": "Most PPO plans accepted. We check your benefits before you come in and offer flexible financing."
-        }
-      ]
-    },
-    {
-      "_type": "beforeAfter",
-      "eyebrow": "Real cases",
-      "heading": "Results from patients in our office",
-      "lead": "Drag the handle to compare each smile before and after treatment. Results vary from person to person."
+      "body": [
+        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
+        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
+      ],
+      "cta": {
+        "label": "More about the practice",
+        "href": "/about/"
+      }
     },
     {
       "_type": "techExplainer",
@@ -153,27 +135,20 @@
       }
     },
     {
-      "_type": "doctorIntro",
-      "eyebrow": "Our lead dentist",
-      "heading": "Meet Dr. Nuriel Lavi, DDS",
+      "_type": "insuranceChecker",
+      "eyebrow": "Insurance & coverage",
+      "heading": "Check your dental insurance in seconds",
+      "lead": "Most major PPO plans accepted. Pick your plan type and carrier to see where you stand; we verify your benefits before every visit."
+    },
+    {
+      "_type": "ctaBanner",
+      "heading": "Ready to transform your smile?",
+      "text": "A comprehensive exam and digital X-rays with your dentist, and a clear plan you can take home. Most PPO plans accepted.",
       "image": {
-        "src": "/images/team/dr-lavi-portrait.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS"
+        "src": "/images/real/consult-seated.jpg",
+        "alt": "A consultation with a seated patient at Valencia Dentistry"
       },
-      "body": [
-        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
-        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
-      ],
-      "points": [
-        "Unhurried visits, no surprises",
-        "3D imaging before implants and surgery",
-        "Holistic, whole-body approach",
-        "Crowns made in house, often same day"
-      ],
-      "cta": {
-        "label": "More about the practice",
-        "href": "/about/"
-      }
+      "buttonLabel": "Book your first visit"
     },
     {
       "_type": "reviews",
@@ -181,63 +156,6 @@
       "heading": "Trusted by Santa Clarita families",
       "lead": "Unedited Google reviews from people who sit in our chair.",
       "trust": true
-    },
-    {
-      "_type": "focusAreas",
-      "eyebrow": "Beyond the tooth",
-      "heading": "Holistic care and jaw pain relief, in the same office",
-      "lead": "Two things patients often can't find in one place: a whole-body approach to dentistry, and real help for jaw pain and headaches.",
-      "areas": [
-        {
-          "title": "Holistic dentistry",
-          "text": "Biocompatible, mercury-free materials and a look at how your mouth affects the rest of your health.",
-          "image": {
-            "src": "/images/real/mirror-view-2.jpg",
-            "alt": "A patient checking her smile in a mirror while talking with Dr. Lavi",
-            "focus": "center 70%"
-          },
-          "points": [
-            "Mercury-free, tooth-colored fillings",
-            "Prevention before treatment",
-            "PRF from your own blood to support healing"
-          ],
-          "link": {
-            "label": "About holistic dentistry",
-            "href": "/services/holistic-dentistry/"
-          }
-        },
-        {
-          "title": "TMJ treatments",
-          "text": "For clicking, a jaw that feels tired in the morning, or tension headaches that keep coming back.",
-          "image": {
-            "src": "/images/real/consult-seated-2.jpg",
-            "alt": "Dr. Lavi in a consultation with a patient",
-            "focus": "center 70%"
-          },
-          "points": [
-            "A careful exam of your bite and joint",
-            "Custom night guards",
-            "Care planned around what's causing it"
-          ],
-          "link": {
-            "label": "About TMJ treatments",
-            "href": "/tmj-treatments/"
-          }
-        }
-      ]
-    },
-    {
-      "_type": "insurance"
-    },
-    {
-      "_type": "ctaBanner",
-      "heading": "Start with an unhurried first visit",
-      "text": "A comprehensive exam and digital X-rays with your dentist, and a clear plan you can take home. Most PPO plans accepted.",
-      "image": {
-        "src": "/images/real/consult-seated.jpg",
-        "alt": "A consultation with a seated patient at Valencia Dentistry"
-      },
-      "buttonLabel": "Book your first visit"
     },
     {
       "_type": "visit",

@@ -19,6 +19,7 @@ import { TechExplainer } from "./TechExplainer";
 import { TreatmentPickerWithPhotos } from "./TreatmentPickerSection";
 import { ServiceShowcase } from "./ServiceShowcase";
 import { FeaturedServices, NewPatient, WhyChoose } from "./HomeBlocks";
+import { InsuranceChecker } from "./InsuranceCheckerSection";
 import { CtaBanner, Marquee, StatBand } from "@/components/rich/Blocks";
 import { Container, Section } from "@/components/ui/Section";
 
@@ -29,6 +30,7 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
         const key = `${s._type}-${i}`;
         switch (s._type) {
           case "featuredServices": return <FeaturedServices key={key} s={s} />;
+          case "insuranceChecker": return <InsuranceChecker key={key} s={s} />;
           case "whyChoose": return <WhyChoose key={key} s={s} />;
           case "newPatient": return <NewPatient key={key} s={s} />;
           case "serviceShowcase": return <ServiceShowcase key={key} s={s} />;

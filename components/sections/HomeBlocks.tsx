@@ -5,45 +5,58 @@ import type { FeaturedServicesSection, NewPatientSection, Service, WhyChooseSect
 import { RichHeading } from "@/components/rich/Blocks";
 import { PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Icon } from "@/components/ui/Icons";
-import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
-import { distinctPhotos } from "@/lib/utils";
-import { servicePhotos } from "./ServicesHub";
 
-const LABEL: Record<string, string> = { surgical: "Oral surgery", cosmetic: "Cosmetic", restorative: "Restorative", holistic: "Holistic", preventive: "Preventive" };
-
-/** The treatments the practice leads with: photo cards with a small category label, a title and one line. */
+/**
+ * Services as a clean numbered grid: the first treatment is a large dark "Featured" card, the rest are
+ * light text cards (number, name, one line, Explore). A "Not sure where to start?" strip follows.
+ */
 export async function FeaturedServices({ s }: { s: FeaturedServicesSection }) {
   const all = await getServices();
   const items = s.slugs.map((slug) => all.find((x) => x.slug === slug)).filter((x): x is Service => !!x);
-  const fixed = Object.values(s.images ?? {}).map((im) => im.src);
-  const auto = distinctPhotos(items, servicePhotos, fixed);
-  const photos = items.map((it, i) => s.images?.[it.slug] ?? auto[i]);
+  const [first, ...rest] = items;
+  const num = (i: number) => String(i + 1).padStart(2, "0");
   return (
-    <Section className="bg-white" id="treatments">
+    <Section className="bg-warm" id="services">
       <Container>
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-          <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-          <Link href="/services/" className="link-arrow shrink-0">View all services <Icon.arrow className="h-4 w-4" /></Link>
-        </div>
-        <ul className="-mx-4 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4 lg:gap-5" data-stagger>
-          {items.map((it, i) => (
-            <Reveal as="li" key={it.slug} className="w-[78%] shrink-0 snap-start sm:w-auto">
-              <Link href={it.path} className="group flex h-full flex-col overflow-hidden rounded-xl bg-white ring-1 ring-ink-900/10 transition-shadow hover:shadow-lift">
-                <span className="relative block aspect-[4/3] overflow-hidden bg-greige-50">
-                  <Picture image={photos[i] ?? it.hero.image} fill cropTo={4 / 3} sizes="(min-width: 1024px) 300px, (min-width: 640px) 45vw, 78vw" className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]" />
+        <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
+        <ul data-stagger className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {first && (
+            <Reveal as="li" className="sm:col-span-2">
+              <Link href={first.path} className="group relative flex h-full flex-col overflow-hidden rounded-xl bg-ink-900 sm:min-h-64 p-7 text-white sm:p-8">
+                <span className="text-xs font-semibold uppercase tracking-[0.12em] text-white/60">Featured · {num(0)}</span>
+                <span className="mt-3 text-3xl font-semibold text-white">{first.name}</span>
+                <span className="mt-3 max-w-md text-white/75">{first.shortDescription}</span>
+                <span className="mt-auto pt-6">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold uppercase tracking-[0.08em] text-white">Explore {first.name.toLowerCase()} <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+                  {s.featuredTags && <span className="mt-4 flex flex-wrap gap-2">{s.featuredTags.map((t) => <span key={t} className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/80 ring-1 ring-white/15">{t}</span>)}</span>}
                 </span>
-                <span className="flex flex-1 flex-col p-5">
-                  <span className="text-xs font-semibold uppercase tracking-[0.12em] text-bronze-600">{LABEL[it.category] ?? "Treatment"}</span>
-                  <span className="mt-1.5 text-xl font-semibold text-ink-900">{it.name}</span>
-                  <span className="mt-2 text-[0.9375rem] text-grey-700">{it.shortDescription}</span>
-                  <span className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-olive-700">Learn more <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
-                </span>
+              </Link>
+            </Reveal>
+          )}
+          {rest.map((it, i) => (
+            <Reveal as="li" key={it.slug}>
+              <Link href={it.path} className="group flex h-full flex-col rounded-xl bg-white p-6 sm:min-h-56 ring-1 ring-ink-900/10 transition-shadow hover:shadow-lift">
+                <span className="text-xs font-semibold tabular-nums text-grey-400">{num(i + 1)}</span>
+                <span className="mt-3 text-xl font-semibold text-ink-900">{it.name}</span>
+                <span className="mt-2 text-[0.9375rem] text-grey-700">{it.shortDescription}</span>
+                <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-xs font-semibold uppercase tracking-[0.1em] text-ink-900 group-hover:text-olive-700">Explore <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
               </Link>
             </Reveal>
           ))}
         </ul>
+        {s.consult && (
+          <div className="mt-6 flex flex-col gap-4 rounded-xl bg-white p-6 ring-1 ring-ink-900/10 sm:flex-row sm:items-center sm:justify-between sm:p-7">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-grey-600">Not sure where to start?</p>
+              <p className="mt-1 text-xl font-semibold text-ink-900">{s.consult.heading}</p>
+              <p className="mt-1 text-grey-700">{s.consult.text}</p>
+            </div>
+            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary shrink-0">{s.consult.buttonLabel} <Icon.arrow className="h-4 w-4" /></a>
+          </div>
+        )}
+        <p className="mt-8 text-center"><Link href="/services/" className="link-arrow">View all services <Icon.arrow className="h-4 w-4" /></Link></p>
       </Container>
     </Section>
   );

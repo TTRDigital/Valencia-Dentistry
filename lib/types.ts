@@ -157,7 +157,8 @@ export type OfferSection = { _type: "offer"; eyebrow?: string; heading: string; 
 export type TreatmentPickerSection = { _type: "treatmentPicker"; eyebrow?: string; heading: string; lead?: string; options: { id: string; label: string; title: string; text: string; links: Link[]; image?: SiteImage }[] };
 export type FirstVisitSection = { _type: "firstVisit"; eyebrow?: string; heading: string; lead?: string; steps: Step[]; cta?: Link; note?: string; images?: SiteImage[] };
 export type TechExplainerSection = { _type: "techExplainer"; eyebrow?: string; heading: string; lead?: string; dark?: boolean; image?: SiteImage; link?: Link; items: { title: string; text: string; forYou: string; icon?: string; label?: string; image?: SiteImage }[] };
-export type FeaturedServicesSection = { _type: "featuredServices"; eyebrow?: string; heading: string; lead?: string; slugs: string[]; images?: Record<string, SiteImage> };
+export type FeaturedServicesSection = { _type: "featuredServices"; eyebrow?: string; heading: string; lead?: string; slugs: string[]; images?: Record<string, SiteImage>; featuredTags?: string[]; consult?: { heading: string; text: string; buttonLabel: string } };
+export type InsuranceCheckerSection = { _type: "insuranceChecker"; eyebrow?: string; heading: string; lead?: string };
 export type WhyChooseSection = { _type: "whyChoose"; eyebrow?: string; heading: string; lead?: string; image: SiteImage; items: Feature[] };
 export type NewPatientSection = { _type: "newPatient"; eyebrow?: string; heading: string; text: string; bullets: string[]; image?: SiteImage; buttonLabel?: string; fine?: string };
 export type DoctorIntroSection = { _type: "doctorIntro"; eyebrow?: string; heading: string; body: string[]; image: SiteImage; points?: string[]; cta?: Link };
@@ -174,7 +175,7 @@ export type PageSection =
   | ValuesSection | FormSection | ServicesHubSection | InsuranceSection | OfferSection
   | TreatmentPickerSection | FirstVisitSection | TechExplainerSection | DoctorIntroSection | FocusAreasSection
   | ServiceShowcaseSection | StatBandSection | CtaBannerSection | MarqueeSection
-  | FeaturedServicesSection | WhyChooseSection | NewPatientSection;
+  | FeaturedServicesSection | WhyChooseSection | NewPatientSection | InsuranceCheckerSection;
 
 export type Page = {
   slug: string;
