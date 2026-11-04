@@ -10,8 +10,8 @@
     {
       "_type": "hero",
       "variant": "home",
-      "eyebrow": "Valencia · Santa Clarita",
-      "heading": "Dentistry that feels calm, personal and thorough.",
+      "eyebrow": "Dentist in Valencia · Santa Clarita",
+      "heading": "Valencia Dentistry: your home for calm, holistic dentistry.",
       "lead": "Holistic, integrative care with modern technology, in a calm office on Tourney Road. Implants, cosmetic and family dentistry under one roof.",
       "primary": {
         "label": "Book now",
@@ -188,27 +188,43 @@
       ]
     },
     {
-      "_type": "doctorIntro",
-      "eyebrow": "Our lead dentist",
-      "heading": "Meet Dr. Nuriel Lavi, DDS",
-      "image": {
-        "src": "/images/team/dr-lavi-portrait.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS"
-      },
-      "body": [
-        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
-        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
-      ],
-      "points": [
-        "Unhurried visits, no surprises",
-        "3D imaging before implants and surgery",
-        "Holistic, whole-body approach",
-        "Crowns made in house, often same day"
-      ],
-      "cta": {
-        "label": "More about the practice",
-        "href": "/about/"
-      }
+      "_type": "featureGrid",
+      "eyebrow": "Why Valencia Dentistry",
+      "heading": "Why patients choose Valencia Dentistry",
+      "lead": "One office for the whole family, from cleanings to implants, with the time and technology to do it well.",
+      "columns": 3,
+      "items": [
+        {
+          "icon": "calendar",
+          "title": "Same-day care when possible",
+          "text": "Weekday appointments, and we fit in patients in pain as quickly as we can."
+        },
+        {
+          "icon": "tooth",
+          "title": "Complete care under one roof",
+          "text": "Preventive, cosmetic, restorative and surgical dentistry in the same office."
+        },
+        {
+          "icon": "tech",
+          "title": "Modern technology",
+          "text": "3D CBCT imaging, digital X-rays and iTero scans, so plans are precise and easy to understand."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Same-day crowns",
+          "text": "Crowns made in our office, often finished in a single visit."
+        },
+        {
+          "icon": "leaf",
+          "title": "Holistic options",
+          "text": "Biocompatible, mercury-free materials and a whole-body approach to your care."
+        },
+        {
+          "icon": "shield",
+          "title": "Insurance made simple",
+          "text": "Most PPO plans accepted. We check your benefits before you come in and offer flexible financing."
+        }
+      ]
     },
     {
       "_type": "firstVisit",
@@ -272,13 +288,6 @@
       "lead": "Drag the handle to compare each smile before and after treatment. Results vary from person to person."
     },
     {
-      "_type": "reviews",
-      "eyebrow": "What patients say",
-      "heading": "Rated 4.9 by Santa Clarita patients",
-      "lead": "Unedited Google reviews from people who sit in our chair.",
-      "trust": true
-    },
-    {
       "_type": "focusAreas",
       "eyebrow": "Beyond the tooth",
       "heading": "Holistic care and jaw pain relief, in the same office",
@@ -325,7 +334,7 @@
     {
       "_type": "techExplainer",
       "eyebrow": "Technology",
-      "heading": "The equipment, and what it means for you",
+      "heading": "The technology in our office, and what it means for you",
       "lead": "Tap or hover over each one to see why it matters at your visit.",
       "items": [
         {
@@ -372,6 +381,36 @@
       "dark": true
     },
     {
+      "_type": "doctorIntro",
+      "eyebrow": "Our lead dentist",
+      "heading": "Meet Dr. Nuriel Lavi, DDS",
+      "image": {
+        "src": "/images/team/dr-lavi-portrait.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS"
+      },
+      "body": [
+        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
+        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
+      ],
+      "points": [
+        "Unhurried visits, no surprises",
+        "3D imaging before implants and surgery",
+        "Holistic, whole-body approach",
+        "Crowns made in house, often same day"
+      ],
+      "cta": {
+        "label": "More about the practice",
+        "href": "/about/"
+      }
+    },
+    {
+      "_type": "reviews",
+      "eyebrow": "What patients say",
+      "heading": "Trusted by Santa Clarita families",
+      "lead": "Unedited Google reviews from people who sit in our chair.",
+      "trust": true
+    },
+    {
       "_type": "insurance"
     },
     {
@@ -387,7 +426,7 @@
     {
       "_type": "visit",
       "eyebrow": "Visit us",
-      "heading": "Easy to reach, easy to park",
+      "heading": "Visit Valencia Dentistry in Santa Clarita",
       "lead": "27420 Tourney Rd, Suite 240, just off the I-5 in Valencia. Free parking on site and an elevator to the second floor. Minutes from Stevenson Ranch, Newhall, Saugus and Canyon Country."
     }
   ]
