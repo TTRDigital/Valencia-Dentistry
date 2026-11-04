@@ -40,7 +40,7 @@ export async function ServiceShowcase({ s }: { s: ServiceShowcaseSection }) {
                 <Link href={it.path} className="group block no-underline">
                   <div className="relative aspect-square overflow-hidden rounded-lg bg-olive-900">
                     <Picture image={photos[i] ?? it.hero.image} fill cropTo={1} sizes="(min-width: 1024px) 420px, 80vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" />
-                    <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-900/10 to-transparent" />
+                    <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-olive-900/10 to-transparent" />
                     <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-ink-900">{LABEL[it.category] ?? "Care"}</span>
                     <span aria-hidden="true" className="absolute right-5 top-5 text-xl font-semibold tabular-nums text-white/80">{String(i + 1).padStart(2, "0")}</span>
                     <div className="absolute inset-x-5 bottom-5 text-white">

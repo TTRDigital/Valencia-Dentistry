@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export const viewport: Viewport = { themeColor: "#1c1c1c", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#eef1ea", width: "device-width", initialScale: 1 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const [nav, posts] = await Promise.all([getNavigation(), getPosts()]);
@@ -35,7 +35,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
       </head>
       <body className="flex min-h-screen flex-col">
-        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink-900 focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-olive-900 focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
         <Header nav={nav} postPaths={posts.map((p) => p.path)} />
         <main id="main" tabIndex={-1} className="flex-1 outline-none">{children}</main>
         <Footer nav={nav} />

@@ -12,8 +12,8 @@
   --color-ink-900: #1c1c1c; /* near-black: headings, dark surfaces (Ideal style) */
   --color-ink-800: #3a3a3a;
   --color-ink-700: #474747;
-  --color-olive-900: #2f382f; /* deep olive: dark brand surfaces (replaces black) */
-  --color-olive-800: #3b463b;
+  --color-olive-900: #4f5d4e; /* brand olive for dark surfaces (no black anywhere) */
+  --color-olive-800: #566555;
   --color-olive-700: #4a574a;
   --color-olive-600: #5b6b5a; /* olive: accents, links, buttons */
   --color-olive-500: #6f806e;

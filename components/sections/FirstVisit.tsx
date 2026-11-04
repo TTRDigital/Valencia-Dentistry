@@ -27,7 +27,7 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
                   {photos.map((img, i) => (
                     <Picture key={img.src} image={img} fill sizes="(min-width: 1024px) 600px, 100vw" data-i={i} className="step-photo object-cover" />
                   ))}
-                  <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink-950/70 to-transparent" />
+                  <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-olive-900/70 to-transparent" />
                   <ol aria-hidden="true" className="absolute bottom-5 left-5 flex gap-2">
                     {photos.map((img, i) => <li key={img.src} data-i={i} className="step-tick h-1 w-8 rounded-full bg-white/30" />)}
                   </ol>
