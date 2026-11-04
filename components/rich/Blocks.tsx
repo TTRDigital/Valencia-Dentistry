@@ -43,15 +43,16 @@ export async function StatBand({ dark, className }: { dark?: boolean; className?
 /** Card with an icon tile, title and text. Optional number badge. Used for features, steps and reasons. */
 export function IconCard({ icon = "sparkle", title, text, number, dark, className }: { icon?: IconName; title: string; text?: string; number?: number; dark?: boolean; className?: string }) {
   const I = Icon[icon] ?? Icon.sparkle;
+  // Editorial point (no box): a hairline on top whose accent grows on hover, a small line icon or number, title, text.
   return (
-    <div className={cn("group relative h-full rounded-lg p-6 sm:p-7", dark ? "bg-white/[0.06] ring-1 ring-white/10" : "bg-white ring-1 ring-ink-900/[0.07]", className)}>
-      <div className="flex items-start justify-between gap-4">
-        <span className={cn("inline-flex h-12 w-12 items-center justify-center rounded-md", dark ? "bg-bronze-300/15 text-bronze-300" : "bg-olive-100 text-olive-700")}><I className="h-6 w-6" /></span>
-        {number !== undefined && <span aria-hidden="true" data-num={String(number).padStart(2, "0")} className={cn("font-display text-3xl font-semibold before:content-[attr(data-num)]", dark ? "text-white/20" : "text-ink-900/10")} />}
-      </div>
-      <h3 className={cn("mt-5 text-xl", dark && "text-white")}>{title}</h3>
-      {text && <p className={cn("mt-2 text-base sm:text-[0.95rem]", dark ? "text-white/75" : "text-grey-700")}>{text}</p>}
-      <span aria-hidden="true" className={cn("absolute inset-x-6 bottom-0 h-0.5 origin-left scale-x-0 transition-transform duration-[var(--dur-std)] group-hover:scale-x-100", dark ? "bg-bronze-300" : "bg-olive-600")} />
+    <div className={cn("group relative h-full border-t pt-6", dark ? "border-white/15" : "border-ink-900/15", className?.replace(/\b(bg-\S+|ring-\S+)/g, ""))}>
+      <span aria-hidden="true" className={cn("absolute -top-px left-0 h-0.5 w-10 transition-[width] duration-500 group-hover:w-full", dark ? "bg-bronze-300" : "bg-olive-600")} />
+      <span className={cn("flex items-center gap-3 text-sm font-semibold tabular-nums", dark ? "text-bronze-300" : "text-olive-600")}>
+        <I className="h-5 w-5" />
+        {number !== undefined && <span>{String(number).padStart(2, "0")}</span>}
+      </span>
+      <h3 className={cn("mt-3 text-xl", dark && "text-white")}>{title}</h3>
+      {text && <p className={cn("mt-2", dark ? "text-white/75" : "text-grey-700")}>{text}</p>}
     </div>
   );
 }

@@ -93,55 +93,95 @@
       "_type": "techExplainer",
       "eyebrow": "Inside the office",
       "heading": "Technology in the office, explained",
-      "lead": "Our office is equipped for safe, efficient and minimally invasive care. Tap or hover over each one to see what it means for you.",
+      "lead": "Our office is equipped for safe, efficient and minimally invasive care. Here is what each tool means for you.",
       "items": [
         {
           "icon": "tech",
           "title": "3D CBCT imaging",
           "text": "Detailed three-dimensional scans for precise diagnosis and guided implant planning.",
-          "forYou": "Implants are planned on your own scan, so there are fewer surprises on the day."
+          "forYou": "Implants are planned on your own scan, so there are fewer surprises on the day.",
+          "label": "Advanced diagnostics",
+          "image": {
+            "src": "/images/real/xray-explain.jpg",
+            "alt": "Reviewing 3D imaging on screen at Valencia Dentistry"
+          }
         },
         {
           "icon": "sparkle",
           "title": "iTero digital scanning",
           "text": "Digital impressions for Invisalign, crowns and smile previews.",
-          "forYou": "No goopy trays, and you can preview your new smile on screen."
+          "forYou": "No goopy trays, and you can preview your new smile on screen.",
+          "label": "Digital impressions",
+          "image": {
+            "src": "/images/real/scan-intraoral.jpg",
+            "alt": "A digital iTero scan at Valencia Dentistry"
+          }
         },
         {
           "icon": "leaf",
           "title": "PRF therapy",
           "text": "Platelet-rich fibrin from your own blood.",
-          "forYou": "Used after surgery and grafting to support your healing."
+          "forYou": "Used after surgery and grafting to support your healing.",
+          "label": "Natural healing",
+          "image": {
+            "src": "/images/real/implant-xray-2.jpg",
+            "alt": "Explaining an implant plan on screen at Valencia Dentistry"
+          }
         },
         {
           "icon": "shield",
           "title": "Guided implant surgery",
           "text": "Implants placed with a surgical guide planned on your CBCT scan.",
-          "forYou": "Accurate placement that is mapped out before your procedure begins."
+          "forYou": "Accurate placement that is mapped out before your procedure begins.",
+          "label": "Precise placement",
+          "image": {
+            "src": "/images/real/implant-model-hands.jpg",
+            "alt": "Showing an implant on a model at Valencia Dentistry"
+          }
         },
         {
           "icon": "bolt",
           "title": "In-house crowns",
           "text": "Custom crowns designed and made on site.",
-          "forYou": "Many patients leave with the final crown the same day."
+          "forYou": "Many patients leave with the final crown the same day.",
+          "label": "Same-day crowns",
+          "image": {
+            "src": "/images/real/shade-match.jpg",
+            "alt": "Matching a crown shade with a patient at Valencia Dentistry"
+          }
         },
         {
           "icon": "smile",
           "title": "Intraoral cameras",
           "text": "Clear close-up images of your teeth.",
-          "forYou": "You see what we see, so your options are easier to understand."
+          "forYou": "You see what we see, so your options are easier to understand.",
+          "label": "See what we see",
+          "image": {
+            "src": "/images/real/scan-review.jpg",
+            "alt": "Showing a patient close-up images of her teeth at Valencia Dentistry"
+          }
         },
         {
           "icon": "sparkle",
           "title": "Laser dentistry",
           "text": "Precise, gentle treatment of soft tissue.",
-          "forYou": "Less bleeding and a faster recovery."
+          "forYou": "Less bleeding and a faster recovery.",
+          "label": "Gentle treatment",
+          "image": {
+            "src": "/images/real/loupes.jpg",
+            "alt": "Treatment with magnifying loupes at Valencia Dentistry"
+          }
         },
         {
           "icon": "heart",
           "title": "Sedation options",
           "text": "Comfort choices for anxious patients and longer procedures.",
-          "forYou": "We talk through what would help you relax at your consultation."
+          "forYou": "We talk through what would help you relax at your consultation.",
+          "label": "Comfort first",
+          "image": {
+            "src": "/images/real/mirror-view.jpg",
+            "alt": "A relaxed patient checking her smile at Valencia Dentistry"
+          }
         }
       ]
     },

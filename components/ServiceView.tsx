@@ -105,14 +105,16 @@ export async function ServiceView({ s }: { s: Service }) {
       {/* ---------- Quick facts, overlapping the hero ---------- */}
       <div className="relative z-10 mt-8 lg:-mt-16">
         <Container>
-          <ul data-stagger className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-            {quickFacts.map((f) => {
+          {/* One clean bar, four facts divided by hairlines (no icon boxes) */}
+          <ul className="grid grid-cols-2 overflow-hidden rounded-xl bg-white shadow-lift ring-1 ring-ink-900/5 lg:grid-cols-4">
+            {quickFacts.map((f, i) => {
               const I = Icon[f.icon];
               return (
-                <Reveal as="li" key={f.title} className="flex flex-col gap-3 rounded-lg bg-white p-4 shadow-lift ring-1 ring-ink-900/5 sm:flex-row sm:items-center sm:p-5">
-                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-olive-100 text-olive-700"><I className="h-5 w-5" /></span>
-                  <span><span className="block font-semibold text-ink-900">{f.title}</span><span className="block text-sm text-grey-700">{f.text}</span></span>
-                </Reveal>
+                <li key={f.title} className={cn("flex flex-col gap-2 p-5 sm:p-6", i % 2 === 1 && "border-l border-ink-900/10", i > 1 && "border-t border-ink-900/10 lg:border-t-0", i === 2 && "lg:border-l")}>
+                  <I className="h-5 w-5 text-olive-600" />
+                  <span className="font-semibold text-ink-900">{f.title}</span>
+                  <span className="text-sm text-grey-700">{f.text}</span>
+                </li>
               );
             })}
           </ul>
@@ -165,7 +167,7 @@ export async function ServiceView({ s }: { s: Service }) {
               </div>
               <div className="lg:col-span-7">
                 {s.understanding.items.length > 0 ? (
-                  <ul data-stagger className="fill-odd grid gap-4 sm:grid-cols-2">
+                  <ul data-stagger className="grid gap-x-8 gap-y-8 sm:grid-cols-2">
                     {s.understanding.items.map((it, i) => (
                       <Reveal as="li" key={it.title + i}><IconCard icon={CARD_ICONS[i % CARD_ICONS.length]} title={it.title} text={it.text} /></Reveal>
                     ))}
@@ -238,7 +240,7 @@ export async function ServiceView({ s }: { s: Service }) {
                 <RichHeading eyebrow="Why patients choose us" heading={s.why.heading} lead={s.why.intro || undefined} dark />
                 <PhotoFrame image={pic(4)} sizes="(min-width: 1024px) 460px, 100vw" className="mt-10" accent="olive" />
               </div>
-              <ul data-stagger className="fill-odd grid content-start gap-4 sm:grid-cols-2 lg:col-span-7">
+              <ul data-stagger className="grid content-start gap-x-8 gap-y-8 sm:grid-cols-2 lg:col-span-7">
                 {s.why.cards.map((c, i) => (
                   <Reveal as="li" key={c.title}><IconCard dark number={i + 1} icon={CARD_ICONS[(i + 2) % CARD_ICONS.length]} title={c.title} text={c.text} /></Reveal>
                 ))}
@@ -259,7 +261,7 @@ export async function ServiceView({ s }: { s: Service }) {
                   <div className="mt-8 grid gap-5 md:grid-cols-2">
                     {([["Before your appointment", s.care.before, "calendar"], ["After your appointment", s.care.after, "heart"]] as const).map(([t, items, ic]) => items.length > 0 && (
                       <div key={t} className="rounded-lg bg-white p-6 ring-1 ring-ink-900/[0.07] sm:p-8">
-                        <div className="flex items-center gap-3"><span className="inline-flex h-11 w-11 items-center justify-center rounded-md bg-olive-100 text-olive-700">{ic === "calendar" ? <Icon.calendar className="h-5 w-5" /> : <Icon.heart className="h-5 w-5" />}</span><h3 className="text-xl">{t}</h3></div>
+                        <div className="flex items-center gap-3"><span className="text-olive-600">{ic === "calendar" ? <Icon.calendar className="h-6 w-6" /> : <Icon.heart className="h-6 w-6" />}</span><h3 className="text-xl">{t}</h3></div>
                         <ul className="mt-5 space-y-3">{items.map((b) => <Check key={b}>{b}</Check>)}</ul>
                       </div>
                     ))}
@@ -283,8 +285,8 @@ export async function ServiceView({ s }: { s: Service }) {
                   <div className="mt-4 max-w-[68ch] space-y-4 text-grey-700">{e.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div>
                   {e.bullets.length > 0 && <ul className="mt-6 grid gap-3 sm:grid-cols-2">{e.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>}
                   {e.cards.length > 0 && (
-                    <ul className="fill-odd mt-6 grid gap-4 sm:grid-cols-2">
-                      {e.cards.map((c, i) => <li key={c.title}><IconCard icon={CARD_ICONS[(i + 4) % CARD_ICONS.length]} title={c.title} text={c.text} className="bg-warm ring-0" /></li>)}
+                    <ul className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2">
+                      {e.cards.map((c, i) => <li key={c.title}><IconCard icon={CARD_ICONS[(i + 4) % CARD_ICONS.length]} title={c.title} text={c.text} /></li>)}
                     </ul>
                   )}
                 </div>

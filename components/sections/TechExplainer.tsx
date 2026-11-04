@@ -17,7 +17,7 @@ export function TechExplainer({ s }: { s: TechExplainerSection }) {
     <Section className="bg-white" id="technology">
       <Container>
         <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
-        <ul data-stagger className="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
+        <ul data-stagger className={`mt-10 grid gap-5 sm:grid-cols-2 lg:mt-14 ${s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
           {s.items.map((it) => (
             <Reveal as="li" key={it.title} className="flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-ink-900/10">
               {it.image ? (
