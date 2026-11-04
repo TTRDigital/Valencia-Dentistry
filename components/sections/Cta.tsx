@@ -3,7 +3,7 @@ import { CtaBanner } from "@/components/rich/Blocks";
 import { Container, Section } from "@/components/ui/Section";
 
 // A real practice photo for closing banners that don't name their own
-const DEFAULT_IMAGE = { src: "/images/real/consult-seated.jpg", alt: "A consultation with a seated patient at Valencia Dentistry" };
+const DEFAULT_IMAGE = { src: "/images/real/treatment-room-2.jpg", alt: "A calm treatment room with natural light at Valencia Dentistry" };
 
 /** Closing call to action: the shared banner with the booking, phone, hours and a photo. */
 export function Cta({ s }: { s: CtaSection }) {

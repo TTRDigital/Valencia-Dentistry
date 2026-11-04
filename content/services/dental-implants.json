@@ -14,8 +14,8 @@
     "subtitle": "Advanced, Comfortable Implant Care at Valencia Dentistry",
     "text": "Replace missing teeth with natural-looking, long-lasting implants planned by our dentists using digital imaging, guided surgery, and personalized care.",
     "image": {
-      "src": "/images/real/implant-model-2.jpg",
-      "alt": "Dental Implants at Valencia Dentistry"
+      "src": "/images/real/xray-consult.jpg",
+      "alt": "Reviewing implant X-rays with a patient at Valencia Dentistry"
     }
   },
   "intro": {
@@ -29,8 +29,8 @@
     "heading": "What Are Dental Implants?",
     "intro": "Dental implants are long-lasting tooth replacements designed to restore missing teeth from the root up. An implant is a small titanium post placed in the jawbone, where it supports a custom crown, bridge, or denture. Because implants are anchored in the jawbone, they can provide strong chewing support, a natural look, and better stability than many removable tooth replacement options. At Valencia Dentistry, our team will evaluate your bone support, gum health, and smile goals to recommend the right implant option for you.",
     "image": {
-      "src": "/images/real/implant-model.jpg",
-      "alt": "Dental Implants: treatment at Valencia Dentistry"
+      "src": "/images/real/denture-closeup.jpg",
+      "alt": "A close look at a full-arch restoration at Valencia Dentistry"
     },
     "items": [
       {
@@ -76,8 +76,8 @@
         "title": "Doctor-Led, Detail-Oriented Care",
         "text": "Your dentist personally evaluates your smile, bite, bone support, and treatment goals before recommending an implant plan.",
         "image": {
-          "src": "/images/real/implant-xray.jpg",
-          "alt": "Dental Implants at Valencia Dentistry: Doctor-Led, Detail-Oriented Care"
+          "src": "/images/real/scan-intraoral.jpg",
+          "alt": "A digital iTero scan at Valencia Dentistry"
         }
       },
       {
@@ -92,8 +92,8 @@
         "title": "Stress-Free Experience",
         "text": "Our team explains each step clearly and offers comfort-focused care, including sedation options when appropriate.",
         "image": {
-          "src": "/images/real/implant-consult-chair.jpg",
-          "alt": "Dental Implants at Valencia Dentistry: Stress-Free Experience"
+          "src": "/images/real/smile-plan-5.jpg",
+          "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
         }
       },
       {

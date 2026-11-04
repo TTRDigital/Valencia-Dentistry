@@ -14,8 +14,8 @@
     "subtitle": "Experience Relief with Wisdom Teeth Removal in Santa Clarita",
     "text": "Say Goodbye to Wisdom Tooth Pain with Personalized, Stress-Free Care",
     "image": {
-      "src": "/images/real/xray-pointing.jpg",
-      "alt": "Wisdom Teeth Removal at Valencia Dentistry"
+      "src": "/images/real/treatment-room-2.jpg",
+      "alt": "A calm treatment room with natural light at Valencia Dentistry"
     }
   },
   "intro": {
@@ -28,8 +28,8 @@
     "heading": "Different Types of Wisdom Teeth Removal",
     "intro": "Not all wisdom teeth are the same—and neither are the procedures used to remove them. At Valencia Dentistry, we tailor each extraction based on how the tooth is positioned and how it’s affecting your oral health. Here are the two most common types of wisdom teeth removal: Timing matters when it comes to wisdom teeth. Removing them before they fully develop—or before complications arise—can make the process smoother and protect your long-term oral health. Easier Recovery Younger patients tend to heal faster with fewer post-op issues. Fewer Complications Prevents infections, cysts, and damage to neighboring teeth. Less Crowding Avoids misalignment that can undo years of orthodontic work. Improved Oral Hygiene Makes it easier to brush and floss back molars. Peace of Mind Eliminates the risk of painful flare-ups down the road.",
     "image": {
-      "src": "/images/real/scan-review-2.jpg",
-      "alt": "Wisdom Teeth Removal: treatment at Valencia Dentistry"
+      "src": "/images/real/xray-consult.jpg",
+      "alt": "Reviewing implant X-rays with a patient at Valencia Dentistry"
     },
     "items": [
       {
@@ -51,24 +51,24 @@
         "title": "Doctor-Led Precision",
         "text": "Your dentist personally performs all wisdom teeth extractions, ensuring safe, consistent, and expert results.",
         "image": {
-          "src": "/images/real/implant-xray-2.jpg",
-          "alt": "Wisdom Teeth Removal at Valencia Dentistry: Doctor-Led Precision"
+          "src": "/images/real/treatment-room.jpg",
+          "alt": "A bright treatment room at Valencia Dentistry"
         }
       },
       {
         "title": "Advanced Technology",
         "text": "From 3D digital imaging to modern surgical tools, we use cutting-edge techniques to enhance precision and reduce recovery time.",
         "image": {
-          "src": "/images/real/loupes.jpg",
-          "alt": "Wisdom Teeth Removal at Valencia Dentistry: Advanced Technology"
+          "src": "/images/real/implant-model-hands.jpg",
+          "alt": "Showing a patient a dental implant model at Valencia Dentistry"
         }
       },
       {
         "title": "Multiple Sedation Options",
         "text": "Whether you need mild relaxation or deeper sedation, we’ll help you stay comfortable throughout your procedure.",
         "image": {
-          "src": "/images/real/xray-review-seated.jpg",
-          "alt": "Wisdom Teeth Removal at Valencia Dentistry: Multiple Sedation Options"
+          "src": "/images/real/scan-hygienist.jpg",
+          "alt": "A digital scan with a hygienist at Valencia Dentistry"
         }
       },
       {
@@ -110,8 +110,8 @@
       "Show signs of cysts or bone damage on dental X-rays"
     ],
     "image": {
-      "src": "/images/real/mirror-smile-2.jpg",
-      "alt": ""
+      "src": "/images/real/cleaning.jpg",
+      "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
     }
   },
   "care": {

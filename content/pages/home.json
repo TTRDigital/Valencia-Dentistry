@@ -69,8 +69,8 @@
         "Time for all of your questions"
       ],
       "image": {
-        "src": "/images/real/consult-seated.jpg",
-        "alt": "A new patient consultation at Valencia Dentistry"
+        "src": "/images/real/treatment-room-2.jpg",
+        "alt": "A calm treatment room with natural light at Valencia Dentistry"
       },
       "buttonLabel": "Book your first visit",
       "fine": "Most PPO plans accepted; we check your benefits before your visit."
@@ -103,8 +103,8 @@
           "text": "A three-dimensional view of teeth, bone and nerves.",
           "forYou": "Implants and wisdom teeth are planned with fewer surprises.",
           "image": {
-            "src": "/images/real/xray-explain.jpg",
-            "alt": "Reviewing 3D imaging on screen at Valencia Dentistry"
+            "src": "/images/real/xray-screen.jpg",
+            "alt": "A panoramic X-ray on screen at Valencia Dentistry"
           }
         },
         {
@@ -123,8 +123,8 @@
           "text": "Instant images with low radiation.",
           "forYou": "Quicker answers in the chair, with less exposure.",
           "image": {
-            "src": "/images/real/implant-xray.jpg",
-            "alt": "Explaining a digital X-ray to a patient at Valencia Dentistry"
+            "src": "/images/real/xray-consult.jpg",
+            "alt": "Reviewing implant X-rays with a patient at Valencia Dentistry"
           }
         }
       ],
@@ -145,8 +145,8 @@
       "heading": "Ready to transform your smile?",
       "text": "A comprehensive exam and digital X-rays with your dentist, and a clear plan you can take home. Most PPO plans accepted.",
       "image": {
-        "src": "/images/real/consult-seated.jpg",
-        "alt": "A consultation with a seated patient at Valencia Dentistry"
+        "src": "/images/real/cleaning.jpg",
+        "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
       },
       "buttonLabel": "Book your first visit"
     },

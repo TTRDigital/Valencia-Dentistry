@@ -23,8 +23,8 @@
         "href": "/services/"
       },
       "image": {
-        "src": "/images/team/dr-lavi-outdoor.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS",
+        "src": "/images/real/scan-hygienist.jpg",
+        "alt": "A digital scan with a hygienist at Valencia Dentistry",
         "focus": "center 18%"
       },
       "trust": true
@@ -38,8 +38,8 @@
         "The mission is simple. High-quality dentistry should be accessible, compassionate and truly patient-centered, whether you are here for a routine cleaning or a full smile reconstruction."
       ],
       "image": {
-        "src": "/images/team/dr-lavi-casual.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS"
+        "src": "/images/real/smile-plan-5.jpg",
+        "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
       },
       "imageSide": "right"
     },
@@ -102,8 +102,8 @@
           "forYou": "Implants are planned on your own scan, so there are fewer surprises on the day.",
           "label": "Advanced diagnostics",
           "image": {
-            "src": "/images/real/xray-explain.jpg",
-            "alt": "Reviewing 3D imaging on screen at Valencia Dentistry"
+            "src": "/images/real/xray-screen.jpg",
+            "alt": "A panoramic X-ray on screen at Valencia Dentistry"
           }
         },
         {
@@ -124,8 +124,8 @@
           "forYou": "Used after surgery and grafting to support your healing.",
           "label": "Natural healing",
           "image": {
-            "src": "/images/real/implant-xray-2.jpg",
-            "alt": "Explaining an implant plan on screen at Valencia Dentistry"
+            "src": "/images/real/treatment-room-2.jpg",
+            "alt": "A calm treatment room with natural light at Valencia Dentistry"
           }
         },
         {
@@ -146,8 +146,8 @@
           "forYou": "Many patients leave with the final crown the same day.",
           "label": "Same-day crowns",
           "image": {
-            "src": "/images/real/shade-match.jpg",
-            "alt": "Matching a crown shade with a patient at Valencia Dentistry"
+            "src": "/images/real/tryin-smile.jpg",
+            "alt": "A patient smiling during a try-in at Valencia Dentistry"
           }
         },
         {
@@ -157,8 +157,8 @@
           "forYou": "You see what we see, so your options are easier to understand.",
           "label": "See what we see",
           "image": {
-            "src": "/images/real/scan-review.jpg",
-            "alt": "Showing a patient close-up images of her teeth at Valencia Dentistry"
+            "src": "/images/real/scan-closeup.jpg",
+            "alt": "A digital scan of a patient's teeth at Valencia Dentistry"
           }
         },
         {
@@ -168,8 +168,8 @@
           "forYou": "Less bleeding and a faster recovery.",
           "label": "Gentle treatment",
           "image": {
-            "src": "/images/real/loupes.jpg",
-            "alt": "Treatment with magnifying loupes at Valencia Dentistry"
+            "src": "/images/real/cleaning.jpg",
+            "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
           }
         },
         {
@@ -179,8 +179,8 @@
           "forYou": "We talk through what would help you relax at your consultation.",
           "label": "Comfort first",
           "image": {
-            "src": "/images/real/mirror-view.jpg",
-            "alt": "A relaxed patient checking her smile at Valencia Dentistry"
+            "src": "/images/real/treatment-room.jpg",
+            "alt": "A bright treatment room at Valencia Dentistry"
           }
         }
       ]

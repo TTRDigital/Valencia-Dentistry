@@ -581,6 +581,26 @@
    1600
   ]
  },
+ "/images/real/smile-plan-screen-2.jpg": {
+  "width": 928,
+  "height": 939,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAgCdASoMAAwAA4BaJYwC7AEf3Y9ERv+dAAD9xmOYLUfvbVXkq/OHEFPW5z3Kze9sbBSCgAA=",
+  "opt": [
+   480,
+   768,
+   928
+  ]
+ },
+ "/images/real/smile-plan-screen.jpg": {
+  "width": 928,
+  "height": 982,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoLAAwAA4BaJZQC7AC2R5DAAP6RVUCTxnMDf1d78HP3JZDhPX0jOj4mi9y2VKwpZGwAAA==",
+  "opt": [
+   480,
+   768,
+   928
+  ]
+ },
  "/images/real/smile-plan.jpg": {
   "width": 1600,
   "height": 1067,
@@ -700,6 +720,16 @@
    1600
   ]
  },
+ "/images/real/xray-consult.jpg": {
+  "width": 1056,
+  "height": 975,
+  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoMAAsAA4BaJQBOgBtrS4GrgAAA/HWWXslpuWy4+0mQzDLjWrEOpJ8d/WMjA5ZS28RIwInOfsQAAA==",
+  "opt": [
+   480,
+   768,
+   1056
+  ]
+ },
  "/images/real/xray-explain.jpg": {
   "width": 1600,
   "height": 1067,
@@ -746,6 +776,15 @@
    1080,
    1440,
    1600
+  ]
+ },
+ "/images/real/xray-screen.jpg": {
+  "width": 767,
+  "height": 469,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAQAgCdASoMAAcAA4BaJZQC7AD1e0+STSwAAP6wJvv01ePGMPZ81P6YANH2csNsl5GH5ib3I0kpAAAA",
+  "opt": [
+   480,
+   767
   ]
  },
  "/images/team/dr-lavi-casual.jpg": {

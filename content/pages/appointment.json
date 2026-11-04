@@ -24,8 +24,8 @@
       },
       "trust": true,
       "image": {
-        "src": "/images/real/mirror-smile.jpg",
-        "alt": "A patient smiling in the dental chair with Dr. Lavi"
+        "src": "/images/real/treatment-room-2.jpg",
+        "alt": "A calm treatment room with natural light at Valencia Dentistry"
       }
     },
     {
@@ -73,20 +73,20 @@
           "alt": "A treatment room at Valencia Dentistry"
         },
         {
-          "src": "/images/real/consult-seated.jpg",
-          "alt": "Talking through health history in the chair"
+          "src": "/images/real/cleaning.jpg",
+          "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
         },
         {
-          "src": "/images/real/xray-explain.jpg",
-          "alt": "Digital X-rays explained on screen"
+          "src": "/images/real/scan-hygienist.jpg",
+          "alt": "A digital scan with a hygienist at Valencia Dentistry"
         },
         {
-          "src": "/images/real/loupes.jpg",
-          "alt": "A careful exam with dental loupes"
+          "src": "/images/real/smile-plan-5.jpg",
+          "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
         },
         {
-          "src": "/images/real/smile-plan-3.jpg",
-          "alt": "Going over a treatment plan together"
+          "src": "/images/real/veneer-smile.jpg",
+          "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
         }
       ]
     },
