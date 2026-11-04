@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export const viewport: Viewport = { themeColor: "#eef1ea", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#ece9e1", width: "device-width", initialScale: 1 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const [nav, posts] = await Promise.all([getNavigation(), getPosts()]);

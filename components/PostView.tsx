@@ -26,7 +26,7 @@ export async function PostView({ post }: { post: Post }) {
   return (
     <article>
       {/* Header: tinted band, title and author on the left, the photo framed on the right */}
-      <header className="border-b hairline bg-[linear-gradient(180deg,#eef1ea_0%,#fafaf4_100%)]">
+      <header className="border-b hairline bg-[linear-gradient(180deg,#ece9e1_0%,#f7f5ef_100%)]">
         <Container>
           <div className="grid items-center gap-10 py-10 lg:grid-cols-12 lg:gap-14 lg:py-16">
             <div className="lg:col-span-7">

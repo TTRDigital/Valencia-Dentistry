@@ -9,11 +9,11 @@
 @theme {
   /* Brand palette: Valencia Dentistry brand board (charcoal, olive, warm grey, greige, ivory) + the logo's bronze */
   --color-ink-950: #141414;
-  --color-ink-900: #1c1c1c; /* near-black: headings, dark surfaces (Ideal style) */
+  --color-ink-900: #2e2e2e; /* brand charcoal: text and the logo only, never a background */
   --color-ink-800: #3a3a3a;
   --color-ink-700: #474747;
-  --color-olive-900: #4f5d4e; /* brand olive for dark surfaces (no black anywhere) */
-  --color-olive-800: #566555;
+  --color-olive-900: #5b6b5a; /* brand olive (#5B6B5A): every dark surface */
+  --color-olive-800: #657564;
   --color-olive-700: #4a574a;
   --color-olive-600: #5b6b5a; /* olive: accents, links, buttons */
   --color-olive-500: #6f806e;
@@ -34,8 +34,8 @@
   --color-grey-200: #d6d3cc; /* greige: borders, dividers */
   --color-grey-100: #eceae4;
   --color-white: #ffffff;
-  --color-offwhite: #fffaf4;  /* header cream */
-  --color-warm: #fafaf4;      /* cream page background (Ideal style) */
+  --color-offwhite: #f7f5ef;  /* brand ivory */
+  --color-warm: #f7f5ef;      /* brand ivory page background */
   --color-success: #3f6b45;
   --color-danger: #a8321f;
 
@@ -338,7 +338,7 @@
   .has-cursor .cursor-ring { width: 38px; height: 38px; margin: -19px 0 0 -19px; border-radius: 9999px; border: 1.5px solid rgb(91 107 90 / 0.55); display: grid; place-items: center; transition: width 300ms var(--ease-enter), height 300ms var(--ease-enter), margin 300ms var(--ease-enter), background-color 300ms, border-color 300ms, opacity 200ms; }
   .has-cursor .cursor-ring span { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; opacity: 0; transition: opacity 200ms; }
   .has-cursor .cursor-ring[data-mode="hover"] { width: 64px; height: 64px; margin: -32px 0 0 -32px; border-color: rgb(91 107 90 / 0.35); background: rgb(91 107 90 / 0.08); }
-  .has-cursor .cursor-ring[data-mode="label"] { width: 92px; height: 92px; margin: -46px 0 0 -46px; background: var(--color-ink-900); border-color: transparent; }
+  .has-cursor .cursor-ring[data-mode="label"] { width: 92px; height: 92px; margin: -46px 0 0 -46px; background: var(--color-olive-900); border-color: transparent; }
   .has-cursor .cursor-ring[data-mode="label"] span { opacity: 1; }
   .has-cursor [data-mode="hidden"] { opacity: 0; }
 
@@ -367,7 +367,7 @@
 
   .step-tick { transition: background-color 500ms; }
   [data-current="0"] .step-tick[data-i="0"], [data-current="1"] .step-tick[data-i="1"], [data-current="2"] .step-tick[data-i="2"], [data-current="3"] .step-tick[data-i="3"], [data-current="4"] .step-tick[data-i="4"], [data-current="5"] .step-tick[data-i="5"] { background: #fff; }
-  .timeline[data-animated] [data-step][data-active] .step-card { background: var(--color-warm); border-color: rgb(28 28 28 / 0.06); }
+  .timeline[data-animated] [data-step][data-active] .step-card { background: var(--color-warm); border-color: rgb(46 46 46 / 0.06); }
 
   /* Stacking cards: each card sticks a little lower than the last, so they pile up as you scroll */
   .stack-card { position: sticky; top: calc(96px + var(--i, 0) * 28px); }

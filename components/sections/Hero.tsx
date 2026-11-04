@@ -52,7 +52,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
             <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-olive-900 lg:hidden" />
           </div>
         )}
-        <div aria-hidden="true" className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,rgba(79,93,78,0.92)_0%,rgba(79,93,78,0.7)_30%,rgba(79,93,78,0)_48%)]" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,rgba(91,107,90,0.92)_0%,rgba(91,107,90,0.7)_30%,rgba(91,107,90,0)_48%)]" />
         <div className="container-x w-full pb-10 pt-2 lg:py-24">
           <div className="hero-stage lg:max-w-[25rem] xl:max-w-[31rem]">
             <h1 id="hero-heading" className="text-4xl text-white sm:text-5xl lg:text-[clamp(2.75rem,1.2rem+2.6vw,4rem)]"><StagedHeading text={s.heading} accent={0} /></h1>
