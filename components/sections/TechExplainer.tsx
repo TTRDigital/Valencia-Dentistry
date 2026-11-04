@@ -14,7 +14,7 @@ import { Container, Section } from "@/components/ui/Section";
 export function TechExplainer({ s }: { s: TechExplainerSection }) {
   const withPhotos = s.items.some((it) => it.image);
   return (
-    <Section className="bg-white" id="technology">
+    <Section className="bg-warm" id="technology">
       <Container>
         <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
         <ul data-stagger className={`-mx-4 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:mt-10 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:mt-14 ${s.items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>

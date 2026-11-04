@@ -5,58 +5,75 @@ import type { FeaturedServicesSection, NewPatientSection, Service, WhyChooseSect
 import { RichHeading } from "@/components/rich/Blocks";
 import { PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Icon } from "@/components/ui/Icons";
+import { Picture } from "@/components/ui/Picture";
+import { distinctPhotos } from "@/lib/utils";
+import { servicePhotos } from "./ServicesHub";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
 
 /**
- * Services as a clean numbered grid: the first treatment is a large dark "Featured" card, the rest are
- * light text cards (number, name, one line, Explore). A "Not sure where to start?" strip follows.
+ * Services as a photo bento: the first treatment is a large photo card (olive fade, name, line, tags),
+ * the next four are photo cards around it. Phones: the big card, then a two-column grid of compact
+ * photo cards (photo + name). A "Not sure where to start?" strip follows.
  */
 export async function FeaturedServices({ s }: { s: FeaturedServicesSection }) {
   const all = await getServices();
   const items = s.slugs.map((slug) => all.find((x) => x.slug === slug)).filter((x): x is Service => !!x);
+  const fixed = Object.values(s.images ?? {}).map((im) => im.src);
+  const auto = distinctPhotos(items, servicePhotos, fixed);
+  const photo = (i: number) => s.images?.[items[i].slug] ?? auto[i] ?? items[i].hero.image;
   const [first, ...rest] = items;
-  const num = (i: number) => String(i + 1).padStart(2, "0");
   return (
     <Section className="bg-warm" id="services">
       <Container>
-        <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-        <ul data-stagger className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
+          <Link href="/services/" className="link-arrow hidden shrink-0 sm:inline-flex">View all services <Icon.arrow className="h-4 w-4" /></Link>
+        </div>
+        <ul data-stagger className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4 lg:grid-rows-2">
           {first && (
-            <Reveal as="li" className="sm:col-span-2">
-              <Link href={first.path} className="group relative flex h-full flex-col overflow-hidden rounded-xl bg-olive-900 p-6 text-white sm:min-h-64 sm:p-8">
-                <span className="text-xs font-semibold uppercase tracking-[0.12em] text-white/60">Featured · {num(0)}</span>
-                <span className="mt-2 text-2xl font-semibold text-white sm:mt-3 sm:text-3xl">{first.name}</span>
-                <span className="mt-3 max-w-md text-white/75">{first.shortDescription}</span>
-                <span className="mt-auto pt-5 sm:pt-6">
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold uppercase tracking-[0.08em] text-white">Explore {first.name.toLowerCase()} <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
-                  {s.featuredTags && <span className="mt-4 hidden flex-wrap gap-2 sm:flex">{s.featuredTags.map((t) => <span key={t} className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/80 ring-1 ring-white/15">{t}</span>)}</span>}
+            <Reveal as="li" className="col-span-2 lg:row-span-2">
+              <Link href={first.path} className="group relative flex aspect-[4/3] h-full flex-col justify-end overflow-hidden rounded-2xl text-white sm:aspect-[16/10] lg:aspect-auto lg:min-h-[560px]">
+                <Picture image={photo(0)} fill sizes="(min-width: 1024px) 640px, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+                <span aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-olive-900 via-olive-900/55 to-transparent" />
+                <span className="relative p-6 sm:p-9">
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-bronze-300">Featured treatment</span>
+                  <span className="mt-2 block text-3xl font-semibold text-white sm:text-4xl">{first.name}</span>
+                  <span className="mt-2 block max-w-md text-white/85 sm:text-lg">{first.shortDescription}</span>
+                  {s.featuredTags && <span className="mt-5 hidden flex-wrap gap-2 sm:flex">{s.featuredTags.map((t) => <span key={t} className="rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white ring-1 ring-white/25 backdrop-blur-sm">{t}</span>)}</span>}
+                  <span className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-olive-900">Explore {first.name.toLowerCase()} <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
                 </span>
               </Link>
             </Reveal>
           )}
           {rest.map((it, i) => (
             <Reveal as="li" key={it.slug}>
-              <Link href={it.path} className="group flex h-full items-center gap-4 rounded-xl bg-white px-5 py-4 ring-1 ring-ink-900/10 transition-shadow hover:shadow-lift sm:min-h-56 sm:flex-col sm:items-stretch sm:gap-0 sm:p-6">
-                <span className="text-xs font-semibold tabular-nums text-grey-400">{num(i + 1)}</span>
-                <span className="flex-1 text-lg font-semibold text-ink-900 sm:mt-3 sm:flex-none sm:text-xl">{it.name}</span>
-                <span className="mt-2 hidden text-[0.9375rem] text-grey-700 sm:block">{it.shortDescription}</span>
-                <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-ink-900 group-hover:text-olive-700 sm:mt-auto sm:pt-5"><span className="sr-only sm:not-sr-only">Explore</span> <Icon.arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+              <Link href={it.path} className="group flex h-full flex-col overflow-hidden rounded-2xl bg-offwhite ring-1 ring-ink-900/5 transition-shadow hover:shadow-lift">
+                <span className="relative block aspect-[4/3] overflow-hidden">
+                  <Picture image={photo(i + 1)} fill cropTo={4 / 3} sizes="(min-width: 1024px) 300px, 50vw" className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.05]" />
+                </span>
+                <span className="flex flex-1 items-start justify-between gap-2 p-4 sm:p-5">
+                  <span>
+                    <span className="block font-semibold text-ink-900 sm:text-lg">{it.name}</span>
+                    <span className="mt-1 hidden text-sm text-grey-700 sm:block">{it.shortDescription}</span>
+                  </span>
+                  <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-olive-900 text-white transition-transform group-hover:translate-x-0.5"><Icon.arrow className="h-4 w-4" /></span>
+                </span>
               </Link>
             </Reveal>
           ))}
         </ul>
         {s.consult && (
-          <div className="mt-6 flex flex-col gap-4 rounded-xl bg-white p-6 ring-1 ring-ink-900/10 sm:flex-row sm:items-center sm:justify-between sm:p-7">
+          <div className="mt-5 flex flex-col gap-4 rounded-2xl bg-olive-900 p-6 text-white sm:mt-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-grey-600">Not sure where to start?</p>
-              <p className="mt-1 text-xl font-semibold text-ink-900">{s.consult.heading}</p>
-              <p className="mt-1 hidden text-grey-700 sm:block">{s.consult.text}</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-bronze-300">Not sure where to start?</p>
+              <p className="mt-1 text-xl font-semibold text-white">{s.consult.heading}</p>
+              <p className="mt-1 hidden text-white/80 sm:block">{s.consult.text}</p>
             </div>
-            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary shrink-0">{s.consult.buttonLabel} <Icon.arrow className="h-4 w-4" /></a>
+            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-light shrink-0">{s.consult.buttonLabel} <Icon.arrow className="h-4 w-4" /></a>
           </div>
         )}
-        <p className="mt-8 text-center"><Link href="/services/" className="link-arrow">View all services <Icon.arrow className="h-4 w-4" /></Link></p>
+        <p className="mt-6 text-center sm:hidden"><Link href="/services/" className="link-arrow">View all services <Icon.arrow className="h-4 w-4" /></Link></p>
       </Container>
     </Section>
   );
@@ -65,7 +82,7 @@ export async function FeaturedServices({ s }: { s: FeaturedServicesSection }) {
 /** New patient visit: a calm sage band with what the first visit includes and one clear button. No price. */
 export function NewPatient({ s }: { s: NewPatientSection }) {
   return (
-    <Section className="bg-[#ece9e1]" id="new-patients">
+    <Section className="bg-greige-50" id="new-patients">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
@@ -91,7 +108,7 @@ export function NewPatient({ s }: { s: NewPatientSection }) {
 /** Why choose the practice: one photo beside a clean numbered list (no boxes, no icons). */
 export function WhyChoose({ s }: { s: WhyChooseSection }) {
   return (
-    <Section className="bg-white" id="why-us">
+    <Section className="bg-warm" id="why-us">
       <Container>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">

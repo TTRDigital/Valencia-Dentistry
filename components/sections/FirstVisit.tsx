@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 export function FirstVisit({ s }: { s: FirstVisitSection }) {
   const photos = s.images ?? [];
   return (
-    <Section className="bg-white" id="first-visit">
+    <Section className="bg-warm" id="first-visit">
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
         <TimelineProgress className="timeline relative mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">

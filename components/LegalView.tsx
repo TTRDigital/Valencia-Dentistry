@@ -18,7 +18,7 @@ export function LegalView({ page }: { page: LegalPage }) {
           </div>
         </Container>
       </Section>
-      <Section className="bg-white">
+      <Section className="bg-warm">
         <Container>
           <div className="mx-auto max-w-[72ch]"><Markdown source={page.body} /></div>
         </Container>

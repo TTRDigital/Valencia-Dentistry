@@ -65,7 +65,7 @@ export async function ServicesHub() {
         const items = services.filter((s) => s.category === g.key).sort((a, b) => (parents.has(a.path) ? -1 : 0) - (parents.has(b.path) ? -1 : 0) || a.name.localeCompare(b.name));
         if (!items.length) return null;
         return (
-          <Section key={g.key} id={g.key} className={gi % 2 ? "bg-white" : "bg-warm"} tight>
+          <Section key={g.key} id={g.key} className={gi % 2 ? "bg-warm" : "bg-warm"} tight>
             <Container>
               <div className="grid gap-8 lg:grid-cols-12">
                 <div className="lg:col-span-4">

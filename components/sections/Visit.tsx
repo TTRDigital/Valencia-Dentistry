@@ -8,7 +8,7 @@ import { OfficeMap } from "@/components/blocks/OfficeMap";
 
 export function Visit({ s }: { s: VisitSection }) {
   return (
-    <Section className="bg-white" id="visit">
+    <Section className="bg-warm" id="visit">
       <Container>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">

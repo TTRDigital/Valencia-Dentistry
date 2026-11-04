@@ -26,7 +26,7 @@ export async function PostView({ post }: { post: Post }) {
   return (
     <article>
       {/* Header: tinted band, title and author on the left, the photo framed on the right */}
-      <header className="border-b hairline bg-[linear-gradient(180deg,#ece9e1_0%,#f7f5ef_100%)]">
+      <header className="border-b hairline bg-[linear-gradient(180deg,#dcd7cd_0%,#e6e2da_100%)]">
         <Container>
           <div className="grid items-center gap-10 py-10 lg:grid-cols-12 lg:gap-14 lg:py-16">
             <div className="lg:col-span-7">
@@ -80,7 +80,7 @@ export async function PostView({ post }: { post: Post }) {
           </aside>
 
           <div className="min-w-0 lg:order-first lg:col-span-8">
-            <section aria-labelledby="in-short" className="mb-10 rounded-lg border-l-4 border-olive-600 bg-white p-6 shadow-[0_0_0_1px_rgb(20_20_20/0.06)] sm:p-8">
+            <section aria-labelledby="in-short" className="mb-10 rounded-lg border-l-4 border-olive-600 bg-warm p-6 shadow-[0_0_0_1px_rgb(20_20_20/0.06)] sm:p-8">
               <h2 id="in-short" className="font-sans text-xs font-semibold uppercase tracking-[0.16em] text-grey-600">In short</h2>
               <p className="mt-3 text-lg leading-relaxed text-ink-900">{post.excerpt}</p>
             </section>
@@ -127,7 +127,7 @@ export async function PostView({ post }: { post: Post }) {
       </Container>
 
       {(related.length + fallback.length) > 0 && (
-        <section className="section-tight border-t hairline bg-white" aria-labelledby="related-posts">
+        <section className="section-tight border-t hairline bg-warm" aria-labelledby="related-posts">
           <Container>
             <div className="flex items-end justify-between gap-6">
               <h2 id="related-posts" className="text-4xl">More from the blog</h2>

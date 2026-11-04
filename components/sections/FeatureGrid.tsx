@@ -36,7 +36,7 @@ function Header({ eyebrow, heading, lead, dark }: { eyebrow?: string; heading: s
 
 export function FeatureGrid({ s }: { s: FeatureGridSection }) {
   return (
-    <Section dark={s.dark} className={s.dark ? undefined : "bg-white"}>
+    <Section dark={s.dark} className={s.dark ? undefined : "bg-warm"}>
       <Container>
         <Header eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} dark={s.dark} />
         <Points items={s.items} dark={s.dark} cols={s.columns === 4 ? 4 : 3} />

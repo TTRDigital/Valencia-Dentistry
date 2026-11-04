@@ -77,7 +77,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
       {/* The header box keeps a fixed 72px height (no layout shift). Over a hero it starts transparent
           (the hero runs underneath it, see [data-hero] in globals.css); after scrolling the background
           fades in, scales to 64px and gains a shadow, and the row moves up 4px. Transforms and opacity only. */}
-      <div aria-hidden="true" className={cn("header-bg absolute inset-0 origin-top bg-[#ece9e1]", scrolled && "scale-y-[0.889]")} />
+      <div aria-hidden="true" className={cn("header-bg absolute inset-0 origin-top bg-offwhite", scrolled && "scale-y-[0.889]")} />
       <div aria-hidden="true" className={cn("pointer-events-none absolute inset-x-0 top-[64px] h-4 bg-gradient-to-b from-ink-900/10 to-transparent opacity-0 transition-opacity duration-300", scrolled && "opacity-100")} />
       {/* Main bar */}
       <div className={cn("container-x relative transition-transform duration-300 ease-out", scrolled && "-translate-y-1")}>
@@ -199,7 +199,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
       </div>
 
       {/* Mobile full-screen menu: light panel, clean links that cascade in */}
-      <div id="mobile-menu" data-lenis-prevent data-open={mobileOpen || undefined} className={cn("mobile-menu fixed inset-0 z-40 isolate overflow-y-auto bg-[#ece9e1] text-ink-900 transition-[opacity,visibility] duration-300 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 72 }}>
+      <div id="mobile-menu" data-lenis-prevent data-open={mobileOpen || undefined} className={cn("mobile-menu fixed inset-0 z-40 isolate overflow-y-auto bg-warm text-ink-900 transition-[opacity,visibility] duration-300 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 72 }}>
         <nav aria-label="Mobile" className="container-x pb-32 pt-6">
           <ul>
             {nav.header.map((item, i) => (

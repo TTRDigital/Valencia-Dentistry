@@ -18,9 +18,9 @@
   --color-olive-600: #5b6b5a; /* olive: accents, links, buttons */
   --color-olive-500: #6f806e;
   --color-olive-100: #e4e7e0;
-  --color-greige-50: #f0eee8;  /* tints */
+  --color-greige-50: #dcd7cd;  /* deeper greige band */
   --color-greige-100: #e6e3db;
-  --color-sand-50: #f1ece2;    /* warm section tint */
+  --color-sand-50: #dcd7cd;    /* deeper greige band */
   --color-sand-100: #e9e2d3;
   --color-bronze-300: #c9ba9c; /* bronze on dark: eyebrows, lines */
   --color-bronze-400: #a89a7f;
@@ -35,7 +35,7 @@
   --color-grey-100: #eceae4;
   --color-white: #ffffff;
   --color-offwhite: #f7f5ef;  /* brand ivory */
-  --color-warm: #f7f5ef;      /* brand ivory page background */
+  --color-warm: #e6e2da;      /* brand greige, like the office wall: the page background */
   --color-success: #3f6b45;
   --color-danger: #a8321f;
 

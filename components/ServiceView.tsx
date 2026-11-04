@@ -156,7 +156,7 @@ export async function ServiceView({ s }: { s: Service }) {
 
       {/* ---------- What it is: icon cards ---------- */}
       {hasWhat && (
-        <Section id="what-it-is" className="scroll-mt-32 relative isolate overflow-hidden bg-white">
+        <Section id="what-it-is" className="scroll-mt-32 relative isolate overflow-hidden bg-warm">
           <Container>
             <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
               <div className="lg:col-span-5">
@@ -208,7 +208,7 @@ export async function ServiceView({ s }: { s: Service }) {
 
       {/* ---------- How it works: connected step cards ---------- */}
       {s.process.steps.length > 0 && (
-        <Section id="how-it-works" className="scroll-mt-32 bg-white">
+        <Section id="how-it-works" className="scroll-mt-32 bg-warm">
           <Container>
             <RichHeading eyebrow="How it works" heading={s.process.heading} lead={s.process.intro || undefined} align="center" />
             <div className="relative mt-14">
@@ -298,7 +298,7 @@ export async function ServiceView({ s }: { s: Service }) {
 
       {/* ---------- Questions: doctor card beside the accordion ---------- */}
       {s.faqs.length > 0 && (
-        <Section id="questions" className="scroll-mt-32 bg-white">
+        <Section id="questions" className="scroll-mt-32 bg-warm">
           <Container>
             <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
               <div className="lg:col-span-4">

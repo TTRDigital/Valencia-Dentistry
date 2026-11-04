@@ -13,7 +13,7 @@ export function IntroSplit({ s }: { s: IntroSplitSection }) {
   const meta = (manifest as Record<string, { width: number; height: number }>)[s.image.src];
   const portrait = (s.image.height ?? meta?.height ?? 0) > (s.image.width ?? meta?.width ?? 1);
   return (
-    <Section className="bg-white">
+    <Section className="bg-warm">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <Reveal className={cn("lg:col-span-6", left ? "lg:order-1" : "lg:order-2")}>

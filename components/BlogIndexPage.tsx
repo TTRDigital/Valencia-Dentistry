@@ -21,7 +21,7 @@ export async function BlogIndexPage({ page }: { page: number }) {
           <SectionHeading className="mt-6" as="h1" eyebrow="Blog" heading={page > 1 ? `Dental advice from Valencia, page ${page}` : "Dental advice from Valencia Dentistry"} lead="Plain-English guides on implants, crowns, bridges, extractions and everyday oral health, written for Santa Clarita patients." />
         </Container>
       </Section>
-      <Section className="bg-white">
+      <Section className="bg-warm">
         <Container>
           <BlogIndex posts={posts.map((p) => ({ slug: p.slug, path: p.path, title: p.title, excerpt: p.excerpt, category: p.category, tags: p.tags, datePublished: p.datePublished, image: p.image, imageAlt: p.imageAlt }))} page={page} categories={categories} />
         </Container>

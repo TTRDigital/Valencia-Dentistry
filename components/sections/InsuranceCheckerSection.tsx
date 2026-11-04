@@ -7,7 +7,7 @@ import { InsuranceWidget } from "./InsuranceChecker";
 /** Insurance checker section: heading on the left, the three-step checker (client) on the right. */
 export function InsuranceChecker({ s }: { s: InsuranceCheckerSection }) {
   return (
-    <Section className="bg-white" id="insurance">
+    <Section className="bg-warm" id="insurance">
       <Container>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">

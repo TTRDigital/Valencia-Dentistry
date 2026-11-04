@@ -7,7 +7,7 @@ import { Container, Section, SectionHeading } from "@/components/ui/Section";
 
 export function ServiceCategories({ s }: { s: ServiceCategoriesSection }) {
   return (
-    <Section className="bg-white">
+    <Section className="bg-warm">
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
         <div className="mt-12 grid gap-5 md:grid-cols-2">

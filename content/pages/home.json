@@ -40,9 +40,7 @@
         "invisalign",
         "veneers",
         "cosmetic-dentistry",
-        "teeth-whitening",
-        "all-on-4-implants",
-        "dental-crowns"
+        "teeth-whitening"
       ],
       "featuredTags": [
         "3D CBCT planning",
@@ -53,43 +51,28 @@
         "heading": "Book a consultation.",
         "text": "We'll build a plan around your goals, timeline and budget. Same-day appointments when possible.",
         "buttonLabel": "Book a consultation"
-      }
-    },
-    {
-      "_type": "newPatient",
-      "eyebrow": "New patient special",
-      "heading": "Your first visit, done properly",
-      "text": "A real first appointment, not a quick look. You leave knowing exactly where your oral health stands and what, if anything, needs attention.",
-      "bullets": [
-        "Comprehensive exam",
-        "Full set of digital X-rays",
-        "Oral cancer screening",
-        "Gum health assessment",
-        "Written treatment plan and estimate",
-        "Time for all of your questions"
-      ],
-      "image": {
-        "src": "/images/real/treatment-room-2.jpg",
-        "alt": "A calm treatment room with natural light at Valencia Dentistry"
       },
-      "buttonLabel": "Book your first visit",
-      "fine": "Most PPO plans accepted; we check your benefits before your visit."
-    },
-    {
-      "_type": "doctorIntro",
-      "eyebrow": "Our lead dentist",
-      "heading": "Meet Dr. Nuriel Lavi, DDS",
-      "image": {
-        "src": "/images/team/dr-lavi-casual.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
-      },
-      "body": [
-        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
-        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
-      ],
-      "cta": {
-        "label": "More about the practice",
-        "href": "/about/"
+      "images": {
+        "dental-implants": {
+          "src": "/images/real/implant-model-hands.jpg",
+          "alt": "Showing a patient a dental implant model at Valencia Dentistry"
+        },
+        "invisalign": {
+          "src": "/images/real/aligner-patient-2.jpg",
+          "alt": "A smiling patient with her clear aligner at Valencia Dentistry"
+        },
+        "veneers": {
+          "src": "/images/real/tryin-smile.jpg",
+          "alt": "A patient smiling during a veneer try-in at Valencia Dentistry"
+        },
+        "cosmetic-dentistry": {
+          "src": "/images/real/veneer-smile-2.jpg",
+          "alt": "A patient checking her new smile in a mirror at Valencia Dentistry"
+        },
+        "teeth-whitening": {
+          "src": "/images/real/smile-design.jpg",
+          "alt": "A patient viewing her brighter smile design on screen at Valencia Dentistry"
+        }
       }
     },
     {
@@ -132,6 +115,43 @@
       "link": {
         "label": "Explore all our technology",
         "href": "/about/#technology"
+      }
+    },
+    {
+      "_type": "newPatient",
+      "eyebrow": "New patient special",
+      "heading": "Your first visit, done properly",
+      "text": "A real first appointment, not a quick look. You leave knowing exactly where your oral health stands and what, if anything, needs attention.",
+      "bullets": [
+        "Comprehensive exam",
+        "Full set of digital X-rays",
+        "Oral cancer screening",
+        "Gum health assessment",
+        "Written treatment plan and estimate",
+        "Time for all of your questions"
+      ],
+      "image": {
+        "src": "/images/real/treatment-room-2.jpg",
+        "alt": "A calm treatment room with natural light at Valencia Dentistry"
+      },
+      "buttonLabel": "Book your first visit",
+      "fine": "Most PPO plans accepted; we check your benefits before your visit."
+    },
+    {
+      "_type": "doctorIntro",
+      "eyebrow": "Our lead dentist",
+      "heading": "Meet Dr. Nuriel Lavi, DDS",
+      "image": {
+        "src": "/images/team/dr-lavi-casual.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
+      },
+      "body": [
+        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
+        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
+      ],
+      "cta": {
+        "label": "More about the practice",
+        "href": "/about/"
       }
     },
     {

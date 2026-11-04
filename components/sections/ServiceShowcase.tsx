@@ -20,7 +20,7 @@ export async function ServiceShowcase({ s }: { s: ServiceShowcaseSection }) {
   const items = s.slugs.map((slug) => all.find((x) => x.slug === slug)).filter((x): x is Service => !!x);
   const photos = distinctPhotos(items, servicePhotos);
   return (
-    <Section className="overflow-hidden bg-white" id="services">
+    <Section className="overflow-hidden bg-warm" id="services">
       <div data-hscroll className="lg:flex lg:min-h-screen lg:flex-col lg:justify-center">
         <Container>
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">

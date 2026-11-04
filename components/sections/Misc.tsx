@@ -79,7 +79,7 @@ export async function Team({ s }: { s: TeamSection }) {
 
 export function PhotoGrid({ s }: { s: PhotoGridSection }) {
   return (
-    <Section className="bg-sand-50/70" id="office">
+    <Section className="bg-greige-50" id="office">
       <Container>
         <SectionHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} align="center" />
         <ul className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-6">
@@ -98,7 +98,7 @@ export function PhotoGrid({ s }: { s: PhotoGridSection }) {
 
 export function Insurance({ s }: { s: InsuranceSection }) {
   return (
-    <Section tight className="border-y hairline bg-white" id="insurance">
+    <Section tight className="border-y hairline bg-warm" id="insurance">
       <Container>
         <div className="text-center">
           <h2 className="text-2xl">{s.heading ?? "Most major PPO plans accepted"}</h2>
@@ -129,7 +129,7 @@ export function Insurance({ s }: { s: InsuranceSection }) {
 
 export function Offer({ s }: { s: OfferSection }) {
   return (
-    <Section className="bg-greige-50/60" id="offer">
+    <Section className="bg-greige-50" id="offer">
       <Container>
         <div className="card grid gap-8 overflow-hidden p-8 sm:p-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
