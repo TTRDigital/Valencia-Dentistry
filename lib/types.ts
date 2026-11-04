@@ -161,6 +161,7 @@ export type FeaturedServicesSection = { _type: "featuredServices"; eyebrow?: str
 export type PhotoTrioSection = { _type: "photoTrio"; heading: string; lead?: string; items: { title: string; text: string; image: SiteImage }[] };
 export type PhotoBannerSection = { _type: "photoBanner"; heading: string; text: string; image: SiteImage; link?: Link };
 export type PhotoStepsSection = { _type: "photoSteps"; label?: string; items: { title: string; text: string; image: SiteImage; link?: Link }[] };
+export type SpecialsSection = { _type: "specials"; heading: string; lead: string; image: SiteImage; facts: { label: string; value: string }[]; offersHeading: string; offers: { tag: string; name: string; text: string; price: string; was?: string; note: string; includes: string[]; terms: string }[]; disclaimer?: string; steps: Step[] };
 export type InsuranceCheckerSection = { _type: "insuranceChecker"; eyebrow?: string; heading: string; lead?: string };
 export type WhyChooseSection = { _type: "whyChoose"; eyebrow?: string; heading: string; lead?: string; image: SiteImage; items: Feature[] };
 export type NewPatientSection = { _type: "newPatient"; eyebrow?: string; heading: string; text: string; bullets: string[]; image?: SiteImage; buttonLabel?: string; fine?: string };
@@ -179,7 +180,7 @@ export type PageSection =
   | TreatmentPickerSection | FirstVisitSection | TechExplainerSection | DoctorIntroSection | FocusAreasSection
   | ServiceShowcaseSection | StatBandSection | CtaBannerSection | MarqueeSection
   | FeaturedServicesSection | WhyChooseSection | NewPatientSection | InsuranceCheckerSection
-  | PhotoTrioSection | PhotoBannerSection | PhotoStepsSection;
+  | PhotoTrioSection | PhotoBannerSection | PhotoStepsSection | SpecialsSection;
 
 export type Page = {
   slug: string;

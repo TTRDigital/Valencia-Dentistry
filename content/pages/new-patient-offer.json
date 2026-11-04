@@ -1,83 +1,150 @@
 {
   "slug": "new-patient-offer",
   "path": "/new-patient-offer/",
-  "title": "New Patient Offer",
-  "breadcrumb": "New Patient Offer",
+  "title": "Special Offers",
+  "breadcrumb": "Special Offers",
   "seo": {
-    "title": "New Patients | Exam & X-Rays in Valencia",
-    "description": "New to Valencia Dentistry? Your first visit includes a comprehensive exam and digital X-rays, at Valencia Dentistry in Santa Clarita. Book today."
+    "title": "New Patient Specials | Valencia Dentistry, Santa Clarita",
+    "description": "New patient special: exam, X-rays and cleaning for $99. Plus take-home whitening, a free Invisalign consult and implant consultation savings at Valencia Dentistry."
   },
   "sections": [
     {
-      "_type": "hero",
-      "variant": "landing",
-      "eyebrow": "New patients",
-      "heading": "A thorough first visit at Valencia Dentistry.",
-      "lead": "A thorough, unhurried first visit with your dentist: comprehensive exam, digital X-rays, oral cancer screening and a clear plan, with no pressure to proceed.",
-      "primary": {
-        "label": "Book your first visit",
-        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
-      },
-      "secondary": {
-        "label": "Call (661) 254-5200",
-        "href": "tel:+16612545200"
-      },
+      "_type": "specials",
+      "heading": "Special Offers",
+      "lead": "A few of the ways we make it easier to say yes to the care you need.",
       "image": {
-        "src": "/images/real/treatment-room-2.jpg",
-        "alt": "A calm treatment room with natural light at Valencia Dentistry"
+        "src": "/images/real/aligner-patient-2.jpg",
+        "alt": "A smiling patient at Valencia Dentistry"
       },
-      "trust": true
-    },
-    {
-      "_type": "offer",
-      "eyebrow": "What's included",
-      "heading": "Everything a great first visit should have",
-      "text": "This is a real first appointment, not a quick look. You will leave knowing exactly where your oral health stands and what, if anything, needs attention.",
-      "bullets": [
-        "Comprehensive exam with your dentist",
-        "Full set of digital X-rays",
-        "Oral cancer screening",
-        "Gum health assessment",
-        "Written treatment plan and estimate",
-        "Time for all of your questions"
+      "facts": [
+        {
+          "label": "Offers available",
+          "value": "4"
+        },
+        {
+          "label": "Valid through",
+          "value": "Dec 31, 2026"
+        },
+        {
+          "label": "Coupon needed",
+          "value": "No"
+        },
+        {
+          "label": "Insurance required",
+          "value": "No"
+        }
       ],
-      "fine": "Cleaning is scheduled separately once gum health is assessed. Most PPO plans accepted; we check your benefits before your visit."
+      "offersHeading": "Four this season",
+      "offers": [
+        {
+          "tag": "New patients",
+          "name": "New Patient Special",
+          "text": "A full exam, cleaning and digital X-rays for new patients without dental insurance.",
+          "price": "$99",
+          "was": "$285",
+          "note": "One-time offer, new patients only",
+          "includes": [
+            "Comprehensive exam",
+            "Full set of digital X-rays",
+            "Standard cleaning",
+            "Personalized treatment plan",
+            "No insurance required"
+          ],
+          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
+        },
+        {
+          "tag": "Whitening",
+          "name": "Take-Home Whitening",
+          "text": "Professional-grade take-home whitening trays and gel, fitted to your teeth.",
+          "price": "$149",
+          "was": "$249",
+          "note": "Per patient, while supplies last",
+          "includes": [
+            "Custom-fitted trays",
+            "Professional whitening gel",
+            "Touch-up gel included",
+            "Shade guide consultation",
+            "Valid with any cleaning visit"
+          ],
+          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
+        },
+        {
+          "tag": "Invisalign",
+          "name": "Free Invisalign Consult",
+          "text": "A full consultation and digital scan to see if Invisalign is right for you, with no obligation.",
+          "price": "$0",
+          "was": "$250",
+          "note": "Consultation fee waived",
+          "includes": [
+            "Digital 3D scan",
+            "Treatment preview",
+            "Cost and timeline estimate",
+            "No-obligation consultation",
+            "Applies toward treatment if you proceed"
+          ],
+          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
+        },
+        {
+          "tag": "Implants",
+          "name": "Implant Consultation Savings",
+          "text": "$100 off your first implant consultation, including a 3D scan.",
+          "price": "$150",
+          "was": "$250",
+          "note": "New implant patients only",
+          "includes": [
+            "Implant consultation",
+            "3D imaging included",
+            "Treatment plan and cost estimate",
+            "Financing options reviewed",
+            "Applies toward treatment if you proceed"
+          ],
+          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
+        }
+      ],
+      "disclaimer": "Offers are subject to change without notice. Please call to confirm current offer details, eligibility and expiration before your visit.",
+      "steps": [
+        {
+          "title": "Mention it",
+          "text": "Tell us which offer you'd like when you call or book online."
+        },
+        {
+          "title": "We confirm",
+          "text": "We'll confirm your eligibility and answer any questions before your visit."
+        },
+        {
+          "title": "You pay the price shown",
+          "text": "No coupon, no code. The price shown is what you pay."
+        }
+      ]
     },
     {
-      "_type": "featureGrid",
-      "eyebrow": "Why patients choose us",
-      "heading": "Why patients stay with us",
-      "columns": 3,
+      "_type": "faq",
+      "eyebrow": "Common questions",
+      "heading": "About these offers",
       "items": [
         {
-          "icon": "user",
-          "title": "Unhurried, every visit",
-          "text": "Every appointment gets our full attention. No rush, and nothing happens without an explanation."
+          "q": "Can I use an offer with insurance?",
+          "a": "Most offers can be combined with insurance benefits. We'll apply whichever saves you more."
         },
         {
-          "icon": "leaf",
-          "title": "Holistic and biocompatible",
-          "text": "Mercury-free materials and a whole-body view of your health."
+          "q": "Do offers expire?",
+          "a": "Yes. Each offer lists its own expiration date. Call to confirm an offer is still active before booking."
         },
         {
-          "icon": "tech",
-          "title": "Modern technology",
-          "text": "3D CBCT imaging, iTero scanning and in-house same-day crowns."
+          "q": "Can I combine two offers?",
+          "a": "Offers can't be combined with each other, but can typically be combined with your insurance."
         },
         {
-          "icon": "bolt",
-          "title": "Same-day care",
-          "text": "Flexible scheduling, including emergency appointments."
+          "q": "Is there a catch?",
+          "a": "No. The price shown is what you pay for exactly what's listed. Any additional treatment is quoted separately."
         },
         {
-          "icon": "shield",
-          "title": "Most PPO plans accepted",
-          "text": "We verify your benefits before your visit."
+          "q": "Do I need to bring a coupon?",
+          "a": "No coupon or code needed. Just mention the offer by name when you book or check in."
         },
         {
-          "icon": "tag",
-          "title": "Clear pricing",
-          "text": "A written estimate before treatment and flexible financing."
+          "q": "What if I'm not a new patient?",
+          "a": "Some offers are new-patient only; others, like whitening, are open to existing patients too. Each card notes which applies."
         }
       ]
     },
@@ -85,13 +152,6 @@
       "_type": "reviews",
       "eyebrow": "Patient reviews",
       "heading": "Trusted by Santa Clarita families"
-    },
-    {
-      "_type": "form",
-      "eyebrow": "Reserve your visit",
-      "heading": "Request your new patient visit",
-      "lead": "Tell us when works best and we'll confirm your appointment.",
-      "formName": "New patient offer"
     },
     {
       "_type": "visit",
