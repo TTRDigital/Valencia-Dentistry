@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import type { HeroSection } from "@/lib/types";
 import { site } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
+import { PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Button } from "@/components/ui/Button";
 import { Picture } from "@/components/ui/Picture";
 import { Icon } from "@/components/ui/Icons";
@@ -47,18 +47,18 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
       <section data-hero="dark" className="on-dark relative isolate flex min-h-[calc(100svh-72px)] items-end overflow-hidden bg-ink-900 text-white lg:min-h-[680px] lg:items-center" aria-labelledby="hero-heading">
         {s.image && (
           <div data-hero-media className="absolute inset-0 -z-20">
-            {/* Phones get a portrait photo (sharp at full height); desktop shows the wide photo edge to edge with the words over its right side */}
+            {/* Phones get a portrait photo (sharp at full height); desktop shows the wide photo edge to edge with the words over the glass on its left, clear of his face */}
             {s.mobileImage && <Picture image={s.mobileImage} fill priority sizes="(max-width: 1023px) 100vw, 1px" className="object-cover object-top lg:hidden" />}
             <Picture image={s.image} fill priority sizes="(min-width: 1024px) 100vw, 1px" className={s.mobileImage ? "hidden object-cover object-top lg:block" : "object-cover object-top"} />
           </div>
         )}
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(18,18,16,0)_30%,rgba(18,18,16,0.88)_72%)] lg:bg-[linear-gradient(90deg,rgba(18,18,16,0)_35%,rgba(18,18,16,0.55)_58%,rgba(18,18,16,0.8)_100%)]" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(18,18,16,0)_30%,rgba(18,18,16,0.88)_72%)] lg:bg-[linear-gradient(90deg,rgba(18,18,16,0.85)_0%,rgba(18,18,16,0.6)_30%,rgba(18,18,16,0)_48%)]" />
         <div className="container-x w-full pb-28 pt-16 lg:py-24">
-          <div className="hero-stage lg:ml-auto lg:max-w-[30rem]">
+          <div className="hero-stage lg:max-w-[25rem] xl:max-w-[31rem]">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm ring-1 ring-white/20 backdrop-blur-sm" data-stage="0">
               <Icon.google className="h-4 w-4" /> <strong className="font-semibold">{site.rating.value}</strong> <Icon.star className="h-3.5 w-3.5 text-amber-400" /> {site.rating.count} Google reviews
             </p>
-            <h1 id="hero-heading" className="text-5xl text-white"><StagedHeading text={s.heading} accent={0} /></h1>
+            <h1 id="hero-heading" className="text-5xl text-white lg:text-[clamp(2.75rem,1.2rem+2.6vw,4rem)]"><StagedHeading text={s.heading} accent={0} /></h1>
             {s.lead && <p className="mt-5 text-lg text-white/85" data-stage="3">{s.lead}</p>}
             <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
               {s.primary && <Button href={s.primary.href} size="lg" variant="light" arrow>{s.primary.label}</Button>}
@@ -94,7 +94,6 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
           {s.image && (
             <div data-hero-media className="lg:col-span-6 xl:col-span-5">
               <PhotoFrame image={s.image} priority sizes="(min-width: 1280px) 520px, (min-width: 1024px) 45vw, 100vw" arch accent="olive" className="mx-auto max-w-[520px]">
-                <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
               </PhotoFrame>
             </div>
           )}
