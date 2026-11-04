@@ -22,10 +22,10 @@ export function TypeLoop({ text, className }: { text: string; className?: string
   return (
     <span className={className}>
       <span className="sr-only">{text}</span>
-      {/* the full line reserves its space, so the banner never jumps while typing */}
-      <span aria-hidden="true" className="relative inline-block">
-        <span className="invisible">{text}|</span>
-        <span className="absolute inset-0">{text.slice(0, n)}<span className="type-caret">|</span></span>
+      {/* the full line and the typed part share one grid cell, so the space is always reserved (no jump, no overlap) */}
+      <span aria-hidden="true" className="grid">
+        <span className="invisible [grid-area:1/1]">{text}|</span>
+        <span className="[grid-area:1/1]">{text.slice(0, n)}<span className="type-caret">|</span></span>
       </span>
     </span>
   );
