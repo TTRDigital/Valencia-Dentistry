@@ -31,12 +31,14 @@ export const sceneKey = (src: string) => src.replace(/^.*\//, "").replace(/\.[a-
  * One photo per item, never repeating a scene within the set: each item takes its first photo
  * whose scene is not already used, falling back to its first photo.
  */
-export function distinctPhotos<T>(items: T[], photosOf: (item: T) => { src: string; alt: string }[], avoid: string[] = []) {
+export function distinctPhotos<T>(items: T[], photosOf: (item: T) => { src: string; alt: string }[], avoid: string[] = [], backup: { src: string; alt: string }[] = BACKUP_PHOTOS) {
+  // Prefer a photo of a scene not shown yet; if every scene is taken, at least use a different shot.
   const used = new Set<string>(avoid.map(sceneKey));
+  const usedSrc = new Set<string>(avoid);
   return items.map((it) => {
-    const list = photosOf(it);
-    const pick = list.find((p) => !used.has(sceneKey(p.src))) ?? list[0];
-    if (pick) used.add(sceneKey(pick.src));
+    const list = [...photosOf(it), ...backup];
+    const pick = list.find((p) => !used.has(sceneKey(p.src))) ?? list.find((p) => !usedSrc.has(p.src)) ?? list[0];
+    if (pick) { used.add(sceneKey(pick.src)); usedSrc.add(pick.src); }
     return pick;
   });
 }
@@ -61,3 +63,7 @@ export function cardGrid(n: number, wideCols: 3 | 4 = 3, wideAt: "lg" | "xl" = "
   else if (slots % wideCols === 0) wide = WIDE_COLS[`${wideAt}:${wideCols}`];
   return { ul: cn("grid grid-cols-2", wide), featured, first: featured ? cn("col-span-2", unspan && UNSPAN[wideAt]) : "", unspanAt: unspan ? wideAt : null };
 }
+
+const B = (n: string, alt: string) => ({ src: `/images/real/${n}.jpg`, alt: `${alt} at Valencia Dentistry` });
+/** Real office photos used when a treatment has no unused photo of its own, so card grids never repeat. */
+export const BACKUP_PHOTOS = [B("treatment-room-2", "A calm treatment room with natural light"), B("xray-screen", "A panoramic X-ray on screen"), B("smile-plan-screen", "A digital smile plan on screen"), B("scan-closeup", "A digital scan of a patient's teeth"), B("smile-design", "A patient viewing her smile design on screen"), B("tryin-smile", "A patient smiling during a try-in"), B("veneer-tryin", "A patient smiling with a new restoration"), B("scan-intraoral-2", "A patient during a digital scan"), B("smile-plan-screen-2", "Explaining a smile plan to a patient"), B("denture-closeup", "A close look at a full-arch restoration"), B("aligner-patient", "A patient holding her clear aligner"), B("veneer-smile-2", "A patient checking her new smile")];

@@ -46,7 +46,7 @@ export async function Team({ s }: { s: TeamSection }) {
       <Container>
         <Reveal className="max-w-3xl">
           {s.eyebrow && <p className="eyebrow mb-4">{s.eyebrow}</p>}
-          <h2 id="team-heading" className="text-4xl">{s.heading}</h2>
+          <h2 id="team-heading">{s.heading}</h2>
           {s.lead && <p className="mt-4 text-lg text-grey-700">{s.lead}</p>}
         </Reveal>
         {list.map((p) => (
@@ -101,7 +101,7 @@ export function Insurance({ s }: { s: InsuranceSection }) {
     <Section tight className="border-y hairline bg-warm" id="insurance">
       <Container>
         <div className="text-center">
-          <h2 className="text-2xl">{s.heading ?? "Most major PPO plans accepted"}</h2>
+          <h2>{s.heading ?? "Most major PPO plans accepted"}</h2>
           <p className="mx-auto mt-3 max-w-[48rem] text-grey-600">{s.text ?? "We verify your benefits before treatment and offer flexible financing so cost never stands between you and care. Not sure about your plan? Call us and we'll check."}</p>
         </div>
         {/* Logos glide past in an endless row (still and wrapped under reduced motion); each is sized by its shape */}
@@ -134,7 +134,7 @@ export function Offer({ s }: { s: OfferSection }) {
         <div className="card grid gap-8 overflow-hidden p-8 sm:p-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
             {s.eyebrow && <p className="eyebrow mb-4">{s.eyebrow}</p>}
-            <h2 className="text-4xl">{s.heading}</h2>
+            <h2>{s.heading}</h2>
             <p className="lead mt-4">{s.text}</p>
             {s.bullets && (
               <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">

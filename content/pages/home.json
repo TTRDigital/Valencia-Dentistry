@@ -60,15 +60,15 @@
     },
     {
       "_type": "photoBanner",
-      "heading": "Modern Dentistry, Close to Home",
-      "text": "Our mission is to care for the oral health and well-being of Santa Clarita families through comprehensive, compassionate and modern dentistry.",
+      "heading": "A New Standard in Dentistry",
+      "text": "It's not just about teeth. It's about the confidence a healthy smile gives you every day.",
       "image": {
-        "src": "/images/real/treatment-room.jpg",
-        "alt": "A bright treatment room at Valencia Dentistry"
+        "src": "/images/real/scan-hygienist.jpg",
+        "alt": "A digital scan with a hygienist at Valencia Dentistry"
       },
       "link": {
-        "label": "About Valencia Dentistry",
-        "href": "/about/"
+        "label": "Schedule a Consultation",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
       }
     },
     {
@@ -168,8 +168,8 @@
           "title": "Book Your Consultation",
           "text": "Every great smile starts with a conversation. We listen to what you want and map out how to get you there.",
           "image": {
-            "src": "/images/real/scan-hygienist.jpg",
-            "alt": "A digital scan with a hygienist at Valencia Dentistry"
+            "src": "/images/real/smile-design.jpg",
+            "alt": "A patient viewing her smile design on screen at Valencia Dentistry"
           },
           "link": {
             "label": "Book online",
@@ -188,8 +188,8 @@
           "title": "Feel the Difference",
           "text": "Our care doesn't end when you leave the chair. Routine visits keep your smile healthy for years.",
           "image": {
-            "src": "/images/real/veneer-smile.jpg",
-            "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
+            "src": "/images/real/tryin-smile.jpg",
+            "alt": "A patient smiling during a try-in at Valencia Dentistry"
           }
         }
       ]

@@ -26,6 +26,8 @@ import { CtaBanner, Marquee, StatBand } from "@/components/rich/Blocks";
 import { Container, Section } from "@/components/ui/Section";
 
 export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs?: { name: string; path: string }[] }) {
+  // every photo the page's own sections use, so generated card grids don't repeat them
+  const pagePhotos = [...JSON.stringify(sections).matchAll(/"src":"(\/images\/[^"]+)"/g)].map((m) => m[1]);
   return (
     <>
       {sections.map((s, i) => {
@@ -58,7 +60,7 @@ export function Sections({ sections, crumbs }: { sections: PageSection[]; crumbs
           case "team": return <Team key={key} s={s} />;
           case "photoGrid": return <PhotoGrid key={key} s={s} />;
           case "form": return <FormSection key={key} s={s} />;
-          case "servicesHub": return <ServicesHub key={key} />;
+          case "servicesHub": return <ServicesHub key={key} avoid={pagePhotos} />;
           case "insurance": return <Insurance key={key} s={s} />;
           case "offer": return <Offer key={key} s={s} />;
           case "treatmentPicker": return <TreatmentPickerWithPhotos key={key} s={s} />;

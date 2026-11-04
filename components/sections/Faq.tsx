@@ -8,7 +8,23 @@ import { Button } from "@/components/ui/Button";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
 import { cn } from "@/lib/utils";
 
-export function FaqList({ items, className }: { items: FaqItem[]; className?: string }) {
+export function FaqList({ items, className, plain }: { items: FaqItem[]; className?: string; plain?: boolean }) {
+  if (plain) {
+    // Beverly Hills style: plain rows, question in 20px, a + / − on the right, first one open
+    return (
+      <div className={className}>
+        {items.map((f, i) => (
+          <details key={i} className="faq-item group" name="faq" open={i === 0 || undefined}>
+            <summary className="flex min-h-14 cursor-pointer items-center justify-between gap-6 py-3 text-left text-xl font-semibold text-ink-900 [&::-webkit-details-marker]:hidden">
+              <span>{f.q}</span>
+              <span aria-hidden="true" className="shrink-0 text-2xl font-light leading-none"><span className="group-open:hidden">+</span><span className="hidden group-open:inline">−</span></span>
+            </summary>
+            <div className="faq-answer pb-4 pl-4 text-grey-700"><p>{f.a}</p></div>
+          </details>
+        ))}
+      </div>
+    );
+  }
   return (
     <div className={cn("divide-y hairline rounded-lg bg-white ring-1 ring-ink-900/[0.06] shadow-soft", className)}>
       {items.map((f, i) => (

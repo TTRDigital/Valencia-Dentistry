@@ -24,7 +24,7 @@ export default async function SitemapPage() {
           <div className="grid gap-12 md:grid-cols-3">
             {groups.map((g) => (
               <nav key={g.title} aria-labelledby={`sm-${g.title}`}>
-                <h2 id={`sm-${g.title}`} className="text-2xl">{g.title}</h2>
+                <h2 id={`sm-${g.title}`} >{g.title}</h2>
                 <ul className="mt-5">{g.items.map((it) => <li key={it.href}><Link href={it.href} className="inline-flex min-h-11 min-w-11 items-center text-grey-700 underline-offset-4 hover:text-ink-900 hover:underline">{it.label}</Link></li>)}</ul>
               </nav>
             ))}

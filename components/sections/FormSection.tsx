@@ -18,7 +18,7 @@ export function FormSection({ s }: { s: FormSectionType }) {
           <div className="lg:col-span-7 lg:order-2">
             <div className="rounded-lg bg-white p-6 shadow-[0_1px_0_rgb(0_0_0/0.04),0_12px_32px_-16px_rgb(0_0_0/0.18)] ring-1 ring-ink-900/10 sm:p-8">
               {s.eyebrow && <p className="eyebrow mb-3">{s.eyebrow}</p>}
-              <h2 id="request-heading" className="text-3xl">{s.heading}</h2>
+              <h2 id="request-heading">{s.heading}</h2>
               {s.lead && <p className="mt-3 text-grey-700">{s.lead}</p>}
               <LeadForm formName={s.formName} services={s.services !== false} className="mt-6" />
             </div>

@@ -92,7 +92,7 @@ export function CtaBanner({ heading, text, image, buttonLabel = "Book a consulta
       <div className="grid items-center gap-10 p-6 sm:p-12 lg:grid-cols-12 lg:gap-14 lg:p-16">
         <div className="lg:col-span-7">
           <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-bronze-300 ring-1 ring-white/15"><Icon.user className="h-4 w-4" /> {site.newPatients.headline}</p>
-          <h2 className="mt-6 text-5xl text-white">{heading}</h2>
+          <h2 className="mt-6 text-white">{heading}</h2>
           <p className="mt-6 max-w-xl text-lg text-white/80">{text}</p>
           <div className="mt-9 flex flex-wrap items-center gap-6">
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-light btn-lg">{buttonLabel} <Icon.arrow className="h-4 w-4" /></a>
@@ -118,7 +118,7 @@ export function RichHeading({ eyebrow, heading, lead, align = "left", dark, clas
   return (
     <div data-reveal="" className={cn("max-w-[46rem]", align === "center" && "mx-auto text-center", className)}>
       {eyebrow && <p className={cn("eyebrow mb-4", align === "center" && "justify-center", dark && "text-bronze-300")}>{eyebrow}</p>}
-      <h2 id={id} className={cn("text-4xl", dark && "text-white")}>{heading}</h2>
+      <h2 id={id} className={cn(dark && "text-white")}>{heading}</h2>
       {lead && <p className={cn("mt-5 text-lg", dark ? "text-white/80" : "text-grey-700", align === "center" && "mx-auto")}>{lead}</p>}
     </div>
   );

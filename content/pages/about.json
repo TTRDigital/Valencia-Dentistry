@@ -179,8 +179,8 @@
           "forYou": "We talk through what would help you relax at your consultation.",
           "label": "Comfort first",
           "image": {
-            "src": "/images/real/treatment-room.jpg",
-            "alt": "A bright treatment room at Valencia Dentistry"
+            "src": "/images/real/smile-plan-screen.jpg",
+            "alt": "A digital smile plan on screen at Valencia Dentistry"
           }
         }
       ]
@@ -286,7 +286,11 @@
       "_type": "cta",
       "eyebrow": "New patients",
       "heading": "Become part of the family.",
-      "text": "Schedule your consultation today. New patients receive a comprehensive exam and X-rays."
+      "text": "Schedule your consultation today. New patients receive a comprehensive exam and X-rays.",
+      "image": {
+        "src": "/images/real/smile-design.jpg",
+        "alt": "A patient viewing her smile design on screen at Valencia Dentistry"
+      }
     }
   ]
 }

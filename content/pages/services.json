@@ -23,8 +23,8 @@
         "href": "/contact/"
       },
       "image": {
-        "src": "/images/real/treatment-room-2.jpg",
-        "alt": "A calm treatment room with natural light at Valencia Dentistry"
+        "src": "/images/real/smile-plan-screen.jpg",
+        "alt": "A digital smile plan on screen at Valencia Dentistry"
       },
       "trust": true
     },
@@ -67,7 +67,11 @@
       "_type": "cta",
       "eyebrow": "Not sure where to start?",
       "heading": "Begin with a new patient exam.",
-      "text": "A thorough exam, digital X-rays and an unhurried conversation with your dentist about what you need and what you can wait on."
+      "text": "A thorough exam, digital X-rays and an unhurried conversation with your dentist about what you need and what you can wait on.",
+      "image": {
+        "src": "/images/real/scan-hygienist.jpg",
+        "alt": "A digital scan with a hygienist at Valencia Dentistry"
+      }
     }
   ]
 }

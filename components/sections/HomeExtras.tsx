@@ -37,9 +37,9 @@ export function PhotoBanner({ s }: { s: PhotoBannerSection }) {
       <span aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-olive-900/90 via-olive-900/45 to-olive-900/10 sm:bg-gradient-to-r sm:from-olive-900/85 sm:via-olive-900/40 sm:to-transparent" />
       <Container className="w-full pb-10 sm:pb-16">
         <div className="max-w-lg">
-          <h2 className="text-white">{s.heading}</h2>
-          <p className="mt-3 text-white/85">{s.text}</p>
-          {s.link && <Link href={s.link.href} className="mt-5 inline-flex min-h-11 items-center border-b border-white pb-0.5 text-[0.9375rem] font-semibold text-white hover:text-bronze-300">{s.link.label}</Link>}
+          <h2 className="font-bold uppercase tracking-[0.08em] text-white">{s.heading}</h2>
+          <p className="mt-3 text-lg text-white/90">{s.text}</p>
+          {s.link && <a href={s.link.href} {...(/^https?:/.test(s.link.href) ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="mt-5 inline-flex min-h-11 items-center border-b border-white px-1 pb-0.5 text-[0.9375rem] font-bold uppercase tracking-[0.12em] text-white hover:text-bronze-300">{s.link.label}</a>}
         </div>
       </Container>
     </section>

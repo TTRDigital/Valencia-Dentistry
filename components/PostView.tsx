@@ -12,11 +12,15 @@ import { Container } from "@/components/ui/Section";
 import { FaqList } from "@/components/sections/Faq";
 import { Breadcrumbs } from "@/components/ServiceView";
 import { PostCard } from "@/components/blocks/PostCard";
+import { sceneKey } from "@/lib/utils";
 
 export async function PostView({ post }: { post: Post }) {
   const [posts, services] = await Promise.all([getPosts(), getServices()]);
-  const related = post.relatedPosts.map((s) => posts.find((p) => p.slug === s)).filter((p): p is Post => !!p && p.slug !== post.slug).slice(0, 3);
-  const fallback = posts.filter((p) => p.slug !== post.slug && p.category === post.category && !related.includes(p)).slice(0, 3 - related.length);
+  // three related posts, never showing the same photo as this post or each other
+  const seenImg = new Set([sceneKey(post.image)]);
+  const pickDistinct = (list: Post[], n: number) => list.filter((p) => { if (p.slug === post.slug || seenImg.has(sceneKey(p.image)) || n <= 0) return false; seenImg.add(sceneKey(p.image)); n -= 1; return true; });
+  const related = pickDistinct(post.relatedPosts.map((s) => posts.find((p) => p.slug === s)).filter((p): p is Post => !!p), 3);
+  const fallback = pickDistinct([...posts.filter((p) => p.category === post.category && !related.includes(p)), ...posts.filter((p) => !related.includes(p))], 3 - related.length);
   const relatedServices = post.relatedServices.map((s) => services.find((x) => x.slug === s)).filter((x): x is Service => !!x);
   const toc = tableOfContents(post.body);
   const text = plainText(post.body);
@@ -81,12 +85,12 @@ export async function PostView({ post }: { post: Post }) {
 
           <div className="min-w-0 lg:order-first lg:col-span-8">
             <section aria-labelledby="in-short" className="mb-10 rounded-lg border-l-4 border-olive-600 bg-warm p-6 shadow-[0_0_0_1px_rgb(20_20_20/0.06)] sm:p-8">
-              <h2 id="in-short" className="font-sans text-xs font-semibold uppercase tracking-[0.16em] text-grey-600">In short</h2>
+              <p id="in-short" className="text-xs font-semibold uppercase tracking-[0.16em] text-grey-600">In short</p>
               <p className="mt-3 text-lg leading-relaxed text-ink-900">{post.excerpt}</p>
             </section>
             {post.keyTakeaways.length > 0 && (
               <section aria-labelledby="takeaways" className="mb-10 rounded-lg bg-sand-50 p-6 sm:p-7">
-                <h2 id="takeaways" className="font-sans text-xs font-semibold uppercase tracking-[0.16em] text-bronze-600">Key takeaways</h2>
+                <p id="takeaways" className="text-xs font-semibold uppercase tracking-[0.16em] text-bronze-600">Key takeaways</p>
                 <ul className="mt-4 space-y-2.5">
                   {post.keyTakeaways.map((k) => <li key={k} className="flex items-start gap-3 text-grey-700"><Icon.check className="mt-1 h-4 w-4 shrink-0 text-olive-600" />{k}</li>)}
                 </ul>
@@ -96,14 +100,14 @@ export async function PostView({ post }: { post: Post }) {
 
             {post.faq.length > 0 && (
               <section aria-labelledby="post-faq" className="mt-14">
-                <h2 id="post-faq" className="text-3xl">Frequently asked questions</h2>
+                <h2 id="post-faq">Frequently asked questions</h2>
                 <FaqList items={post.faq} className="mt-6" />
               </section>
             )}
 
             {relatedServices.length > 0 && (
               <section aria-labelledby="related-services" className="mt-14">
-                <h2 id="related-services" className="font-sans text-base font-semibold uppercase tracking-[0.14em] text-olive-600">Related services</h2>
+                <p id="related-services" className="text-base font-semibold uppercase tracking-[0.14em] text-olive-600">Related services</p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {relatedServices.map((s) => <li key={s.slug}><Link href={s.path} className="inline-flex min-h-11 items-center rounded-full border hairline bg-white px-4 text-sm font-medium text-ink-900 hover:border-olive-600 hover:text-olive-600">{s.name}</Link></li>)}
                 </ul>
@@ -116,7 +120,7 @@ export async function PostView({ post }: { post: Post }) {
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>
-                <h2 id="author" className="mt-1 text-xl">{site.doctor.name}</h2>
+                <p id="author" className="mt-1 text-xl font-semibold text-ink-900">{site.doctor.name}</p>
                 <p className="mt-2 text-base sm:text-[0.95rem] text-grey-700">Dentist and owner of Valencia Dentistry in Santa Clarita. Dr. Lavi practices holistic, personal dentistry with a focus on implants, cosmetic care and prevention.</p>
                 <Link href="/about/" className="link-arrow mt-1 text-sm">Meet Dr. Lavi <Icon.arrow className="h-4 w-4" /></Link>
               </div>
@@ -130,7 +134,7 @@ export async function PostView({ post }: { post: Post }) {
         <section className="section-tight border-t hairline bg-warm" aria-labelledby="related-posts">
           <Container>
             <div className="flex items-end justify-between gap-6">
-              <h2 id="related-posts" className="text-4xl">More from the blog</h2>
+              <h2 id="related-posts">More from the blog</h2>
               <Link href="/category/blogs/" className="link-arrow text-sm">All articles <Icon.arrow className="h-4 w-4" /></Link>
             </div>
             <ul className="mt-8 grid gap-5 md:grid-cols-3">{[...related, ...fallback].map((p) => <PostCard key={p.slug} post={p} />)}</ul>

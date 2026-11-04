@@ -56,24 +56,27 @@ export function CardList({ items, className, wideCols = 3, wideAt = "xl", avoid 
   );
 }
 
-export async function ServicesHub() {
+export async function ServicesHub({ avoid: pageAvoid = [] }: { avoid?: string[] } = {}) {
   const services = await getServices();
   const parents = new Set(services.filter((s) => s.parentPath !== "/services/").map((s) => s.parentPath));
+  const used: string[] = [...pageAvoid]; // photos already on the page or in earlier groups, so nothing repeats
   return (
     <>
       {GROUPS.map((g, gi) => {
         const items = services.filter((s) => s.category === g.key).sort((a, b) => (parents.has(a.path) ? -1 : 0) - (parents.has(b.path) ? -1 : 0) || a.name.localeCompare(b.name));
         if (!items.length) return null;
+        const avoid = [...used];
+        distinctPhotos(items, servicePhotos, avoid).forEach((ph) => ph && used.push(ph.src));
         return (
           <Section key={g.key} id={g.key} className={gi % 2 ? "bg-warm" : "bg-warm"} tight>
             <Container>
               <div className="grid gap-8 lg:grid-cols-12">
                 <div className="lg:col-span-4">
                   <p className="eyebrow mb-4">{String(gi + 1).padStart(2, "0")}</p>
-                  <h2 className="text-3xl">{g.title}</h2>
+                  <h2>{g.title}</h2>
                   <p className="lead mt-4 text-base">{g.text}</p>
                 </div>
-                <CardList items={items} className="lg:col-span-8" />
+                <CardList items={items} className="lg:col-span-8" avoid={avoid} />
               </div>
             </Container>
           </Section>
