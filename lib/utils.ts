@@ -24,6 +24,23 @@ export function readingTime(text: string) {
 }
 
 /** A service name as it reads mid-sentence: lowercase, but brand names and acronyms keep their case. */
+/** Photos that show the same scene ("implant-model" and "implant-model-2", "denture-consult" and "consult-denture") share a key. */
+export const sceneKey = (src: string) => src.replace(/^.*\//, "").replace(/\.[a-z]+$/i, "").replace(/-\d+$/, "").split("-").sort().join("-");
+
+/**
+ * One photo per item, never repeating a scene within the set: each item takes its first photo
+ * whose scene is not already used, falling back to its first photo.
+ */
+export function distinctPhotos<T>(items: T[], photosOf: (item: T) => { src: string; alt: string }[], avoid: string[] = []) {
+  const used = new Set<string>(avoid.map(sceneKey));
+  return items.map((it) => {
+    const list = photosOf(it);
+    const pick = list.find((p) => !used.has(sceneKey(p.src))) ?? list[0];
+    if (pick) used.add(sceneKey(pick.src));
+    return pick;
+  });
+}
+
 export const inSentence = (name: string) => name.split(" ").map((w) => (/^(TMJ|Invisalign|All-on-4)$/.test(w) ? w : w.toLowerCase())).join(" ");
 
 // Literal class names so Tailwind generates them.

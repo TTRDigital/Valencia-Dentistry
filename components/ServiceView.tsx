@@ -352,7 +352,7 @@ export async function ServiceView({ s }: { s: Service }) {
           {related.length > 0 && (
             <div className="mt-20">
               <RichHeading eyebrow="Related" heading="Treatments patients often consider alongside this" />
-              <CardList items={related} className="mt-8" wideCols={4} wideAt="lg" />
+              <CardList items={related} className="mt-8" wideCols={4} wideAt="lg" avoid={photos.map((p) => p.src)} />
             </div>
           )}
           <CtaBanner className="mt-20" heading={s.cta.heading} text={s.cta.text} image={pic(5)} buttonLabel={s.cta.buttonLabel || "Book a consultation"} />

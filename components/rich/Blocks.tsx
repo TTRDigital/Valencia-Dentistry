@@ -93,12 +93,12 @@ export function CtaBanner({ heading, text, image, buttonLabel = "Book a consulta
       <div className="grid items-center gap-10 p-7 sm:p-12 lg:grid-cols-12 lg:gap-14 lg:p-16">
         <div className="lg:col-span-7">
           <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-bronze-300 ring-1 ring-white/15"><Icon.user className="h-4 w-4" /> {site.newPatients.headline}</p>
-          <h2 className="text-hero mt-6 text-white">{heading}</h2>
+          <h2 className="mt-6 text-5xl text-white">{heading}</h2>
           <p className="mt-6 max-w-xl text-lg text-white/80">{text}</p>
           <div className="mt-9 flex flex-wrap items-center gap-6">
             <RoundCta href={site.bookingUrl} text={`${buttonLabel.toUpperCase()} · ${buttonLabel.toUpperCase()} · `} />
             <div className="grid gap-2">
-              <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center gap-2 font-display text-3xl text-white hover:text-bronze-300"><Icon.phone className="h-6 w-6 text-bronze-300" /> {site.phone.display}</a>
+              <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center gap-2 text-2xl font-semibold text-white hover:text-bronze-300"><Icon.phone className="h-6 w-6 text-bronze-300" /> {site.phone.display}</a>
               <p className="flex items-center gap-2 text-sm text-white/75"><Icon.clock className="h-4 w-4 text-bronze-300" /> {site.hours[0].days}, {site.hours[0].label}</p>
               <p className="flex items-center gap-2 text-sm text-white/75"><Icon.pin className="h-4 w-4 text-bronze-300" /> {site.address.street}, {site.address.city}</p>
             </div>

@@ -49,18 +49,7 @@
         "Teeth whitening",
         "Holistic dentistry",
         "TMJ care"
-      ],
-      "items2": [
-        "Calm",
-        "Personal",
-        "Thorough",
-        "One dentist, every visit",
-        "Holistic",
-        "Unhurried"
       ]
-    },
-    {
-      "_type": "statBand"
     },
     {
       "_type": "treatmentPicker",

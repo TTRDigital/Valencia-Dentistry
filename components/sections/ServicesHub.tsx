@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { getServices } from "@/lib/content";
-import type { Service, ServiceCategory } from "@/lib/types";
+import type { Service, ServiceCategory, SiteImage } from "@/lib/types";
 import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
-import { cardGrid, cn } from "@/lib/utils";
+import { cardGrid, cn, distinctPhotos } from "@/lib/utils";
 
 const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
   { key: "cosmetic", title: "Cosmetic Dentistry", text: "Refinements that look like you, only brighter: veneers, Invisalign, whitening and tooth-colored fillings." },
@@ -20,7 +20,10 @@ const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
  * `featured` cards span two columns (see cardGrid) with a wider image; `unspanAt` returns them
  * to a normal card where the grid widens to a single row.
  */
-export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null; sharesRowAt?: "lg" | "xl" | null }) {
+/** A service's real photos, hero first. */
+export const servicePhotos = (s: Service): SiteImage[] => [s.hero.image, s.understanding.image, ...s.why.cards.map((c) => c.image), s.candidate.image].filter((x): x is SiteImage => !!x?.src);
+
+export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt, image }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null; sharesRowAt?: "lg" | "xl" | null; image?: SiteImage }) {
   // Cards are two-row subgrids (image, text), so cards in one row share both row heights: images,
   // titles and "Learn more" line up. A featured card that shares its row lets the row height win.
   const imgAspect = featured
@@ -30,7 +33,7 @@ export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt }: {
     <Reveal as="li" className={cn("card card-hover group row-span-2 grid grid-rows-subgrid gap-y-0", className)}>
       <Link href={s.path} className="row-span-2 grid grid-rows-subgrid gap-y-0 no-underline">
         <div className={cn("relative overflow-hidden rounded-t-lg", imgAspect)}>
-          <Picture image={s.hero.image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw"} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+          <Picture image={image ?? s.hero.image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw"} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
         <div className="flex flex-1 flex-col p-4 sm:p-6">
           <h3 className="text-lg group-hover:text-olive-600 sm:text-xl">{s.name}</h3>
@@ -43,11 +46,12 @@ export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt }: {
 }
 
 /** A set of service cards laid out with cardGrid (no orphan on the last row), staggered as a group. */
-export function CardList({ items, className, wideCols = 3, wideAt = "xl" }: { items: Service[]; className?: string; wideCols?: 3 | 4; wideAt?: "lg" | "xl" }) {
+export function CardList({ items, className, wideCols = 3, wideAt = "xl", avoid = [] }: { items: Service[]; className?: string; wideCols?: 3 | 4; wideAt?: "lg" | "xl"; avoid?: string[] }) {
   const plan = cardGrid(items.length, wideCols, wideAt);
+  const photos = distinctPhotos(items, servicePhotos, avoid);
   return (
     <ul data-stagger className={cn(plan.ul, "gap-3 sm:gap-5", className)}>
-      {items.map((s, i) => <ServiceCard key={s.slug} s={s} featured={i === 0 && plan.featured} unspanAt={plan.unspanAt} sharesRowAt={plan.featured && !plan.unspanAt && plan.ul.includes(`${wideAt}:grid-cols-`) ? wideAt : null} className={i === 0 ? plan.first : undefined} />)}
+      {items.map((s, i) => <ServiceCard key={s.slug} s={s} image={photos[i]} featured={i === 0 && plan.featured} unspanAt={plan.unspanAt} sharesRowAt={plan.featured && !plan.unspanAt && plan.ul.includes(`${wideAt}:grid-cols-`) ? wideAt : null} className={i === 0 ? plan.first : undefined} />)}
     </ul>
   );
 }

@@ -4,11 +4,10 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
 import Lenis from "lenis";
 import { prefersReducedMotion } from "./useReducedMotion";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.config({ ignoreMobileResize: true });
 
 let lenis: Lenis | null = null;
@@ -50,17 +49,6 @@ export function MotionProvider() {
     const mm = gsap.matchMedia();
     const cleanups: (() => void)[] = [];
     const ctx = gsap.context(() => {
-      // 1. Headings: lines rise from masks as they enter (hero headings have their own entrance)
-      document.querySelectorAll<HTMLElement>("main h2, main [data-split]").forEach((el) => {
-        if (el.closest("[data-hero], [data-no-split]")) return;
-        SplitText.create(el, {
-          type: "lines",
-          mask: "lines",
-          autoSplit: true,
-          onSplit: (self) => gsap.from(self.lines, { yPercent: 115, duration: 1.1, ease: "expo.out", stagger: 0.09, scrollTrigger: { trigger: el, start: "top 90%", once: true } }),
-        });
-      });
-
       // 2. Photos: wipe up into the frame, image settles from 1.25x to its natural size
       document.querySelectorAll<HTMLElement>("main .pf").forEach((root) => {
         const frame = root.querySelector<HTMLElement>(".pf-frame");
@@ -116,6 +104,12 @@ export function MotionProvider() {
         track.style.animation = "none";
         const rev = track.dataset.reverse !== undefined;
         const loop = rev ? gsap.fromTo(track, { xPercent: -50 }, { xPercent: 0, duration: 52, ease: "none", repeat: -1 }) : gsap.to(track, { xPercent: -50, duration: 46, ease: "none", repeat: -1 });
+        const host = track.closest(".marquee");
+        const pause = () => loop.pause();
+        const play = () => loop.play();
+        host?.addEventListener("pointerenter", pause);
+        host?.addEventListener("pointerleave", play);
+        cleanups.push(() => { host?.removeEventListener("pointerenter", pause); host?.removeEventListener("pointerleave", play); });
         const onScroll = ({ velocity }: { velocity: number }) => {
           gsap.to(loop, { timeScale: (velocity < 0 ? -1 : 1) * (1 + Math.min(Math.abs(velocity) * 0.35, 6)), duration: 0.25, overwrite: true });
           gsap.to(loop, { timeScale: velocity < 0 ? -1 : 1, duration: 1.2, delay: 0.25, overwrite: false });

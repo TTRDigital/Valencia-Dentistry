@@ -57,11 +57,11 @@ export function TreatmentPicker({ s }: { s: TreatmentPickerSection }) {
                   }}
                   onKeyDown={(e) => onKey(e, i)}
                   className={cn(
-                    "group relative flex min-h-14 w-full items-center gap-4 border-b border-ink-900/10 py-3 text-left font-display text-2xl transition-[color,transform] duration-300 ease-out hover:translate-x-2 sm:text-3xl",
-                    i === sel ? "italic text-olive-700" : "text-ink-900/70 hover:text-ink-900",
+                    "group relative flex min-h-14 w-full items-center gap-4 border-b border-ink-900/10 py-3 text-left text-lg font-semibold transition-[color,transform] duration-300 ease-out hover:translate-x-1.5 sm:text-xl",
+                    i === sel ? "text-olive-700" : "text-ink-900/75 hover:text-ink-900",
                   )}
                 >
-                  <span className={cn("font-sans text-sm font-semibold not-italic tabular-nums", i === sel ? "text-olive-600" : "text-grey-400")}>{String(i + 1).padStart(2, "0")}</span>
+                  <span className={cn("text-sm font-semibold tabular-nums", i === sel ? "text-olive-600" : "text-grey-400")}>{String(i + 1).padStart(2, "0")}</span>
                   <span className="flex-1">{o.label}</span>
                   <Icon.arrow className={cn("h-5 w-5 shrink-0 transition-transform duration-300", i === sel ? "translate-x-0 text-olive-600" : "-translate-x-2 text-transparent group-hover:translate-x-0 group-hover:text-grey-400")} />
                   <span aria-hidden="true" className={cn("absolute bottom-[-1px] left-0 h-0.5 bg-olive-600 transition-[width] duration-500 ease-out", i === sel ? "w-full" : "w-0")} />
@@ -79,7 +79,7 @@ export function TreatmentPicker({ s }: { s: TreatmentPickerSection }) {
                   </div>
                 )}
                 <div className="flex flex-1 flex-col p-7 sm:p-10">
-                <h3 className="font-display text-4xl font-normal">{opt.title}</h3>
+                <h3 className="text-3xl">{opt.title}</h3>
                 <p className="mt-4 max-w-xl text-lg text-grey-700">{opt.text}</p>
                 <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                   {opt.links.map((l) => (

@@ -24,8 +24,8 @@ export function FocusAreas({ s }: { s: FocusAreasSection }) {
                   <PhotoFrame image={a.image} sizes="(min-width: 1024px) 480px, 100vw" arch accent={i % 2 ? "olive" : "sand"} accentSide={i % 2 ? "left" : "right"} className="mx-auto max-w-[440px]" />
                 </div>
                 <div className={cn("lg:col-span-7", i % 2 === 1 && "lg:order-1")}>
-                  <p className={cn("font-display text-7xl leading-none", i % 2 ? "text-white/15" : "text-ink-900/10")} aria-hidden="true">{String(i + 1).padStart(2, "0")}</p>
-                  <h3 className={cn("mt-2 font-display text-5xl font-normal", i % 2 === 1 && "text-white")}>{a.title}</h3>
+                  <p className={cn("text-sm font-semibold uppercase tracking-[0.16em]", i % 2 ? "text-bronze-300" : "text-olive-600")} aria-hidden="true">{String(i + 1).padStart(2, "0")}</p>
+                  <h3 className={cn("mt-2 text-3xl sm:text-4xl", i % 2 === 1 && "text-white")}>{a.title}</h3>
                   <p className={cn("mt-5 text-lg", i % 2 ? "text-white/80" : "text-grey-700")}>{a.text}</p>
                   {a.points && (
                     <ul className="mt-6 grid gap-3 sm:grid-cols-2">

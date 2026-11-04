@@ -419,8 +419,9 @@
   /* Rich text (blog bodies, legal pages) */
   .rich { @apply text-[1.0625rem] leading-[1.75] text-grey-700; }
   .rich > * + * { @apply mt-5; }
-  .rich h2 { @apply mt-12 mb-4 text-4xl; }
-  .rich h3 { @apply mt-9 mb-3 text-2xl; }
+  .rich h2 { @apply mt-14 mb-4 text-3xl; }
+  .rich h2::before { content: ""; display: block; width: 2.5rem; height: 3px; border-radius: 3px; background: var(--color-olive-600); margin-bottom: 1rem; }
+  .rich h3 { @apply mt-9 mb-3 text-xl; }
   .rich h4 { @apply mt-7 mb-2; }
   .rich a { @apply text-olive-600 underline decoration-olive-600/40 hover:decoration-olive-600; }
   .rich strong { @apply font-semibold text-ink-900; }
