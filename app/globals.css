@@ -39,7 +39,7 @@
 
   /* Type */
   --font-sans: var(--font-urbanist), system-ui, sans-serif;
-  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-display: var(--font-urbanist), system-ui, sans-serif;
 
   /* Type scale (Ideal style: compact, semibold headings, clamp between 390px and 1440px) */
   --text-xs: 0.75rem;
@@ -88,8 +88,8 @@
 @layer base {
   :root {
     --display-settings: normal;
-    --display-weight: 420;
-    --display-tracking: -0.02em;
+    --display-weight: 600;
+    --display-tracking: -0.025em;
     --header-h: 72px;
     /* Motion tokens (used by every animation; reduced motion zeroes them below) */
     --dur-micro: 150ms;
@@ -120,7 +120,7 @@
     overflow-x: clip;
   }
   h3 { font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01em; color: var(--color-ink-900); text-wrap: balance; }
-  h1 em, h2 em, .font-display em { font-style: italic; font-weight: 380; color: var(--color-olive-600); }
+  h1 em, h2 em, .font-display em { font-style: normal; color: var(--color-olive-600); }
   .dark-section h1 em, .dark-section h2 em, .dark-section .font-display em, .on-dark h1 em, .on-dark h2 em, .on-dark .font-display em { color: var(--color-bronze-300); }
   h1, h2, .font-display {
     font-family: var(--font-display);
@@ -237,16 +237,10 @@
   [data-reveal].reveal-pending { opacity: 0; transform: translateY(var(--rise)); }
   [data-reveal].reveal-in { opacity: 1; transform: none; transition: opacity var(--dur-large) var(--ease-enter), transform var(--dur-large) var(--ease-enter); transition-delay: var(--reveal-delay, var(--reveal-auto, 0ms)); }
 
-  /* Header over the hero: the hero runs under the transparent header; once scrolled (or a menu is open) the
-     header turns solid. Over dark heroes the header text and logo turn light. Pages without a hero: always solid. */
+  /* Header: always solid, a soft sage band with dark text (clean, like the reference the client chose). */
   .site-header { --header-fg: var(--color-ink-900); --header-accent: var(--color-olive-700); }
-  .header-bg { transition: transform var(--dur-std) var(--ease-enter), opacity var(--dur-std) var(--ease-enter); }
-  [data-hero] { margin-top: calc(-1 * var(--header-h)); padding-top: var(--header-h); }
-  html:has([data-hero]) .site-header:not([data-scrolled]):not([data-open]) .header-bg { opacity: 0; }
-  html:has([data-hero="dark"]) .site-header:not([data-scrolled]):not([data-open]) {
-    --header-fg: #fff; --header-accent: var(--color-bronze-300);
-    --logo-ink: #fff; --logo-bronze: var(--color-bronze-300); --logo-bronze-text: var(--color-bronze-300);
-  }
+  .nav-link { letter-spacing: 0.06em; text-transform: uppercase; }
+  .header-bg { transition: transform var(--dur-std) var(--ease-enter); }
   .site-header svg path { transition: fill var(--dur-std) ease-out; }
 
   /* Mega menu: panel drops in (--dur-std, ease-out), columns follow 40ms apart; closing is quicker and ease-in */
@@ -355,7 +349,7 @@
 
   /* Outline display type and an extra-large size for statement lines */
   .text-outline { color: transparent; -webkit-text-stroke: 1.5px currentColor; }
-  .text-hero { font-size: clamp(3rem, 1.3rem + 5.4vw, 6.4rem); line-height: 0.96; letter-spacing: -0.03em; }
+  .text-hero { font-size: clamp(2.375rem, 1.5rem + 3.4vw, 4.5rem); line-height: 1.05; letter-spacing: -0.03em; }
   .scroll-cue span { animation: cue 1.8s var(--ease-enter) infinite; }
   @keyframes cue { from { transform: translateY(-100%); } to { transform: translateY(200%); } }
   .text-mega { font-size: clamp(3.4rem, 1rem + 9vw, 10rem); line-height: 0.92; letter-spacing: -0.035em; }

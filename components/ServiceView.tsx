@@ -5,9 +5,8 @@ import { breadcrumbNode, faqNode, graph, JsonLd, serviceNode, serviceOfferNode, 
 import { StagedHeading, TrustRow } from "@/components/sections/Hero";
 import { FaqList } from "@/components/sections/Faq";
 import { CardList } from "@/components/sections/ServicesHub";
-import { CtaBanner, IconCard, Marquee, QuoteHighlight, RichHeading, Watermark } from "@/components/rich/Blocks";
-import { FloatingBadge, PhotoCollage, PhotoFrame, ratioOf } from "@/components/rich/PhotoFrame";
-import { FannedStack } from "@/components/rich/FannedStack";
+import { CtaBanner, IconCard, QuoteHighlight, RichHeading } from "@/components/rich/Blocks";
+import { FloatingBadge, PhotoCollage, PhotoFrame } from "@/components/rich/PhotoFrame";
 import { SectionNav } from "@/components/rich/SectionNav";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Button } from "@/components/ui/Button";
@@ -82,7 +81,6 @@ export async function ServiceView({ s }: { s: Service }) {
       {/* ---------- Hero: dark, the photo whole in its own proportions with floating proof points ---------- */}
       <header data-hero="dark" className="on-dark relative isolate overflow-hidden bg-ink-900 text-white">
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(90%_80%_at_100%_0%,rgba(91,107,90,0.55),transparent_60%),radial-gradient(60%_60%_at_0%_100%,rgba(154,139,114,0.18),transparent_70%)]" />
-        <Watermark light className="-left-24 top-24 h-[34rem] w-[34rem]" />
         <Container>
           <div className="grid items-center gap-12 pb-14 pt-10 lg:grid-cols-12 lg:gap-16 lg:pb-32 lg:pt-14">
             <div className="hero-stage lg:col-span-6 xl:col-span-7">
@@ -97,12 +95,8 @@ export async function ServiceView({ s }: { s: Service }) {
               </div>
               <div data-stage="5"><TrustRow light className="mt-8" /></div>
             </div>
-            <div data-hero-media className="relative order-first mx-auto w-full max-w-[420px] lg:order-none lg:col-span-6 lg:max-w-none xl:col-span-5">
-              <FannedStack main={s.hero.image} side={[pic(1), pic(2)]} mainRatio={ratioOf(s.hero.image)} />
-              <>
-                <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
-                <FloatingBadge className="-right-2 bottom-24 hidden sm:flex sm:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />
-              </>
+            <div data-hero-media className="relative mx-auto w-full max-w-[420px] lg:col-span-6 lg:max-w-[520px] xl:col-span-5">
+              <PhotoFrame image={s.hero.image} priority sizes="(min-width: 1024px) 520px, 90vw" frameClassName="rounded-2xl" />
             </div>
           </div>
         </Container>
@@ -125,7 +119,7 @@ export async function ServiceView({ s }: { s: Service }) {
         </Container>
       </div>
 
-      <div className="mt-12 border-y border-ink-900/10 bg-warm" aria-hidden="true"><Marquee items={[s.name, "Dr. Nuriel Lavi", "Santa Clarita", "Most PPO plans", "Valencia Dentistry"]} /></div>
+<div className="mt-12" aria-hidden="true" />
 
       <SectionNav items={nav} label={`${s.name}: on this page`} />
 
@@ -161,7 +155,6 @@ export async function ServiceView({ s }: { s: Service }) {
       {/* ---------- What it is: icon cards ---------- */}
       {hasWhat && (
         <Section id="what-it-is" className="scroll-mt-32 relative isolate overflow-hidden bg-white">
-          <Watermark className="-right-24 -top-10 h-96 w-96" />
           <Container>
             <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
               <div className="lg:col-span-5">
@@ -239,7 +232,6 @@ export async function ServiceView({ s }: { s: Service }) {
       {s.why.cards.length > 0 && (
         <Section id="why-here" className="scroll-mt-32 relative isolate overflow-hidden bg-ink-900 text-white">
           <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(70%_70%_at_0%_0%,rgba(91,107,90,0.45),transparent_60%)]" />
-          <Watermark light className="-bottom-24 -right-24 h-[30rem] w-[30rem]" />
           <Container>
             <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
               <div className="lg:col-span-5">

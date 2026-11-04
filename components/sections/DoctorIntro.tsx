@@ -1,7 +1,7 @@
 import type { DoctorIntroSection } from "@/lib/types";
 import { site } from "@/lib/site";
 import { FloatingBadge, PhotoFrame } from "@/components/rich/PhotoFrame";
-import { RichHeading, Watermark } from "@/components/rich/Blocks";
+import { RichHeading } from "@/components/rich/Blocks";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icons";
 import { Reveal } from "@/components/ui/Reveal";
@@ -11,8 +11,6 @@ import { Container, Section } from "@/components/ui/Section";
 export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
   return (
     <Section className="relative isolate overflow-hidden bg-sand-50" id="meet-dr-lavi">
-      <Watermark className="-right-20 bottom-0 h-[28rem] w-[28rem]" />
-      <p aria-hidden="true" data-drift className="text-mega text-outline pointer-events-none absolute left-0 top-10 -z-10 select-none whitespace-nowrap font-display text-ink-900/15">Nuriel Lavi · Nuriel Lavi</p>
       <Container>
         <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">

@@ -8,7 +8,7 @@ import { MotionProvider } from "@/components/motion/MotionProvider";
 import { CustomCursor } from "@/components/motion/CustomCursor";
 import { RevealObserver } from "@/components/motion/RevealObserver";
 import { getNavigation, getPosts } from "@/lib/content";
-import { fraunces, urbanist } from "@/lib/fonts";
+import { urbanist } from "@/lib/fonts";
 import { SITE_URL, site } from "@/lib/site";
 import "./globals.css";
 
@@ -29,7 +29,7 @@ export const viewport: Viewport = { themeColor: "#1c1c1c", width: "device-width"
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const [nav, posts] = await Promise.all([getNavigation(), getPosts()]);
   return (
-    <html lang="en" className={`${urbanist.variable} ${fraunces.variable}`} data-scroll-behavior="smooth" suppressHydrationWarning>
+    <html lang="en" className={urbanist.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         {/* Marks that JavaScript runs, before first paint, so JS-only motion states never flash. */}
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />

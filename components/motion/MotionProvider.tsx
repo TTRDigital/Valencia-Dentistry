@@ -83,7 +83,7 @@ export function MotionProvider() {
           const bar = section.querySelector<HTMLElement>("[data-hscroll-progress]");
           const count = section.querySelector<HTMLElement>("[data-hscroll-count]");
           const n = track.querySelectorAll(":scope > li").length - 1;
-          gsap.to(track, { x: () => -distance(), ease: "none", scrollTrigger: { trigger: section, start: "top top", end: () => `+=${distance()}`, scrub: 0.8, pin: true, invalidateOnRefresh: true, anticipatePin: 1,
+          gsap.to(track, { x: () => -distance(), ease: "none", scrollTrigger: { trigger: section, start: "top 64px", end: () => `+=${distance()}`, scrub: 0.8, pin: true, invalidateOnRefresh: true, anticipatePin: 1,
             onUpdate: (st) => {
               if (bar) bar.style.transform = `scaleX(${st.progress})`;
               if (count) count.textContent = String(Math.min(n, Math.floor(st.progress * n) + 1)).padStart(2, "0");
