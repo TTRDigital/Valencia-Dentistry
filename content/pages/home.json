@@ -154,12 +154,6 @@
       }
     },
     {
-      "_type": "insuranceChecker",
-      "eyebrow": "Insurance & coverage",
-      "heading": "Check your dental insurance in seconds",
-      "lead": "Most major PPO plans accepted. Pick your plan type and carrier to see where you stand; we verify your benefits before every visit."
-    },
-    {
       "_type": "reviews",
       "eyebrow": "What patients say",
       "heading": "Trusted by Santa Clarita families",
