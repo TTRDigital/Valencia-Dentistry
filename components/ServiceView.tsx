@@ -101,7 +101,7 @@ export async function ServiceView({ s }: { s: Service }) {
               <FannedStack main={s.hero.image} side={[pic(1), pic(2)]} mainRatio={ratioOf(s.hero.image)} />
               <>
                 <FloatingBadge className="-left-3 bottom-6 sm:-left-8" icon={<Icon.google className="h-5 w-5" />} title={<>{site.rating.value} <Icon.star className="inline h-4 w-4 -translate-y-0.5 text-amber-400" /> on Google</>} text={`${site.rating.count} reviews`} />
-                <FloatingBadge className="-right-2 top-6 hidden sm:flex sm:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />
+                <FloatingBadge className="-right-2 bottom-24 hidden sm:flex sm:-right-6" icon={<Icon.shield className="h-5 w-5" />} title="Most PPO plans" text="Benefits checked for you" />
               </>
             </div>
           </div>
@@ -145,7 +145,7 @@ export async function ServiceView({ s }: { s: Service }) {
             </div>
             <div className="lg:col-span-6">
               <PhotoCollage main={pic(1)} second={pic(2)}>
-                <FloatingBadge className="left-0 top-4 sm:-left-4" icon={<Icon.user className="h-5 w-5" />} title="Planned by Dr. Lavi" text="One dentist, start to finish" />
+                <FloatingBadge className="bottom-28 left-0 sm:-left-4" icon={<Icon.user className="h-5 w-5" />} title="Planned by Dr. Lavi" text="One dentist, start to finish" />
               </PhotoCollage>
             </div>
           </div>
