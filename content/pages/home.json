@@ -188,22 +188,6 @@
       ]
     },
     {
-      "_type": "serviceShowcase",
-      "eyebrow": "Our services",
-      "heading": "Treatments patients come to us for",
-      "lead": "From a single crown to a full arch, every treatment is planned with Dr. Lavi in our Valencia office.",
-      "slugs": [
-        "dental-implants",
-        "all-on-4-implants",
-        "veneers",
-        "invisalign",
-        "dental-crowns",
-        "teeth-whitening",
-        "holistic-dentistry",
-        "tmj-treatments"
-      ]
-    },
-    {
       "_type": "doctorIntro",
       "eyebrow": "Your dentist",
       "heading": "Meet Dr. Nuriel Lavi, DDS",
