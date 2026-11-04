@@ -1,16 +1,14 @@
 import type { Service, SiteImage } from "@/lib/types";
-import { getPeople, getServices, getTestimonials } from "@/lib/content";
+import { getServices } from "@/lib/content";
 import { site } from "@/lib/site";
 import { breadcrumbNode, faqNode, graph, JsonLd, serviceNode, serviceOfferNode, webPageNode } from "@/lib/seo";
-import { StagedHeading, TrustRow } from "@/components/sections/Hero";
+import { PageHero } from "@/components/sections/Hero";
 import { FaqList } from "@/components/sections/Faq";
 import { CardList } from "@/components/sections/ServicesHub";
-import { CtaBanner, IconCard, QuoteHighlight, RichHeading } from "@/components/rich/Blocks";
-import { FloatingBadge, PhotoCollage, PhotoFrame } from "@/components/rich/PhotoFrame";
-import { SectionNav } from "@/components/rich/SectionNav";
+import { IconCard } from "@/components/rich/Blocks";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { Button } from "@/components/ui/Button";
 import { Icon, type IconName } from "@/components/ui/Icons";
+import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
 import { cn, inSentence } from "@/lib/utils";
@@ -44,7 +42,7 @@ function photosFor(s: Service): SiteImage[] {
 }
 
 export async function ServiceView({ s }: { s: Service }) {
-  const [all, testimonials, people] = await Promise.all([getServices(), getTestimonials(), getPeople()]);
+  const all = await getServices();
   const related = s.related.map((slug) => all.find((x) => x.slug === slug)).filter((x): x is Service => !!x);
   const children = all.filter((x) => x.parentPath === s.path);
   const crumbs = [{ name: "Home", path: "/" }, ...(s.parentPath !== "/services/" ? [{ name: "Services", path: "/services/" }] : []), { name: PARENT_NAMES[s.parentPath] ?? "Services", path: s.parentPath }, { name: s.name, path: s.path }].filter((c, i, a) => a.findIndex((x) => x.path === c.path) === i);
@@ -54,215 +52,151 @@ export async function ServiceView({ s }: { s: Service }) {
   const hasDetails = !!s.care || (s.tables?.length ?? 0) > 0 || s.extra.length > 0;
   const photos = photosFor(s);
   const pic = (i: number) => photos[i % photos.length];
-  const doctor = people[0];
-  const quote = testimonials[0];
 
-  const nav = [
-    { id: "overview", label: "Overview" },
-    ...(hasWhat ? [{ id: "what-it-is", label: "What it is" }] : []),
-    ...(hasWho ? [{ id: "who-its-for", label: "Who it's for" }] : []),
-    ...(s.process.steps.length ? [{ id: "how-it-works", label: "How it works" }] : []),
-    ...(s.why.cards.length ? [{ id: "why-here", label: "Why us" }] : []),
-    ...(hasDetails ? [{ id: "details", label: "Care & details" }] : []),
-    ...(s.faqs.length ? [{ id: "questions", label: "Questions" }] : []),
-  ];
+  const book = site.bookingUrl;
+  const benefits = s.understanding.items.length ? s.understanding.items : s.why.cards;
+  const features = s.understanding.items.length ? s.why.cards : [];
+  const lower = inSentence(s.name);
 
-  const quickFacts: { icon: IconName; title: string; text: string }[] = [
-    { icon: "user", title: "Unhurried visits", text: "Every step explained before treatment" },
-    { icon: "calendar", title: "Mon–Fri, 8am–5pm", text: "Weekday appointments, same-day when possible" },
-    { icon: "shield", title: "Most PPO plans", text: "We check your benefits before you come in" },
-    { icon: "pin", title: "Easy to reach", text: "Free parking, elevator to Suite 240" },
-  ];
-
+  // Beverly Hills structure: photo banner, what it is, benefits accordion beside a photo (olive), who it's for,
+  // the treatment process, why patients choose us (olive), a full-width photo, care details, a call to action
+  // over a photo, and the questions.
   return (
     <article>
       <div className="reading-progress" aria-hidden="true" />
 
-      {/* ---------- Hero: dark, the photo whole in its own proportions with floating proof points ---------- */}
-      <header data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white">
-        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(90%_80%_at_100%_0%,rgba(91,107,90,0.55),transparent_60%),radial-gradient(60%_60%_at_0%_100%,rgba(154,139,114,0.18),transparent_70%)]" />
+      <PageHero crumbs={crumbs} heading={s.hero.h1} sub={CATEGORY_LABEL[s.category]} lead={s.hero.subtitle && s.hero.subtitle !== s.name ? s.hero.subtitle : s.hero.text} image={s.hero.image} primary={{ label: "Schedule Appointment", href: book }} secondary={{ label: site.phone.display, href: `tel:${site.phone.tel}` }} />
+
+      {/* ---------- What it is ---------- */}
+      <Section id="overview" className="scroll-mt-28 bg-warm">
         <Container>
-          <div className="grid items-center gap-12 pb-14 pt-10 lg:grid-cols-12 lg:gap-16 lg:pb-32 lg:pt-14">
-            <div className="hero-stage lg:col-span-6 xl:col-span-7">
-              <div data-stage="0"><Breadcrumbs items={crumbs} light /></div>
-              <p className="eyebrow mb-4 mt-7 text-bronze-300" data-stage="0">{CATEGORY_LABEL[s.category]}</p>
-              <h1 className="text-5xl text-white"><StagedHeading text={s.hero.h1} /></h1>
-              {s.hero.subtitle && s.hero.subtitle !== s.name && <p className="mt-4 text-xl font-semibold text-bronze-300" data-stage="3">{s.hero.subtitle}</p>}
-              {s.hero.text && <p className="mt-4 max-w-xl text-lg text-white/80" data-stage="3">{s.hero.text}</p>}
-              <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
-                <Button href={site.bookingUrl} size="lg" arrow>Book a consultation</Button>
-                <Button href={`tel:${site.phone.tel}`} variant="outline" size="lg" external={false}><Icon.phone className="h-4 w-4" /> {site.phone.display}</Button>
-              </div>
-              <div data-stage="5"><TrustRow light className="mt-8" /></div>
+          <div className="max-w-3xl">
+            <h2>{hasWhat ? s.understanding.heading : introHeading}</h2>
+            <div className="mt-4 space-y-4 text-grey-700">
+              {(s.intro.paragraphs.length ? s.intro.paragraphs : [s.hero.text]).map((p, i) => <p key={i}>{p}</p>)}
+              {hasWhat && s.understanding.intro && <p>{s.understanding.intro}</p>}
             </div>
-            <div data-hero-media className="relative mx-auto w-full max-w-[420px] lg:col-span-6 lg:max-w-[520px] xl:col-span-5">
-              <PhotoFrame image={s.hero.image} priority sizes="(min-width: 1024px) 520px, 90vw" frameClassName="rounded-2xl" />
-            </div>
-          </div>
-        </Container>
-      </header>
-
-      {/* ---------- Quick facts, overlapping the hero ---------- */}
-      <div className="relative z-10 mt-8 lg:-mt-16">
-        <Container>
-          {/* One clean bar, four facts divided by hairlines (no icon boxes) */}
-          <ul className="grid grid-cols-2 overflow-hidden rounded-xl bg-white shadow-lift ring-1 ring-ink-900/5 lg:grid-cols-4">
-            {quickFacts.map((f, i) => {
-              const I = Icon[f.icon];
-              return (
-                <li key={f.title} className={cn("flex flex-col gap-2 p-5 sm:p-6", i % 2 === 1 && "border-l border-ink-900/10", i > 1 && "border-t border-ink-900/10 lg:border-t-0", i === 2 && "lg:border-l")}>
-                  <I className="h-5 w-5 text-olive-600" />
-                  <span className="font-semibold text-ink-900">{f.title}</span>
-                  <span className="text-sm text-grey-700">{f.text}</span>
-                </li>
-              );
-            })}
-          </ul>
-        </Container>
-      </div>
-
-<div className="mt-12" aria-hidden="true" />
-
-      <SectionNav items={nav} label={`${s.name}: on this page`} />
-
-      {/* ---------- Overview: text beside a two-photo collage ---------- */}
-      <Section id="overview" className="scroll-mt-32 bg-warm">
-        <Container>
-          <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-            <div className="lg:col-span-6">
-              <RichHeading eyebrow="Overview" heading={introHeading} />
-              <div className="mt-6 space-y-4 text-lg text-grey-700">
-                {(s.intro.paragraphs.length ? s.intro.paragraphs : [s.hero.text]).map((p, i) => <p key={i}>{p}</p>)}
-              </div>
-              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-                <Button href={site.bookingUrl} arrow>Book a consultation</Button>
-                <a href="#how-it-works" className="link-arrow">See how it works <Icon.arrow className="h-4 w-4" /></a>
-              </div>
-            </div>
-            <div className="lg:col-span-6">
-              <PhotoCollage main={pic(1)} second={pic(2)}>
-                <FloatingBadge className="bottom-28 left-0 sm:-left-4" icon={<Icon.user className="h-5 w-5" />} title="Planned in our office" text="3D imaging, start to finish" />
-              </PhotoCollage>
-            </div>
+            {s.understanding.bullets && s.understanding.bullets.length > 0 && <ul className="mt-6 grid gap-3 sm:grid-cols-2">{s.understanding.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>}
           </div>
           {children.length > 0 && (
-            <div className="mt-16">
-              <h3 className="text-2xl">Treatments in {inSentence(s.name)}</h3>
+            <div className="mt-14">
+              <h3>Treatments in {lower}</h3>
               <CardList items={children} className="mt-6" />
             </div>
           )}
         </Container>
       </Section>
 
-      {/* ---------- What it is: icon cards ---------- */}
-      {hasWhat && (
-        <Section id="what-it-is" className="scroll-mt-32 relative isolate overflow-hidden bg-warm">
+      {/* ---------- Benefits: photo beside an accordion (olive) ---------- */}
+      {benefits.length > 0 && (
+        <Section id="benefits" className="scroll-mt-28 bg-olive-900 text-white">
+          <Container>
+            <h2 className="uppercase text-white">Benefits &amp; care of {s.name}</h2>
+            <p className="mt-2 text-white/75">What {lower} can do for you, and how we take care of it over the years.</p>
+            <div className="mt-10 grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-lg"><Picture image={pic(1)} fill cropTo={4 / 3} sizes="(min-width: 1024px) 560px, 100vw" className="object-cover" /></div>
+              <div className="divide-y divide-white/15 border-y border-white/15">
+                {benefits.map((it, i) => (
+                  <details key={it.title + i} className="faq-item group" name="benefits" open={i === 0 || undefined}>
+                    <summary className="flex min-h-14 cursor-pointer items-center justify-between gap-6 py-4 font-semibold text-white [&::-webkit-details-marker]:hidden">
+                      <span>{it.title}</span>
+                      <span aria-hidden="true" className="text-xl leading-none transition-transform duration-300 group-open:rotate-45">+</span>
+                    </summary>
+                    <div className="faq-answer pb-5 text-white/80"><p>{it.text}</p></div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
+
+      {/* ---------- Who it's for ---------- */}
+      {hasWho && (
+        <Section id="who-its-for" className="scroll-mt-28 bg-warm">
+          <Container>
+            <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
+              <div className="lg:col-span-7">
+                <h2>{s.candidate.heading}</h2>
+                {s.candidate.text && <p className="mt-4 text-grey-700">{s.candidate.text}</p>}
+                {s.candidate.bullets.length > 0 && <ul className="mt-6 grid gap-3 sm:grid-cols-2">{s.candidate.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>}
+                <p className="mt-6 text-grey-700">Not sure? We will tell you honestly at your consultation, including when another option suits you better.</p>
+              </div>
+              <div className="relative hidden aspect-[4/3] overflow-hidden rounded-lg lg:col-span-5 lg:block"><Picture image={pic(2)} fill cropTo={4 / 3} sizes="480px" className="object-cover" /></div>
+            </div>
+          </Container>
+        </Section>
+      )}
+
+      {/* ---------- The treatment process ---------- */}
+      {s.process.steps.length > 0 && (
+        <Section id="how-it-works" className="scroll-mt-28 bg-greige-50">
+          <Container>
+            <div className="grid items-end gap-8 lg:grid-cols-12">
+              <div className="lg:col-span-5">
+                <h2 className="uppercase">{s.process.heading}</h2>
+                {s.process.intro && <p className="mt-3 text-grey-700">{s.process.intro}</p>}
+              </div>
+              <div className="hidden grid-cols-2 gap-4 sm:grid lg:col-span-7">
+                {[pic(3), pic(4)].map((im, i) => <div key={i} className="relative aspect-[4/3] overflow-hidden rounded-lg"><Picture image={im} fill cropTo={4 / 3} sizes="(min-width: 1024px) 380px, 50vw" className="object-cover" /></div>)}
+              </div>
+            </div>
+            <ol data-stagger className={cn("mt-12 grid gap-8 sm:grid-cols-2", STEP_COLS[s.process.steps.length] ?? "lg:grid-cols-3")}>
+              {s.process.steps.map((st, i) => (
+                <Reveal as="li" key={st.title + i} className="border-t border-ink-900/15 pt-5">
+                  <span className="text-sm font-semibold text-olive-600">{String(i + 1).padStart(2, "0")}</span>
+                  <h3 className="mt-2 uppercase">{st.title}</h3>
+                  <p className="mt-2 text-grey-700">{st.text}</p>
+                </Reveal>
+              ))}
+            </ol>
+          </Container>
+        </Section>
+      )}
+
+      {/* ---------- Why patients choose us (olive) ---------- */}
+      {features.length > 0 && (
+        <Section id="why-here" className="scroll-mt-28 bg-olive-900 text-white">
           <Container>
             <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
-              <div className="lg:col-span-5">
-                <RichHeading eyebrow="What it is" heading={s.understanding.heading} lead={s.understanding.intro || undefined} />
-                {s.understanding.bullets && s.understanding.bullets.length > 0 && (
-                  <ul className="mt-6 space-y-3">{s.understanding.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>
-                )}
+              <div className="lg:col-span-4">
+                <h2 className="uppercase text-white">{s.why.heading}</h2>
+                {s.why.intro && <p className="mt-3 text-white/75">{s.why.intro}</p>}
               </div>
-              <div className="lg:col-span-7">
-                {s.understanding.items.length > 0 ? (
-                  <ul data-stagger className="grid gap-x-8 gap-y-8 sm:grid-cols-2">
-                    {s.understanding.items.map((it, i) => (
-                      <Reveal as="li" key={it.title + i}><IconCard icon={CARD_ICONS[i % CARD_ICONS.length]} title={it.title} text={it.text} /></Reveal>
-                    ))}
-                  </ul>
-                ) : (
-                  <PhotoFrame image={s.understanding.image} sizes="(min-width: 1024px) 640px, 100vw" accent="sand" />
-                )}
-              </div>
-            </div>
-          </Container>
-        </Section>
-      )}
-
-      {/* ---------- Who it's for: photo beside a checklist panel ---------- */}
-      {hasWho && (
-        <Section id="who-its-for" className="scroll-mt-32 bg-sand-50">
-          <Container>
-            <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-              <div className="order-2 lg:order-1 lg:col-span-5">
-                <PhotoFrame image={pic(3)} sizes="(min-width: 1024px) 480px, 100vw" arch accent="olive" accentSide="left" className="mx-auto max-w-[460px]" />
-              </div>
-              <div className="order-1 lg:order-2 lg:col-span-7">
-                <RichHeading eyebrow="Who it's for" heading={s.candidate.heading} lead={s.candidate.text || undefined} />
-                {s.candidate.bullets.length > 0 && (
-                  <ul className="mt-8 grid gap-3 rounded-lg bg-white p-6 ring-1 ring-ink-900/[0.07] sm:grid-cols-2 sm:p-8">
-                    {s.candidate.bullets.map((b) => <Check key={b}>{b}</Check>)}
-                  </ul>
-                )}
-                <div className="mt-6 flex items-start gap-3 rounded-lg bg-olive-700 p-5 text-white">
-                  <Icon.heart className="mt-0.5 h-5 w-5 shrink-0 text-bronze-300" />
-                  <p>Not sure? We will tell you honestly at your consultation, including when another option suits you better.</p>
-                </div>
-              </div>
-            </div>
-          </Container>
-        </Section>
-      )}
-
-      {/* ---------- How it works: connected step cards ---------- */}
-      {s.process.steps.length > 0 && (
-        <Section id="how-it-works" className="scroll-mt-32 bg-warm">
-          <Container>
-            <RichHeading eyebrow="How it works" heading={s.process.heading} lead={s.process.intro || undefined} align="center" />
-            <div className="relative mt-14">
-              <div aria-hidden="true" data-reveal="" className="draw-x absolute left-[8%] right-[8%] top-7 hidden h-0.5 origin-left bg-olive-600/30 lg:block" />
-              <ol data-stagger className={cn("fill-odd-until-lg relative grid gap-6 sm:grid-cols-2", STEP_COLS[s.process.steps.length] ?? "lg:grid-cols-3")}>
-                {s.process.steps.map((st, i) => (
-                  <Reveal as="li" key={st.title + i} className="relative flex flex-col items-center text-center">
-                    <span className="relative z-10 inline-flex h-14 w-14 items-center justify-center rounded-full bg-olive-600 font-display text-xl font-semibold text-white ring-8 ring-white">{i + 1}</span>
-                    <div className="mt-5 h-full w-full rounded-lg bg-warm p-6 ring-1 ring-ink-900/[0.06]">
-                      <h3 className="text-xl">{st.title}</h3>
-                      <p className="mt-2 text-grey-700">{st.text}</p>
-                    </div>
-                  </Reveal>
-                ))}
-              </ol>
-            </div>
-            <p className="mt-10 text-center text-grey-700">Questions about your own case? <a href={`tel:${site.phone.tel}`} className="font-semibold text-olive-700 underline-offset-4 hover:underline">Call {site.phone.display}</a></p>
-          </Container>
-        </Section>
-      )}
-
-      {/* ---------- Why patients choose us: dark section with photo and numbered reasons ---------- */}
-      {s.why.cards.length > 0 && (
-        <Section id="why-here" className="scroll-mt-32 relative isolate overflow-hidden bg-olive-900 text-white">
-          <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(70%_70%_at_0%_0%,rgba(91,107,90,0.45),transparent_60%)]" />
-          <Container>
-            <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-              <div className="lg:col-span-5">
-                <RichHeading eyebrow="Why patients choose us" heading={s.why.heading} lead={s.why.intro || undefined} dark />
-                <PhotoFrame image={pic(4)} sizes="(min-width: 1024px) 460px, 100vw" className="mt-10" accent="olive" />
-              </div>
-              <ul data-stagger className="grid content-start gap-x-8 gap-y-8 sm:grid-cols-2 lg:col-span-7">
-                {s.why.cards.map((c, i) => (
-                  <Reveal as="li" key={c.title}><IconCard dark number={i + 1} icon={CARD_ICONS[(i + 2) % CARD_ICONS.length]} title={c.title} text={c.text} /></Reveal>
-                ))}
+              <ul data-stagger className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:col-span-8">
+                {features.map((c, i) => {
+                  const I = Icon[CARD_ICONS[(i + 2) % CARD_ICONS.length]];
+                  return (
+                    <Reveal as="li" key={c.title}>
+                      <I className="h-8 w-8 text-bronze-300" />
+                      <h3 className="mt-3 text-white">{c.title}</h3>
+                      <p className="mt-2 text-white/75">{c.text}</p>
+                    </Reveal>
+                  );
+                })}
               </ul>
             </div>
           </Container>
         </Section>
       )}
 
-      {/* ---------- Care, tables and extra detail ---------- */}
+      {/* ---------- Full-width photo ---------- */}
+      <div className="relative h-[260px] sm:h-[420px]"><Picture image={pic(5)} fill sizes="100vw" className="object-cover" /></div>
+
+      {/* ---------- Care and extra detail ---------- */}
       {hasDetails && (
-        <Section id="details" className="scroll-mt-32 bg-warm">
+        <Section id="details" className="scroll-mt-28 bg-warm">
           <Container>
             <div className="mx-auto max-w-5xl space-y-14">
               {s.care && (
                 <div>
-                  <RichHeading eyebrow="Before & after your visit" heading={s.care.heading} lead={s.care.intro || undefined} />
-                  <div className="mt-8 grid gap-5 md:grid-cols-2">
-                    {([["Before your appointment", s.care.before, "calendar"], ["After your appointment", s.care.after, "heart"]] as const).map(([t, items, ic]) => items.length > 0 && (
-                      <div key={t} className="rounded-lg bg-white p-6 ring-1 ring-ink-900/[0.07] sm:p-8">
-                        <div className="flex items-center gap-3"><span className="text-olive-600">{ic === "calendar" ? <Icon.calendar className="h-6 w-6" /> : <Icon.heart className="h-6 w-6" />}</span><h3 className="text-xl">{t}</h3></div>
-                        <ul className="mt-5 space-y-3">{items.map((b) => <Check key={b}>{b}</Check>)}</ul>
+                  <h2>{s.care.heading}</h2>
+                  {s.care.intro && <p className="mt-3 text-grey-700">{s.care.intro}</p>}
+                  <div className="mt-8 grid gap-8 md:grid-cols-2">
+                    {([["Before your appointment", s.care.before], ["After your appointment", s.care.after]] as const).map(([t, items]) => items.length > 0 && (
+                      <div key={t} className="border-t border-ink-900/15 pt-5">
+                        <h3>{t}</h3>
+                        <ul className="mt-4 space-y-3">{items.map((b) => <Check key={b}>{b}</Check>)}</ul>
                       </div>
                     ))}
                   </div>
@@ -270,18 +204,19 @@ export async function ServiceView({ s }: { s: Service }) {
               )}
               {s.tables?.map((t) => (
                 <div key={t.heading}>
-                  <RichHeading heading={t.heading} lead={t.text || undefined} />
-                  <div className="mt-6 overflow-x-auto rounded-lg bg-white ring-1 ring-ink-900/10" tabIndex={0} role="region" aria-label={t.heading}>
-                    <table className="w-full min-w-[34rem] text-base sm:text-[0.95rem]">
+                  <h2>{t.heading}</h2>
+                  {t.text && <p className="mt-3 text-grey-700">{t.text}</p>}
+                  <div className="mt-6 overflow-x-auto rounded-lg bg-offwhite ring-1 ring-ink-900/10" tabIndex={0} role="region" aria-label={t.heading}>
+                    <table className="w-full min-w-[34rem]">
                       <thead className="bg-olive-900 text-left text-white"><tr>{t.rows[0].map((c, i) => <th key={i} scope="col" className="px-5 py-3.5 font-semibold">{c}</th>)}</tr></thead>
-                      <tbody>{t.rows.slice(1).map((r, i) => <tr key={i} className="border-t border-ink-900/10 even:bg-warm/60">{r.map((c, j) => <td key={j} className={cn("px-5 py-3.5 align-top", j === 0 && "font-semibold text-ink-900")}>{c}</td>)}</tr>)}</tbody>
+                      <tbody>{t.rows.slice(1).map((r, i) => <tr key={i} className="border-t border-ink-900/10">{r.map((c, j) => <td key={j} className={cn("px-5 py-3.5 align-top", j === 0 && "font-semibold text-ink-900")}>{c}</td>)}</tr>)}</tbody>
                     </table>
                   </div>
                 </div>
               ))}
               {s.extra.map((e) => (
-                <div key={e.heading} className="rounded-lg bg-white p-6 ring-1 ring-ink-900/[0.07] sm:p-10">
-                  <h2 className="text-3xl">{e.heading}</h2>
+                <div key={e.heading}>
+                  <h2>{e.heading}</h2>
                   <div className="mt-4 max-w-[68ch] space-y-4 text-grey-700">{e.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div>
                   {e.bullets.length > 0 && <ul className="mt-6 grid gap-3 sm:grid-cols-2">{e.bullets.map((b) => <Check key={b}>{b}</Check>)}</ul>}
                   {e.cards.length > 0 && (
@@ -296,62 +231,44 @@ export async function ServiceView({ s }: { s: Service }) {
         </Section>
       )}
 
-      {/* ---------- Questions: doctor card beside the accordion ---------- */}
-      {s.faqs.length > 0 && (
-        <Section id="questions" className="scroll-mt-32 bg-warm">
-          <Container>
-            <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-              <div className="lg:col-span-4">
-                <div className="lg:sticky lg:top-36">
-                  <RichHeading eyebrow="Questions" heading={`Questions patients ask about ${inSentence(s.name)}`} />
-                  {doctor && (
-                    <div className="mt-8 overflow-hidden rounded-lg bg-warm ring-1 ring-ink-900/[0.07]">
-                      <div className="flex items-center gap-4 p-5">
-                        <div className="w-20 shrink-0"><PhotoFrame image={doctor.image} sizes="80px" arch /></div>
-                        <div>
-                          <p className="font-semibold text-ink-900">Answered by {doctor.name}, {doctor.credentials}</p>
-                          <p className="mt-0.5 text-sm text-grey-700">Have another question? Ask us directly.</p>
-                        </div>
-                      </div>
-                      <div className="grid gap-2 border-t border-ink-900/10 p-5">
-                        <Button href={`tel:${site.phone.tel}`} external={false}><Icon.phone className="h-4 w-4" /> {site.phone.display}</Button>
-                        <Button href="/contact/" variant="outline">Send us a note</Button>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div className="lg:col-span-8">
-                <FaqList items={s.faqs} />
-              </div>
+      {/* ---------- Call to action over a photo ---------- */}
+      <section className="on-dark relative isolate overflow-hidden text-white">
+        <Picture image={pic(6)} fill sizes="100vw" className="-z-20 object-cover" />
+        <span aria-hidden="true" className="absolute inset-0 -z-10 bg-olive-900/80" />
+        <Container className="py-14 sm:py-20">
+          <div className="max-w-2xl">
+            <h2 className="uppercase text-white">{s.name} in Santa Clarita</h2>
+            <p className="mt-3 text-white/85">{s.cta.text}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href={book} target="_blank" rel="noopener noreferrer" className="btn btn-light">{s.cta.buttonLabel || "Book a consultation"}</a>
+              <a href={`tel:${site.phone.tel}`} className="btn border border-white text-white hover:bg-white hover:text-olive-900">{site.phone.display}</a>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ---------- Questions ---------- */}
+      {s.faqs.length > 0 && (
+        <Section id="questions" className="scroll-mt-28 bg-warm">
+          <Container>
+            <div className="text-center">
+              <h2 className="uppercase">Frequently asked questions about {lower}</h2>
+              <p className="mt-2 text-grey-700">The questions patients ask most often before starting treatment.</p>
+            </div>
+            <FaqList items={s.faqs} className="mx-auto mt-10 max-w-4xl" />
           </Container>
         </Section>
       )}
 
-      {/* ---------- A review, related treatments and the closing call to action ---------- */}
-      <Section className="bg-warm">
-        <Container>
-          {quote && (
-            <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
-              <QuoteHighlight t={quote} className="lg:col-span-8" />
-              <div className="lg:col-span-4">
-                <p className="eyebrow mb-3">From our Google reviews</p>
-                <p className="font-display text-6xl font-semibold text-ink-900">{site.rating.value}<Icon.star className="ml-2 inline h-9 w-9 -translate-y-1.5 text-amber-400" /></p>
-                <p className="mt-2 text-grey-700">Average from {site.rating.count} Google reviews by local patients, shown exactly as written.</p>
-                <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="link-arrow mt-3">Read them on Google <Icon.arrow className="h-4 w-4" /></a>
-              </div>
-            </div>
-          )}
-          {related.length > 0 && (
-            <div className="mt-20">
-              <RichHeading eyebrow="Related" heading="Treatments patients often consider alongside this" />
-              <CardList items={related} className="mt-8" wideCols={4} wideAt="lg" avoid={photos.map((p) => p.src)} />
-            </div>
-          )}
-          <CtaBanner className="mt-20" heading={s.cta.heading} text={s.cta.text} image={pic(5)} buttonLabel={s.cta.buttonLabel || "Book a consultation"} />
-        </Container>
-      </Section>
+      {/* ---------- Related treatments ---------- */}
+      {related.length > 0 && (
+        <Section tight className="bg-greige-50">
+          <Container>
+            <h2>Related treatments</h2>
+            <CardList items={related} className="mt-8" wideCols={4} wideAt="lg" avoid={photos.map((p) => p.src)} />
+          </Container>
+        </Section>
+      )}
 
       <JsonLd data={graph([webPageNode(s.path, s.seo.title, s.seo.description), breadcrumbNode(crumbs), serviceNode(s), serviceOfferNode(s), faqNode(s.faqs)])} />
     </article>

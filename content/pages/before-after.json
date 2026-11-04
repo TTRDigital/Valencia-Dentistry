@@ -1,0 +1,67 @@
+{
+  "slug": "before-after",
+  "path": "/before-after/",
+  "title": "Before & After",
+  "breadcrumb": "Before & After",
+  "seo": {
+    "title": "Before & After Photos | Valencia Dentistry, Santa Clarita",
+    "description": "Real before and after photos of patients treated at Valencia Dentistry in Santa Clarita: implants, crowns, veneers and smile makeovers."
+  },
+  "sections": [
+    {
+      "_type": "hero",
+      "variant": "page",
+      "eyebrow": "Our work",
+      "heading": "A Gentle, Conservative Approach",
+      "lead": "We preserve as much of your natural tooth structure as possible and plan every smile on digital imaging, so the result looks natural and lasts.",
+      "image": {
+        "src": "/images/real/veneer-tryin.jpg",
+        "alt": "A patient smiling with a new restoration at Valencia Dentistry"
+      },
+      "primary": {
+        "label": "Schedule Appointment",
+        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+      }
+    },
+    {
+      "_type": "beforeAfter",
+      "layout": "grid",
+      "heading": "Before and After Photos",
+      "lead": "More than transforming teeth, we help patients feel confident again. Patients shown with their permission; results vary from person to person."
+    },
+    {
+      "_type": "photoSteps",
+      "label": "Your first visit",
+      "items": [
+        {
+          "title": "Book Your Consultation",
+          "text": "Every great smile starts with a conversation about what you want and how to get there.",
+          "image": {
+            "src": "/images/real/scan-hygienist.jpg",
+            "alt": "A digital scan with a hygienist at Valencia Dentistry"
+          },
+          "link": {
+            "label": "Book online",
+            "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
+          }
+        },
+        {
+          "title": "Transform Your Smile",
+          "text": "Treatment is planned on 3D imaging and done carefully, so the result looks natural.",
+          "image": {
+            "src": "/images/real/smile-plan-5.jpg",
+            "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
+          }
+        },
+        {
+          "title": "Feel the Difference",
+          "text": "Routine visits keep your new smile healthy for years.",
+          "image": {
+            "src": "/images/real/veneer-smile.jpg",
+            "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
+          }
+        }
+      ]
+    }
+  ]
+}

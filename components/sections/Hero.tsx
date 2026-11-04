@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import type { HeroSection } from "@/lib/types";
 import { site } from "@/lib/site";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
-import { PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Button } from "@/components/ui/Button";
 import { Picture } from "@/components/ui/Picture";
 import { TypeLoop } from "@/components/ui/TypeLoop";
@@ -73,31 +72,32 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
     );
   }
 
-  // Page and landing heroes: dark band, text on the left, the photo whole on the right (its own proportions,
-  // so heads are never cut), with floating proof points.
-  const landing = s.variant === "landing";
+  // Page and landing heroes (Beverly Hills style): one full-width office photo, title low on the left over an
+  // olive fade. Phones: the photo stands on its own, the words sit below it on olive (nothing over faces).
+  return <PageHero crumbs={crumbs} eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} image={s.image} primary={s.primary} secondary={s.secondary} />;
+}
+
+export function PageHero({ crumbs, eyebrow, heading, sub, lead, image, primary, secondary }: { crumbs?: { name: string; path: string }[]; eyebrow?: string; heading: string; sub?: string; lead?: string; image?: HeroSection["image"]; primary?: HeroSection["primary"]; secondary?: HeroSection["secondary"] }) {
   return (
-    <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white" aria-labelledby="hero-heading">
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(80%_70%_at_100%_0%,rgba(91,107,90,0.5),transparent_60%),radial-gradient(50%_60%_at_0%_100%,rgba(154,139,114,0.16),transparent_70%)]" />
-      <div className="container-x">
-        <div className={cn("grid items-center gap-12 pb-14 pt-10 lg:grid-cols-12 lg:gap-16 lg:pb-24 lg:pt-14", landing && "lg:pb-28")}>
-          <div className={cn("hero-stage", s.image ? "lg:col-span-6 xl:col-span-7" : "lg:col-span-9")}>
-            {crumbs && <div className="mb-6" data-stage="0"><Breadcrumbs items={crumbs} light /></div>}
-            {s.eyebrow && <p className="eyebrow mb-4 text-bronze-300" data-stage="0">{s.eyebrow}</p>}
-            <h1 id="hero-heading" className="text-5xl text-white"><StagedHeading text={s.heading} /></h1>
-            {s.lead && <p className="mt-5 max-w-xl text-lg text-white/85" data-stage="3">{s.lead}</p>}
-            {(s.primary || s.secondary) && (
-              <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap" data-stage="4">
-                {s.primary && <Button href={s.primary.href} size="lg" arrow>{s.primary.label}</Button>}
-                {s.secondary && <Button href={s.secondary.href} variant="outline" size="lg">{s.secondary.label}</Button>}
-              </div>
-            )}
-            {s.trust && <div data-stage="5"><TrustRow light className="mt-8" /></div>}
-          </div>
-          {s.image && (
-            <div data-hero-media className="lg:col-span-6 xl:col-span-5">
-              <PhotoFrame image={s.image} priority sizes="(min-width: 1280px) 520px, (min-width: 1024px) 45vw, 100vw" arch accent="olive" className="mx-auto max-w-[520px]">
-              </PhotoFrame>
+    <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white lg:flex lg:min-h-[520px] lg:items-end" aria-labelledby="hero-heading">
+      {image && (
+        <div data-hero-media className="relative aspect-[16/10] w-full lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto">
+          <Picture image={image} fill priority sizes="100vw" className="object-cover object-[50%_30%]" />
+          <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-olive-900 lg:hidden" />
+        </div>
+      )}
+      <div aria-hidden="true" className={image ? "absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,rgba(91,107,90,0.92)_0%,rgba(91,107,90,0.6)_38%,rgba(91,107,90,0)_62%)]" : "hidden"} />
+      <div className="container-x w-full pb-10 pt-4 lg:pb-16 lg:pt-28">
+        <div className="hero-stage max-w-[34rem]">
+          {crumbs && <div className="mb-5" data-stage="0"><Breadcrumbs items={crumbs} light /></div>}
+          {eyebrow && <p className="eyebrow mb-3 text-bronze-300" data-stage="0">{eyebrow}</p>}
+          <h1 id="hero-heading" className="text-5xl text-white">{heading}</h1>
+          {sub && <p className="mt-3 text-2xl font-semibold text-white" data-stage="3">{sub}</p>}
+          {lead && <p className="mt-3 text-white/85" data-stage="3">{lead}</p>}
+          {(primary || secondary) && (
+            <div className="mt-6 flex flex-wrap gap-3" data-stage="4">
+              {primary && <a href={primary.href} {...(/^https?:/.test(primary.href) ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="btn border border-white text-white hover:bg-white hover:text-olive-900">{primary.label}</a>}
+              {secondary && <Button href={secondary.href} variant="light">{secondary.label}</Button>}
             </div>
           )}
         </div>

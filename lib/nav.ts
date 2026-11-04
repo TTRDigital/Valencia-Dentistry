@@ -5,6 +5,7 @@
 export function navSectionFor(pathname: string, postPaths: readonly string[]): string | null {
   if (pathname.startsWith("/services/") || pathname === "/tmj-treatments/" || pathname === "/emergency-dental/") return "/services/";
   if (pathname === "/about/") return "/about/";
+  if (pathname === "/before-after/") return "/before-after/";
   if (pathname === "/new-patient-offer/" || pathname === "/appointment/") return "/new-patient-offer/";
   // Results & Reviews and the blog sit under About
   if (pathname === "/testimonials/") return "/about/";

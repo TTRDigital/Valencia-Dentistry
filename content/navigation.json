@@ -24,6 +24,10 @@
       "mega": true
     },
     {
+      "label": "Before & After",
+      "href": "/before-after/"
+    },
+    {
       "label": "New Patients",
       "href": "/new-patient-offer/"
     },
@@ -142,6 +146,10 @@
         {
           "label": "Services",
           "href": "/services/"
+        },
+        {
+          "label": "Before & After",
+          "href": "/before-after/"
         },
         {
           "label": "Testimonials",
