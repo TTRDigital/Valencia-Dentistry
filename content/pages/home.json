@@ -10,8 +10,8 @@
     {
       "_type": "hero",
       "variant": "home",
-      "heading": "Calm, Modern Dentistry",
-      "lead": "Holistic, cosmetic, restorative and family dentistry on Tourney Road in Santa Clarita.",
+      "heading": "The Art of",
+      "lead": "Cosmetic, restorative and holistic dentistry in Valencia, planned with care and made to look natural.",
       "primary": {
         "label": "Schedule Appointment",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -21,11 +21,11 @@
         "href": "tel:+16612545200"
       },
       "image": {
-        "src": "/images/real/mirror-smile.jpg",
-        "alt": "Dr. Nuriel Lavi with a patient admiring her new smile at Valencia Dentistry"
+        "src": "/images/team/dr-lavi-outdoor.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
       },
       "trust": false,
-      "typed": "In The Heart Of Valencia"
+      "typed": "Beautiful, Healthy Smiles"
     },
     {
       "_type": "photoTrio",
@@ -141,8 +141,8 @@
       "eyebrow": "Our lead dentist",
       "heading": "Meet Dr. Nuriel Lavi, DDS",
       "image": {
-        "src": "/images/team/dr-lavi-outdoor.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
+        "src": "/images/real/mirror-smile.jpg",
+        "alt": "Dr. Nuriel Lavi with a patient admiring her new smile at Valencia Dentistry"
       },
       "body": [
         "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",

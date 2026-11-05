@@ -41,25 +41,25 @@ export function StagedHeading({ text, accent = 2 }: { text: string; accent?: num
 
 export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; path: string }[] }) {
   if (s.variant === "home") {
-    // Ideal Dental style: a group photo across the left, words on the right over brand olive, a second line that types
-    // itself (Agoura Hills style), rating pill, one outline button. Phones: photo first, words below on olive.
+    // Dr. Lavi's outdoor photo edge to edge, words low on the left over the glass (clear of his face).
+    // "The Art of" stays, the rest of the line types itself (Agoura Hills style). Phones: photo first, words below on olive.
     return (
-      <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white lg:flex lg:min-h-[640px] lg:items-center" aria-labelledby="hero-heading">
+      <section data-hero="dark" className="on-dark relative isolate overflow-hidden bg-olive-900 text-white lg:flex lg:min-h-[640px] lg:items-end" aria-labelledby="hero-heading">
         {s.image && (
-          <div data-hero-media className="relative aspect-[4/3] w-full sm:aspect-[16/9] lg:absolute lg:inset-y-0 lg:left-0 lg:-z-20 lg:aspect-auto lg:w-[64%]">
-            <Picture image={s.image} fill priority sizes="(min-width: 1024px) 64vw, 100vw" className="object-cover object-[25%_30%]" />
+          <div data-hero-media className="relative aspect-[4/3] w-full sm:aspect-[16/9] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto">
+            <Picture image={s.image} fill priority sizes="100vw" className="object-cover object-[60%_20%] lg:object-top" />
             <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-olive-900 lg:hidden" />
           </div>
         )}
-        <div aria-hidden="true" className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(270deg,#5b6b5a_0%,#5b6b5a_36%,rgba(91,107,90,0.7)_44%,rgba(91,107,90,0)_60%)]" />
-        <div className="container-x w-full pb-10 pt-2 lg:py-20">
-          <div className="hero-stage lg:ml-auto lg:w-[31rem]">
+        <div aria-hidden="true" className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,rgba(91,107,90,0.92)_0%,rgba(91,107,90,0.6)_32%,rgba(91,107,90,0)_50%)]" />
+        <div className="container-x w-full pb-10 pt-2 lg:pb-24">
+          <div className="hero-stage lg:max-w-[30rem]">
             <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm text-white/90 ring-1 ring-white/25" data-stage="0">
               <span className="text-amber-300" aria-hidden="true">★★★★★</span> {site.rating.value} · {site.rating.count} Google reviews
             </p>
             <h1 id="hero-heading" className="text-5xl text-white">
               {s.heading}
-              {s.typed && <TypeLoop text={s.typed} className="block text-white/75" />}
+              {s.typed && <TypeLoop text={s.typed} className="block" />}
             </h1>
             {s.lead && <p className="mt-4 text-white/85" data-stage="3">{s.lead}</p>}
             <div className="mt-6 flex flex-wrap gap-3" data-stage="4">

@@ -111,54 +111,57 @@ export async function ServiceView({ s }: { s: Service }) {
         </Container>
       </Section>
 
-      {/* 4. The treatment process: heading on the left, each step with its photo */}
+      {/* 4. The treatment process: heading and intro on top, then every step with its photo in one row */}
       {s.process.steps.length > 0 && (
         <Section id="how-it-works" className="scroll-mt-28 bg-warm">
           <Container>
-            <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
-              <div className="lg:col-span-4 lg:self-center">
-                <h2 className="uppercase">{s.process.heading}</h2>
-                {s.process.intro && <p className="mt-3 text-grey-700">{s.process.intro}</p>}
-              </div>
-              <ol className={cn("grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:col-span-8", s.process.steps.length % 3 === 0 && "lg:grid-cols-3")}>
-                {s.process.steps.map((st, i) => (
-                  <li key={st.title + i}>
-                    <div className="relative aspect-[4/3] overflow-hidden"><Picture image={stepPhotos[i]} fill cropTo={4 / 3} sizes="(min-width: 1024px) 370px, (min-width: 640px) 50vw, 100vw" className="object-cover object-top" /></div>
-                    <h3 className="mt-5 uppercase">{st.title}</h3>
-                    <p className="mt-2 text-grey-700">{st.text}</p>
-                  </li>
-                ))}
-              </ol>
+            <div className="grid gap-4 lg:grid-cols-12 lg:items-end lg:gap-12">
+              <h2 className="uppercase lg:col-span-6">{s.process.heading}</h2>
+              {s.process.intro && <p className="text-grey-700 lg:col-span-6">{s.process.intro}</p>}
             </div>
+            <ol className={cn("mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2", s.process.steps.length === 4 ? "lg:grid-cols-4" : s.process.steps.length === 2 ? "" : "lg:grid-cols-3")}>
+              {s.process.steps.map((st, i) => (
+                <li key={st.title + i}>
+                  <div className="relative aspect-[4/3] overflow-hidden"><Picture image={stepPhotos[i]} fill cropTo={4 / 3} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="object-cover object-top" /></div>
+                  <p className="mt-5 text-sm font-semibold text-olive-600">Step {String(i + 1).padStart(2, "0")}</p>
+                  <h3 className="mt-1 uppercase">{st.title}</h3>
+                  <p className="mt-2 text-grey-700">{st.text}</p>
+                </li>
+              ))}
+            </ol>
           </Container>
         </Section>
       )}
 
-      {/* 5. Why patients choose us (olive): heading on the left, icon points in two columns */}
-      {(reasons.length > 0 || (!what.length && s.why.cards.length > 0)) && (
-        <Section id="why-here" className="scroll-mt-28 bg-olive-900 text-white">
-          <Container>
-            <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
-              <div className="lg:col-span-5 lg:self-center">
-                <h2 className="uppercase text-white">{s.why.heading}</h2>
-                {s.why.intro && <p className="mt-3 text-white/80">{s.why.intro}</p>}
+      {/* 5. Why patients choose us (olive): heading and intro on top, then the points in an even grid */}
+      {(reasons.length > 0 || (!what.length && s.why.cards.length > 0)) && (() => {
+        const pts = reasons.length ? reasons : s.why.cards;
+        const cols = pts.length % 4 === 0 ? "lg:grid-cols-4" : pts.length % 3 === 0 ? "lg:grid-cols-3" : pts.length === 5 ? "lg:grid-cols-6" : "lg:grid-cols-3";
+        return (
+          <Section id="why-here" className="scroll-mt-28 bg-olive-900 text-white">
+            <Container>
+              <div className="grid gap-4 lg:grid-cols-12 lg:items-end lg:gap-12">
+                <h2 className="uppercase text-white lg:col-span-6">{s.why.heading}</h2>
+                {s.why.intro && <p className="text-white/80 lg:col-span-6">{s.why.intro}</p>}
               </div>
-              <ul className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:col-span-7">
-                {(reasons.length ? reasons : s.why.cards).map((c, i) => {
+              <ul className={cn("mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2", cols)}>
+                {pts.map((c, i) => {
                   const I = Icon[CARD_ICONS[i % CARD_ICONS.length]];
+                  // five points: three on the first row, two wider ones on the second
+                  const span = pts.length === 5 ? (i < 3 ? "lg:col-span-2" : "lg:col-span-3") : "";
                   return (
-                    <li key={c.title}>
-                      <I className="h-12 w-12 stroke-[1.25] text-white" />
+                    <li key={c.title} className={cn("border-t border-white/20 pt-6", span, pts.length % 2 === 1 && i === pts.length - 1 && (pts.length === 5 ? "sm:col-span-2" : "sm:col-span-2 lg:col-span-1"))}>
+                      <I className="h-10 w-10 stroke-[1.25] text-bronze-300" />
                       <h3 className="mt-4 text-white">{c.title}</h3>
                       <p className="mt-2 text-white/85">{c.text}</p>
                     </li>
                   );
                 })}
               </ul>
-            </div>
-          </Container>
-        </Section>
-      )}
+            </Container>
+          </Section>
+        );
+      })()}
 
       {/* 6. Full-width photo with the call to action */}
       <section className="on-dark relative isolate flex min-h-[460px] items-center overflow-hidden text-white sm:min-h-[600px]">
