@@ -6,6 +6,7 @@ import { PageHero } from "@/components/sections/Hero";
 import { FaqList } from "@/components/sections/Faq";
 import { CardList, servicePhotos } from "@/components/sections/ServicesHub";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { Icon, type IconName } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Container, Section } from "@/components/ui/Section";
 import { cn, distinctPhotos, inSentence } from "@/lib/utils";
@@ -20,6 +21,7 @@ const PARENT_NAMES: Record<string, string> = {
 };
 const CATEGORY_LABEL: Record<string, string> = { cosmetic: "Cosmetic dentistry", restorative: "Restorative dentistry", surgical: "Oral surgery", holistic: "Holistic dentistry", preventive: "Jaw & comfort care" };
 
+const WHY_ICONS: IconName[] = ["tooth", "sparkle", "shield", "heart"];
 const R = (n: string, alt: string): SiteImage => ({ src: `/images/real/${n}.jpg`, alt: `${alt} at Valencia Dentistry` });
 /** Rooms first for the full-width call to action (no faces to crop), then other real scenes. */
 const ROOM_POOL: SiteImage[] = [R("treatment-room-2", "A calm treatment room with natural light"), R("treatment-room", "A bright treatment room")];
@@ -59,7 +61,6 @@ export async function ServiceView({ s }: { s: Service }) {
   const accPhoto = take([s.understanding.image, ...s.why.cards.map((c) => c.image)]);
   const stepPhotos = s.process.steps.map(() => take([s.candidate.image, ...s.why.cards.map((c) => c.image)]));
   const whyPts = (reasons.length ? reasons : what.length ? [] : s.why.cards).slice(0, 4);
-  const whyPhotos = whyPts.map((c) => take([c.image]));
   const ctaPhoto = take([], ROOM_POOL.concat(SCENE_POOL));
 
   return (
@@ -133,24 +134,28 @@ export async function ServiceView({ s }: { s: Service }) {
         </Section>
       )}
 
-      {/* 5. Why patients choose us (Ideal Dental style): heading and intro on the left, four photo blocks
-             on the right, each with an uppercase title and a short line */}
+      {/* 5. Why patients choose us, exactly like Ideal Dental's icon section: heading, intro and a link on the
+             left; four blocks on the right (2 x 2), each a large line icon, a 20px title and a short line. Olive, not black. */}
       {whyPts.length > 0 && (
-        <Section id="why-here" className="scroll-mt-28 bg-offwhite">
+        <Section id="why-here" className="scroll-mt-28 bg-olive-900 text-white">
           <Container>
-            <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
-              <div className="lg:col-span-4 lg:self-center">
-                <h2 className="uppercase">{s.why.heading}</h2>
-                {s.why.intro && <p className="mt-4 text-grey-700">{s.why.intro}</p>}
+            <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
+              <div className="lg:col-span-5 lg:self-center lg:pr-8">
+                <h2 className="uppercase text-white">{s.why.heading}</h2>
+                {s.why.intro && <p className="mt-4 text-white/90">{s.why.intro}</p>}
+                <a href={book} target="_blank" rel="noopener noreferrer" className="mt-5 inline-block text-bronze-300 underline underline-offset-4 hover:text-white">Schedule your consultation</a>
               </div>
-              <ul className="grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:col-span-8">
-                {whyPts.map((c, i) => (
-                  <li key={c.title}>
-                    <div className="relative aspect-[4/3] overflow-hidden"><Picture image={whyPhotos[i]} fill cropTo={4 / 3} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="object-cover object-top" /></div>
-                    <h3 className="mt-5 uppercase">{c.title}</h3>
-                    <p className="mt-2 text-grey-700">{c.text}</p>
-                  </li>
-                ))}
+              <ul className="grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:col-span-7">
+                {whyPts.map((c, i) => {
+                  const I = Icon[WHY_ICONS[i % WHY_ICONS.length]];
+                  return (
+                    <li key={c.title}>
+                      <I className="h-16 w-16 stroke-[1.1] text-white" />
+                      <h3 className="mt-5 text-white">{c.title}</h3>
+                      <p className="mt-2 text-white/90">{c.text}</p>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </Container>
