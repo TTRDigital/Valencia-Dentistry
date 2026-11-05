@@ -95,7 +95,7 @@
     --display-settings: normal;
     --display-weight: 600;
     --display-tracking: 0;
-    --header-h: 72px;
+    --header-h: 80px;
     /* Motion tokens (used by every animation; reduced motion zeroes them below) */
     --dur-micro: 150ms;
     --dur-std: 300ms;

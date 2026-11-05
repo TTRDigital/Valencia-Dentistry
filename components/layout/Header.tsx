@@ -73,21 +73,21 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
   const desktopNav = nav.header;
 
   return (
-    <header className="site-header sticky top-0 z-50 h-[72px]" data-scrolled={scrolled || undefined} data-open={megaOpen || mobileOpen || undefined}>
-      {/* The header box keeps a fixed 72px height (no layout shift). Over a hero it starts transparent
+    <header className="site-header sticky top-0 z-50 h-[80px]" data-scrolled={scrolled || undefined} data-open={megaOpen || mobileOpen || undefined}>
+      {/* The header box keeps a fixed 80px height (no layout shift). Over a hero it starts transparent
           (the hero runs underneath it, see [data-hero] in globals.css); after scrolling the background
           fades in, scales to 64px and gains a shadow, and the row moves up 4px. Transforms and opacity only. */}
-      <div aria-hidden="true" className={cn("header-bg absolute inset-0 origin-top bg-offwhite", scrolled && "scale-y-[0.889]")} />
-      <div aria-hidden="true" className={cn("pointer-events-none absolute inset-x-0 top-[64px] h-4 bg-gradient-to-b from-ink-900/10 to-transparent opacity-0 transition-opacity duration-300", scrolled && "opacity-100")} />
+      <div aria-hidden="true" className={cn("header-bg absolute inset-0 origin-top bg-offwhite", scrolled && "scale-y-[0.9]")} />
+      <div aria-hidden="true" className={cn("pointer-events-none absolute inset-x-0 top-[72px] h-4 bg-gradient-to-b from-ink-900/10 to-transparent opacity-0 transition-opacity duration-300", scrolled && "opacity-100")} />
       {/* Main bar */}
       <div className={cn("container-x relative transition-transform duration-300 ease-out", scrolled && "-translate-y-1")}>
-        <div className="flex h-[72px] items-center justify-between gap-4 xl:gap-10">
+        <div className="flex h-[80px] items-center justify-between gap-6">
           <Link href="/" className={cn("inline-flex min-h-12 origin-left items-center rounded-md transition-transform duration-300 ease-out", scrolled && "scale-[0.92]")}>
             <Logo />
           </Link>
 
           <nav aria-label="Main" className="ml-auto hidden lg:block">
-            <ul className="flex items-center gap-1 xl:gap-3">
+            <ul className="flex items-center">
               {desktopNav.map((item) =>
                 item.mega ? (
                   <li key={item.href} className="relative" onMouseEnter={openMega} onMouseLeave={scheduleClose}>
@@ -137,11 +137,11 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
             </ul>
           </nav>
 
-          <div className="flex items-center gap-1 lg:ml-3 lg:gap-4 xl:ml-6 xl:gap-6">
-            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="hidden min-h-11 items-center whitespace-nowrap border-b-2 border-ink-900 px-0.5 text-[0.8125rem] font-semibold uppercase tracking-[0.06em] text-ink-900 hover:border-olive-700 hover:text-olive-700 lg:inline-flex">
+          <div className="flex items-center gap-1 lg:ml-1 lg:gap-3">
+            <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="hidden min-h-12 items-center whitespace-nowrap border-b-2 border-ink-900 px-2 text-[0.9375rem] font-bold uppercase text-ink-900 hover:border-olive-700 hover:text-olive-700 lg:inline-flex">
               Schedule appointment
             </a>
-            <a href={`tel:${site.phone.tel}`} className="hidden min-h-11 items-center px-1 text-[0.875rem] font-semibold tabular-nums text-ink-900 hover:text-olive-700 xl:inline-flex">
+            <a href={`tel:${site.phone.tel}`} className="hidden min-h-11 items-center whitespace-nowrap px-1 text-[0.9375rem] font-bold tabular-nums text-ink-900 hover:text-olive-700 xl:inline-flex">
               {site.phone.display}
             </a>
             <a href={`tel:${site.phone.tel}`} aria-label={`Call ${site.phone.display}`} className="inline-flex h-11 w-11 items-center justify-center text-ink-900 lg:hidden">
@@ -161,7 +161,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
         onMouseEnter={openMega}
         onMouseLeave={scheduleClose}
         onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node) && e.relatedTarget !== triggerRef.current) setMegaOpen(false); }}
-        style={{ top: scrolled ? 64 : 72 }}
+        style={{ top: scrolled ? 72 : 80 }}
         data-open={megaOpen || undefined}
         className={cn("mega absolute inset-x-0 hidden border-t hairline bg-offwhite shadow-lift lg:block", !megaOpen && "pointer-events-none")}
         aria-hidden={!megaOpen}
@@ -199,7 +199,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
       </div>
 
       {/* Mobile full-screen menu: light panel, clean links that cascade in */}
-      <div id="mobile-menu" data-lenis-prevent data-open={mobileOpen || undefined} className={cn("mobile-menu fixed inset-0 z-40 isolate overflow-y-auto bg-warm text-ink-900 transition-[opacity,visibility] duration-300 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 64 : 72 }}>
+      <div id="mobile-menu" data-lenis-prevent data-open={mobileOpen || undefined} className={cn("mobile-menu fixed inset-0 z-40 isolate overflow-y-auto bg-warm text-ink-900 transition-[opacity,visibility] duration-300 lg:hidden", mobileOpen ? "visible opacity-100" : "invisible opacity-0")} aria-hidden={!mobileOpen} style={{ top: scrolled ? 72 : 80 }}>
         <nav aria-label="Mobile" className="container-x pb-32 pt-6">
           <ul>
             {nav.header.map((item, i) => (
