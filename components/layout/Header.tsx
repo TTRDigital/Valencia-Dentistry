@@ -80,8 +80,8 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
       <div aria-hidden="true" className={cn("header-bg absolute inset-0 origin-top bg-offwhite", scrolled && "scale-y-[0.9]")} />
       <div aria-hidden="true" className={cn("pointer-events-none absolute inset-x-0 top-[72px] h-4 bg-gradient-to-b from-ink-900/10 to-transparent opacity-0 transition-opacity duration-300", scrolled && "opacity-100")} />
       {/* Main bar */}
-      <div className={cn("container-x relative transition-transform duration-300 ease-out", scrolled && "-translate-y-1")}>
-        <div className="flex h-[80px] items-center justify-between gap-6">
+      <div className={cn("relative mx-auto w-full max-w-[1440px] px-4 transition-transform duration-300 ease-out sm:px-6 lg:px-6 xl:px-14", scrolled && "-translate-y-1")}>
+        <div className="flex h-[80px] items-center justify-between gap-6 xl:gap-16">
           <Link href="/" className={cn("inline-flex min-h-12 origin-left items-center rounded-md transition-transform duration-300 ease-out", scrolled && "scale-[0.92]")}>
             <Logo />
           </Link>
@@ -94,7 +94,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                     <button
                       ref={triggerRef}
                       type="button"
-                      className={cn("nav-link relative flex min-h-11 items-center gap-1 whitespace-nowrap px-2 xl:px-3 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]", megaOpen && "text-[var(--header-accent)]")}
+                      className={cn("nav-link relative flex min-h-11 items-center gap-1 whitespace-nowrap px-2 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]", megaOpen && "text-[var(--header-accent)]")}
                       data-active={isActive(item.href) || undefined}
                       aria-expanded={megaOpen}
                       aria-controls={megaId}
@@ -114,7 +114,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                   </li>
                 ) : item.children ? (
                   <li key={item.href} className="group relative">
-                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center gap-1 whitespace-nowrap px-2 xl:px-3 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)} aria-haspopup="true">
+                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center gap-1 whitespace-nowrap px-2 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)} aria-haspopup="true">
                       {item.label}
                       <Icon.chevron className="h-4 w-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
                     </Link>
@@ -128,7 +128,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
                   </li>
                 ) : (
                   <li key={item.href}>
-                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center whitespace-nowrap px-2 xl:px-3 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)}>
+                    <Link href={item.href} className="nav-link relative flex min-h-11 items-center whitespace-nowrap px-2 text-[0.9375rem] font-bold text-[var(--header-fg)] hover:text-[var(--header-accent)]" data-active={isActive(item.href) || undefined} aria-current={current(item.href)}>
                       {item.label}
                     </Link>
                   </li>
