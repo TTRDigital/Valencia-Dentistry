@@ -29,7 +29,7 @@ export async function BeforeAfter({ s }: { s: GallerySection }) {
             ))}
           </ul>
         ) : (
-          <div className="mt-10">
+          <div className="mx-auto mt-10 max-w-5xl">
             <CompareSlider cases={cases} />
           </div>
         )}

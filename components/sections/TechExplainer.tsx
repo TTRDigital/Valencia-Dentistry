@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { TechExplainerSection } from "@/lib/types";
-import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Container, Section } from "@/components/ui/Section";
 import { TechCard } from "./TechCard";
@@ -27,7 +26,7 @@ export function TechExplainer({ s }: { s: TechExplainerSection }) {
           ))}
         </ul>
         {s.link && (
-          <p className="mt-10 text-center"><Link href={s.link.href} className="inline-flex items-center gap-2 border-b border-ink-900/20 pb-0.5 text-sm font-semibold text-grey-700 hover:border-olive-600 hover:text-olive-700">{s.link.label} <Icon.arrow className="h-4 w-4" /></Link></p>
+          <p className="mt-10 text-center"><Link href={s.link.href} className="apa-link text-ink-900 hover:text-olive-700">{s.link.label}</Link></p>
         )}
       </Container>
     </Section>

@@ -480,3 +480,9 @@
   .home-card .home-card-photo, .home-card .tech-photo { transition: transform 600ms; }
   @media (hover: hover) and (pointer: fine) { .home-card:hover .home-card-photo, .home-card:hover .tech-photo { transform: scale(1.04); } }
 }
+
+/* Home page: every section heading and link in the "A New Standard in Dentistry" voice */
+@layer components {
+  .home-apa h2 { font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+  .apa-link { display: inline-flex; min-height: 2.75rem; align-items: center; gap: 0.5rem; border-bottom: 1px solid currentColor; padding: 0 0.25rem 0.125rem; font-size: 0.9375rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; }
+}
