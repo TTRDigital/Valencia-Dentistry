@@ -20,7 +20,7 @@ export async function Reviews({ s }: { s: ReviewsSection }) {
   const row = Array.from({ length: Math.max(1, Math.ceil(6 / Math.max(items.length, 1))) }, () => items).flat();
   const card = (t: Testimonial, k: string, hidden: boolean) => (
     <li key={k} aria-hidden={hidden || undefined} className="w-[min(82vw,380px)] shrink-0 pr-5">
-      <figure className="flex h-full flex-col rounded-lg bg-white p-7 shadow-[0_0_0_1px_rgb(20_20_20/0.06)]">
+      <figure className="flex h-full flex-col bg-offwhite p-6">
         <div className="flex items-center justify-between"><Stars n={t.rating} /><Icon.google className="h-5 w-5" /></div>
         <blockquote className="mt-4 flex-1 whitespace-normal text-base leading-relaxed text-grey-700">“{t.text}”</blockquote>
         <figcaption className="mt-5 flex items-center gap-3">
@@ -35,7 +35,7 @@ export async function Reviews({ s }: { s: ReviewsSection }) {
       <Container>
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-          <div className="flex shrink-0 items-center gap-4 rounded-lg bg-white p-5 shadow-[0_0_0_1px_rgb(20_20_20/0.06)]">
+          <div className="flex shrink-0 items-center gap-4 bg-offwhite p-5">
             <Icon.google className="h-10 w-10" />
             <div>
               <p className="flex items-center gap-2 text-3xl font-semibold text-ink-900">{site.rating.value} <Stars className="h-4 w-4" /></p>

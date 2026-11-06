@@ -87,7 +87,7 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
         <div
           ref={frame}
           onFocus={stopHint}
-          className="relative aspect-[13/12] w-full touch-pan-y select-none overflow-hidden rounded-lg bg-grey-100"
+          className="relative aspect-[13/12] w-full touch-pan-y select-none overflow-hidden bg-grey-100"
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
           onPointerUp={onPointerUp}
@@ -139,7 +139,7 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
                 onClick={() => { stopHint(); setActive(i); setPos(50); }}
                 aria-pressed={i === active}
                 aria-label={`Show case: ${k.title}, ${k.treatment}`}
-                className={cn("block w-full overflow-hidden rounded-md ring-2 ring-offset-2 ring-offset-warm transition-transform duration-[var(--dur-micro)] hover:-translate-y-0.5", i === active ? "ring-olive-600" : "ring-transparent")}
+                className={cn("block w-full overflow-hidden ring-2 ring-offset-2 ring-offset-warm transition-transform duration-[var(--dur-micro)] hover:-translate-y-0.5", i === active ? "ring-olive-600" : "ring-transparent")}
               >
                 <Picture image={k.after} sizes="(min-width: 768px) 200px, 30vw" className="aspect-[4/3] w-full object-cover" alt="" />
               </button>

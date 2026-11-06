@@ -19,7 +19,7 @@ export function SectionHeading({ eyebrow, heading, lead, align = "left", as: Tag
     <div data-reveal="" className={cn("max-w-[46rem]", align === "center" && "mx-auto text-center", className)}>
       {eyebrow && <p className={cn("eyebrow mb-4", align === "center" && "justify-center")}>{eyebrow}</p>}
       <Tag id={id}>{heading}</Tag>
-      {lead && <p className={cn("lead mt-5", align === "center" && "mx-auto")}>{lead}</p>}
+      {lead && <p className={cn("lead mt-3", align === "center" && "mx-auto")}>{lead}</p>}
     </div>
   );
 }

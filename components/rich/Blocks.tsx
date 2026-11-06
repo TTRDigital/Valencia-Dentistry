@@ -119,7 +119,7 @@ export function RichHeading({ eyebrow, heading, lead, align = "left", dark, clas
     <div data-reveal="" className={cn("max-w-[46rem]", align === "center" && "mx-auto text-center", className)}>
       {eyebrow && <p className={cn("eyebrow mb-4", align === "center" && "justify-center", dark && "text-bronze-300")}>{eyebrow}</p>}
       <h2 id={id} className={cn(dark && "text-white")}>{heading}</h2>
-      {lead && <p className={cn("mt-5 text-lg", dark ? "text-white/80" : "text-grey-700", align === "center" && "mx-auto")}>{lead}</p>}
+      {lead && <p className={cn("mt-3", dark ? "text-white/80" : "text-grey-700", align === "center" && "mx-auto")}>{lead}</p>}
     </div>
   );
 }

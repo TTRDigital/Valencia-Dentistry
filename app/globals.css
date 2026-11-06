@@ -459,17 +459,24 @@
 
 /* Technology cards (Agoura Hills style): lift, photo zoom and the description slides open on hover or tap */
 @layer components {
-  .tech-card { overflow: hidden; border-radius: 16px; background: var(--color-offwhite); border: 1px solid rgb(46 46 46 / 0.08); transition: transform 300ms, box-shadow 300ms, border-color 300ms; }
+  .tech-card { transition: transform 300ms, box-shadow 300ms; }
   .tech-card .tech-photo { transition: transform 500ms; }
   .tech-card .tech-desc { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 380ms, opacity 300ms, margin 300ms; }
   .tech-card .tech-plus { transition: transform 300ms; }
   .tech-card[data-open] .tech-desc { max-height: 12rem; opacity: 1; margin-top: 0.5rem; }
   .tech-card[data-open] .tech-plus { transform: rotate(45deg); }
   @media (hover: hover) and (pointer: fine) {
-    .tech-card:hover { transform: translateY(-5px); box-shadow: 0 20px 52px rgb(46 46 46 / 0.12); border-color: rgb(46 46 46 / 0.14); }
+    .tech-card:hover { transform: translateY(-5px); box-shadow: 0 20px 52px rgb(46 46 46 / 0.12); }
     .tech-card:hover .tech-photo { transform: scale(1.04); }
     .tech-card:hover .tech-desc { max-height: 12rem; opacity: 1; margin-top: 0.5rem; }
     .tech-card:hover .tech-plus { transform: rotate(45deg); }
   }
   @media (prefers-reduced-motion: reduce) { .tech-card, .tech-card .tech-desc, .tech-card .tech-photo { transition: none; } }
+}
+
+/* One card style for the home page (photo trio, technology): square corners, ivory, photo on top */
+@layer components {
+  .home-card { display: flex; flex-direction: column; overflow: hidden; background: var(--color-offwhite); }
+  .home-card .home-card-photo, .home-card .tech-photo { transition: transform 600ms; }
+  @media (hover: hover) and (pointer: fine) { .home-card:hover .home-card-photo, .home-card:hover .tech-photo { transform: scale(1.04); } }
 }

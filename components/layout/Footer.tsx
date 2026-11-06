@@ -19,8 +19,7 @@ export function Footer({ nav }: { nav: Navigation }) {
         {/* Closing call to action on every page */}
         <div className="flex flex-col gap-6 border-b border-white/10 pb-10 sm:gap-8 sm:pb-14 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="eyebrow mb-5">{site.newPatients.headline}</p>
-            <p className="font-display max-w-3xl text-4xl text-white sm:text-6xl">Book your visit at <em>Valencia Dentistry.</em></p>
+            <p className="font-display max-w-3xl text-4xl text-white">Book your visit at Valencia Dentistry.</p>
           </div>
           <div className="grid shrink-0 grid-cols-2 gap-3 sm:flex">
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Book online <Icon.arrow className="h-4 w-4" /></a>
