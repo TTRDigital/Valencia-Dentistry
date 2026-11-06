@@ -16,17 +16,17 @@ export function Visit({ s }: { s: VisitSection }) {
             <ul className="mt-8 space-y-5">
               <li className="flex gap-4">
                 <span className="sr-only">Address: </span>
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-offwhite text-olive-600"><Icon.pin className="h-5 w-5" /></span>
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-greige-50 text-olive-600"><Icon.pin className="h-5 w-5" /></span>
                 <div className="text-grey-700"><a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center font-semibold text-ink-900 hover:underline">{site.address.street}</a><br />{site.address.city} ({site.address.neighborhood}), {site.address.state} {site.address.zip}</div>
               </li>
               <li className="flex gap-4">
                 <span className="sr-only">Phone: </span>
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-offwhite text-olive-600"><Icon.phone className="h-5 w-5" /></span>
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-greige-50 text-olive-600"><Icon.phone className="h-5 w-5" /></span>
                 <div className="text-grey-700"><a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center font-semibold text-ink-900 hover:underline">{site.phone.display}</a><br /><a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center hover:underline">{site.email}</a></div>
               </li>
               <li className="flex gap-4">
                 <span className="sr-only">Hours: </span>
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-offwhite text-olive-600"><Icon.clock className="h-5 w-5" /></span>
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-greige-50 text-olive-600"><Icon.clock className="h-5 w-5" /></span>
                 <div className="text-grey-700">
                   <OpenBadge showNext className="text-ink-900" />
                   <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-6 gap-y-0.5">

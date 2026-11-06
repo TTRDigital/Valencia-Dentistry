@@ -98,7 +98,7 @@ export function NewPatient({ s }: { s: NewPatientSection }) {
             </div>
             {s.fine && <p className="mt-5 text-sm text-grey-600">{s.fine}</p>}
           </div>
-          {s.image && <div className="hidden lg:col-span-6 lg:block"><PhotoFrame image={s.image} sizes="(min-width: 1024px) 560px, 100vw" frameClassName="!rounded-none" className="mx-auto max-w-[600px]" /></div>}
+          {s.image && <div className="hidden lg:col-span-6 lg:block"><PhotoFrame image={s.image} sizes="(min-width: 1024px) 560px, 100vw" frameClassName="rounded-2xl" className="mx-auto max-w-[600px]" /></div>}
         </div>
       </Container>
     </Section>
@@ -114,7 +114,7 @@ export function WhyChoose({ s }: { s: WhyChooseSection }) {
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-28">
               <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.lead} />
-              <PhotoFrame image={s.image} sizes="(min-width: 1024px) 460px, 100vw" frameClassName="!rounded-none" className="mt-8 hidden lg:block" />
+              <PhotoFrame image={s.image} sizes="(min-width: 1024px) 460px, 100vw" frameClassName="rounded-2xl" className="mt-8 hidden lg:block" />
             </div>
           </div>
           <ol className="lg:col-span-7">

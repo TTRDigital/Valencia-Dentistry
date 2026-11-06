@@ -73,6 +73,7 @@
     },
     {
       "_type": "techExplainer",
+      "eyebrow": "Modern dentistry",
       "heading": "The Technology Behind Every Perfect Smile",
       "items": [
         {
@@ -119,6 +120,7 @@
     },
     {
       "_type": "newPatient",
+      "eyebrow": "New patient special",
       "heading": "Exam, X-rays and cleaning for $99",
       "text": "For new patients without dental insurance (regularly $285). Just mention the offer when you book.",
       "bullets": [
@@ -136,6 +138,7 @@
     },
     {
       "_type": "doctorIntro",
+      "eyebrow": "Our lead dentist",
       "heading": "Meet Dr. Nuriel Lavi, DDS",
       "image": {
         "src": "/images/real/mirror-smile.jpg",
@@ -152,6 +155,7 @@
     },
     {
       "_type": "reviews",
+      "eyebrow": "What patients say",
       "heading": "Trusted by Santa Clarita families",
       "lead": "Unedited Google reviews from people who sit in our chair.",
       "trust": true
@@ -192,6 +196,7 @@
     },
     {
       "_type": "visit",
+      "eyebrow": "Visit us",
       "heading": "Visit Valencia Dentistry in Santa Clarita",
       "lead": "27420 Tourney Rd, Suite 240, just off the I-5 in Valencia. Free parking on site and an elevator to the second floor. Minutes from Stevenson Ranch, Newhall, Saugus and Canyon Country."
     }
