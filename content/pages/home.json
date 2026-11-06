@@ -118,9 +118,8 @@
       "lead": "Real patients from our office, shown with their permission. Results vary from person to person."
     },
     {
-      "_type": "photoBanner",
-      "id": "new-patients",
-      "heading": "Exam, X-Rays and Cleaning for $99",
+      "_type": "newPatient",
+      "heading": "Exam, X-rays and cleaning for $99",
       "text": "For new patients without dental insurance (regularly $285). Just mention the offer when you book.",
       "bullets": [
         "Comprehensive exam",
@@ -132,33 +131,22 @@
         "src": "/images/real/cleaning.jpg",
         "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
       },
-      "link": {
-        "label": "Claim This Offer",
-        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
-      },
-      "link2": {
-        "label": "What to Expect",
-        "href": "/new-patient-offer/"
-      },
+      "buttonLabel": "Claim this offer",
       "fine": "One-time offer for new patients. Cannot be combined with other offers. Expires 12/31/2026."
     },
     {
-      "_type": "photoBanner",
-      "id": "meet-dr-lavi",
-      "align": "right",
+      "_type": "doctorIntro",
       "heading": "Meet Dr. Nuriel Lavi, DDS",
-      "text": "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything. His plans start with your long-term health and your comfort.",
       "image": {
-        "src": "/images/real/meet-dr-lavi.jpg",
+        "src": "/images/real/mirror-smile.jpg",
         "alt": "Dr. Nuriel Lavi with a patient admiring her new smile at Valencia Dentistry"
       },
-      "focus": "object-[50%_70%]",
-      "link": {
-        "label": "Book a Visit",
-        "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
-      },
-      "link2": {
-        "label": "About the Practice",
+      "body": [
+        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
+        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
+      ],
+      "cta": {
+        "label": "More about the practice",
         "href": "/about/"
       }
     },
