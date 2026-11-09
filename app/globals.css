@@ -459,7 +459,7 @@
 
 /* Technology cards (Agoura Hills style): lift, photo zoom and the description slides open on hover or tap */
 @layer components {
-  .tech-card { overflow: hidden; border-radius: 16px; background: var(--color-offwhite); border: 1px solid rgb(46 46 46 / 0.08); transition: transform 300ms, box-shadow 300ms, border-color 300ms; }
+  .tech-card { overflow: hidden; border-radius: 0; background: var(--color-offwhite); border: 1px solid rgb(46 46 46 / 0.08); transition: transform 300ms, box-shadow 300ms, border-color 300ms; }
   .tech-card .tech-photo { transition: transform 500ms; }
   .tech-card .tech-desc { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 380ms, opacity 300ms, margin 300ms; }
   .tech-card .tech-plus { transition: transform 300ms; }

@@ -14,7 +14,7 @@ export function DoctorIntro({ s }: { s: DoctorIntroSection }) {
     <section className="bg-warm" id="meet-dr-lavi" aria-labelledby="meet-heading">
       <div className="grid lg:min-h-[640px] lg:grid-cols-2">
         <div className="flex items-center">
-          <div className="w-full px-4 py-12 sm:px-8 sm:py-16 lg:ml-auto lg:max-w-[38rem] lg:py-24 lg:pl-8 lg:pr-16 xl:pr-20">
+          <div className="w-full px-4 py-12 sm:px-8 sm:py-16 lg:ml-auto lg:max-w-[38rem] lg:py-24 lg:pl-0 lg:pr-16 xl:pr-20">
             <RichHeading eyebrow={s.eyebrow} heading={s.heading} id="meet-heading" />
             <div className="mt-5 space-y-4 text-grey-700 sm:mt-6 sm:text-lg">
               {s.body.map((p, i) => <Reveal key={i}><p className={i > 0 ? "hidden sm:block" : undefined}>{p}</p></Reveal>)}

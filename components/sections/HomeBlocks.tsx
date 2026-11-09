@@ -82,7 +82,7 @@ export async function FeaturedServices({ s }: { s: FeaturedServicesSection }) {
 /** New patient visit: a calm sage band with what the first visit includes and one clear button. No price. */
 export function NewPatient({ s }: { s: NewPatientSection }) {
   return (
-    <Section className="bg-greige-50" id="new-patients">
+    <Section className="bg-warm" id="new-patients">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">

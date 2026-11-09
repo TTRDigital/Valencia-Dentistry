@@ -49,7 +49,15 @@ export function PhotoBanner({ s }: { s: PhotoBannerSection }) {
 /** Three numbered steps, each written over its own office photo (Beverly Hills / Ideal Dental closing section). */
 export function PhotoSteps({ s }: { s: PhotoStepsSection }) {
   return (
-    <section aria-label={s.label ?? "How it works"}>
+    <section aria-label={s.heading ?? s.label ?? "How it works"} className="bg-warm">
+      {s.heading && (
+        // Centered heading, one line and an outlined button above the photo row (Ideal Dental's "Smile Reimagined")
+        <Container className="section pb-10 text-center sm:pb-12">
+          <h2>{s.heading}</h2>
+          {s.lead && <p className="mx-auto mt-3 max-w-2xl text-grey-700">{s.lead}</p>}
+          {s.link && <a href={s.link.href} {...(/^https?:/.test(s.link.href) ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="mt-6 inline-flex min-h-12 items-center border border-ink-900 px-6 text-[0.9375rem] font-semibold text-ink-900 hover:bg-ink-900 hover:text-white">{s.link.label}</a>}
+        </Container>
+      )}
       <ol className="grid sm:grid-cols-3">
         {s.items.map((it, i) => (
           <li key={it.title} className="on-dark relative isolate flex min-h-[260px] items-end overflow-hidden text-white sm:min-h-[460px]">

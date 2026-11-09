@@ -10,15 +10,13 @@ import { TechCard } from "./TechCard";
  * cards. Hover lifts the card, zooms the photo and slides the description open; on phones a tap opens it.
  */
 export function TechExplainer({ s }: { s: TechExplainerSection }) {
-  const words = s.heading.split(" ");
-  const cut = Math.max(1, words.length - 2);
   const cols = s.items.length % 4 === 0 ? "lg:grid-cols-4 lg:max-w-none" : "lg:grid-cols-3";
   return (
     <Section className="bg-warm" id="technology">
       <Container>
         <div className="text-center">
           {s.eyebrow && <p className="eyebrow mb-3 justify-center">{s.eyebrow}</p>}
-          <h2>{words.slice(0, cut).join(" ")} <span className="text-olive-600">{words.slice(cut).join(" ")}</span></h2>
+          <h2>{s.heading}</h2>
           {s.lead && <p className="mx-auto mt-3 max-w-2xl text-grey-700">{s.lead}</p>}
         </div>
         <ul className={`mx-auto mt-10 grid max-w-[980px] gap-4 sm:grid-cols-2 ${cols}`}>
