@@ -27,7 +27,15 @@
       "_type": "beforeAfter",
       "layout": "grid",
       "heading": "Before and After Photos",
-      "lead": "More than transforming teeth, we help patients feel confident again. Patients shown with their permission; results vary from person to person."
+      "lead": "More than transforming teeth, we help patients feel confident again. Patients shown with their permission; results vary from person to person.",
+      "caseIds": [
+        "case-1",
+        "case-2",
+        "case-3",
+        "case-4",
+        "case-5",
+        "case-6"
+      ]
     },
     {
       "_type": "photoSteps",

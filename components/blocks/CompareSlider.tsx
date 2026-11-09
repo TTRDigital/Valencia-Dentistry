@@ -131,7 +131,7 @@ export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
       </figure>
       <div>
         <p className="text-sm font-semibold text-ink-900">More cases</p>
-        <ul className="mt-3 grid grid-cols-4 gap-2 sm:gap-3">
+        <ul className={cn("mt-3 grid gap-2 sm:gap-3", cases.length % 3 === 0 ? "grid-cols-3" : "grid-cols-4")}>
           {cases.map((k, i) => (
             <li key={k.id}>
               <button

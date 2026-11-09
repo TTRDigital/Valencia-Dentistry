@@ -115,7 +115,15 @@
     {
       "_type": "beforeAfter",
       "heading": "Before and After Photos",
-      "lead": "Real patients from our office, shown with their permission. Results vary from person to person."
+      "lead": "Real patients from our office, shown with their permission. Results vary from person to person.",
+      "caseIds": [
+        "case-1",
+        "case-2",
+        "case-3",
+        "case-4",
+        "case-5",
+        "case-6"
+      ]
     },
     {
       "_type": "newPatient",
@@ -138,8 +146,8 @@
       "_type": "doctorIntro",
       "heading": "Meet Dr. Nuriel Lavi, DDS",
       "image": {
-        "src": "/images/real/mirror-smile.jpg",
-        "alt": "Dr. Nuriel Lavi with a patient admiring her new smile at Valencia Dentistry"
+        "src": "/images/team/dr-lavi-casual.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS, lead dentist at Valencia Dentistry"
       },
       "body": [
         "Dr. Lavi's dentistry is renowned for its excellence in both clinical care and patient management. With a wealth of experience, Beverly Hills training and a passion for precision, Dr. Lavi delivers exceptional dental treatments tailored to each patient's unique needs.",

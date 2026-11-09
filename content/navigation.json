@@ -28,7 +28,7 @@
       "href": "/before-after/"
     },
     {
-      "label": "New Patients",
+      "label": "Special Offer",
       "href": "/new-patient-offer/"
     },
     {
@@ -202,7 +202,7 @@
       "title": "Patient Resources",
       "items": [
         {
-          "label": "New Patient Offer",
+          "label": "Special Offer",
           "href": "/new-patient-offer/"
         },
         {

@@ -32,7 +32,15 @@
       "_type": "beforeAfter",
       "eyebrow": "Before and after",
       "heading": "Results you can see",
-      "lead": "Drag the handle to compare. Each case was treated in our Valencia office; results vary from person to person."
+      "lead": "Drag the handle to compare. Each case was treated in our Valencia office; results vary from person to person.",
+      "caseIds": [
+        "case-1",
+        "case-2",
+        "case-3",
+        "case-4",
+        "case-5",
+        "case-6"
+      ]
     },
     {
       "_type": "reviews",
