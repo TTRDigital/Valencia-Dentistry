@@ -29,7 +29,6 @@ export function Specials({ s }: { s: SpecialsSection }) {
               </dl>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#offers" className="btn btn-primary">See the offer</a>
-                <a href={site.sms} className="btn border border-ink-900/20 text-ink-900">Text us</a>
                 <a href={`tel:${site.phone.tel}`} className="btn border border-ink-900/20 text-ink-900"><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
               </div>
             </div>
@@ -44,7 +43,7 @@ export function Specials({ s }: { s: SpecialsSection }) {
         <Container>
           <div className="grid gap-4 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-7"><p className="eyebrow mb-3">The offers</p><h2>{s.offersHeading}</h2></div>
-            <p className="text-grey-700 lg:col-span-5 lg:text-right">No coupon needed. Just mention it when you book, call or text.</p>
+            <p className="text-grey-700 lg:col-span-5 lg:text-right">No coupon needed. Just mention it when you book or call.</p>
           </div>
           <ul data-stagger className={`mt-10 grid gap-px overflow-hidden rounded-xl bg-ink-900/10 ${s.offers.length > 1 ? "md:grid-cols-2" : "mx-auto max-w-2xl"}`}>
             {s.offers.map((o, i) => (

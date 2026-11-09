@@ -38,7 +38,6 @@ export function Visit({ s }: { s: VisitSection }) {
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href={site.directionsUrl} variant="outline"><Icon.directions className="h-4 w-4" /> Get directions</Button>
               <Button href={site.bookingUrl} arrow>Book an appointment</Button>
-              <Button href={site.sms} variant="outline" external={false}><Icon.mail className="h-4 w-4" /> Text us</Button>
             </div>
             <p className="mt-6 border-l-2 border-olive-600 pl-4 text-ink-900">{site.news}</p>
             <p className="mt-4 text-base text-grey-600 sm:text-sm">Free parking on site. Suite 240 is on the second floor; the building has an elevator. Serving {site.areas.slice(0, -1).join(", ")} and {site.areas.at(-1)}.</p>

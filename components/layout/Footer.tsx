@@ -23,7 +23,6 @@ export function Footer({ nav }: { nav: Navigation }) {
             <p className="font-display max-w-3xl text-4xl text-white sm:text-6xl">Book your visit at <em>Valencia Dentistry.</em></p>
           </div>
           <div className="grid shrink-0 grid-cols-2 gap-3 sm:flex">
-            <a href={site.sms} className="btn btn-outline btn-lg"><Icon.mail className="h-4 w-4" /> Text us</a>
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Book online <Icon.arrow className="h-4 w-4" /></a>
             <a href={`tel:${site.phone.tel}`} className="btn btn-outline btn-lg"><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
           </div>

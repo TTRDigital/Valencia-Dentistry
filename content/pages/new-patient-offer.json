@@ -52,11 +52,11 @@
           "terms": "New patients. Now seeing new patients on Wednesdays as well."
         }
       ],
-      "disclaimer": "Please call (661) 254-5200 or text us to confirm availability before your visit.",
+      "disclaimer": "Please call (661) 254-5200 to confirm availability before your visit.",
       "steps": [
         {
-          "title": "Book or text us",
-          "text": "Book online, call or text and mention the free Invisalign consult."
+          "title": "Book or call us",
+          "text": "Book online or call and mention the free Invisalign consult."
         },
         {
           "title": "We confirm",
@@ -79,7 +79,7 @@
         },
         {
           "q": "Do I need a coupon?",
-          "a": "No coupon or code needed. Just mention the free Invisalign consult when you book, call or text."
+          "a": "No coupon or code needed. Just mention the free Invisalign consult when you book or call."
         },
         {
           "q": "Do you take insurance?",

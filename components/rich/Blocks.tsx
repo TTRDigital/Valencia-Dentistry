@@ -98,7 +98,6 @@ export function CtaBanner({ heading, text, image, buttonLabel = "Book a consulta
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-light btn-lg">{buttonLabel} <Icon.arrow className="h-4 w-4" /></a>
             <div className="grid gap-2">
               <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center gap-2 text-2xl font-semibold text-white hover:text-bronze-300"><Icon.phone className="h-6 w-6 text-bronze-300" /> {site.phone.display}</a>
-              <a href={site.sms} className="inline-flex min-h-11 items-center gap-2 font-semibold text-white underline underline-offset-4 hover:text-bronze-300"><Icon.mail className="h-4 w-4 text-bronze-300" /> Text us</a>
               <p className="flex items-center gap-2 text-sm text-white/75"><Icon.clock className="h-4 w-4 text-bronze-300" /> {site.hours[0].days}, {site.hours[0].label}</p>
               <p className="flex items-center gap-2 text-sm text-white/75"><Icon.pin className="h-4 w-4 text-bronze-300" /> {site.address.street}, {site.address.city}</p>
             </div>

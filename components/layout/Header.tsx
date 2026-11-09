@@ -244,7 +244,7 @@ export function Header({ nav, postPaths = [] }: { nav: Navigation; postPaths?: s
           </ul>
           <div className="mm-item mt-8 grid gap-3" style={{ "--i": nav.header.length } as React.CSSProperties}>
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg" tabIndex={mobileOpen ? 0 : -1}>Book online <Icon.arrow className="h-4 w-4" /></a>
-            <div className="grid grid-cols-2 gap-3"><a href={`tel:${site.phone.tel}`} className="btn btn-lg border border-ink-900/20 px-3 text-ink-900" tabIndex={mobileOpen ? 0 : -1}><Icon.phone className="h-4 w-4" /> Call</a><a href={site.sms} className="btn btn-lg border border-ink-900/20 px-3 text-ink-900" tabIndex={mobileOpen ? 0 : -1}><Icon.mail className="h-4 w-4" /> Text us</a></div>
+            <a href={`tel:${site.phone.tel}`} className="btn btn-lg border border-ink-900/20 text-ink-900" tabIndex={mobileOpen ? 0 : -1}><Icon.phone className="h-4 w-4" /> {site.phone.display}</a>
             <Link href="/appointment/" prefetch={false} className="flex min-h-11 items-center justify-center text-grey-700 underline-offset-4 hover:underline" tabIndex={mobileOpen ? 0 : -1}>Request an appointment</Link>
           </div>
           <p className="mm-item mt-8 text-grey-600" style={{ "--i": nav.header.length + 1 } as React.CSSProperties}>{site.address.street}, {site.address.city}, {site.address.state} {site.address.zip}<br />Mon – Fri 8am – 5pm</p>
