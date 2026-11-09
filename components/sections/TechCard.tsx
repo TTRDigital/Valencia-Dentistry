@@ -8,11 +8,11 @@ export function TechCard({ label, title, text, children }: { label?: string; tit
   return (
     <li className="tech-card" data-open={open || undefined}>
       <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="block w-full text-left">
-        <span className="relative block aspect-[16/10] overflow-hidden bg-greige-50">{children}</span>
-        <span className="block px-5 pb-6 pt-5">
-          {label && <span className="block text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-bronze-600">{label}</span>}
-          <span className="mt-2 flex items-center justify-between gap-3 text-xl font-semibold text-ink-900">{title}<span aria-hidden="true" className="tech-plus text-olive-600">+</span></span>
-          <span className="tech-desc block text-[0.9375rem] text-grey-700">{text}</span>
+        <span className="relative block aspect-[4/3] overflow-hidden bg-greige-50">{children}</span>
+        <span className="block p-6 sm:p-7">
+          {label && <span className="block text-xs font-bold uppercase tracking-[0.14em] text-bronze-600">{label}</span>}
+          <span className="mt-2 flex items-center justify-between gap-3 text-2xl font-semibold text-ink-900">{title}<span aria-hidden="true" className="tech-plus text-olive-600">+</span></span>
+          <span className="tech-desc block text-grey-700">{text}</span>
         </span>
       </button>
     </li>
