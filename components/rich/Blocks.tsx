@@ -26,7 +26,7 @@ export async function StatBand({ dark, className }: { dark?: boolean; className?
     { value: <><CountUp value={site.rating.value} decimals={1} /><Icon.star className="ml-1.5 inline h-6 w-6 -translate-y-1 text-amber-400" /></>, label: "Google rating", icon: <Icon.google className="h-5 w-5" /> },
     { value: <CountUp value={site.rating.count} />, label: "Google reviews from local patients", icon: <Icon.heart className="h-5 w-5" /> },
     { value: <CountUp value={treatments} />, label: "Treatments under one roof", icon: <Icon.tooth className="h-5 w-5" /> },
-    { value: "PPO", label: "Most PPO plans accepted, benefits checked for you", icon: <Icon.shield className="h-5 w-5" /> },
+    { value: "PPO", label: "Cash and most PPO plans accepted, benefits checked for you", icon: <Icon.shield className="h-5 w-5" /> },
   ];
   return (
     <dl data-stagger className={cn("grid grid-cols-2 gap-px overflow-hidden rounded-lg lg:grid-cols-4", dark ? "bg-white/10" : "bg-ink-900/10", className)}>
@@ -98,6 +98,7 @@ export function CtaBanner({ heading, text, image, buttonLabel = "Book a consulta
             <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-light btn-lg">{buttonLabel} <Icon.arrow className="h-4 w-4" /></a>
             <div className="grid gap-2">
               <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center gap-2 text-2xl font-semibold text-white hover:text-bronze-300"><Icon.phone className="h-6 w-6 text-bronze-300" /> {site.phone.display}</a>
+              <a href={site.sms} className="inline-flex min-h-11 items-center gap-2 font-semibold text-white underline underline-offset-4 hover:text-bronze-300"><Icon.mail className="h-4 w-4 text-bronze-300" /> Text us</a>
               <p className="flex items-center gap-2 text-sm text-white/75"><Icon.clock className="h-4 w-4 text-bronze-300" /> {site.hours[0].days}, {site.hours[0].label}</p>
               <p className="flex items-center gap-2 text-sm text-white/75"><Icon.pin className="h-4 w-4 text-bronze-300" /> {site.address.street}, {site.address.city}</p>
             </div>

@@ -26,12 +26,13 @@ export function MobileBar() {
   }, [pathname]);
   const items = [
     { label: "Call", href: `tel:${site.phone.tel}`, I: Icon.phone, external: false },
+    { label: "Text", href: site.sms, I: Icon.mail, external: false },
     { label: "Book", href: site.bookingUrl, I: Icon.calendar, external: true, primary: true },
     { label: "Directions", href: site.directionsUrl, I: Icon.directions, external: true },
   ];
   return (
     <nav ref={bar} aria-label="Quick actions" className="mobile-bar fixed inset-x-3 bottom-3 z-40 rounded-full bg-olive-900/95 p-1.5 shadow-[0_18px_40px_-12px_rgba(0,0,0,0.55)] ring-1 ring-white/10 backdrop-blur-xl mb-[env(safe-area-inset-bottom)] lg:hidden">
-      <ul className="grid grid-cols-[1fr_1.3fr_1fr] items-center">
+      <ul className="grid grid-cols-[1fr_1fr_1.5fr_1fr] items-center">
         {items.map(({ label, href, I, external, primary }) => (
           <li key={label}>
             <a

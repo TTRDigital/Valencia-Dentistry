@@ -11,7 +11,7 @@
       "_type": "hero",
       "variant": "home",
       "heading": "The Art of",
-      "lead": "Cosmetic, restorative and holistic dentistry in Valencia, planned with care and made to look natural.",
+      "lead": "Veneers, Invisalign and complete care for the whole family, from broken teeth to full-mouth makeovers, in a modern, comfortable Valencia office.",
       "primary": {
         "label": "Schedule Appointment",
         "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -119,20 +119,20 @@
     },
     {
       "_type": "newPatient",
-      "heading": "Exam, X-rays and cleaning for $99",
-      "text": "For new patients without dental insurance (regularly $285). Just mention the offer when you book.",
+      "heading": "Free Invisalign Consultation",
+      "text": "New patients welcome. Find out if Invisalign is right for you with a free consultation, no obligation.",
       "bullets": [
-        "Comprehensive exam",
-        "Full set of digital X-rays",
-        "Standard cleaning",
-        "Personalized treatment plan"
+        "Digital iTero scan",
+        "Exam with Dr. Lavi",
+        "Personalized treatment plan",
+        "Cost and timeline estimate"
       ],
       "image": {
-        "src": "/images/real/cleaning.jpg",
-        "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
+        "src": "/images/real/aligner-patient-2.jpg",
+        "alt": "A smiling patient with her clear aligner at Valencia Dentistry"
       },
-      "buttonLabel": "Claim this offer",
-      "fine": "One-time offer for new patients. Cannot be combined with other offers. Expires 12/31/2026."
+      "buttonLabel": "Book your free consult",
+      "fine": "Cash and most PPO plans accepted. Now seeing new patients on Wednesdays."
     },
     {
       "_type": "doctorIntro",
@@ -142,8 +142,8 @@
         "alt": "Dr. Nuriel Lavi with a patient admiring her new smile at Valencia Dentistry"
       },
       "body": [
-        "Dr. Lavi leads Valencia Dentistry on Tourney Road. He and the team listen before recommending anything.",
-        "His plans start with your long-term health and your comfort: modern imaging, biocompatible materials, and prevention before quick fixes. You get plain explanations, honest priorities and an unhurried visit."
+        "Dr. Lavi's dentistry is renowned for its excellence in both clinical care and patient management. With a wealth of experience, Beverly Hills training and a passion for precision, Dr. Lavi delivers exceptional dental treatments tailored to each patient's unique needs.",
+        "Beyond technical expertise, Dr. Lavi's warm demeanor and attentive approach to patient care foster a sense of trust and comfort. From the moment you step into our practice, you'll be greeted with professionalism and genuine care."
       ],
       "cta": {
         "label": "More about the practice",
@@ -199,7 +199,7 @@
     {
       "_type": "visit",
       "heading": "Visit Valencia Dentistry in Santa Clarita",
-      "lead": "27420 Tourney Rd, Suite 240, just off the I-5 in Valencia. Free parking on site and an elevator to the second floor. Minutes from Stevenson Ranch, Newhall, Saugus and Canyon Country."
+      "lead": "27420 Tourney Rd, Suite 240, just off the I-5 in Valencia. Free parking and an elevator to the second floor. Serving Valencia, Santa Clarita, Stevenson Ranch, Saugus, Newhall and Castaic."
     }
   ]
 }

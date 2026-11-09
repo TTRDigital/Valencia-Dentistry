@@ -61,7 +61,7 @@ export function InsuranceWidget() {
                       </>
                     ) : plan === "ppo" ? (
                       <>
-                        <p className="text-lg font-semibold text-ink-900">We accept most major PPO plans</p>
+                        <p className="text-lg font-semibold text-ink-900">We accept cash and most major PPO plans</p>
                         <p className="mt-2 text-grey-700">Call us with your plan details and we will check your coverage before your visit.</p>
                       </>
                     ) : plan === "hmo" ? (

@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export function TrustRow({ className, light }: { className?: string; light?: boolean }) {
   const items = [
     { I: Icon.google, text: <><strong className="font-semibold">{site.rating.value}</strong> on Google · {site.rating.count} reviews</> },
-    { I: Icon.shield, text: <>Most PPO plans accepted</> },
+    { I: Icon.shield, text: <>Cash and most PPO plans accepted</> },
     { I: Icon.user, text: <><strong className="font-semibold">New patients</strong> welcome</> },
   ];
   return (
@@ -65,6 +65,7 @@ export function Hero({ s, crumbs }: { s: HeroSection; crumbs?: { name: string; p
             <div className="mt-6 flex flex-wrap gap-3" data-stage="4">
               {s.primary && <a href={s.primary.href} target="_blank" rel="noopener noreferrer" className="btn border border-white text-white hover:bg-white hover:text-olive-900">{s.primary.label}</a>}
               {s.secondary && <Button href={s.secondary.href} variant="light">{s.secondary.label}</Button>}
+              <a href={site.sms} className="btn border border-white text-white hover:bg-white hover:text-olive-900">Text Us</a>
             </div>
           </div>
         </div>

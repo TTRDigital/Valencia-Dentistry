@@ -101,7 +101,7 @@ export function Insurance({ s }: { s: InsuranceSection }) {
     <Section tight className="border-y hairline bg-warm" id="insurance">
       <Container>
         <div className="text-center">
-          <h2>{s.heading ?? "Most major PPO plans accepted"}</h2>
+          <h2>{s.heading ?? "Cash and most PPO plans accepted"}</h2>
           <p className="mx-auto mt-3 max-w-[48rem] text-grey-600">{s.text ?? "We verify your benefits before treatment and offer flexible financing so cost never stands between you and care. Not sure about your plan? Call us and we'll check."}</p>
         </div>
         {/* Logos glide past in an endless row (still and wrapped under reduced motion); each is sized by its shape */}
@@ -146,7 +146,7 @@ export function Offer({ s }: { s: OfferSection }) {
           <div className="on-dark flex flex-col justify-center gap-3 rounded-lg bg-olive-900 p-7 text-white lg:col-span-5">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-bronze-300">{site.newPatients.headline}</p>
             <p className="font-display text-6xl text-white">Your <em>first visit</em></p>
-            <p className="text-white/80">Comprehensive exam and digital X-rays, at Valencia Dentistry. Most PPO plans accepted.</p>
+            <p className="text-white/80">Comprehensive exam and digital X-rays, at Valencia Dentistry. Cash and most PPO plans accepted.</p>
             <Button href={s.cta?.href ?? site.bookingUrl} variant="light" size="lg" className="mt-3" arrow>{s.cta?.label ?? "Book your first visit"}</Button>
             <p className="text-sm text-white/70">Or call <a href={`tel:${site.phone.tel}`} className="inline-flex min-h-11 items-center font-semibold text-white underline-offset-4 hover:underline">{site.phone.display}</a></p>
           </div>

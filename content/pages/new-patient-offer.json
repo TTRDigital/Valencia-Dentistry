@@ -4,147 +4,94 @@
   "title": "Special Offers",
   "breadcrumb": "Special Offers",
   "seo": {
-    "title": "New Patient Specials | Valencia Dentistry, Santa Clarita",
-    "description": "New patient special: exam, X-rays and cleaning for $99. Plus take-home whitening, a free Invisalign consult and implant consultation savings at Valencia Dentistry."
+    "title": "Free Invisalign Consultation | Valencia Dentistry, Santa Clarita",
+    "description": "New patients: book a free Invisalign consultation with a digital iTero scan at Valencia Dentistry in Santa Clarita. Cash and most PPO plans accepted."
   },
   "sections": [
     {
       "_type": "specials",
-      "heading": "Special Offers",
-      "lead": "A few of the ways we make it easier to say yes to the care you need.",
+      "heading": "Special Offer",
+      "lead": "A free Invisalign consultation for new patients, so you can find out if clear aligners are right for you.",
       "image": {
         "src": "/images/real/aligner-patient-2.jpg",
-        "alt": "A smiling patient at Valencia Dentistry"
+        "alt": "A smiling patient with her clear aligner at Valencia Dentistry"
       },
       "facts": [
         {
-          "label": "Offers available",
-          "value": "4"
+          "label": "Offer",
+          "value": "Free Invisalign consult"
         },
         {
-          "label": "Valid through",
-          "value": "Dec 31, 2026"
+          "label": "Obligation",
+          "value": "None"
         },
         {
           "label": "Coupon needed",
           "value": "No"
         },
         {
-          "label": "Insurance required",
-          "value": "No"
+          "label": "Payment",
+          "value": "Cash and most PPO plans"
         }
       ],
-      "offersHeading": "Four this season",
+      "offersHeading": "Free Invisalign consultation",
       "offers": [
-        {
-          "tag": "New patients",
-          "name": "New Patient Special",
-          "text": "A full exam, cleaning and digital X-rays for new patients without dental insurance.",
-          "price": "$99",
-          "was": "$285",
-          "note": "One-time offer, new patients only",
-          "includes": [
-            "Comprehensive exam",
-            "Full set of digital X-rays",
-            "Standard cleaning",
-            "Personalized treatment plan",
-            "No insurance required"
-          ],
-          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
-        },
-        {
-          "tag": "Whitening",
-          "name": "Take-Home Whitening",
-          "text": "Professional-grade take-home whitening trays and gel, fitted to your teeth.",
-          "price": "$149",
-          "was": "$249",
-          "note": "Per patient, while supplies last",
-          "includes": [
-            "Custom-fitted trays",
-            "Professional whitening gel",
-            "Touch-up gel included",
-            "Shade guide consultation",
-            "Valid with any cleaning visit"
-          ],
-          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
-        },
         {
           "tag": "Invisalign",
           "name": "Free Invisalign Consult",
           "text": "A full consultation and digital scan to see if Invisalign is right for you, with no obligation.",
-          "price": "$0",
-          "was": "$250",
+          "price": "Free",
           "note": "Consultation fee waived",
           "includes": [
-            "Digital 3D scan",
-            "Treatment preview",
+            "Digital iTero scan",
+            "Exam with Dr. Lavi",
+            "Personalized treatment plan",
             "Cost and timeline estimate",
-            "No-obligation consultation",
-            "Applies toward treatment if you proceed"
+            "No-obligation consultation"
           ],
-          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
-        },
-        {
-          "tag": "Implants",
-          "name": "Implant Consultation Savings",
-          "text": "$100 off your first implant consultation, including a 3D scan.",
-          "price": "$150",
-          "was": "$250",
-          "note": "New implant patients only",
-          "includes": [
-            "Implant consultation",
-            "3D imaging included",
-            "Treatment plan and cost estimate",
-            "Financing options reviewed",
-            "Applies toward treatment if you proceed"
-          ],
-          "terms": "Cannot be combined with other offers. New patients only unless noted. Expires 12/31/2026."
+          "terms": "New patients. Now seeing new patients on Wednesdays as well."
         }
       ],
-      "disclaimer": "Offers are subject to change without notice. Please call to confirm current offer details, eligibility and expiration before your visit.",
+      "disclaimer": "Please call (661) 254-5200 or text us to confirm availability before your visit.",
       "steps": [
         {
-          "title": "Mention it",
-          "text": "Tell us which offer you'd like when you call or book online."
+          "title": "Book or text us",
+          "text": "Book online, call or text and mention the free Invisalign consult."
         },
         {
           "title": "We confirm",
-          "text": "We'll confirm your eligibility and answer any questions before your visit."
+          "text": "We confirm your visit and send our new digital intake forms, so there is less paperwork when you arrive."
         },
         {
-          "title": "You pay the price shown",
-          "text": "No coupon, no code. The price shown is what you pay."
+          "title": "Your consult",
+          "text": "A digital scan and a plan for your smile, with no obligation."
         }
       ]
     },
     {
       "_type": "faq",
       "eyebrow": "Common questions",
-      "heading": "About these offers",
+      "heading": "About this offer",
       "items": [
         {
-          "q": "Can I use an offer with insurance?",
-          "a": "Most offers can be combined with insurance benefits. We'll apply whichever saves you more."
+          "q": "Is the Invisalign consultation really free?",
+          "a": "Yes. The consultation and digital scan are free, with no obligation to start treatment."
         },
         {
-          "q": "Do offers expire?",
-          "a": "Yes. Each offer lists its own expiration date. Call to confirm an offer is still active before booking."
+          "q": "Do I need a coupon?",
+          "a": "No coupon or code needed. Just mention the free Invisalign consult when you book, call or text."
         },
         {
-          "q": "Can I combine two offers?",
-          "a": "Offers can't be combined with each other, but can typically be combined with your insurance."
+          "q": "Do you take insurance?",
+          "a": "We accept cash and most PPO plans, and we check your benefits before your visit."
         },
         {
-          "q": "Is there a catch?",
-          "a": "No. The price shown is what you pay for exactly what's listed. Any additional treatment is quoted separately."
+          "q": "When can I come in?",
+          "a": "We are open Monday to Friday, 8am to 5pm, and Dr. Lavi now sees new patients and treatment on Wednesdays as well."
         },
         {
-          "q": "Do I need to bring a coupon?",
-          "a": "No coupon or code needed. Just mention the offer by name when you book or check in."
-        },
-        {
-          "q": "What if I'm not a new patient?",
-          "a": "Some offers are new-patient only; others, like whitening, are open to existing patients too. Each card notes which applies."
+          "q": "What should I bring?",
+          "a": "Your ID and insurance card if you have one. We send our new digital intake forms ahead of your visit."
         }
       ]
     },

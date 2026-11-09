@@ -34,7 +34,7 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
                 </div>
                 <div className="mt-6 hidden flex-wrap items-center gap-x-6 gap-y-3 rounded-lg bg-warm p-5 ring-1 ring-ink-900/[0.06] lg:flex">
                   <Button href={s.cta?.href ?? site.bookingUrl} arrow>{s.cta?.label ?? "Book your first visit"}</Button>
-                  <span className="flex items-center gap-2 text-grey-700"><Icon.shield className="h-5 w-5 text-olive-600" /> Most PPO plans accepted</span>
+                  <span className="flex items-center gap-2 text-grey-700"><Icon.shield className="h-5 w-5 text-olive-600" /> Cash and most PPO plans accepted</span>
                   <span className="flex items-center gap-2 text-grey-700"><Icon.pin className="h-5 w-5 text-olive-600" /> Free parking, Suite 240</span>
                 </div>
               </div>
