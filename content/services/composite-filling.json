@@ -26,6 +26,11 @@
   "understanding": {
     "heading": "What Are Composite Fillings??",
     "intro": "Composite fillings are a modern solution for treating cavities and repairing minor tooth damage. Made from a strong, tooth-colored resin, they’re custom-matched to your natural enamel and bonded directly to the tooth for a seamless, long-lasting result.",
+    "image": {
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk",
+      "focus": "center 62%"
+    },
     "items": [
       {
         "title": "Tooth-Colored Appearance",
@@ -56,11 +61,19 @@
     "cards": [
       {
         "title": "Doctor-led attention to detail",
-        "text": "Your dentist takes time to ensure each filling looks and feels just right"
+        "text": "Your dentist takes time to ensure each filling looks and feels just right",
+        "image": {
+          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+        }
       },
       {
         "title": "Advanced technology",
-        "text": "We use digital imaging and precise materials for efficient, accurate results"
+        "text": "We use digital imaging and precise materials for efficient, accurate results",
+        "image": {
+          "src": "/images/client/07-dr-lavi-headshot.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+        }
       }
     ]
   },
@@ -99,7 +112,11 @@
       "No mercury or risk of metal sensitivity",
       "Protects Tooth Structure",
       "Bonds tightly to prevent future decay and damage"
-    ]
+    ],
+    "image": {
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+    }
   },
   "tables": [],
   "extra": [

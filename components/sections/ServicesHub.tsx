@@ -5,7 +5,7 @@ import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
-import { cn, distinctPhotos } from "@/lib/utils";
+import { cardGrid, cn, distinctPhotos } from "@/lib/utils";
 
 const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
   { key: "cosmetic", title: "Cosmetic Dentistry", text: "Refinements that look like you, only brighter: veneers, Invisalign, whitening and tooth-colored fillings." },
@@ -21,35 +21,37 @@ const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
  * to a normal card where the grid widens to a single row.
  */
 /** A service's real photos, hero first. */
-export const servicePhotos = (s: Service): SiteImage[] => [s.hero.image, s.understanding?.image, ...s.why.cards.map((c) => c.image), s.candidate?.image].filter((x): x is SiteImage => !!x?.src);
+export const servicePhotos = (s: Service): SiteImage[] => [s.hero.image, s.understanding.image, ...s.why.cards.map((c) => c.image), s.candidate.image].filter((x): x is SiteImage => !!x?.src);
 
-export function ServiceCard({ s, featured, className, image }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null; sharesRowAt?: "lg" | "xl" | null; image?: SiteImage }) {
-  // Service cards carry text only unless a photo of that treatment is passed in (the practice's own photos
-  // are few, and a page never shows the same photo twice).
+export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt, image }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null; sharesRowAt?: "lg" | "xl" | null; image?: SiteImage }) {
+  // Cards are two-row subgrids (image, text), so cards in one row share both row heights: images,
+  // titles and "Learn more" line up. A featured card that shares its row lets the row height win.
+  const imgAspect = featured
+    ? cn("aspect-[3/2] sm:aspect-[16/9]", unspanAt === "lg" && "lg:aspect-[16/10]", unspanAt === "xl" && "xl:aspect-[16/10]", sharesRowAt === "lg" && "lg:aspect-auto lg:h-full", sharesRowAt === "xl" && "xl:aspect-auto xl:h-full")
+    : "aspect-[4/3] sm:aspect-[16/10]";
   return (
-    <Reveal as="li" className={cn("card card-hover group flex", className)}>
-      <Link href={s.path} className="flex w-full flex-col no-underline">
-        {image && (
-          <div className={cn("relative overflow-hidden rounded-t-lg", featured ? "aspect-[16/9]" : "aspect-[4/3] sm:aspect-[16/10]")}>
-            <Picture image={image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 400px, 50vw"} className="object-cover" />
-          </div>
-        )}
-        <div className="flex flex-1 flex-col p-5 sm:p-6">
+    <Reveal as="li" className={cn("card card-hover group row-span-2 grid grid-rows-subgrid gap-y-0", className)}>
+      <Link href={s.path} className="row-span-2 grid grid-rows-subgrid gap-y-0 no-underline">
+        <div className={cn("relative overflow-hidden rounded-t-lg", imgAspect)}>
+          <Picture image={image ?? s.hero.image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw"} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+        </div>
+        <div className="flex flex-1 flex-col p-4 sm:p-6">
           <h3 className="text-lg group-hover:text-olive-600 sm:text-xl">{s.name}</h3>
-          <p className="mt-1.5 text-base text-grey-600 sm:text-[0.95rem]">{s.shortDescription}</p>
-          <span className="card-action mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-olive-700">Learn more <Icon.arrow className="arrow-nudge h-4 w-4" /></span>
+          <p className={cn("mt-1.5 text-base text-grey-600 sm:text-[0.95rem]", !featured && "hidden sm:block")}>{s.shortDescription}</p>
+          <span className="card-action inline-flex items-center gap-1.5 pt-3 text-sm font-semibold text-olive-700 sm:pt-4">Learn more <Icon.arrow className="arrow-nudge h-4 w-4" /></span>
         </div>
       </Link>
     </Reveal>
   );
 }
 
-/** A set of text service cards in an even grid, staggered as a group. */
+/** A set of service cards laid out with cardGrid (no orphan on the last row), staggered as a group. */
 export function CardList({ items, className, wideCols = 3, wideAt = "xl", avoid = [] }: { items: Service[]; className?: string; wideCols?: 3 | 4; wideAt?: "lg" | "xl"; avoid?: string[] }) {
-  void avoid;
+  const plan = cardGrid(items.length, wideCols, wideAt);
+  const photos = distinctPhotos(items, servicePhotos, avoid);
   return (
-    <ul data-stagger className={cn("grid gap-3 sm:grid-cols-2 sm:gap-5", wideAt === "lg" ? (wideCols === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3") : "xl:grid-cols-3", className)}>
-      {items.map((s) => <ServiceCard key={s.slug} s={s} />)}
+    <ul data-stagger className={cn(plan.ul, "gap-3 sm:gap-5", className)}>
+      {items.map((s, i) => <ServiceCard key={s.slug} s={s} image={photos[i]} featured={i === 0 && plan.featured} unspanAt={plan.unspanAt} sharesRowAt={plan.featured && !plan.unspanAt && plan.ul.includes(`${wideAt}:grid-cols-`) ? wideAt : null} className={i === 0 ? plan.first : undefined} />)}
     </ul>
   );
 }

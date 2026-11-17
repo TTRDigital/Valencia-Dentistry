@@ -28,6 +28,11 @@
   "understanding": {
     "heading": "What Is Oral Surgery?",
     "intro": "Dental Implants Permanent tooth replacements that look and function like natural teeth Tooth Extractions Safe, gentle removal of damaged, infected, or overcrowded teeth Wisdom Teeth Removal Surgical removal of third molars that are impacted or causing pain",
+    "image": {
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk",
+      "focus": "center 62%"
+    },
     "items": [
       {
         "title": "All-on-4 Implants",
@@ -66,15 +71,27 @@
     "cards": [
       {
         "title": "Doctor-Led Surgical Care",
-        "text": "Your dentist performs all surgical treatments with a focus on safety, detail, and long-term success."
+        "text": "Your dentist performs all surgical treatments with a focus on safety, detail, and long-term success.",
+        "image": {
+          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+        }
       },
       {
         "title": "Advanced Technology for Better Outcomes",
-        "text": "We use digital 3D imaging, guided surgery tools, and PRF (Platelet-Rich Fibrin) therapy to promote faster healing and greater precision."
+        "text": "We use digital 3D imaging, guided surgery tools, and PRF (Platelet-Rich Fibrin) therapy to promote faster healing and greater precision.",
+        "image": {
+          "src": "/images/client/07-dr-lavi-headshot.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+        }
       },
       {
         "title": "Compassionate, One-on-One Approach",
-        "text": "You’ll never feel rushed—your dentist takes the time to explain your options and answer all your questions."
+        "text": "You’ll never feel rushed—your dentist takes the time to explain your options and answer all your questions.",
+        "image": {
+          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+        }
       },
       {
         "title": "Sedation Options for Comfort",
@@ -107,7 +124,11 @@
   "candidate": {
     "heading": "Are you a good candidate for oral surgery?",
     "text": "",
-    "bullets": []
+    "bullets": [],
+    "image": {
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+    }
   },
   "care": {
     "heading": "Pre- and Post-Op Care for Oral Surgery",

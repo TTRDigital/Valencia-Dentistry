@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { TechExplainerSection } from "@/lib/types";
 import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
-import { FeatureIcon } from "@/components/ui/FeatureIcon";
 import { Container, Section } from "@/components/ui/Section";
 import { TechCard } from "./TechCard";
 
@@ -22,7 +21,7 @@ export function TechExplainer({ s }: { s: TechExplainerSection }) {
         </div>
         <ul className={`mt-12 grid gap-6 sm:grid-cols-2 ${cols}`}>
           {s.items.map((it) => (
-            <TechCard key={it.title} label={it.label} title={it.title} text={`${it.text} ${it.forYou}`} icon={<FeatureIcon name={it.icon} />}>
+            <TechCard key={it.title} label={it.label} title={it.title} text={`${it.text} ${it.forYou}`}>
               {it.image && <Picture image={it.image} fill cropTo={4 / 3} sizes="(min-width: 1024px) 420px, (min-width: 640px) 50vw, 100vw" className="tech-photo object-cover" />}
             </TechCard>
           ))}

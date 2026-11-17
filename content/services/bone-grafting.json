@@ -28,6 +28,11 @@
   "understanding": {
     "heading": "Types of Bone Grafting Materials We Use",
     "intro": "For patients seeking all-natural, biocompatible treatment options, we offer regenerative techniques that align with holistic values and avoid synthetic materials. These options harness the body’s own healing power for safer, more natural outcomes:",
+    "image": {
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk",
+      "focus": "center 62%"
+    },
     "items": [
       {
         "title": "Allograft",
@@ -62,15 +67,27 @@
     "cards": [
       {
         "title": "Doctor-Led Surgical Expertise",
-        "text": "Your dentist performs each bone graft with expert precision and a gentle touch, ensuring safe, predictable outcomes."
+        "text": "Your dentist performs each bone graft with expert precision and a gentle touch, ensuring safe, predictable outcomes.",
+        "image": {
+          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+        }
       },
       {
         "title": "Advanced Imaging & PRF Therapy",
-        "text": "We use 3D digital scans for surgical accuracy and PRF (Platelet-Rich Fibrin) to enhance healing and reduce recovery time."
+        "text": "We use 3D digital scans for surgical accuracy and PRF (Platelet-Rich Fibrin) to enhance healing and reduce recovery time.",
+        "image": {
+          "src": "/images/client/07-dr-lavi-headshot.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+        }
       },
       {
         "title": "Comfort-First Care Philosophy",
-        "text": "From sedation options to a calming environment, we tailor your experience to reduce anxiety and maximize comfort."
+        "text": "From sedation options to a calming environment, we tailor your experience to reduce anxiety and maximize comfort.",
+        "image": {
+          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+        }
       },
       {
         "title": "Transparent Pricing & Financing",
@@ -120,7 +137,11 @@
       "Plan to get dental implants but lack sufficient bone density",
       "Have experienced facial sagging or bone deterioration due to missing teeth",
       "Need to restore stability and function to your bite"
-    ]
+    ],
+    "image": {
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+    }
   },
   "care": {
     "heading": "Pre- and Post-Op Instructions for Bone Grafting",

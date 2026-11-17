@@ -28,6 +28,11 @@
   "understanding": {
     "heading": "Different Types of Wisdom Teeth Removal",
     "intro": "Not all wisdom teeth are the same—and neither are the procedures used to remove them. At Valencia Dentistry, we tailor each extraction based on how the tooth is positioned and how it’s affecting your oral health. Here are the two most common types of wisdom teeth removal: Timing matters when it comes to wisdom teeth. Removing them before they fully develop—or before complications arise—can make the process smoother and protect your long-term oral health. Easier Recovery Younger patients tend to heal faster with fewer post-op issues. Fewer Complications Prevents infections, cysts, and damage to neighboring teeth. Less Crowding Avoids misalignment that can undo years of orthodontic work. Improved Oral Hygiene Makes it easier to brush and floss back molars. Peace of Mind Eliminates the risk of painful flare-ups down the road.",
+    "image": {
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk",
+      "focus": "center 62%"
+    },
     "items": [
       {
         "title": "Simple Extraction",
@@ -46,15 +51,27 @@
     "cards": [
       {
         "title": "Doctor-Led Precision",
-        "text": "Your dentist personally performs all wisdom teeth extractions, ensuring safe, consistent, and expert results."
+        "text": "Your dentist personally performs all wisdom teeth extractions, ensuring safe, consistent, and expert results.",
+        "image": {
+          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+        }
       },
       {
         "title": "Advanced Technology",
-        "text": "From 3D digital imaging to modern surgical tools, we use cutting-edge techniques to enhance precision and reduce recovery time."
+        "text": "From 3D digital imaging to modern surgical tools, we use cutting-edge techniques to enhance precision and reduce recovery time.",
+        "image": {
+          "src": "/images/client/07-dr-lavi-headshot.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+        }
       },
       {
         "title": "Multiple Sedation Options",
-        "text": "Whether you need mild relaxation or deeper sedation, we’ll help you stay comfortable throughout your procedure."
+        "text": "Whether you need mild relaxation or deeper sedation, we’ll help you stay comfortable throughout your procedure.",
+        "image": {
+          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+        }
       },
       {
         "title": "Transparent, Accessible Pricing",
@@ -93,7 +110,11 @@
       "Notice shifting or crowding in nearby teeth",
       "Struggle to keep back molars clean and free from infection",
       "Show signs of cysts or bone damage on dental X-rays"
-    ]
+    ],
+    "image": {
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+    }
   },
   "care": {
     "heading": "Pre- and Post-Op Care Instructions for Wisdom Teeth Removal",

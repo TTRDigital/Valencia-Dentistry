@@ -60,9 +60,9 @@ export function PhotoSteps({ s }: { s: PhotoStepsSection }) {
       )}
       <ol className="grid sm:grid-cols-3">
         {s.items.map((it, i) => (
-          <li key={it.title} className={`on-dark relative isolate flex items-end overflow-hidden text-white ${it.image ? "min-h-[260px] sm:min-h-[460px]" : "min-h-[200px] bg-olive-900 even:bg-olive-800 sm:min-h-[280px]"}`}>
-            {it.image && <Picture image={it.image} fill sizes="(min-width: 640px) 34vw, 100vw" className="-z-20 object-cover" />}
-            {it.image && <span aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-olive-900/90 via-olive-900/50 to-transparent" />}
+          <li key={it.title} className="on-dark relative isolate flex min-h-[260px] items-end overflow-hidden text-white sm:min-h-[460px]">
+            <Picture image={it.image} fill sizes="(min-width: 640px) 34vw, 100vw" className="-z-20 object-cover" />
+            <span aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-olive-900/90 via-olive-900/50 to-transparent" />
             <span className="block p-6 sm:p-8">
               <h3 className="text-white">{i + 1}. {it.title}</h3>
               <p className="mt-2 text-white/85">{it.text}</p>

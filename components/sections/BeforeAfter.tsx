@@ -20,8 +20,9 @@ export async function BeforeAfter({ s }: { s: GallerySection }) {
               <Reveal as="li" key={c.id} className="overflow-hidden rounded-xl bg-offwhite ring-1 ring-ink-900/5">
                 {c.combined ? (
                   // Already shows before (top) and after (bottom): shown whole, never cropped
-                  <span className="relative block bg-greige-50">
-                    <Picture image={c.combined} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="h-auto w-full" />
+                  // same height as a before + after pair (two 4:3 photos); the whole image fits inside, never cropped
+                  <span className="relative block aspect-[2/3] bg-greige-50">
+                    <Picture image={c.combined} fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="object-contain" />
                     <span className="absolute left-3 top-3 rounded-sm bg-olive-900/85 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">{c.note ?? "Before (top) · After (bottom)"}</span>
                   </span>
                 ) : (["before", "after"] as const).map((k) => c[k] && (

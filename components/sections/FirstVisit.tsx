@@ -25,15 +25,12 @@ export function FirstVisit({ s }: { s: FirstVisitSection }) {
               <div className="lg:sticky lg:top-28">
                 <div className="relative overflow-hidden rounded-lg bg-olive-900 shadow-lift" style={{ aspectRatio: "3 / 2" }}>
                   {photos.map((img, i) => (
-                    // one photo stays put; several crossfade with the step being read
-                    <Picture key={img.src} image={img} fill sizes="(min-width: 1024px) 600px, 100vw" data-i={i} className={cn("object-cover", photos.length > 1 && "step-photo")} />
+                    <Picture key={img.src} image={img} fill sizes="(min-width: 1024px) 600px, 100vw" data-i={i} className="step-photo object-cover" />
                   ))}
                   <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-olive-900/70 to-transparent" />
-                  {photos.length > 1 && (
-                    <ol aria-hidden="true" className="absolute bottom-5 left-5 flex gap-2">
-                      {photos.map((img, i) => <li key={img.src} data-i={i} className="step-tick h-1 w-8 rounded-full bg-white/30" />)}
-                    </ol>
-                  )}
+                  <ol aria-hidden="true" className="absolute bottom-5 left-5 flex gap-2">
+                    {photos.map((img, i) => <li key={img.src} data-i={i} className="step-tick h-1 w-8 rounded-full bg-white/30" />)}
+                  </ol>
                 </div>
                 <div className="mt-6 hidden flex-wrap items-center gap-x-6 gap-y-3 rounded-lg bg-warm p-5 ring-1 ring-ink-900/[0.06] lg:flex">
                   <Button href={s.cta?.href ?? site.bookingUrl} arrow>{s.cta?.label ?? "Book your first visit"}</Button>

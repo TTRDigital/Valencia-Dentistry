@@ -26,6 +26,11 @@
   "understanding": {
     "heading": "What Is Restorative Dentistry?",
     "intro": "",
+    "image": {
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk",
+      "focus": "center 62%"
+    },
     "items": [
       {
         "title": "Tooth-Colored Composite Fillings",
@@ -52,15 +57,27 @@
     "cards": [
       {
         "title": "Same-Day & Emergency Appointments",
-        "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most."
+        "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most.",
+        "image": {
+          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+        }
       },
       {
         "title": "Advanced Technology",
-        "text": "From digital imaging to guided treatment planning, we use state-of-the-art tools for precision and efficiency."
+        "text": "From digital imaging to guided treatment planning, we use state-of-the-art tools for precision and efficiency.",
+        "image": {
+          "src": "/images/client/07-dr-lavi-headshot.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+        }
       },
       {
         "title": "Comfort-First Care",
-        "text": "With sedation options and a friendly team, even anxious patients feel at ease."
+        "text": "With sedation options and a friendly team, even anxious patients feel at ease.",
+        "image": {
+          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+        }
       },
       {
         "title": "Transparent, Flexible Pricing",
@@ -93,7 +110,11 @@
       "Better speech and bite alignment",
       "Protection against future dental problems",
       "Restored facial balance and symmetry"
-    ]
+    ],
+    "image": {
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+    }
   },
   "tables": [],
   "extra": [],

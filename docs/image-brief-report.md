@@ -1,47 +1,45 @@
 # Image replacement and ozone removal: report
 
-Status: **draft, not committed, pushed or deployed.** Everything below is local in the working copy.
+Status: **on staging (preview branch) only; not on production.**
 Full per-file inventory: `docs/image-audit.md`.
 
 ## 1. Images replaced (old → client photo ID)
 
-| Page | Slot | Old file | New |
-|---|---|---|---|
-| Home | Hero | team/dr-lavi-outdoor.jpg | 01 reception |
-| Home | "Exceptional Smiles" trio | real/smile-plan-screen, real/treatment-room-2, real/veneer-smile-2 | 09, 10, 02 |
-| Home | "A New Standard in Dentistry" banner | real/scan-hygienist.jpg | 05 |
-| Home | Meet Dr. Nuriel Lavi | team/dr-lavi-casual.jpg | 07 |
-| About | Hero | real/scan-hygienist.jpg | 01 |
-| About | "Santa Clarita's dental home" | real/smile-plan-5.jpg | 05 |
-| About | Team card (people.json) | team/dr-lavi-portrait.jpg | 07 |
-| About | Closing CTA | real/smile-design.jpg | 09 |
-| About | OG image | generated text card | 07 |
-| Appointment | Hero | real/treatment-room-2.jpg | 09 |
-| Appointment | First-visit photo (5 rotating) | scan-hygienist, cleaning, smile-plan-screen, smile-plan-5, veneer-smile | 10 (one photo) |
-| Before & After | Hero | real/veneer-tryin.jpg | 01 |
-| Before & After | Gallery | (added) | 03, 04, 06 shown whole, before the existing cases |
-| Contact | Hero | real/treatment-room-2.jpg | 10 |
-| Emergency dental | Hero | real/treatment-room-2.jpg | 09 |
-| Special Offer (new-patient-offer) | Offer photo | real/aligner-patient-2.jpg | 10 |
-| Services hub | Hero / CTA | real/smile-plan-screen / real/scan-hygienist | 09 / 10 |
-| Testimonials | Hero / CTA | real/veneer-smile-2 / real/scan-hygienist | 01 / 10 |
-| Thank you | Hero | real/veneer-smile.jpg | 01 |
-| All 16 treatment pages | Hero | various real/* | 09 |
-| All 16 treatment pages | Photo beside "Benefits & care" | various real/* | 10; **Veneers: 08**, **Cosmetic Dentistry: 03** (whole image, labelled Before / After) |
-| All 16 treatment pages | Closing CTA | real/treatment-room(-2) etc. | 01 |
-| Blog posts | Author photo (header / author box) | team/dr-lavi-portrait.jpg | 07 / 02 |
-| Shared CTA default | Photo | real/* | 10 |
-| JSON-LD | Dentist / Person / Article fallback | team/dr-lavi.jpg | 01 / 07 / 01 |
-| OG images | Home, blog index and pages / Services | team/dr-lavi.jpg | 01 / 09 |
+Layout and page structure are exactly as on the live site; only the photos changed. Every photo spot still has a photo.
+The client supplied six office/doctor photos (01, 02, 05, 07, 09, 10), fewer than the photo spots on most pages, so on
+request **some photos repeat on a page** (the brief's no-repeat rule could not be kept without removing photos or changing layouts).
 
-## 2. Images removed with no replacement (no client photo fits)
+| Page | Slot | New |
+|---|---|---|
+| Home | Hero | 01 |
+| Home | "Exceptional Smiles" trio | 09, 10, 02 |
+| Home | "A New Standard in Dentistry" banner | 05 |
+| Home | Technology cards | 09, 10, 05 |
+| Home | Free Invisalign Consultation | 02 |
+| Home | Meet Dr. Nuriel Lavi | 07 |
+| Home | "Smile Reimagined" steps | 01, 09, 10 |
+| About | Hero / intro / team card / closing CTA | 01 / 05 / 07 / 09 |
+| About | 8 technology cards | 09, 10, 01, 05, 02, 07, 09, 10 |
+| About | OG image | 07 |
+| Appointment | Hero / first-visit photos | 09 / 10, 01, 07, 05, 02 |
+| Before & After | Hero / step photos | 01 / 09, 10, 02 |
+| Before & After | Gallery (still 6 cases) | 03, 04, 06 replace three of the older cases (shown whole, same card size) |
+| Contact / Emergency / Thank you | Hero | 10 / 09 / 01 |
+| Special Offer | Offer photo | 10 |
+| Services hub / Testimonials | Hero, CTA | 09, 10 / 01, 10 |
+| Services hub and category pages | Service card photos | client photos in turn (09, 10, 01, 05, 07, 02) |
+| All 16 treatment pages | Hero | 09 |
+| All 16 treatment pages | Photo beside "Benefits & care" | 10; **Veneers: 08**, **Cosmetic Dentistry: 03** (whole image, not cropped) |
+| All 16 treatment pages | Process step photos / closing banner | client photos in turn / 01 or 10 |
+| Blog (31 posts) | Post photo | 09, 10, 01, 05, 07, 02 in turn |
+| Blog | Author photo | 07 |
+| Shared CTA default | Photo | 10 |
+| JSON-LD | Dentist / Person / Article fallback | 01 / 07 / 01 |
+| OG images | Home, blog index and pages / Services | 01 / 09 |
 
-- Home: 3 technology cards (now show icons), the Free Invisalign Consultation photo (now a text panel), 3 "Smile Reimagined" step photos (now olive tiles).
-- About: 8 technology cards (now icons).
-- Before & After: 3 step photos (now olive tiles).
-- Appointment: 4 of the 5 first-visit photos.
-- Treatment pages: process step photos, "why choose" card photos, candidate and understanding photos; service cards on the Services hub and category pages are now text cards.
-- Blog: all 31 post photos (other office / blonde model). Cards show a neutral olive panel with a tooth icon and the topic; the article header is text only.
+## 2. Removed
+
+- No photo spot was removed; layouts are unchanged.
 - Files deleted: 57 in `public/images/real/`, 6 in `public/images/team/`, all their `public/images/_opt/` WebP variants, and 16 old QA screenshots in `docs/screenshots/` that showed those photos.
 
 ## 3. Ozone therapy removed
@@ -62,7 +60,7 @@ Tested: each returns 301 to /services/. (Without the trailing slash, the site fi
 ## 5. Checks
 
 - Build passes; typecheck and lint clean.
-- Desktop (1440) and mobile (390) screenshots of every changed page: no broken images, no horizontal overflow, no photo used twice on a page, 06 and 08 never on the same page.
+- Desktop (1440) and mobile (390) screenshots of the changed pages: no broken images, no horizontal overflow, 06 and 08 never on the same page. Layout matches the live site.
 - Search for "ozone" in source and in the built HTML: nothing, apart from the four redirect lines above.
 - Search for the replaced filenames (images/real, images/team, dr-lavi*.jpg, meet-dr-lavi.jpg) in source and built output: nothing, apart from `docs/image-audit.md`, which lists them by design.
 
@@ -71,5 +69,6 @@ Tested: each returns 301 to /services/. (Without the trailing slash, the site fi
 - **Sanity**: not connected (project ID still pending), so there was nothing to update there.
 - **Older before/after cases** (`cases/case-1…6`, `implant`): close-ups of teeth only, kept. They came from the previous website; please confirm they are Dr. Lavi's own patients.
 - **Client before/after photos on Home and Testimonials**: not added, because the brief limits them to cosmetic, veneer and gallery pages. Those sliders still show the older cases.
+- **Repeated photos**: with six photos, some repeat on a page. More office/team photos from the client would remove the repeats.
 - **Brand name**: the site already says "Valencia Dentistry", matching the logo in photo 01. Nothing renamed.
 - **Next.js security advisory**: the build printed a notice that Next.js 16.4.3 has a known vulnerability (16.4.6 is out). Not upgraded, as it is outside this brief.

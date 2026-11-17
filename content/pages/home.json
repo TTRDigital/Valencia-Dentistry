@@ -38,7 +38,7 @@
           "image": {
             "src": "/images/client/09-treatment-room.jpg",
             "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-            "focus": "center 68%"
+            "focus": "center 70%"
           }
         },
         {
@@ -82,21 +82,32 @@
           "title": "3D CBCT imaging",
           "text": "A three-dimensional view of teeth, bone and nerves.",
           "forYou": "Implants and wisdom teeth are planned with fewer surprises.",
-          "icon": "tech"
+          "image": {
+            "src": "/images/client/09-treatment-room.jpg",
+            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+            "focus": "center 68%"
+          }
         },
         {
           "label": "Digital impressions",
           "title": "iTero digital scanning",
           "text": "Digital impressions instead of trays of putty.",
           "forYou": "You see your scan on screen right away.",
-          "icon": "sparkle"
+          "image": {
+            "src": "/images/client/10-hallway-front-desk.jpg",
+            "alt": "Valencia Dentistry hallway and front desk",
+            "focus": "center 62%"
+          }
         },
         {
           "label": "Low radiation",
           "title": "Digital X-rays",
           "text": "Instant images with low radiation.",
           "forYou": "Quicker answers in the chair, with less exposure.",
-          "icon": "shield"
+          "image": {
+            "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+            "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          }
         }
       ],
       "dark": false,
@@ -128,6 +139,10 @@
         "Personalized treatment plan",
         "Cost and timeline estimate"
       ],
+      "image": {
+        "src": "/images/client/02-dr-lavi-seated-candid.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+      },
       "buttonLabel": "Book your free consult",
       "fine": "Cash and most PPO plans accepted. Now seeing new patients on Wednesdays."
     },
@@ -160,6 +175,10 @@
         {
           "title": "Book Your Consultation",
           "text": "Every great smile starts with a conversation. We listen to what you want and map out how to get you there.",
+          "image": {
+            "src": "/images/client/01-reception-logo-wall.jpg",
+            "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+          },
           "link": {
             "label": "Book online",
             "href": "https://book2.getweave.com/657e8080-2ad9-44fa-8cfb-2c06a59cd7a7/request-appointment?source=WEBSITE"
@@ -167,11 +186,21 @@
         },
         {
           "title": "Transform Your Smile",
-          "text": "Your treatment is planned on 3D imaging and done carefully, so the result looks natural and lasts."
+          "text": "Your treatment is planned on 3D imaging and done carefully, so the result looks natural and lasts.",
+          "image": {
+            "src": "/images/client/09-treatment-room.jpg",
+            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+            "focus": "center 68%"
+          }
         },
         {
           "title": "Feel the Difference",
-          "text": "Our care doesn't end when you leave the chair. Routine visits keep your smile healthy for years."
+          "text": "Our care doesn't end when you leave the chair. Routine visits keep your smile healthy for years.",
+          "image": {
+            "src": "/images/client/10-hallway-front-desk.jpg",
+            "alt": "Valencia Dentistry hallway and front desk",
+            "focus": "center 62%"
+          }
         }
       ],
       "heading": "Smile Reimagined at Valencia Dentistry",

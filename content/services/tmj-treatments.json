@@ -28,6 +28,11 @@
   "understanding": {
     "heading": "What Are TMJ Disorders?",
     "intro": "The temporomandibular joint (TMJ) is the hinge that connects your jawbone to your skull, allowing you to chew, speak, and yawn. When this joint becomes strained, injured, or misaligned, it can lead to temporomandibular disorders (TMD). These conditions often cause ongoing discomfort that affects more than just your jaw. Common causes of TMJ disorders include: At Valencia Dentistry, we take a comprehensive approach to TMJ care. Our goal is to relieve pain, protect your teeth, and restore balance with treatment options tailored to your needs.",
+    "image": {
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk",
+      "focus": "center 62%"
+    },
     "items": [
       {
         "title": "Custom Night Guards",
@@ -84,15 +89,27 @@
     "cards": [
       {
         "title": "Compassionate, Patient-Centered Care",
-        "text": "Our team is known for a detail-oriented approach and commitment to helping patients feel comfortable and understood."
+        "text": "Our team is known for a detail-oriented approach and commitment to helping patients feel comfortable and understood.",
+        "image": {
+          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+        }
       },
       {
         "title": "Advanced Technology",
-        "text": "From digital imaging to precision oral appliances, we use the latest tools to diagnose and treat TMJ disorders effectively."
+        "text": "From digital imaging to precision oral appliances, we use the latest tools to diagnose and treat TMJ disorders effectively.",
+        "image": {
+          "src": "/images/client/07-dr-lavi-headshot.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+        }
       },
       {
         "title": "Stress-Free Experience",
-        "text": "With sedation options and a welcoming environment, our office feels less like a clinic and more like a trusted space for care."
+        "text": "With sedation options and a welcoming environment, our office feels less like a clinic and more like a trusted space for care.",
+        "image": {
+          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
+          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+        }
       },
       {
         "title": "Comprehensive Services Under One Roof",
@@ -131,7 +148,11 @@
       "Headaches or earaches",
       "Difficulty chewing or opening your mouth fully",
       "Neck or shoulder pain from muscle tension"
-    ]
+    ],
+    "image": {
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+    }
   },
   "tables": [],
   "extra": [],

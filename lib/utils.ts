@@ -64,5 +64,6 @@ export function cardGrid(n: number, wideCols: 3 | 4 = 3, wideAt: "lg" | "xl" = "
   return { ul: cn("grid grid-cols-2", wide), featured, first: featured ? cn("col-span-2", unspan && UNSPAN[wideAt]) : "", unspanAt: unspan ? wideAt : null };
 }
 
-/** Photos used when a card has no unused photo of its own: the practice's own office photos only. */
-export const BACKUP_PHOTOS: { src: string; alt: string }[] = [];
+const B = (n: string, alt: string) => ({ src: `/images/client/${n}.jpg`, alt });
+/** The practice's own photos, used when a card has no unused photo of its own. */
+export const BACKUP_PHOTOS = [B("09-treatment-room", "Bright treatment room at Valencia Dentistry with dental chair and windows"), B("10-hallway-front-desk", "Valencia Dentistry hallway and front desk"), B("01-reception-logo-wall", "Valencia Dentistry reception area with illuminated logo wall and modern seating"), B("05-dr-lavi-headshot-loupes", "Dr. Nuriel Lavi, DDS, wearing dental loupes"), B("07-dr-lavi-headshot", "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"), B("02-dr-lavi-seated-candid", "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office")];
