@@ -1,9 +1,10 @@
 import type { CtaSection } from "@/lib/types";
 import { CtaBanner } from "@/components/rich/Blocks";
+import { CLIENT } from "@/lib/clientPhotos";
 import { Container, Section } from "@/components/ui/Section";
 
 // A real practice photo for closing banners that don't name their own
-const DEFAULT_IMAGE = { src: "/images/real/treatment-room-2.jpg", alt: "A calm treatment room with natural light at Valencia Dentistry" };
+const DEFAULT_IMAGE = CLIENT.hallway;
 
 /** Closing call to action: the shared banner with the booking, phone, hours and a photo. */
 export function Cta({ s }: { s: CtaSection }) {

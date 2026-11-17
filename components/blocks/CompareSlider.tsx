@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useId, useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
 import { prefersReducedMotion } from "@/components/motion/useReducedMotion";
-import type { BeforeAfterCase } from "@/lib/types";
+import type { BeforeAfterCase, SiteImage } from "@/lib/types";
 import { Picture } from "@/components/ui/Picture";
 import { cn } from "@/lib/utils";
 
@@ -19,7 +19,9 @@ const clamp = (n: number) => Math.max(0, Math.min(100, n));
  *   (~1.3s) to show it can be dragged. Any interaction cancels it; reduced motion skips it.
  * - The frame is capped at 440px: the source photos are 345–437px wide, so showing them larger only blurs them.
  */
-export function CompareSlider({ cases }: { cases: BeforeAfterCase[] }) {
+export type PairCase = BeforeAfterCase & { before: SiteImage; after: SiteImage };
+
+export function CompareSlider({ cases }: { cases: PairCase[] }) {
   const [active, setActive] = useState(0);
   const [pos, setPos] = useState(50);
   const [dragging, setDragging] = useState(false);

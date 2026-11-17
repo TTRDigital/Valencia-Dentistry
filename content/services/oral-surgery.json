@@ -14,8 +14,9 @@
     "subtitle": "Restore Your Health with Oral Surgery in Santa Clarita",
     "text": "",
     "image": {
-      "src": "/images/real/treatment-room-2.jpg",
-      "alt": "A calm treatment room with natural light at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -27,10 +28,6 @@
   "understanding": {
     "heading": "What Is Oral Surgery?",
     "intro": "Dental Implants Permanent tooth replacements that look and function like natural teeth Tooth Extractions Safe, gentle removal of damaged, infected, or overcrowded teeth Wisdom Teeth Removal Surgical removal of third molars that are impacted or causing pain",
-    "image": {
-      "src": "/images/real/xray-consult.jpg",
-      "alt": "Reviewing implant X-rays with a patient at Valencia Dentistry"
-    },
     "items": [
       {
         "title": "All-on-4 Implants",
@@ -69,27 +66,15 @@
     "cards": [
       {
         "title": "Doctor-Led Surgical Care",
-        "text": "Your dentist performs all surgical treatments with a focus on safety, detail, and long-term success.",
-        "image": {
-          "src": "/images/real/implant-model-hands.jpg",
-          "alt": "Showing a patient a dental implant model at Valencia Dentistry"
-        }
+        "text": "Your dentist performs all surgical treatments with a focus on safety, detail, and long-term success."
       },
       {
         "title": "Advanced Technology for Better Outcomes",
-        "text": "We use digital 3D imaging, guided surgery tools, and PRF (Platelet-Rich Fibrin) therapy to promote faster healing and greater precision.",
-        "image": {
-          "src": "/images/real/scan-hygienist.jpg",
-          "alt": "A digital scan with a hygienist at Valencia Dentistry"
-        }
+        "text": "We use digital 3D imaging, guided surgery tools, and PRF (Platelet-Rich Fibrin) therapy to promote faster healing and greater precision."
       },
       {
         "title": "Compassionate, One-on-One Approach",
-        "text": "You’ll never feel rushed—your dentist takes the time to explain your options and answer all your questions.",
-        "image": {
-          "src": "/images/real/cleaning.jpg",
-          "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
-        }
+        "text": "You’ll never feel rushed—your dentist takes the time to explain your options and answer all your questions."
       },
       {
         "title": "Sedation Options for Comfort",
@@ -122,11 +107,7 @@
   "candidate": {
     "heading": "Are you a good candidate for oral surgery?",
     "text": "",
-    "bullets": [],
-    "image": {
-      "src": "/images/real/treatment-room.jpg",
-      "alt": ""
-    }
+    "bullets": []
   },
   "care": {
     "heading": "Pre- and Post-Op Care for Oral Surgery",

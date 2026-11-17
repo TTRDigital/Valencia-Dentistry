@@ -14,8 +14,9 @@
     "subtitle": "The Best Cosmetic Dentistry Experts of Santa Clarita",
     "text": "Let the Valencia Dentistry team help you achieve a confident, radiant smile with the top cosmetic dentistry in Santa Clarita.",
     "image": {
-      "src": "/images/real/veneer-smile.jpg",
-      "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -25,10 +26,6 @@
   "understanding": {
     "heading": "What Is Cosmetic Dentistry and Why It Matters",
     "intro": "Cosmetic dentistry enhances the look of your smile by addressing issues like discoloration, uneven teeth, and gaps—but at Valencia Dentistry, it goes deeper. Under our care, every treatment is personalized to boost your confidence and deliver beautiful, natural-looking results with advanced, comfortable techniques. Common concerns cosmetic dentistry can address: At Valencia Dentistry, we offer a full range of cosmetic dental treatments designed to help you achieve a natural-looking smile you’ll love. Whether you’re looking for subtle improvements or a full smile makeover in Santa Clarita, our experienced team provides modern, minimally invasive solutions tailored to your goals.",
-    "image": {
-      "src": "/images/real/veneer-tryin.jpg",
-      "alt": "Cosmetic Dentistry: treatment at Valencia Dentistry"
-    },
     "items": [
       {
         "title": "Professional Teeth Whitening",
@@ -89,27 +86,15 @@
     "cards": [
       {
         "title": "Doctor-Led Expertise",
-        "text": "Your dentist is hands-on with every patient, bringing artistic precision and years of experience in advanced cosmetic dentistry.",
-        "image": {
-          "src": "/images/real/smile-design.jpg",
-          "alt": "Cosmetic Dentistry at Valencia Dentistry: Doctor-Led Expertise"
-        }
+        "text": "Your dentist is hands-on with every patient, bringing artistic precision and years of experience in advanced cosmetic dentistry."
       },
       {
         "title": "Modern Technology",
-        "text": "From digital smile previews to guided Invisalign planning, we use today’s most effective tools to ensure natural, lasting results.",
-        "image": {
-          "src": "/images/real/tryin-smile.jpg",
-          "alt": "A patient smiling during a try-in at Valencia Dentistry"
-        }
+        "text": "From digital smile previews to guided Invisalign planning, we use today’s most effective tools to ensure natural, lasting results."
       },
       {
         "title": "Same-Day Appointments",
-        "text": "We respect your time with flexible scheduling and convenient care, perfect for busy professionals and families alike.",
-        "image": {
-          "src": "/images/real/smile-plan-screen.jpg",
-          "alt": "A digital smile plan on screen at Valencia Dentistry"
-        }
+        "text": "We respect your time with flexible scheduling and convenient care, perfect for busy professionals and families alike."
       },
       {
         "title": "Stress-Free Experience",
@@ -142,11 +127,7 @@
   "candidate": {
     "heading": "Are you a good candidate for cosmetic dentistry?",
     "text": "",
-    "bullets": [],
-    "image": {
-      "src": "/images/real/veneer-smile-2.jpg",
-      "alt": ""
-    }
+    "bullets": []
   },
   "tables": [],
   "extra": [],

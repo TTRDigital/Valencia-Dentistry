@@ -55,7 +55,6 @@ Claims the copywriting pass left out of the new site, or kept but could not veri
 ### Holistic Dentistry (/services/holistic-dentistry/)
 
 - Source frames holistic care as 'safer' and reducing 'toxic burden'; kept the philosophy but avoided stating health outcomes.
-- Source says ozone therapy 'supports healing and reduces infection'; kept as the practice describes it, but evidence is limited. Confirm Dr. Moezzi offers ozone therapy in-house.
 - Source mentions biocompatibility testing; kept with 'when it is helpful'. Confirm the practice offers this testing.
 - 'Holistic Bone & Gum Grafting' appears on the source as a title with no description; described using PRF and autologous bone details from the bone grafting page.
 
@@ -328,6 +327,6 @@ Claims the copywriting pass left out of the new site, or kept but could not veri
 ### Why Regular Dental Cleanings Matter: Health, Cost and How Often to Come (/why-regular-dental-cleanings-matter-health-cost-how-often-to-come-dental-cleaning-valencia/)
 
 - Source had only two FAQ entries; kept both (spec asks for three or more only when available).
-- Hero image set to /images/team/dr-moezzi-treating.jpg per the spec; the source front matter pointed to an external preventive-dentistry image.
+- Hero image: the source front matter pointed to an external preventive-dentistry image (posts now have no photo; see docs/image-audit.md).
 - Cleaning intervals by risk level (6, 4, and 2 to 3 months) are general guidance from the source, not attributed to a named body.
 - Insurance coverage statements (one or two cleanings per year) are general; actual coverage depends on the plan.

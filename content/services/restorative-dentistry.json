@@ -14,8 +14,9 @@
     "subtitle": "Restore Your Smile with the Best in Restorative Dentistry",
     "text": "",
     "image": {
-      "src": "/images/real/implant-model-hands.jpg",
-      "alt": "Restorative Dentistry at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -25,10 +26,6 @@
   "understanding": {
     "heading": "What Is Restorative Dentistry?",
     "intro": "",
-    "image": {
-      "src": "/images/real/scan-closeup.jpg",
-      "alt": "Restorative Dentistry: treatment at Valencia Dentistry"
-    },
     "items": [
       {
         "title": "Tooth-Colored Composite Fillings",
@@ -55,27 +52,15 @@
     "cards": [
       {
         "title": "Same-Day & Emergency Appointments",
-        "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most.",
-        "image": {
-          "src": "/images/real/tryin-smile.jpg",
-          "alt": "A patient smiling during a try-in at Valencia Dentistry"
-        }
+        "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most."
       },
       {
         "title": "Advanced Technology",
-        "text": "From digital imaging to guided treatment planning, we use state-of-the-art tools for precision and efficiency.",
-        "image": {
-          "src": "/images/real/scan-intraoral.jpg",
-          "alt": "A digital iTero scan at Valencia Dentistry"
-        }
+        "text": "From digital imaging to guided treatment planning, we use state-of-the-art tools for precision and efficiency."
       },
       {
         "title": "Comfort-First Care",
-        "text": "With sedation options and a friendly team, even anxious patients feel at ease.",
-        "image": {
-          "src": "/images/real/smile-plan-screen-2.jpg",
-          "alt": "Explaining a smile plan to a patient at Valencia Dentistry"
-        }
+        "text": "With sedation options and a friendly team, even anxious patients feel at ease."
       },
       {
         "title": "Transparent, Flexible Pricing",
@@ -108,11 +93,7 @@
       "Better speech and bite alignment",
       "Protection against future dental problems",
       "Restored facial balance and symmetry"
-    ],
-    "image": {
-      "src": "/images/real/veneer-tryin.jpg",
-      "alt": ""
-    }
+    ]
   },
   "tables": [],
   "extra": [],

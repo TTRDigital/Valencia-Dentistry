@@ -23,8 +23,9 @@
         "href": "/appointment/"
       },
       "image": {
-        "src": "/images/real/treatment-room-2.jpg",
-        "alt": "A calm treatment room with natural light at Valencia Dentistry"
+        "src": "/images/client/09-treatment-room.jpg",
+        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+        "focus": "center 68%"
       },
       "trust": true
     },

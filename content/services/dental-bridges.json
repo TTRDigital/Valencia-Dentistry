@@ -14,8 +14,9 @@
     "subtitle": "Santa Clarita’s Dental Bridge Experts",
     "text": "Replace missing teeth and restore your confidence with ease.",
     "image": {
-      "src": "/images/real/scan-intraoral.jpg",
-      "alt": "A digital iTero scan at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -27,10 +28,6 @@
   "understanding": {
     "heading": "What Are Dental Bridges",
     "intro": "A dental bridge is a tooth replacement option used to replace one or more missing teeth. It works by placing a false tooth (called a pontic) in the gap and securing it to the natural teeth or dental implants on either side. Bridges are custom-made to match the shape, size, and color of your surrounding teeth, so they blend in naturally with your smile. There isn’t just one kind of dental bridge—different designs are available to fit different needs, budgets, and oral health situations. Each type has its own way of staying in place, along with unique advantages. At Valencia Dentistry, we help patients in Santa Clarita understand their options and choose the bridge that best supports their smile. The chart below highlights the main types of dental bridges and what makes each one distinct.",
-    "image": {
-      "src": "/images/real/implant-model-hands.jpg",
-      "alt": "Showing a patient a dental implant model at Valencia Dentistry"
-    },
     "items": [
       {
         "title": "3D Digital Imaging",
@@ -69,27 +66,15 @@
     "cards": [
       {
         "title": "Advanced Technology",
-        "text": "From digital imaging to precision design, your bridge is crafted with accuracy and comfort in mind.",
-        "image": {
-          "src": "/images/real/smile-plan-screen-2.jpg",
-          "alt": "Explaining a smile plan to a patient at Valencia Dentistry"
-        }
+        "text": "From digital imaging to precision design, your bridge is crafted with accuracy and comfort in mind."
       },
       {
         "title": "Comprehensive Care",
-        "text": "Whether you need preventive, restorative, or cosmetic services, we provide full-scope dentistry for the whole family.",
-        "image": {
-          "src": "/images/real/veneer-tryin.jpg",
-          "alt": "A patient smiling with a new restoration at Valencia Dentistry"
-        }
+        "text": "Whether you need preventive, restorative, or cosmetic services, we provide full-scope dentistry for the whole family."
       },
       {
         "title": "Stress-Free Dentistry",
-        "text": "Sedation options and a welcoming atmosphere help make every visit easier.",
-        "image": {
-          "src": "/images/real/xray-consult.jpg",
-          "alt": "Reviewing implant X-rays with a patient at Valencia Dentistry"
-        }
+        "text": "Sedation options and a welcoming atmosphere help make every visit easier."
       },
       {
         "title": "Clear Pricing & Flexible Options",
@@ -126,11 +111,7 @@
       "Restore bite and chewing function Missing teeth can make it harder to enjoy certain foods or pronounce words clearly. A bridge helps bring back normal function.",
       "Maintain natural facial shape Gaps in your smile can cause surrounding teeth to shift and even change the way your face looks over time. Bridges help preserve your natural appearance.",
       "Prevent surrounding teeth from shifting Filling the empty space keeps nearby teeth in their proper positions, reducing the risk of future dental issues."
-    ],
-    "image": {
-      "src": "/images/real/tryin-smile.jpg",
-      "alt": ""
-    }
+    ]
   },
   "care": {
     "heading": "Expert Tips on Caring for Your Dental Bridge",

@@ -14,8 +14,9 @@
     "subtitle": "Restoring Smiles in Santa Clarita",
     "text": "Strengthen and protect your teeth with crowns designed for comfort, durability, and a natural look.",
     "image": {
-      "src": "/images/real/tryin-smile.jpg",
-      "alt": "A patient smiling during a try-in at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -27,10 +28,6 @@
   "understanding": {
     "heading": "What Are Dental Crowns?",
     "intro": "A dental crown is a custom-made cap that covers and protects a tooth that has been weakened by decay, cracks, or a root canal. Unlike a simple filling, a crown restores both the strength and appearance of the tooth, allowing it to function like normal again. At Valencia Dentistry, we craft crowns from durable porcelain and ceramic materials that are carefully matched to your natural teeth, so your smile looks seamless. Crowns are often used to:",
-    "image": {
-      "src": "/images/real/scan-closeup.jpg",
-      "alt": "Dental Crowns: treatment at Valencia Dentistry"
-    },
     "items": [
       {
         "title": "Strength and Protection",
@@ -66,27 +63,15 @@
     "cards": [
       {
         "title": "Same-Day & Emergency Appointments",
-        "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most.",
-        "image": {
-          "src": "/images/real/scan-intraoral.jpg",
-          "alt": "A digital iTero scan at Valencia Dentistry"
-        }
+        "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most."
       },
       {
         "title": "Advanced Technology",
-        "text": "From digital impressions to precision shade-matching, we use modern tools to make your crown accurate, comfortable, and natural-looking.",
-        "image": {
-          "src": "/images/real/implant-model-hands.jpg",
-          "alt": "Showing a patient a dental implant model at Valencia Dentistry"
-        }
+        "text": "From digital impressions to precision shade-matching, we use modern tools to make your crown accurate, comfortable, and natural-looking."
       },
       {
         "title": "Comfort-First Care",
-        "text": "With sedation options and a warm, welcoming office, even patients with dental anxiety feel at ease during treatment.",
-        "image": {
-          "src": "/images/real/smile-plan-screen-2.jpg",
-          "alt": "Explaining a smile plan to a patient at Valencia Dentistry"
-        }
+        "text": "With sedation options and a warm, welcoming office, even patients with dental anxiety feel at ease during treatment."
       },
       {
         "title": "Affordable, Transparent Pricing",
@@ -130,11 +115,7 @@
       "Better speech and bite alignment",
       "Protection against future dental problems",
       "Restored facial balance and symmetry"
-    ],
-    "image": {
-      "src": "/images/real/scan-intraoral-2.jpg",
-      "alt": ""
-    }
+    ]
   },
   "care": {
     "heading": "Caring for Your New Dental Crown",

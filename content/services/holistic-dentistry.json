@@ -7,15 +7,16 @@
   "shortDescription": "Biocompatible materials and whole-body wellness.",
   "seo": {
     "title": "Holistic Dentist in Valencia, CA | Valencia Dentistry",
-    "description": "Holistic dentistry in Valencia, CA: mercury-free fillings, SMART amalgam removal, fluoride-free cleanings and ozone therapy at Valencia Dentistry."
+    "description": "Holistic dentistry in Valencia, CA: mercury-free fillings, SMART amalgam removal and fluoride-free cleanings at Valencia Dentistry."
   },
   "hero": {
     "h1": "A Truly Holistic Dentist in Valencia",
     "subtitle": "Natural Dental Care That Supports Whole-Body Wellness",
     "text": "",
     "image": {
-      "src": "/images/real/cleaning.jpg",
-      "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -27,16 +28,7 @@
   "understanding": {
     "heading": "What Is Holistic Dentistry and How Is It Different?",
     "intro": "Holistic dentistry looks at the mouth as a window to your overall health. At Valencia Dentistry, we take a biological, whole-body approach—using non-toxic materials, focusing on prevention, and avoiding unnecessary procedures. It’s ideal for patients seeking safer, more mindful dental care. Core principles we follow: At Valencia Dentistry, our holistic dental treatments are designed to protect both your oral health and your overall well-being. Each treatment is rooted in a commitment to safe materials, gentle techniques, and personalized dental care that aligns with your body’s natural healing processes. Safe Amalgam Removal SMART-certified techniques to safely remove old silver fillings Fluoride-Free Cleanings Gentle preventive care using alternative remineralizing agents Non-Metal Restorations Durable, aesthetic crowns and bridges free from toxic metals Holistic Periodontal Therapy Gum care that reduces inflammation and supports systemic health",
-    "image": {
-      "src": "/images/real/treatment-room-2.jpg",
-      "alt": "A calm treatment room with natural light at Valencia Dentistry"
-    },
-    "items": [
-      {
-        "title": "Ozone Therapy",
-        "text": "A natural antibacterial treatment that supports healing and reduces infection"
-      }
-    ],
+    "items": [],
     "bullets": [
       "Use of biocompatible, mercury-free materials",
       "Minimally invasive, preventive treatments",
@@ -81,11 +73,7 @@
       "Safer treatment options for individuals with chronic or autoimmune conditions",
       "Lower risk of allergic or sensitivity reactions to dental materials",
       "Whole-body support through minimally invasive care and natural therapies"
-    ],
-    "image": {
-      "src": "/images/real/scan-hygienist.jpg",
-      "alt": "A digital scan with a hygienist at Valencia Dentistry"
-    }
+    ]
   },
   "tables": [],
   "extra": [],
@@ -127,7 +115,6 @@
   },
   "flags": [
     "Source frames holistic care as 'safer' and reducing 'toxic burden'; kept the philosophy but avoided stating health outcomes.",
-    "Source says ozone therapy 'supports healing and reduces infection'; kept as the practice describes it, but evidence is limited. Confirm your dentist offers ozone therapy in-house.",
     "Source mentions biocompatibility testing; kept with 'when it is helpful'. Confirm the practice offers this testing.",
     "'Holistic Bone & Gum Grafting' appears on the source as a title with no description; described using PRF and autologous bone details from the bone grafting page."
   ]

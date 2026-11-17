@@ -6,7 +6,7 @@ import { RichHeading } from "@/components/rich/Blocks";
 import { PhotoFrame } from "@/components/rich/PhotoFrame";
 import { Icon } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
-import { distinctPhotos } from "@/lib/utils";
+import { cn, distinctPhotos } from "@/lib/utils";
 import { servicePhotos } from "./ServicesHub";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
@@ -81,22 +81,46 @@ export async function FeaturedServices({ s }: { s: FeaturedServicesSection }) {
 
 /** New patient visit: a calm sage band with what the first visit includes and one clear button. No price. */
 export function NewPatient({ s }: { s: NewPatientSection }) {
+  const bullets = (
+    <ul className={cn("grid grid-cols-1 gap-x-6 gap-y-2.5 sm:gap-y-3", s.image ? "mt-6 sm:mt-8 sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-1 lg:gap-y-4")}>
+      {s.bullets.map((b) => (
+        <li key={b} className="flex items-start gap-3 text-ink-900"><span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-olive-600 text-white"><Icon.check className="h-3.5 w-3.5" /></span>{b}</li>
+      ))}
+    </ul>
+  );
+  const actions = (
+    <>
+      <div className="mt-7 grid grid-cols-2 gap-3 sm:mt-9 sm:flex sm:flex-wrap sm:items-center">
+        <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg px-4">{s.buttonLabel ?? "Book your first visit"} <Icon.arrow className="h-4 w-4" /></a>
+        <Link href="/new-patient-offer/" className="btn btn-lg border border-ink-900/20 px-4 text-ink-900">What to expect</Link>
+      </div>
+      {s.fine && <p className="mt-5 text-sm text-grey-600">{s.fine}</p>}
+    </>
+  );
+  if (!s.image) {
+    // No photo of the practice fits here (image brief): the same content as an ivory panel, text left, list right
+    return (
+      <Section className="bg-warm" id="new-patients">
+        <Container>
+          <div className="grid items-center gap-8 rounded-2xl bg-offwhite p-6 ring-1 ring-ink-900/5 sm:p-10 lg:grid-cols-12 lg:gap-16 lg:p-14">
+            <div className="lg:col-span-7">
+              <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.text} />
+              {actions}
+            </div>
+            <div className="lg:col-span-5">{bullets}</div>
+          </div>
+        </Container>
+      </Section>
+    );
+  }
   return (
     <Section className="bg-warm" id="new-patients">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
             <RichHeading eyebrow={s.eyebrow} heading={s.heading} lead={s.text} />
-            <ul className="mt-6 grid grid-cols-1 gap-x-6 gap-y-2.5 sm:mt-8 sm:grid-cols-2 sm:gap-y-3">
-              {s.bullets.map((b) => (
-                <li key={b} className="flex items-start gap-3 text-ink-900"><span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-olive-600 text-white"><Icon.check className="h-3.5 w-3.5" /></span>{b}</li>
-              ))}
-            </ul>
-            <div className="mt-7 grid grid-cols-2 gap-3 sm:mt-9 sm:flex sm:flex-wrap sm:items-center">
-              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg px-4">{s.buttonLabel ?? "Book your first visit"} <Icon.arrow className="h-4 w-4" /></a>
-              <Link href="/new-patient-offer/" className="btn btn-lg border border-ink-900/20 px-4 text-ink-900">What to expect</Link>
-            </div>
-            {s.fine && <p className="mt-5 text-sm text-grey-600">{s.fine}</p>}
+            {bullets}
+            {actions}
           </div>
           {s.image && <div className="hidden lg:col-span-6 lg:block"><PhotoFrame image={s.image} sizes="(min-width: 1024px) 560px, 100vw" frameClassName="rounded-2xl" className="mx-auto max-w-[600px]" /></div>}
         </div>

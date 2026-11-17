@@ -8,7 +8,7 @@
 | ESLint | 0 errors, 0 warnings |
 | Launch audit (`npm run audit`, local build) | 59 pages checked: doctype, `<html lang="en">`, `<meta charset>` first, one H1, title ≤60, description ≤155, canonical, 1200×630 og:image that loads, valid JSON-LD with every `@id` resolved, alt on every image, 4,273 internal links (60 unique) all 200, favicons/manifest/robots/sitemap present, unknown URL → 404 |
 | The 56 URLs of the current site | all answer 200 on the new site (no redirects needed) |
-| Responsive screenshots (`npm run screenshots`) | 10 pages × 390 / 768 / 1024 / 1440 / 1920 px: no horizontal overflow on any page; key pages in `docs/screenshots/` |
+| Responsive screenshots (`npm run screenshots`) | 10 pages × 390 / 768 / 1024 / 1440 / 1920 px: no horizontal overflow on any page; (old screenshots removed with the image brief; regenerate with `npm run screenshots`) |
 | Keyboard | first Tab = skip link; Services mega menu opens with Enter and closes with Escape; 3px focus ring on every focusable element; mobile menu toggles `aria-hidden`/`aria-expanded` |
 | Tap targets (390px) | every button, menu item and form control ≥44px; remaining sub-44px targets are inline text links inside sentences (WCAG inline exception) |
 | Reduced motion | all animations (hero rise, scroll reveal, card hover lift, accordion) disabled via `prefers-reduced-motion` |
@@ -57,7 +57,7 @@ The Valencia Dentistry identity was applied: logo vectorized from the supplied m
 
 - **Service pages** rebuilt in the Ideal Dental Solutions structure: full-bleed photo hero (title, subtitle, intro, buttons), light intro, dark "Understanding …" section with a photo and an accordion of treatment types and benefits, "Why choose us" photo cards, dark numbered process, full-bleed "good candidate" banner, care guide / comparison tables / remaining sections, FAQ, reviews, related services, CTA.
 - **Service text** is now the original Valencia Smile Expert wording (dentist name updated), rebuilt from the crawled pages by `scripts/build-services.ts` into `content/services/*.json`. Re-run it only if the parser changes; editors otherwise edit the JSON or the CMS.
-- **Photos**: the live site's stock photos (service cards, blog heroes) are used for service heroes and section images; the brand placeholder panels are gone. Doctor photos were taken from bestdentistthousandoaks.com as instructed (`public/images/team/dr-lavi*.jpg`). **That site identifies the person in these photos as Dr. Jason Verdi of Newbury Park Dental Arts; confirm Dr. Lavi has the rights to use them before launch.**
+- **Photos**: superseded by the image replacement brief (2026-11). The earlier doctor and office photos showed another practice and doctor and have been deleted; the site now uses only the client's own photos. See docs/image-audit.md.
 
 ## Site-wide Ideal Dental style (2026-11-02)
 

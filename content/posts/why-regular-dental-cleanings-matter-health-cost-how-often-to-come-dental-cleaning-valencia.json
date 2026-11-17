@@ -16,8 +16,8 @@
   "datePublished": "2026-04-08T22:53:32",
   "dateModified": "2026-06-23T20:07:03",
   "author": "Dr. Nuriel Lavi, DDS",
-  "image": "/images/real/scan-intraoral-2.jpg",
-  "imageAlt": "A patient during a digital scan at Valencia Dentistry",
+  "image": "",
+  "imageAlt": "",
   "keyTakeaways": [
     "Professional cleanings remove hardened tartar that brushing cannot, reverse early gingivitis and catch cavities, cracks and lesions sooner.",
     "Prevention costs far less than restorative care: a cleaning and filling versus a root canal and crown, or early gum treatment versus periodontal surgery.",
@@ -47,7 +47,6 @@
   ],
   "flags": [
     "Source had only two FAQ entries; kept both (spec asks for three or more only when available).",
-    "Hero image set to /images/team/dr-lavi.jpg per the spec; the source front matter pointed to an external preventive-dentistry image.",
     "Cleaning intervals by risk level (6, 4, and 2 to 3 months) are general guidance from the source, not attributed to a named body.",
     "Insurance coverage statements (one or two cleanings per year) are general; actual coverage depends on the plan."
   ]

@@ -5,7 +5,7 @@
  * variants, each pointing straight at the final page (no chains).
  * Trailing-slash variants are answered by Next.js itself (trailingSlash: true).
  */
-type Row = { source: string; destination: string };
+type Row = { source: string; destination: string; status?: 301 };
 
 const rows: Row[] = [
   { source: "/sitemap_index.xml", destination: "/sitemap.xml" },
@@ -39,6 +39,11 @@ const rows: Row[] = [
   { source: "/services/bone-grafting", destination: "/services/oral-surgery/bone-grafting/" },
   { source: "/services/tooth-extractions", destination: "/services/oral-surgery/tooth-extractions/" },
   { source: "/services/wisdom-teeth-removal", destination: "/services/oral-surgery/wisdom-teeth-removal/" },
+  // Ozone therapy is no longer offered (client brief, 2026-11): any old ozone address goes to Services.
+  { source: "/ozone-therapy", destination: "/services/", status: 301 },
+  { source: "/ozone-dental-therapy", destination: "/services/", status: 301 },
+  { source: "/services/ozone-therapy", destination: "/services/", status: 301 },
+  { source: "/services/holistic-dentistry/ozone-therapy", destination: "/services/", status: 301 },
   // Every page's /feed/ and /page/N/ variants (WordPress leftovers) go to the page.
   { source: "/:path*/feed", destination: "/:path*/" },
   { source: "/category/blogs/page/1", destination: "/category/blogs/" },
@@ -47,5 +52,6 @@ const rows: Row[] = [
 export const redirects = rows.flatMap((r) => {
   const src = r.source.replace(/\/$/, "");
   // next.config `trailingSlash: true` makes "/foo" match both "/foo" and "/foo/".
-  return [{ source: src, destination: r.destination, permanent: true as const }];
+  // 301 where a brief asks for exactly that status; otherwise Next's permanent redirect (308)
+  return [r.status ? { source: src, destination: r.destination, statusCode: r.status } : { source: src, destination: r.destination, permanent: true as const }];
 });

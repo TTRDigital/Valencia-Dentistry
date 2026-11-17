@@ -13,12 +13,13 @@ import { FaqList } from "@/components/sections/Faq";
 import { Breadcrumbs } from "@/components/ServiceView";
 import { PostCard } from "@/components/blocks/PostCard";
 import { sceneKey } from "@/lib/utils";
+import { CLIENT } from "@/lib/clientPhotos";
 
 export async function PostView({ post }: { post: Post }) {
   const [posts, services] = await Promise.all([getPosts(), getServices()]);
   // three related posts, never showing the same photo as this post or each other
-  const seenImg = new Set([sceneKey(post.image)]);
-  const pickDistinct = (list: Post[], n: number) => list.filter((p) => { if (p.slug === post.slug || seenImg.has(sceneKey(p.image)) || n <= 0) return false; seenImg.add(sceneKey(p.image)); n -= 1; return true; });
+  const seenImg = new Set(post.image ? [sceneKey(post.image)] : []);
+  const pickDistinct = (list: Post[], n: number) => list.filter((p) => { if (p.slug === post.slug || n <= 0 || (p.image && seenImg.has(sceneKey(p.image)))) return false; if (p.image) seenImg.add(sceneKey(p.image)); n -= 1; return true; });
   const related = pickDistinct(post.relatedPosts.map((s) => posts.find((p) => p.slug === s)).filter((p): p is Post => !!p), 3);
   const fallback = pickDistinct([...posts.filter((p) => p.category === post.category && !related.includes(p)), ...posts.filter((p) => !related.includes(p))], 3 - related.length);
   const relatedServices = post.relatedServices.map((s) => services.find((x) => x.slug === s)).filter((x): x is Service => !!x);
@@ -29,18 +30,18 @@ export async function PostView({ post }: { post: Post }) {
 
   return (
     <article>
-      {/* Header: tinted band, title and author on the left, the photo framed on the right */}
+      {/* Header: tinted band, title and author on the left, the photo (when the post has one) framed on the right */}
       <header className="border-b hairline bg-[linear-gradient(180deg,#dcd7cd_0%,#e6e2da_100%)]">
         <Container>
           <div className="grid items-center gap-10 py-10 lg:grid-cols-12 lg:gap-14 lg:py-16">
-            <div className="lg:col-span-7">
+            <div className={post.image ? "lg:col-span-7" : "lg:col-span-10"}>
               <div className="flex flex-wrap items-center gap-3">
                 <Breadcrumbs items={crumbs.slice(0, 2)} />
                 <span className="rounded-full bg-olive-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-olive-700">{post.category}</span>
               </div>
               <h1 className="mt-6 text-5xl">{post.title}</h1>
               <div className="mt-8 inline-flex items-center gap-4 rounded-lg bg-white p-3 pr-6 shadow-lift ring-1 ring-ink-900/5">
-                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full"><Picture image={{ src: "/images/team/dr-lavi-portrait.jpg", alt: "" }} sizes="56px" className="h-full w-full object-cover object-top" /></div>
+                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full"><Picture image={{ src: CLIENT.drHeadshot.src, alt: "" }} sizes="56px" className="h-full w-full object-cover object-top" /></div>
                 <div className="text-sm leading-snug">
                   <p className="font-semibold text-ink-900">By {site.doctor.name}</p>
                   <p className="text-grey-600">Dentist and practice owner</p>
@@ -48,11 +49,13 @@ export async function PostView({ post }: { post: Post }) {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-5">
-              <div className="overflow-hidden rounded-lg shadow-lift ring-1 ring-ink-900/5" style={{ aspectRatio: "3 / 2" }}>
-                <Picture image={{ src: post.image, alt: post.imageAlt }} priority sizes="(min-width: 1024px) 520px, 100vw" className="h-full w-full object-cover" />
+            {post.image && (
+              <div className="lg:col-span-5">
+                <div className="overflow-hidden rounded-lg shadow-lift ring-1 ring-ink-900/5" style={{ aspectRatio: "3 / 2" }}>
+                  <Picture image={{ src: post.image, alt: post.imageAlt }} priority sizes="(min-width: 1024px) 520px, 100vw" className="h-full w-full object-cover" />
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </Container>
       </header>
@@ -116,7 +119,7 @@ export async function PostView({ post }: { post: Post }) {
 
             <section aria-labelledby="author" className="mt-14 flex flex-col gap-5 rounded-lg bg-greige-50/70 p-6 sm:flex-row sm:p-7">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
-                <Picture image={{ src: "/images/team/dr-lavi-portrait.jpg", alt: "Dr. Nuriel Lavi, DDS" }} sizes="96px" className="h-full w-full object-cover object-top" />
+                <Picture image={CLIENT.drCandid} sizes="96px" className="h-full w-full object-cover object-top" />
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>

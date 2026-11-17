@@ -1,15 +1,16 @@
-import type { Service, SiteImage } from "@/lib/types";
+import type { Service } from "@/lib/types";
 import { getServices } from "@/lib/content";
 import { site } from "@/lib/site";
 import { breadcrumbNode, faqNode, graph, JsonLd, serviceNode, serviceOfferNode, webPageNode } from "@/lib/seo";
 import { PageHero } from "@/components/sections/Hero";
 import { FaqList } from "@/components/sections/Faq";
-import { CardList, servicePhotos } from "@/components/sections/ServicesHub";
+import { CardList } from "@/components/sections/ServicesHub";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Icon, type IconName } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Container, Section } from "@/components/ui/Section";
-import { cn, distinctPhotos, inSentence } from "@/lib/utils";
+import { cn, inSentence } from "@/lib/utils";
+import { CLIENT, SERVICE_BEFORE_AFTER } from "@/lib/clientPhotos";
 
 export { Breadcrumbs };
 
@@ -22,11 +23,6 @@ const PARENT_NAMES: Record<string, string> = {
 const CATEGORY_LABEL: Record<string, string> = { cosmetic: "Cosmetic dentistry", restorative: "Restorative dentistry", surgical: "Oral surgery", holistic: "Holistic dentistry", preventive: "Jaw & comfort care" };
 
 const WHY_ICONS: IconName[] = ["tooth", "sparkle", "shield", "heart"];
-const R = (n: string, alt: string): SiteImage => ({ src: `/images/real/${n}.jpg`, alt: `${alt} at Valencia Dentistry` });
-/** Rooms first for the full-width call to action (no faces to crop), then other real scenes. */
-const ROOM_POOL: SiteImage[] = [R("treatment-room-2", "A calm treatment room with natural light"), R("treatment-room", "A bright treatment room")];
-const SCENE_POOL: SiteImage[] = [R("xray-screen", "A panoramic X-ray on screen"), R("smile-plan-screen", "A digital smile plan on screen"), R("scan-intraoral", "A digital iTero scan"), R("implant-model-hands", "Showing a patient a dental implant model"), R("scan-hygienist", "A digital scan with a hygienist"), R("cleaning", "A hygienist cleaning a patient's teeth"), R("smile-design", "A patient viewing her smile design on screen"), R("tryin-smile", "A patient smiling during a try-in"), R("xray-consult", "Reviewing implant X-rays with a patient"), R("smile-plan-screen-2", "Explaining a smile plan to a patient"), R("scan-closeup", "A digital scan of a patient's teeth"), R("denture-closeup", "A close look at a full-arch restoration")];
-
 
 export async function ServiceView({ s }: { s: Service }) {
   const all = await getServices();
@@ -38,14 +34,12 @@ export async function ServiceView({ s }: { s: Service }) {
 
   const book = site.bookingUrl;
   const lower = inSentence(s.name);
-  // the category cards claim their photos first, then the sections below pick ones not used yet
-  const childPhotos = distinctPhotos(children, servicePhotos, [s.hero.image.src]);
-  const used = new Set<string>([s.hero.image.src, ...childPhotos.map((p) => p?.src).filter((x): x is string => !!x)]);
-  const take = (pref: (SiteImage | undefined)[], pool: SiteImage[] = SCENE_POOL) => {
-    const pick = [...pref, ...pool].find((im) => im?.src && !used.has(im.src));
-    if (pick) used.add(pick.src);
-    return pick ?? s.hero.image;
-  };
+  // Photos: only the practice's own (image brief). Hero = treatment room (09, from the service JSON); beside the
+  // accordion the matching before/after case on veneer and cosmetic pages (shown whole, never cropped), otherwise
+  // the hallway (10); the closing call to action = reception (01). Steps have no photos (none of the client's fit).
+  const beforeAfter = SERVICE_BEFORE_AFTER[s.slug];
+  const accPhoto = beforeAfter ?? CLIENT.hallway;
+  const ctaPhoto = CLIENT.reception;
   // Benefits & care accordion: what it is, the benefits, who it suits, before/after care, extra notes, tables
   const what = s.understanding.items.length ? s.understanding.items : [];
   const reasons = s.understanding.items.length ? s.why.cards : [];
@@ -58,10 +52,7 @@ export async function ServiceView({ s }: { s: Service }) {
     ...(s.tables ?? []).map((t) => ({ title: t.heading, body: <div className="overflow-x-auto"><table className="w-full min-w-[28rem] text-[0.9375rem]"><thead><tr>{t.rows[0].map((c, i) => <th key={i} scope="col" className="border-b border-white/25 py-2 pr-4 text-left font-semibold text-white">{c}</th>)}</tr></thead><tbody>{t.rows.slice(1).map((r, i) => <tr key={i} className="border-b border-white/10">{r.map((c, j) => <td key={j} className={cn("py-2 pr-4 align-top", j === 0 && "font-semibold text-white")}>{c}</td>)}</tr>)}</tbody></table></div> })),
     ...s.extra.map((e) => ({ title: e.heading, body: <>{e.paragraphs.map((x, i) => <p key={i} className={i ? "mt-3" : undefined}>{x}</p>)}{e.bullets.length > 0 && <ul className="mt-3 list-disc space-y-1 pl-5">{e.bullets.map((x) => <li key={x}>{x}</li>)}</ul>}{e.cards.map((c) => <p key={c.title} className="mt-3"><strong className="text-white">{c.title}.</strong> {c.text}</p>)}</> })),
   ];
-  const accPhoto = take([s.understanding.image, ...s.why.cards.map((c) => c.image)]);
-  const stepPhotos = s.process.steps.map(() => take([s.candidate.image, ...s.why.cards.map((c) => c.image)]));
   const whyPts = (reasons.length ? reasons : what.length ? [] : s.why.cards).slice(0, 4);
-  const ctaPhoto = take([], ROOM_POOL.concat(SCENE_POOL));
 
   return (
     <article>
@@ -84,7 +75,7 @@ export async function ServiceView({ s }: { s: Service }) {
           {children.length > 0 && (
             <div className="mt-12">
               <h3>Treatments in {lower}</h3>
-              <CardList items={children} className="mt-6" avoid={[s.hero.image.src]} />
+              <CardList items={children} className="mt-6" />
             </div>
           )}
         </Container>
@@ -96,7 +87,19 @@ export async function ServiceView({ s }: { s: Service }) {
           <h2 className="uppercase text-white">Benefits &amp; care of {s.name}</h2>
           <p className="mt-2 text-white/80">What {lower} can do for you, who it suits, and what keeps it looking right over the years.</p>
           <div className="mt-10 grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
-            <div className="relative aspect-[4/5] overflow-hidden lg:sticky lg:top-28"><Picture image={accPhoto} fill cropTo={4 / 5} sizes="(min-width: 1024px) 560px, 100vw" className="object-cover object-top" /></div>
+            {beforeAfter ? (
+              // Real patient case: the whole image (before on top, after below), labelled, never cropped
+              <figure className="lg:sticky lg:top-28">
+                <div className="relative mx-auto max-w-md">
+                  <Picture image={beforeAfter} sizes="(min-width: 1024px) 448px, 100vw" className="h-auto w-full" />
+                  <span className="absolute left-3 top-3 bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-ink-900">Before</span>
+                  <span className="absolute bottom-3 left-3 bg-white/90 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-ink-900">After</span>
+                </div>
+                <figcaption className="mx-auto mt-3 max-w-md text-sm text-white/75">A real Valencia Dentistry patient. Before (top) and after (bottom).</figcaption>
+              </figure>
+            ) : (
+              <div className="relative aspect-[4/5] overflow-hidden lg:sticky lg:top-28"><Picture image={accPhoto} fill cropTo={4 / 5} sizes="(min-width: 1024px) 560px, 100vw" className="object-cover" /></div>
+            )}
             <div>
               {acc.map((it, i) => (
                 <details key={it.title + i} className="faq-item group" name="benefits" open={i === 0 || undefined}>
@@ -112,7 +115,7 @@ export async function ServiceView({ s }: { s: Service }) {
         </Container>
       </Section>
 
-      {/* 4. The treatment process: heading and intro on top, then every step with its photo in one row */}
+      {/* 4. The treatment process: heading and intro on top, then every step in one row */}
       {s.process.steps.length > 0 && (
         <Section id="how-it-works" className="scroll-mt-28 bg-warm">
           <Container>
@@ -123,8 +126,7 @@ export async function ServiceView({ s }: { s: Service }) {
             <ol className={cn("mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2", s.process.steps.length === 4 ? "lg:grid-cols-4" : s.process.steps.length === 2 ? "" : "lg:grid-cols-3")}>
               {s.process.steps.map((st, i) => (
                 <li key={st.title + i}>
-                  <div className="relative aspect-[4/3] overflow-hidden"><Picture image={stepPhotos[i]} fill cropTo={4 / 3} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="object-cover object-top" /></div>
-                  <p className="mt-5 text-sm font-semibold text-olive-600">Step {String(i + 1).padStart(2, "0")}</p>
+                  <p className="border-t-2 border-olive-600 pt-5 text-sm font-semibold text-olive-600">Step {String(i + 1).padStart(2, "0")}</p>
                   <h3 className="mt-1 uppercase">{st.title}</h3>
                   <p className="mt-2 text-grey-700">{st.text}</p>
                 </li>

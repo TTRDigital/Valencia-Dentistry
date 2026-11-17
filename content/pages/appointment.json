@@ -24,8 +24,9 @@
       },
       "trust": true,
       "image": {
-        "src": "/images/real/treatment-room-2.jpg",
-        "alt": "A calm treatment room with natural light at Valencia Dentistry"
+        "src": "/images/client/09-treatment-room.jpg",
+        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+        "focus": "center 68%"
       }
     },
     {
@@ -69,24 +70,9 @@
       "note": "Your first visit includes a comprehensive exam and X-rays.",
       "images": [
         {
-          "src": "/images/real/scan-hygienist.jpg",
-          "alt": "A digital scan with a hygienist at Valencia Dentistry"
-        },
-        {
-          "src": "/images/real/cleaning.jpg",
-          "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
-        },
-        {
-          "src": "/images/real/smile-plan-screen.jpg",
-          "alt": "A digital smile plan on screen at Valencia Dentistry"
-        },
-        {
-          "src": "/images/real/smile-plan-5.jpg",
-          "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
-        },
-        {
-          "src": "/images/real/veneer-smile.jpg",
-          "alt": "A patient admiring her smile in a mirror at Valencia Dentistry"
+          "src": "/images/client/10-hallway-front-desk.jpg",
+          "alt": "Valencia Dentistry hallway and front desk",
+          "focus": "center 62%"
         }
       ]
     },

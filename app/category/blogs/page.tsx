@@ -6,7 +6,7 @@ export const metadata: Metadata = buildMetadata({
   title: "Dental Blog | Valencia Dentistry, Santa Clarita",
   description: "Guides on dental implants, crowns, bridges, extractions, bone grafting and oral health from Valencia Dentistry in Santa Clarita, CA.",
   path: "/category/blogs/",
-  image: "/images/team/dr-lavi.jpg",
+  image: "/images/client/01-reception-logo-wall.jpg",
 });
 
 export default function BlogPage() {

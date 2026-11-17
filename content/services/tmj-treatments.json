@@ -14,8 +14,9 @@
     "subtitle": "Get Relief with a TMJ Dentist in Santa Clarita",
     "text": "Restore comfort and function with expert TMJ treatment from Valencia Dentistry",
     "image": {
-      "src": "/images/real/cleaning.jpg",
-      "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -27,10 +28,6 @@
   "understanding": {
     "heading": "What Are TMJ Disorders?",
     "intro": "The temporomandibular joint (TMJ) is the hinge that connects your jawbone to your skull, allowing you to chew, speak, and yawn. When this joint becomes strained, injured, or misaligned, it can lead to temporomandibular disorders (TMD). These conditions often cause ongoing discomfort that affects more than just your jaw. Common causes of TMJ disorders include: At Valencia Dentistry, we take a comprehensive approach to TMJ care. Our goal is to relieve pain, protect your teeth, and restore balance with treatment options tailored to your needs.",
-    "image": {
-      "src": "/images/real/treatment-room-2.jpg",
-      "alt": "A calm treatment room with natural light at Valencia Dentistry"
-    },
     "items": [
       {
         "title": "Custom Night Guards",
@@ -87,27 +84,15 @@
     "cards": [
       {
         "title": "Compassionate, Patient-Centered Care",
-        "text": "Our team is known for a detail-oriented approach and commitment to helping patients feel comfortable and understood.",
-        "image": {
-          "src": "/images/real/smile-plan-5.jpg",
-          "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
-        }
+        "text": "Our team is known for a detail-oriented approach and commitment to helping patients feel comfortable and understood."
       },
       {
         "title": "Advanced Technology",
-        "text": "From digital imaging to precision oral appliances, we use the latest tools to diagnose and treat TMJ disorders effectively.",
-        "image": {
-          "src": "/images/real/treatment-room.jpg",
-          "alt": "A bright treatment room at Valencia Dentistry"
-        }
+        "text": "From digital imaging to precision oral appliances, we use the latest tools to diagnose and treat TMJ disorders effectively."
       },
       {
         "title": "Stress-Free Experience",
-        "text": "With sedation options and a welcoming environment, our office feels less like a clinic and more like a trusted space for care.",
-        "image": {
-          "src": "/images/real/scan-hygienist.jpg",
-          "alt": "TMJ Treatments at Valencia Dentistry: Stress-Free Experience"
-        }
+        "text": "With sedation options and a welcoming environment, our office feels less like a clinic and more like a trusted space for care."
       },
       {
         "title": "Comprehensive Services Under One Roof",
@@ -146,11 +131,7 @@
       "Headaches or earaches",
       "Difficulty chewing or opening your mouth fully",
       "Neck or shoulder pain from muscle tension"
-    ],
-    "image": {
-      "src": "/images/real/veneer-smile.jpg",
-      "alt": ""
-    }
+    ]
   },
   "tables": [],
   "extra": [],

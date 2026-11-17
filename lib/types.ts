@@ -48,13 +48,13 @@ export type Service = {
   /** Light intro: heading + paragraphs (the page's opening section). */
   intro: { heading: string; paragraphs: string[] };
   /** Dark section: heading, intro, photo and an accordion of items (treatment types, benefits). */
-  understanding: { heading: string; intro: string; image: SiteImage; items: ServiceCard[]; bullets?: string[] };
+  understanding: { heading: string; intro: string; image?: SiteImage; items: ServiceCard[]; bullets?: string[] };
   /** Why choose us: heading, intro and photo cards. */
   why: { heading: string; intro: string; cards: ServiceCard[] };
   /** Dark process section: numbered steps. */
   process: { heading: string; intro: string; steps: ServiceCard[] };
   /** Full-bleed banner: who is a good candidate. */
-  candidate: { heading: string; text: string; bullets: string[]; image: SiteImage };
+  candidate: { heading: string; text: string; bullets: string[]; image?: SiteImage };
   /** Optional pre/post care columns. */
   care?: { heading: string; intro?: string; before: string[]; after: string[]; cards?: ServiceCard[] };
   /** Comparison tables flattened on the live site (first row = header). */
@@ -81,6 +81,7 @@ export type Post = {
   datePublished: string;
   dateModified: string;
   author: string;
+  /** Empty string when the post has no photo (a neutral illustrated panel is shown instead) */
   image: string;
   imageAlt: string;
   keyTakeaways: string[];
@@ -119,8 +120,10 @@ export type BeforeAfterCase = {
   id: string;
   title: string;
   treatment: string;
-  before: SiteImage;
-  after: SiteImage;
+  before?: SiteImage;
+  after?: SiteImage;
+  /** One image that already shows before (top) and after (bottom), shown whole */
+  combined?: SiteImage;
   note?: string;
 };
 
@@ -160,7 +163,7 @@ export type TechExplainerSection = { _type: "techExplainer"; eyebrow?: string; h
 export type FeaturedServicesSection = { _type: "featuredServices"; eyebrow?: string; heading: string; lead?: string; slugs: string[]; images?: Record<string, SiteImage>; featuredTags?: string[]; consult?: { heading: string; text: string; buttonLabel: string } };
 export type PhotoTrioSection = { _type: "photoTrio"; heading: string; lead?: string; items: { title: string; text: string; image: SiteImage }[] };
 export type PhotoBannerSection = { _type: "photoBanner"; heading: string; text: string; image: SiteImage; link?: Link };
-export type PhotoStepsSection = { _type: "photoSteps"; label?: string; heading?: string; lead?: string; link?: Link; items: { title: string; text: string; image: SiteImage; link?: Link }[] };
+export type PhotoStepsSection = { _type: "photoSteps"; label?: string; heading?: string; lead?: string; link?: Link; items: { title: string; text: string; image?: SiteImage; link?: Link }[] };
 export type SpecialsSection = { _type: "specials"; heading: string; lead: string; image: SiteImage; facts: { label: string; value: string }[]; offersHeading: string; offers: { tag: string; name: string; text: string; price: string; was?: string; note: string; includes: string[]; terms: string }[]; disclaimer?: string; steps: Step[] };
 export type InsuranceCheckerSection = { _type: "insuranceChecker"; eyebrow?: string; heading: string; lead?: string };
 export type WhyChooseSection = { _type: "whyChoose"; eyebrow?: string; heading: string; lead?: string; image: SiteImage; items: Feature[] };

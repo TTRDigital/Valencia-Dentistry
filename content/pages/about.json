@@ -5,7 +5,11 @@
   "breadcrumb": "Our Practice",
   "seo": {
     "title": "About Valencia Dentistry | Dentist in Santa Clarita",
-    "description": "Meet the Valencia Dentistry team in Santa Clarita: holistic, personal dentistry with 3D imaging, PRF therapy and same-day crowns."
+    "description": "Meet the Valencia Dentistry team in Santa Clarita: holistic, personal dentistry with 3D imaging, PRF therapy and same-day crowns.",
+    "ogImage": {
+      "src": "/images/client/07-dr-lavi-headshot.jpg",
+      "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+    }
   },
   "sections": [
     {
@@ -23,9 +27,8 @@
         "href": "/services/"
       },
       "image": {
-        "src": "/images/real/scan-hygienist.jpg",
-        "alt": "A digital scan with a hygienist at Valencia Dentistry",
-        "focus": "center 18%"
+        "src": "/images/client/01-reception-logo-wall.jpg",
+        "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
       },
       "trust": true
     },
@@ -38,8 +41,8 @@
         "The mission is simple. High-quality dentistry should be accessible, compassionate and truly patient-centered, whether you are here for a routine cleaning or a full smile reconstruction."
       ],
       "image": {
-        "src": "/images/real/smile-plan-5.jpg",
-        "alt": "Reviewing a smile plan on screen with a patient at Valencia Dentistry"
+        "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+        "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
       },
       "imageSide": "right"
     },
@@ -100,88 +103,56 @@
           "title": "3D CBCT imaging",
           "text": "Detailed three-dimensional scans for precise diagnosis and guided implant planning.",
           "forYou": "Implants are planned on your own scan, so there are fewer surprises on the day.",
-          "label": "Advanced diagnostics",
-          "image": {
-            "src": "/images/real/xray-screen.jpg",
-            "alt": "A panoramic X-ray on screen at Valencia Dentistry"
-          }
+          "label": "Advanced diagnostics"
         },
         {
           "icon": "sparkle",
           "title": "iTero digital scanning",
           "text": "Digital impressions for Invisalign, crowns and smile previews.",
           "forYou": "No goopy trays, and you can preview your new smile on screen.",
-          "label": "Digital impressions",
-          "image": {
-            "src": "/images/real/scan-intraoral.jpg",
-            "alt": "A digital iTero scan at Valencia Dentistry"
-          }
+          "label": "Digital impressions"
         },
         {
           "icon": "leaf",
           "title": "PRF therapy",
           "text": "Platelet-rich fibrin from your own blood.",
           "forYou": "Used after surgery and grafting to support your healing.",
-          "label": "Natural healing",
-          "image": {
-            "src": "/images/real/treatment-room-2.jpg",
-            "alt": "A calm treatment room with natural light at Valencia Dentistry"
-          }
+          "label": "Natural healing"
         },
         {
           "icon": "shield",
           "title": "Guided implant surgery",
           "text": "Implants placed with a surgical guide planned on your CBCT scan.",
           "forYou": "Accurate placement that is mapped out before your procedure begins.",
-          "label": "Precise placement",
-          "image": {
-            "src": "/images/real/implant-model-hands.jpg",
-            "alt": "Showing an implant on a model at Valencia Dentistry"
-          }
+          "label": "Precise placement"
         },
         {
           "icon": "bolt",
           "title": "In-house crowns",
           "text": "Custom crowns designed and made on site.",
           "forYou": "Many patients leave with the final crown the same day.",
-          "label": "Same-day crowns",
-          "image": {
-            "src": "/images/real/tryin-smile.jpg",
-            "alt": "A patient smiling during a try-in at Valencia Dentistry"
-          }
+          "label": "Same-day crowns"
         },
         {
           "icon": "smile",
           "title": "Intraoral cameras",
           "text": "Clear close-up images of your teeth.",
           "forYou": "You see what we see, so your options are easier to understand.",
-          "label": "See what we see",
-          "image": {
-            "src": "/images/real/scan-closeup.jpg",
-            "alt": "A digital scan of a patient's teeth at Valencia Dentistry"
-          }
+          "label": "See what we see"
         },
         {
           "icon": "sparkle",
           "title": "Laser dentistry",
           "text": "Precise, gentle treatment of soft tissue.",
           "forYou": "Less bleeding and a faster recovery.",
-          "label": "Gentle treatment",
-          "image": {
-            "src": "/images/real/cleaning.jpg",
-            "alt": "A hygienist cleaning a patient's teeth at Valencia Dentistry"
-          }
+          "label": "Gentle treatment"
         },
         {
           "icon": "heart",
           "title": "Sedation options",
           "text": "Comfort choices for anxious patients and longer procedures.",
           "forYou": "We talk through what would help you relax at your consultation.",
-          "label": "Comfort first",
-          "image": {
-            "src": "/images/real/smile-plan-screen.jpg",
-            "alt": "A digital smile plan on screen at Valencia Dentistry"
-          }
+          "label": "Comfort first"
         }
       ]
     },
@@ -288,8 +259,9 @@
       "heading": "Become part of the family.",
       "text": "Schedule your consultation today. New patients receive a comprehensive exam and X-rays.",
       "image": {
-        "src": "/images/real/smile-design.jpg",
-        "alt": "A patient viewing her smile design on screen at Valencia Dentistry"
+        "src": "/images/client/09-treatment-room.jpg",
+        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+        "focus": "center 68%"
       }
     }
   ]

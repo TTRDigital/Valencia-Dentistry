@@ -14,8 +14,9 @@
     "subtitle": "Straighten Your Teeth with Invisalign in Santa Clarita",
     "text": "Discover the modern alternative to braces with custom Invisalign treatment at Valencia Dentistry.",
     "image": {
-      "src": "/images/real/aligner-patient-2.jpg",
-      "alt": "Invisalign at Valencia Dentistry"
+      "src": "/images/client/09-treatment-room.jpg",
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
+      "focus": "center 68%"
     }
   },
   "intro": {
@@ -25,10 +26,6 @@
   "understanding": {
     "heading": "What Invisalign is",
     "intro": "",
-    "image": {
-      "src": "/images/real/aligner-patient.jpg",
-      "alt": "Invisalign: treatment at Valencia Dentistry"
-    },
     "items": [],
     "bullets": []
   },
@@ -38,27 +35,15 @@
     "cards": [
       {
         "title": "Invisalign-Certified Provider",
-        "text": "Your dentist has advanced training in clear aligner therapy and has helped countless patients achieve confident, lasting results.",
-        "image": {
-          "src": "/images/real/scan-intraoral.jpg",
-          "alt": "A digital iTero scan at Valencia Dentistry"
-        }
+        "text": "Your dentist has advanced training in clear aligner therapy and has helped countless patients achieve confident, lasting results."
       },
       {
         "title": "Advanced 3D Imaging",
-        "text": "Our iTero scanner creates precise digital impressions—no messy molds—and allows you to preview your future smile before starting treatment.",
-        "image": {
-          "src": "/images/real/scan-intraoral-2.jpg",
-          "alt": "Invisalign at Valencia Dentistry: Advanced 3D Imaging"
-        }
+        "text": "Our iTero scanner creates precise digital impressions—no messy molds—and allows you to preview your future smile before starting treatment."
       },
       {
         "title": "Personalized Orthodontic Plans",
-        "text": "We don’t believe in one-size-fits-all. Every Invisalign plan is tailored to your unique dental needs and lifestyle goals.",
-        "image": {
-          "src": "/images/real/smile-plan-screen.jpg",
-          "alt": "A digital smile plan on screen at Valencia Dentistry"
-        }
+        "text": "We don’t believe in one-size-fits-all. Every Invisalign plan is tailored to your unique dental needs and lifestyle goals."
       },
       {
         "title": "Comfort-Focused Office Experience",
@@ -105,11 +90,7 @@
       "An overbite, underbite, or crossbite",
       "Teeth that have shifted after past orthodontic work",
       "A preference for a low-maintenance, discreet solution"
-    ],
-    "image": {
-      "src": "/images/real/veneer-smile.jpg",
-      "alt": ""
-    }
+    ]
   },
   "tables": [
     {
