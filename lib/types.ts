@@ -124,6 +124,8 @@ export type BeforeAfterCase = {
   after?: SiteImage;
   /** One image that already shows before (top) and after (bottom), shown whole */
   combined?: SiteImage;
+  /** The combined image already carries its own Before / After marks, so no label is laid over it */
+  ownLabels?: boolean;
   note?: string;
 };
 

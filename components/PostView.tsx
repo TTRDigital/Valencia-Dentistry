@@ -12,6 +12,7 @@ import { Container } from "@/components/ui/Section";
 import { FaqList } from "@/components/sections/Faq";
 import { Breadcrumbs } from "@/components/ServiceView";
 import { PostCard } from "@/components/blocks/PostCard";
+import { CLIENT } from "@/lib/clientPhotos";
 import { sceneKey } from "@/lib/utils";
 
 export async function PostView({ post }: { post: Post }) {
@@ -40,7 +41,7 @@ export async function PostView({ post }: { post: Post }) {
               </div>
               <h1 className="mt-6 text-5xl">{post.title}</h1>
               <div className="mt-8 inline-flex items-center gap-4 rounded-lg bg-white p-3 pr-6 shadow-lift ring-1 ring-ink-900/5">
-                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full"><Picture image={{ src: "/images/client/07-dr-lavi-headshot.jpg", alt: "" }} sizes="56px" className="h-full w-full object-cover object-top" /></div>
+                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full"><Picture image={{ src: CLIENT.drHeadshot.src, alt: "" }} sizes="56px" className="h-full w-full object-cover object-top" /></div>
                 <div className="text-sm leading-snug">
                   <p className="font-semibold text-ink-900">By {site.doctor.name}</p>
                   <p className="text-grey-600">Dentist and practice owner</p>
@@ -116,7 +117,7 @@ export async function PostView({ post }: { post: Post }) {
 
             <section aria-labelledby="author" className="mt-14 flex flex-col gap-5 rounded-lg bg-greige-50/70 p-6 sm:flex-row sm:p-7">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
-                <Picture image={{ src: "/images/client/07-dr-lavi-headshot.jpg", alt: "Dr. Nuriel Lavi, DDS" }} sizes="96px" className="h-full w-full object-cover object-top" />
+                <Picture image={CLIENT.drCandid} sizes="96px" className="h-full w-full object-cover object-top" />
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.14em] text-olive-600">About the author</p>

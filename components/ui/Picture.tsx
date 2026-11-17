@@ -2,6 +2,7 @@ import Image, { type ImageProps } from "next/image";
 import manifest from "@/lib/generated/images.json";
 import type { SiteImage } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { PHOTO_FOCUS } from "@/lib/clientPhotos";
 
 type Manifest = Record<string, { width: number; height: number; blurDataURL: string; opt?: number[] }>;
 const known = manifest as Manifest;
@@ -46,7 +47,9 @@ export function Picture({ image, alt, fill, sizes: sizesIn, className, priority,
   const sizes = sizesIn && cropTo && width && height ? scaleSizes(sizesIn, width / height / cropTo) : sizesIn;
   const altText = alt ?? img.alt ?? "";
   // A content-defined focal point wins over the component's default object-position class
-  if (img.focus) (rest as { style?: React.CSSProperties }).style = { ...(rest as { style?: React.CSSProperties }).style, objectPosition: img.focus };
+  // ...and a practice photo's own focus (lib/clientPhotos.ts) applies when the slot gives none
+  const focus = img.focus ?? PHOTO_FOCUS[img.src];
+  if (focus) (rest as { style?: React.CSSProperties }).style = { ...(rest as { style?: React.CSSProperties }).style, objectPosition: focus };
 
   if (meta?.opt?.length) {
     const name = img.src.replace(/^.*\//, "").replace(/\.[a-z0-9]+$/i, "");

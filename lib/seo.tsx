@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl, SITE_URL, site } from "./site";
+import { CLIENT } from "@/lib/clientPhotos";
 import type { Faq, Post, Service } from "./types";
 
 /* ---------- Metadata ---------- */
@@ -58,7 +59,7 @@ export function dentistNode(withRating = false) {
     name: site.name,
     url: `${SITE_URL}/`,
     logo: `${SITE_URL}/icon-512.png`,
-    image: `${SITE_URL}/images/client/01-reception-logo-wall.jpg`,
+    image: `${SITE_URL}${CLIENT.reception.src}`,
     telephone: site.phone.tel,
     email: site.email,
     priceRange: site.priceRange,
@@ -87,7 +88,7 @@ export function personNode() {
     familyName: site.doctor.lastName,
     honorificSuffix: site.doctor.credentials,
     jobTitle: "Dentist",
-    image: `${SITE_URL}/images/client/07-dr-lavi-headshot.jpg`,
+    image: `${SITE_URL}${CLIENT.drHeadshot.src}`,
     worksFor: { "@id": IDS.dentist },
     ...(site.doctor.school ? { alumniOf: { "@type": "CollegeOrUniversity", name: site.doctor.school } } : {}),
     url: `${SITE_URL}/about/`,
@@ -144,7 +145,7 @@ export function articleNode(p: Post, wordCount: number) {
     "@id": `${absoluteUrl(p.path)}#article`,
     headline: p.title,
     description: p.description,
-    image: absoluteUrl(p.image || "/images/client/01-reception-logo-wall.jpg"),
+    image: absoluteUrl(p.image || CLIENT.reception.src),
     datePublished: p.datePublished,
     dateModified: p.dateModified || p.datePublished,
     author: { "@id": IDS.person },

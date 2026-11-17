@@ -15,8 +15,7 @@
     "text": "Expert Care for Jawbone Regeneration and Implant Readiness",
     "image": {
       "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-      "focus": "center 68%"
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
     }
   },
   "intro": {
@@ -29,9 +28,8 @@
     "heading": "Types of Bone Grafting Materials We Use",
     "intro": "For patients seeking all-natural, biocompatible treatment options, we offer regenerative techniques that align with holistic values and avoid synthetic materials. These options harness the body’s own healing power for safer, more natural outcomes:",
     "image": {
-      "src": "/images/client/10-hallway-front-desk.jpg",
-      "alt": "Valencia Dentistry hallway and front desk",
-      "focus": "center 62%"
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
     },
     "items": [
       {
@@ -77,16 +75,16 @@
         "title": "Advanced Imaging & PRF Therapy",
         "text": "We use 3D digital scans for surgical accuracy and PRF (Platelet-Rich Fibrin) to enhance healing and reduce recovery time.",
         "image": {
-          "src": "/images/client/07-dr-lavi-headshot.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+          "src": "/images/client/10-hallway-front-desk.jpg",
+          "alt": "Valencia Dentistry hallway and front desk"
         }
       },
       {
         "title": "Comfort-First Care Philosophy",
         "text": "From sedation options to a calming environment, we tailor your experience to reduce anxiety and maximize comfort.",
         "image": {
-          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+          "src": "/images/client/01-reception-logo-wall.jpg",
+          "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
         }
       },
       {
@@ -139,8 +137,8 @@
       "Need to restore stability and function to your bite"
     ],
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/client/07-dr-lavi-headshot.jpg",
+      "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
     }
   },
   "care": {

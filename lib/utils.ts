@@ -1,3 +1,4 @@
+import { CARD_PHOTOS } from "./clientPhotos";
 export function cn(...parts: Array<string | false | null | undefined>) {
   return parts.filter(Boolean).join(" ");
 }
@@ -28,17 +29,23 @@ export function readingTime(text: string) {
 export const sceneKey = (src: string) => src.replace(/^.*\//, "").replace(/\.[a-z]+$/i, "").replace(/-\d+$/, "").split("-").sort().join("-");
 
 /**
- * One photo per item, never repeating a scene within the set: each item takes its first photo
- * whose scene is not already used, falling back to its first photo.
+ * One photo per item, never repeating a scene within the set while unused photos remain: each item
+ * takes its first photo whose scene is not already used; after that, the least used photo that is
+ * not the same as the previous item's.
  */
 export function distinctPhotos<T>(items: T[], photosOf: (item: T) => { src: string; alt: string }[], avoid: string[] = [], backup: { src: string; alt: string }[] = BACKUP_PHOTOS) {
   // Prefer a photo of a scene not shown yet; if every scene is taken, at least use a different shot.
   const used = new Set<string>(avoid.map(sceneKey));
   const usedSrc = new Set<string>(avoid);
+  // With only a handful of photos a long set has to repeat: then take the least used one,
+  // never the photo of the item right before it.
+  const count = new Map<string, number>();
+  let prev = "";
   return items.map((it) => {
     const list = [...photosOf(it), ...backup];
-    const pick = list.find((p) => !used.has(sceneKey(p.src))) ?? list.find((p) => !usedSrc.has(p.src)) ?? list[0];
-    if (pick) { used.add(sceneKey(pick.src)); usedSrc.add(pick.src); }
+    const pick = list.find((p) => !used.has(sceneKey(p.src))) ?? list.find((p) => !usedSrc.has(p.src))
+      ?? [...list].filter((p) => p.src !== prev).sort((a, b) => (count.get(a.src) ?? 0) - (count.get(b.src) ?? 0))[0] ?? list[0];
+    if (pick) { used.add(sceneKey(pick.src)); usedSrc.add(pick.src); count.set(pick.src, (count.get(pick.src) ?? 0) + 1); prev = pick.src; }
     return pick;
   });
 }
@@ -64,6 +71,5 @@ export function cardGrid(n: number, wideCols: 3 | 4 = 3, wideAt: "lg" | "xl" = "
   return { ul: cn("grid grid-cols-2", wide), featured, first: featured ? cn("col-span-2", unspan && UNSPAN[wideAt]) : "", unspanAt: unspan ? wideAt : null };
 }
 
-const B = (n: string, alt: string) => ({ src: `/images/client/${n}.jpg`, alt });
-/** The practice's own photos, used when a card has no unused photo of its own. */
-export const BACKUP_PHOTOS = [B("09-treatment-room", "Bright treatment room at Valencia Dentistry with dental chair and windows"), B("10-hallway-front-desk", "Valencia Dentistry hallway and front desk"), B("01-reception-logo-wall", "Valencia Dentistry reception area with illuminated logo wall and modern seating"), B("05-dr-lavi-headshot-loupes", "Dr. Nuriel Lavi, DDS, wearing dental loupes"), B("07-dr-lavi-headshot", "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"), B("02-dr-lavi-seated-candid", "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office")];
+/** The practice's own card photos, used when an item has no unused photo of its own. */
+export const BACKUP_PHOTOS = CARD_PHOTOS;

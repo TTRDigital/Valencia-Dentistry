@@ -6,6 +6,7 @@ import { Picture } from "@/components/ui/Picture";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container, Section } from "@/components/ui/Section";
 import { cardGrid, cn, distinctPhotos } from "@/lib/utils";
+import { CARD_PHOTOS } from "@/lib/clientPhotos";
 
 const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
   { key: "cosmetic", title: "Cosmetic Dentistry", text: "Refinements that look like you, only brighter: veneers, Invisalign, whitening and tooth-colored fillings." },
@@ -20,8 +21,8 @@ const GROUPS: { key: ServiceCategory; title: string; text: string }[] = [
  * `featured` cards span two columns (see cardGrid) with a wider image; `unspanAt` returns them
  * to a normal card where the grid widens to a single row.
  */
-/** A service's real photos, hero first. */
-export const servicePhotos = (s: Service): SiteImage[] => [s.hero.image, s.understanding.image, ...s.why.cards.map((c) => c.image), s.candidate.image].filter((x): x is SiteImage => !!x?.src);
+/** Photos a service card may show: its hero first, then the practice's card photos (lib/clientPhotos.ts). */
+export const servicePhotos = (s: Service): SiteImage[] => [s.hero.image, ...CARD_PHOTOS];
 
 export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt, image }: { s: Service; featured?: boolean; className?: string; unspanAt?: "lg" | "xl" | null; sharesRowAt?: "lg" | "xl" | null; image?: SiteImage }) {
   // Cards are two-row subgrids (image, text), so cards in one row share both row heights: images,

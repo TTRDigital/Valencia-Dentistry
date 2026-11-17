@@ -14,9 +14,8 @@
     "subtitle": "Natural Dental Care That Supports Whole-Body Wellness",
     "text": "",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-      "focus": "center 68%"
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk"
     }
   },
   "intro": {
@@ -29,9 +28,8 @@
     "heading": "What Is Holistic Dentistry and How Is It Different?",
     "intro": "Holistic dentistry looks at the mouth as a window to your overall health. At Valencia Dentistry, we take a biological, whole-body approach—using non-toxic materials, focusing on prevention, and avoiding unnecessary procedures. It’s ideal for patients seeking safer, more mindful dental care. Core principles we follow: At Valencia Dentistry, our holistic dental treatments are designed to protect both your oral health and your overall well-being. Each treatment is rooted in a commitment to safe materials, gentle techniques, and personalized dental care that aligns with your body’s natural healing processes. Safe Amalgam Removal SMART-certified techniques to safely remove old silver fillings Fluoride-Free Cleanings Gentle preventive care using alternative remineralizing agents Non-Metal Restorations Durable, aesthetic crowns and bridges free from toxic metals Holistic Periodontal Therapy Gum care that reduces inflammation and supports systemic health",
     "image": {
-      "src": "/images/client/10-hallway-front-desk.jpg",
-      "alt": "Valencia Dentistry hallway and front desk",
-      "focus": "center 62%"
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
     },
     "items": [],
     "bullets": [
@@ -80,8 +78,8 @@
       "Whole-body support through minimally invasive care and natural therapies"
     ],
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/client/07-dr-lavi-headshot.jpg",
+      "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
     }
   },
   "tables": [],

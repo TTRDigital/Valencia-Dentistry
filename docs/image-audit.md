@@ -18,20 +18,20 @@ Replacements are the client's photos, IDs 01-10 from the brief, in `public/image
 | `/brand/logo-*.svg`, `/logo.svg` | header, footer | Valencia Dentistry logo | Keep | Practice's own logo |
 | `/images/insurance/*.png` | insurance strips | Insurance company logos | Keep | Generic non-office graphics |
 | `/images/map/office-map-*.webp` | contact, visit sections | Street map of the office | Keep | Generic map graphic |
-| `/images/cases/case-1-after.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-1-before.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-2-after.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-2-before.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-3-after.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-3-before.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-4-after.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-4-before.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-5-after.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-5-before.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-6-after.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/case-6-before.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/implant-after.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
-| `/images/cases/implant-before.jpg` | home, testimonials, before-after (case photos) | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-1-after.jpg` | home, testimonials, before-after | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-1-before.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-2-after.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-2-before.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-3-after.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-3-before.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-4-after.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-4-before.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-5-after.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-5-before.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-6-after.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/case-6-before.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/implant-after.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
+| `/images/cases/implant-before.jpg` | home, testimonials, before-after  | Close-up of teeth only (no office, staff or model) | Keep | None of the brief's flags apply. Origin to confirm with the client (see below). |
 
 ## Flagged
 
@@ -106,10 +106,12 @@ Page(s) = where the file appeared in the last committed version. "Service photo 
 
 ### Service and blog rules
 
-- Layouts are unchanged from the live site; every photo spot keeps a photo. With six office/doctor photos, some repeat on a page.
-- Treatment pages: hero 09; photo beside "Benefits & care" 10 (Veneers 08, Cosmetic Dentistry 03, shown whole); process steps and service cards use the client photos in turn; closing banner 01 or 10.
-- Blog: post photos are the client photos in turn; author photo 07.
+- Layouts are unchanged from the live site; every photo spot keeps a photo. With six office/doctor photos some repeat on a page, never side by side.
+- Treatment pages: hero alternates 09 / 10; beside "Benefits & care" 01 or a photo not yet used (Veneers 08, Cosmetic Dentistry 03, whole, labelled); process steps 07, the other room, 05; closing banner the other room.
+- Service cards: 09, 10, 01, 07, 05 in turn (no 02, too small for these frames).
+- Blog: 09, 10, 01, 05 in turn in listing order; author photo 07 (header) and 02 (author box).
 - Before & After gallery: 03, 04 and 06 replace three older cases (08 is not on that page, so 06 and 08 never share a page).
+- Crop focus for every client photo lives in lib/clientPhotos.ts.
 
 ## Notes
 

@@ -3,13 +3,19 @@
  * service pages (the crawl's extracted markdown), keeping the live site's
  * wording, with the dentist's name updated, in the Ideal Dental Solutions
  * page structure. Photos: only the practice's own (public/images/client, see docs/image-audit.md):
- * the treatment room (09) as the hero; the other sections have no photos.
+ * heroes alternate between the treatment room (09) and the hallway (10); the stored section
+ * photos match content/services. Pages pick their other photos in components/ServiceView.tsx.
  *
  *   node --experimental-strip-types scripts/build-services.ts <crawl-dir>
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { inSentence } from "../lib/utils.ts";
+import { CLIENT, ROOMS } from "../lib/clientPhotos.ts";
+
+/** Hero photo: the two rooms in turn, in path order, matching content/services (see docs/image-audit.md). */
+const ROOM_BY_PATH = (path: string) => ROOMS[[...SERVICES].sort((a, b) => (a.path < b.path ? -1 : 1)).findIndex((x) => x.path === path) % 2];
+const pic = (im: { src: string; alt: string }) => ({ src: im.src, alt: im.alt });
 
 const CRAWL = process.argv[2];
 const ROOT = new URL("..", import.meta.url).pathname;
@@ -156,12 +162,12 @@ for (const svc of SERVICES) {
     slug: svc.slug, path: svc.path, parentPath: svc.parent, category: svc.category, name: svc.name,
     shortDescription: SHORT[svc.slug],
     seo: existing?.seo ?? { title: `${svc.name} in Santa Clarita | Valencia Dentistry`, description: heroText.slice(0, 152) },
-    hero: { h1, subtitle: intro[0]?.heading || svc.name, text: heroText, image: { src: "/images/client/09-treatment-room.jpg", alt: "Bright treatment room at Valencia Dentistry with dental chair and windows", focus: "center 68%" } },
+    hero: { h1, subtitle: intro[0]?.heading || svc.name, text: heroText, image: pic(ROOM_BY_PATH(svc.path)) },
     intro: { heading: intro[0]?.heading ?? `${svc.name} at Valencia Dentistry`, paragraphs: intro.length ? paras(intro) : paras(understanding).slice(0, 1) },
-    understanding: { heading: understanding[0]?.heading ?? `What ${inSentence(svc.name)} is`, intro: paras(understanding).join(" ") || paras(benefits).join(" "), items: uItems, bullets: uBullets },
-    why: { heading: why[0]?.heading ?? `Why choose Valencia Dentistry for ${inSentence(svc.name)}?`, intro: paras(why).join(" "), cards: cardsFrom(why) },
+    understanding: { heading: understanding[0]?.heading ?? `What ${inSentence(svc.name)} is`, intro: paras(understanding).join(" ") || paras(benefits).join(" "), image: pic(CLIENT.reception), items: uItems, bullets: uBullets },
+    why: { heading: why[0]?.heading ?? `Why choose Valencia Dentistry for ${inSentence(svc.name)}?`, intro: paras(why).join(" "), cards: cardsFrom(why).map((c, i) => (i < 3 ? { ...c, image: pic([CLIENT.drLoupes, ROOMS.find((r) => r.src !== ROOM_BY_PATH(svc.path).src)!, CLIENT.reception][i]) } : c)) },
     process: { heading: process[0]?.heading ?? `Our ${inSentence(svc.name)} process`, intro: paras(process).join(" "), steps },
-    candidate: { heading: candidate[0]?.heading ?? `Are you a good candidate for ${inSentence(svc.name)}?`, text: paras(candidate).join(" "), bullets: candBullets },
+    candidate: { heading: candidate[0]?.heading ?? `Are you a good candidate for ${inSentence(svc.name)}?`, text: paras(candidate).join(" "), bullets: candBullets, image: pic(CLIENT.drHeadshot) },
     ...(care.length ? { care: { heading: care[0].heading, intro: paras(care).join(" ").replace(/\s*(Before|After) Your [^.:]*:?\s*(Before|After) Your [^.:]*:?\s*$/i, "").replace(/\s*(Before|After) Your [^.:]{0,60}:?\s*$/i, "").trim(), before: dedupe(care[0].bullets.slice(0, Math.ceil(care[0].bullets.length / 2))), after: dedupe([...care[0].bullets.slice(Math.ceil(care[0].bullets.length / 2)), ...care.slice(1).flatMap((x) => x.bullets)]), cards: cardsFrom(care) } } : {}),
     tables,
     extra: list.filter((x) => x.heading && (x.paragraphs.length || x.cards.length || x.bullets.length)).map((x) => ({ heading: x.heading, paragraphs: x.paragraphs, bullets: x.bullets, cards: x.cards })),

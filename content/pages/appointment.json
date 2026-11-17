@@ -25,8 +25,7 @@
       "trust": true,
       "image": {
         "src": "/images/client/09-treatment-room.jpg",
-        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-        "focus": "center 68%"
+        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
       }
     },
     {
@@ -71,8 +70,7 @@
       "images": [
         {
           "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk",
-          "focus": "center 62%"
+          "alt": "Valencia Dentistry hallway and front desk"
         },
         {
           "src": "/images/client/01-reception-logo-wall.jpg",
@@ -87,8 +85,8 @@
           "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
         },
         {
-          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       ]
     },

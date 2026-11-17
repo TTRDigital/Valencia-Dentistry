@@ -15,8 +15,8 @@
       "heading": "A Gentle, Conservative Approach",
       "lead": "We preserve as much of your natural tooth structure as possible and plan every smile on digital imaging, so the result looks natural and lasts.",
       "image": {
-        "src": "/images/client/01-reception-logo-wall.jpg",
-        "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+        "src": "/images/client/09-treatment-room.jpg",
+        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
       },
       "primary": {
         "label": "Schedule Appointment",
@@ -45,9 +45,8 @@
           "title": "Book Your Consultation",
           "text": "Every great smile starts with a conversation about what you want and how to get there.",
           "image": {
-            "src": "/images/client/09-treatment-room.jpg",
-            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-            "focus": "center 68%"
+            "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
+            "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
           },
           "link": {
             "label": "Book online",
@@ -59,16 +58,15 @@
           "text": "Treatment is planned on 3D imaging and done carefully, so the result looks natural.",
           "image": {
             "src": "/images/client/10-hallway-front-desk.jpg",
-            "alt": "Valencia Dentistry hallway and front desk",
-            "focus": "center 62%"
+            "alt": "Valencia Dentistry hallway and front desk"
           }
         },
         {
           "title": "Feel the Difference",
           "text": "Routine visits keep your new smile healthy for years.",
           "image": {
-            "src": "/images/client/02-dr-lavi-seated-candid.jpg",
-            "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+            "src": "/images/client/07-dr-lavi-headshot.jpg",
+            "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
           }
         }
       ]

@@ -10,6 +10,7 @@ import { Icon, type IconName } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Container, Section } from "@/components/ui/Section";
 import { cn, distinctPhotos, inSentence } from "@/lib/utils";
+import { CLIENT, ROOMS, SERVICE_BEFORE_AFTER } from "@/lib/clientPhotos";
 
 export { Breadcrumbs };
 
@@ -22,15 +23,6 @@ const PARENT_NAMES: Record<string, string> = {
 const CATEGORY_LABEL: Record<string, string> = { cosmetic: "Cosmetic dentistry", restorative: "Restorative dentistry", surgical: "Oral surgery", holistic: "Holistic dentistry", preventive: "Jaw & comfort care" };
 
 const WHY_ICONS: IconName[] = ["tooth", "sparkle", "shield", "heart"];
-const R = (n: string, alt: string, focus?: string): SiteImage => ({ src: `/images/client/${n}.jpg`, alt, ...(focus ? { focus } : {}) });
-/** The practice's own photos only (image brief): rooms first for the full-width call to action, then the rest. */
-const ROOM_POOL: SiteImage[] = [R("01-reception-logo-wall", "Valencia Dentistry reception area with illuminated logo wall and modern seating"), R("10-hallway-front-desk", "Valencia Dentistry hallway and front desk", "center 62%")];
-const SCENE_POOL: SiteImage[] = [R("10-hallway-front-desk", "Valencia Dentistry hallway and front desk", "center 62%"), R("05-dr-lavi-headshot-loupes", "Dr. Nuriel Lavi, DDS, wearing dental loupes"), R("07-dr-lavi-headshot", "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"), R("02-dr-lavi-seated-candid", "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"), R("01-reception-logo-wall", "Valencia Dentistry reception area with illuminated logo wall and modern seating"), R("09-treatment-room", "Bright treatment room at Valencia Dentistry with dental chair and windows", "center 68%")];
-/** Real before/after photos, only on the matching treatment page, shown whole (never cropped). */
-const BEFORE_AFTER: Record<string, SiteImage> = {
-  veneers: R("08-before-after-veneers-front", "Before and after full upper veneers, front view"),
-  "cosmetic-dentistry": R("03-before-after-smile-bonding", "Before and after cosmetic smile correction at Valencia Dentistry"),
-};
 
 export async function ServiceView({ s }: { s: Service }) {
   const all = await getServices();
@@ -45,14 +37,14 @@ export async function ServiceView({ s }: { s: Service }) {
   // the category cards claim their photos first, then the sections below pick ones not used yet
   const childPhotos = distinctPhotos(children, servicePhotos, [s.hero.image.src]);
   const used = new Set<string>([s.hero.image.src, ...childPhotos.map((p) => p?.src).filter((x): x is string => !!x)]);
-  let spare = 0;
-  const take = (pref: (SiteImage | undefined)[], pool: SiteImage[] = SCENE_POOL) => {
-    const pick = [...pref, ...pool].find((im) => im?.src && !used.has(im.src));
-    if (pick) used.add(pick.src);
-    if (pick) return pick;
-    // only six photos of the practice: once all are used, repeat them in turn
-    const again = pool[spare++ % pool.length];
-    return again;
+  // Photos (lib/clientPhotos.ts): the hero is one of the two rooms; the other room closes the page.
+  // The rest prefer photos not used yet on the page, by role, and never repeat side by side.
+  const heroRoom = s.hero.image;
+  const otherRoom = ROOMS.find((r) => r.src !== heroRoom.src) ?? CLIENT.hallway;
+  const pickFrom = (prefs: SiteImage[], not = "") => {
+    const pick = prefs.find((im) => !used.has(im.src) && im.src !== not) ?? prefs.find((im) => im.src !== not) ?? prefs[0];
+    used.add(pick.src);
+    return pick;
   };
   // Benefits & care accordion: what it is, the benefits, who it suits, before/after care, extra notes, tables
   const what = s.understanding.items.length ? s.understanding.items : [];
@@ -66,11 +58,16 @@ export async function ServiceView({ s }: { s: Service }) {
     ...(s.tables ?? []).map((t) => ({ title: t.heading, body: <div className="overflow-x-auto"><table className="w-full min-w-[28rem] text-[0.9375rem]"><thead><tr>{t.rows[0].map((c, i) => <th key={i} scope="col" className="border-b border-white/25 py-2 pr-4 text-left font-semibold text-white">{c}</th>)}</tr></thead><tbody>{t.rows.slice(1).map((r, i) => <tr key={i} className="border-b border-white/10">{r.map((c, j) => <td key={j} className={cn("py-2 pr-4 align-top", j === 0 && "font-semibold text-white")}>{c}</td>)}</tr>)}</tbody></table></div> })),
     ...s.extra.map((e) => ({ title: e.heading, body: <>{e.paragraphs.map((x, i) => <p key={i} className={i ? "mt-3" : undefined}>{x}</p>)}{e.bullets.length > 0 && <ul className="mt-3 list-disc space-y-1 pl-5">{e.bullets.map((x) => <li key={x}>{x}</li>)}</ul>}{e.cards.map((c) => <p key={c.title} className="mt-3"><strong className="text-white">{c.title}.</strong> {c.text}</p>)}</> })),
   ];
-  const beforeAfter = BEFORE_AFTER[s.slug];
-  const accPhoto = beforeAfter ?? take([s.understanding.image, ...s.why.cards.map((c) => c.image)]);
-  const stepPhotos = s.process.steps.map(() => take([s.candidate.image, ...s.why.cards.map((c) => c.image)]));
+  const beforeAfter = SERVICE_BEFORE_AFTER[s.slug];
+  // beside the accordion: an unused photo; if the category cards above took them all, the hero room (two sections up)
+  const accFresh = [CLIENT.reception, CLIENT.drHeadshot, CLIENT.drLoupes, otherRoom].find((im) => !used.has(im.src));
+  const accPhoto = beforeAfter ?? (accFresh ? pickFrom([accFresh]) : heroRoom);
+  // steps: meeting the doctor, the treatment room, the doctor at work, the practice
+  const STEP_PREFS = [[CLIENT.drHeadshot, CLIENT.drLoupes], [otherRoom, heroRoom], [CLIENT.drLoupes, CLIENT.reception, CLIENT.drHeadshot], [CLIENT.reception, otherRoom, heroRoom]];
+  const stepPhotos: SiteImage[] = [];
+  s.process.steps.forEach((_, i) => stepPhotos.push(pickFrom(STEP_PREFS[i % STEP_PREFS.length], stepPhotos[i - 1]?.src)));
   const whyPts = (reasons.length ? reasons : what.length ? [] : s.why.cards).slice(0, 4);
-  const ctaPhoto = take([], ROOM_POOL); // full width: office photos only (02 is too small)
+  const ctaPhoto = otherRoom; // full width under an olive veil: a room, never text over the logo wall
 
   return (
     <article>
@@ -105,7 +102,16 @@ export async function ServiceView({ s }: { s: Service }) {
           <h2 className="uppercase text-white">Benefits &amp; care of {s.name}</h2>
           <p className="mt-2 text-white/80">What {lower} can do for you, who it suits, and what keeps it looking right over the years.</p>
           <div className="mt-10 grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
-            <div className="relative aspect-[4/5] overflow-hidden lg:sticky lg:top-28">{beforeAfter ? <Picture image={beforeAfter} fill sizes="(min-width: 1024px) 560px, 100vw" className="object-contain" /> : <Picture image={accPhoto} fill cropTo={4 / 5} sizes="(min-width: 1024px) 560px, 100vw" className="object-cover object-top" />}</div>
+            <div className="relative aspect-[4/5] overflow-hidden lg:sticky lg:top-28">{beforeAfter ? (
+              // A real patient case, shown whole on an ivory mat (never cropped), labelled before (top) and after (bottom)
+              <span className="absolute inset-0 flex items-center justify-center bg-offwhite p-3 sm:p-4">
+                <span className="relative h-full w-full">
+                  <Picture image={beforeAfter} fill sizes="(min-width: 1024px) 560px, 100vw" className="object-contain" />
+                  <span className="absolute left-1/2 top-2 -translate-x-1/2 rounded-sm bg-olive-900/85 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">Before</span>
+                  <span className="absolute bottom-2 left-1/2 -translate-x-1/2 rounded-sm bg-olive-900/85 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">After</span>
+                </span>
+              </span>
+            ) : <Picture image={accPhoto} fill cropTo={4 / 5} sizes="(min-width: 1024px) 560px, 100vw" className="object-cover object-top" />}</div>
             <div>
               {acc.map((it, i) => (
                 <details key={it.title + i} className="faq-item group" name="benefits" open={i === 0 || undefined}>

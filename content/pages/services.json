@@ -24,8 +24,7 @@
       },
       "image": {
         "src": "/images/client/09-treatment-room.jpg",
-        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-        "focus": "center 68%"
+        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
       },
       "trust": true
     },
@@ -70,9 +69,8 @@
       "heading": "Begin with a new patient exam.",
       "text": "A thorough exam, digital X-rays and an unhurried conversation with your dentist about what you need and what you can wait on.",
       "image": {
-        "src": "/images/client/10-hallway-front-desk.jpg",
-        "alt": "Valencia Dentistry hallway and front desk",
-        "focus": "center 62%"
+        "src": "/images/client/01-reception-logo-wall.jpg",
+        "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
       }
     }
   ]

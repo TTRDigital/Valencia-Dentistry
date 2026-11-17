@@ -14,9 +14,8 @@
     "subtitle": "Confident, Comfortable Smiles Start Here",
     "text": "",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-      "focus": "center 68%"
+      "src": "/images/client/10-hallway-front-desk.jpg",
+      "alt": "Valencia Dentistry hallway and front desk"
     }
   },
   "intro": {
@@ -29,9 +28,8 @@
     "heading": "What Are All-On-X Dental Implants?",
     "intro": "All-On-X dental implants are a full-arch restoration solution that replaces an entire row of missing or failing teeth using just four strategically placed implants. Instead of placing an implant for every single tooth, this innovative approach uses the front implants vertically and the back implants at an angle to maximize contact with the jawbone—often eliminating the need for bone grafting. It’s a streamlined, stable, and long-lasting solution ideal for patients looking to transition away from removable dentures or restore their smile after significant tooth loss.",
     "image": {
-      "src": "/images/client/10-hallway-front-desk.jpg",
-      "alt": "Valencia Dentistry hallway and front desk",
-      "focus": "center 62%"
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
     },
     "items": [],
     "bullets": []
@@ -52,16 +50,16 @@
         "title": "Advanced Technology for Better Outcomes",
         "text": "From CBCT 3D imaging to guided implant placement and PRF therapy for faster healing, we use the latest tools to ensure accuracy and success.",
         "image": {
-          "src": "/images/client/07-dr-lavi-headshot.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {
         "title": "Same-Day Smiles with Fewer Appointments",
         "text": "Our All-On-4 patients leave the office with a secure, natural-looking temporary bridge the same day their implants are placed.",
         "image": {
-          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+          "src": "/images/client/01-reception-logo-wall.jpg",
+          "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
         }
       },
       {
@@ -106,8 +104,8 @@
       "Fixed (non-removable) for superior stability and confidence"
     ],
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/client/07-dr-lavi-headshot.jpg",
+      "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
     }
   },
   "care": {

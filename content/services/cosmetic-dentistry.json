@@ -15,8 +15,7 @@
     "text": "Let the Valencia Dentistry team help you achieve a confident, radiant smile with the top cosmetic dentistry in Santa Clarita.",
     "image": {
       "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows",
-      "focus": "center 68%"
+      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
     }
   },
   "intro": {
@@ -27,9 +26,8 @@
     "heading": "What Is Cosmetic Dentistry and Why It Matters",
     "intro": "Cosmetic dentistry enhances the look of your smile by addressing issues like discoloration, uneven teeth, and gaps—but at Valencia Dentistry, it goes deeper. Under our care, every treatment is personalized to boost your confidence and deliver beautiful, natural-looking results with advanced, comfortable techniques. Common concerns cosmetic dentistry can address: At Valencia Dentistry, we offer a full range of cosmetic dental treatments designed to help you achieve a natural-looking smile you’ll love. Whether you’re looking for subtle improvements or a full smile makeover in Santa Clarita, our experienced team provides modern, minimally invasive solutions tailored to your goals.",
     "image": {
-      "src": "/images/client/10-hallway-front-desk.jpg",
-      "alt": "Valencia Dentistry hallway and front desk",
-      "focus": "center 62%"
+      "src": "/images/client/01-reception-logo-wall.jpg",
+      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
     },
     "items": [
       {
@@ -101,16 +99,16 @@
         "title": "Modern Technology",
         "text": "From digital smile previews to guided Invisalign planning, we use today’s most effective tools to ensure natural, lasting results.",
         "image": {
-          "src": "/images/client/07-dr-lavi-headshot.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+          "src": "/images/client/10-hallway-front-desk.jpg",
+          "alt": "Valencia Dentistry hallway and front desk"
         }
       },
       {
         "title": "Same-Day Appointments",
         "text": "We respect your time with flexible scheduling and convenient care, perfect for busy professionals and families alike.",
         "image": {
-          "src": "/images/client/02-dr-lavi-seated-candid.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, smiling in the Valencia Dentistry office"
+          "src": "/images/client/01-reception-logo-wall.jpg",
+          "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
         }
       },
       {
@@ -146,8 +144,8 @@
     "text": "",
     "bullets": [],
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/client/07-dr-lavi-headshot.jpg",
+      "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
     }
   },
   "tables": [],
