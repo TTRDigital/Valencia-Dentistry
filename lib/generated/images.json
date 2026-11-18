@@ -530,28 +530,14 @@
    2400
   ]
  },
- "/images/stock/intraoral-scanner-device.jpg": {
-  "width": 2400,
-  "height": 1600,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoMAAgAA4BaJZwCw7D0g5+2BAAA/sblrC9bXuGw4rZGkVIIYy3jIAAA",
+ "/images/stock/itero-scanner.jpg": {
+  "width": 958,
+  "height": 740,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoMAAkAA4BaJZgCdAD0TXI/kAD+xxn2418HfolxN5yMKRgVMwTAW3B27zZgcWNptf4AAA==",
   "opt": [
    480,
    768,
-   1080,
-   1440,
-   2400
-  ]
- },
- "/images/stock/intraoral-scanner-in-use.jpg": {
-  "width": 2400,
-  "height": 1600,
-  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoMAAgAA4BaJQBOgBrc8jnAAP7F8BrcPEvbTH4HMe5PskleqoYJ7Auz4yAVh5o2iGMUSuk2AAA=",
-  "opt": [
-   480,
-   768,
-   1080,
-   1440,
-   2400
+   958
   ]
  },
  "/images/stock/jaw-pain-compress.jpg": {
