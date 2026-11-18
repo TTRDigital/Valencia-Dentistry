@@ -22,7 +22,8 @@
       },
       "image": {
         "src": "/images/client/01-reception-logo-wall.jpg",
-        "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+        "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating",
+        "focus": "center 18%"
       },
       "trust": false,
       "typed": "Beautiful, Healthy Smiles"
@@ -63,8 +64,8 @@
       "heading": "A New Standard in Dentistry",
       "text": "It's not just about teeth. It's about the confidence a healthy smile gives you every day.",
       "image": {
-        "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-        "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+        "src": "/images/client/09-treatment-room.jpg",
+        "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
       },
       "link": {
         "label": "Schedule a Consultation",
@@ -126,23 +127,6 @@
       ]
     },
     {
-      "_type": "newPatient",
-      "heading": "Free Invisalign Consultation",
-      "text": "New patients welcome. Find out if Invisalign is right for you with a free consultation, no obligation.",
-      "bullets": [
-        "Digital iTero scan",
-        "Exam with Dr. Lavi",
-        "Personalized treatment plan",
-        "Cost and timeline estimate"
-      ],
-      "image": {
-        "src": "/images/stock/clear-aligner-smile.jpg",
-        "alt": "Smiling patient holding a clear aligner"
-      },
-      "buttonLabel": "Book your free consult",
-      "fine": "Cash and most PPO plans accepted. Now seeing new patients on Wednesdays."
-    },
-    {
       "_type": "doctorIntro",
       "heading": "Meet Dr. Nuriel Lavi, DDS",
       "image": {
@@ -184,8 +168,8 @@
           "title": "Transform Your Smile",
           "text": "Your treatment is planned on 3D imaging and done carefully, so the result looks natural and lasts.",
           "image": {
-            "src": "/images/client/09-treatment-room.jpg",
-            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+            "src": "/images/stock/veneer-placement.jpg",
+            "alt": "Porcelain veneer being placed on a smiling patient's front teeth"
           }
         },
         {

@@ -35,7 +35,7 @@ and every office and doctor photo are the practice's own (`public/images/client/
 | `smiling-man-chair.jpg` | Smiling man in the dental chair | [Pexels](https://www.pexels.com/photo/3845551/) | pages/before-after, treatment pages (result step, in turn) |
 | `relaxed-woman-chair.jpg` | Relaxed patient sitting comfortably in the dental chair | [Pexels](https://www.pexels.com/photo/4971499/) | posts/do-dental-implants-hurt-recovery-pain-healing-guide, treatment pages (result step, in turn) |
 | `smiling-woman-chair.jpg` | Patient smiling in the dental chair before her visit | [Pexels](https://www.pexels.com/photo/7803058/) | treatment pages (result step, in turn) |
-| `clear-aligner-smile.jpg` | Smiling patient holding a clear aligner | [Pexels](https://www.pexels.com/photo/11887613/) | services/invisalign, pages/home, services/invisalign (hero) |
+| `clear-aligner-smile.jpg` | Smiling patient holding a clear aligner | [Pexels](https://www.pexels.com/photo/11887613/) | services/invisalign, services/invisalign (hero) |
 | `aligners-in-hands.jpg` | Clear aligners held in the hands | [Pexels](https://www.pexels.com/photo/28407749/) | services/invisalign, services/invisalign (benefits & care) |
 | `whitening-light.jpg` | In-office teeth whitening with a whitening light | [Pexels](https://www.pexels.com/photo/5622271/) | services/teeth-whitening, services/teeth-whitening (hero) |
 | `veneer-shade-samples.jpg` | Porcelain veneer samples in a range of natural shades | [Pexels](https://www.pexels.com/photo/6812496/) | services/veneers, services/veneers (benefits & care) |
@@ -59,7 +59,7 @@ and every office and doctor photo are the practice's own (`public/images/client/
 | `jaw-pain-compress.jpg` | Woman holding a cold compress to her aching jaw | [Pexels](https://www.pexels.com/photo/5624170/) | services/tmj-treatments, services/tmj-treatments (hero) |
 | `night-guard.jpg` | Clear night guard to protect the teeth and jaw from grinding | [Pexels](https://www.pexels.com/photo/10896129/) | services/tmj-treatments, services/tmj-treatments (benefits & care) |
 | `toothache-man.jpg` | Man with a toothache holding his cheek | [Pexels](https://www.pexels.com/photo/6809670/) | pages/emergency-dental |
-| `veneer-placement.jpg` | Porcelain veneer being placed on a smiling patient's front teeth | [Pexels](https://www.pexels.com/photo/6627571/) | services/veneers, services/veneers (hero) |
+| `veneer-placement.jpg` | Porcelain veneer being placed on a smiling patient's front teeth | [Pexels](https://www.pexels.com/photo/6627571/) | services/veneers, pages/home, services/veneers (hero) |
 | `panoramic-scan-patient.jpg` | Patient having a panoramic X-ray to check the wisdom teeth | [Pexels](https://www.pexels.com/photo/6812451/) | services/wisdom-teeth-removal, services/wisdom-teeth-removal (benefits & care) |
 | `brushing-teeth-routine.jpg` | Patient brushing her teeth as part of a daily routine | [Pexels](https://www.pexels.com/photo/27176924/) | services/invisalign (process step 3), services/teeth-whitening (process step 3) |
 | `soft-food-soups.jpg` | Smooth soups, soft foods for the first days after treatment | [Pexels](https://www.pexels.com/photo/8738017/) | posts/best-foods-after-dental-implant-surgery, posts/all-on-x-recovery-timeline, services/tooth-extractions (process step 3) |
