@@ -180,6 +180,18 @@
    1800
   ]
  },
+ "/images/client/11-treatment-rooms-doors.jpg": {
+  "width": 2000,
+  "height": 1500,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoMAAkAA4BaJQBOgCHEI3IAAP7c75Rq4XgY/ylUjRK/MhWZzjJ/oGHAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2000
+  ]
+ },
  "/images/insurance/aetna.png": {
   "width": 312,
   "height": 60,
