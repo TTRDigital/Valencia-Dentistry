@@ -36,24 +36,24 @@
           "title": "Planned Before We Begin",
           "text": "3D imaging and digital smile design let you see the plan on screen before any treatment starts.",
           "image": {
-            "src": "/images/client/09-treatment-room.jpg",
-            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+            "src": "/images/stock/smile-plan-on-screen.jpg",
+            "alt": "Patient reviewing a digital treatment plan on screen in the dental chair"
           }
         },
         {
           "title": "Holistic by Design",
           "text": "Biocompatible, mercury-free materials and a whole-body view of your health guide every recommendation.",
           "image": {
-            "src": "/images/client/10-hallway-front-desk.jpg",
-            "alt": "Valencia Dentistry hallway and front desk"
+            "src": "/images/stock/natural-bamboo-toothbrush.jpg",
+            "alt": "Bamboo toothbrush and greenery, a natural approach to oral care"
           }
         },
         {
           "title": "Smiles That Look Like You",
           "text": "Veneers, whitening and Invisalign planned around your features, so the result looks natural.",
           "image": {
-            "src": "/images/client/07-dr-lavi-headshot.jpg",
-            "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+            "src": "/images/stock/shade-matching-smile.jpg",
+            "alt": "Matching tooth shade to a patient's smile with a shade guide"
           }
         }
       ]
@@ -81,8 +81,8 @@
           "text": "A three-dimensional view of teeth, bone and nerves.",
           "forYou": "Implants and wisdom teeth are planned with fewer surprises.",
           "image": {
-            "src": "/images/client/09-treatment-room.jpg",
-            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+            "src": "/images/stock/cbct-scanner.jpg",
+            "alt": "3D cone beam CT (CBCT) dental imaging machine"
           }
         },
         {
@@ -91,8 +91,8 @@
           "text": "Digital impressions instead of trays of putty.",
           "forYou": "You see your scan on screen right away.",
           "image": {
-            "src": "/images/client/10-hallway-front-desk.jpg",
-            "alt": "Valencia Dentistry hallway and front desk"
+            "src": "/images/stock/intraoral-scanner-device.jpg",
+            "alt": "Digital intraoral scanner used for 3D dental impressions"
           }
         },
         {
@@ -101,8 +101,8 @@
           "text": "Instant images with low radiation.",
           "forYou": "Quicker answers in the chair, with less exposure.",
           "image": {
-            "src": "/images/client/07-dr-lavi-headshot.jpg",
-            "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+            "src": "/images/stock/panoramic-xray-on-screen.jpg",
+            "alt": "Digital panoramic dental X-ray reviewed on a monitor"
           }
         }
       ],
@@ -136,8 +136,8 @@
         "Cost and timeline estimate"
       ],
       "image": {
-        "src": "/images/client/01-reception-logo-wall.jpg",
-        "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+        "src": "/images/stock/clear-aligner-smile.jpg",
+        "alt": "Smiling patient holding a clear aligner"
       },
       "buttonLabel": "Book your free consult",
       "fine": "Cash and most PPO plans accepted. Now seeing new patients on Wednesdays."
@@ -172,8 +172,8 @@
           "title": "Book Your Consultation",
           "text": "Every great smile starts with a conversation. We listen to what you want and map out how to get you there.",
           "image": {
-            "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-            "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+            "src": "/images/client/10-hallway-front-desk.jpg",
+            "alt": "Valencia Dentistry hallway and front desk"
           },
           "link": {
             "label": "Book online",
@@ -192,8 +192,8 @@
           "title": "Feel the Difference",
           "text": "Our care doesn't end when you leave the chair. Routine visits keep your smile healthy for years.",
           "image": {
-            "src": "/images/client/10-hallway-front-desk.jpg",
-            "alt": "Valencia Dentistry hallway and front desk"
+            "src": "/images/stock/happy-patient-mirror.jpg",
+            "alt": "Happy patient checking her smile in a mirror in the dental chair"
           }
         }
       ],

@@ -14,8 +14,8 @@
     "subtitle": "Smile Brighter with Personalized Veneers in Santa Clarita",
     "text": "Advanced cosmetic dentistry that makes your dream smile a reality—right here in Valencia, CA.",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+      "src": "/images/stock/veneer-shade-samples.jpg",
+      "alt": "Porcelain veneer samples in a range of natural shades"
     }
   },
   "intro": {
@@ -29,8 +29,8 @@
     "heading": "What Exactly Are Veneers—and What Can They Fix?",
     "intro": "Veneers are ultra-thin, custom-crafted shells—typically made of durable porcelain or composite resin—that are bonded to the front surface of your teeth. Designed to enhance both function and appearance, veneers are a trusted solution for refining your smile without major dental work. Veneers address a range of common concerns, including:",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/veneer-consult-mirror.jpg",
+      "alt": "Cosmetic consultation: choosing a smile with a shade guide and mirror"
     },
     "items": [
       {
@@ -74,16 +74,16 @@
         "title": "Doctor-Led Expertise",
         "text": "Our team is known for attention to detail, an artistic eye and genuine commitment to each patient’s goals.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/veneer-consult-mirror.jpg",
+          "alt": "Cosmetic consultation: choosing a smile with a shade guide and mirror"
         }
       },
       {
         "title": "Custom Smile Design",
         "text": "Every veneer is crafted with your facial features, tooth shape, and ideal shade in mind.",
         "image": {
-          "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {

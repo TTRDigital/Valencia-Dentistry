@@ -77,16 +77,16 @@
           "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
         },
         {
+          "src": "/images/stock/panoramic-xray-on-screen.jpg",
+          "alt": "Digital panoramic dental X-ray reviewed on a monitor"
+        },
+        {
           "src": "/images/client/07-dr-lavi-headshot.jpg",
           "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
         },
         {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
-        },
-        {
-          "src": "/images/client/09-treatment-room.jpg",
-          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+          "src": "/images/stock/smile-plan-on-screen.jpg",
+          "alt": "Patient reviewing a digital treatment plan on screen in the dental chair"
         }
       ]
     },

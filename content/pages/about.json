@@ -105,8 +105,8 @@
           "forYou": "Implants are planned on your own scan, so there are fewer surprises on the day.",
           "label": "Advanced diagnostics",
           "image": {
-            "src": "/images/client/09-treatment-room.jpg",
-            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+            "src": "/images/stock/cbct-patient.jpg",
+            "alt": "Patient positioned in a 3D cone beam CT scanner"
           }
         },
         {
@@ -116,8 +116,8 @@
           "forYou": "No goopy trays, and you can preview your new smile on screen.",
           "label": "Digital impressions",
           "image": {
-            "src": "/images/client/07-dr-lavi-headshot.jpg",
-            "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+            "src": "/images/stock/intraoral-scanner-in-use.jpg",
+            "alt": "Digital intraoral scan of a patient's teeth, no impression trays"
           }
         },
         {
@@ -127,8 +127,8 @@
           "forYou": "Used after surgery and grafting to support your healing.",
           "label": "Natural healing",
           "image": {
-            "src": "/images/client/10-hallway-front-desk.jpg",
-            "alt": "Valencia Dentistry hallway and front desk"
+            "src": "/images/stock/prf-centrifuge.jpg",
+            "alt": "Centrifuge preparing platelet-rich fibrin (PRF) from a small blood sample"
           }
         },
         {
@@ -138,8 +138,8 @@
           "forYou": "Accurate placement that is mapped out before your procedure begins.",
           "label": "Precise placement",
           "image": {
-            "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-            "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+            "src": "/images/stock/implant-surgical-kit.jpg",
+            "alt": "Implant surgical kit prepared for guided implant placement"
           }
         },
         {
@@ -149,8 +149,8 @@
           "forYou": "Many patients leave with the final crown the same day.",
           "label": "Same-day crowns",
           "image": {
-            "src": "/images/client/01-reception-logo-wall.jpg",
-            "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+            "src": "/images/stock/crown-hand-finishing.jpg",
+            "alt": "Ceramic crown being finished by hand"
           }
         },
         {
@@ -160,8 +160,8 @@
           "forYou": "You see what we see, so your options are easier to understand.",
           "label": "See what we see",
           "image": {
-            "src": "/images/client/09-treatment-room.jpg",
-            "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+            "src": "/images/stock/intraoral-camera-screen.jpg",
+            "alt": "Intraoral camera images shown to a patient on screen"
           }
         },
         {
@@ -171,8 +171,8 @@
           "forYou": "Less bleeding and a faster recovery.",
           "label": "Gentle treatment",
           "image": {
-            "src": "/images/client/07-dr-lavi-headshot.jpg",
-            "alt": "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry"
+            "src": "/images/stock/dental-laser.jpg",
+            "alt": "Soft-tissue dental laser with handpiece"
           }
         },
         {
@@ -182,8 +182,8 @@
           "forYou": "We talk through what would help you relax at your consultation.",
           "label": "Comfort first",
           "image": {
-            "src": "/images/client/10-hallway-front-desk.jpg",
-            "alt": "Valencia Dentistry hallway and front desk"
+            "src": "/images/stock/calm-patient-chair.jpg",
+            "alt": "Relaxed patient resting comfortably in the dental chair"
           }
         }
       ]

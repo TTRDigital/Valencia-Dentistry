@@ -14,8 +14,8 @@
     "subtitle": "Advanced, Comfortable Implant Care at Valencia Dentistry",
     "text": "Replace missing teeth with natural-looking, long-lasting implants planned by our dentists using digital imaging, guided surgery, and personalized care.",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+      "src": "/images/stock/implant-model.jpg",
+      "alt": "Dental implant model: titanium post, abutment and crown"
     }
   },
   "intro": {
@@ -29,8 +29,8 @@
     "heading": "What Are Dental Implants?",
     "intro": "Dental implants are long-lasting tooth replacements designed to restore missing teeth from the root up. An implant is a small titanium post placed in the jawbone, where it supports a custom crown, bridge, or denture. Because implants are anchored in the jawbone, they can provide strong chewing support, a natural look, and better stability than many removable tooth replacement options. At Valencia Dentistry, our team will evaluate your bone support, gum health, and smile goals to recommend the right implant option for you.",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/implant-surgical-kit.jpg",
+      "alt": "Implant surgical kit prepared for guided implant placement"
     },
     "items": [
       {
@@ -76,16 +76,16 @@
         "title": "Doctor-Led, Detail-Oriented Care",
         "text": "Your dentist personally evaluates your smile, bite, bone support, and treatment goals before recommending an implant plan.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/implant-surgical-kit.jpg",
+          "alt": "Implant surgical kit prepared for guided implant placement"
         }
       },
       {
         "title": "Advanced Technology for Predictable Outcomes",
         "text": "We use digital imaging and guided implant planning to evaluate your jawbone, bite, and treatment needs before implant placement.",
         "image": {
-          "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {

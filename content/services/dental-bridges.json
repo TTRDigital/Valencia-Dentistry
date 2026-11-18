@@ -14,8 +14,8 @@
     "subtitle": "Santa Clarita’s Dental Bridge Experts",
     "text": "Replace missing teeth and restore your confidence with ease.",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+      "src": "/images/stock/bridge-closeup.jpg",
+      "alt": "Dental bridge replacing missing teeth"
     }
   },
   "intro": {
@@ -28,8 +28,8 @@
     "heading": "What Are Dental Bridges",
     "intro": "A dental bridge is a tooth replacement option used to replace one or more missing teeth. It works by placing a false tooth (called a pontic) in the gap and securing it to the natural teeth or dental implants on either side. Bridges are custom-made to match the shape, size, and color of your surrounding teeth, so they blend in naturally with your smile. There isn’t just one kind of dental bridge—different designs are available to fit different needs, budgets, and oral health situations. Each type has its own way of staying in place, along with unique advantages. At Valencia Dentistry, we help patients in Santa Clarita understand their options and choose the bridge that best supports their smile. The chart below highlights the main types of dental bridges and what makes each one distinct.",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/prosthetic-arrangement.jpg",
+      "alt": "Dental bridge and model on a dark background"
     },
     "items": [
       {
@@ -71,16 +71,16 @@
         "title": "Advanced Technology",
         "text": "From digital imaging to precision design, your bridge is crafted with accuracy and comfort in mind.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/prosthetic-arrangement.jpg",
+          "alt": "Dental bridge and model on a dark background"
         }
       },
       {
         "title": "Comprehensive Care",
         "text": "Whether you need preventive, restorative, or cosmetic services, we provide full-scope dentistry for the whole family.",
         "image": {
-          "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {

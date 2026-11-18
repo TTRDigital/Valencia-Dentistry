@@ -14,8 +14,8 @@
     "subtitle": "The Best Cosmetic Dentistry Experts of Santa Clarita",
     "text": "Let the Valencia Dentistry team help you achieve a confident, radiant smile with the top cosmetic dentistry in Santa Clarita.",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+      "src": "/images/stock/veneer-consult-mirror.jpg",
+      "alt": "Cosmetic consultation: choosing a smile with a shade guide and mirror"
     }
   },
   "intro": {
@@ -26,8 +26,8 @@
     "heading": "What Is Cosmetic Dentistry and Why It Matters",
     "intro": "Cosmetic dentistry enhances the look of your smile by addressing issues like discoloration, uneven teeth, and gaps—but at Valencia Dentistry, it goes deeper. Under our care, every treatment is personalized to boost your confidence and deliver beautiful, natural-looking results with advanced, comfortable techniques. Common concerns cosmetic dentistry can address: At Valencia Dentistry, we offer a full range of cosmetic dental treatments designed to help you achieve a natural-looking smile you’ll love. Whether you’re looking for subtle improvements or a full smile makeover in Santa Clarita, our experienced team provides modern, minimally invasive solutions tailored to your goals.",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/shade-guide-hands.jpg",
+      "alt": "Tooth shade guide used to choose a natural colour"
     },
     "items": [
       {
@@ -91,16 +91,16 @@
         "title": "Doctor-Led Expertise",
         "text": "Your dentist is hands-on with every patient, bringing artistic precision and years of experience in advanced cosmetic dentistry.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/shade-guide-hands.jpg",
+          "alt": "Tooth shade guide used to choose a natural colour"
         }
       },
       {
         "title": "Modern Technology",
         "text": "From digital smile previews to guided Invisalign planning, we use today’s most effective tools to ensure natural, lasting results.",
         "image": {
-          "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {

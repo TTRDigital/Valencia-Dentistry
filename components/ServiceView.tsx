@@ -10,7 +10,8 @@ import { Icon, type IconName } from "@/components/ui/Icons";
 import { Picture } from "@/components/ui/Picture";
 import { Container, Section } from "@/components/ui/Section";
 import { cn, distinctPhotos, inSentence } from "@/lib/utils";
-import { CLIENT, ROOMS, SERVICE_BEFORE_AFTER } from "@/lib/clientPhotos";
+import { CLIENT, SERVICE_BEFORE_AFTER } from "@/lib/clientPhotos";
+import { RESULT_SMILES, SERVICE_PHOTOS } from "@/lib/stockPhotos";
 
 export { Breadcrumbs };
 
@@ -34,18 +35,13 @@ export async function ServiceView({ s }: { s: Service }) {
 
   const book = site.bookingUrl;
   const lower = inSentence(s.name);
-  // the category cards claim their photos first, then the sections below pick ones not used yet
+  // Photos: the hero (content) and the "Benefits & care" photo are this treatment's own (lib/stockPhotos.ts);
+  // the category cards show each sub-treatment's own hero. The practice's photos appear once each:
+  // Dr. Lavi on the consultation step, his treatment room on the treatment step, his front desk behind the
+  // closing call to action (and the reception on a fourth step). The last step shows a smiling patient.
   const childPhotos = distinctPhotos(children, servicePhotos, [s.hero.image.src]);
-  const used = new Set<string>([s.hero.image.src, ...childPhotos.map((p) => p?.src).filter((x): x is string => !!x)]);
-  // Photos (lib/clientPhotos.ts): the hero is one of the two rooms; the other room closes the page.
-  // The rest prefer photos not used yet on the page, by role, and never repeat side by side.
-  const heroRoom = s.hero.image;
-  const otherRoom = ROOMS.find((r) => r.src !== heroRoom.src) ?? CLIENT.hallway;
-  const pickFrom = (prefs: SiteImage[], not = "") => {
-    const pick = prefs.find((im) => !used.has(im.src) && im.src !== not) ?? prefs.find((im) => im.src !== not) ?? prefs[0];
-    used.add(pick.src);
-    return pick;
-  };
+  const own = SERVICE_PHOTOS[s.slug];
+  const order = all.map((x) => x.slug).sort().indexOf(s.slug);
   // Benefits & care accordion: what it is, the benefits, who it suits, before/after care, extra notes, tables
   const what = s.understanding.items.length ? s.understanding.items : [];
   const reasons = s.understanding.items.length ? s.why.cards : [];
@@ -59,15 +55,13 @@ export async function ServiceView({ s }: { s: Service }) {
     ...s.extra.map((e) => ({ title: e.heading, body: <>{e.paragraphs.map((x, i) => <p key={i} className={i ? "mt-3" : undefined}>{x}</p>)}{e.bullets.length > 0 && <ul className="mt-3 list-disc space-y-1 pl-5">{e.bullets.map((x) => <li key={x}>{x}</li>)}</ul>}{e.cards.map((c) => <p key={c.title} className="mt-3"><strong className="text-white">{c.title}.</strong> {c.text}</p>)}</> })),
   ];
   const beforeAfter = SERVICE_BEFORE_AFTER[s.slug];
-  // beside the accordion: an unused photo; if the category cards above took them all, the hero room (two sections up)
-  const accFresh = [CLIENT.reception, CLIENT.drHeadshot, CLIENT.drLoupes, otherRoom].find((im) => !used.has(im.src));
-  const accPhoto = beforeAfter ?? (accFresh ? pickFrom([accFresh]) : heroRoom);
-  // steps: meeting the doctor, the treatment room, the doctor at work, the practice
-  const STEP_PREFS = [[CLIENT.drHeadshot, CLIENT.drLoupes], [otherRoom, heroRoom], [CLIENT.drLoupes, CLIENT.reception, CLIENT.drHeadshot], [CLIENT.reception, otherRoom, heroRoom]];
-  const stepPhotos: SiteImage[] = [];
-  s.process.steps.forEach((_, i) => stepPhotos.push(pickFrom(STEP_PREFS[i % STEP_PREFS.length], stepPhotos[i - 1]?.src)));
+  const accPhoto: SiteImage = beforeAfter ?? own?.benefit ?? CLIENT.reception;
+  // a fifth or later step takes the next smiling patient, so no photo repeats on the page
+  const smile = (k: number) => RESULT_SMILES[(Math.max(order, 0) + k) % RESULT_SMILES.length];
+  const STEP_PHOTOS: SiteImage[] = [CLIENT.drHeadshot, CLIENT.treatmentRoom, smile(0), CLIENT.reception];
+  const stepPhotos = s.process.steps.map((_, i) => STEP_PHOTOS[i] ?? smile(i - 3));
   const whyPts = (reasons.length ? reasons : what.length ? [] : s.why.cards).slice(0, 4);
-  const ctaPhoto = otherRoom; // full width under an olive veil: a room, never text over the logo wall
+  const ctaPhoto = CLIENT.hallway; // full width under an olive veil: the practice, never text over the logo wall
 
   return (
     <article>

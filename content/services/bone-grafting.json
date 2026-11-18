@@ -14,8 +14,8 @@
     "subtitle": "Restore Jaw Health with Bone Grafting in Santa Clarita",
     "text": "Expert Care for Jawbone Regeneration and Implant Readiness",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+      "src": "/images/stock/implant-model-crown.jpg",
+      "alt": "Implant model with the crown that fits on top"
     }
   },
   "intro": {
@@ -28,8 +28,8 @@
     "heading": "Types of Bone Grafting Materials We Use",
     "intro": "For patients seeking all-natural, biocompatible treatment options, we offer regenerative techniques that align with holistic values and avoid synthetic materials. These options harness the body’s own healing power for safer, more natural outcomes:",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/jawbone-xray-screen.jpg",
+      "alt": "3D scan of the jawbone reviewed on screen before treatment"
     },
     "items": [
       {
@@ -67,16 +67,16 @@
         "title": "Doctor-Led Surgical Expertise",
         "text": "Your dentist performs each bone graft with expert precision and a gentle touch, ensuring safe, predictable outcomes.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/jawbone-xray-screen.jpg",
+          "alt": "3D scan of the jawbone reviewed on screen before treatment"
         }
       },
       {
         "title": "Advanced Imaging & PRF Therapy",
         "text": "We use 3D digital scans for surgical accuracy and PRF (Platelet-Rich Fibrin) to enhance healing and reduce recovery time.",
         "image": {
-          "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {

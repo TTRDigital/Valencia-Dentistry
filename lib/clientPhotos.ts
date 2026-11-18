@@ -26,11 +26,6 @@ export const CLIENT = {
   /** 10 */ hallway: p("10-hallway-front-desk.jpg", "Valencia Dentistry hallway and front desk", "center 62%"),
 } as const;
 
-/** Crop focus for every client photo, by src (used when a slot gives only a path, e.g. blog posts). */
-export const PHOTO_FOCUS: Record<string, string> = Object.fromEntries(
-  Object.values(CLIENT).filter((im) => im.focus).map((im) => [im.src, im.focus as string]),
-);
-
 /** The two rooms, alternated as treatment-page heroes so neighbouring pages differ. */
 export const ROOMS = [CLIENT.treatmentRoom, CLIENT.hallway] as const;
 

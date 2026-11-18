@@ -4,7 +4,7 @@
  * 1. Scans public/images and writes lib/generated/images.json with width,
  *    height and a tiny blur placeholder for every image, so next/image gets
  *    exact dimensions and placeholder="blur" for images referenced by path.
- * 2. For the practice's own photos (public/images/client) it also
+ * 2. For the practice's own photos and the stock photos (public/images/client, /stock) it also
  *    writes static WebP variants to public/images/_opt/<name>-<width>.webp.
  *    Hero images are the LCP element, and serving a pre-built file (instead
  *    of optimizing on the first request for each size) keeps LCP low.
@@ -32,7 +32,7 @@ async function walk(dir: string) {
     const blur = await img.clone().resize(12, 12, { fit: "inside" }).blur(1).toFormat("webp", { quality: 40 }).toBuffer();
     const key = "/" + relative(join(ROOT, "public"), p).replace(/\\/g, "/");
     const entry: (typeof out)[string] = { width: meta.width!, height: meta.height!, blurDataURL: `data:image/webp;base64,${blur.toString("base64")}` };
-    if (dir.endsWith("/client")) {
+    if (dir.endsWith("/client") || dir.endsWith("/stock")) {
       const name = basename(f, extname(f));
       const widths = [...new Set([...WIDTHS.filter((w) => w < meta.width!), meta.width!])];
       for (const w of widths) await sharp(p).resize(w).webp({ quality: 88, alphaQuality: 90, smartSubsample: true }).toFile(join(OPT, `${name}-${w}.webp`));

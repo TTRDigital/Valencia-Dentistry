@@ -14,8 +14,8 @@
     "subtitle": "Restore Your Health with Oral Surgery in Santa Clarita",
     "text": "",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+      "src": "/images/stock/surgical-instruments.jpg",
+      "alt": "Sterile oral surgery instruments laid out before a procedure"
     }
   },
   "intro": {
@@ -28,8 +28,8 @@
     "heading": "What Is Oral Surgery?",
     "intro": "Dental Implants Permanent tooth replacements that look and function like natural teeth Tooth Extractions Safe, gentle removal of damaged, infected, or overcrowded teeth Wisdom Teeth Removal Surgical removal of third molars that are impacted or causing pain",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/cbct-patient.jpg",
+      "alt": "Patient positioned in a 3D cone beam CT scanner"
     },
     "items": [
       {
@@ -71,16 +71,16 @@
         "title": "Doctor-Led Surgical Care",
         "text": "Your dentist performs all surgical treatments with a focus on safety, detail, and long-term success.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/cbct-patient.jpg",
+          "alt": "Patient positioned in a 3D cone beam CT scanner"
         }
       },
       {
         "title": "Advanced Technology for Better Outcomes",
         "text": "We use digital 3D imaging, guided surgery tools, and PRF (Platelet-Rich Fibrin) therapy to promote faster healing and greater precision.",
         "image": {
-          "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {

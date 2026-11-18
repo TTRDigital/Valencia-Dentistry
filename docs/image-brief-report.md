@@ -1,6 +1,6 @@
 # Image replacement and ozone removal: report
 
-Status: photo replacement and ozone removal are live. The follow-up image fixes (section 7) are on staging (preview branch) first.
+Status: photo replacement and ozone removal are live. The image fixes (section 7) and the relevant-photo pass (section 8) are on staging (preview branch), not yet on production.
 Full per-file inventory: `docs/image-audit.md`.
 
 ## 1. Images replaced (old → client photo ID)
@@ -92,3 +92,26 @@ Layouts unchanged; only photo assignments, crop focus and before/after labels.
 
 Still soft on sharp (2x) screens, because of the source files: 01 (1,448px) in the home hero, 08 (646px) on the Veneers page,
 and 09/10 in full-width heroes (1,800px, the brief's 2,400px cap, under an olive overlay). Higher-resolution originals of 01 and 08 would fix the first two.
+
+## 8. Relevant photos everywhere (client feedback, 2026-11-18)
+
+Feedback: the client's own photos were used twice on the home page and were not relevant to sections such as
+technology. Stock photos are fine if they are relevant and professional; only the blonde model and the previous
+practice's photos were unwanted.
+
+What changed (layout unchanged, photos only):
+
+- Each of the client's photos appears **at most once per page** (checked on all 61 pages, desktop and mobile).
+  They stay where they belong: reception, front desk, treatment room, Dr. Lavi.
+- **Technology shows the technology**: CBCT machine, intraoral scanner, digital X-rays (home); CBCT, iTero scan,
+  PRF centrifuge, implant surgical kit, crown finishing, intraoral camera images, dental laser, calm sedation patient (About).
+- **Every treatment page has its own photos**: a hero and a "Benefits & care" photo about that treatment (implant models,
+  full-arch bridge, crowns, bridges, fillings, whitening, aligners, shade guides, extraction instruments, X-rays,
+  jaw pain and a night guard for TMJ, natural care for holistic). Veneers and Cosmetic Dentistry keep the client's real
+  before/after cases. Process steps: Dr. Lavi (consultation), his treatment room (treatment), a smiling patient (result).
+- **Blog**: each of the 30 posts has a photo for its topic (implants, All-on-X, bone grafting, extractions, healing foods,
+  crowns, bridges, cosmetic, cleanings, first visit); no two neighbouring cards share a photo.
+- Other pages: Emergency shows a toothache; Before & After and Testimonials show smiling patients; Appointment's first-visit
+  photos follow each step (front desk, reception, X-ray, exam with Dr. Lavi, plan on screen).
+- 54 licensed stock photos (Pexels / Unsplash, free for commercial use). No blonde model, no other clinic's branding,
+  no stock photo presented as Dr. Lavi, his team or his patients. Full list with sources: `docs/photo-credits.md`.

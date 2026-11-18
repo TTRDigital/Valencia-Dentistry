@@ -14,8 +14,8 @@
     "subtitle": "Straighten Your Teeth with Invisalign in Santa Clarita",
     "text": "Discover the modern alternative to braces with custom Invisalign treatment at Valencia Dentistry.",
     "image": {
-      "src": "/images/client/09-treatment-room.jpg",
-      "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
+      "src": "/images/stock/clear-aligner-smile.jpg",
+      "alt": "Smiling patient holding a clear aligner"
     }
   },
   "intro": {
@@ -26,8 +26,8 @@
     "heading": "What Invisalign is",
     "intro": "",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/aligners-in-hands.jpg",
+      "alt": "Clear aligners held in the hands"
     },
     "items": [],
     "bullets": []
@@ -40,16 +40,16 @@
         "title": "Invisalign-Certified Provider",
         "text": "Your dentist has advanced training in clear aligner therapy and has helped countless patients achieve confident, lasting results.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/aligners-in-hands.jpg",
+          "alt": "Clear aligners held in the hands"
         }
       },
       {
         "title": "Advanced 3D Imaging",
         "text": "Our iTero scanner creates precise digital impressions—no messy molds—and allows you to preview your future smile before starting treatment.",
         "image": {
-          "src": "/images/client/10-hallway-front-desk.jpg",
-          "alt": "Valencia Dentistry hallway and front desk"
+          "src": "/images/client/09-treatment-room.jpg",
+          "alt": "Bright treatment room at Valencia Dentistry with dental chair and windows"
         }
       },
       {

@@ -229,5 +229,653 @@
   "width": 800,
   "height": 600,
   "blurDataURL": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoMAAkAA4BaJaQAA3AA/vIJ/hsQOwt+kAA="
+ },
+ "/images/stock/aligners-in-hands.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoMAAgAA4BaJQBOgB052lu3gAD4K1J556p1UvGdDVXIWTMzrYMz+s5CNzgpcT3nw2kAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/bamboo-toothbrush-wood.jpg": {
+  "width": 2400,
+  "height": 1990,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAoAA4BaJaACdADcpbgAAP5oFlmUMoXZxKTeVeJ4JifIGunF+OAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/bridge-closeup.jpg": {
+  "width": 2400,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoMAAwAA4BaJbACdADzeboAAP7iRuR+XE8/L7MpoZwPbkH5o5fukrbio6nXu/3Jf8KsZhyDm9NgAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/calm-patient-chair.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJZQCdADaQCywAAD9xmSThC6lfvBEWVmGqcnxvRWvwuJqH3jAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/cbct-patient.jpg": {
+  "width": 2400,
+  "height": 1602,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoMAAgAA4BaJQAAS1oY+DAAAP7q6b8sJm3lNztMlJu5JhDIEX7dZ7p7vQAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/cbct-scanner.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoMAAgAA4BaJZwAAkra8ggA/uBvy9HbKtXNyqYN2+wrAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/clear-aligner-smile.jpg": {
+  "width": 2400,
+  "height": 1910,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoMAAoAA4BaJagCdADynYQAAP63H8mXzIOzQNt8PhvWmEfRRaT+Mtdkg5N8tq60Wl2gAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/crown-closeup.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoIAAwAA4BaJYwCdAEPDpW2PDAA/t/tLPaq94yOwGtFYqfvOwQAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/crown-crafting.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJYwCw7DhlbHXztAA/rdwSfN/YcrZkQtSwqgkyV1PdnCxKYCIx5YQoAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/crown-hand-finishing.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoMAAgAA4BaJQBOgCIgPEzIAP5qdp3pPRc5P/3YLq+41UT8AbCNRDLAEsosEdmDPq7QAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/dental-cleaning.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoIAAwAA4BaJaACdADzgzM5SwAA+WFHXbjDHZklc43snkCxK8dzWndCxoSKCt1lS9P8cAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/dental-laser.jpg": {
+  "width": 2400,
+  "height": 1597,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAgAA4BaJaQAAubTYgHgAP737znzVo/igkh1WXkp3psryIRsooAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/denture-polishing.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAwAA4BaJbACdADzMFEgANu+wGZvaX6tUism1k7LZMDeSro+btWVa3YAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/extraction-instruments.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoMAAgAA4BaJZwAAlKMAdAA3de1rN11B1T4K3vAGQjuxJsQmeramwAAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/filling-curing-light.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoMAAgAA4BaJQBOgB6Mio28jAD+si8rbSBGpZxPykyiJUk7htDS2+LMAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/filling-model.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAAAwAQCdASoMAAgAA4BaJYwAA3AA/u7E/AJ7ZivnPNlSBwAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/full-arch-implant-bridge.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoMAAgAA4BaJbACdLoAAwekuYwA/tDo1r6n9LMuGfM+MGDiEWRl+x+X/d45l8AA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/happy-patient-mirror.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoMAAgAA4BaJQBOgCPw1zOF6kAAAP7uWilLR4Z0I41koGw2rHhydQrbgAQC+4S07y4gAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/happy-patient-portrait.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJQBdgCB/oAxJRwAA/uiUNgQ3zQ4TCq4tDimgocYyEyw6eAJH15kyAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/implant-model-closeup.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABwAQCdASoIAAwAA4BaJZwCw7FAAAD+7fTPlIMy31WzdwWgJp8AAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/implant-model-crown.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoMAAgAA4BaJZQCdAFAAAD+7i4/omz73DRw0Zzv5aBZAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/implant-model.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoMAAgAA4BaJZQAAt0AEZAAAP7qu7gq10FfYBprIAgAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/implant-surgical-kit.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAwAA4BaJQBOgB57ZkGcfAD8y8QKaQYxpdHon7GGeI04BMRucvhRJOfOSKLc7oAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/intraoral-camera-screen.jpg": {
+  "width": 2400,
+  "height": 1602,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoMAAgAA4BaJQBOgCHc83jefoAAziUJmF2XAN9MzAJhQ+OFN7ijxnXffXuYA5J6AAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/intraoral-scanner-device.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoMAAgAA4BaJZwCw7D0g5+2BAAA/sblrC9bXuGw4rZGkVIIYy3jIAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/intraoral-scanner-in-use.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoMAAgAA4BaJQBOgBrc8jnAAP7F8BrcPEvbTH4HMe5PskleqoYJ7Auz4yAVh5o2iGMUSuk2AAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/jaw-pain-compress.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoMAAgAA4BaJYwCsADbRR2zRAD+9mXZarfsiw3q0n8y098r+LvQ8r4Qn0kY3hzcUlVxngAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/jawbone-xray-screen.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAwAA4BaJaQAAuWIHQAA/qvgMlCjlaABlNHJoeX3ytzZzxOErAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/natural-bamboo-toothbrush.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoMAAgAA4BaJQBOgCHXbi4AAP1TVsvyHKwIEBwY02bwdTb2AAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/natural-toothpaste-leaf.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoMAAgAA4BaJZgCdAC69HQh4AD5Sw0FkWq33CKFfG832Rd5nyxk+RQQpn+bBGMWG7vOdYAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/night-guard.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAQAgCdASoMAAgAA4BaJYwCdAEertoovS1QAP7KQwDHFsXOtNid5BjgIvQmkMH0VAAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/panoramic-xray-detail.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoMAAgAA4BaJZwAAlKRK08AAP7kX38csFpsoJwRp2vPTTY3M0aRU3dbJyT4NdvmB/x24oAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/panoramic-xray-on-screen.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJYwCdADygkSYoAD+1ylMr/d0GsGZ9Zap83+3ccmBMA70XZ0AAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/prf-centrifuge.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoMAAgAA4BaJZgCdADW6ZyeAAD8+5ieN6DuR4nz/8jYNicYz/IsV4GaOeVZ+gDhA3QAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/prosthetic-arrangement.jpg": {
+  "width": 1800,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoJAAwAA4BaJZQAAudmTDjUEAAA/vNeXjcCuptv4YTF5NWZwrUaQP1BW96Cm5qAcAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1800
+  ]
+ },
+ "/images/stock/pumpkin-soup.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoMAAgAA4BaJbACdADdGM2N4AD+6kyXxyT/teBROm4ZTF+FMlidtXQrPeEtj0od5zZ7O/W50cuPPNJEHW7xqwAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/relaxed-woman-chair.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJZwAAl1gHi/OQADhRJyDEri9oHJPaGGeremIB9Abt5LYduKAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/restorative-models.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAABQAQCdASoMAAgAA4BaJZwAAVpwAP7tYWxIzONwVq9hWAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/senior-patient-mirror.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoMAAgAA4BaJYwCdAD0Nu6TQAD+1QTsCOKs6okFbu2q2JLc8uet80BKVOTYAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/shade-guide-hands.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJYgCdAEOQcFdAAD+78nPep1dFm+5ZgvILTy/GzWcbDMOokAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/shade-matching-smile.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAgAA4BaJZwCsADZmMknAADOPjyieM+P3XnRJO/82houRVO/rL28ClQAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/smile-plan-on-screen.jpg": {
+  "width": 2400,
+  "height": 1800,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoMAAkAA4BaJZwAApyivsCYAAD+2B4eJEgiZ3IUWAIy85PYOXMX8u1I+h7nk2beLgAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/smiling-man-chair.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoMAAgAA4BaJZwCdADdSnCxBLEAAP7okAsI9d8D1mGhf8bV/Tya3VZ/6Dz7Nqi7PAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/smiling-patient-chair.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoMAAgAA4BaJYwCsADbYvzkHwAA/tUU+6T3NydnXM2zg0Q+DrGbycHixvLWLEDRUBjUAAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/smiling-woman-chair.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoIAAwAA4BaJagAAppAaAAA/uF6robZFgu9ThO5qUK03VZZbT4U+mJc/JPAHAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/soft-food-soups.jpg": {
+  "width": 2400,
+  "height": 1551,
+  "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoMAAgAA4BaJQBOiP/wNuuaed4gAP7HZDsMPCONCUNeN0CX6ZIXjMnwHxyb2Ppla+fzt+GIrn2+MEAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/surgical-instruments.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoMAAgAA4BaJbAC7ADW6gkqAAD42f3IYWWlQAXnxcbNxM0sXdR0z5Nr7a3vGjTVre4ufWuAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/tooth-extraction.jpg": {
+  "width": 1600,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAwAA4BaJYgCdADzVMGAAP7oPw0UlKWPiOVNsAyi0CgGcsm4JpxoIp7vHyOUHsQAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1600
+  ]
+ },
+ "/images/stock/toothache-man.jpg": {
+  "width": 2400,
+  "height": 1602,
+  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoMAAgAA4BaJZwAAu1/zW89AAAA/CEFH7oblroiJLdC4bF8sMrJ74AA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/transparent-implant-model.jpg": {
+  "width": 1602,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAwAA4BaJZwAAp2RyV/NtAAA4iAEFOMEgF2+BXY+3Kn8OkNQwDgkHMgwKJqNAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1602
+  ]
+ },
+ "/images/stock/veneer-consult-mirror.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoMAAgAA4BaJQBOgBI/5+7AAP7Q71/8ZgaIzbsOskJstrVG1B8jIimdFKxmzAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/veneer-shade-samples.jpg": {
+  "width": 2400,
+  "height": 1602,
+  "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoMAAgAA4BaJaQAAuaaz6cAAP735Hh42QwzPgAAAAA=",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/whitening-light.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoMAAgAA4BaJZQAAxOikLKhFUAA/puo06OaZWktFJc3pEOVgE5oybmULK/6Gsb8S+UxwAAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
+ "/images/stock/xray-consultation.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoMAAgAA4BaJZQCdADbINC4AP6YXGdwdXB/rA0ttIfQ3v1edQ0HHgCvJ6EoJvQV9AAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
  }
 }

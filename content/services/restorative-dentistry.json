@@ -14,8 +14,8 @@
     "subtitle": "Restore Your Smile with the Best in Restorative Dentistry",
     "text": "",
     "image": {
-      "src": "/images/client/10-hallway-front-desk.jpg",
-      "alt": "Valencia Dentistry hallway and front desk"
+      "src": "/images/stock/restorative-models.jpg",
+      "alt": "Dental models used to plan crowns, bridges and fillings"
     }
   },
   "intro": {
@@ -26,8 +26,8 @@
     "heading": "What Is Restorative Dentistry?",
     "intro": "",
     "image": {
-      "src": "/images/client/01-reception-logo-wall.jpg",
-      "alt": "Valencia Dentistry reception area with illuminated logo wall and modern seating"
+      "src": "/images/stock/denture-polishing.jpg",
+      "alt": "Denture being polished for a smooth, comfortable fit"
     },
     "items": [
       {
@@ -57,8 +57,8 @@
         "title": "Same-Day & Emergency Appointments",
         "text": "We know dental problems don’t wait, so we offer fast solutions when you need them most.",
         "image": {
-          "src": "/images/client/05-dr-lavi-headshot-loupes.jpg",
-          "alt": "Dr. Nuriel Lavi, DDS, wearing dental loupes"
+          "src": "/images/stock/denture-polishing.jpg",
+          "alt": "Denture being polished for a smooth, comfortable fit"
         }
       },
       {

@@ -34,7 +34,7 @@ export function ServiceCard({ s, featured, className, unspanAt, sharesRowAt, ima
     <Reveal as="li" className={cn("card card-hover group row-span-2 grid grid-rows-subgrid gap-y-0", className)}>
       <Link href={s.path} className="row-span-2 grid grid-rows-subgrid gap-y-0 no-underline">
         <div className={cn("relative overflow-hidden rounded-t-lg", imgAspect)}>
-          <Picture image={image ?? s.hero.image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 400px, (min-width: 640px) 50vw, 50vw"} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+          <Picture image={image ?? s.hero.image} fill sizes={featured ? "(min-width: 1024px) 800px, 100vw" : "(min-width: 1024px) 600px, (min-width: 640px) 50vw, 100vw"} className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
         <div className="flex flex-1 flex-col p-4 sm:p-6">
           <h3 className="text-lg group-hover:text-olive-600 sm:text-xl">{s.name}</h3>
