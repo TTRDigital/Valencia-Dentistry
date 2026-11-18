@@ -530,6 +530,15 @@
    2400
   ]
  },
+ "/images/stock/itero-scan-screen.jpg": {
+  "width": 639,
+  "height": 399,
+  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoMAAcAA4BaJZQAAboPzngA/mdv4pmwE/IUnS04uyTS19O1utdkAA==",
+  "opt": [
+   480,
+   639
+  ]
+ },
  "/images/stock/itero-scanner.jpg": {
   "width": 958,
   "height": 740,

@@ -1,6 +1,6 @@
 # Stock photo credits
 
-Licensed stock photos used on the site, from Pexels (https://www.pexels.com/license/) and Unsplash (https://unsplash.com/license), plus the iTero photo the agency uses on the Ideal Dental Solutions site (client request).
+Licensed stock photos used on the site, from Pexels (https://www.pexels.com/license/) and Unsplash (https://unsplash.com/license).
 Both licences allow free commercial use without attribution; this list is kept so every photo can be traced to its source.
 Source list: `lib/stockPhotos.ts`. Files: `public/images/stock/` (resized to 2,400 px max, metadata removed).
 
@@ -11,8 +11,9 @@ and every office and doctor photo are the practice's own (`public/images/client/
 |---|---|---|---|
 | `cbct-scanner.jpg` | 3D cone beam CT (CBCT) dental imaging machine | [Pexels](https://www.pexels.com/photo/6501859/) | pages/home |
 | `cbct-patient.jpg` | Patient positioned in a 3D cone beam CT scanner | [Pexels](https://www.pexels.com/photo/6812468/) | services/oral-surgery, posts/candidate-for-dental-implants, pages/about, services/oral-surgery (benefits & care) |
+| `itero-scan-screen.jpg` | Digital scan of the teeth reviewed on the iTero screen | Supplied by the client | pages/home |
 | `itero-scanner.jpg` | iTero intraoral scanner with a 3D scan of the teeth on screen | [Ideal Dental Solutions](https://idealdentalsolutions.com/) | pages/about, pages/home, services/invisalign (process step 1), services/veneers (process step 2) |
-| `panoramic-xray-on-screen.jpg` | Digital panoramic dental X-ray reviewed on a monitor | [Pexels](https://www.pexels.com/photo/6502162/) | pages/appointment, pages/home |
+| `panoramic-xray-on-screen.jpg` | Digital panoramic dental X-ray reviewed on a monitor | [Pexels](https://www.pexels.com/photo/6502162/) | pages/appointment |
 | `panoramic-xray-detail.jpg` | Panoramic X-ray showing the teeth, jaw and wisdom teeth | [Pexels](https://www.pexels.com/photo/6501853/) | services/wisdom-teeth-removal, posts/when-is-tooth-extraction-necessary, services/wisdom-teeth-removal (hero), services/bone-grafting (process step 3) |
 | `jawbone-xray-screen.jpg` | 3D scan of the jawbone reviewed on screen before treatment | [Pexels](https://www.pexels.com/photo/6502019/) | services/bone-grafting, posts/dental-implants-with-bone-loss, services/bone-grafting (benefits & care) |
 | `intraoral-camera-screen.jpg` | Intraoral camera images shown to a patient on screen | [Pexels](https://www.pexels.com/photo/6812508/) | pages/about |

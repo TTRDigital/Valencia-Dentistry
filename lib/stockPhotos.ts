@@ -10,7 +10,7 @@ import type { SiteImage } from "./types";
  * his office or his patients' results (before/after stays the practice's own).
  * `focus` is the crop centre for cover frames (applied by Picture via lib/photoFocus.ts).
  */
-export type StockPhoto = SiteImage & { source: "Pexels" | "Unsplash" | "Ideal Dental Solutions"; page: string; photographer?: string };
+export type StockPhoto = SiteImage & { source: "Pexels" | "Unsplash" | "Ideal Dental Solutions" | "Supplied by the client"; page: string; photographer?: string };
 
 const pexels = (file: string, id: number, alt: string, focus?: string): StockPhoto => ({ src: `/images/stock/${file}.jpg`, alt, ...(focus ? { focus } : {}), source: "Pexels", page: `https://www.pexels.com/photo/${id}/` });
 const unsplash = (file: string, slug: string, alt: string, focus?: string, photographer?: string): StockPhoto => ({ src: `/images/stock/${file}.jpg`, alt, ...(focus ? { focus } : {}), source: "Unsplash", page: `https://unsplash.com/photos/${slug}`, ...(photographer ? { photographer } : {}) });
@@ -19,6 +19,8 @@ export const STOCK = {
   // ---- technology
   cbctScanner: pexels("cbct-scanner", 6501859, "3D cone beam CT (CBCT) dental imaging machine", "center 30%"),
   cbctPatient: pexels("cbct-patient", 6812468, "Patient positioned in a 3D cone beam CT scanner", "center 40%"),
+  // supplied by the client (agency) on 2026-11-18 for the home "Digital X-rays" card
+  iteroScanScreen: { src: "/images/stock/itero-scan-screen.jpg", alt: "Digital scan of the teeth reviewed on the iTero screen", focus: "center 45%", source: "Supplied by the client", page: "" },
   // the iTero photo the agency uses on the Ideal Dental Solutions site (client's request)
   iteroScanner: { src: "/images/stock/itero-scanner.jpg", alt: "iTero intraoral scanner with a 3D scan of the teeth on screen", focus: "center 50%", source: "Ideal Dental Solutions", page: "https://idealdentalsolutions.com/" },
   panoramicXrayOnScreen: pexels("panoramic-xray-on-screen", 6502162, "Digital panoramic dental X-ray reviewed on a monitor", "center 35%"),
