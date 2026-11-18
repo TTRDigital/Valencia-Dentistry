@@ -23,18 +23,17 @@ export const CLIENT = {
   /** 07 */ drHeadshot: p("07-dr-lavi-headshot.jpg", "Dr. Nuriel Lavi, DDS, dentist at Valencia Dentistry", "center 35%"),
   /** 08 */ baVeneersFront: p("08-before-after-veneers-front.jpg", "Before and after full upper veneers, front view"),
   /** 09 */ treatmentRoom: p("09-treatment-room.jpg", "Bright treatment room at Valencia Dentistry with dental chair and windows", "center 68%"),
-  /** 10 */ hallway: p("10-hallway-front-desk.jpg", "Valencia Dentistry hallway and front desk", "center 62%"),
   /** 11 */ treatmentRoomDoors: p("11-treatment-rooms-doors.jpg", "Two treatment rooms at Valencia Dentistry seen through their doorways", "center 55%"),
 } as const;
 
-/** The two rooms, alternated as treatment-page heroes so neighbouring pages differ. */
-export const ROOMS = [CLIENT.treatmentRoom, CLIENT.hallway] as const;
+/** The two room photos (the hallway photo 10 is no longer used: client feedback, it shows mostly floor). */
+export const ROOMS = [CLIENT.treatmentRoom, CLIENT.treatmentRoomDoors] as const;
 
 /**
  * Photos for cards (service cards, card grids): rooms and the doctor, no before/after, and not 02
  * (too small for these frames). Pickers take them in this order and never put the same one twice in a row.
  */
-export const CARD_PHOTOS: SiteImage[] = [CLIENT.treatmentRoom, CLIENT.hallway, CLIENT.reception, CLIENT.drHeadshot, CLIENT.drLoupes];
+export const CARD_PHOTOS: SiteImage[] = [CLIENT.treatmentRoom, CLIENT.treatmentRoomDoors, CLIENT.reception, CLIENT.drHeadshot, CLIENT.drLoupes];
 
 /** The real before/after case a treatment page shows beside its "Benefits & care" list (top = before). */
 export const SERVICE_BEFORE_AFTER: Record<string, SiteImage> = {

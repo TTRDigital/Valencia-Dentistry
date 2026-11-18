@@ -63,7 +63,7 @@ export async function ServiceView({ s }: { s: Service }) {
   const steps = SERVICE_STEPS[s.slug] ?? ["DR", "ROOM", "SMILE"];
   const stepPhotos = s.process.steps.map((_, i) => resolve(steps[i]));
   const whyPts = (reasons.length ? reasons : what.length ? [] : s.why.cards).slice(0, 4);
-  const ctaPhoto = CLIENT.hallway; // full width under an olive veil: the practice, never text over the logo wall
+  const ctaPhoto = CLIENT.treatmentRoomDoors; // full width under an olive veil: the practice's treatment rooms
 
   return (
     <article>

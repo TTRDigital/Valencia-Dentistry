@@ -4,7 +4,7 @@ import { CLIENT } from "@/lib/clientPhotos";
 import { Container, Section } from "@/components/ui/Section";
 
 // A real practice photo for closing banners that don't name their own
-const DEFAULT_IMAGE = CLIENT.hallway;
+const DEFAULT_IMAGE = CLIENT.treatmentRoomDoors;
 
 /** Closing call to action: the shared banner with the booking, phone, hours and a photo. */
 export function Cta({ s }: { s: CtaSection }) {

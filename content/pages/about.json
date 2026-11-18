@@ -27,8 +27,8 @@
         "href": "/services/"
       },
       "image": {
-        "src": "/images/client/10-hallway-front-desk.jpg",
-        "alt": "Valencia Dentistry hallway and front desk"
+        "src": "/images/client/11-treatment-rooms-doors.jpg",
+        "alt": "Two treatment rooms at Valencia Dentistry seen through their doorways"
       },
       "trust": true
     },
@@ -138,8 +138,8 @@
           "forYou": "Accurate placement that is mapped out before your procedure begins.",
           "label": "Precise placement",
           "image": {
-            "src": "/images/stock/implant-surgical-kit.jpg",
-            "alt": "Implant surgical kit prepared for guided implant placement"
+            "src": "/images/stock/implant-model.jpg",
+            "alt": "Dental implant model: titanium post, abutment and crown"
           }
         },
         {

@@ -168,18 +168,6 @@
    1800
   ]
  },
- "/images/client/10-hallway-front-desk.jpg": {
-  "width": 1800,
-  "height": 2400,
-  "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoJAAwAA4BaJZQC7ADdY3PygAD9p21Kx1sDPINTr0GEggP5/dMEWAAA",
-  "opt": [
-   480,
-   768,
-   1080,
-   1440,
-   1800
-  ]
- },
  "/images/client/11-treatment-rooms-doors.jpg": {
   "width": 2000,
   "height": 1500,
@@ -336,18 +324,6 @@
    1080,
    1440,
    2400
-  ]
- },
- "/images/stock/crown-closeup.jpg": {
-  "width": 1600,
-  "height": 2400,
-  "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoIAAwAA4BaJYwCdAEPDpW2PDAA/t/tLPaq94yOwGtFYqfvOwQAAA==",
-  "opt": [
-   480,
-   768,
-   1080,
-   1440,
-   1600
   ]
  },
  "/images/stock/crown-crafting.jpg": {
@@ -516,18 +492,6 @@
    1080,
    1440,
    2400
-  ]
- },
- "/images/stock/implant-surgical-kit.jpg": {
-  "width": 1600,
-  "height": 2400,
-  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAwAA4BaJQBOgB57ZkGcfAD8y8QKaQYxpdHon7GGeI04BMRucvhRJOfOSKLc7oAAAA==",
-  "opt": [
-   480,
-   768,
-   1080,
-   1440,
-   1600
   ]
  },
  "/images/stock/intraoral-camera-screen.jpg": {
@@ -823,18 +787,6 @@
    1080,
    1440,
    2400
-  ]
- },
- "/images/stock/tooth-extraction.jpg": {
-  "width": 1600,
-  "height": 2400,
-  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAwAA4BaJYgCdADzVMGAAP7oPw0UlKWPiOVNsAyi0CgGcsm4JpxoIp7vHyOUHsQAAA==",
-  "opt": [
-   480,
-   768,
-   1080,
-   1440,
-   1600
   ]
  },
  "/images/stock/toothache-man.jpg": {
