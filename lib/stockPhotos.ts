@@ -32,7 +32,6 @@ export const STOCK = {
   calmPatientChair: pexels("calm-patient-chair", 3946829, "Relaxed patient resting comfortably in the dental chair", "center 40%"),
   // ---- planning, smiles, care
   smilePlanOnScreen: unsplash("smile-plan-on-screen", "-m-4tYmtLlI", "Patient reviewing a digital treatment plan on screen in the dental chair", "center 60%"),
-  xrayConsultation: pexels("xray-consultation", 6502030, "Patient going over X-ray results on screen", "center 40%"),
   shadeMatchingSmile: pexels("shade-matching-smile", 5355901, "Matching tooth shade to a patient's smile with a shade guide", "center 40%"),
   shadeGuideHands: pexels("shade-guide-hands", 5355899, "Tooth shade guide used to choose a natural colour", "center 45%"),
   naturalBambooToothbrush: pexels("natural-bamboo-toothbrush", 8842703, "Bamboo toothbrush and greenery, a natural approach to oral care", "center 60%"),
@@ -71,6 +70,9 @@ export const STOCK = {
   jawPainCompress: pexels("jaw-pain-compress", 5624170, "Woman holding a cold compress to her aching jaw", "center 40%"),
   nightGuard: pexels("night-guard", 10896129, "Clear night guard to protect the teeth and jaw from grinding", "center 50%"),
   toothacheMan: pexels("toothache-man", 6809670, "Man with a toothache holding his cheek", "center 35%"),
+  veneerPlacement: pexels("veneer-placement", 6627571, "Porcelain veneer being placed on a smiling patient's front teeth", "center 45%"),
+  panoramicScanPatient: pexels("panoramic-scan-patient", 6812451, "Patient having a panoramic X-ray to check the wisdom teeth", "center 40%"),
+  brushingTeethRoutine: pexels("brushing-teeth-routine", 27176924, "Patient brushing her teeth as part of a daily routine", "center 40%"),
   // ---- recovery and patients (blog)
   softFoodSoups: pexels("soft-food-soups", 8738017, "Smooth soups, soft foods for the first days after treatment", "center 50%"),
   pumpkinSoup: pexels("pumpkin-soup", 1277483, "Bowl of smooth pumpkin soup, an easy meal while healing", "center 50%"),
@@ -85,7 +87,7 @@ export const SERVICE_PHOTOS: Record<string, { hero: StockPhoto; benefit: StockPh
   "composite-filling": { hero: STOCK.fillingCuringLight, benefit: STOCK.fillingModel },
   invisalign: { hero: STOCK.clearAlignerSmile, benefit: STOCK.alignersInHands },
   "teeth-whitening": { hero: STOCK.whiteningLight, benefit: STOCK.shadeGuideHands },
-  veneers: { hero: STOCK.veneerShadeSamples, benefit: STOCK.veneerConsultMirror },
+  veneers: { hero: STOCK.veneerPlacement, benefit: STOCK.veneerShadeSamples },
   "dental-crowns": { hero: STOCK.crownCrafting, benefit: STOCK.crownCloseup },
   "dental-implants": { hero: STOCK.implantModel, benefit: STOCK.implantSurgicalKit },
   "holistic-dentistry": { hero: STOCK.naturalToothpasteLeaf, benefit: STOCK.bambooToothbrushWood },
@@ -93,10 +95,35 @@ export const SERVICE_PHOTOS: Record<string, { hero: StockPhoto; benefit: StockPh
   "all-on-4-implants": { hero: STOCK.fullArchImplantBridge, benefit: STOCK.transparentImplantModel },
   "bone-grafting": { hero: STOCK.implantModelCrown, benefit: STOCK.jawboneXrayScreen },
   "tooth-extractions": { hero: STOCK.extractionInstruments, benefit: STOCK.toothExtraction },
-  "wisdom-teeth-removal": { hero: STOCK.panoramicXrayDetail, benefit: STOCK.xrayConsultation },
+  "wisdom-teeth-removal": { hero: STOCK.panoramicXrayDetail, benefit: STOCK.panoramicScanPatient },
   "restorative-dentistry": { hero: STOCK.restorativeModels, benefit: STOCK.denturePolishing },
   "dental-bridges": { hero: STOCK.bridgeCloseup, benefit: STOCK.prostheticArrangement },
   "tmj-treatments": { hero: STOCK.jawPainCompress, benefit: STOCK.nightGuard },
+};
+
+/**
+ * Photos for each treatment's process steps, matched to what the step is about. "DR" = Dr. Lavi (the
+ * practice's headshot), "ROOM" = his treatment room, "RECEPTION" = his reception, "SMILE" = a smiling
+ * patient (taken in turn from RESULT_SMILES). Pages with more steps than entries continue with smiles.
+ */
+export type StepPhoto = StockPhoto | "DR" | "ROOM" | "RECEPTION" | "SMILE";
+export const SERVICE_STEPS: Record<string, StepPhoto[]> = {
+  "all-on-4-implants": ["DR", STOCK.implantSurgicalKit, "SMILE"],
+  "bone-grafting": [STOCK.extractionInstruments, STOCK.transparentImplantModel, STOCK.panoramicXrayDetail, "DR", "ROOM", STOCK.prfCentrifuge],
+  "composite-filling": ["DR", "ROOM", "SMILE"],
+  "cosmetic-dentistry": ["DR", STOCK.smilePlanOnScreen, "SMILE"],
+  "dental-bridges": ["DR", STOCK.crownCrafting, "SMILE"],
+  "dental-crowns": ["DR", "ROOM", "SMILE"],
+  "dental-implants": ["DR", "ROOM", "SMILE"],
+  "holistic-dentistry": ["DR", "ROOM", STOCK.dentalCleaning],
+  invisalign: [STOCK.intraoralScannerInUse, STOCK.smilePlanOnScreen, STOCK.brushingTeethRoutine, "DR", "SMILE"],
+  "oral-surgery": ["DR", "ROOM", "SMILE"],
+  "restorative-dentistry": [],
+  "teeth-whitening": ["DR", "ROOM", STOCK.brushingTeethRoutine, "RECEPTION"],
+  "tmj-treatments": ["DR", "ROOM", "SMILE"],
+  "tooth-extractions": ["DR", "ROOM", STOCK.softFoodSoups],
+  veneers: ["DR", STOCK.intraoralScannerInUse, "SMILE"],
+  "wisdom-teeth-removal": ["DR", "ROOM", STOCK.pumpkinSoup],
 };
 
 /** Smiling patients for the last "process" step, taken in turn so neighbouring pages differ. */

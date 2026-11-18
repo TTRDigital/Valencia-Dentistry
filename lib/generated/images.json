@@ -266,6 +266,18 @@
    2400
   ]
  },
+ "/images/stock/brushing-teeth-routine.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAwAgCdASoMAAgAA4BaJYgCdIExFxTFSmUAAAD+4Mk9txm13oU0i3zHOGshc+BafploSZEmiwAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
  "/images/stock/calm-patient-chair.jpg": {
   "width": 2400,
   "height": 1600,
@@ -602,6 +614,18 @@
    2400
   ]
  },
+ "/images/stock/panoramic-scan-patient.jpg": {
+  "width": 1602,
+  "height": 2400,
+  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAwAA4BaJZgAAwF/eCVBtqQA/vKLu20bRCR3faU0eLXPeWBukzZQBsYw3mZnRQAAAA==",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   1602
+  ]
+ },
  "/images/stock/panoramic-xray-detail.jpg": {
   "width": 2400,
   "height": 1600,
@@ -842,6 +866,18 @@
    2400
   ]
  },
+ "/images/stock/veneer-placement.jpg": {
+  "width": 2400,
+  "height": 1600,
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoMAAgAA4BaJbACdADaQB2yAAD9xVWyLAlAFJoBN2mYr+IyP6NkPbjJAz5ATwpaIvvMEgAA",
+  "opt": [
+   480,
+   768,
+   1080,
+   1440,
+   2400
+  ]
+ },
  "/images/stock/veneer-shade-samples.jpg": {
   "width": 2400,
   "height": 1602,
@@ -858,18 +894,6 @@
   "width": 2400,
   "height": 1600,
   "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoMAAgAA4BaJZQAAxOikLKhFUAA/puo06OaZWktFJc3pEOVgE5oybmULK/6Gsb8S+UxwAAA",
-  "opt": [
-   480,
-   768,
-   1080,
-   1440,
-   2400
-  ]
- },
- "/images/stock/xray-consultation.jpg": {
-  "width": 2400,
-  "height": 1600,
-  "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoMAAgAA4BaJZQCdADbINC4AP6YXGdwdXB/rA0ttIfQ3v1edQ0HHgCvJ6EoJvQV9AAAAA==",
   "opt": [
    480,
    768,

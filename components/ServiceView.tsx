@@ -11,7 +11,7 @@ import { Picture } from "@/components/ui/Picture";
 import { Container, Section } from "@/components/ui/Section";
 import { cn, distinctPhotos, inSentence } from "@/lib/utils";
 import { CLIENT, SERVICE_BEFORE_AFTER } from "@/lib/clientPhotos";
-import { RESULT_SMILES, SERVICE_PHOTOS } from "@/lib/stockPhotos";
+import { RESULT_SMILES, SERVICE_PHOTOS, SERVICE_STEPS, type StepPhoto } from "@/lib/stockPhotos";
 
 export { Breadcrumbs };
 
@@ -56,10 +56,12 @@ export async function ServiceView({ s }: { s: Service }) {
   ];
   const beforeAfter = SERVICE_BEFORE_AFTER[s.slug];
   const accPhoto: SiteImage = beforeAfter ?? own?.benefit ?? CLIENT.reception;
-  // a fifth or later step takes the next smiling patient, so no photo repeats on the page
-  const smile = (k: number) => RESULT_SMILES[(Math.max(order, 0) + k) % RESULT_SMILES.length];
-  const STEP_PHOTOS: SiteImage[] = [CLIENT.drHeadshot, CLIENT.treatmentRoom, smile(0), CLIENT.reception];
-  const stepPhotos = s.process.steps.map((_, i) => STEP_PHOTOS[i] ?? smile(i - 3));
+  // each step's photo matches the step (lib/stockPhotos.ts SERVICE_STEPS); extra steps continue with smiles
+  let smiles = 0;
+  const smile = () => RESULT_SMILES[(Math.max(order, 0) + smiles++) % RESULT_SMILES.length];
+  const resolve = (p: StepPhoto | undefined): SiteImage => (p === "DR" ? CLIENT.drHeadshot : p === "ROOM" ? CLIENT.treatmentRoom : p === "RECEPTION" ? CLIENT.reception : !p || p === "SMILE" ? smile() : p);
+  const steps = SERVICE_STEPS[s.slug] ?? ["DR", "ROOM", "SMILE"];
+  const stepPhotos = s.process.steps.map((_, i) => resolve(steps[i]));
   const whyPts = (reasons.length ? reasons : what.length ? [] : s.why.cards).slice(0, 4);
   const ctaPhoto = CLIENT.hallway; // full width under an olive veil: the practice, never text over the logo wall
 

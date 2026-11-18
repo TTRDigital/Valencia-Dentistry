@@ -115,3 +115,22 @@ What changed (layout unchanged, photos only):
   photos follow each step (front desk, reception, X-ray, exam with Dr. Lavi, plan on screen).
 - 54 licensed stock photos (Pexels / Unsplash, free for commercial use). No blonde model, no other clinic's branding,
   no stock photo presented as Dr. Lavi, his team or his patients. Full list with sources: `docs/photo-credits.md`.
+
+## 9. Section-by-section audit (2026-11-18)
+
+Every section of 31 pages checked visually at desktop (1,440 px) and mobile (390 px), plus an automated
+check of every image on all 61 pages.
+
+| Page / section | Finding | Fix |
+|---|---|---|
+| Home, Free Invisalign Consultation | Not a new section: the new-patient band since Nov 4, worded from the onboarding form on Nov 9. Live shows Dr. Lavi's small candid photo (02) | Kept, with a clear-aligner photo (client's choice) |
+| 16 treatment pages, process steps | The same three photos on every page whatever the step | Each step now matches its subject: Dr. Lavi for consultations, his treatment room for in-office procedures, the scanner for "3D imaging" and "impressions", X-rays for sinus lift, the centrifuge for PRF healing, soft foods for extraction recovery, brushing for aligner care, a smiling patient for results |
+| Testimonials hero, Before & After hero | Stock patients next to "real results" could read as the practice's own patients | The practice's own photos (front desk, reception) |
+| Veneers hero | Pale shade-sample strip, near empty on mobile | A veneer being placed on a smiling patient |
+| Wisdom teeth, Benefits & care | Back of a head at a monitor | Patient in a panoramic X-ray scanner |
+| Bone grafting steps | Two near-identical implant model shots on one page | Transparent full-arch model for "Ridge augmentation" |
+| Services page cards | Looked blank in automated captures | Not a fault: they load as a visitor scrolls (verified by scrolling the page) |
+
+Checked and correct: every hero, technology card, before/after case, blog card and article header, About, Appointment,
+Contact, Emergency, Special Offer, Thank-you; mobile layouts of the same pages. Result: no broken image, none of the
+practice's photos twice on a page, no stock photo twice on a page, no identical photos side by side.
