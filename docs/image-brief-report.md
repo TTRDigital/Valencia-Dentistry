@@ -134,3 +134,16 @@ check of every image on all 61 pages.
 Checked and correct: every hero, technology card, before/after case, blog card and article header, About, Appointment,
 Contact, Emergency, Special Offer, Thank-you; mobile layouts of the same pages. Result: no broken image, none of the
 practice's photos twice on a page, no stock photo twice on a page, no identical photos side by side.
+
+## 10. Client feedback round 2 (2026-11-19, staging)
+
+Only the four requested changes; layout unchanged.
+
+| Request | Done |
+|---|---|
+| Home hero = 01, logo fully visible | 01 stays as the hero; the logo wall is fully in frame at 390, 768, 1024, 1280, 1440 and 1920 px. On desktop the hero text sits over the left edge of the lettering (text on the left, logo centred in the photo); moving it would need a layout change, so it is left as is. |
+| Before/after: teeth only, no faces | The two cases with faces (case-1, the man; case-4, the woman) re-cropped to the mouth, each before/after pair to the same area (540 × 405). All other cases already show only the teeth and lips. Covers the home slider, the "More cases" thumbnails, Testimonials and the Before & After page. Originals stay in `assets/originals/cases/`. |
+| Office video → stills | No video exists on the site or in the repository (no `<video>`, .mp4 or .webm), so there was nothing to replace or keep. |
+| New office photos 11-14 | Added to `public/images/client/` (2,400 px max, WebP variants built) with the brief's alt text. About hero: 11 (treatment room). Contact hero and Appointment "Before you arrive" photo: 13 (hallway to the front desk). Thank-you hero: 14 (hallway with imaging equipment). 12 (sun flare) is registered as a spare, unused, since 11 fits. |
+
+The door photo (`11-treatment-rooms-doors.jpg`, a different file) stays where it was asked for: home banner, Special Offer, treatment-page closing banners and the shared CTA.

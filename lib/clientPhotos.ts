@@ -1,7 +1,7 @@
 import type { SiteImage } from "./types";
 
 /**
- * The practice's own photos (Valencia Dentistry / Dr. Nuriel Lavi), IDs 01-10 from the image brief.
+ * The practice's own photos (Valencia Dentistry / Dr. Nuriel Lavi), IDs 01-14 from the image briefs.
  * This file is the single list: components and scripts take their photos from here.
  *
  * - Alt text is the brief's.
@@ -24,6 +24,11 @@ export const CLIENT = {
   /** 08 */ baVeneersFront: p("08-before-after-veneers-front.jpg", "Before and after full upper veneers, front view"),
   /** 09 */ treatmentRoom: p("09-treatment-room.jpg", "Bright treatment room at Valencia Dentistry with dental chair and windows", "center 68%"),
   /** 11 */ treatmentRoomDoors: p("11-treatment-rooms-doors.jpg", "Two treatment rooms at Valencia Dentistry seen through their doorways", "center 55%"),
+  // Round 2 office photos (portrait originals, alt text from the client's brief). 12 is the sun-flare take of 11, kept as a spare.
+  /** 11 */ operatoryRoomA: p("11-operatory-room-a.jpg", "Bright treatment room at Valencia Dentistry with dental chair and large windows", "center 66%"),
+  /** 12 */ operatoryRoomASunflare: p("12-operatory-room-a-alt-sunflare.jpg", "Treatment room at Valencia Dentistry", "center 66%"),
+  /** 13 */ hallwayFrontDesk: p("13-hallway-front-desk-view.jpg", "Valencia Dentistry hallway leading to the front desk", "center 45%"),
+  /** 14 */ hallwayXray: p("14-hallway-xray-view.jpg", "Valencia Dentistry hallway with treatment rooms and imaging equipment", "center 45%"),
 } as const;
 
 /** The two room photos (the hallway photo 10 is no longer used: client feedback, it shows mostly floor). */
