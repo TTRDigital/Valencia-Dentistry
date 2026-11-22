@@ -32,15 +32,25 @@ export function LeadForm({ formName = "Appointment request", compact, services =
     const u: Record<string, string> = {};
     const params = new URLSearchParams(window.location.search);
     for (const [k, v] of params) if (/^utm_/i.test(k)) u[k] = v;
+    const hasUtmHere = Object.keys(u).length > 0;
+    // Session-level referrer and landing page (with its utm query) for TTR OS attribution.
+    const extRef = document.referrer && !document.referrer.startsWith(window.location.origin) ? document.referrer : "";
+    let ref = extRef;
+    let landing = hasUtmHere ? window.location.href : "";
     try {
       const stored = sessionStorage.getItem("utm");
-      if (!Object.keys(u).length && stored) Object.assign(u, JSON.parse(stored));
+      if (!hasUtmHere && stored) Object.assign(u, JSON.parse(stored));
       if (Object.keys(u).length) sessionStorage.setItem("utm", JSON.stringify(u));
+      if (landing) sessionStorage.setItem("landing", landing);
+      else landing = sessionStorage.getItem("landing") || "";
+      if (ref) sessionStorage.setItem("ref", ref);
+      else ref = sessionStorage.getItem("ref") || "";
     } catch { /* storage unavailable */ }
     const box = utmRef.current;
     if (box) {
       box.replaceChildren();
-      for (const [k, v] of Object.entries(u)) { const i = document.createElement("input"); i.type = "hidden"; i.name = k; i.value = v; box.appendChild(i); }
+      const extra: Record<string, string> = { ...u, ...(ref ? { _ref: ref } : {}), ...(landing ? { _landing: landing } : {}) };
+      for (const [k, v] of Object.entries(extra)) { const i = document.createElement("input"); i.type = "hidden"; i.name = k; i.value = v; box.appendChild(i); }
     }
   }, []);
 

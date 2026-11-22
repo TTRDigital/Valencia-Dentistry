@@ -1,15 +1,23 @@
 import "server-only";
+import { ttrOsBody, TTR_OS_FORM_URL } from "./ttr-os.ts";
 
 /**
- * Delivers a website form submission to GoHighLevel (GHL_WEBHOOK_URL, flat
- * JSON) and optionally by email (RESEND_API_KEY + LEAD_EMAIL_TO). Nothing is
- * built into the repo: without GHL_WEBHOOK_URL the lead is logged with a
- * clear warning so it is never lost silently.
+ * Delivers a website form submission. Main destination: TTR OS
+ * (form-encoded POST to /api/site/form, always on; site key from TTR_SITE_KEY
+ * or the public tracker key). Optional extras: email through Resend
+ * (RESEND_API_KEY + LEAD_EMAIL_TO) and a legacy GoHighLevel webhook
+ * (GHL_WEBHOOK_URL, flat JSON; unused unless set). Failures are logged with
+ * the full lead so it is never lost silently.
  */
 export type Lead = {
   form: string;
   page: string;
   fields: Record<string, string>; // label -> value, in form order
+  /** Raw form values keyed by input name (first_name, phone, consent, ...). */
+  values?: Record<string, string>;
+  referrer?: string;
+  /** Landing page URL with its utm query, if known. */
+  landing?: string;
   utm: Record<string, string>;
   submittedAt: string;
   ip?: string;
@@ -81,6 +89,22 @@ export async function deliverLead(lead: Lead): Promise<{ delivered: boolean; con
   const webhook = clean(process.env.GHL_WEBHOOK_URL);
   const payload = payloadFor(lead);
 
+  // Main delivery: TTR OS (answers 204). Same 8s timeout + retries as the others.
+  const ttr = post(TTR_OS_FORM_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: ttrOsBody({
+      siteKey: clean(process.env.TTR_SITE_KEY),
+      form: lead.form,
+      page: lead.page,
+      referrer: lead.referrer,
+      landing: lead.landing,
+      values: lead.values ?? {},
+    }).toString(),
+  });
+  tasks.push(ttr);
+
+  // Legacy GoHighLevel webhook: only when GHL_WEBHOOK_URL is set.
   if (/^https?:\/\//.test(webhook)) {
     tasks.push(post(webhook, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }));
   }
@@ -104,14 +128,11 @@ export async function deliverLead(lead: Lead): Promise<{ delivered: boolean; con
     );
   }
 
-  if (!tasks.length) {
-    console.warn("[lead] NO DELIVERY CONFIGURED (set GHL_WEBHOOK_URL). Lead kept in logs:", JSON.stringify(payload));
-    return { delivered: false, configured: false };
-  }
   const results = await Promise.allSettled(tasks);
   const failed = results.filter((r): r is PromiseRejectedResult => r.status === "rejected");
   for (const r of failed) console.error("[lead] delivery failed:", r.reason, "Lead:", JSON.stringify(payload));
-  return { delivered: failed.length < results.length, configured: true };
+  // Delivered when TTR OS took it; a Resend/GHL success also counts as a backup.
+  return { delivered: results[0].status === "fulfilled" || failed.length < results.length, configured: true };
 }
 
 function esc(s: string) {

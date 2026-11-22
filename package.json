@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --no-warnings --test lib/*.test.ts",
     "seed": "node --experimental-strip-types --no-warnings scripts/seed.ts",
     "audit": "node --experimental-strip-types --no-warnings scripts/audit.ts",
     "favicons": "node --experimental-strip-types --no-warnings scripts/favicons.ts",
