@@ -128,7 +128,7 @@ export function LeadForm({ formName = "Appointment request", compact, services =
   };
 
   return (
-    <form ref={formRef} action="/api/lead/" method="post" onSubmit={onSubmit} noValidate className={cn("grid gap-4", className)} aria-label={formName}>
+    <form ref={formRef} action="/api/lead/" method="post" onSubmit={onSubmit} noValidate data-ttr-skip className={cn("grid gap-4", className)} aria-label={formName}>
       <input type="hidden" name="_form" value={formName} />
       <input ref={pageRef} type="hidden" name="_page" defaultValue="" />
       <input ref={tRef} type="hidden" name="_t" defaultValue="" />
