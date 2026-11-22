@@ -45,6 +45,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <MotionProvider />
         <CustomCursor />
         <Analytics />
+        {/* TTR OS tracker (public site key; invisible to visitors). */}
+        <script src="https://portal.ttrdigitalmarketing.com/api/site/script/5a23a7758595" data-site="Sb6ar7iYfoIg6TakR5qtbA" defer />
       </body>
     </html>
   );
