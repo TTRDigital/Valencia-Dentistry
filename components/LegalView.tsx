@@ -23,7 +23,7 @@ export function LegalView({ page }: { page: LegalPage }) {
           <div className="mx-auto max-w-[72ch]"><Markdown source={page.body} /></div>
         </Container>
       </Section>
-      <JsonLd data={graph([webPageNode(page.path, page.seo.title ?? page.title, page.seo.description ?? ""), breadcrumbNode(crumbs)])} />
+      <JsonLd data={graph([webPageNode(page.path, page.seo?.title || page.title, page.seo?.description ?? ""), breadcrumbNode(crumbs)])} />
     </>
   );
 }
