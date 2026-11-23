@@ -8,7 +8,7 @@ import { CLIENT } from "@/lib/clientPhotos";
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getPage("services");
   if (!page) return {};
-  return buildMetadata({ title: page.seo.title ?? page.title, description: page.seo.description ?? "", path: "/services/", image: CLIENT.treatmentRoom.src });
+  return buildMetadata({ title: page.seo?.title || page.title, description: page.seo?.description ?? "", path: "/services/", image: CLIENT.treatmentRoom.src });
 }
 
 export default async function ServicesPage() {

@@ -41,7 +41,7 @@ export async function PostView({ post }: { post: Post }) {
               </div>
               <h1 className="mt-6 text-5xl">{post.title}</h1>
               <div className="mt-8 inline-flex items-center gap-4 rounded-lg bg-white p-3 pr-6 shadow-lift ring-1 ring-ink-900/5">
-                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full"><Picture image={{ src: CLIENT.drHeadshot.src, alt: "" }} sizes="56px" className="h-full w-full object-cover object-top" /></div>
+                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-full"><Picture image={CLIENT.drHeadshot} sizes="56px" className="h-full w-full object-cover object-top" /></div>
                 <div className="text-sm leading-snug">
                   <p className="font-semibold text-ink-900">By {site.doctor.name}</p>
                   <p className="text-grey-600">Dentist and practice owner</p>
@@ -143,7 +143,7 @@ export async function PostView({ post }: { post: Post }) {
         </section>
       )}
 
-      <JsonLd data={graph([webPageNode(post.path, post.seoTitle, post.description), breadcrumbNode(crumbs), articleNode(post, text.split(/\s+/).length), faqNode(post.faq)])} />
+      <JsonLd data={graph([webPageNode(post.path, post.seoTitle || post.title, post.description || post.excerpt), breadcrumbNode(crumbs), articleNode(post, text.split(/\s+/).length), faqNode(post.faq)])} />
     </article>
   );
 }

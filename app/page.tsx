@@ -8,7 +8,7 @@ import { CLIENT } from "@/lib/clientPhotos";
 export async function generateMetadata(): Promise<Metadata> {
   const page = await getPage("home");
   if (!page) return {};
-  return buildMetadata({ title: page.seo.title ?? page.title, description: page.seo.description ?? "", path: "/", image: CLIENT.reception.src });
+  return buildMetadata({ title: page.seo?.title || page.title, description: page.seo?.description ?? "", path: "/", image: CLIENT.reception.src });
 }
 
 export default async function HomePage() {

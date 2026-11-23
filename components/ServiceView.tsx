@@ -202,7 +202,7 @@ export async function ServiceView({ s }: { s: Service }) {
         </Section>
       )}
 
-      <JsonLd data={graph([webPageNode(s.path, s.seo.title, s.seo.description), breadcrumbNode(crumbs), serviceNode(s), serviceOfferNode(s), faqNode(s.faqs)])} />
+      <JsonLd data={graph([webPageNode(s.path, s.seo?.title || s.name, s.seo?.description || s.shortDescription), breadcrumbNode(crumbs), serviceNode(s), serviceOfferNode(s), faqNode(s.faqs)])} />
     </article>
   );
 }
