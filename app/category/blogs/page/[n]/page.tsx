@@ -6,7 +6,8 @@ import { buildMetadata } from "@/lib/seo";
 import { CLIENT } from "@/lib/clientPhotos";
 
 type Props = { params: Promise<{ n: string }> };
-export const dynamicParams = false;
+/** true: a page that exists only in Sanity (a new post, or a scratch draft in preview) renders on demand; unknown slugs still 404. */
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const posts = await getPosts();
@@ -22,6 +23,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BlogPaged({ params }: Props) {
   const { n } = await params;
   const page = Number(n);
-  if (!Number.isInteger(page) || page < 2) notFound();
+  if (!Number.isInteger(page) || page < 2 || String(page) !== n) notFound();
   return <BlogIndexPage page={page} />;
 }
