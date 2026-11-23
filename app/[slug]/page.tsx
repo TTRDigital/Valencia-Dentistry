@@ -11,7 +11,8 @@ import { buildMetadata } from "@/lib/seo";
  * blog posts, which live at the site root on the current site (/dental-implants-cost/).
  */
 type Props = { params: Promise<{ slug: string }> };
-export const dynamicParams = false;
+/** true: a page that exists only in Sanity (a new post, or a scratch draft in preview) renders on demand; unknown slugs still 404. */
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const [pages, legal, posts] = await Promise.all([getPages(), getLegalPages(), getPosts()]);

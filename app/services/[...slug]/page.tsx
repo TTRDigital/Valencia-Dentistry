@@ -6,7 +6,8 @@ import { buildMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string[] }> };
 
-export const dynamicParams = false;
+/** true: a page that exists only in Sanity (a new post, or a scratch draft in preview) renders on demand; unknown slugs still 404. */
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const services = await getServices();
