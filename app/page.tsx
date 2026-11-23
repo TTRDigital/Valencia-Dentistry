@@ -14,6 +14,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function HomePage() {
   const page = await getPage("home");
   if (!page) notFound();
-  // The home page shows the Google rating and reviews, so aggregateRating is allowed here.
-  return <PageView page={page} extraNodes={[websiteNode(), dentistNode(true), personNode()]} />;
+  // No rating or review structured data (TTR rule); the visible reviews section is unchanged.
+  return <PageView page={page} extraNodes={[websiteNode(), dentistNode(), personNode()]} />;
 }

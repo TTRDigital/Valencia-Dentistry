@@ -69,7 +69,7 @@ export const siteSettings = defineType({
     defineField({ name: "offer", type: "object", group: "offer", fields: [defineField({ name: "headline", type: "string" }), defineField({ name: "detail", type: "string" }), defineField({ name: "enabled", type: "boolean", initialValue: true })] }),
     defineField({ name: "bookingUrl", type: "url", group: "offer", title: "Online booking URL" }),
     defineField({ name: "social", type: "object", group: "practice", fields: [defineField({ name: "facebook", type: "url" }), defineField({ name: "instagram", type: "url" }), defineField({ name: "linkedin", type: "url" }), defineField({ name: "x", type: "url" })] }),
-    defineField({ name: "rating", type: "object", group: "schema", title: "Google rating (keep in sync with Google)", fields: [defineField({ name: "value", type: "number" }), defineField({ name: "count", type: "number" })] }),
+    defineField({ name: "rating", type: "object", group: "practice", title: "Google rating (keep in sync with Google)", description: "Shown on the page only. Never added to structured data (no Review or Rating schema on client sites).", fields: [defineField({ name: "value", type: "number" }), defineField({ name: "count", type: "number" })] }),
     defineField({ name: "areas", type: "array", group: "schema", of: [{ type: "string" }], title: "Areas served" }),
     defineField({ name: "priceRange", type: "string", group: "schema", initialValue: "$$" }),
   ],
