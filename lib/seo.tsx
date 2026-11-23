@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { absoluteUrl, SITE_URL, site } from "./site";
 import { CLIENT } from "@/lib/clientPhotos";
 import type { Faq, Post, Service } from "./types";
+import { stripRatings } from "./jsonld-guard";
 
 /* ---------- Metadata ---------- */
 
@@ -52,7 +53,7 @@ export const IDS = {
   website: `${SITE_URL}/#website`,
 };
 
-export function dentistNode(withRating = false) {
+export function dentistNode() {
   return {
     "@type": ["Dentist", "LocalBusiness"],
     "@id": IDS.dentist,
@@ -74,8 +75,7 @@ export function dentistNode(withRating = false) {
     medicalSpecialty: ["Dentistry"],
     paymentAccepted: "Cash, Credit Card, Insurance, Financing",
     currenciesAccepted: "USD",
-    // aggregateRating is printed only on pages that visibly show reviews and the rating (Google's guideline).
-    ...(withRating ? { aggregateRating: { "@type": "AggregateRating", ratingValue: site.rating.value, reviewCount: site.rating.count, bestRating: 5, worstRating: 1 } } : {}),
+    // No aggregateRating, review or Rating here, ever (TTR rule). The visible Google rating on the page is unaffected.
   };
 }
 
@@ -170,10 +170,11 @@ export function websiteNode() {
 export function graph(nodes: (Record<string, unknown> | null | undefined)[]) {
   const given = nodes.filter((n): n is Record<string, unknown> => !!n);
   const has = (id: string) => given.some((n) => n["@id"] === id);
-  const base = [!has(IDS.website) && websiteNode(), !has(IDS.dentist) && dentistNode(false), !has(IDS.person) && personNode()].filter(Boolean) as Record<string, unknown>[];
+  const base = [!has(IDS.website) && websiteNode(), !has(IDS.dentist) && dentistNode(), !has(IDS.person) && personNode()].filter(Boolean) as Record<string, unknown>[];
   return { "@context": "https://schema.org", "@graph": [...base, ...given] };
 }
 
+/** Every JSON-LD block on the site goes through here; Review, Rating and AggregateRating are always stripped (lib/jsonld-guard.ts). */
 export function JsonLd({ data }: { data: unknown }) {
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }} />;
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(stripRatings(data)).replace(/</g, "\\u003c") }} />;
 }
