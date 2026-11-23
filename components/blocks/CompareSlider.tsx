@@ -97,11 +97,11 @@ export function CompareSlider({ cases }: { cases: PairCase[] }) {
           style={{ cursor: dragging ? "grabbing" : "ew-resize" }}
         >
           {/* After: full frame */}
-          <Picture key={`a-${c.id}`} image={c.after} fill sizes="(min-width: 768px) 440px, 100vw" className="compare-fade object-cover" />
+          <Picture key={`a-${c.id}`} image={c.after} alt={c.after.alt || `After: ${c.title}`} fill sizes="(min-width: 768px) 440px, 100vw" className="compare-fade object-cover" />
           {/* Before: a full-size layer clipped by an overflow window that slides with transforms */}
           <div className="absolute inset-0 overflow-hidden" style={{ transform: `translateX(${pos - 100}%)` }} aria-hidden="true">
             <div className="absolute inset-0" style={{ transform: `translateX(${100 - pos}%)` }}>
-              <Picture key={`b-${c.id}`} image={c.before} fill sizes="(min-width: 768px) 440px, 100vw" className="compare-fade object-cover" alt="" />
+              <Picture key={`b-${c.id}`} image={c.before} alt={c.before.alt || `Before: ${c.title}`} fill sizes="(min-width: 768px) 440px, 100vw" className="compare-fade object-cover" />
             </div>
           </div>
           <span className="pointer-events-none absolute left-3 top-3 rounded-sm bg-olive-900/85 px-2.5 py-1 text-xs font-bold uppercase tracking-[0.1em] text-white">Before</span>
@@ -143,7 +143,7 @@ export function CompareSlider({ cases }: { cases: PairCase[] }) {
                 aria-label={`Show case: ${k.title}, ${k.treatment}`}
                 className={cn("block w-full overflow-hidden rounded-md ring-2 ring-offset-2 ring-offset-warm transition-transform duration-[var(--dur-micro)] hover:-translate-y-0.5", i === active ? "ring-olive-600" : "ring-transparent")}
               >
-                <Picture image={k.after} sizes="(min-width: 768px) 200px, 30vw" className="aspect-[4/3] w-full object-cover" alt="" />
+                <Picture image={k.after} alt={k.after.alt || `After: ${k.title}`} sizes="(min-width: 768px) 200px, 30vw" className="aspect-[4/3] w-full object-cover" />
               </button>
             </li>
           ))}

@@ -115,7 +115,7 @@ export function serviceNode(s: Service) {
     "@type": "MedicalProcedure",
     "@id": `${absoluteUrl(s.path)}#service`,
     name: s.name,
-    description: s.seo.description,
+    description: s.seo?.description || s.shortDescription,
     url: absoluteUrl(s.path),
     image: absoluteUrl(s.hero.image.src),
     procedureType: "https://schema.org/NoninvasiveProcedure",

@@ -14,8 +14,8 @@ export const seo = defineType({
   title: "SEO",
   type: "object",
   fields: [
-    defineField({ name: "title", type: "string", title: "Title tag", validation: (r) => r.max(60).warning("Keep titles at 60 characters or fewer") }),
-    defineField({ name: "description", type: "text", rows: 3, title: "Meta description", validation: (r) => r.max(155).warning("Keep descriptions at 155 characters or fewer") }),
+    defineField({ name: "title", type: "string", title: "Title tag", validation: (r) => r.min(30).max(70).warning("Keep titles at 30 to 70 characters, with the main search first") }),
+    defineField({ name: "description", type: "text", rows: 3, title: "Meta description", validation: (r) => r.min(110).max(170).warning("Keep descriptions at 110 to 170 characters") }),
     defineField({ name: "ogImage", type: "siteImage", title: "Social share image (1200×630)" }),
     defineField({ name: "noindex", type: "boolean", title: "Hide from search engines", initialValue: false }),
     defineField({ name: "canonical", type: "url", title: "Canonical URL (leave empty unless this page duplicates another)" }),
@@ -129,7 +129,7 @@ export const service = defineType({
     defineField({ name: "faqs", type: "array", group: "content", of: [{ type: "faqItem" }] }),
     defineField({ name: "related", type: "array", group: "content", of: [{ type: "string" }], description: "Slugs of related services" }),
     defineField({ name: "cta", type: "object", group: "content", fields: [defineField({ name: "heading", type: "string" }), defineField({ name: "text", type: "text", rows: 2 }), defineField({ name: "buttonLabel", type: "string" })] }),
-    defineField({ name: "seo", title: "SEO", type: "object", group: "seo", fields: [defineField({ name: "title", type: "string", validation: (r) => r.max(60).warning() }), defineField({ name: "description", type: "text", rows: 3, validation: (r) => r.max(155).warning() }), defineField({ name: "noindex", type: "boolean" })] }),
+    defineField({ name: "seo", title: "SEO", type: "object", group: "seo", fields: [defineField({ name: "title", type: "string", validation: (r) => r.min(30).max(70).warning() }), defineField({ name: "description", type: "text", rows: 3, validation: (r) => r.min(110).max(170).warning() }), defineField({ name: "noindex", type: "boolean" })] }),
   ],
   preview: { select: { title: "name", subtitle: "path" } },
 });
@@ -157,8 +157,8 @@ export const post = defineType({
     defineField({ name: "faq", type: "array", group: "content", of: [{ type: "faqItem" }] }),
     defineField({ name: "relatedServices", type: "array", group: "content", of: [{ type: "string" }], description: "Service slugs" }),
     defineField({ name: "relatedPosts", type: "array", group: "content", of: [{ type: "string" }], description: "Post slugs" }),
-    defineField({ name: "seoTitle", type: "string", group: "seo", validation: (r) => r.max(60).warning() }),
-    defineField({ name: "description", type: "text", rows: 3, group: "seo", validation: (r) => r.max(155).warning() }),
+    defineField({ name: "seoTitle", type: "string", group: "seo", validation: (r) => r.min(30).max(70).warning() }),
+    defineField({ name: "description", type: "text", rows: 3, group: "seo", validation: (r) => r.min(110).max(170).warning() }),
   ],
   preview: { select: { title: "title", subtitle: "category" } },
 });

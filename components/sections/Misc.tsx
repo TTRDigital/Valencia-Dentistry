@@ -114,7 +114,7 @@ export function Insurance({ s }: { s: InsuranceSection }) {
                   const h = ratio > 4.5 ? "h-7" : ratio > 3 ? "h-8" : ratio > 2 ? "h-10" : "h-12";
                   return (
                     <li key={i.name} className="flex h-24 w-52 items-center justify-center rounded-lg bg-warm px-6 opacity-85 grayscale transition-[filter,opacity] duration-[var(--dur-std)] hover:opacity-100 hover:grayscale-0">
-                      <Picture image={{ src: i.logo, alt: copy === 1 ? "" : i.name, width: i.w, height: i.h }} sizes="180px" className={`${h} w-auto max-w-full object-contain`} />
+                      <Picture image={{ src: i.logo, alt: `${i.name} logo`, width: i.w, height: i.h }} sizes="180px" className={`${h} w-auto max-w-full object-contain`} />
                     </li>
                   );
                 })}

@@ -34,9 +34,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const r = await resolve(slug);
   if (!r) return {};
-  if (r.kind === "page") return buildMetadata({ title: r.page.seo.title ?? r.page.title, description: r.page.seo.description ?? "", path: r.page.path, noindex: r.page.seo.noindex, image: r.page.seo.ogImage?.src });
-  if (r.kind === "legal") return buildMetadata({ title: r.legal.seo.title ?? r.legal.title, description: r.legal.seo.description ?? "", path: r.legal.path, noindex: r.legal.seo.noindex });
-  return buildMetadata({ title: r.post.seoTitle, description: r.post.description, path: r.post.path, image: r.post.image || undefined, type: "article", publishedTime: r.post.datePublished, modifiedTime: r.post.dateModified });
+  if (r.kind === "page") return buildMetadata({ title: r.page.seo?.title || r.page.title, description: r.page.seo?.description ?? "", path: r.page.path, noindex: r.page.seo?.noindex, image: r.page.seo?.ogImage?.src });
+  if (r.kind === "legal") return buildMetadata({ title: r.legal.seo?.title || r.legal.title, description: r.legal.seo?.description ?? "", path: r.legal.path, noindex: r.legal.seo?.noindex });
+  return buildMetadata({ title: r.post.seoTitle || r.post.title, description: r.post.description || r.post.excerpt, path: r.post.path, image: r.post.image || undefined, type: "article", publishedTime: r.post.datePublished, modifiedTime: r.post.dateModified });
 }
 
 export default async function RootSlugPage({ params }: Props) {
